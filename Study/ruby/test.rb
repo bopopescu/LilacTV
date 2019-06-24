@@ -8,3 +8,5 @@ for member in members do
     end
 end
 puts('Who are you?')
+
+#apt-get install ruby-dev >> sudo gem instlall rsense
