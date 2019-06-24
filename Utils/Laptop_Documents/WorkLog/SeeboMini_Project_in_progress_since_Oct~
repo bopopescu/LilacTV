@@ -1,0 +1,45 @@
+=================== I have done for Seebo Mini Project since last Octber ==================
+
+1. Built bootloader for amlogic M8-S802
+
+2. Built kernel 3.10.40 for amlogic M8-S802
+
+3. Create project refered to CodeSnake's github
+	3.1 SeeboMini
+
+4. Source including
+	4.1. modified service.openelec.settings (0.3.20)
+		4.1.1. resources/lib/modules/tunelivetv.py, conman.py
+	4.2. modified linux-amlogic-3.10.61 - source upadte from kernel 3.17.2
+		4.2.1. drivers/media
+				dvb-core/dvb-usb-ids.h
+				dvb-frontends/af9033.c, af9033.h af9033_priv.h
+				tuner/tuner_it913x.c, tuner_it913x.h, tuner_it913x_priv.h
+				usb/
+					dvb-usb-v2/af9035.c af9035.h
+	4.3. modified xbmc
+		4.3.1. 	modified xbmc-Gotham-aml/xbmc/pvr/channels/PVRChannel.cpp
+		4.3.2.	modified xbmc-Gotham-aml/xbmc/cores/dvdplayer/DVDCodecs/Video/AMLCodec.cpp : 
+			/*VIDEO_DEC_FORMAT_HEVC, VFORMAT_HEVC, disable TARGET_ANDROID */
+
+5. Packages
+	5.1. linux, linux-drivers, linux-firmware --> Amlogic kernel 3.10.61(amlogic-3.10-24e850b)
+	5.2. modified - network/openssh/systme.d/sshd.service
+	5.3. change png files - tools/plymouth-lite/
+	5.4. modified init file for appending ssh - sysutils/busybox/scripts/init
+	5.5. modified lsb_release file for hiding boot text - sysutils/busybox/scripts/lsb-release
+	5.6. modified cron.service for autoupdate.cron - sysutils/busybox/system.d.opt/cron.service
+	5.7. modified xbmc package.mk for using external ffmpeg(2.5.1) - mediacenter/xbmc/package.mk
+	5.8. modified ffmpeg package.mk for libressl and patches - multimedia/ffmpeg
+	5.10. version up packages/network/libnfs 1.9.5 --> 1.9.6
+	5.11.modified service.multimedia.vdr-addon.service(restart=no) - projects/SeeboMini/xbmc/service.multimedia.vdr-addon.service
+
+6. Modified scripts/image for OTA package(Installation of Android)
+
+7. backup.tar.bz2
+	7.1. changed folder
+		addon/sevice.openelec.settings/dvb-t --> system/dvb-t
+	7.2. new built w_scan for SeeboMini
+	7.3. new built vdr_addon for SeeboMini
+
+8. Create Installer for Seebo Mini - Shell script

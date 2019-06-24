@@ -1,0 +1,43 @@
+
+I have copied all the sources to /home/tuan.dinh/stanly_target/ (192.168.15.20)
+
+1. cp /home/tuan.dinh/stanly_target/xbmc-SeeboMini.tar.xz to sources/xbmc (calculated new md5)
+2. Replace sources/xbmc-pvr-addons by /home/tuan.dinh/stanly_target/xbmc-pvr-addons
+3. Replace packages/mediacenter/xbmc/patches/xbmc-999.03-0001-handle-SIGTERM.patch by /home/tuan.dinh/stanly_target/xbmc-999.03-0001-handle-SIGTERM.patch
+4. take the latest back up tar from /home/tuan.dinh/stanly_target/
+
+Changes
+====================
+    modified:   language/English/strings.po
+    modified:   system/keymaps/keyboard.xml
+    modified:   xbmc/addons/Repository.cpp
+    modified:   xbmc/dialogs/GUIDialogContextMenu.h
+    modified:   xbmc/main/main.cpp
+    modified:   xbmc/pvr/PVRManager.cpp
+    modified:   xbmc/pvr/dialogs/GUIDialogPVRChannelManager.cpp
+    modified:   xbmc/pvr/dialogs/GUIDialogPVRChannelManager.h
+    modified:   xbmc/pvr/recordings/PVRRecording.cpp
+    modified:   xbmc/pvr/timers/PVRTimerInfoTag.cpp
+    modified:   xbmc/pvr/timers/PVRTimerInfoTag.h
+    modified:   xbmc/pvr/timers/PVRTimers.cpp
+    modified:   xbmc/pvr/timers/PVRTimers.h
+    modified:   xbmc/pvr/windows/GUIWindowPVRChannels.cpp
+    modified:   xbmc/pvr/windows/GUIWindowPVRChannels.h
+    modified:   xbmc/pvr/windows/GUIWindowPVRCommon.cpp
+    modified:   xbmc/pvr/windows/GUIWindowPVRCommon.h
+    modified:   xbmc/pvr/windows/GUIWindowPVRGuide.cpp
+    modified:   xbmc/pvr/windows/GUIWindowPVRGuide.h
+    modified:   xbmc/pvr/windows/GUIWindowPVRRecordings.cpp
+    modified:   xbmc/pvr/windows/GUIWindowPVRRecordings.h
+    modified:   xbmc/pvr/windows/GUIWindowPVRSearch.cpp
+    modified:   xbmc/pvr/windows/GUIWindowPVRSearch.h
+    modified:   xbmc/pvr/windows/GUIWindowPVRTimers.cpp
+    modified:   xbmc/pvr/windows/GUIWindowPVRTimers.h
+    modified:   xbmc/video/dialogs/GUIDialogVideoOSD.cpp
+    modified:   xbmc/video/windows/GUIWindowVideoBase.cpp
+
+added
+    xbmc/StackTrace.h
+    xbmc/settings/MasterUpdate.cpp  // no effect
+    xbmc/settings/MasterUpdate.h  // no effect
+

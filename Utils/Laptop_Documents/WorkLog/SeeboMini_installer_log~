@@ -1,0 +1,71 @@
+*******************************************************
+
+tail -f <log file>
+
+tar cvJf backup.tar.bz2 .xbmc
+zip -r service.openelec.settings-0.3.20.zip .
+md5sum -t backup.tar.bz2 > backup.tar.bz2.md5
+
+addons/lib.multimedia.w_scan/bin/w_scan -f t -C UTF-8 -I system/dvb-t/au-Melbourne > userdata/addon_data/service.multimedia.vdr-addon/config/channels.conf
+
+ssh-keygen -f "/home/jin/.ssh/known_hosts" -R 192.168.15.48
+
+svn up
+svn delete --keep-local seebo_mini/
+svn add Mini_OE_4.2_0.2
+dmxb22rkm
+svn commint -m "Add ~~"
+
+nfs share
+sudo apt-get install nfs-kernel-server nfs-common portmap
+/nfs/your<tab><ip or iprange which is allowed to connect>(rw,all_squash,insecure)
+			ip = 192.168.15.0/255.255.255.0
+nano /etc/exports
+
+/home/jin/              192.168.15.0/24(rw,fsid=0,insecure,no_subtree_check,async)
+/home/jin/oe_sources    192.168.15.0/24(rw,nohide,insecure,no_subtree_check,async)
+
+sudo exportfs -ra
+sudo service nfs-kernel-server restart
+sudo mount -t nfs4 -o proto=tcp,port=2049 192.168.15.102:/SeeboProject ~/OpenElec/sMini-sever/
+
+user: tdinh, password: tdxb22rkm. IP: 192.168.15.102
+
+simbol link
+cd target-dir
+ln -s ../xxx.txt xxxtxt
+
+addion compile
+PROJECT=SeeboMini ARCH=arm DEVICE=M8 scripts/create_addon w_scan
+
+chmod -R 755 --> -rwxr-xr-x
+
+killall -9 xbmc.bin
+
+wizard call ---> .xbmc/userdata/addon_data/service.openelec.settings/oe_settings.xml
+
+diff -uw file1 file2
+grep -r "string"
+
+ftp.seebo.com.au 21port
+seebo-jin
+*Q85x7bf
+
+Compress folder Test/ to Test.tar.gz
+tar czfv Test.tar.gz Test/
+czfv = ‘Compress Zip File Verbose’
+If you want bzip files, use ‘j’ instead of ‘z’.
+xz = J
+
+Uncompress Test.tar.gz to folder Test/
+tar -xzf Test.tar.gz
+x = ‘eXtract’
+Again, if you want bzip files, use ‘j’ instead of ‘z’.
+
+
+mount -o remount,rw /flash
+
+iconv -f euc-kr -t utf8 -c *.smi > *.srt
+
+
+

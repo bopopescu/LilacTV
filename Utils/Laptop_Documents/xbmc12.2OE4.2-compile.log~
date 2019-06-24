@@ -1,0 +1,18 @@
+1. configure.in modification from xbmc12.2-e2bbb6f.tar.xz
+1.1 line 1336 -----> Insert below
+######################################################
+PKG_CHECK_MODULES([SAMBA], [smbclient],
+    [INCLUDES="$INCLUDES $SAMBA_CFLAGS"; LIBS="$LIBS $SAMBA_LIBS"],samba
+######################################################
+
+1.2 line 2673 -----> Delete below
+#####################################################
+`if test "x$use_xvba" != "xno"; then echo --enable-xvba; else echo --disable-xvba; fi` \
+#####################################################
+
+2. Internal ffmpeg change
+2.1 Delete existed xmbc12.2-e2bbb6f/lib/ffmpeg
+2.2 Copy new ffmpeg from xbmc13.2/lib/ffmpeg
+
+3. mediacenter modification
+3.1

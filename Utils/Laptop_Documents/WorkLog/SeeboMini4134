@@ -1,0 +1,27 @@
+Update SeeboMini to ver 1.3.4
+
+
+language/English/stings.po					- Done
+
+xbmc/
+/interfaces/Builtins.cpp 					- Done
+/windows/GUIWindowSystemInfo.cpp 			- Done
+/pvr/windows/GUIWindowPVR.h 				- Done
+/pvr/windows/GUIWindowPVR.cpp 				- Done
+/pvr/windows/GUIWindowPVRChannels.cpp 		- Done
+/pvr/windows/GUIWindowPVRChannels.h 		- Done
+/pvr/windows/GUIWindowPVRGuide.cpp 			- Done
+/pvr/windows/GUIWindowPVRGuide.h 			- Done
+/pvr/windows/GUIWindowPVRRecordings.cpp 	- Done
+/pvr/windows/GUIWindowPVRRecordings.h 		- Done
+/pvr/windows/GUIWindowPVRSearch.cpp 		- Done
+/pvr/windows/GUIWindowPVRSearch.h 			- Done
+/pvr/windows/GUIWindowPVRTimers.cpp 		- Done
+/pvr/windows/GUIWindowPVRTimers.h 			- Done
+/video/windows/GUIWindowVideoBase.cpp 		- Done
+/music/windows/GUIWindowMusicSongs.cpp 		- Done
+
+##by BAD Jin ##
+/Application.cpp 							- Done
+/Application.h 								- Done
+/pvr/windows/GUIWindowPVRSearch.cpp 		- Done

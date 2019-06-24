@@ -1,0 +1,32 @@
+14:28:21 T:3058287136  NOTICE: DVDPlayer: Opening: pvr://channels/tv/All TV channels/36.pvr
+14:28:21 T:3058287136 WARNING: CDVDMessageQueue(player)::Put MSGQ_NOT_INITIALIZED
+14:28:21 T:3058287136   DEBUG: CRenderManager::UpdateDisplayLatency - Latency set to 0 msec
+14:28:21 T:3058287136   DEBUG: LinuxRendererGL: Cleaning up GL resources
+14:28:21 T:2598368336  NOTICE: Thread DVDPlayer start, auto delete: false
+14:28:21 T:2598368336  NOTICE: Creating InputStream
+14:28:21 T:2598368336   DEBUG: PVRManager - OpenLiveStream - opening live stream on channel 'US TWit'
+14:28:21 T:2598368336   DEBUG: opening live stream on url 'http://bglive-a.bitgravity.com/twit/live/high'
+14:28:21 T:2598368336   DEBUG: PVRFile - Open - playback has started on filename pvr://channels/tv/All TV channels/36.pvr
+14:28:21 T:2598368336   DEBUG: CFileCache::Open - opening <twit/live/high> using cache
+14:28:21 T:2598368336   DEBUG: CurlFile::Open(0xb3da0d90) http://bglive-a.bitgravity.com/twit/live/high
+14:28:21 T:2598368336   DEBUG: CDVDInputStreamPVRManager::Open - stream opened: http://bglive-a.bitgravity.com/twit/live/high
+14:28:21 T:2872874064  NOTICE: Thread FileCache start, auto delete: false
+14:28:21 T:2598368336  NOTICE: Creating Demuxer
+14:28:21 T:2598368336   DEBUG: Open - probing detected format [flv]
+14:28:21 T:2598368336   DEBUG: Open - avformat_find_stream_info starting
+14:28:21 T:2872874064   DEBUG: CurlFile::CReadState::Connect - Resume from position 1073676288
+14:28:21 T:3058287136   DEBUG: ------ Window Init (DialogBusy.xml) ------
+14:28:22 T:2872874064   ERROR: CCurlFile::FillBuffer - Failed: Requested range was not delivered by the server(33)
+14:28:22 T:2872874064   ERROR: CCurlFile::CReadState::Connect, didn't get any data from stream.
+14:28:22 T:2872874064   DEBUG: CurlFile::CReadState::Connect - Resume from position 1073676288
+14:28:22 T:2872874064   ERROR: CCurlFile::FillBuffer - Failed: Requested range was not delivered by the server(33)
+14:28:22 T:2872874064   ERROR: CCurlFile::CReadState::Connect, didn't get any data from stream.
+14:28:22 T:2872874064   ERROR: CFileCache::Process - Error 115 seeking. Seek returned -1
+14:28:22 T:2872874064    INFO: CFileCache::Process - Hit eof.
+
+================ Checked by BAD Jin =====================
+14:44:48 T:2868900944   ERROR: Checked by BAD Jin CURLMSG_DONE(1), CURLE_OK(0)
+14:44:48 T:2868900944   ERROR: Checked by BAD Jin CURLE_OPERATION_TIMEDOUT(1), CURLE_PARTIAL_FILE(18)
+14:44:48 T:2868900944   ERROR: Checked by BAD Jin CURLE_COULDNT_CONNECT(7), CURLE_RECV_ERROR(56)
+14:44:48 T:2868900944   ERROR: Checked by BAD Jin CURLE_HTTP_RANGE_ERROR(33), CURLE_HTTP_RETURNED_ERROR(22)
+

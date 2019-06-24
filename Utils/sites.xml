@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FileZilla3 version="3.15.0.2" platform="*nix">
+	<Servers>
+		<Folder expanded="1">My Sites<Server>
+				<Host>ftp.addons.seebo.com.au</Host>
+				<Port>21</Port>
+				<Protocol>0</Protocol>
+				<Type>0</Type>
+				<User>seebo-yang</User>
+				<Pass encoding="base64">bXk4JTBpOFU=</Pass>
+				<Logontype>1</Logontype>
+				<TimezoneOffset>0</TimezoneOffset>
+				<PasvMode>MODE_DEFAULT</PasvMode>
+				<MaximumMultipleConnections>0</MaximumMultipleConnections>
+				<EncodingType>Auto</EncodingType>
+				<BypassProxy>0</BypassProxy>
+				<Name>DDNS4Addons</Name>
+				<Comments />
+				<LocalDir>/media/jin/WorkDrive/SeeboProject/UpdateTestServer/Addons/hex</LocalDir>
+				<RemoteDir>1 0 12 seebo_addons 3 hex</RemoteDir>
+				<SyncBrowsing>0</SyncBrowsing>
+				<DirectoryComparison>0</DirectoryComparison>DDNS4Addons</Server>
+			<Server>
+				<Host>ftp.seebo.com.au</Host>
+				<Port>21</Port>
+				<Protocol>0</Protocol>
+				<Type>0</Type>
+				<User>seebo-jin</User>
+				<Pass encoding="base64">KlE4NXg3YmY=</Pass>
+				<Logontype>1</Logontype>
+				<TimezoneOffset>0</TimezoneOffset>
+				<PasvMode>MODE_DEFAULT</PasvMode>
+				<MaximumMultipleConnections>0</MaximumMultipleConnections>
+				<EncodingType>Auto</EncodingType>
+				<BypassProxy>0</BypassProxy>
+				<Name>DDNS4IPTV</Name>
+				<Comments />
+				<LocalDir>/media/jin/WorkDrive/SeeboProject/Scripts/kowan/m3u</LocalDir>
+				<RemoteDir>1 0 4 IPTV</RemoteDir>
+				<SyncBrowsing>0</SyncBrowsing>
+				<DirectoryComparison>0</DirectoryComparison>DDNS4IPTV</Server>
+			<Server>
+				<Host>45.118.134.179</Host>
+				<Port>22</Port>
+				<Protocol>1</Protocol>
+				<Type>0</Type>
+				<User>root</User>
+				<Pass encoding="base64">U2V0ZnJlZUAhQCM=</Pass>
+				<Logontype>1</Logontype>
+				<TimezoneOffset>0</TimezoneOffset>
+				<PasvMode>MODE_DEFAULT</PasvMode>
+				<MaximumMultipleConnections>0</MaximumMultipleConnections>
+				<EncodingType>Auto</EncodingType>
+				<BypassProxy>0</BypassProxy>
+				<Name>Kowan4Test</Name>
+				<Comments />
+				<LocalDir />
+				<RemoteDir />
+				<SyncBrowsing>0</SyncBrowsing>
+				<DirectoryComparison>0</DirectoryComparison>Kowan4Test</Server>
+			<Server>
+				<Host>139.162.43.139</Host>
+				<Port>22</Port>
+				<Protocol>1</Protocol>
+				<Type>0</Type>
+				<User>root</User>
+				<Pass encoding="base64">c2VlYm9ARnJlZQ==</Pass>
+				<Logontype>1</Logontype>
+				<TimezoneOffset>0</TimezoneOffset>
+				<PasvMode>MODE_DEFAULT</PasvMode>
+				<MaximumMultipleConnections>0</MaximumMultipleConnections>
+				<EncodingType>Auto</EncodingType>
+				<BypassProxy>0</BypassProxy>
+				<Name>KowanTV</Name>
+				<Comments />
+				<LocalDir />
+				<RemoteDir />
+				<SyncBrowsing>0</SyncBrowsing>
+				<DirectoryComparison>0</DirectoryComparison>KowanTV</Server>
+			<Server>
+				<Host>172.104.51.248</Host>
+				<Port>22</Port>
+				<Protocol>1</Protocol>
+				<Type>0</Type>
+				<User>root</User>
+				<Pass encoding="base64">UG9yOTYzMTE=</Pass>
+				<Logontype>1</Logontype>
+				<TimezoneOffset>0</TimezoneOffset>
+				<PasvMode>MODE_DEFAULT</PasvMode>
+				<MaximumMultipleConnections>0</MaximumMultipleConnections>
+				<EncodingType>Auto</EncodingType>
+				<BypassProxy>0</BypassProxy>
+				<Name>LilacTV</Name>
+				<Comments />
+				<LocalDir>/media/jin/WorkDrive2/backuptar/S905</LocalDir>
+				<RemoteDir>1 0 3 opt 18 lampstack-5.6.24-0 7 apache2 6 htdocs 6 BadJin</RemoteDir>
+				<SyncBrowsing>0</SyncBrowsing>
+				<DirectoryComparison>0</DirectoryComparison>LilacTV</Server>
+			<Server>
+				<Host>172.104.51.248</Host>
+				<Port>22</Port>
+				<Protocol>1</Protocol>
+				<Type>0</Type>
+				<User>root</User>
+				<Pass encoding="base64">UG9yOTYzMTE=</Pass>
+				<Logontype>1</Logontype>
+				<TimezoneOffset>0</TimezoneOffset>
+				<PasvMode>MODE_DEFAULT</PasvMode>
+				<MaximumMultipleConnections>0</MaximumMultipleConnections>
+				<EncodingType>Auto</EncodingType>
+				<BypassProxy>0</BypassProxy>
+				<Name>LilacTVAddons</Name>
+				<Comments />
+				<LocalDir>/media/jin/WorkDrive/SeeboProject/UpdateTestServer/Addons/LilacTV/Addons</LocalDir>
+				<RemoteDir>1 0 3 opt 18 lampstack-5.6.24-0 7 apache2 6 htdocs 6 BadJin 6 Addons</RemoteDir>
+				<SyncBrowsing>0</SyncBrowsing>
+				<DirectoryComparison>0</DirectoryComparison>LilacTVAddons</Server>
+			<Server>
+				<Host>172.104.51.248</Host>
+				<Port>22</Port>
+				<Protocol>1</Protocol>
+				<Type>0</Type>
+				<User>root</User>
+				<Pass encoding="base64">UG9yOTYzMTE=</Pass>
+				<Logontype>1</Logontype>
+				<TimezoneOffset>0</TimezoneOffset>
+				<PasvMode>MODE_DEFAULT</PasvMode>
+				<MaximumMultipleConnections>0</MaximumMultipleConnections>
+				<EncodingType>Auto</EncodingType>
+				<BypassProxy>0</BypassProxy>
+				<Name>LilacTVFavourites</Name>
+				<Comments />
+				<LocalDir>/media/jin/WorkDrive/SeeboProject/UpdateTestServer/Addons/Test/System</LocalDir>
+				<RemoteDir>1 0 3 opt 18 lampstack-5.6.24-0 7 apache2 6 htdocs 6 BadJin 10 Favourites</RemoteDir>
+				<SyncBrowsing>0</SyncBrowsing>
+				<DirectoryComparison>0</DirectoryComparison>LilacTVFavourites</Server>
+			<Server>
+				<Host>172.104.51.248</Host>
+				<Port>22</Port>
+				<Protocol>1</Protocol>
+				<Type>0</Type>
+				<User>root</User>
+				<Pass encoding="base64">UG9yOTYzMTE=</Pass>
+				<Logontype>1</Logontype>
+				<TimezoneOffset>0</TimezoneOffset>
+				<PasvMode>MODE_DEFAULT</PasvMode>
+				<MaximumMultipleConnections>0</MaximumMultipleConnections>
+				<EncodingType>Auto</EncodingType>
+				<BypassProxy>0</BypassProxy>
+				<Name>LilacTV_VOD</Name>
+				<Comments />
+				<LocalDir>/media/jin/WorkDrive/TestVideo</LocalDir>
+				<RemoteDir>1 0 3 opt 18 lampstack-5.6.24-0 7 apache2 6 htdocs 6 BadJin 3 VOD</RemoteDir>
+				<SyncBrowsing>0</SyncBrowsing>
+				<DirectoryComparison>0</DirectoryComparison>LilacTV_VOD</Server>
+			<Server>
+				<Host>192.168.15.15</Host>
+				<Port>22</Port>
+				<Protocol>1</Protocol>
+				<Type>0</Type>
+				<User>root</User>
+				<Pass encoding="base64">c2V0ZnJlZTEyMw==</Pass>
+				<Logontype>1</Logontype>
+				<TimezoneOffset>0</TimezoneOffset>
+				<PasvMode>MODE_DEFAULT</PasvMode>
+				<MaximumMultipleConnections>0</MaximumMultipleConnections>
+				<EncodingType>Auto</EncodingType>
+				<BypassProxy>0</BypassProxy>
+				<Name>New site</Name>
+				<Comments />
+				<LocalDir />
+				<RemoteDir />
+				<SyncBrowsing>0</SyncBrowsing>
+				<DirectoryComparison>0</DirectoryComparison>New site</Server>
+			<Server>
+				<Host>139.162.39.212</Host>
+				<Port>22</Port>
+				<Protocol>1</Protocol>
+				<Type>0</Type>
+				<User>root</User>
+				<Pass encoding="base64">c2VlYm9ARnJlZQ==</Pass>
+				<Logontype>1</Logontype>
+				<TimezoneOffset>0</TimezoneOffset>
+				<PasvMode>MODE_DEFAULT</PasvMode>
+				<MaximumMultipleConnections>0</MaximumMultipleConnections>
+				<EncodingType>Auto</EncodingType>
+				<BypassProxy>0</BypassProxy>
+				<Name>OTAUpdateServer</Name>
+				<Comments />
+				<LocalDir />
+				<RemoteDir>1 0 3 opt 6 tomcat 7 webapps 9 otaupdate</RemoteDir>
+				<SyncBrowsing>0</SyncBrowsing>
+				<DirectoryComparison>0</DirectoryComparison>OTAUpdateServer</Server>
+			<Server>
+				<Host>172.104.113.252</Host>
+				<Port>22</Port>
+				<Protocol>1</Protocol>
+				<Type>0</Type>
+				<User>root</User>
+				<Pass encoding="base64">QWlyVGV4</Pass>
+				<Logontype>1</Logontype>
+				<TimezoneOffset>0</TimezoneOffset>
+				<PasvMode>MODE_DEFAULT</PasvMode>
+				<MaximumMultipleConnections>0</MaximumMultipleConnections>
+				<EncodingType>Auto</EncodingType>
+				<BypassProxy>0</BypassProxy>
+				<Name>PungSite</Name>
+				<Comments />
+				<LocalDir>/media/jin/WorkDrive/SeeboProject/UpdateTestServer/Addons/BadJin/Addons</LocalDir>
+				<RemoteDir>1 0 3 opt 18 lampstack-5.6.31-0 7 apache2 6 htdocs 6 BadJin</RemoteDir>
+				<SyncBrowsing>0</SyncBrowsing>
+				<DirectoryComparison>0</DirectoryComparison>PungSite</Server>
+			<Server>
+				<Host>139.162.43.139</Host>
+				<Port>22</Port>
+				<Protocol>1</Protocol>
+				<Type>0</Type>
+				<User>root</User>
+				<Pass encoding="base64">c2VlYm9ARnJlZQ==</Pass>
+				<Logontype>1</Logontype>
+				<TimezoneOffset>0</TimezoneOffset>
+				<PasvMode>MODE_DEFAULT</PasvMode>
+				<MaximumMultipleConnections>0</MaximumMultipleConnections>
+				<EncodingType>Auto</EncodingType>
+				<BypassProxy>0</BypassProxy>
+				<Name>SeeboAddons</Name>
+				<Comments />
+				<LocalDir>/media/jin/WorkDrive/SeeboProject/UpdateTestServer/Addons/hex</LocalDir>
+				<RemoteDir>1 0 3 var 3 www 12 kowan_addons 5 kowan</RemoteDir>
+				<SyncBrowsing>0</SyncBrowsing>
+				<DirectoryComparison>0</DirectoryComparison>SeeboAddons</Server>
+			<Server>
+				<Host>139.162.43.139</Host>
+				<Port>22</Port>
+				<Protocol>1</Protocol>
+				<Type>0</Type>
+				<User>root</User>
+				<Pass encoding="base64">c2VlYm9ARnJlZQ==</Pass>
+				<Logontype>1</Logontype>
+				<TimezoneOffset>0</TimezoneOffset>
+				<PasvMode>MODE_DEFAULT</PasvMode>
+				<MaximumMultipleConnections>0</MaximumMultipleConnections>
+				<EncodingType>Auto</EncodingType>
+				<BypassProxy>0</BypassProxy>
+				<Name>SeeboIPTV</Name>
+				<Comments />
+				<LocalDir>/media/jin/WorkDrive/SeeboProject/Scripts/kowan/m3u</LocalDir>
+				<RemoteDir>1 0 3 var 3 www 4 iptv 4 IPTV</RemoteDir>
+				<SyncBrowsing>0</SyncBrowsing>
+				<DirectoryComparison>0</DirectoryComparison>SeeboIPTV</Server>
+			<Server>
+				<Host>139.162.43.139</Host>
+				<Port>22</Port>
+				<Protocol>1</Protocol>
+				<Type>0</Type>
+				<User>root</User>
+				<Pass encoding="base64">c2VlYm9ARnJlZQ==</Pass>
+				<Logontype>1</Logontype>
+				<TimezoneOffset>0</TimezoneOffset>
+				<PasvMode>MODE_DEFAULT</PasvMode>
+				<MaximumMultipleConnections>0</MaximumMultipleConnections>
+				<EncodingType>Auto</EncodingType>
+				<BypassProxy>0</BypassProxy>
+				<Name>SeeboUpdate</Name>
+				<Comments />
+				<LocalDir>/media/jin/WorkDrive/SeeboProject/UpdateTestServer/MINI</LocalDir>
+				<RemoteDir>1 0 3 var 3 www 21 services.seebo.com.au 13 seebo_updates</RemoteDir>
+				<SyncBrowsing>0</SyncBrowsing>
+				<DirectoryComparison>0</DirectoryComparison>SeeboUpdate</Server>
+			<Server>
+				<Host>railrac.synology.me</Host>
+				<Port>22</Port>
+				<Protocol>1</Protocol>
+				<Type>0</Type>
+				<User>badjin</User>
+				<Pass encoding="base64">amlua2lt</Pass>
+				<Logontype>1</Logontype>
+				<TimezoneOffset>0</TimezoneOffset>
+				<PasvMode>MODE_DEFAULT</PasvMode>
+				<MaximumMultipleConnections>0</MaximumMultipleConnections>
+				<EncodingType>Auto</EncodingType>
+				<BypassProxy>0</BypassProxy>
+				<Name>railrac</Name>
+				<Comments />
+				<LocalDir />
+				<RemoteDir />
+				<SyncBrowsing>0</SyncBrowsing>
+				<DirectoryComparison>0</DirectoryComparison>railrac</Server>
+		</Folder>
+	</Servers>
+</FileZilla3>

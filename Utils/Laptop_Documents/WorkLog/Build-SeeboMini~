@@ -1,0 +1,92 @@
+1. Source Editing
+	1.1. modified service.openelec.settings (0.3.20)
+		1.1.1.	Copied about.py from modified service.openelec.settings (0.2.20)/resources/lib/modules/
+		1.1.2. 	dvd-t path change ->	resources/lib/modules/tunelivetv.py
+										resources/lib/oeWindow.py
+		1.1.3. 	modified connman.py --> add import traceback and edit do_wizard part
+		1.1.4. 	modified defaults.py --> disable bluetooth
+		1.1.5.	Copy dvd-t folder from modified service.openelec.settings (0.2.20)
+
+	###### for only Mini
+	1.2. modified linux-amlogic-3.10.67(e473cae) - source upadte from kernel 3.17.2
+		1.2.1. drivers/media
+				dvb-core/dvb-usb-ids.h
+				dvb-frontends/af9033.c, af9033.h af9033_priv.h
+				tuner/tuner_it913x.c, tuner_it913x.h, tuner_it913x_priv.h
+				usb/
+					dvb-usb-v2/af9035.c af9035.h
+					modified af9035.c from e473cae
+		1.2.2  driver/amlogic/gpu/ump
+				kbuild -> SVN_REV := 0000				
+
+	1.3. modified xbmc -Download fronm Stane 1983's git hub
+		1.3.1. 	modified xbmc-SeeboMini/xbmc/pvr/channels/PVRChannel.cpp -> modified by Stanly
+				modified xbmc-SeeboMini/xbmc/pvr/addons/PVRClient.cpp & h -> modified by Stanly
+			 	modified xbmc-SeeboMini/xbmc/pvr/PVRManager.cpp -> modified by Stanly
+
+		###### for only Mini
+		1.3.2. 	modified xbmc-SeeboMini/xbmc/core/dvdplayer/DVDCodecs/Video/AMCodec.cpp -> disabled HEV type 
+		###### for only Mini
+		1.3.3.  modified xbmc-SeeboMini/xbmc/input/XBMC_keytable.cpp ->	XBMCK_LSUPER ---> XBMCVK_MENU
+
+		1.3.4.  modified strings.po edited by TBird in Frodo to language/English 36044~36048 --> 36644~36648
+				: xbmc/pvr/windows/GUIWindowPVRRecordings.cpp, GUIWindowPVRSearch.cpp, GUIWindowPVRTimers.cpp,
+				GUIWindowPVRChannels.cpp, GUIWindowPVRGuide.cpp
+		1.3.5.	modified xbmc-SeeboMini with ver1.3.4 refer to SeeboMini4134 file			
+
+	###### for only Mini
+	1.4. modified libplayer(XBMCPLAYER_DRIVER="libplayer" : option) - Download fronm Stane 1983's git hub
+		1.4.1.	modified libplayer/amcodec/MakeFile -> Add : mkdir -p $(HEADERS_DIR)
+		1.4.2.	modified libplayer/amcodec/include/codec.h -> change <codec_type.h> ->"codec_type.h"
+
+2. Packages	
+	2.1. modified - network/openssh/systme.d/sshd.service
+	2.2. change png files - tools/plymouth-lite/
+	2.3. modified init file for appending ssh - sysutils/busybox/scripts/init
+	2.4. modified lsb_release file for hiding boot text - sysutils/busybox/scripts/lsb-release
+	2.5. modified cron.service for autoupdate.cron - sysutils/busybox/system.d.opt/cron.service
+	2.6. modified tz-data.service (UTC->Australia/Melbourne) - sysutils/timezone-date/system.d/tz-data.service
+	2.7. modified recovery_reboot-update.patch - devel/recovery_reboot/patches
+	2.8. copy OE4.2/packages/ to OE5.0
+			sysutils/lm_sensors
+			security/gnutls, nettle
+			audio/faad2, libmad, flac, lame, libsamplerate
+			network/afpfs-ng
+			multimedia/crystalhd
+	2.9 .For OEM packages/
+			devel/slang, recovery_reboot
+			tools/mc
+			compress/unrar			
+
+3. Modified scripts/image for OTA package(Installation of Android)
+
+4. backup.tar.bz2	
+	4.1. new built w_scan for SeeboMini --> copy lib.multimedia.w_scan to .xbmc/addons
+	4.2. new built vdr_addon for SeeboMini --> copy bin folder in new one to addons/service.multimedia.vdr-addon
+
+5. Create Installer for Seebo Mini - Shell script
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+1. To build mini
+    1.1 Download "seebo_mini" folder in SVN.
+    1.2 You shouldn't change a directories name to use "use_installer.sh"
+    1.3 Run on your command line "PROJECT=Mini ARCH=arm DEVICE=M8 make release" in "Seebo-OE5.0" directory.
+    1.4 Once compile has done, go to "Installation" folder and execute "usb_installer /dev/sdX"
+
+2. To flash firmware with an USB stick
+    2.1 Boot with "Android recovery mode"
+        Method #1
+            1 Using a sharp non-conductive object to press the recovery button
+            2 In SeeboMini device, this is located in the back of AV connector
+				- - You have to have a look in the board carefully, it is a very small
+            3 Keep pressing, and then connect the power, until you see a RED SCREEN
+        Method #2
+            1. Power on without the USB stick has your firmware
+            2. Connect Seebo Mini with ssh root@your.mini.ip
+            3. Run "reboot recovery"
+
+    2.2 Once you are in Android recovery mode, you can select recovery menus with remote or keyboard
+    2.3 Put your USB stick into the device
+    2.4 Selecet "apply update from EXT" -> "Update from udisk" -> "SeeboMini-update.zip"
+    2.5 Select "reboot system now" after finishing installation
+    2.6 Don't remove your USB stick until loading Seebo TV. It will take a few minutes.
+    2.7 If you see the screen of welocome, the installation is successful.

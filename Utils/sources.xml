@@ -1,0 +1,52 @@
+<sources>
+    <programs>
+        <default pathversion="1"></default>
+    </programs>
+    <video>
+        <default pathversion="1"></default>
+        <source>
+            <name>Videos</name>
+            <path pathversion="1">/storage/videos/</path>
+            <allowsharing>true</allowsharing>
+        </source>
+        <source>
+            <name>TV Shows</name>
+            <path pathversion="1">/storage/tvshows/</path>
+            <allowsharing>true</allowsharing>
+        </source>
+        <source>
+            <name>VOD</name>
+            <path pathversion="1">http://172.104.51.248/BadJin/VOD</path>
+            <allowsharing>true</allowsharing>
+        </source>
+        <source>
+            <name>VOD2</name>
+            <path pathversion="1">http://172.104.51.248/BadJin/VOD2</path>
+            <allowsharing>true</allowsharing>
+        </source>
+        <source>
+            <name>VOD4TVSHOWS</name>
+            <path pathversion="1">http://172.104.51.248/BadJin/vod2temp</path>
+            <allowsharing>true</allowsharing>
+        </source>
+    </video>
+    <music>
+        <default pathversion="1"></default>
+        <source>
+            <name>Music</name>
+            <path pathversion="1">/storage/music/</path>
+            <allowsharing>true</allowsharing>
+        </source>
+    </music>
+    <pictures>
+        <default pathversion="1"></default>
+        <source>
+            <name>Pictures</name>
+            <path pathversion="1">/storage/pictures/</path>
+            <allowsharing>true</allowsharing>
+        </source>
+    </pictures>
+    <files>
+        <default pathversion="1"></default>
+    </files>
+</sources>

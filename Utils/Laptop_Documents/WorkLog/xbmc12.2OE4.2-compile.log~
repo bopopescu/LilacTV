@@ -1,0 +1,46 @@
+1. configure.in modification from xbmc12.2-e2bbb6f.tar.xz
+1.1 line 1336 -----> Insert below
+######################################################
+PKG_CHECK_MODULES([SAMBA], [smbclient],
+    [INCLUDES="$INCLUDES $SAMBA_CFLAGS"; LIBS="$LIBS $SAMBA_LIBS"],samba
+######################################################
+
+1.2 line 2673 -----> Delete below
+#####################################################
+`if test "x$use_xvba" != "xno"; then echo --enable-xvba; else echo --disable-xvba; fi` \
+#####################################################
+
+2. Internal ffmpeg change
+2.1 Delete existed xmbc12.2-e2bbb6f/lib/ffmpeg
+2.2 Copy new ffmpeg from xbmc13.2/lib/ffmpeg
+
+3. mediacenter modification
+3.1 Delete xbmc/patches and copy from OE3.2/packages/mediacenter/xbmc/patchhes
+3.2 xbmc/package.mk modification
+3.2.1 version change 
+	PKG_VERSION="13-0f3db05" --> PKG_VERSION="12.2-e2bbb6f"
+3.2.2 option change
+	Delete below option	
+    $XBMC_WAVEFORM \
+    $XBMC_SPECTRUM \
+    $XBMC_FISHBMC \
+3.3 Copy xbmc addons from OE3.2 
+ Make new package.mk based on OE3.2 meta, build, install files
+
+4. project/your project name/options
+# build and install with DVDCSS support
+# (DVD decryption support in XBMC) (yes / no)
+  DVDCSS_SUPPORT="yes" ---> "no"
+
+5. libamplayer ---> amplayer/Makefile.mk modification
+mkdir -p $(PREFIX)/include/amplayer
+	-install $(INSTALL_FLAGS) $(DIRS:%/=$(SRC)/%/include/*)  $(PREFIX)/include/amplayer
+	amplayer ----> amlplayer
+5.1 packages/multimedia/libamplayer/package.mk modification
+	amcodec ----> amlplayer
+
+6. gcc/incpath.c 462 line ---> gcc-crosscompile-badness patch skip
+
+7. xbmc12.2 source modification : xbmc/cores/amplayer/ AMLPlayer.cpp
+7.1 add #include "cores/AudioEngine/Utils/AEUtil.h" 
+7.2 Disable blocks #if !defined(TARGET_ANDROID) ~ #endif

@@ -1,0 +1,272 @@
+<html>
+ <head>
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+ <meta name="description" content="Stay anonymous on the Internet, have a secure connection, get a complete freedom and access to the region-locked online resources.">
+ <meta name="keywords" content="free vpn, anonymous on the Internet, vpn access, secure connection, freedom on the Internet">
+ <title>Free OpenVPN - Configuration files to free VPN servers in the USA</title>
+ <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+
+<script src="../advert.js"></script>
+
+<div class=gradient>
+
+<center>
+<div style="width: 728px;">
+
+<p class="ck">By visiting this site you agree to the use of cookies for analytics and personalised advertising.</p>
+<hr>
+
+<div style="float: left; padding: 30px 0;">
+<img src="https://www.freeopenvpn.org/img/logo.png">
+</div>
+
+<div class="vrh" style="float: left; margin-left: 211px;"><a href="https://www.freeopenvpn.org/en/" class="wht">HOME</a></div>
+<div class="vrh" style="float: left; margin-left: 30px;"><a href="https://www.freeopenvpn.org/en/connect.php" class="wht">HOW TO CONNECT</a></div>
+<div class="vrh" style="float: left; margin-left: 30px;"><a href="https://www.freeopenvpn.org/forum/" target="_blank" class="wht">FORUM</a></div>
+
+<div style="float: right; margin: 33px 0;">
+<a href="
+https://www.freeopenvpn.org/cf/usa.php"><img src="https://www.freeopenvpn.org/img/rus.png"></a>
+</div>
+
+</div>
+
+</center>
+
+</div>
+
+<div style="width: 100%; height: 25px; background: #e1eaea;">
+
+<center><div style="width: 728px; margin-top: 20px;">
+
+<div id="adsense" style="margin-bottom: -1px;">
+<img src="https://www.freeopenvpn.org/units/adv.png">
+</div>
+
+<p class="ck" style="color: #669999;">
+<b>Remember!</b> Passwords for accessing free VPN-servers could change up to two times a day.</p>
+
+<!-- <p class="ck" style="color: #669999;"><strong><font color="red">ATTENTION!!!</font> New server in Russia!</strong> Please update configuration files.</p> -->
+
+</div><center>
+
+</div>
+
+<center>
+<div style="width: 728; margin: 20px 0;">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- 728 x 90 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-7915563795817110"
+     data-ad-slot="9357113385"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+
+<!-- <p class="ck" style="background: #669999; color: white;">22 Aug 2018 - <strong><font color="red">ATTENTION!!!</font></strong> The bugs on the server in Netherlands are fixed! Please update configuration files.<br></p> -->
+
+<div id='y7u4l'; style="width: 728; margin: 20px 0;">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Links adapt -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7915563795817110"
+     data-ad-slot="2424040188"
+     data-ad-format="link"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+</center>
+
+<div align="center" style="margin: 20px 0;">
+
+<p class="cntr" style="background: #669999; color: white; margin-bottom: 10px; padding: 1px 0 5px;"><strong>Free VPN servers from our partner</strong></p>
+
+<div style="width: 728px;">
+
+<div style="float: left; padding: 2px 0 0 8px; width: 64px; height: 53px; background: #e1eaea;">
+<img src="https://www.freeopenvpn.org/img/flags/Canada.png" alt="Free VPN server in Canada" align="left"><br clear="all">
+<div class="cnt">Canada</div>
+</div>
+
+<div align="center" style="float: left; width: 162px; height: 55px; margin: 0 10px 0 2px; background: #e1eaea;">
+<a href="https://freevpn4you.net/locations/canada.php" target="_blank"><div class="button">Get access</div></a>
+</div>
+
+<div style="float: left; padding: 2px 0 0 8px; width: 64px; height: 53px; background: #e1eaea;">
+<img src="https://www.freeopenvpn.org/img/flags/Sweden.png" alt="Free VPN server in Sweden" align="left"><br clear="all">
+<div class="cnt">Sweden</div>
+</div>
+
+<div align="center" style="float: left; width: 162px; height: 55px; margin: 0 10px 0 2px; background: #e1eaea;">
+<a href="https://freevpn4you.net/locations/sweden.php" target="_blank"><div class="button">Get access</div></a>
+</div>
+
+<div style="float: left; padding: 2px 0 0 8px; width: 64px; height: 53px; background: #e1eaea;">
+<img src="https://www.freeopenvpn.org/img/flags/Russia.png" alt="Free VPN server in Russia" align="left"><br clear="all">
+<div class="cnt">Russia</div>
+</div>
+
+<div align="center" style="float: left; width: 162px; height: 55px; margin: 0 0 0 2px; background: #e1eaea;">
+<a href="https://freevpn4you.net/locations/russia.php" target="_blank"><div class="button">Get access</div></a>
+</div>
+
+<div style="clear: both;"></div>
+
+<hr color="#669999" style="margin-top: 10px;">
+
+</div>
+
+</div>
+<div style="width: 100%; height: 39px; background: #669999; padding-top: 14px; margin: 20px 0;">
+
+<h1><strong>Configuration files to free VPN servers in the USA</strong></h1>
+
+</div>
+
+<center><div style="width: 728px; margin: 20px 0;">
+
+<div style="width: 372px; height: 280px; float: left;">
+
+<div style="width: 9px; height: 34px; float: left; background: #669999;">
+</div>
+<div style="width: 351px; height: 29px; padding: 5px 0 0 21px; background: #e1eaea;">
+<p class="lp">Download:</p>
+</div>
+
+<div style="width: 362px; height: 29px; margin-top: 7px; padding: 5px 0 0 10px; background: #e1eaea;">
+<p class="lp"><a href="https://www.freeopenvpn.org/pservers/USA/USA_130.160.157.78_tcp.ovpn" download=""><strong><u>USA_130.160.157.78_tcp.ovpn</u></strong></p></a>
+</div><div style="width: 362px; height: 29px; margin-top: 7px; padding: 5px 0 0 10px; background: #e1eaea;">
+<p class="lp"><a href="https://www.freeopenvpn.org/pservers/USA/USA_130.160.157.78_udp.ovpn" download=""><strong><u>USA_130.160.157.78_udp.ovpn</u></strong></p></a>
+</div><div style="width: 362px; height: 29px; margin-top: 7px; padding: 5px 0 0 10px; background: #e1eaea;">
+<p class="lp"><a href="https://www.freeopenvpn.org/pservers/USA/USA_136.25.169.5_tcp.ovpn" download=""><strong><u>USA_136.25.169.5_tcp.ovpn</u></strong></p></a>
+</div><div style="width: 362px; height: 29px; margin-top: 7px; padding: 5px 0 0 10px; background: #e1eaea;">
+<p class="lp"><a href="https://www.freeopenvpn.org/pservers/USA/USA_136.25.169.5_udp.ovpn" download=""><strong><u>USA_136.25.169.5_udp.ovpn</u></strong></p></a>
+</div><div style="width: 362px; height: 29px; margin-top: 7px; padding: 5px 0 0 10px; background: #e1eaea;">
+<p class="lp"><a href="https://www.freeopenvpn.org/pservers/USA/USA_45.32.253.161_tcp.ovpn" download=""><strong><u>USA_45.32.253.161_tcp.ovpn</u></strong></p></a>
+</div><div style="width: 362px; height: 29px; margin-top: 7px; padding: 5px 0 0 10px; background: #e1eaea;">
+<p class="lp"><a href="https://www.freeopenvpn.org/pservers/USA/USA_45.32.253.161_udp.ovpn" download=""><strong><u>USA_45.32.253.161_udp.ovpn</u></strong></p></a>
+</div>
+</div>
+
+<div style="width: 336px; float: left; margin-left: 20px;">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- 336 x 280 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:336px;height:280px"
+     data-ad-client="ca-pub-7915563795817110"
+     data-ad-slot="9905183389"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+
+<div style="clear: both;"></div>
+
+</div><center>
+
+<div style="width: 100%; padding: 7px 0 11px; background: #669999;">
+<p class="cntr" style="color: #ffffff;">Configuration files for VPN servers located in the USA are provided by the private individuals on a voluntary basis.<br>
+Stability, performance, and work of such server lies within the competency of aforementioned individuals.</p>
+</div>
+
+<div style="margin: 20px 0;">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- 728 x 90 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-7915563795817110"
+     data-ad-slot="9357113385"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+
+<div style="width: 100%; padding: 7px 0 11px; background: #e1eaea;"><p class="cntr">Also, we offer free Premium VPN-servers located in <a href="https://www.freeopenvpn.org/en/logpass/usa.php"><strong>USA</strong>, </a><a href="https://www.freeopenvpn.org/en/logpass/england.php"><strong>England</strong>, </a><a href="https://www.freeopenvpn.org/en/logpass/russia.php"><strong>Russia</strong>, </a><a href="https://www.freeopenvpn.org/en/logpass/russia-2.php"><strong>Russia-2</strong>, </a><a href="https://www.freeopenvpn.org/en/logpass/russia-3.php"><strong>Russia-3</strong></a>, <a href="https://www.freeopenvpn.org/en/logpass/germany.php"><strong>Germany</strong></a>, and <a href="https://www.freeopenvpn.org/en/logpass/netherlands.php"><strong>Netherlands</strong>.</a></br>Additionally, available to you, a range of private VPN-servers in <a href="https://www.freeopenvpn.org/en/cf/russia.php"><strong>Russia</strong>, </a><a href="https://www.freeopenvpn.org/en/cf/japan.php"><strong>Japan</strong></a>, and <a href="https://www.freeopenvpn.org/en/cf/korea.php"><strong>South Korea</strong>.</a><p></div>
+<center>
+<div style="width: 728; margin: 20px 0;">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Links adapt -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7915563795817110"
+     data-ad-slot="2424040188"
+     data-ad-format="link"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+</center>
+
+<div style="width: 100%; height: 90px; background: #669999;">
+
+<center>
+<div style="width: 728px; padding: 20px 0;">
+
+<div style="float: left;">
+<img src="https://www.freeopenvpn.org/img/logo_l.png">
+</div>
+
+<div style="float: left; margin-left: 182px;">
+<a href="https://sslanalyzer.comodoca.com/?url=www.freeopenvpn.org" target="_blank">
+<img src="https://www.freeopenvpn.org/img/comodo.png"></a>
+</div>
+
+<div style="float: right;">
+<!--LiveInternet counter--><script type="text/javascript">
+document.write("<a href='//www.liveinternet.ru/click' "+
+"target=_blank><img src='//counter.yadro.ru/hit?t44.12;r"+
+escape(document.referrer)+((typeof(screen)=="undefined")?"":
+";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
+screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
+";"+Math.random()+
+"' alt='' title='LiveInternet' "+
+"border='0' width='31' height='31'><\/a>")
+</script><!--/LiveInternet-->
+</div>
+
+</center>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-75824972-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter44997835 = new Ya.Metrika({
+                    id:44997835,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/44997835" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+</body>
+
+</html>

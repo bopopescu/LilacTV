@@ -1,0 +1,52 @@
+=================== How to build & install Seebo Mini Project ==================
+1. Download OpenELEC.TV source
+	# git clone -b openelec-4.2 https://github.com/OpenELEC/OpenELEC.tv
+
+2. Copy SeeboMini to projects folder
+
+3. Copy pre-built sources to sources folder
+	3.1 amlogic-3.10-24e850b.tar.xz, url, md5
+	3.2 service.openelec.settings.zip, url, md5
+
+4. Overwrite modified packages
+	4.1. 	linux
+	4.2. 	linux-drivers
+	4.3. 	linux-firmware
+	4.4. 	network/openssh/systme.d/sshd.service
+	4.5. 	tools/plymouth-lite/
+	4.6. 	sysutils/busybox/scripts/init
+	4.7. 	sysutils/busybox/scripts/lsb_release
+	4.8. 	sysutils/busybox/system.d.opt/cron.service
+	4.9. 	mediacenter/xbmc/package.mk
+	4.10.	multimedia/ffmpeg/package.mk
+	4.11.	multimedia/amcodec/package.mk
+	4.12.	network/libnfs/package.mk
+
+5. Overwrite modified scripts/image
+
+6. Copy a installer folder for SeeboMini
+
+7. Modify the lastest backup.tar.bz2
+	7.1. .xbmc/addon/service.openelec.settings/dvb-t --> move to .xbmc/system/dvb-t
+	7.2. .xbmc/addon/service.openelec.settings --> delete
+	7.3. .xbmc/addon/service.multimedia.vdr-addon --> exchange to new one
+	7.4. .xbmc/addon/lib.multimedia.w_scan --> exchange to new one
+
+8. Copy modified backup.tar.bz2 to installer/Backup folder
+
+9. Compile SeeboMini
+	PROJECT=SeeboMini ARCH=arm DEVICE=M8 make release
+
+10. Make a installer at SD card
+	10.1 put SD card in your host pc
+	10.2 ./installer/create_installer4SD.sh
+
+11. Install SeeboMini
+	11.1 Insert the SD card in SeeboMini device(M8-S802)
+	11.2 Using a sharp non-conductive object to press the recovery button
+	11.3 In SeeboMini device, this is located in the AV connector
+	11.4 Keep pressing, and connect the power, until you see a RED SCREEN
+	11.5 Release button and waiting for an animated Android with a progress bar showing
+	11.6 The device box will then automatically reboot, and start with the our Seebo TV firmware
+	11.7 Don't remove your SD card until loading Seebo TV
+ 

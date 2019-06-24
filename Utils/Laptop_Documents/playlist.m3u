@@ -1,0 +1,23 @@
+#EXTM3U
+#EXTINF:-1 tvg-name="vesti" tvg-logo="vesti",Vesti
+mmsh://62.162.58.55/24vesti
+#EXTINF:-1 tvg-name="4etvTag" tvg-logo="4etv",4E TV
+rtmp://82.192.84.30:1935/live/myStream.sdp
+#EXTINF:-1 tvg-name="1hijau" tvg-logo="1hijau",1hijau TV
+rtmp://119.110.96.71/live/1htv
+#EXTINF:-1 tvg-name="rock" tvg-logo="rock",Rock
+mmsh://mediatv2.topix.it/247066?MSWMExt=.asf
+#EXTINF:-1 tvg-name="amazing" tvg-logo="amazing",Amazing Facts TV
+http://bglive-w.bitgravity.com/amazingfacts/live/feed01
+#EXTINF:-1 tvg-name="QVC" tvg-logo="qvc",QVC TV
+rtmp://cp79650.live.edgefcs.net/live/QVCLive1@14308
+#EXTINF:-1 tvg-name="NewsPeople" tvg-logo="NewsPeople",NewsPeople tv
+http://149.11.34.78:1935/live/newspeopletv.stream/hasbahca.m3u8
+#EXTINF:-1 tvg-name="PacMountain" tvg-logo="PacMountain",Pac Mountain
+http://xrxs.net/video/live-p12moun-4728.m3u8
+#EXTINF:-1 tvg-name="Pentagon" tvg-logo="Pentagon",Pentagon Channel
+http://149.11.34.6:1935/live/pentagon.stream/hasbahca.m3u8
+#EXTINF:-1 tvg-name="Vernnissage" tvg-logo="Vernnissage",Vernnissage TV
+http://149.11.34.6:1935/live/vernissagetv.stream/hasbahca.m3u8
+#EXTINF:-1 tvg-name="Psychic" tvg-logo="Psychic",Psychic Today
+http://204.107.26.252:1935/live/1711.high.stream/HasBahCa.m3u8

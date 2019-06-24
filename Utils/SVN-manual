@@ -1,0 +1,88 @@
+Hi All,
+ This how you should work with trunk. I highly appreciate you to read this Doc and share your ideas.
+
+1. Checkout the latest trunk
+  $ svn co svn+ssh://clk@svn.seebo.com.au/home/seebo/development/seebo_eco/seebo_duo_e/trunk
+  $ svn co svn+ssh://davem@svn.seebo.com.au/home/seebo/development/seebo_eco/HEX/backup.tar
+ 
+  This will create a latest copy of SVN trunk in your local area. If you already have checked out the trunk then fire following command to get updates from SVN (This is important so everybody get synchronized latest SVN)
+  $ svn up
+
+2. Once you check out; start modifying the same checkout (don't make copies and modified it; it will work if you have copy with .svn but I don't want any confusion ).
+
+    You can fire following command to get information about what are the changes you did to your local checkout
+     $ svn stat
+
+    For example you can see output like below.
+   
+    ===================================
+    D    .xbmc_HEX
+    A    jin/NEO/backup.tar.bz2.md5
+    M       OE_5.0/packages/sysutils/busybox/scripts/ini
+   ====================================
+  
+   Here D means you have delete the file, A mean added and M mean modified. Please check following link for more details (http://gotofritz.net/blog/howto/svn-status-codes/)
+
+
+3. Deleting a folder or file
+   $ svn rm <file/folder1_name> <file/folder2_name> .....
+
+   This will remove the file only from your local area. To push this change to svn server you need to commit it by firing
+   $ svn commit -m "<commit_log_message>"
+
+4. To add files or folder
+    $ svn add <file/folder1_name> <file/folder2_name> .....
+
+   To push this to SVN server fire
+   $ svn commit -m "<commit_log_message>"
+
+5. Commit the modified changes (push to SVN)
+    $ svn commit <file1_name> <file2_name> ..... -m "<commit_log_message>"
+
+NOTE: After you push the changes to SVN your "svn stat" only give the different that aren't committed.
+
+6. Checking log for SVN
+    $svn log
+ =================================================================================
+ tarball
+------------------------------------------------------------------------
+r517 | clk | 2015-05-19 20:41:03 +0530 (Tue, 19 May 2015) | 1 line
+
+Name : Stanly , Commit Content : Baseline 1.0.1 (HEX), Ref Doc : N/A, New code Tested : N/A, Existing code Tested : N/A\n, Other comments : Adding .xbmc_HEX (HEX backup.tar) and remving service.multimedia.vdr-addon-4.3.8.zip
+------------------------------------------------------------------------
+r516 | davem | 2015-05-19 20:32:07 +0530 (Tue, 19 May 2015) | 1 line
+
+previous .xbmc delete
+------------------------------------------------------------------------
+r514 | clk | 2015-05-19 03:29:14 +0530 (Tue, 19 May 2015) | 1 line
+
+Name : Stanly , Commit Content : Baseline 1.0.1 (HEX), Ref Doc : N/A, New code Tested : N/A, Existing code Tested : N/A\n, Other comments : Creating silent console for Seebo boot. For HEX (Maxx) build don't show the splash screen at syslinux start up
+------------------------------------------------------------------------
+r511 | clk | 2015-05-19 02:52:42 +0530 (Tue, 19 May 2015) | 1 line
+
+Name : Sam , Commit Content : Baseline seebo_neo/smini_1.0.2, Ref Doc : N/A, New code Tested : N/A, Existing code Tested : N/A, Other comments : N/A
+------------------------------------------------------------------------
+
+ =================================================================================
+
+NOTE: Here If I you look at text highlighted in red, There is no log message. Which bad practice, please check item 7. The item highlighted in blue is revision number (a unique id for commit check item8)
+
+7. SVN commit and message template
+    To push any change to server we need to fire
+    $ svn commit -m "<commit_log_message>"
+
+    The message template should be like
+     Name : <name> , Commit Content : <version> , Ref Doc : <doc_ref> , New code Tested : <Is tested> , Existing code Tested : <Is all feature tested> , Other comments : <comment (change you did)>
+
+   An Example is
+    $ svn commit -m "Name : Stanly , Commit Content : Baseline 1.0.1 (HEX), Ref Doc : N/A, New code Tested : N/A, Existing code Tested : N/A, Other comments : Creating silent console for Seebo boot. For HEX (Maxx) build don't show the splash screen at syslinux start up"
+
+
+8. Check change done for specific commit
+    Example: Scenario I need to check the change done for revision r514.
+    First check adjacent old revision. In our case the previous version is r511. So fire
+
+   $ svn diff -r r511:514
+
+
+Please work in the same area where you checkout the trunk to avoid unnecessary copy and merges. And fire frequently svn up to get latest checkout from SVN. There should be way to configure SVN; so when ever somebody commit something to SVN everybody will get an mail. But I don't have privileges to SVN to make this changes ..May in future we can think :).

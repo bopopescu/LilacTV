@@ -1,0 +1,9 @@
+Install SeeboMini
+
+	1 Insert the SD card in SeeboMini device(M8-S802)
+	2 Using a sharp non-conductive object to press the recovery button
+	3 In SeeboMini device, this is located in the AV connector
+	4 Keep pressing, and connect the power, until you see a RED SCREEN
+	5 Release button and waiting for an animated Android with a progress bar showing
+	6 The device will then automatically reboot, and start with the our Seebo TV firmware updating
+	7 Don't remove your SD card until loading Seebo TV

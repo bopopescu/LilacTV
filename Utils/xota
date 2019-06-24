@@ -1,0 +1,89 @@
+#!/bin/bash
+clear
+echo "  ****************************************************************************"
+echo "  **                                                                        **"
+echo "  **             Build OTA & Copy all to OTA server for backup              **"
+echo "  **                                                                        **"
+echo "  **                                                           by BadJin    **"
+echo "  ****************************************************************************"
+
+if [ -z "$1" ]; then
+  clear
+  echo "#########################################################"
+  echo "# please execute with a device and version as option    #"
+  echo "# example: ./xota cur-Version OTA-Name                  #"
+  echo "#########################################################"
+  exit 1
+fi
+
+curVer="$1"
+newVer="$2"
+OTA="$3"
+
+if [ -z "$3" ]; then
+  OTA=${curVer}-${newVer}
+fi
+OTA_ZIP=$OTA.zip
+
+Home=`pwd`
+preFolder=$Home/ota/x1/$curVer
+tarFolder=$Home/ota/x1/$newVer
+outFolder=out/target/product/x1
+zipFolder=out/target/product/x1/obj/PACKAGING/target_files_intermediates
+
+if [ ! -d "$preFolder" ]; then
+  echo "Not found the current Version folder!"
+  exit 1
+fi
+
+echo "Copying output files to the target folder!"
+mkdir -p $tarFolder
+cp $outFolder/aml_upgrade_package.img $tarFolder
+cp $outFolder/x1-*.zip $tarFolder
+cp $zipFolder/x1-*.zip $tarFolder
+if [ -f "$preFolder/update.xml" ]; then
+  cp $preFolder/update.xml $tarFolder/$OTA.xml
+else
+  cp $Home/update.xml $tarFolder/$OTA.xml
+fi
+
+files=( ls $preFolder/x1-target_files-*.zip )
+curZIP=${files[1]}
+
+files=( ls $tarFolder/x1-target_files-*.zip )
+newZIP=${files[1]}
+
+echo " "
+echo "============================================================================="
+echo "Building the update package!"
+echo "============================================================================="
+echo " "
+./build/tools/releasetools/ota_from_target_files -k ./build/target/product/security/releasekey -i $curZIP $newZIP $tarFolder/$OTA_ZIP
+echo " "
+echo "============================================================================="
+echo "Building the update OTA is done!"
+echo "============================================================================="
+echo " "
+#Create update.xml
+MD5=`md5sum $tarFolder/$OTA_ZIP | awk '{print $1}'`
+SIZE=$(stat -c%s "$tarFolder/$OTA_ZIP")
+python $Home/mkUpdateXML.py $tarFolder/$OTA.xml $OTA_ZIP $MD5 $SIZE > /dev/null
+sleep 1
+
+#Copy target folder to OTA update server for backup
+echo " "
+echo "============================================================================="
+echo "Backup the update package to the OTA update"
+echo "============================================================================="
+echo " "
+#tIP="192.168.15.102"
+#Password="jinkim"
+#option=StrictHostKeyChecking=no
+#echo "  == Connecting to ${tIP}"
+#ssh-keygen -f ~/.ssh/known_hosts -R ${tIP}
+#echo " "
+#echo "  == Copy $newVer to the OTA update server"
+#sshpass -p $Password scp -r -o $option $tarFolder root@${tIP}:/opt/tomcat/webapps/otaupdate/backup
+echo " "
+echo "  == All done!!!"
+echo " "

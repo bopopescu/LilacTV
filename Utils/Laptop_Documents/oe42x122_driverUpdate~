@@ -1,0 +1,14 @@
+1. xbmc12.2				d1002b4 --> e2bbb6d
+	1.1 pvr addons		frodo-910d7e7 --> frodo-d37ec1d
+
+2. kernel : firmware + drivers
+	2.1 Seebo Mini 		3.10.33 --> 3.10.40
+	2.2 Generic(x86) 	3.16.3  --> 3.17.4
+
+3. ffmpeg				2.4.1 --> 2.4.3
+	3.1 add packages/security/libressl
+
+4. Mesa(3d api) 		10.3.0 --> 10.3.4
+
+5. xf86-video-nvidia	340.32 --> 340.58
+

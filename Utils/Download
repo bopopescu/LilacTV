@@ -1,0 +1,27 @@
+#!/bin/sh
+clear
+echo "  ****************************************************************************"
+echo "  **                                                                        **"
+echo "  **                    Download Folder from the target                     **"
+echo "  **                                                                        **"
+echo "  **                                                           by Bad Jin   **"
+echo "  ****************************************************************************"
+
+#tIP="$1"
+tIP="172.16.1.80"
+targetPath="$1"
+Password="Por96311"
+
+ip="$(ifconfig | grep -A 1 'eth0' | tail -1 | cut -d ':' -f 2 | cut -d ' ' -f 1)"
+option=StrictHostKeyChecking=no
+
+if [ -z "$1" ]; then
+  targetPath="storage/.kodi/userdata/addon_data/plugin.program.super.favourites/Super*"
+fi
+
+echo " "
+ssh-keygen -f ~/.ssh/known_hosts -R ${tIP}
+echo "  == Download Favourite List from ${tIP}"
+sshpass -p $Password scp -o $option -r root@${tIP}:/$targetPath ../
+echo " "
+

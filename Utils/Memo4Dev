@@ -1,0 +1,283 @@
+*******************************************************
+
+tail -f <log file>
+
+tar cvJf backup.tar.bz2 .xbmc
+tar xvf backup.tar.bz2
+zip -r service.openelec.settings-0.3.20.zip .
+md5sum -t backup.tar.bz2 > backup.tar.bz2.md5
+
+addons/lib.multimedia.w_scan/bin/w_scan -f t -C UTF-8 -I system/dvb-t/au-Melbourne > userdata/addon_data/service.multimedia.vdr-addon/config/channels.conf
+
+ssh-keygen -f "/home/jin/.ssh/known_hosts" -R 192.168.15.48
+
+svn up
+svn delete --keep-local seebo_mini/
+svn add Mini_OE_4.2_0.2
+dmxb22rkm
+svn commint -m "Add ~~"
+
+=== nfs share server for mini(192.168.15.102)
+1. ssh connect with 192.168.15.102
+2. sudo apt-get install nfs-kernel-server nfs-common portmap
+3. nano /etc/exports
+
+/home/jin/              192.168.15.0/24(rw,fsid=0,insecure,no_subtree_check,async)
+/home/jin/SeeboProject    192.168.15.0/24(rw,nohide,insecure,no_subtree_check,async)
+/home/jin/			144.139.87.99(rw,fsid=0,insecure,no_subtree_check,async)
+/home/jin/Work	144.139.87.99(rw,nohide,insecure,no_subtree_check,async)
+
+4. save and exit
+5. sudo exportfs -ra
+6. sudo service nfs-kernel-server restart
+
+with my laptop terminal
+1. sudo mount -t nfs4 -o proto=tcp,port=2049 192.168.15.102:/SeeboProject /media/jinkim/WorkDrive/SeeboProject/
+1. sudo mount -t nfs4 -o proto=tcp,port=2049 172.16.1.92:/opt/ /home/badjin/Android/Server14/
+2. you can find shared folder
+
+=============================================================
+
+user: tdinh, password: tdxb22rkm. IP: 192.168.15.102
+user: tuan.dinh@192.168.15.20, passwofind . -exec perl -pi -e 's/\/\/#define/#define/g' {} \;
+
+출처: http://soharang.tistory.com/1064 [e-Story]rd: tdxb22rkm
+
+
+simbol link
+cd target-dir
+ln -s ../xxx.txt .
+
+#### addion compile
+PROJECT=S905 ARCH=arm scripts/create_addon pvr.iptvsimple
+### install initramfs
+PROJECT=NEO ARCH=arm DEVICE=M8 ./scripts/install initramfs
+
+chmod -R 755 --> -rwxr-xr-x
+
+killall -9 xbmc.bin
+
+wizard call ---> .xbmc/userdata/addon_data/service.openelec.settings/oe_settings.xml
+
+diff -uw file1 file2
+grep -r "string"
+
+ftp.seebo.com.au 21port
+seebo-jin
+*Q85x7bf
+seebo-yang
+my8%0i8U
+
+to access /seebo_updates folder
+ssh seebo-jinupdates@175.45.125.180:21
+UN:seebo-jinupdates
+PW:yXm8e6$6
+
+===netflix id/pass===
+tuan.dinh@seebo.com.au / tdxb22rkm
+===stan id/pass===
+jin.kim@seebo.com.au / jkxb22rkm
+===pandora id/pass===
+david.mitchell@seebo.com.au / seeboxb22rkm
+===spotify id/pass===
+seebonetwork / seeboxb22rkm
+===Filmon===
+shaoyang@me.com / lovexin1986
+
+Compress folder Test/ to Test.tar.gz
+tar czfv Test.tar.gz Test/
+czfv = ‘Compress Zip File Verbose’
+If you want bzip files, use ‘j’ instead of ‘z’.
+xz = J
+
+Uncompress Test.tar.gz to folder Test/
+tar -xzf Test.tar.gz
+x = ‘eXtract’
+Again, if you want bzip files, use ‘j’ instead of ‘z’.
+
+mount -o remount,rw /flash
+
+iconv -f euc-kr -t utf8 -c *.smi > *.srt
+
+192.168.50.1 admin/password -> 192.168.15.28 -> 118.209.186.49
+192.168.15.1 admin/admin -> 139.130.88.2
+
+
+ps ax | grep vdr -> kill 2215(process id)
+
+svn commit -m "Name : Jin , Commit Content : HEX, Ref Doc : N/A, New code Tested : N/A, Existing code Tested : N/A, Other comments : Updating xbmc-HEX and xbmc-pvr-addons for user dialogue"
+
+https://ask.fedoraproject.org/en/question/40353/how-to-enable-samba-share-for-a-specific-directory-fedora-20/
+http://www.server-world.info/en/note?os=Fedora_21&p=nfs
+
+to get screenshot adding below to guisetting.xml in .xbmc/userdata/
+    <debug>
+        <extralogging default="true">true</extralogging>
+        <screenshotpath>/storage/screenshots/</screenshotpath>
+        <setextraloglevel default="true">32768</setextraloglevel>
+        <showloginfo default="true">false</showloginfo>
+    </debug>
+xbmc-send --action="TakeScreenshot"
+
+***UpdateTestServer***
+cd SeeboProject/UpdateTestServer
+python -m SimpleHTTPServer 2000
+
+scp jin@192.168.15.102:~/SeeboProject/temp/ViewsPVR.xml .xbmc/addons/skin.seebo.dev/720p/
+
+###service log message
+connmand -d
+journalctl --no-pager -b
+
+awk 'BEGIN{FS=";"} !x[$1]++ {print $0}' channels.conf
+
+=====url update machine
+joeboddy@192.168.15.24
+jkxb22rkm
+=====addon checking device
+192.168.15.28
+=====Linode Server credentials
+   IP       139.162.43.139
+   root     seebo@Free
+   seebotv  setFree!@#
+   ssh root@139.162.43.139
+
+						root@45.118.134.179
+						root:Setfree@!@#
+
+uname: seebo
+pwd: sNa@1234#
+
+
+#139.162.43.139
+139.162.39.212 -->OTA Server
+seebo@Free
+
+Peng's server. ssh root@172.104.113.252
+password: AirTex
+MySQL root password : AirTex
+
+MyServer ssh root@172.104.51.248
+
+#############Compile on Actual target (Fedora21)r
+1. sudo yum install autoconf automake binutils cpp cvs gcc gcc-c++ glibc-devel glibc-headers glibc-static kernel-devel kernel-headers libmpc libstdc++-devel libstdc++-static ncurses-devel perl-libintl perl-Test-Harness perl-Text-Unidecode perl-Thread-Queue texinfo perl-XML-Parser
+
+
+
+For new compile evironment:
+sudo apt-get install subversion curl git build-essential u-boot-tools gcc-multilib lib32stdc++6 lzop xmlstarlet Help2man zlib1g:i386 texlive
+
+Real EPG : http://123.231.13.241:8082/EPG/EPGServlet
+
+For url update script : ssh joeboddy@192.168.15.71 (pass:jbxb22rkm)
+
+For Addon update : https://docs.google.com/spreadsheets/d/1gvZz6WFgPFdmgbHCJ9k1S_DhAkajpSD4NcChjhNboS8/edit#gid=0
+For RRM : https://docs.google.com/spreadsheets/d/1qHa1_PFiOFemD61kg0u7AnIGXN24AXHICt31z38OTtA/edit?usp=sharing
+
+mkdir kowan
+cd kowan
+git clone https://jin_seebo@bitbucket.org/seeboeco/eco.git
+cd eco
+git checkout kowan_master
+create xbmc, service.oe, pvr-addons connman packages(zip or tar)
+PROJECT=KOWAN ARCH=arm DEVICE=M8  make release
+
+/storage/.kodi/addons/lib.multimedia.w_scan/bin/w_scan -f t -C UTF-8 -I /storage/.kodi/addons/lib.multimedia.w_scan/dvb-t/Melbourne > /storage/.kodi/userdata/addon_data/service.multimedia.vdr-addon/config/channels.conf
+
+
+
+VGA Resolution and Color Depth reference Chart:
+Depth	  800×600	1024×768	1152×864	1280×1024	1600×1200
+ 8 bit	vga=771	vga=773	  vga=353	  vga=775	  vga=796
+16 bit	vga=788	vga=791	  vga=355	  vga=794	  vga=798
+24 bit	vga=789	vga=792	 	vga=795	  vga=799
+
+dpkg -l | grep libsdl
+apt-get install ibsdl2-2.0-0 libsdl2-dev
+sudo apt-get build-dep python-pygame
+
+To fix "read-only mount for usb"
+mv ~/.config/nautilus ~/.config/nautilus-bak
+
+nano of course can delete blocks, see this article
+use CTRL+Shift+6 to mark the beginning of your block
+move cursor with arrow keys to end of your block, the text will be highlighted.
+use CTRL+K to cut/delete block.
+
+Tvheadend 설치 - https://blog.chanha.me/?p=410
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 379CE192D401AB61
+--> for 14.04
+sudo echo "deb https://dl.bintray.com/tvheadend/deb trusty stable" | sudo tee -a /etc/apt/sources.list
+--> for 16.04
+sudo echo "deb https://dl.bintray.com/tvheadend/deb xenial stable" | sudo tee -a /etc/apt/sources.list
+sudo apt-get update
+sudo apt-get install tvheadend
+
+
+Path: .
+Working Copy Root Path: /home/tweerasinghe/Work/SVN/seebo_eco
+URL: svn+ssh://clk@svn.seebo.com.au/home/seebo/development/seebo_eco/EPG_Server_Development
+Relative URL: ^/seebo_eco/EPG_Server_Development
+Repository Root: svn+ssh://clk@svn.seebo.com.au/home/seebo/development
+Repository UUID: 609d8210-133c-4bf8-82ab-aa1246ae77ca
+Revision: 1872
+Node Kind: directory
+Schedule: normal
+Last Changed Author: clk
+Last Changed Rev: 1388
+Last Changed Date: 2016-08-04 12:07:41 +0530 (Thu, 04 Aug 2016)
+
+Here is the repo:
+/seebo_eco/EPG_Server_Development/EPGServer
+
+I suggest you study the code base first. When we add a channel the first thing is to find out the correct EPG Source. That you can do by searching the internet.
+
+Then,
+
+1. You write the parser to get the data
+2. You call the parser in the grabber to save them
+
+(This is the structure of the original code based initiated by Sasi and then developed by Harsh, Samee and Myself.)
+
+Should you have any questions please ask.
+
+First go through the code base to get an idea. Not hard mate.
+
+Parsers:
+seebo_eco/EPG_Server_Development/EPGServer/src/com/seebo/epg/parsers
+
+Grabbers:
+/seebo_eco/EPG_Server_Development/EPGServer/src/com/seebo/epg/grabber
+
+find . -name '*.pyo' -exec rm {} \;
+xbmc-send --action="UpdateAddonRepos"
+xbmc.executebuiltin('UpdateAddonRepos')
+
+Xstreaz compile server ssh root@192.168.15.15 setfree123
+/opt/905X_1018SDK/20161008update-no-git
+setfree123 > release key
+
+For 905x-7.1.2
+1. eth0 issue
+   https://ubuntuforums.org/showthread.php?t=2337580
+2. javac issue
+   source /etc/environment
+   javac -J-version
+   update-alternatives --config javac
+
+http://iptvtop.ddns.net:25461/get.php?username=railrac23@gmail.com
+&password=MmkR875lu3&type=m3u_plus&output=ts
+
+분활압축
+tar cvfz - path | split -b 4096m - file.tar.gz
+tar cvfz AOS7_X1MINI/ | split -b 4096m - AOS7_X1MINI.tar.gz
+cat name.tar.gza* | tar xvfz –
+
+find . -exec perl -pi -e 's/\/khadas\//\/amlogic\//g' {} \;
+
+iconv -c -f euc-kr -t utf-8 자막이름.smi > 자막이름.smi
+
+adb remount adb push package.apk /system/apps/
+
+echo -n Welcome | md5sum
+fba5cd974fc638f8bd8b8868f4bdfc81

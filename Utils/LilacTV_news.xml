@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+  <channel>
+    <title>라일락TV</title>    
+    <item>
+      <title>현재 이 Device의 버전은 [설정] 메뉴의 서브메뉴(왼쪽방향키 클릭)의 [시스템 정보] > [요약]에서 운영체제 부분을 통해 확인하 실 수 있습니다. 현재 LilacTV 최신 버전은 1.0.6 입니다.</title> 
+    </item>
+    <item>
+      <title>------</title>      
+    </item>
+    <item>
+      <title>자막 안내 : 라일락티비 추천 항목에 신규로 업데이트된 영화중 자막이 없는 경우 대상 영상의 재생시 [OK]버튼 클릭 후, 하단 메뉴의 [오디오] > [자막찾기] 에서 해당 영화의 자막파일을 찾아서 선택하시면 한글자막이 활성화 됩니다.</title>
+    </item>
+    <item>
+      <title>------</title>      
+    </item>
+    <item>
+      <title>[야구], [골프]관련 VOD가 [예능VOD] 메뉴의 서브메뉴(왼쪽방향키 클릭)에 업데이트 되었습니다.</title>
+    </item>
+      <title>대부분의 메인 메뉴는 각각의 서브 메뉴를 가지고 있으며, 이것은 리모컨의 왼쪽 방향 버튼을 선택하시면 확인 할 수 있습니다.</title>
+    </item>
+    <item>
+      <title>------</title>      
+    </item>  
+    <!--<item>
+      <title>한국 VOD 애드온 안내</title> 
+    </item>
+    <item>
+      <title>[애드온] > "주비디오" / "IcDrama" / "온디맨드코리아" 를 이용해서 다양한 한국 VOD 를 시청하실 수 있습니다.</title>
+    </item>
+    <item>
+      <title>------</title>      
+    </item>-->
+    <item>
+      <title>원활한 영상 재생을 위해 유선 인터넷 연결을 권장합니다.</title>      
+    </item>
+    <item>
+      <title>WiFi 연결에 의한 영상 재생시 접속 및 재생이 원활하지 않을 수 있습니다.</title>
+    </item>    
+    <item>
+      <title>------</title>      
+    </item>
+    <item>
+      <title>필요시 프로그램의 업데이트는 시스템 시작시 자동적으로 진행됩니다. 원할한 시스템 유지관리를 위해서 하루에 한 번 시스템을 재시작 하십시요.</title>
+    </item>
+    <item>
+      <title>시스템 재설치는 [설정] > [시스템] 메뉴를 통해 진행하실 수 있습니다.</title>      
+    </item>
+    <item>
+      <title>시스템 관련 문의사항은 카톡(ID:supereliot)으로 문의 하시기 바랍니다.</title>      
+    </item>    
+  </channel>
+</rss>

@@ -1,0 +1,19 @@
+﻿﻿#EXTM3U
+#EXTINF:-1,Arirang
+http://worldlive-ios.arirang.co.kr/arirang/arirangtvworldios.mp4.m3u8
+#EXTINF:-1,BEIN SPORTS 1 HD
+http://2co1.vp9.tv/chn/bin01/v.m3u8
+#EXTINF:-1,BEIN SPORTS 2 HD
+http://2co1.vp9.tv/chn/bin02/v.m3u8
+#EXTINF:-1,BEIN SPORTS 4 HD
+http://2co1.vp9.tv/chn/bin04/v.m3u8
+#EXTINF:-1,CiNEMAX.
+http://113.160.49.34/lives/origin03/cinemaxsd.isml/cinemaxsd-1096k.m3u8
+#EXTINF:-1,FOX SPORT HD.
+http://113.160.49.34/lives/origin03/foxhd.isml/foxhd-2096k.m3u8
+#EXTINF:-1,HBO HD.
+http://113.160.49.34/lives/origin03/hbohd.isml/hbohd-2096k.m3u8
+#EXTINF:-1,AXN HD.
+http://113.160.49.34/lives/origin03/axnhd.isml/axnhd-2096k.m3u8
+#EXTINF:-1,Star Movies HD
+http://113.160.49.34/lives/origin03/moviehd.isml/moviehd-2096k.m3u8

@@ -1,0 +1,62 @@
+clear
+echo "  ****************************************************************************"
+echo "  **                                                                        **"
+echo "  **                        Compile with new version                        **"
+echo "  **                                                                        **"
+echo "  **                                                           by BadJin    **"
+echo "  ****************************************************************************"
+
+if [ -z "$1" ]; then
+  clear
+  echo "#########################################################"
+  echo "# please execute with a device and version as option    #"
+  echo "# example: ./mkbuild new-Version                        #"
+  echo "#########################################################"
+  exit 1
+fi
+
+export JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64/jre
+export PATH=$JAVA_HOME/bin:$PATH
+source ./build/envsetup.sh
+
+#!/bin/bash
+
+Home=`pwd`
+
+config=$Home/device/amlogic/x1/system.prop
+newVer=$1
+
+UpdateVersion(){
+
+  local oldVer=$1
+
+  line=`sed -n '/ro.product.firmware/p' $config`
+  if [ -n "$line" ]; then
+    oldVer=`echo $line | awk -F"[=]" '{print $2}'`
+    if [ "$oldVer" == "$newVer" ]; then
+      echo "The version you want to make is already done!"am	
+      echo "Try to make OTA with another version!"
+      exit 1
+    fi
+    sed -i "s|$oldVer|$newVer|" $config
+  fi
+}
+
+UpdateVersion $oldVer
+tarNo=116
+lunch $tarNo
+
+echo " "
+echo "============================================================================="
+echo "Compiling the update package!"
+echo "============================================================================="
+echo " "
+make installclean
+make -j8 otapackage
+sleep 1
+
+echo " "
+echo "============================================================================="
+echo "Done Compiling!"
+echo "============================================================================="
+echo " "

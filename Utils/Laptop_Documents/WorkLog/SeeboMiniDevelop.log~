@@ -1,0 +1,6 @@
+08:40:27 T:2888971344   DEBUG: usleep(RW_WAIT_TIME), len(0)
+08:40:27 T:2888971344   DEBUG: CAMLCodec::Decode: write_av_packet looping
+08:40:27 T:2888971344   DEBUG: write codec data failed, write_bytes(-1), errno(11), size(88733)
+
+
+

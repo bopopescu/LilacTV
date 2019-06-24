@@ -1,0 +1,30 @@
+1. Interlacing
+
+2. Boot message: still showing the "SeeboTV Unofficial...."
+	modified lsb_release file for hiding boot text - sysutils/busybox/scripts/lsb-release
+	. /etc/os-release --> #. /etc/os-release
+     echo "$PRETTY_NAME" --> # echo "$PRETTY_NAME"
+
+3. Addons Management, Clean up
+
+4. Weather, Apps removal
+
+5. Wifi connection
+
+6. Tunelivetv in Networks ---> (It should be in LiveTV right ??) The dialog message, this must be dealt with
+
+7. SeeboTV software version should be inn System Info <--- NOT PROBLEM
+
+8. Massive control and customer assistance on OnDemand things
+
+9. Remove Confluence from the default list
+
+10. Cron is not running ...
+	10.1. modified cron.service for autoupdate.cron - sysutils/busybox/system.d.opt/cron.service
+		ExecStartPre=/bin/mkdir -p /storage/.cache/cron/crontabs /storage/packages/
+		ExecStart=/sbin/crond -b -L /storage/packages/logfile.cron
+	10.2. Append autostart.sh in projects/SeeboMaxx/filesystem/usr/config/
+		Edit --> crontab /etc/seebo/autoupdate.cron in autostart.sh
+11. Pause LiveTv (time shifting...)
+
+Please add more...

@@ -1,0 +1,16 @@
+
+	Seebo Mobile app						Seebo Mini
+
+		App										
+
+		install using ADB(Android Debug Bridge) + sideload
+		
+	AOSP(Android Open Source Project)		OpenELEC + Seebo Mini(Gotham)
+				
+					Install using OTA package : Update.zip (kernel + system)
+		
+	recovery image							recovery image (Customized by Stane who developed AmLinux)
+		+										+
+	Stock ROM								Stock ROM(KitKat 4.4.2)	
+	
+	

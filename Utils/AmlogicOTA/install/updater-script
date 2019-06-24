@@ -1,0 +1,38 @@
+set_bootloader_env("upgrade_step", "3");
+show_progress(0.500000, 3);
+
+ui_print("Wiping Userdata");
+format("ext4", "EMMC", "/dev/block/data", "0", "/data");
+
+ui_print("Writing kernel image");
+write_raw_image(package_extract_file("KERNEL"), "boot");
+show_progress(0.020000, 0);
+
+ui_print("Wiping System");
+format("ext4", "EMMC", "/dev/block/system", "0", "/system");
+mount("ext4", "EMMC", "/dev/block/system", "/system");
+ui_print("Writing system files");
+package_extract_dir("system", "/system");
+ui_print("Writing backup.tar.bz2");
+package_extract_file("backup.tar.bz2", "/system/backup.tar.bz2");
+package_extract_file("backup.tar.bz2.md5", "/system/backup.tar.bz2.md5");
+package_extract_file("update.tar.bz2.md5", "/system/update.tar.bz2.md5");
+package_extract_file("SYSTEM.md5", "/system/SYSTEM.md5");
+package_extract_file("KERNEL.md5", "/system/KERNEL.md5");
+set_perm_recursive(0, 0, 0775, 0644, "/system");
+set_perm(0, 0, 0755, "/system/SYSTEM");
+set_perm(0, 0, 0755, "/system/backup.tar.bz2");
+set_perm(0, 0, 0755, "/system/backup.tar.bz2.md5");
+set_perm(0, 0, 0755, "/system/update.tar.bz2.md5");
+set_perm(0, 0, 0755, "/system/SYSTEM.md5");
+set_perm(0, 0, 0755, "/system/KERNEL.md5");
+unmount("/system");
+
+show_progress(0.300000, 60);
+ui_print("Writing logo");
+write_raw_image(package_extract_file("logo.img"), "logo");
+
+ui_print("Completing");
+show_progress(0.100000, 0);
+ui_print("LilacTV Installed Successfully");
+set_bootloader_env("upgrade_step", "1");

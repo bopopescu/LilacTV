@@ -1,0 +1,278 @@
+AOS_8.0
+================================================================================================
+1. run deploy_amlogic_ubuntu.sh without "check software"
+
+2. install all about dependency
+  sudo apt-get install libpq-dev python-dev libxml2-dev libxslt1-dev libldap2-dev libsasl2-dev libffi-dev
+  sudo apt-get install git-core gnupg flex bison gperf build-essential zip curl zlib1g-dev gcc-multilib g++-multilib libc6-dev-i386 lib32ncurses5-dev x11proto-core-dev libx11-dev lib32z-dev ccache libgl1-mesa-dev libxml2-utils xsltproc unzip autoconf m4
+
+3. Make symlink in /opt/gcc-linaro-6.3.1-2017.02-x86_64_aarch64-linux-gnu/libexec/gcc/aarch64-linux-gnu/6.3.1
+   sudo ln -s liblto_plugin.so.0.0.0 liblto_plugin.so.0
+   sudo ln -s liblto_plugin.so.0.0.0 liblto_plugin.so
+
+4. Skip the process for "manifest.xml" in /device/amlogic/common/factory.mk
+                                          /device/amlogic/common/products/mbox/upgrade_4.9/aml_upgrade_package.conf
+
+5. change common/arch/arm64/boot/dts/amlogic/mesongxl.dtsi for remote
+
+6. uboot/board/amlogic/configs/ 
+      Gxl_p212_v1.h , can config ddr frequency and remote power key
+
+7. change u-boot.bin.sd.bin, u-boot.bin.usb.bl2, u-boot.bin.usb.tpl and uboot.bin from old ones.
+
+==============================OK p212
+
+8. commented Launcher2, OTAUpgrade in device/amlogic/common/core_amlogic.mk
+
+9. Copy vendor/seebo for preinstall apps
+
+==============================OK nuwa
+
+10. Change /system/core/adb/daemon/main.cpp find the method “local_init”, analyze the source code to set default adb port. change setup_port(int port) --local_init(3116);
+
+11. device/amlogic/common/releasetools.py, change 
+      def IncrementalOTA_InstallBegin(info):
+        LoadInfoDict_amlogic(info.info_dict, info.target_zip);
+
+==============================OK nuwa
+
+12. In device/amlogic/common/products/mbox/product_mbox.mk
+    Comment MboxLauncher, bootanimation
+
+==============================OK nuwa
+
+13. Copy releasekey.pk8, releasekey.x509.pem from old ones   to build/make/target/product/security
+    Change ota_from_target_files.py                          to build/make/tools/releasetools/
+
+==============================OK nuwa
+
+14. Change Makefile, config.mk                               to build/make/core
+    replaced readPassword(File keyFile) as below
+       private static String readPassword(File keyFile) {
+        return "setfree123";
+       }
+    in build/make/tools/signapk/src/com/android/signapk/SignApk.java
+
+==============================OK nuwa
+
+15. Change packages/apps/TvSettings/Settings from x1
+
+
+
+************NUWA_mini********************
+
+1. baseed on nuwa
+
+2. change p212 to p281 in device/amlogic/nuwa_mini
+
+----> Linux mods for DataTree
+3. copy amlogic dts folder from linux-amlogic-d5609775667d3f4ebd33b12d4e19931fc592996d to common/arch/arm64/boot/dts/
+
+4. make dts files for p282 1G/2G in common/arch/arm64/boot/dts/amlogic
+   gxl_p281_1g.dts / gxl_p281_2g.dts
+
+5. modify mesontxl.dtsi in common/arch/arm64/boot/dts/amlogic
+
+6. copy dt-bindings/clock/gxl.h to same location
+
+7. copy dt-bindings/reset/aml_gxl.h to same location
+----------------------------------------------------------------
+
+
+
+
+For GMS(Google Mobile Service)
+=============================================================================================
+
+refer to http://forum.khadas.com/t/can-khadas-codebase-support-gms-integration/540
+
+$ cd vendor/amlogic
+$ git clone https://github.com/terry2droid/google
+Add $(call inherit-product-if-exists, vendor/amlogic/google/gms_mini.mk) in p212.mk
+
+
+From here by Yang
+================================================================================================
+Amlogic Firmware Modification Specification
+
+
+Add a new product, for example, new product is called nuwa,
+
+Copy device/amlogic/p212 to device/amlogic/nuwa
+	Change p212.mk to nuwa.mk
+            Add below item to nuwa.mk
+            # bootanimation
+PRODUCT_COPY_FILES += \
+    		device/amlogic/nuwa/bootanimation.zip:system/media/bootanimation.zip
+
+	######preinstall#########
+PRODUCT_PACKAGES += \
+Launcher \
+LiveStreams \
+OTAUpgrade2 \
+ParentalControl \
+ProvisionTool
+
+
+######netflix
+ARD_WIDEVINE_OEMCRYPTO_LEVEL := 1
+TARGET_BUILD_NETFLIX:= true
+
+
+###############add lib##############
+PRODUCT_COPY_FILES += \
+    vendor/seebo/system/armeabi-v7a/libanw.21.so:system/lib/libanw.21.so \
+    vendor/seebo/system/armeabi-v7a/libcompat.7.so:system/lib/libcompat.7.so \
+    vendor/seebo/system/armeabi-v7a/libvlc.so:system/lib/libvlc.so \
+    vendor/seebo/system/armeabi-v7a/libvlcjni.so:system/lib/libvlcjni.so \
+    vendor/seebo/system/armeabi-v7a/libavcodec.so:system/lib/libavcodec.so \
+    vendor/seebo/system/armeabi-v7a/libavresample.so:system/lib/libavresample.so \
+    vendor/seebo/system/armeabi-v7a/libavutil.so:system/lib/libavutil.so \
+    vendor/seebo/system/armeabi-v7a/libc++_shared.so:system/lib/libc++_shared.so \
+    vendor/seebo/system/armeabi-v7a/libffmpeg.so:system/lib/libffmpeg.so \
+    vendor/seebo/system/armeabi-v7a/librtmp-jni.so:system/lib/librtmp-jni.so
+
+
+
+            
+	Copy boot animation.zip to device/amlogic/nuwa/
+	Modify vendorsetup.sh for new product
+ 	Modify other files and change the p212 reference to nuwa. 
+	Modify BoardConfig.mk for board config changes if there are changes for board settings.
+       2. In device/amlogic/nuwa/files/
+	Replace Vendor_0001_Product_0001.kl and remote.conf with your own file. These two files are used to match remote controller. You may modify them if there are new remotes needed.
+3. In device/amlogic/nuwa/logo_img_files, bootup.bmp needs to be replaced to your own bmp file for kernel bootup logo. It must be 16bit rgb888 bmp file.
+4. Remove device/amlogic/nuwa/overlay/vendor/amlogic/apps/MboxLauncher2,
+Files in overlay folder will replace the original ones when compile the firmware
+5.  Add below items to system.prop
+#update server
+ro.product.firmware=0.1
+ro.product.otaupdateurl=http://xtreamz.seebo.com.au/otaupdate/update
+ro.product.server=119.23.63.103
+ro.product.update.autocheck=true
+ro.product.security=xstreamz
+persist.sys.app.factory=false
+#add app protection
+ro.platform.stopbackground.app=com.xtreamz.iptv,
+
+#netflix
+ro.nrdp.modelgroup=S905
+
+6. In device/amlogic/nuwa/recovery/
+Mofify recovery.kl for remote key config in recovery.
+7. Replace u-boot.bin if uboot has been modified and compiled.
+8. Replace uboot related files in device/amlogic/nuwa/upgrade if uboot has been modified and compiled.
+9. In device/amlogic/common/products/mbox/product_mbox.mk
+    Comment MboxLauncher, bootanimation
+
+
+If use new sdk:
+10. In deivce/amlogic/common/core_amlogic.mk,
+      Delete PRODUCT_PACKAGES OTAUpgrade
+
+11. Copy vendor/google for GMS
+
+12. Copy vendor/seebo for preinstall apps
+
+13. Replace /build/target/product/security with old ones for signature.
+      Change build/make/core/config.mk
+Add:
+
+# Yang define default dev certificate
+PRODUCT_DEFAULT_DEV_CERTIFICATE := build/target/product/security/releasekey
+
+edit :
+Ota_from_target_files,
+def SignOutput(temp_zip_name, output_zip_name):
+ #key_passwords = common.GetKeyPasswords([OPTIONS.package_key])
+ #pw = key_passwords[OPTIONS.package_key]
+ pw ="setfree123"
+ common.SignFile(temp_zip_name, output_zip_name, OPTIONS.package_key, pw,
+                 whole_file=True)
+
+
+
+
+New solution:
+
+vim system/sepolicy/private/keys.conf, change key settings. ?? May not work
+
+
+
+14. In build/make/core/Makefile,
+      ifeq ($(DEFAULT_SYSTEM_DEV_CERTIFICATE),build/target/product/security/testkey)
+BUILD_KEYS := test-keys
+else
+BUILD_KEYS := dev-keys
+endif
+
+
+Change dev-keys to release-keys
+
+
+14. Copy old SignApk.java to build/tools/signapk 
+
+15. Change /system/core/adb find the method “local_init”, analyze the source code to set default adb port. In 8.0 SDK, modify daemon/main.cpp change setup_port(int port)
+16. Change ./build/tools/releasetools/ota_from_target_files for releasekey password
+17. uboot/board/amlogic/configs/ 
+      Gxl_p212_v1.h , can config ddr frequency and remote power key
+
+18. device/common/core_amlogic.mk, comment Launcher2 package
+
+19. In android 7.0 obove 64 bit, common/arch/arm64/boot/dts/amlogic/       change for remote customization dtsi.
+
+20. In 8.0 sdk, check tv settings package, if it’s MainActivity is not set launcher in manifest, then
+Goto device/amlogic/nuwa/overlay/packages/apps/TvSettings/Settings 
+Add 
+
+                <category android:name="android.intent.category.Launcher"/>
+To MainSetting
+
+21. device/amlogic/common/releasetools.py, change 
+      def IncrementalOTA_InstallBegin(info):
+ LoadInfoDict_amlogic(info.info_dict, info.target_zip);
+
+
+Tip:
+Sign full ota from target files:
+./build/tools/releasetools/ota_from_target_files -v     --block                 --extra_script=device/amlogic/nuwa/../common/recovery/updater-script    --extracted_input_target_files out/target/product/nuwa/obj/PACKAGING/target_files_intermediates/nuwa-target_files-20180330       -p out/host/linux-x86           -k build/target/product/security/releasekey              out/target/product/nuwa/obj/PACKAGING/target_files_intermediates/nuwa-target_files-20180330.zip out/target/product/nuwa/nuwa-ota-20180330.zip
+
+
+
+
+simg2img sources/userdata.img sources/userdata.raw.img
+mkdir sources/userdata
+sudo mount -t ext4 -o loop sources/userdata.raw.img /media/jinkim/WorkDrive/Android/MakeFactoryImage/sources/userdata
+mkuserimg.sh -s sources/userdata sources/userdata.img ext4 sources/userdata 512M
+aml_image_v2_packer -r sources/image.cfg sources/ nuwwa.img
+
+
+adb connect 3116
+
+139.162.39.212
+root
+seebo@Free
+/opt/tomcat/webapps/otaupdate/extreme_box/
+
+mount -o rw,remount /system
+
+javac issue
+   source /etc/environment
+   javac -J-version
+   update-alternatives --config javac
+
+포트포워딩
+192.168.15.15:8822
+192.168.15.14:8022
+192.168.15.102:3052
+103.9.54.194
+
+ssh -p 8022 root@103.9.54.194
+scp -r -P 8022 root@103.9.54.194
+
+export LC_ALL=C
+
+system/core/init/init.cpp
+selinux_is_enforcing
+
+

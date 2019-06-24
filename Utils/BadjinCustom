@@ -1,0 +1,26 @@
+#!/bin/sh
+
+if [ -z "$1" ]; then
+  clear
+  echo "#########################################################"
+  echo "# please execute with your target Ip address            #"
+  echo "# example: ./customCopy IP                              #"
+  echo "#########################################################"
+  exit 1
+fi
+
+tIP="$1"
+
+option=StrictHostKeyChecking=no
+
+echo " "
+echo "  == Connecting to ${tIP}"
+ssh-keygen -f ~/.ssh/known_hosts -R ${tIP}
+echo " "
+#sshpass -p "Por96311" scp -o $option -r custom/plugin.program.super.favourites root@${tIP}:/storage/.kodi/userdata/addon_data/
+#sshpass -p "Por96311" scp -o $option -r ../custom/plugin.program.xiptv root@${tIP}:/storage/.kodi/userdata/addon_data/
+#sshpass -p "Por96311" scp -o $option -r ../custom/iptv root@${tIP}:/storage/.kodi/media/tv/
+sshpass -p "Por96311" scp -o $option sources.xml root@${tIP}:/storage/.kodi/userdata/
+sshpass -p "Por96311" ssh -o $option root@${tIP} reboot
+echo " "
+echo "  == Done!!!"

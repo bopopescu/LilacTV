@@ -1,0 +1,54 @@
+1. Download the Android Source Code
+  The Android source tree of Khadas VIMs are hosted on Github with many different repositories.
+  Walk through the below steps to download the source code.
+
+  Steps
+  1) Create an empty directory to hold your working files:
+    $ mkdir -p WORKING_DIRECTORY
+    $ cd WORKING_DIRECTORY
+
+  2) Run repo init to bring down the manifest repository first:
+    For Android Marshmallow(6.0):
+    $ repo init -u https://github.com/khadas/android_manifest.git -b Mmallow
+    
+    For Android Nougat(7.1):
+    $ repo init -u https://github.com/khadas/android_manifest.git -b Nougat
+
+    For Android Oreo(8.0):
+    $ repo init -u https://github.com/khadas/android_manifest.git -b Oreo
+
+  3) Run repo sync to pull down the Android source tree:
+    $ repo sync -j4
+
+  The initial sync operation will take an hour or more to complete.
+
+2. Replace the device/khads to device/amlogic  
+  $ scp -P 8022 root@103.9.54.194:/SeeboData/SDKS/Android7/amlogic.tar.gz WORKING_DIRECTORY/device/
+  $ rm -rf device/khadas
+  $ cd device/
+  $ tar cvfz amlogic.tar.gz
+  $ rm amlogic.tar.gz
+
+3. Add the vendor/amlogic/google/
+  $ scp -r -P 8022 root@103.9.54.194:/SeeboData/SDKS/Android7/google_7.1.tar.gz WORKING_DIRECTORY/vendor/amlogic/
+  $ cd vendor/amlogic/
+  $ tar cvfz google_7.1.tar.gz
+  $ rm google_7.1.tar.gz
+
+4. Change & Modify
+  1) Remove vendor/widevine/secmem --> duplicate
+  2) build/target/product/core_minimal.mk
+
+5. Change the path "device/khadas" to "device/amlogc"
+  1) bootable/recovery/
+  2) common/
+
+6. Build
+  $ scp -P 8022 root@103.9.54.194:/SeeboData/SDKS/Android7/mkbuild WORKING_DIRECTORY/
+  $ ./mkbuild x2 eng[user]
+
+
+
+
+
+
