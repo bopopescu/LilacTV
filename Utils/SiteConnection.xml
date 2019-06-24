@@ -17,7 +17,7 @@
 				<Name>Addons</Name>
 				<Comments />
 				<Colour>0</Colour>
-				<LocalDir>/media/jin/DataBackup/LilacTV/Addons/Addons/</LocalDir>
+				<LocalDir>/media/jin/Data500/LilacTV/Addons/Addons/</LocalDir>
 				<RemoteDir>1 0 3 opt 18 lampstack-5.6.24-0 7 apache2 6 htdocs 6 BadJin 6 Addons</RemoteDir>
 				<SyncBrowsing>0</SyncBrowsing>
 				<DirectoryComparison>0</DirectoryComparison>
@@ -38,7 +38,7 @@
 				<Name>Device</Name>
 				<Comments />
 				<Colour>0</Colour>
-				<LocalDir>/media/jin/DataBackup/LilacTV/Temp</LocalDir>
+				<LocalDir>/media/jin/Data500/LilacTV/Temp</LocalDir>
 				<RemoteDir>1 0 7 storage 5 .kodi</RemoteDir>
 				<SyncBrowsing>0</SyncBrowsing>
 				<DirectoryComparison>0</DirectoryComparison>
@@ -59,7 +59,7 @@
 				<Name>Favourites</Name>
 				<Comments />
 				<Colour>0</Colour>
-				<LocalDir>/media/jin/DataBackup/LilacTV/Super Favourites</LocalDir>
+				<LocalDir>/media/jin/Data500/LilacTV/Super Favourites</LocalDir>
 				<RemoteDir>1 0 3 opt 18 lampstack-5.6.24-0 7 apache2 6 htdocs 6 BadJin 10 Favourites</RemoteDir>
 				<SyncBrowsing>0</SyncBrowsing>
 				<DirectoryComparison>0</DirectoryComparison>
@@ -101,7 +101,7 @@
 				<Name>iptv</Name>
 				<Comments />
 				<Colour>0</Colour>
-				<LocalDir>/media/jin/DataBackup/LilacTV/iptv</LocalDir>
+				<LocalDir>/media/jin/Data500/LilacTV/iptv</LocalDir>
 				<RemoteDir>1 0 3 opt 18 lampstack-5.6.24-0 7 apache2 6 htdocs 6 BadJin 4 iptv</RemoteDir>
 				<SyncBrowsing>0</SyncBrowsing>
 				<DirectoryComparison>0</DirectoryComparison>
@@ -166,7 +166,7 @@
 				<Name>Addons</Name>
 				<Comments />
 				<Colour>0</Colour>
-				<LocalDir>/media/jin/DataBackup/SeeboTV/Addons</LocalDir>
+				<LocalDir>/media/jin/Data500/SeeboTV/Addons</LocalDir>
 				<RemoteDir>1 0 3 var 3 www 12 kowan_addons 5 kowan</RemoteDir>
 				<SyncBrowsing>0</SyncBrowsing>
 				<DirectoryComparison>0</DirectoryComparison>
@@ -187,7 +187,7 @@
 				<Name>Device</Name>
 				<Comments />
 				<Colour>0</Colour>
-				<LocalDir>/media/jin/DataBackup/LilacTV/Temp</LocalDir>
+				<LocalDir>/media/jin/Data500/LilacTV/Temp</LocalDir>
 				<RemoteDir>1 0 7 storage 5 .xbmc</RemoteDir>
 				<SyncBrowsing>0</SyncBrowsing>
 				<DirectoryComparison>0</DirectoryComparison>
@@ -208,7 +208,7 @@
 				<Name>Update</Name>
 				<Comments />
 				<Colour>0</Colour>
-				<LocalDir>/media/jin/DataBackup/SeeboTV/HEX</LocalDir>
+				<LocalDir>/media/jin/Data500/SeeboTV/HEX</LocalDir>
 				<RemoteDir>1 0 3 var 3 www 21 services.seebo.com.au 13 seebo_updates</RemoteDir>
 				<SyncBrowsing>0</SyncBrowsing>
 				<DirectoryComparison>0</DirectoryComparison>
@@ -229,7 +229,7 @@
 				<Name>iptv</Name>
 				<Comments />
 				<Colour>0</Colour>
-				<LocalDir>/media/jin/DataBackup/SeeboTV/IPTV</LocalDir>
+				<LocalDir>/media/jin/Data500/SeeboTV/IPTV</LocalDir>
 				<RemoteDir>1 0 3 var 3 www 4 iptv</RemoteDir>
 				<SyncBrowsing>0</SyncBrowsing>
 				<DirectoryComparison>0</DirectoryComparison>
