@@ -1,0 +1,8 @@
+{
+  "ignore": [
+		"unique-headings",
+		"box-model",
+    "ids",
+		"order-alphabetical"
+  ]
+}
