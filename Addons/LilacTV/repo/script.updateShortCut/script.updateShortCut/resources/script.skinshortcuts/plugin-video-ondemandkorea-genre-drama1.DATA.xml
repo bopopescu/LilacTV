@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<shortcuts>
+	<shortcut>
+		<defaultID />
+		<label>전체 드라마</label>
+		<label2>비디오 애드온</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://%2fstorage%2f.kodi%2faddons%2fplugin.video.icdrama%2ficon.png/</thumb>
+		<action>ActivateWindow(Videos,"plugin://plugin.video.icdrama/?url=http%3A%2F%2Ficdrama.to%2Fkorean-drama%2F&amp;action=shows",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>외국 드라마</label>
+		<label2>Custom item</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb />
+		<action>ActivateWindow(Videos,"plugin://plugin.video.tempest/?action=tvNavigator",return)</action>
+	</shortcut>
+</shortcuts>

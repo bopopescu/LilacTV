@@ -1,0 +1,2168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addons>
+  <addon id="plugin.audio.musicbox" name="Music Box" version="1000.2.1" provider-name="techdealer">
+    <requires>
+      <import addon="xbmc.python" version="2.20.0"/>
+	    <import addon="script.module.simple.downloader" version="1.9.4"/>
+	    <import addon="plugin.video.youtube" version="2.9.2"/>
+	    <import addon="script.module.mutagen"/>
+	    <import addon="script.module.requests" version="2.3.0"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="addon.py">
+      <provides>audio</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+      <summary lang="en">Music Box</summary>
+      <description lang="en">Music box is a new way to listen and discover music thought KODI.</description>
+      <language>en</language>
+      <platform>all</platform>
+    </extension>
+  </addon>
+
+  <addon id="plugin.audio.tripler" name="Triple RRR" version="1001.0.3" provider-name="Damon Toumbourou">
+    <requires>
+      <import addon="xbmc.python" version="2.1.0" />
+      <import addon="script.module.xbmcswift2" version="2.4.0" />
+      <import addon="script.module.beautifulsoup" version="3.0.8" />
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="addon.py">
+      <provides>audio</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+      <platform>all</platform>
+      <language />
+      <summary lang="en">Listen to podcasts avaliable from the Triple R: Independent Melbourne Radio station.</summary>
+      <description lang="en">For over 30 years Triple R has shaped and inspired the culture of Melbourne. Since its inception as an educational broadcaster in 1976, Triple R has become Australia's largest community radio station with over 12,000 subscribers and 329,000 listeners per week.
+    Broadcasting on 102.7FM, the Triple R grid houses over 60 diverse programs. Music shows cover every genre imaginable from pop to punk rock, from RandB and electro to jazz, hip hop, country and metal. Specialist talks programs delve into topics as varied as the environment, human rights, politics, medical issues, gardening, cultural ventures and local interests.</description>
+      <license>The MIT License (MIT)</license>
+      <email>dtoumbourou@gmail.com</email>
+      <forum />
+      <source>https://github.com/DamonToumbourou/plugin.audio.tripler</source>
+      <website />
+    </extension>
+  </addon>
+  <addon id="plugin.audio.tuneinradio" name="TuneIn Radio" version="1003.0.0" provider-name="brianhornsby">
+    <requires>
+      <import addon="xbmc.python" version="2.1.0" />
+      <import addon="script.module.simplejson" version="2.0.10" />
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+      <provides>audio</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+      <platform>all</platform>
+      <summary lang="bg">Радио TuneIn</summary>
+      <summary lang="en">TuneIn Radio</summary>
+      <summary lang="es">TuneIn Radio</summary>
+      <description lang="bg">Радио TuneIn е безплатна услуга, която ви позволява да слушате всичко, независимо къде се намирате. Каквото желаете - музика, спорт или новини. Радио TuneIn предлага над 50 000 станции от които да избирате. Можете да намерите местните станции или да откриете нови станции от целия свят. Радио TuneIn ви отвежда точно където желаете да сте.</description>
+      <description lang="en">TuneIn Radio is a free service that lets you listen to anything in the world from wherever you are. Whether you want to hear music, sports, news or current events. TuneIn Radio offers over 50,000 stations for you to choose from. From finding local stations to discovering new stations from around the world, TuneIn Radio brings you to where you want to be.</description>
+      <description lang="es">TuneIn Radio es un servicio gratuito que te permite escuchar cualquier cosa del mundo desde donde te encuentres. Si deseas escuchar música, deportes, noticias o eventos actuales. TuneIn Radio ofrece más de 50,000 estaciones radiales para escoger, desde estaciones locales hasta descubrir nuevas estaciones alrededor del mundo, TuneIn Radio te lleva a donde tu quieras estar.</description>
+      <language />
+      <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+      <forum>http://forum.xbmc.org/showthread.php?tid=119315</forum>
+      <website>http://brianhornsby.com/xbmc_addons/tuneinradio</website>
+      <source>https://github.com/brianhornsby/plugin.audio.tuneinradio</source>
+    </extension>
+  </addon>
+  <addon id="plugin.eco.plexbmc" name="" version="1003.6.1" provider-name="Seebo Network">
+    <requires>
+      <import addon="xbmc.python" version="2.14.0" />
+      <import addon="script.module.requests" version="2.6.0" />
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+      <provides>image</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+      <platform>all</platform>
+      <minversion>1</minversion>
+      <summary lang="en">Browse and play local video, music and photo media files managed by Seebo ECO Server.</summary>
+      <description lang="en">Browse and play local video, music and photo media files managed by Seebo ECO Server.</description>
+    </extension>
+  </addon>
+
+	<addon id="plugin.program.enableRC" name="EnableRemoteControl" version="1.0.1" provider-name="BadJin">
+	  <requires>
+		<import addon="xbmc.python" version="2.19.0"/>
+	  </requires>
+	  <!--<extension point="xbmc.service" library="default.py" start="startup" />-->
+	  <extension point="xbmc.python.pluginsource" library="default.py">
+		    <provides>executable</provides>
+	  </extension>
+	  <extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<summary lang="en"></summary>
+	  </extension>
+	</addon>
+
+<addon id="plugin.program.ignoreIC" name="Seebo's Message Handler" version="1.0.1" provider-name="BadJin">
+  <requires>
+    <import addon="xbmc.python" version="2.19.0"/>
+  </requires>
+  <!--<extension point="xbmc.service" library="default.py" start="startup" />-->
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en"></summary>
+  </extension>
+</addon>
+
+	<addon id="plugin.program.reustv" name="TokenREUSTV" version="1.0.2" provider-name="BadJin">
+	  <requires>
+		<import addon="xbmc.python" version="2.19.0"/>
+	  </requires>
+	  <!--<extension point="xbmc.service" library="default.py" start="startup" />-->
+	  <extension point="xbmc.python.pluginsource" library="default.py">
+		    <provides>executable</provides>
+	  </extension>
+	  <extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<summary lang="en"></summary>
+	  </extension>
+	</addon>
+
+  <addon id="plugin.video.abc_iview" name="ABC iView" provider-name="Aussie Add-ons" version="1001.8.5">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0" />
+    <import addon="script.module.aussieaddonscommon" />
+    <import addon="script.common.plugin.cache" />
+    <import addon="script.module.beautifulsoup" />
+    <import addon="script.module.requests" />
+    <import addon="script.module.drmhelper" />
+    <import addon="script.module.pycaption" />
+  </requires>
+  <extension library="default.py" point="xbmc.python.pluginsource" provides="video">
+    <provides>video</provides>
+  </extension>
+  <extension library="default.py" point="xbmc.addon.metadata">
+    <assets>
+      <icon>icon.png</icon>
+      <fanart>fanart.jpg</fanart>
+    </assets>
+    <summary>ABC iView by Aussie Add-ons</summary>
+    <description>iView offers full-length programs as seen on ABC TV, and iView originals ranging from arts to anime. Programs are added every day; most programs are available for 14 days. You must be located in Australia to access content. NOTE: This will count towards your Internet usage quota.</description>
+    <website>http://aussieaddons.com/addons/abc_iview</website>
+    <source>https://github.com/xbmc-catchuptv-au/plugin.video.abc_iview</source>
+    <provides>video</provides>
+    <platform>all</platform>
+    <license>GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007</license>
+  <news>[B]Version v1.8.5[/B]
+- Use title case for Settings and update Travis CI config
+
+[B]Version v1.8.4[/B]
+
+[B]Version v1.8.3[/B]
+- Make the Settings item consistent as captials
+- Fix subtitles, remove optional tag for drmhelper
+
+[B]Version v1.8.2[/B]
+- formatting pt. 2
+- fix formatting
+- Add support for inputstream.adaptive playback
+- Add setting to toggle HD streams, remove subtitle setting
+- Update categories.py
+- Update parse.py
+- Update categories.py
+- Method name updates
+- Fix method name from utils
+- Code cleanups and add user reporting to settings
+- Code clean ups
+- Use aussie add-ons common module
+- Use customsession module
+- Validate categories
+- Remove automatic time/timezone calculation, small cleanup
+- Use external issue reporter module, rework dialog function
+- Correct implementation of DST calculation, handle exceptions
+- 404 error fixes, Flake8, other small changes
+
+[B]Version v1.8.0[/B]
+- Fix for duplicate entries in news categories
+- Switch to using requests
+- Add missing requests import
+- Switch to mobile API and update metadata for Kodi v17
+- Remove cookies.dat on each playback
+- Update README.markdown
+- Add 'high quality' streams where available
+- Fix for error caused by missing playlist info
+- Fix cookie issue
+- Fix typo
+- Code style fixes and re-add season/episode parsing
+- Revert to Kodi native stream handling
+- Add feature to choose stream quality
+- small fix for error in episode number counting
+- Switch to mobile API
+
+[B]Version v1.7.6[/B]
+- rename HTMLParser class
+- Fix for subtitles
+
+[B]Version v1.7.3[/B]
+- Update README
+- Attempt to ignore SSL errors on Python 2.7.9+
+
+[B]Version v1.7.2[/B]
+- Remove unset variable
+
+[B]Version v1.7.1[/B]
+- Roll back SSL fix due to breakage
+
+[B]Version v1.7.0[/B]
+- Disable the 'All' category due to API returning empty responses
+- Issue reporter fixes
+- Disable SSL verification to work around Apple issues
+- Add pre-Kodi v14 support for subtitles
+- Enable subtitles in settings
+- Add support for subtitles
+- Change method of playing videos
+- Fix incorrect variable name
+- Use minutes for older XBMC/Kodi versions
+
+[B]Version v1.6.8[/B]
+- Initial version
+</news></extension>
+</addon>
+
+  <addon id="plugin.video.bestofyoutube_com" name="BestOfYoutube.com" version="1002.1.1" provider-name="AddonScriptorDE">
+    <requires>
+      <import addon="xbmc.python" version="2.1.0" />
+      <import addon="plugin.video.youtube" version="3.0.0" />
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+      <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+      <platform>all</platform>
+      <summary lang="en">Only the best Youtube clips</summary>
+      <summary lang="de">Nur die besten Youtube Videos</summary>
+      <language />
+      <description lang="en">Only the best Youtube clips</description>
+      <description lang="de">Nur die besten Youtube Videos</description>
+      <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+      <source>https://github.com/AddonScriptorDE/plugin.video.bestofyoutube_com</source>
+      <forum>http://forum.xbmc.org/showthread.php?tid=132564</forum>
+      <email>AddonScriptorDE at yahoo dot de</email>
+      <website>http://www.bestofyoutube.com</website>
+    </extension>
+  </addon>
+
+<addon id="plugin.video.exodus" version="1008.0.4.2" name="Exodus" provider-name="Exodus">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0" />
+		<import addon="script.module.exodus" />
+		<import addon="script.exodus.artwork" />
+		<import addon="script.exodus.metadata" />
+		<import addon="script.module.urlresolver" />
+		<import addon="script.module.requests" />
+<!--		<import addon="script.module.lambdascrapers" />-->
+		<import addon="script.module.exoscrapers" />
+		<import addon="script.module.metahandler" version="1.0.0" />
+		<import addon="plugin.program.indigo" />
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.service" library="service.py" start="startup" />
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Exodus</summary>
+		<description lang="en">Please visit [COLOR blue]www.tvaddons.co[/COLOR] for Exodus support and assistance! Kindly note that Exodus is not an official part of the media player you are running, and therefore not to be mentioned within official support channels, this addon has nothing to do with the media player itself, nor it’s intended use, it is simply a third party plugin which has been added to your system.</description>
+		<disclaimer lang="en">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content provider.</disclaimer>
+		<description lang="de">Bitte besuche [COLOR blue]www.tvaddons.co[/COLOR] für Unterstützung und Fragen zu Exodus! Beachte dabei, dass Exodus nicht offizieller Teil des Media Players ist den du gerade verwendest und daher nicht von dem offiziellen Support-Kanäle abgedeckt wird, dieses Addon hat nichts zu tun mit dem Media-Player selbst, noch ist es dafür beabsichtigt, es handelt sich hierbei lediglich um ein Drittanbieter-Anwendung die dem System hinzugefügt wurde.</description>
+		<disclaimer lang="de">Die von diesem Addon dargestellten Inhalte werden von den Erstellern des Addons weder gehostet oder verbreitet, noch stehen die Ersteller in irgendeiner Beziehung zu den Content-Anbietern.</disclaimer>
+		<description lang="fr">SVP visitez [COLOR blue]www.tvaddons.co[/COLOR] pour avoir de l'aide sur Exodus. Prenez note qu'Exodus n'est pas une partie intégrante de votre outil de visionnement multimedia et SVP ne le mentionnez pas dans les media sociaux officiels, cet addiciel n'a rien a voir avec votre lecteur multimedia lui même, c'est simplement un addiciel qui a été ajouté à votre système.</description>
+		<disclaimer lang="fr">L'auteur n'héberge pas ou ne distribue pas le contenu qui vous est affiché avec cet addiciel. L'auteur n'a pas d'alliance avec les distributeurs de contenu.</disclaimer>
+		<platform>all</platform>
+		<license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+		<forum>https://www.tvaddons.co/forums/</forum>
+		<website>https://www.tvaddons.co/</website>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+    			<screenshot></screenshot>
+		</assets>
+		<news></news>
+	</extension>
+</addon>
+
+  <addon id="script.module.t1mlib" name="t1m Library Routines" provider-name="t1m" version="1.0.18">
+	  <requires>
+		<import addon="xbmc.python" version="2.20.0" />
+	  </requires>
+	  <extension point="xbmc.python.module" library="lib"  />
+	  <extension point="xbmc.addon.metadata">
+		    <description lan="en">t1m Library Routines</description>
+		    <summary lang="en">t1m Library Routines</summary>
+		    <disclaimer lang="en"></disclaimer>
+		    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+		    <platform>all</platform>
+		    <email></email>
+		    <website></website>
+		    <forum>http://forum.kodi.tv/showthread.php?tid=247163</forum>
+		    <source>https://github.com/learningit/Kodi-plugins-source/tree/master/script.module.t1mlib</source>
+		    <language></language>
+	   </extension>
+	</addon>
+
+  <addon id="plugin.video.GoProCamera" name="GoPro" version="1001.0.8" provider-name="tvaddons.ag">
+    <requires>
+      <import addon="xbmc.python" version="2.1.0" />
+      <import addon="script.module.addon.common" version="2.0.0" />
+      <import addon="plugin.video.youtube" version="5.0.0" />
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+      <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+      <summary lang="en">GoPro</summary>
+      <description lang="en">The world's most versatile camera</description>
+      <platform>all</platform>
+      <forum>http://forums.tvaddons.ag/forums/113-TVADDONS-AG-ADDON-REPOSITORY</forum>
+      <website>http://www.tvaddons.ag/</website>
+    </extension>
+  </addon>
+
+<addon id="plugin.video.youtube" name="YouTube" version="1006.3.0" provider-name="bromix">
+    <requires>
+        <import addon="xbmc.python" version="2.20.0"/>
+        <import addon="script.module.six" version="1.11.0"/>
+        <import addon="script.module.requests" version="2.12.4"/>
+        <import addon="script.module.inputstreamhelper" version="0.2.2" optional="true"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="resources/lib/default.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.service" library="resources/lib/startup.py" start="login"/>
+    <extension point="xbmc.python.module" library="resources/lib/"/>
+    <extension point="xbmc.addon.metadata">
+        <news>
+6.3.0
+[add] support for keymapping of some endpoints, wiki: https://kodi.wiki/view/Add-on:YouTube#Keymaps
+[add] 'Rate videos in playlists' setting to 'Settings - General - Rate after watching'
+[add] Support for purchased collections |contrib: MisterD81|
+[fix] Playback of some videos (e.g. music videos)
+[fix] Live stream playback
+[fix] post play add to watch history
+[fix] fix add-ons playback history not saving
+[fix] playback monitoring/post play events triggering for the wrong videos in some cases
+[fix] call setResolvedUrl(False) if get_video_streams fails
+[upd] code cosmetics and resolve inspections
+[upd] improve watch history tracking, actively report watch times and state during playback
+[upd] sign in/out, switch user, and settings ListItems to isFolder=False and isPlayable=False
+[upd] improve watch later playlist id retrieval and feedback
+[upd] Use SPDX license identifier
+[lang] de_de strings |contrib: tobhor|
+[lang] el_gr strings |contrib: twilight0|
+[lang] es_es strings |contrib: roliverosc|
+[lang] ko_kr strings |contrib: parkmino|
+[lang] nl_nl strings |contrib: Markman-B|
+        </news>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+        <summary lang="en_GB">Plugin for YouTube</summary>
+        <description lang="en_GB">YouTube is one of the biggest video-sharing websites of the world.</description>
+        <disclaimer lang="en_GB">This plugin is not endorsed by Google</disclaimer>
+        <summary lang="he_IL">תוסף עבור YouTube</summary>
+        <description lang="he_IL">YouTube הוא אחד מאתרי שיתוף הווידאו הגדולים בעולם.</description>
+        <summary lang="de_DE">Plugin für YouTube</summary>
+        <description lang="de_DE">YouTube ist eines der größten Video-Sharing-Websites der Welt.</description>
+        <summary lang="pl_PL">Wtyczka YouTube</summary>
+        <description lang="pl_PL">YouTube jest jednym z największych na świecie serwisów udostępniania wideo.</description>
+        <summary lang="hu_HU">YouTube kiegészítő</summary>
+        <description lang="hu_HU">A YouTube világ egyik legnagyobb videómegosztó weboldala.</description>
+        <summary lang="es_ES">Plugin para YouTube</summary>
+        <description lang="es_ES">YouTube es uno de los sitios web para compartir videos más grande del mundo.</description>
+        <disclaimer lang="es_ES">Este add-on no está respaldado por Google</disclaimer>
+        <summary lang="es_MX">Plugin para YouTube</summary>
+        <description lang="es_MX">YouTube es uno de los más grandes sitios web de intercambio de videos del mundo.</description>
+        <disclaimer lang="es_MX">Este add-on no está respaldado por Google</disclaimer>
+        <summary lang="ru_RU">Видеодополнение YouTube</summary>
+        <description lang="ru_RU">YouTube - популярнейший видеохостинговый сайт, предоставляющий пользователям услуги хранения, доставки и показа видео.</description>
+        <summary lang="fr_FR">Plugin pour YouTube</summary>
+        <description lang="fr_FR">YouTube est l'un des plus grands sites de partage vidéos du monde.</description>
+        <summary lang="zh_CN">YouTube附加元件</summary>
+        <description lang="zh_CN">「Youtube」是全世界最大的影片分享網站</description>
+        <summary lang="zh_TW">YouTube附加元件</summary>
+        <description lang="zh_TW">「Youtube」是全世界最大的影片分享網站</description>
+        <disclaimer lang="zh_TW">此附加元件未由Google支持</disclaimer>
+        <summary lang="bg_BG">Добавка за YouTube</summary>
+        <description lang="bg_BG">YouTube е един от най-големите уеб сайтове за споделяне на видео в целия свят.</description>
+        <summary lang="el_GR">Πρόσθετο YouTube</summary>
+        <description lang="el_GR">Το YouTube είναι μία από τις μεγαλύτερες ιστοσελίδες διαμοιρασμού βίντεο στον κόσμο.</description>
+        <disclaimer lang="el_GR">Η παρούσα μικροεφαρμογή δεν έχει υϊοθετηθεί από την Google</disclaimer>
+        <summary lang="nb_NO">Tillegg for YouTube</summary>
+        <description lang="nb_NO">YouTube er en av verdens største nettsider for videodeling.</description>
+        <summary lang="ko_KR">유튜브 플러그인</summary>
+        <description lang="ko_KR">유튜브는 세상에서 가장 큰 동영상 공유 사이트 중의 하나입니다.</description>
+        <language></language>
+        <platform>all</platform>
+        <license>GPL-2.0-only</license>
+        <forum>https://forum.kodi.tv/showthread.php?tid=325740</forum>
+        <website>https://www.youtube.com</website>
+        <email>ytplugin at datanet dot ws</email>
+        <source>https://github.com/jdf76/plugin.video.youtube</source>
+        <reuselanguageinvoker>true</reuselanguageinvoker>
+    </extension>
+</addon>
+
+<addon id="plugin.video.ukturk" name="UK Turk Playlists" version="1006.00.001" provider-name="UKTurk">
+
+  <requires>
+    <import addon="script.module.simplejson" />
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.t0mm0.common" />
+    <import addon="plugin.video.youtube" />
+	<import addon="script.module.resolveurl" />
+    <import addon="script.common.plugin.cache" />
+    <import addon="script.module.metahandler" />
+    <import addon="script.video.F4mProxy" />
+	<import addon="script.module.beautifulsoup4" />
+	<import addon="script.module.html5lib" />
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Free Playlists courtesy of @uk_turk</summary>
+    <description lang="en">Free Playlists courtesy of @uk_turk</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="plugin.video.ted.talks" name="TED Talks" version="1004.2.12" provider-name="Skipmode A1, moreginger, rwparris2">
+  <requires>
+    <import addon="xbmc.python" version="2.20.0"/>
+    <import addon="script.module.elementtree" version="1.2.7"/>
+    <import addon="script.module.parsedom" version="0.9.1"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <!-- There are subtitles on TED in many languages,
+    and this plugin is (partially) internationalized in several,
+    but it seems better to claim the one we are sure of for now. -->
+    <language>en_GB</language>
+    <summary lang="en_GB">Watch talks from TED.com, a site dedicated to 'Ideas Worth Spreading'</summary>
+    <summary lang="hu_HU">Beszédek megtekintése a TED.com-ról</summary>
+    <summary lang="pt_PT">Veja debates de TED.com, um site dedicado a 'Ideias com Valor'</summary>
+    <description lang="en_GB">TED is a nonprofit devoted to spreading ideas, usually in the form of short, powerful talks (18 minutes or less). TED began in 1984 as a conference where Technology, Entertainment and Design converged, and today covers almost all topics — from science to business to global issues — in more than 100 languages. Meanwhile, independently run TEDx events help share ideas in communities around the world.</description>
+    <description lang="hu_HU">TED egy kicsi non-profit szervezet aminek célpontjában az Ötlet áll amit érdemes megosztani. A webhely kezdete 1984-re nyúlik vissza egy konferenciára ami 3 külön világot hozott össze: Technológia, Szórakozás, Tervezés. Azóta a kör csak bővült.</description>
+    <description lang="pt_PT">TED é uma organização sem fins lucrativos dedicada a 'Ideias com Valor'. Foi iniciada em 1984 como uma conferência que pretendia juntar pessoas de três mundos: Tecnologia, Entretenimento e Design. Desde ai tornou-se muito mais abrangente.</description>
+    <platform>all</platform>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+    <forum>http://forum.xbmc.org/showthread.php?tid=36866</forum>
+    <website>https://github.com/moreginger/xbmc-plugin.video.ted.talks</website>
+    <source>https://github.com/moreginger/xbmc-plugin.video.ted.talks.git</source>
+  </extension>
+</addon>
+
+<addon
+  id="plugin.video.SportsDevil"
+  version="12017.11.16"
+  name="SportsDevil"
+  provider-name="SportsDevil">
+  <requires>
+   <import addon="xbmc.python" version="2.14.0"/>
+   <import addon="script.module.dateutil" />
+   <import addon="script.module.simplejson" />
+   <import addon="script.module.six" />
+   <import addon="script.module.requests" />
+   <import addon="script.module.livestreamer" />
+   <!-- <import addon="script.video.F4mProxy" /> -->
+   <!-- <import addon="plugin.video.f4mTester" /> -->
+  </requires>
+  <extension
+    point="xbmc.python.pluginsource"
+    library="default.py">
+   <provides>video</provides>
+  </extension>
+  <extension point="xbmc.service" library="service/proxy_service.py" start="startup" />
+  <extension point="xbmc.addon.metadata">
+    <summary>Play videos of different ad-financed sports streaming sites</summary>
+    <description>Play videos of different ad-financed sports streaming sites.
+
+SportsDevil does not provide any streams of its own; stream quality, content and copyright are responsibility of the ad-financed source web site.
+
+For updates check the readme.
+    </description>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="plugin.video.sbs" name="SBS On Demand" provider-name="Aussie Add-ons" version="1001.1.3-2-g661cb6f">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0" />
+    <import addon="script.module.aussieaddonscommon" />
+    <import addon="script.module.requests" />
+    <import addon="script.common.plugin.cache" />
+    <import addon="script.module.beautifulsoup4" />
+  </requires>
+  <extension library="default.py" point="xbmc.python.pluginsource" provides="video">
+    <provides>video</provides>
+  </extension>
+  <extension library="default.py" point="xbmc.addon.metadata">
+    <assets>
+      <icon>icon.png</icon>
+      <fanart>fanart.jpg</fanart>
+    </assets>
+    <summary>SBS On Demand by Aussie Add-ons</summary>
+    <description>SBS On Demand provides free, unlimited streaming of TV shows, films and events. Watch full episodes of your favourite SBS shows online when you want.</description>
+    <website>http://aussieaddons.com/addons/sbs/</website>
+    <source>https://github.com/xbmc-catchuptv-au/plugin.video.sbs</source>
+    <provides>video</provides>
+    <platform>all</platform>
+    <license>GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007</license>
+  <news>[B]Version v1.1.3-2-g661cb6f[/B]
+- Widen bandwidth windows for stream selection
+- Add stream quality selection (#1280)
+
+[B]Version v1.1.3[/B]
+- Fix missing quote in travis yaml (#1267)
+- Adapt error handling to new utils module (#1263)
+
+[B]Version v1.1.2[/B]
+- Fixes unbound local errors
+- Revise subtitle metadata logic
+- Handle no subtitles available, remove subtitle setting
+- Fix subtitles
+- Add user reporting, code updates
+- Metadata and common module update fixes
+- Fix missing requirement
+- Code cleanups, use common modules and update metadata
+- Update README.markdown
+
+[B]Version v1.1.0[/B]
+- Properly fix SSL issues with Python 2.7.9+
+
+[B]Version v1.0.9[/B]
+- Ignore SSL errors on Python 2.7.9+
+- Add handling for absence of subtitle metadata
+- Added files via upload
+- Update comm.py
+- Enable subtitles in settings
+- Add support for subtitles
+- Change method of playing videos
+
+[B]Version v1.0.8[/B]
+- Fix XBMC v12 thumbnail handling error
+
+[B]Version v1.0.7[/B]
+- Fix for handling duration with decimal point
+
+[B]Version v1.0.6[/B]
+- Support fetching new streaming tokens
+
+[B]Version v1.0.5[/B]
+- Update basic auth string
+
+[B]Version v1.0.4[/B]
+- Better program sorting (Thanks Peter Beckwith!)
+- Handle bad season/episode number information
+- Fix strptime lock issue
+
+[B]Version v1.0.3[/B]
+- Update HTTP Basic auth password
+- Fix Github API url for issue reporting
+- Reduce debug logging
+- Only retry 3 times, not 10
+
+[B]Version v1.0.2[/B]
+- Better edge case program handling and program information
+- Fix 'Coming Soon' category (Thanks Peter Beckwith!)
+
+[B]Version v1.0.1[/B]
+- Cache all the URLs fetched
+- Sort programs alphabetically
+- Don't filter out some programs
+- Update Github issue API
+
+[B]Version v1.0.0[/B]
+- Initial version
+</news></extension>
+</addon>
+
+	<!--<addon id="plugin.video.phstreams" name="Phoenix" version="1003.2.3" provider-name="tvaddons.ag">
+		<requires>
+			<import addon="xbmc.python" version="2.1.0" />
+			<import addon="plugin.video.youtube" version="5.2.1" optional="true" />
+			<import addon="script.module.pyxbmct" version="1.1.4" />
+			<import addon="script.module.urlresolver" version="3.0.0"/>
+			<import addon="script.module.liveresolver" version="0.1.24"/>
+			<import addon="script.video.F4mProxy" version="2.2.3"/>
+		</requires>
+		<extension point="xbmc.python.pluginsource" library="default.py">
+			<provides>video</provides>
+		</extension>
+		<extension point="xbmc.addon.metadata">
+			<summary lang="en">Phoenix</summary>
+			<description lang="en">Discover Great Streaming Playlists, Please visit www.tvaddons.ag for help and support!</description>
+			<platform>all</platform>
+			<forum>http://forums.tvaddons.ag/forums/220-PHOENIX-LIVE-STREAMS</forum>
+			<website>http://www.tvaddons.ag/</website>
+			<news>Updated indexers[CR]Updated modules[CR]Cosmetics</news>
+		</extension>
+	</addon>  -->
+	<addon id="script.audio.spotimc" version="1001.0.1" name="Spotify&#174;" provider-name="Seebo Network Australia">
+		  <requires>
+		      <import addon="xbmc.python" version="2.1.0"/>
+		  </requires>
+		  <extension point="xbmc.python.script" library="default.py">
+		      <provides>audio</provides>
+		  </extension>
+		  <extension point="xbmc.addon.metadata">
+		      <platform>all</platform>
+		      <summary>Play Spotify&#174; on all your Seebo devices.</summary>
+		      <description>[CR]Spotify&#174; lets you search for music, browse your playlists and play your favourite tunes right from your Seebo device.[CR][CR]Spotify&#174; on Seebo devices requires a Spotify&#174; Premuim Paid Service. If you do not have a Spotify&#174; Premuim account please visit spotify.com/premium/ to register.[CR][CR]Spotify&#174; on Seebo is a Third Party Application and subject to their terms of use. By using this application you understand and agree that Spotify&#174; is not responsible or liable for the behavior, features, or content of any Third Party Application.</description>
+		      <disclaimer>Spotify&#174; requires a paid Premium account.</disclaimer>
+		  </extension>
+	</addon>
+
+	<addon id="script.facebook.media" name="Facebook Media" version="1000.9.15" provider-name="Rick Phillips (ruuk)">
+		<requires>
+			<import addon="xbmc.python" version="2.1.0" />
+			<import addon="script.module.simplejson" version="2.0.9" />
+			<import addon="script.module.mechanize" version="0.2.6" />
+			<import addon="script.module.oauth.helper" version="0.0.7"/>
+		</requires>
+		<extension point="xbmc.python.script" library="default.py">
+			<provides>executable</provides>
+			<provides>image</provides>
+			<provides>video</provides>
+		</extension>
+		<extension point="xbmc.addon.metadata">
+			<platform>all</platform>
+			<summary lang="en">Browse Facebook photos and videos</summary>
+			<description lang="en">Browse your and your friends' photos and videos. View and add comments and likes. View image tags.</description>
+			<license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+			<forum>http://forum.xbmc.org/showthread.php?tid=82500</forum>
+			<source>http://github.com/ruuk/script.facebook.media</source>
+		</extension>
+	</addon>
+
+<addon id="script.module.urlresolver" name="URLResolver" version="1005.0.37" provider-name="tvaddons">
+	<requires>
+		<import addon="xbmc.python" version="2.1.0" />
+		<import addon="plugin.video.youtube" optional="true" />
+		<import addon="script.module.python.twitch" optional="true" />
+		<import addon="script.module.cryptopy" version="1.2.6" optional="true" />
+		<import addon="plugin.video.gdrive" optional="true" />
+	</requires>
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.python.pluginsource" library="lib/default.py" />
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<summary lang="en">Resolve common video host URL's to be playable in XBMC/Kodi.</summary>
+		<summary lang="es">Resolver enlaces a videos de sitios populares para poder reproducirlos en XBMC/Kodi.</summary>
+		<summary lang="hr">Prilagodi najčešće URL-ove video izvora kako bi radili u XBMC/Kodiju.</summary>
+		<description lang="en">Resolve common video host URL's to be playable in XBMC/Kodi, simplify addon development of video plugins requiring multi video hosts.</description>
+		<description lang="hr">Prilagodi najčešće URL-ove video izvora kako bi radili u XBMC/Kodiju, pojednostavnjuje razvoj priključaka za video dodatke koji zahtjevaju višestruke video izvore.</description>
+		<forum>https://www.tvaddons.co/forums</forum>
+        <website>https://www.tvaddons.co</website>
+	</extension>
+</addon>
+
+  <addon id="script.module.liveresolver"
+     name="LiveResolver"
+     version="0.1.50"
+     provider-name="natko1412">
+    <requires>
+      <import addon="xbmc.python" version="2.1.0" />
+      <import addon="script.module.beautifulsoup" version="3.2.1"/>
+      <import addon="script.module.requests"/>
+      <import addon="script.module.addon.common" version="2.0.0" />
+    </requires>
+    <extension point="xbmc.python.module" library="lib" />
+    <extension point="xbmc.addon.metadata">
+      <platform>all</platform>
+      <summary lang="en">Resolve common live video host URL's to be playable in XBMC/Kodi + find links embeded in sites.</summary>
+      <description lang="en"></description>
+    </extension>
+  </addon>
+
+<addon id="script.module.six" name="six" version="1.11.0" provider-name="gutworth">
+  <requires>
+    <import addon="xbmc.python" version="2.14.0"/>
+  </requires>
+  <extension point="xbmc.python.module" library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <summary>Python 2 and 3 compatibility utilities.</summary>
+    <description>Six is a Python 2 and 3 compatibility library. It provides utility functions for smoothing over the differences between the Python versions with the goal of writing Python code that is compatible on both Python versions. See the documentation for more information on what is provided.</description>
+    <platform>all</platform>
+    <license>MIT</license>
+    <source>https://pypi.python.org/pypi/six</source>
+    <website>https://pypi.python.org/pypi/six</website>
+  </extension>
+</addon>
+
+  <addon id="metadata.album.universal"
+       name="Universal Album Scraper"
+       version="2.7.0"
+       provider-name="Olympia, Team Kodi">
+		<requires>
+		  <import addon="xbmc.metadata" version="2.1.0"/>
+		  <import addon="metadata.common.allmusic.com" version="3.1.0"/>
+		  <import addon="metadata.common.fanart.tv" version="3.1.0"/>
+		  <import addon="metadata.common.musicbrainz.org" version="2.1.0"/>
+		  <import addon="metadata.common.theaudiodb.com" version="1.8.1"/>
+		</requires>
+		<extension point="xbmc.metadata.scraper.albums"
+		           language="en"
+		           library="albumuniversal.xml"/>
+		<extension point="xbmc.addon.metadata">
+		  <summary lang="af">Universele Skraper vir Albums</summary>
+		  <summary lang="ast">Scraper universal pa álbumes</summary>
+		  <summary lang="be">Universal Scraper for Albums</summary>
+		  <summary lang="bg">Универсален източник за информация за албуми</summary>
+		  <summary lang="ca">Arreplegador universal per àlbums</summary>
+		  <summary lang="cs">Univerzální zdroj získávání dat pro alba</summary>
+		  <summary lang="cy">Crafwr Albymau Cyffredinol</summary>
+		  <summary lang="da">Universel Scraper til Albummer</summary>
+		  <summary lang="de">Universeller Scraper für Alben</summary>
+		  <summary lang="el">Universal Scraper Άλμπουμ</summary>
+		  <summary lang="en">Universal Scraper for Albums</summary>
+		  <summary lang="en_NZ">Universal Scraper for Albums</summary>
+		  <summary lang="en_US">Universal Scraper for Albums</summary>
+		  <summary lang="es">Scraper universal para álbumes</summary>
+		  <summary lang="es_AR">Scraper Universal para Albumes</summary>
+		  <summary lang="es_MX">Scraper Universal para Álbumes</summary>
+		  <summary lang="et">Universaalne albumite kraabits</summary>
+		  <summary lang="fi">Universaali tiedonhakija albumitiedoille</summary>
+		  <summary lang="fr">Scraper universel pour les Albums</summary>
+		  <summary lang="fr_CA">Extracteur universel pour les albums</summary>
+		  <summary lang="gl">Scraper Universal para Álbums</summary>
+		  <summary lang="he">סקרייפר אוניברסלי עבור אלבומים</summary>
+		  <summary lang="hr">Univerzalni sakupljač informacija albuma</summary>
+		  <summary lang="hu">Univerzális album leolvasó</summary>
+		  <summary lang="id">Pengais Universal Album</summary>
+		  <summary lang="is">Universal Scraper fyrir Hljómplötur</summary>
+		  <summary lang="it">Ricercatore Universale per Albums</summary>
+		  <summary lang="ja">汎用アルバムスクレーパー</summary>
+		  <summary lang="ko">Universal Scraper for Albums</summary>
+		  <summary lang="lt">Universalus albumų skreperis</summary>
+		  <summary lang="lv">Albumu universālais skrāpis</summary>
+		  <summary lang="mk">Универзален превземач за Албуми</summary>
+		  <summary lang="ms">Pengikis Universel untuk Album</summary>
+		  <summary lang="nl">Universele Scraper voor Albums</summary>
+		  <summary lang="no">Universalskraper for album</summary>
+		  <summary lang="pl">Uniwersalny ekstraktor informacji o albumach muzycznych</summary>
+		  <summary lang="pt">Colector universal para álbuns</summary>
+		  <summary lang="pt_BR">Scraper Universal para Álbuns</summary>
+		  <summary lang="ro"> Scraper universal pentru albume</summary>
+		  <summary lang="ru">Универсальный скрапер для альбомов</summary>
+		  <summary lang="sk">Univerzálny zdroj získavania dát pre albumy</summary>
+		  <summary lang="sl">Univerzalni ponudnik informacij o albumih</summary>
+		  <summary lang="sv">Universiell albumskrapa</summary>
+		  <summary lang="ta_IN">ஆல்பங்களின் ஒட்டு மொத்தமான சுரண்டி</summary>
+		  <summary lang="tr">Albümler için Evrensel Scraper</summary>
+		  <summary lang="uk">Універсальний здирач для альбомів</summary>
+		  <summary lang="vi">Trình lấy dữ liệu album từ nhiều nguồn</summary>
+		  <summary lang="zh">通用音乐专辑信息刮削器</summary>
+		  <summary lang="zh_TW">通用音樂專輯訊息搜刮器</summary>
+		  <description lang="af">Hierdie skraper kollekteer inligting vanaf die volgende ondersteunde werwe: MusicBrainz, last.fm, allmusic.com en amazon.de, terwyl kunswerke gegryp word vanaf: fanart.tv, last.fm en allmusic.com. Dit kan veld vir veld gestel word vanaf watter werf jy die spesifieke inligting wil hê.&#10;&#10;Die aanvaklike soektog word altyd op MusicBrainz gedoen. Ingeval skakels van allmusic en/of amazon.de nie bygevoeg is op die MusicBrainz werf, kan velde vanaf allmusic.com en/of amazon.de nie gaan haal word nie (egter baie maklik om daardie ontbrekende skakels by te voeg).</description>
+		  <description lang="ast">Esti scraper recueye información de les siguientes webs: MusicBrainz, last.fm, allmusic.com y amazon.de, mentanto obtién les imáxenes de fanart.tv, last.fm y allmusic.com. Permite especificar de qué web se quier obtener la información pa cada campu. ⏎ ⏎ La gueta inicial faise siempre en MusicBrainz. En casu de que los enllaces a allmusic y/o amazon.de nun tean amestaos na web de MusicBrainz, nun van poder obtenese los campos d'información d' estos dos sitios (magar que ye mui fácil amestar esos enllaces que falten)</description>
+		  <description lang="be">This scraper collects information from the following supported sites: MusicBrainz, last.fm, allmusic.com and amazon.de, while grabs artwork from: fanart.tv, last.fm and allmusic.com. It can be set field by field that from which site you want that specific information.&#10;&#10;The initial search is always done on MusicBrainz. In case allmusic and/or amazon.de links are not added on the MusicBrainz site, fields from allmusic.com and/or amazon.de cannot be fetched (very easy to add those missing links though).</description>
+		  <description lang="bg">Сваля информация от следните сайтове: MusicBrainz, last.fm, allmusic.com и amazon.de. Изобрания извлича от: fanart.tv, last.fm и allmusic.com. Можете да определите от кой сайт каква информация да се сваля.&#10;&#10;Първоначалното търсене винаги се прави в MusicBrainz. Когато не са налични препратки към allmusic и/или amazon.de на сайта на MusicBrainz извличането на информация от allmusic.com и/или amazon.de става невъзможно (добавянето им е много лесно).</description>
+		  <description lang="ca">Aquest arreplegador recull informació dels següents llocs: MusicBrainz, last.fm, allmusic.com i amazon.de, alhora que agafa art de: fanart.tv, last.fm i allmusic.com. Es pot configurar camp a camp des de quin lloc voleu aquella informació específica. &#10;&#10;La cerca inicial es realitza sempre a MusicBrainz. En el cas que els enllaços d'allmusic i amazon.de no s'afegeixin al lloc MusicBrainz els camps d'allmusic i amazon.de i/o amazon.com no es poden obtenir (tot i que són fàcils d'afegir aquests enllaços restants).</description>
+		  <description lang="cs">Tento zdroj získává data z následujících podporovaných stránek: MusicBrainz, last.fm, allmusic.com and amazon.de, while grabs artwork from: fanart.tv, last.fm a allmusic.com. Je možno podrobně nastavit, které informace si přejete získat ze kterých stránek.&#10;&#10;Prvotní vyhledání je vžy provedeno na MusicBrainz. V případě, že odkaz pro allmusic a nebo amazon.de není přidaný na stránku MusicBrainz, není možné údaje z allmusic.com a amazon.de stáhnout (avšak je velmi snadné tyto chybějící odkazy přidat).</description>
+		  <description lang="cy">Mae'r crafwr yn casglu gwybodaeth o'r gwefannau canlynol:  MusicBrainz, last.fm, allmusic.com ac amazon.de, tra'n cipio gwaith celf o: fanart.tv, last.fm and allmusic.com. Mae modd ei osod fesul maes i ddewis pa wefan i gasglu gwybodaeth benodol.&#10;&#10;Bydd y chwilio cychwynnol yn cael ei wneud ar MusicBrainz. Rhag ofn nad yw dolen allmusic wedi ei osod ar wefan MusicBrainz nid oes modd estyn meysydd o allmusic.com (mae'n hawdd gosod y dolenni coll hynny)</description>
+		  <description lang="da">Denne scraper samler information fra følgende sider: MusicBrainz, last.fm, allmusic.com og amazon.de og henter illustrationer fra: fanart.tv, last.fm og allmusic.com. Det kan vælges felt for felt, hvilke sider du ønsker, at få den pågældende information fra.&#10;&#10;Den første søgning er altid på MusicBrainz. Hvis ikke allmusic og/eller amazon.de linkene er tilføjet på MusicBrainz side, kan felter fra allmusic.com og/eller amazon.de ikke hentes (men det er helt enkelt at tilføje de manglende links).</description>
+		  <description lang="de">Dieser Scaper sammelt Informationen von den folgenden, unterstützten Seiten: MusicBrainz, Last.fm, Allmusic.com und Amazon.de. Es werden dabei Grafiken von den folgenden Seiten geladen: Fanart.tv, Last.fm und Allmusic.com. Von welcher Seite die Informationen geladen werden, kann einzeln konfiguriert werden.⏎ &#10;⏎&#10;Die initialie Suche wird immer über MusicBrainz durchgeführt. Sollten keine Allmusic- und/oder Amazon.de-Links auf der MusicBrainz-Seite gesetzt worden sein, können Felder von Allmusic.com und/oder Amazon.de nicht geladen werden (fehlende Links können jedoch sehr einfach hinzugefügt werden).</description>
+		  <description lang="el">Αυτό το scraper συλλέγει πληροφορίες από τις ακόλουθες υποστηριζόμενες ιστοσελίδες: MusicBrainz, last.fm, allmusic.com και amazon.de, ενώ λαμβάνει εικόνες από τα: fanart.tv, last.fm και allmusic.com. Μπορεί να οριστεί πεδίο ανά πεδίο αναλόγως των πληροφοριών που επιθυμείτε από την εκάστοτε ιστοσελίδα.&#10;&#10;Η αρχική αναζήτηση γίνεται πάντα στο MusicBrainz. Σε περίπτωση που δεν έχουν προστεθεί σύνδεσμοι για το allmusic ή/και το amazon.de στο MusicBrainz, δε θα μπορούν να ληφθούν πεδία από το allmusic.com ή/και το amazon.de (ωστόσο είναι πολύ εύκολο να προστεθούν αυτοί οι ελλιπείς σύνδεσμοι).</description>
+		  <description lang="en">This scraper collects information from the following supported sites: MusicBrainz, last.fm, allmusic.com and amazon.de, while grabs artwork from: fanart.tv, last.fm and allmusic.com. It can be set field by field that from which site you want that specific information.&#10;&#10;The initial search is always done on MusicBrainz. In case allmusic and/or amazon.de links are not added on the MusicBrainz site, fields from allmusic.com and/or amazon.de cannot be fetched (very easy to add those missing links though).</description>
+		  <description lang="en_NZ">This scraper collects information from the following supported sites: MusicBrainz, last.fm, allmusic.com and amazon.de, while grabs artwork from: fanart.tv, last.fm and allmusic.com. It can be set field by field that from which site you want that specific information.&#10;&#10;The initial search is always done on MusicBrainz. In case allmusic and/or amazon.de links are not added on the MusicBrainz site, fields from allmusic.com and/or amazon.de cannot be fetched (very easy to add those missing links though).</description>
+		  <description lang="en_US">This scraper collects information from the following supported sites: MusicBrainz, last.fm, allmusic.com and amazon.de, while grabs artwork from: fanart.tv, last.fm and allmusic.com. It can be set field by field that from which site you want that specific information.&#10;&#10;The initial search is always done on MusicBrainz. In case allmusic and/or amazon.de links are not added on the MusicBrainz site, fields from allmusic.com and/or amazon.de cannot be fetched (very easy to add those missing links though).</description>
+		  <description lang="es">Este scraper recolecta información de las siguientes webs: MusicBrainz, last.fm, allmusic.com y amazon.de, mientras obtiene las imágenes de fanart.tv, last.fm y allmusic.com. Permite especificar de qué web se quiere obtener la información para cada campo. ⏎ ⏎ La búsqueda inicial se realiza siempre en MusicBrainz. En caso de que los enlaces a allmusic y/o amazon.de no estén añadidos en la web de MusicBrainz, no se podrán obtener los campos de información de estos dos sitios (aunque es muy fácil añadir esos enlaces que faltan).</description>
+		  <description lang="es_AR">Este scraper recolecta información de las siguientes webs: MusicBrainz, last.fm, allmusic.com y amazon.de, mientras obtiene las imágenes de fanart.tv, last.fm y allmusic.com. Permite especificar de qué web se quiere obtener la información para cada campo. ⏎ ⏎ La búsqueda inicial se realiza siempre en MusicBrainz. En caso de que los enlaces a allmusic y/o amazon.de no estén añadidos en la web de MusicBrainz, no se podrán obtener los campos de información de estos dos sitios (aunque es muy fácil añadir esos enlaces que faltan).</description>
+		  <description lang="es_MX">Este scraper obtiene información de los siguientes sitios soportados: MusicBrainz, last.fm, allmusic.com y amazon.de, mientras obtiene artwork de: fanart.tv, last.fm y allmusic.com. Puede ser configurado campo por campo de que sitio quieres esa información específica.⏎ ⏎ La búsqueda inicial siempre es hecha en MusicBrainz. En el caso en que los enlaces de allmusic y/o amazon.de no son agregados en el sitio de  MusicBrainz, campos de allmusic.com y/o amazon.de no pueden ser obtenidos. (De cualquier manera es muy fácil agregar esos enlaces no encontrados).</description>
+		  <description lang="et">See kraabits kogub infot järgmistelt lehtedelt: MusicBrainz, last.fm, allmusic.com ja amazon.de, pilte: fanart.tv, last.fm ja allmusic.com. Saad välja kaupa määrata, milliselt lehelt mis infot soovid.&#10;&#10;Esmane otsing tehakse alati saidilt MusicBrainz. Kui MusicBrainz lehele pole allmusic ja/või amazon.de linke lisatud, siis neilt lehtedelt sisu hankida ei saa (puuduvaid linke saad ise lihtsalt lisada).</description>
+		  <description lang="fi">Tämä tiedonhakija käyttää tietolähteinään seuraavia sivustoja:MusicBrainz, last.fm, allmusic.com ja amazon.de. Kuvat ja grafiikat haetaan seuraavilta sivustoilta: fanart.tv, last.fm ja allmusic.com. Voit määrittää tarkasti, miltä sivustoilta mitäkin tietoa haetaan.&#10;&#10;Ensimmäinen haku tehdään aina lähteestä MusicBrainz. Mikäli allmusic- ja/tai amazon.de-linkkejä ei ole lisätty MusicBrainz-sivustolle, haku ei onnistu (mutta puuttuvien linkkien lisääminen on helppoa).</description>
+		  <description lang="fr">Ce collecteur utilise les informations des sites suivant : MusicBrainz, last.fm, allmusic.com et amazon.de et télécharge les artwork depuis : fanart.tv, last.fm et allmusic.com. Vous pouvez spécifier quel site utiliser pour récupérer chaque information.&#10;&#10;Le premier résultat est toujours en provenance de MusicBrainz. Dans le cas où allmusic et/ou amazon.de ne sont pas ajoutés sur le site MusicBrainz, les champs de allmusic.com et/ou amazon.de ne peuvent pas être traités (il est toutefois très simple d'ajouter ces liens manquants).</description>
+		  <description lang="fr_CA">Cet extracteur recueille des informations depuis les sites pris en charge suivants : MusicBrainz, last.fm, allmusic.com et amazon.de, alors qu'il récupère les illustrations depuis : fanart.tv, last.fm et allmusic.com. Il est possible de configurer champ par champ depuis quel site l'information doit être récupérée.&#10;&#10;La recherche initiale est toujours faite sur MusicBrainz. Dans le cas où les liens allmusic et/ou amazon.de ne sont pas ajoutés sur le site de MusicBrainz, les champs provenant de allmusic.com et/ou amazon.de ne peuvent pas être récupérés (il est par contre très simple d'ajouter ces liens manquants).</description>
+		  <description lang="gl">Este scraper obtén a información dende os seguintes sitios: MusicBrainz, last.fm, allmusic.com e amazon.de, mentres que as ilustracións as obtén dende: fanart.tv, last.fm e allmusic.com. Pódese definir dende que sitios se obterá a información específica de cada campo.&#10;&#10;A busca inicial faise sempre en MusicBrainz. No caso de non estar engadidas as ligazón de allmusic e/ou amazon.de no sitio de MusicBrainz, os campos de allmusic.com e/ou amazon.de non se poderán obter (aínda que é moi doado engadir as ligazóns).</description>
+		  <description lang="he">סקרייפר זה אוסף מידע מהתארים הנתמכים הבאים: TheAudioDb.com, MusicBrainz, last.fm, and allmusic.com, בעוד שמשיכת גרפיקה נעשית דרך: fanart.tv, htbackdrops.com, last.fm and allmusic.com. יש אפשרות להגדיר את זאת שדה אחר שדה מאיזה אתר ברצונך למשוך את המידע הספציפי.⏎ ⏎ החיפוש הפנימי נעשה תמיד דרך MusicBrainz. במקרה שקישור allmusic לא התווסף באתר MusicBrainz, השדות מאת allmusic.com אינן יכולות להימשך (למרות שזה מאוד קל להוסיף את הקישורים הריקים).</description>
+		  <description lang="hr">Ovaj sakupljač prikuplja informacije sa sljedećih podržanih stranica: MusicBrainz, last.fm, allmusic.com i amazon.de, dok preuzima omote filmova sa: fanart.tv, last.fm i allmusic.com. Može poredati popis stranica iz kojih želite sakupiti informacije jednu iza druge.&#10;&#10;Pretraga uvijek započinje na MusicBrainzu. U slučaju da allmusic i/ili amazon.de poveznice nisu dodane na MusicBrainz stranicu, polja sa allmusic.com i/ili amazon.de ne mogu se nabaviti (ali je vrlo jednostavno moguće dodati te nedostajuće poveznice).</description>
+		  <description lang="hu">A leolvasó szöveges infókat gyűjt a támogatott oldalakról: MusicBrainz, last.fm, allmusic.com and amazon.de, valamint képeket a : fanart.tv, last.fm and allmusic.com-ról. Beállítható hogy honnan, és milyen infót gyűjtsön. A keresés mindig a MusicBrainz-on folyik, de könnyen hozzáadhatjuk a hiányzó találatokat az allmusic.com, vagy az amazon.de-ről.</description>
+		  <description lang="id">Pengais ini mengambil informasi dari berbagai situs yang mendukung: MusicBrainz, last.fm, allmusic.com and amazon.de, sembari mengambil artwork dari: fanart.tv, lastfm dan allmusic.com. Ini dapat diatur perbagian dari situ mana informasi tertentu akan diambil.&#10;&#10;Pencarian awal akan dilakukan di MusicBrainz. Apabila tautan dari allmusic dan/atau amazon.de tidak ditambahkan di situs MusicBrainz, bagian dari allmusic.com dan/atau amazon.de tidak dapat ditarik (Namun sangatlah mudah menambahkan tautan tersebut).</description>
+		  <description lang="is">Þessi skafa nær í upplýsingar frá eftirfarandi stöðum sem eru studdir: MusicBrainz, last.fm, allmusic.com og amazon.de, og nær í myndefni frá: fanart.tv, last.fm og allmusic.com. Hægt er að stilla reit fyrir reit hvaðan upplýsingarnar koma.&#10;&#10;Leitin byrjar alltaf á MusicBrainz. Ef allmusic og/eða amazon.de tenglar eru ekki á MusicBrainz veitunni, næst ekki í upplýsingarnar frá allmusic.com og/eða amazon.de (mjög auðvelt að bæta tenglunum við samt).</description>
+		  <description lang="it">Questo ricercatore prende informazioni dai seguenti siti: MusicBrainz, last.fm, allmusic.com e amazon.de, mentre prende grafica da: fanart.tv, last.fm e allmusic.com. Puoi impostare campo per campo cosa prendere e da dove.⏎ ⏎La ricerca iniziale viene sempre fatta su MusicBrainz. In caso i links a allmusic e/o amazon.de non sono stati messi su MusicBrainz, i campi da questi siti non possono essere recuperati (è molto facile aggiungere quei link, comunque).</description>
+		  <description lang="ja">このスクレーパーは、以下のサイトから情報を取得します：MusicBrainz, last.fm, allmusic.com, amazon.de。アートワークは以下のサイトから取得します：fanart.tv, last.fm, allmusic.com。各フィールドごとに、どの情報をどのサイトから取得するか、個別に指定することもできます。&#10;&#10;最初は MusicBrainz を使って検索が行われます。MusicBrainz サイトに allmusic や amazon.de のリンクが追加されていない場合は、allmusic.com / amazon.de からのフィールドは取得できません (リンクを追加するのは簡単ですが)。</description>
+		  <description lang="ko">이 자료수집기는 다음의 사이트에서 정보를 가져옵니다: MusicBrainz, last.fm, allmusic.com, amazon.de. 아트워크는 다음의 사이트에서 가져옵니다: fanart.tv, last.fm and allmusic.com. 특정 정보를 지정한 사이트에서 가져오도록 필드별로 설정할 수 있습니다&#10;&#10;The initial search is always done on MusicBrainz. In case allmusic and/or amazon.de links are not added on the MusicBrainz site, fields from allmusic.com and/or amazon.de cannot be fetched (very easy to add those missing links though).</description>
+		  <description lang="lt">Šis skreperis surenka informaciją iš šių palaikomų puslapių: MusicBrainz, last.fm, allmusic.com ir amazon.de bei atsiunčia iliustracijas iš: fanart.tv, last.fm ir allmusic.com. Jis gali būti nustatytas laukas po laiko, kad nurodyti iš kokio puslapio paimti konkrečią informaciją.&#10;&#10;Pradinė paieška visada atliekama MusicBrainz puslapyje. Jei kartais allmusic ir/raba amazon.de nuorodos nepridėtos į MusicBrainz puslapį, laukai iš allmusic.com ir/arba amazon.de negalės būti gauti (tačiau labai lengva pridėti tas trūkstamas nuorodas).</description>
+		  <description lang="mk">This scraper collects information from the following supported sites: MusicBrainz, last.fm, allmusic.com and amazon.de, while grabs artwork from: fanart.tv, last.fm and allmusic.com. It can be set field by field that from which site you want that specific information.⏎ ⏎ The initial search is always done on MusicBrainz. In case allmusic and/or amazon.de links are not added on the MusicBrainz site, fields from allmusic.com and/or amazon.de cannot be fetched (very easy to add those missing links though).</description>
+		  <description lang="ms">Pengikis ini mendapatkan maklumat dari laman tersokong berikut: MusicBrainz, last.fm, allmusic.com dan amazon.de, manakala ia dapatkan kerja seni dari: fanart.tv, last.fm dan allmusic.com. Ia boleh tetapkan medan mengikut medan supaya anda boleh dapatkan maklumat khusus dari laman tertentu.⏎&#10;⏎&#10;Gelintar awalan sentiasa bermula dengan MusicBrainz. Pautan allmusic dan/atau amazon.de tidak ditambah ke laman MusicBrainz, medan dari allmusic.com dan/atau amazon.de sukar didapati.</description>
+		  <description lang="nl">Deze scraper verzamelt informatie van de volgende ondersteunde sites: MusicBrainz, Last.fm, allmusic.com en amazon.de. Afbeeldingen worden verzameld van de volgende sites: fanart.tv, Last.fm en allmusic.com. Per veld kan aangegeven worden van welke site je de specifieke informatie wil halen. De initiële zoekopdracht wordt altijd gedaan van MusicBrainz.&#10;&#10;In het geval dat links naar allmusic en/of amazon.de niet zijn toegevoegd op de MusicBrainz site, kunnen velden niet worden opgehaald bij deze sites. (Het is niet moeilijk om de ontbrekende links toe te voegen.)</description>
+		  <description lang="no">Denne skraperen innsamler informasjon fra følgende nettsteder: MusicBrainz, last.fm, allmusic.com og amazon.de, mens den henter grafikk fra: fanart.tv, last.fm og allmusic.com. Du kan selv bestemme hvilken kilde du ønsker å hente informasjon fra.&#10;&#10;Det første søket blir alltid gjort med MusicBrainz. Hvis allmusic.com og/eller amazon.de linker ikke tilgjengelig hos MusicBrainz, kan ikke felter fra allmusic.com og/eller amazon.de hentes (dog er det er veldig lett å legge til de manglende linkene).</description>
+		  <description lang="pl">Ten scraper zbiera informacje z następujących stron: MusicBrainz, last.fm, allmusic.com oraz amazon.de, a grafiki pobiera z: fanart.tv, last.fm i allmusic.com. Dla każdego pola z informacjami można wybrać osobną stronę.&#10;&#10;Początkowe wyszukiwanie jest zawsze wykonywane na MusicBrainz. Gdy linki do allmusic i/lub amazon.de nie są dodane na stronie MusicBrainz, nie można pobrać tych pól z allmusic.com i/lub amazon.de (pomimo to brakujące linki można bardzo łatwo dodać).</description>
+		  <description lang="pt">Este colector recolhe informações dos seguintes sítios:&#10;MusicBrainz, last.fm, allmusic.com e amazon.de, enquanto obtém artwork de: fanart.tv, last.fm e allmusic.com. Pode definir em cada campo o sítio do qual quer obter as informações. A pesquisa inicial é sempre feita no MusicBrainz. Caso os endereços allmusic e/ou amazon.de não tenham sido adicionados no sítio MusicBrainz, os campos do allmusic.com e/ou amazon.de não serão obtidos (no entanto, é muito fácil adicionar os links em falta). </description>
+		  <description lang="pt_BR">Este scraper coleta informações nos seguintes sites:&#10;MusicBrainz, last.fm, allmusic.com e amazon.de, enquanto pega os artwork de: fanart.tv, last.fm and allmusic.com. O Mesmo pode ser configurara campo a campo em que site você quer obter informações específicas. A procura inicial é sempre feita no MusicBrainz. No caso allmusic e/ou amazon.de não terem sido adicionados no site MusicBrainz, campos de allmusic.com e/ou amazona.de não serão buscados (embora seja muito fácil adicionar os links faltantes). </description>
+		  <description lang="ro">Acest scraper colectează informații de la următoarele site-uri suportate: MusicBrainz, last.fm, allmusic.com și amazon.de. Elementele de grafica sunt accesate din: fanart.tv, last.fm și allmusic.com. Acesta poate fi setat câmp cu câmp pentru ca informatiile colectate sa fie cele dorite.⏎ &#10;⏎ &#10;Căutarea inițială se face întotdeauna pe MusicBrainz. În cazul în care Allmusic și/sau link-ul amazon.de nu sunt adăugate pe MusicBrainz, câmpurile din allmusic.com și/sau amazon.de nu pot fi colectate (este foarte ușor însă de adăugat aceste legături lipsă).</description>
+		  <description lang="ru">Данный скрапер собирает информацию со следующих сайтов:&#10;MusicBrainz, last.fm, allmusic.com и amazon.de, при этом получая обложки из: fanart.tv, last.fm и allmusic.com. Каждое поле можно настроить так, чтобы оно получало желаемую информацию с определенного вами сайта.⏎ ⏎ Начальный поиск всегда проводится на  MusicBrainz. Для allmusic и/или amazon.de ссылки на сайт MusicBrainz отсутствуют, поля с allmusic.com и/или amazon.de не могут быть заполнены (добавить пропущенные ссылки очень просто).</description>
+		  <description lang="sk">Tento zdroj získavania dát zbiera informácie z nasledujúcich podporovaných stránok: MusicBrainz, last.fm, allmusic.com a amazon.de, zatiaľ čo umeleckú grafiku získava zo stránok: fanart.tv, last.fm a allmusic.com. Je možné podrobne nastaviť, z ktorej stránky chcete získať konkrétne informácie.&#10;&#10;Počiatočné hľadanie je vždy na stránke MusicBrainz. V prípade, že odkaz pre allmusic a/alebo amazon.de nie je pridaný na stránku MusicBrainz, nie je možné získať údaje zo stránky allmusic.com a/alebo amazon.de (je ale veľmi jednoduché tieto chýbajúce odkazy pridať).</description>
+		  <description lang="sl">Ta ponudnik združuje informacije s sledečih strani: MusicBrainz, last.fm, allmusic.com in amazon.de; grafike prenaša z: fanart.tv, last.fm in allmusic.com. Vsako informacijo lahko prenesete z različne strani.&#10;&#10;Začeno iskanje je vedno na MusicBrainz. V primeru, da na MusicBrainz ni povezave do allmusic.com in/ali amazon.de, informacij od tam ne morete prenesti (a to težavo hitro lahko odpravite).</description>
+		  <description lang="sv">Denna skrapa samlar information från följande sajter: MusicBrainz, last.fm, allmusic.com och amazon.de, och konstverk från: fanart.tv, last.fm och allmusic.com. Det kan anges fält för fält vilken sajt du vill få den specifika informationen.⏎ ⏎ Den initiala sökningen är alltid utförd på MusicBrainz sajt, fälten från allmusic.com och/eller amazon.de länkarna läggs inte till på MusicBrainz sajten, fälten från allmusic.com och/eller amazon.de kan inte hämtas (väldigt enkelt att lägga till dom saknade länkarna dock).</description>
+		  <description lang="ta_IN">இந்த சுரண்டியானது MusicBrainz, last.fm, allmusic.com மற்றும் amazon.de ஆகிய இணையதளத்தில் இருந்து தகவல்களை சேகரிக்கும். திரை குறும்படங்களை fanart.tv, last.fm மற்றும் allmusic.com ஆகிய இணையதளத்தில் இருந்து தகவல்களை சேகரிக்கும். ⏎ ⏎ முதன்மை தேடல் எப்போதும் MusicBrainz தான் நடக்கும். allmusic மற்றும் amazon.de சேர்க்கபடாவிட்டால் அவற்றில் இருந்து தகவல்கள் செமிக்கபடமாட்டது (தவறிய இணைப்புகளை சேர்ப்பது மிகவும் எளிது).</description>
+		  <description lang="tr">Bu scraper bilgileri toplamak için şu siteleri desteklemektedir:  MusicBrainz, last.fm, allmusic.com ve amazon.de, çizimleri için ise: fanart.tv, last.fm ve allmusic.com desteklenmektedir. Her bilginin özellikle nereden alınacağını tek tek ayarlayabilirsiniz.&#10;&#10;İlk olarak arama daima MusicBrainz'de yapılır. MusicBrainz'e allmusic ve/veya amazon.de linkleri eklenmemiş olması durumunda allmusic.com'dan ve/veya amazon.de'den ilgili alanlar alınamaz (gerçi bu eksik linkleri eklemek çok kolaydır).</description>
+		  <description lang="uk">Здирач збирає інформацію з наступних сторінок: MusicBrainz, last.fm, allmusic.com та amazon.de, тоді як отримує обкладинки з: fanart.tv, last.fm та allmusic.com.&#10;&#10;Початковий пошук завжди робиться на MusicBrainz. Якщо посилання з allmusic і/або amazon.de не додаються на сторінку MusicBrainz, тоді поля з allmusic.com і/або amazon.de неможливо отримати (однак дуже легко додати ці пропущені посилання).</description>
+		  <description lang="vi">Trình này thu thập thông tin từ những site được hỗ trợ như: MusicBrainz, last.fm, allmusic.com, amazon.de, và lấy ảnh bìa từ các nguồn: fanart.tv, last.fm và allmusic.com. Bạn có thể tùy chỉnh chọn từng thứ riêng biệt để lấy từ site bạn muốn.\n \n Lần tìm kiếm đầu tiên luôn luôn được sử dụng từ MusicBrainz. Trong trường hợp các link allmusic và/hoặc amazon.de không có trên MusicBrainz, các trường từ allmusic.com và/hoặc amazon.de sẽ không thể lấy về được (tuy nhiên rất dễ để tự thêm vào các link này bằng tay).</description>
+		  <description lang="zh">本刮削器支持从以下网站获取信息：MusicBrainz、last.fm、allmusic.com 和 amazon.de，并从以下网站获取艺术图片：fanart.tv、last.fm 和 allmusic.com。你可以指定每一项内容的来源网站。&#10;&#10;初始结果总是先从 MusicBrainz 获取。如果 MusicBrainz 网站没有到 allmusic 和/或 amazon.de 的外部链接，则无法获取 allmusic.com 的/或 amazon.de 的信息（当然你能很容易地加入缺失的链接）。</description>
+		  <description lang="zh_TW">本搜刮器支援從以下網站取得資訊：MusicBrainz、last.fm、allmusic.com和amazon.de，並從以下網站取得專輯照片：fanart.tv、last.fm和allmusic.com。您並可以指定每一項內容的來源網站。&#10;&#10;初始搜尋結果總是先從MusicBrainz取得。如果MusicBrainz網站沒有加入到allmusic和/或amazon.de的外部連結，則無法取得allmusic.com的/或amazon.de的信息(當然您能很輕易地加入遺失的連結)。</description>
+		  <platform>all</platform>
+		  <license>GPL v2.0</license>
+		  <forum>http://forum.xbmc.org/showthread.php?tid=133547</forum>
+		  <website></website>
+		  <email></email>
+		  <source></source>
+		</extension>
+  </addon>
+
+  <addon id="metadata.artists.universal"
+       name="Universal Artist Scraper"
+       version="3.7.2"
+       provider-name="Olympia, Team Kodi">
+		<requires>
+		  <import addon="xbmc.metadata" version="2.1.0"/>
+		  <import addon="metadata.common.allmusic.com" version="3.1.0"/>
+		  <import addon="metadata.common.fanart.tv" version="3.1.0"/>
+		  <import addon="metadata.common.htbackdrops.com" version="1.3.2"/>
+		  <import addon="metadata.common.musicbrainz.org" version="2.1.0"/>
+		  <import addon="metadata.common.theaudiodb.com" version="1.8.1"/>
+		</requires>
+		<extension point="xbmc.metadata.scraper.artists"
+		           language="en"
+		           library="artistuniversal.xml"/>
+		<extension point="xbmc.addon.metadata">
+		  <summary lang="af">Universal Skraper vir Kunstenaars</summary>
+		  <summary lang="ar">ماسحة الفنان العالمية</summary>
+		  <summary lang="be">Universal Scraper for Artists</summary>
+		  <summary lang="bg">Универсален източник за информация за артисти</summary>
+		  <summary lang="ca">Arreplegador universal per artistes</summary>
+		  <summary lang="cs">Univerzální zdroj získávání dat pro umělce</summary>
+		  <summary lang="cy">Crafwr Cyffredinol ar gyfer Artistiaid</summary>
+		  <summary lang="da">Universel Scraper til Kunstnere</summary>
+		  <summary lang="de">Universeller Scraper für Interpreten</summary>
+		  <summary lang="el">Universal Scraper Καλλιτεχνών</summary>
+		  <summary lang="en">Universal Scraper for Artists</summary>
+		  <summary lang="en_NZ">Universal Scraper for Artists</summary>
+		  <summary lang="en_US">Universal Scraper for Artists</summary>
+		  <summary lang="es">Scraper universal para artistas</summary>
+		  <summary lang="es_AR">Scraper Universal para Artistas</summary>
+		  <summary lang="es_MX">Scraper Universal de Artistas</summary>
+		  <summary lang="et">Universaalne artistide kraabits</summary>
+		  <summary lang="fi">Universaali artistien tiedonhakija</summary>
+		  <summary lang="fr">Collecteur universel d'artistes</summary>
+		  <summary lang="fr_CA">Extracteur universel pour les artistes</summary>
+		  <summary lang="gl">Scraper Universal para Artistas</summary>
+		  <summary lang="he">Universa סקרייפר אמנים</summary>
+		  <summary lang="hr">Univerzalni sakupljač informacija izvođača</summary>
+		  <summary lang="hu">Univerzális előadó leolvasó</summary>
+		  <summary lang="id">Pengais Universal untuk Artis</summary>
+		  <summary lang="is">Almenn skafa fyrir Listamenn</summary>
+		  <summary lang="it">Scraper universale degli artisti</summary>
+		  <summary lang="ja">汎用アーティストスクレーパー</summary>
+		  <summary lang="ko">Universal Scraper for Artists</summary>
+		  <summary lang="lt">Universalus Artistų Scrapers</summary>
+		  <summary lang="lv">Mākslinieku universālais skrāpis</summary>
+		  <summary lang="mk">Universal Scraper for Artists</summary>
+		  <summary lang="ms">Pengikis Universal untuk Artis</summary>
+		  <summary lang="my">အနုပညာရှင်များအတွက် Universal Scraper</summary>
+		  <summary lang="nl">Universele scraper voor artiesten</summary>
+		  <summary lang="no">Universalskraper for artister</summary>
+		  <summary lang="pl">Universal Scraper informacji o artystach muzycznych</summary>
+		  <summary lang="pt">Colector universal para Artistas</summary>
+		  <summary lang="pt_BR">Scraper Universal para Artistas</summary>
+		  <summary lang="ro">Scraper universal pentru artisti</summary>
+		  <summary lang="ru">Универсальный скрапер для исполнителей</summary>
+		  <summary lang="sk">Univerzálny zdroj získavania dát pre umelcov</summary>
+		  <summary lang="sl">Univerzalen ponudnik informacij o izvajalcih</summary>
+		  <summary lang="sv">Universiell artistskrapa</summary>
+		  <summary lang="ta_IN">கலைஞர்களின் ஒட்டு மொத்தமான சுரண்டி</summary>
+		  <summary lang="tr">Sanatçılar için Evrensel Scraper</summary>
+		  <summary lang="uk">Універсальний здирач для виконавців</summary>
+		  <summary lang="vi">Trình lấy dữ liệu Nghệ sĩ từ nhiều nguồn</summary>
+		  <summary lang="zh">通用艺术家信息刮削器</summary>
+		  <summary lang="zh_TW">通用演出者訊息搜括器</summary>
+		  <description lang="af">Hierdie skraper versamel informasie van die volgende ondersteunde werwe: TheAudioDb.com, MusicBrainz, last.fm, en allmusic.com, terwyl kunswerke gryp van: fanart.tv, htbackdrops.com, last.fm en allmusic.com. Dit kan veld vir veld gestel word vanaf watter werf jy die spesifike informasie wil hê.&#10;&#10;Die aanvanklike soektog word altyd op MusicBrainz gedoen. Ingeval die allmusic skakel nie bygevoeg is op die MusicBrainz werf, kan velde van allmusic.com nie gaan haal word nie (egter baie maklik om daardie ontbrekende skakels by te voeg).</description>
+		  <description lang="ar">هذه الماسحة تجمع المعلومات من المواقع المدعومة التالية: TheAudioDb.com, MusicBrainz, last.fm, and allmusic.com, في حين تأخذ عناوين الأعمال الفنية من: fanart.tv, htbackdrops.com, last.fm and allmusic.com. يمكن أن ترتب حقل تلو حقل حسب الموقع الذي تريد منه تلك المعلومة المحددة.&#10;&#10;البحث الابتدائي يتم دائما على ميوزك برينز. في حال أن رابط كل الموسيقى غير مضاف على حقول موقع ميوزك برينز من allmusic.com لا يمكن الحصول عليها(على الرغم من سهولة إضافة هذه الروابط المفقودة).</description>
+		  <description lang="be">This scraper collects information from the following supported sites: TheAudioDb.com, MusicBrainz, last.fm, and allmusic.com, while grabs artwork from: fanart.tv, htbackdrops.com, last.fm and allmusic.com. It can be set field by field that from which site you want that specific information.&#10;&#10;The initial search is always done on MusicBrainz. In case allmusic link is not added on the MusicBrainz site fields from allmusic.com cannot be fetched (very easy to add those missing links though).</description>
+		  <description lang="bg">Сваля информация от следните сайтове: TheAudioDb.com, MusicBrainz, last.fm, and allmusic.com. Изобрания извлича от: fanart.tv, htbackdrops.com, last.fm and allmusic.com. Можете да определите от кой сайт каква информация да се сваля.&#10;&#10;Първоначалното търсене винаги се прави в MusicBrainz. Когато не е налична препратка към allmusic.com на сайта на MusicBrainz извличането на информация от allmusic.com става невъзможно (добавянето на препратка е много лесно).</description>
+		  <description lang="ca">Aquest arreplegador recull informació dels següents llocs suportats</description>
+		  <description lang="cs">Tento zdroj dat získává informace z následujících podporovaných stránek: TheAudioDb.com, MusicBrainz, last.fm, and allmusic.com, while grabs artwork from: fanart.tv, htbackdrops.com, last.fm a allmusic.com. Lze nastavit jakou informaci stahovat z jakých stránek.&#10;&#10;Základní hledání je vždy provedeno na MusicBrainz. V případě, že schází odkaz allmusic na stránce MusicBrains, nelze stáhnout informace z allmusic.com (avšak je velmi snadné chybějící odkazy přidat).</description>
+		  <description lang="cy">Mae'r crafwr yn casglu gwybodaeth o'r gwefannau canlynol:  TheAudioDb.com, MusicBrainz, last.fm, a allmusic.com, tra'n cipio gwaith celf o: fanart.tv, htbackdrops.com, last.fm a allmusic.com. Mae modd ei osod fesul maes i ddewis pa wefan i gasglu gwybodaeth benodol.&#10;&#10;Bydd y chwilio cychwynnol yn cael ei wneud ar MusicBrainz. Rhag ofn nad yw dolen allmusic wedi ei osod ar wefan MusicBrainz nid oes modd estyn meysydd o allmusic.com (mae'n hawdd gosod y dolenni coll hynny).</description>
+		  <description lang="da">Denne scraper samler information fra følgende sider: TheAudioDb.com, MusicBrainz, last.fm, og allmusic.com, og henter illustrationer fra: fanart.tv, htbackdrops.com, last.fm og allmusic.com. Det kan vælges felt for felt, fra hvilke sider du ønsker, at få de pågældende informationer fra.&#10;&#10;Den første søgning er altid på MusicBrainz. Hvis ikke allmusic linket er tilføjet på MusicBrainz side, kan felter fra allmusic.com ikke hentes (men det er helt enkelt at tilføje de manglende links).</description>
+		  <description lang="de">Dieser Scaper sammelt Informationen von den folgenden, unterstützten Seiten: MusicBrainz, Last.fm, Allmusic.com und Amazon.de. Es werden dabei Grafiken von den folgenden Seiten geladen: Fanart.tv, Last.fm und Allmusic.com. Von welcher Seite die Informationen geladen werden, kann einzeln konfiguriert werden.⏎ &#10;⏎&#10;Die initialie Suche wird immer über MusicBrainz durchgeführt. Sollten keine Allmusic- und/oder Amazon.de-Links auf der MusicBrainz-Seite gesetzt worden sein, können Felder von Allmusic.com und/oder Amazon.de nicht geladen werden (fehlende Links können jedoch sehr einfach hinzugefügt werden).</description>
+		  <description lang="el">Αυτό το scraper συλλέγει πληροφορίες από τις ακόλουθες υποστηριζόμενες ιστοσελίδες: TheAudioDb.com, MusicBrainz, last.fm και allmusic.com, ενώ λαμβάνει εικόνες από τα: fanart.tv, htbackdrops.com, last.fm και allmusic.com. Μπορεί να οριστεί πεδίο ανά πεδίο αναλόγως των πληροφοριών που επιθυμείτε από την εκάστοτε ιστοσελίδα.&#10;&#10;Η αρχική αναζήτηση γίνεται πάντα στο MusicBrainz. Σε περίπτωση που δεν έχουν προστεθεί σύνδεσμοι για το allmusic στο MusicBrainz, δε θα μπορούν να ληφθούν πεδία από το allmusic.com (ωστόσο είναι πολύ εύκολο να προστεθούν αυτοί οι ελλιπείς σύνδεσμοι).</description>
+		  <description lang="en">This scraper collects information from the following supported sites: TheAudioDb.com, MusicBrainz, last.fm, and allmusic.com, while grabs artwork from: fanart.tv, htbackdrops.com, last.fm and allmusic.com. It can be set field by field that from which site you want that specific information.&#10;&#10;The initial search is always done on MusicBrainz. In case allmusic link is not added on the MusicBrainz site fields from allmusic.com cannot be fetched (very easy to add those missing links though).</description>
+		  <description lang="en_US">This scraper collects information from the following supported sites: TheAudioDb.com, MusicBrainz, last.fm, and allmusic.com, while grabs artwork from: fanart.tv, htbackdrops.com, last.fm and allmusic.com. It can be set field by field that from which site you want that specific information.&#10;&#10;The initial search is always done on MusicBrainz. In case allmusic link is not added on the MusicBrainz site fields from allmusic.com cannot be fetched (very easy to add those missing links though).</description>
+		  <description lang="es">Este scraper recopila información de las siguientes webs: TheAudioDb.com, MusicBrainz, last.fm y allmusic.com, mientras obtiene las imágenes de fanart.tv, htbackdrops.com, last.fm y allmusic.com. Permite especificar de qué web se quiere obtener la información específica. ⏎ ⏎ La búsqueda inicial se realiza siempre en MusicBrainz. En caso de que los enlaces a allmusic no estén añadidos en la web de MusicBrainz, no se podrán obtener los campos de información de este sitio (aunque es muy fácil añadir esos enlaces que faltan).</description>
+		  <description lang="es_AR">Este scraper recopila información de las siguientes webs: TheAudioDb.com, MusicBrainz, last.fm y allmusic.com, mientras que obtiene las imágenes de fanart.tv, htbackdrops.com, last.fm y allmusic.com. Permite especificar de qué web se quiere obtener la información específica. ⏎ ⏎ La búsqueda inicial se realiza siempre en MusicBrainz. En caso de que los enlaces a allmusic no estén añadidos en la web de MusicBrainz, no se podrán obtener los campos de información de este sitio (aunque es muy fácil añadir esos enlaces que faltan).</description>
+		  <description lang="es_MX">Este scraper obtiene información de los siguientes sitios soportados: TheAudioDb.com, MusicBrainz, last.fm y allmusic.com, mientras obtiene artwork de: fanart.tv, htbackdrops.com, last.fm y allmusic.com. Puede ser configurado campo por campo de que sitio quieres esa información específica.⏎ ⏎ La búsqueda inicial siempre es hecha en MusicBrainz. En el caso en que los enlaces de allmusic no son agregados en el sitio de  MusicBrainz, campos de allmusic.com no pueden ser obtenidos. (De cualquier manera es muy fácil agregar esos enlaces no encontrados).</description>
+		  <description lang="et">See kraabits kogub infot järgmistelt lehtedelt: TheAudioDb.com, MusicBrainz, last.fm ja allmusic.com, pilte: fanart.tv, htbackdrops.com, last.fm ja allmusic.com. Saad välja kaupa määrata, milliselt lehelt mis infot soovid.&#10;&#10;Esmane otsing tehakse alati saidilt MusicBrainz. Kui MusicBrainz lehele pole allmusic  linki lisatud, siis allmusic.com lehelt sisu hankida ei saa (puuduvaid linke saad ise lihtsalt lisada).</description>
+		  <description lang="fi">Tämä tiedonhakija käyttää tietolähteinään seuraavia sivustoja: TheAudioDb.com, MusicBrainz, last.fm, and allmusic.com. Kuvat ja grafiikat haetaan seuraavilta sivustoilta: fanart.tv, htbackdrops.com, last.fm and allmusic.com. Voit määrittää tarkasti, miltä sivustoilta mitäkin tietoa haetaan.&#10;&#10;Ensimmäinen haku tehdään aina lähteestä MusicBrainz. Mikäli allmusic-linkkiä ei ole lisätty MusicBrainz-sivustolle allmusic.com-osoitteessa, haku ei onnistu (mutta puuttuvien linkkien lisääminen on helppoa).</description>
+		  <description lang="fr">Ce collecteur répertorie les informations des sites suivants : TheAudioDb.com, MusicBrainz, Last.fm et allmusic.com tout en assemblant les illustrations depuis : fanart.tv, htbackdrops.com, last.fm et allmusic.com. Vous pouvez définir la source d'information pour chaque champ.&#10;&#10;La recherche initiale est toujours faite à partir de MusicBrainz. xxxxxxxx (en attente du retour de l'équipe Kodi) xxxxxxxxxxx</description>
+		  <description lang="fr_CA">Cet extracteur recueille des informations depuis les sites pris en charge suivants : TheAudioDb.com, MusicBrainz, last.fm et allmusic.com, alors qu'il récupère les illustrations depuis : fanart.tv, htbackdrops.com, last.fm et allmusic.com. Il est possible de configurer champ par champ depuis quel site l'information doit être récupérée.&#10;&#10;La recherche initiale est toujours faite sur MusicBrainz. Dans le cas où les liens allmusic ne sont pas ajoutés sur le site de MusicBrainz, les champs provenant de allmusic.com ne peuvent pas être récupérés (il est par contre très simple d'ajouter ces liens manquants).</description>
+		  <description lang="gl">Este scraper recolle información dos seguintes sitios:&#10;TheAudioDb.com, MusicBrainz, last.fm e allmusic.com, mentres que, obtén as imaxes de: fanart.tv, htbackdrops.com, last.fm e allmusic.com. Pode definir en cada campo o sitio de onde quere obter a información.&#10;&#10;A busca inicial é feita sempre no MusicBrainz, no caso de que a ligazón a allmusic non se teña engadido nos campos do sítio MusicBrainz dende allmusic.com, non se poderán obter (aínda que, é moi doado engadir as ligazóns que faltan).</description>
+		  <description lang="he">סקרייפר זה אוסף מידע מהתארים הנתמכים הבאים: TheAudioDb.com, MusicBrainz, last.fm, and allmusic.com, בעוד שמשיכת גרפיקה נעשית דרך: fanart.tv, htbackdrops.com, last.fm and allmusic.com. יש אפשרות להגדיר את זאת שדה אחר שדה מאיזה אתר ברצונך למשוך את המידע הספציפי.⏎ ⏎ החיפוש הפנימי נעשה תמיד דרך MusicBrainz. במקרה שקישור allmusic לא התווסף באתר MusicBrainz, השדות מאת allmusic.com אינן יכולות להימשך (למרות שזה מאוד קל להוסיף את הקישורים הריקים).</description>
+		  <description lang="hr">Ovaj sakupljač prikuplja informacije sa sljedećih podržanih stranica: TheAudioDb.com, MusicBrainz, last.fm i allmusic.com, dok preuzima omote filmova sa: fanart.tv, last.fm i allmusic.com. Može poredati popis stranica iz kojih želite sakupiti informacije jednu iza druge.\n&#10;\n&#10;Pretraga uvijek započinje na MusicBrainzu. U slučaju da allmusic poveznica nije dodana na MusicBrainz stranicu, polja sa allmusic.com ne mogu se nabaviti (ali je vrlo jednostavno moguće dodati te nedostajuće poveznice).</description>
+		  <description lang="hu">Ez a leolvasó a következő weboldalakról gyűjti be az adatokat:  TheAudioDb.com, MusicBrainz, last.fm és allmusic.com, míg képeket a következő oldalakról gyűjt: fanart.tv, htbackdrops.com, last.fm és allmusic.com. Egyenként beállítható, hogy az adott mezőt melyik weboldalról töltse fel⏎ ⏎ A kiinduló keresés mindig a MusicBrainz. Amennyiben az allmusic utalás nincs hozzáadva MusicBrainz oldalhoz, a mezők nem tölthetők le az allmusic.com oldalról (a hiányzó utalások hozzáadása azonban nagyon egyszerű).</description>
+		  <description lang="id">Pengais ini mengambil informasi dari berbagai situs yang mendukung: TheAudioDb.com, MusicBrainz, last.fm dan allmusic.com, sembari mengambil artwork dari: fanart.tv, htbackdrops.com. last.fm dan allmusic.com. Ini dapat diatur perbagian dari situ mana informasi tertentu akan diambil.&#10;&#10;Pencarian awal akan dilakukan di MusicBrainz. Apabila tautan dari allmusic belum ditambahkan di situs MusicBrainz, bagian dari allmusic.com tidak dapat ditarik (Namun sangatlah mudah menambahkan tautan tersebut).</description>
+		  <description lang="is">Þessi skafa safnar sama upplýsingum frá eftirfarandi studdum stöðum: TheAudioDb.com, MusicBrainz, last.fm, og allmusic.com, og á meðan nær hún í myndir frá: fanart.tv, htbackdrops.com, last.fm og allmusic.com. Hægt er að stilla reit fyrir reit hvaðan upplýsingarnar koma.&#10;&#10;Leitin byrjar alltaf á MusicBrainz. Ef allmusic tenglar eru ekki á MusicBrainz veitunni, næst ekki í upplýsingarnar frá allmusic.com (mjög auðvelt að bæta tenglunum við samt).</description>
+		  <description lang="it">Lo scraper colleziona informazioni da questi siti supportati: TheAudioDb.com, MusicBrainz, last.fm, e allmusic.com, mentre ottiene le grafiche da: fanart.tv, htbackdrops.com, last.fm e allmusic.com. Può essere impostato campo per campo da quale sito vuoi la specifica informazione.&#10;&#10;La ricerca iniziale è sempre fatta su MusicBrainz. Nel caso che il link allmusic non è stato aggiunto al campo del sito MusicBrainz da allmusic.com; non possono essere ottenute (è comunque veramente facile aggiungere questi link mancanti).</description>
+		  <description lang="ja">このスクレーパーは、以下のサイトから情報を取得します：TheAudioDb.com, MusicBrainz, last.fm, allmusic.com。アートワークは以下のサイトから取得します：fanart.tv, htbackdrops.com, last.fm, allmusic.com。各フィールドごとに、どの情報をどのサイトから取得するか、個別に指定することもできます。&#10;&#10;最初は MusicBrainz を使って検索が行われます。MusicBrainz サイトに allmusic のリンクが追加されていない場合は、allmusic.com からのフィールドは取得できません (リンクを追加するのは簡単ですが)。</description>
+		  <description lang="ko">이 자료수집기는 다음의 사이트에서 정보를 가져옵니다: TheAudioDb.com, MusicBrainz, last.fm, allmusic.com.아트워크는 다음의 사이트에서 가져옵니다: fanart.tv, htbackdrops.com, last.fm, allmusic.com. 특정 정보를 지정한 사이트에서 가져오도록 필드별로 설정할 수 있습니다.&#10;&#10;초기 검색은 항상 MusicBrainz에서 수행합니다. allmusic 링크가 MusicBrainz 사이트의 필드에 추가되어 있지 않은 경우 정보를 가져올 수 없습니다(누락된 링크는 쉽게 추가할 수 있습니다).</description>
+		  <description lang="lt">Šis Scrapers renka informaciją iš šių palaikomų svetainių: TheAudioDb.com, MusicBrainz, last.fm, ir allmusic.com, ir atsiunčia meno kūrinius iš: fanart.tv, htbackdrops.com, last.fm ir allmusic.com. Jis gali būti nustatyti lauko srityje, kurioje svetainėje norite, kad konkrečiu atveju pradinė informacijos pradinis paieška visada bus atlikta remiantis MusicBrainz. Allmusic nuoroda įdėta į MusicBrainz vietoje laukų allmusic.com negali būti (nors tas trūkstamas grandis labai lengva įtraukti).</description>
+		  <description lang="mk">This scraper collects information from the following supported sites: TheAudioDb.com, MusicBrainz, last.fm, and allmusic.com, while grabs artwork from: fanart.tv, htbackdrops.com, last.fm and allmusic.com. It can be set field by field that from which site you want that specific information.&#10;&#10;The initial search is always done on MusicBrainz. In case allmusic link is not added on the MusicBrainz site fields from allmusic.com cannot be fetched (very easy to add those missing links though).</description>
+		  <description lang="ms">Pengikis ini mendapatkan maklumat dari laman tersokong berikut: TheAudioDb.com, MusicBrainz, last.fm dan allmusic.com, manakala ia dapatkan kerja seni dari: fanart.tv, htbckdrops.com, last.fm dan allmusic.com. Ia boleh tetapkan medan mengikut medan supaya anda boleh dapatkan maklumat khusus dari laman tertentu.⏎&#10;⏎&#10;Gelintar awalan sentiasa bermula dengan MusicBrainz. Pautan allmusic tidak ditambah ke laman MusicBrainz, medan dari allmusic.com sukar didapati.</description>
+		  <description lang="my">ဒီ Scraper သည် အချက်အလက်များကို အောက်ဖော်ပြပါ ထောက်ပံ့ထားသော ဆိုဒ်များမှ စုဆောင်းပါသည်။ ထိုဆိုဒ်များမှာ TheAudioDb.com,MusicBrainz,last..fm, နှင့် allmusic.com တို့ဖြစ်သည်။</description>
+		  <description lang="nl">Deze scraper verzamelt informatie van de volgende ondersteunde websites: TheAudioDb.com, MusicBrainz, last.fm, en allmusic.com en tevens pakt hij afbeeldingen van fanart.tv, htbackdrops.com, last.fm en allmusic.com. Het is mogelijk om per veld aan te geven van welke website je de specifieke informatie wilt halen.&#10;&#10;De initiële zoekopdracht wordt altijd uitgevoerd op MusicBrainz. Wanneer de allmusic link niet is toegevoegd in de juiste velden op de MusicBrainz website kan de informatie van allmusic.com niet worden opgehaald. (Het is erg makkelijk om deze ontbrekende links toe te voegen.)</description>
+		  <description lang="no">Denne skraperen samler informasjon fra følgende støttede steder: TheAudioDb.com, MusicBrainz, last.fm og allmusic.com, mens den henter artwork fra: fanart.tv, htbackdrops.com, last.fm og allmusic.com. Du kan stegvis velge hvilken kilde du ønsker og hente spesifikk informasjon fra.&#10;&#10;Det første søket er alltid gjort hos MusicBrainz. I tilfeller hvor allmusic-linker ikke er lagt til hos MusicBrainz-siden, kan ikke felter fra allmusic.com hentes (det er veldig lett å legge til de manglende linkene).</description>
+		  <description lang="pl">Ten ekstraktor pobiera informacje z następujących stron: TheAudioDb.com, MusicBrainz, last.fm, and allmusic.com, a grafiki pobiera z: fanart.tv, htbackdrops.com, last.fm i allmusic.com. Dla każdego pola z informacjami można wybrać osobną stronę.&#10;&#10;Początkowe wyszukiwanie jest zawsze wykonywane w serwisie MusicBrainz. Gdy wyszukiwanie nie jest wskazane na stronę MusicBrainz, następuje przeszukiwanie serwisu allmusic.com (brakujące linki można łatwo dodać później).</description>
+		  <description lang="pt">Este colector recolhe informações dos seguintes sítios:&#10;TheAudioDb.com, MusicBrainz, last.fm e allmusic.com, enquanto obtém artwork de: fanart.tv, htbackdrops.com, last.fm e allmusic.com. Pode definir em cada campo o sítio de onde quer obter as informações. &#10;&#10;A pesquisa inicial é sempre feita no MusicBrainz. Caso um endereço allmusic não tenha sido adicionado no sítio MusicBrainz, os campos do allmusic.com não serão obtidos (no entanto, é muito fácil adicionar os links em falta).</description>
+		  <description lang="pt_BR">Este scraper coleta informações nos seguintes sites:&#10;MusicBrainz, last.fm, allmusic.com e amazon.de, enquanto pega os artwork de: fanart.tv, last.fm and allmusic.com. O Mesmo pode ser configurara campo a campo em que site você quer obter informações específicas. A procura inicial é sempre feita no MusicBrainz. No caso allmusic e/ou amazon.de não terem sido adicionados no site MusicBrainz, campos de allmusic.com e/ou amazona.de não serão buscados (embora seja muito fácil adicionar os links faltantes). </description>
+		  <description lang="ro">Acest scraper colectează informații de la următoarele site-uri suportate: TheAudioDb.com, MusicBrainz, last.fm, și allmusic.com, și opere de artă de la: fanart.tv, htbackdrops.com, last.fm și allmusic.com. Poate fi setat câmp cu câmp de pe care site-ul doriți informații specifice ⏎ ⏎ căutarea inițială se face întotdeauna face pe MusicBrainz.. În cazul în care link-ul Allmusic nu este adăugat la MusicBrainz, allmusic.com nu poate fi folosit (însă este relativ ușor să adăugați aceste link-uri lipsă).</description>
+		  <description lang="ru">Этот скрапер собирает информацию со следующих сайтов: TheAudioDb.com, MusicBrainz, last.fm и allmusic.com, при этом получая обложки с: fanart.tv, htbackdrops.com, last.fm и allmusic.com. Каждое поле может быть настроено для получения определенной информации с желаемого вами сайта.⏎ ⏎ Первичный поиск всегда производится на MusicBrainz. Если линк для allmusic не добавлен на сайте MusicBrainz, то поля с allmusic.com не могут быть заполнены (добавить отсутствующие ссылки очень легко).</description>
+		  <description lang="sk">Tento zdroj získavania dát zbiera infomácie z nasledujúcich podporovaných stránok: TheAudioDb.com, MusicBrainz, last.fm a allmusic.com. Grafiku získava zo stránok: fanart.tv, htbackdrops.com, last.fm a allmusic.com. Je možné podrobne nastaviť, z ktorej stránky chcete získať konkrétne informácie.&#10;&#10;Počiatočné hľadanie je vždy na stránke MusicBrainz. V prípade, že odkaz pre allmusic nie je pridaný na stránku MusicBrainz, nie je možné získať údaje zo stránky allmusic.com (je ale veľmi jednoduché tieto chýbajúce odkazy pridať).</description>
+		  <description lang="sl">Ta ponudnik združuje informacije s sledečih strani: TheAudioDb.com, MusicBrainz, last.fm in allmusic.com; grafike prenaša z: fanart.tv, htbackdrops.com, last.fm in allmusic.com. Vsako informacijo lahko prenesete z različne strani.&#10;&#10;Začeno iskanje je vedno na MusicBrainz. V primeru, da na MusicBrainz ni povezave do allmusic.com, informacij od tam ne morete prenesti (a to težavo hitro lahko odpravite).</description>
+		  <description lang="sv">Denna skrapa samlar information från följande sajter: TheAudioDb.com, MusicBrainz, last.fm och allmusic.com, medans den samlar konstverk från: fanart.tv, htbackdrops.com, last.fm och allmusic.com. Du kan ange fält för fält från vilken sajt du vill ha den specifika inforamtionen från. Den initiala sökningen är alltid gjord på MusicBrainz. Om inte allmusic.com länken läggs till på MusicBrainz sajten, kan inte fält från allmusic.com hämtas (väldigt enkelt att lägga till dom saknade länkarna dock).</description>
+		  <description lang="ta_IN">இந்த சுரண்டியானது TheAudioDb.com, MusicBrainz, last.fm, allmusic.com ஆகிய இணையதளத்தில் இருந்து தகவல்களை சேகரிக்கும். திரை குறும்படங்களை fanart.tv, htbackdrops.com, last.fm மற்றும் allmusic.com ஆகிய இணையதளத்தில் இருந்து தகவல்களை சேகரிக்கும். ⏎ ⏎ முதன்மை தேடல் எப்போதும் MusicBrainz தான் நடக்கும். allmusic மற்றும் amazon.de சேர்க்கபடாவிட்டால் அவற்றில் இருந்து தகவல்கள் செமிக்கபடமாட்டது (தவறிய இணைப்புகளை சேர்ப்பது மிகவும் எளிது).</description>
+		  <description lang="uk">Здирач збирає інформацію з наступних сторінок: TheAudioDb.com, MusicBrainz, last.fm та allmusic.com, тоді як отримує обкладинки з: fanart.tv, htbackdrops.com, last.fm та allmusic.com. Для кожного поля можно вказати з якої сторінки ви бажаєте його заповнити.&#10;&#10;Початковий пошук завжди робиться на MusicBrainz. Якщо посилання з allmusic не додаються на сторінку MusicBrainz, тоді поля з allmusic.com неможливо отримати (однак дуже легко додати ці пропущені посилання).</description>
+		  <description lang="vi">Trình này thu thập thông tin từ những site được hỗ trợ như: TheAudioDb.com, MusicBrainz, last.fm, allmusic.com, và lấy ảnh bìa từ các nguồn: fanart.tv, htbackdrops.com, last.fm và allmusic.com. Bạn có thể tùy chỉnh chọn từng thứ riêng biệt để lấy từ site bạn muốn.\n \n Lần tìm kiếm đầu tiên luôn luôn được sử dụng từ MusicBrainz. Trong trường hợp các link allmusic không có trên MusicBrainz, các trường từ allmusic.com sẽ không thể lấy về được (tuy nhiên rất dễ để tự thêm vào các link này bằng tay).</description>
+		  <description lang="zh">本刮削器支持从以下网站获取信息：TheAudioDb.com、MusicBrainz、last.fm 和 allmusic.com，并从以下网站获取艺术图片：fanart.tv、htbackdrops.com、last.fm 和 allmusic.com。你可以指定每一项内容的来源网站。&#10;&#10;初始结果总是先从 MusicBrainz 获取，如果 MusicBrainz 网站未加入到 allmusic 的外部链接，则无法获取 allmusic.com 的信息（当然你能很容易地加入缺失的链接）。</description>
+		  <description lang="zh_TW">本搜刮器支援從以下網站取得資訊：TheAudioDb.com、MusicBrainz、last.fm和allmusic.com，並從以下網站取得專輯圖片：fanart.tv、htbackdrops.com、last.fm和allmusic.com。您可以指定每一項內容的來源網站。&#10;&#10;初始搜尋結果總是先從MusicBrainz取得，如果MusicBrainz網站未加入到allmusic的外部連結，則無法取得allmusic.com的資訊 (當然您能很輕易地加入遺失的連結)。</description>
+		  <platform>all</platform>
+		  <license>GPL v2.0</license>
+		  <forum>http://forum.xbmc.org/showthread.php?tid=132623</forum>
+		  <website></website>
+		  <email></email>
+		  <source></source>
+		</extension>
+	</addon>
+
+  <addon id="metadata.common.musicbrainz.org"
+    name="MusicBrainz Scraper Library"
+    version="2.1.1"
+    provider-name="Team Kodi">
+		<requires>
+		  <import addon="xbmc.metadata" version="2.1.0"/>
+		</requires>
+		<extension point="xbmc.metadata.scraper.library"
+		           library="musicbrainz.xml"/>
+		<extension point="xbmc.addon.metadata">
+		  <platform>all</platform>
+		  <summary lang="bg">Библиотека за сваляне на музикална инф. от MusicBrainz</summary>
+		  <summary lang="en">MusicBrainz Music Scraper Library</summary>
+		  <summary lang="de">Musik-Scraper für musicbrainz.org</summary>
+		  <summary lang="es">Scraper de música de MusicBrainz</summary>
+		  <summary lang="fi">MusicBrainz musiikkitietojen lataajan kirjasto</summary>
+		  <summary lang="fr">Scraper MusicBrainz pour la musique</summary>
+		  <summary lang="hu">MusicBrainz zenei adat leolvasó</summary>
+		  <summary lang="nl">MusicBrainz-scraperfuncties</summary>
+		  <summary lang="pl">Scraper muzyki MusicBrainz</summary>
+		  <summary lang="pt">Scraper de música MusicBrainz</summary>
+		  <summary lang="ro">Bibliotecă catalog de muzică MusicBrainz</summary>
+		  <summary lang="ru">Музыкальная Информация MusicBrainz</summary>
+		  <summary lang="se">Skrapa för musicbrainz.org</summary>
+		  <summary lang="zh">MusicBrainz音乐刮削器代码库</summary>
+		  <description lang="bg">Извлича инф. за музикални файлове от www.musicbrainz.org</description>
+		  <description lang="en">Download Music information from www.musicbrainz.org</description>
+		  <description lang="de">Downloade Musik Informationen von www.musicbrainz.org</description>
+		  <description lang="es">Descarga información musical de www.musicbrainz.org</description>
+		  <description lang="fi">Lataa musiikkitietoja osoitteesta www.musicbrainz.org</description>
+		  <description lang="fr">Télécharger les infos musicales depuis www.musicbrainz.org</description>
+		  <description lang="hu">Zene információk letöltése a www.musicbrainz.org webhelyről</description>
+		  <description lang="nl">Muziekinformatie ophalen van www.musicbrainz.org</description>
+		  <description lang="pl">Pobieraj informacje o muzyce z www.musicbrainz.org</description>
+		  <description lang="pt">Descarregar informação de música de www.musicbrainz.org</description>
+		  <description lang="ro">Descărcați informații muzică de pe www.musicbrainz.org</description>
+		  <description lang="ru">Загружать информацию о Музыке с www.musicbrainz.org</description>
+		  <description lang="se">Ladda ner musikinformation från www.musicbrainz.org</description>
+		  <description lang="zh">从www.musicbrainz.org下载音乐信息</description>
+		</extension>
+	</addon>
+
+	<addon id="plugin.program.addoninstaller" version="1.2.9"
+    	name="Addon Installer" provider-name="tvaddons.ag, Blazetamer">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+        <import addon="script.module.addon.common" optional="true" />
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>executable</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>Addon Browser</summary>
+        <description>Its like an App Store where you'll find Addons for Kodi, and everything is free!</description>
+        <disclaimer>By using this, you take reponsibility for anything that happens.</disclaimer>
+        <language>en</language>
+        <platform>all</platform>
+        <forum>http://forums.tvaddons.ag/forums/156-ADDON-INSTALLER</forum>
+        <website>http://addons.tvaddons.ag/</website>
+        <source></source>
+        <email></email>
+    </extension>
+	</addon>
+
+	<addon id="service.subtitles.opensubtitles"
+		     name="OpenSubtitles.org"
+		     provider-name="amet">
+		     version="1005.0.15"
+		<requires>
+		  <import addon="xbmc.python" version="2.1.0"/>
+		</requires>
+		<extension point="xbmc.subtitle.module"
+		           library="service.py" />
+		<extension point="xbmc.addon.metadata">
+		  <summary lang="en">OpenSubtitles</summary>
+		  <description lang="en">Search and download subtitles from opensubtitles.org</description>
+		  <description lang="zh">从 opensubtitles.org 搜索并下载字幕</description>
+		  <disclaimer lang="en"></disclaimer>
+		  <platform>all</platform>
+		  <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+		  <forum>http://forum.xbmc.org/showthread.php?tid=183114</forum>
+		  <website></website>
+		  <email></email>
+		  <source>https://github.com/amet/service.subtitles.opensubtitles</source>
+		</extension>
+	</addon>
+
+<addon id="script.video.F4mProxy" name="F4mProxy" version="1002.8.8" provider-name="Shani">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0" />
+    <import addon="script.module.requests" />
+  </requires>
+  <extension point="xbmc.python.module" library="lib" />
+    <extension point="xbmc.python.pluginsource" library="addon.py">
+		<provides>executable</provides>
+  </extension>
+
+
+
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">Proxy for f4m</summary>
+    <description lang="en">Use this addon to play F4m v1 and v2 streams</description>
+  </extension>
+</addon>
+
+<addon id="plugin.video.f4mTester" version="2.7.2" name="f4mTester" provider-name="Shani">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+        <import addon="script.video.F4mProxy" version="2.7.1"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+    </extension>
+
+
+    <extension point="xbmc.addon.metadata">
+        <summary>f4mTester</summary>
+        <description></description>
+        <platform>all</platform>
+    </extension>
+</addon>
+
+<addon id="script.exodus.artwork" version="1003.0.1" name="Exodus Artwork" provider-name="Exodus">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0"/>
+	</requires>
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.addon.metadata">
+		<summary>Themes for the Exodus Addon</summary>
+		<description></description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="script.exodus.metadata" version="1003.0.1" name="Exodus Metadata" provider-name="Exodus">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0"/>
+	</requires>
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.addon.metadata">
+		<summary>Metadata for the Exodus Addon</summary>
+		<description>Metadata for Exodus are maintained separately to make distribution of the the addon itself easier/faster.</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="script.chromium_remotecontrol" name="Remote Control Chromium" version="1.4" provider-name="Marv">
+  <requires>
+	<import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.service"
+	         library="default.py" start="startup">
+  </extension>
+  <extension point="xbmc.addon.metadata">
+	<platform>all</platform>
+	<summary lang="en">Remote Control for Chromium</summary>
+	<description lang="en">Control Chromium with Remote (requires xdotool). Keys can be defined in the settings.</description>
+  </extension>
+</addon>
+
+<addon id="script.manageChannelIcons" name="Management for channels' icons" version="1.0.28" provider-name="BadJin">
+  <requires>
+	<import addon="xbmc.python" version="2.19.0"/>
+  </requires>
+  <extension point="xbmc.service" library="default.py" start="startup" />
+  <extension point="xbmc.addon.metadata">
+	<platform>all</platform>
+	<summary lang="en"></summary>
+  </extension>
+</addon>
+
+<addon id="plugin.program.updateFrq" name="UpdateFrequency4AirTV" version="1.0.2" provider-name="BadJin">
+  <requires>
+    <import addon="xbmc.python" version="2.19.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en"></summary>
+  </extension>
+</addon>
+
+<addon id="plugin.video.veetle" version="0.3.3" name="Veetle" provider-name="fightnight (creator: t0mm0)">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+        <import addon="script.module.simplejson" version="2.0.10"/>
+        <import addon="script.common.plugin.cache" version="1.3.0"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+    </extension>
+    <extension point= "xbmc.addon.metadata">
+	<summary lang="en">Browse and stream from veetle.com</summary>
+	<description lang="en">Enables watching streams on veetle.com that are flash enabled.</description>
+        <disclaimer lang="en">Does not work for 'HD' streams which require a software download.</disclaimer>
+        <platform>all</platform>
+    </extension>
+</addon>
+
+<addon id="script.module.schism.common" name="Elysium Common Libraries" version="2017.06.08" provider-name="Elysium">
+	<requires>
+		<import addon="xbmc.python" version="2.1.0" />
+		<import addon="script.module.six" />
+		<import addon="script.module.metahandler" />
+		<import addon="script.module.beautifulsoup" />
+	</requires>
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<summary lang="en">Collection of modules used by Elysium</summary>
+		<description lang="en">Collection of modules used by Elysium</description>
+		<license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+	</extension>
+</addon>
+
+<addon id="script.module.futures"
+       name="futures"
+       version="2.2.0"
+       provider-name="Brian Quinlan">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.module"
+             library="lib"/>
+  <extension point="xbmc.addon.metadata">
+    <summary>A futures implementation for Python</summary>
+    <description>Backport of the concurrent.futures package from Python 3.2</description>
+    <platform>all</platform>
+    <license>BSD</license>
+    <source>https://code.google.com/p/pythonfutures/source/browse</source>
+    <website>https://code.google.com/p/pythonfutures</website>
+  </extension>
+</addon>
+
+<addon id="script.module.resolveurl" name="ResolveURL" version="5.0.32" provider-name="jsergio">
+	<requires>
+		<import addon="xbmc.python" version="2.1.0" />
+		<import addon="plugin.video.youtube" optional="true" />
+		<import addon="script.module.python.twitch" optional="true" />
+		<import addon="script.module.cryptopy" version="1.2.6" optional="true" />
+		<import addon="plugin.video.gdrive" optional="true" />
+	</requires>
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.python.pluginsource" library="lib/default.py" />
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<summary lang="en">Resolve common video host URL's to be playable in XBMC/Kodi.</summary>
+		<summary lang="es">Resolver enlaces a videos de sitios populares para poder reproducirlos en XBMC/Kodi.</summary>
+		<summary lang="hr">Prilagodi najčešće URL-ove video izvora kako bi radili u XBMC/Kodiju.</summary>
+		<description lang="en">Resolve common video host URL's to be playable in XBMC/Kodi, simplify addon development of video plugins requiring multi video hosts.</description>
+		<description lang="hr">Prilagodi najčešće URL-ove video izvora kako bi radili u XBMC/Kodiju, pojednostavnjuje razvoj priključaka za video dodatke koji zahtjevaju višestruke video izvore.</description>
+	</extension>
+</addon>
+
+<addon id="script.module.nanscrapers" name="NaN Scrapers" version="0.5.51" provider-name="Team NaN">
+        <requires>
+                <import addon="xbmc.python" version="2.1.0"/>
+                <import addon="script.module.beautifulsoup" version="3.2.1"/>
+                <import addon="script.module.futures" version="2.2.0"/>
+                <import addon="script.module.requests"/>
+                <import addon="script.module.six"/>
+                <import addon="script.module.resolveurl" version="5.0.00"/>
+                <!--<import addon="script.mrknow.urlresolver" version="2016.10.30.2" optional="true"/>-->
+        </requires>
+        <extension point="xbmc.python.module" library="lib"/>
+        <extension point="xbmc.python.pluginsource" library="lib/default.py">
+                <provides>executable</provides>
+        </extension>
+        <extension point="xbmc.addon.metadata">
+                <platform>all</platform>
+                <summary lang="en">Scrape common video host for URL's to be playable in XBMC/Kodi.</summary>
+                <description lang="en">Scrape common video host for URL's to be playable in XBMC/Kodi, simplifying addon development of video plugins requiring multi video hosts.
+                </description>
+                <license>GPL v3</license>
+                <source>https://github.com/noobsandnerds/noobsandnerds/tree/master/script.module.nanscrapers</source>
+                <forum>http://www.noobsandnerds.com/support/showthread.php?tid=17212</forum>
+                <website>http://noobsandnerds.com</website>
+        </extension>
+</addon>
+
+<addon id="script.module.exodus" name="Exodus Module" version="3.2.0" provider-name="Exodus">
+	<requires>
+		<import addon="xbmc.python" version="2.1.0" />
+		<import addon="script.module.beautifulsoup4"/>
+	</requires>
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<summary lang="en">Exodus</summary>
+	</extension>
+</addon>
+
+<addon id="script.module.exoscrapers" name="ExoScrapers Module" version="1.0.0" provider-name="Exodus">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0" />
+        <import addon="script.module.beautifulsoup4"/>
+    </requires>
+    <extension point="xbmc.python.module" library="lib" />
+    <extension point="xbmc.python.pluginsource" library="lib/default.py">
+        <provides>executable</provides>
+    </extension>
+        <extension point="xbmc.addon.metadata">
+            <platform>all</platform>
+            <summary lang="en">ExoScrapers Module</summary>
+            <description>Scrape common video host for URL's to be playable in Kodi, simplifying addon development of video plugins requiring multi video hosts.</description>
+                <disclaimer lang="en">The author is not responsible for the use of this addon. The author is not responsible for the content found using this addon. The author does not host or own any content found within this addon.[CR]The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation.[CR]This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works.</disclaimer>
+    <platform>all</platform>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+    <assets>
+        <icon>icon.png</icon>
+        <fanart></fanart>
+    </assets>
+    <news></news>
+    </extension>
+</addon>
+
+<addon id="script.module.exodusscrapers" name="Exodus Scrapers Module" version="2.0.0" provider-name="Exodus">
+	<requires>
+		<import addon="xbmc.python" version="2.1.0" />
+		<import addon="script.module.beautifulsoup4"/>
+	</requires>
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.python.pluginsource" library="lib/default.py">
+		<provides>executable</provides>
+	</extension>
+	<!--<extension point="xbmc.service" library="CleanupService.py" start="startup" />-->
+		<extension point="xbmc.addon.metadata">
+			<platform>all</platform>
+			<summary lang="en">Exodus Scrapers Module</summary>
+			<description>Scrape common video host for URL's to be playable in XBMC/Kodi, simplifying addon development of video plugins requiring multi video hosts.</description>
+        		<disclaimer lang="en">The author is not responsible for the use of this addon. The author is not responsible for the content found using this addon. The author does not host or own any content found within this addon.[CR]The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation.[CR]This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works.</disclaimer>
+        		<license>Beerware rev. 42</license>
+		</extension>
+</addon>
+
+<addon id="service.networking.bwman" name="bwman" version="1.0.1" provider-name="Seebo Networks">
+  <requires>
+    <import addon="os.openelec.tv" version="5.0"/>
+    <import addon="xbmc.python" version="2.1.0"/>
+
+  </requires>
+  <extension point="xbmc.service" library="default.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>Bandwidth Monitoring and Management Tool</summary>
+    <description>
+         BWMan is a bandwidth monitoring tool for Seebo.
+    </description>
+    <disclaimer>
+    </disclaimer>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+
+<!--
+<addon id="plugin.video.afl-video" name="AFL Video" provider-name="Aussie Add-ons" version="1001.8.7-2-g478d782">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0" />
+    <import addon="script.module.aussieaddonscommon" />
+    <import addon="script.module.beautifulsoup4" />
+    <import addon="script.module.requests" />
+    <import addon="script.common.plugin.cache" />
+  </requires>
+  <extension library="default.py" point="xbmc.python.pluginsource" provides="video">
+   <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <assets>
+      <icon>icon.png</icon>
+      <fanart>fanart.jpg</fanart>
+    </assets>
+    <summary>AFL Video by Aussie Add-ons</summary>
+    <description>Watch the latest AFL replays, news and match reports. Live streaming available with a valid AFL Live Pass</description>
+    <website>http://aussieaddons.com/addons/afl/</website>
+    <source>https://github.com/xbmc-catchuptv-au/plugin.video.afl-video</source>
+    <disclaimer>This plugin is not affiliated with the AFL in any way.</disclaimer>
+    <provides>video</provides>
+    <platform>all</platform>
+    <license>GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007</license>
+  <news>[B]Version v1.8.7-2-g478d782[/B]
+- Feedback to user for upcoming (dummy) listings when selected (#2605)
+- Add 'All' category
+
+[B]Version v1.8.7[/B]
+- Update to new auth process (#2601)
+
+[B]Version v1.8.6[/B]
+- Fix upcoming matches, Live Pass instructions (#2598)
+- Implement manual token/in-app subscription (#2597)
+
+[B]Version v1.8.5[/B]
+- Handle outdated favourites links (#2594)
+- Add AFLW content, fix UnboundLocalError issue  (#2593)
+- Improve m3u8 parsing, fixes live matches
+
+[B]Version v1.8.4[/B]
+- Remove unneeded functions and modules (#2587)
+- Update to new travis.yml
+- TypeError: object of type 'listreverseiterator' has no len()
+- Merge remote-tracking branch 'refs/remotes/xbmc-catchuptv-au/remove-old-replays'
+- Remove old replays and use API for seasons
+- Begin work on restructuring addon
+- Disable upcoming matches listings for now
+
+[B]Version v1.8.3[/B]
+- Clean up settings, method name fixes
+- Update travis CI key for repo move
+- Add higher res icons
+- Use aussie addons common module, flake8 fixes
+
+[B]Version v1.8.2[/B]
+- Small error handling improvements (#2535)
+
+[B]Version v1.8.1[/B]
+- Use new requests functions and code cleanups
+- Fix AttributeError: StorageServer instance has no attribute 'delete' #2267
+- Update travisci config
+- Add travisci deploy config
+
+[B]Version v1.8.0[/B]
+- Add Auto-generated Highlights back
+- Added team video channels back
+- Move JLT Series matches to the bottom
+- Use VIC as the fallback state for live streams
+- Don't require subscription for on-demand videos
+
+[B]Version v1.7.9[/B]
+- Remove debugging
+- Fix for Ooyala video ID discovery on live matches
+
+[B]Version v1.7.8[/B]
+- Cleanups and better exception handling
+- Cache token, add other live pass videos, more logging. (#1542)
+
+[B]Version v1.7.7[/B]
+- Fix some live matches not playing, handle ssl errors (#1081)
+- Update README.md
+
+[B]Version v1.7.6[/B]
+- Code cleanups and error if trying live streaming on Python &lt; 2.7
+- update comm.py
+- Fix broken paid subscriptions
+
+[B]Version v1.7.5[/B]
+- Remove forced TLSv1 from Ooyala
+
+[B]Version v1.7.4[/B]
+- ooyalahelper now using requests instead of urllib2
+- Improve login process (#822)
+
+[B]Version v1.7.3[/B]
+- Support for paid subscriptions from afl.com.au
+
+[B]Version v1.7.2[/B]
+- Fix SSL erros
+
+[B]Version v1.7.1[/B]
+- Initial version
+</news></extension>
+</addon>
+-->
+<addon id="script.module.aussieaddonscommon" name="Aussie Add-ons Common" provider-name="Aussie Add-ons" version="1.1.5">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0" />
+    <import addon="script.module.requests" />
+  </requires>
+  <extension library="lib" point="xbmc.python.module" />
+  <extension point="xbmc.addon.metadata">
+    <assets>
+      <icon>icon.png</icon>
+    </assets>
+    <summary>Common functions for Aussie Add-ons</summary>
+    <description>Common functions for Aussie Add-ons</description>
+    <source>https://github.com/aussieaddons/script.module.aussieaddonscommon</source>
+    <platform>all</platform>
+    <license>GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007</license>
+  <news>[B]Version v1.1.5[/B]
+- Add additional orgs to blacklist
+
+[B]Version v1.1.4[/B]
+- Update token
+
+[B]Version v1.1.3[/B]
+- Update GitHub references from xbmc-catchuptv-au to aussieaddons
+- Add blacklisting for org (#6)
+- Small tidy up
+- Allow if hostname is blank when checking agains blacklist
+- flake8
+- Disallow reporting from known VPN/proxy addresses.
+
+[B]Version v1.1.2[/B]
+- Fix TypeError: can only concatenate list (not "unicode") to list
+
+[B]Version v1.1.1[/B]
+- Don't fail build on tag release
+
+[B]Version v1.0.2[/B]
+- Rework .travis.yml
+
+[B]Version v1.0.1[/B]
+- Deal with import _strptime python bug, update travis.yml
+- Show detected country to user on error
+- Use ipinfo for connection details and only allow AU reports
+- Fix for showing error dialog for non-reportable errors
+- Fix traceback handling in error reports
+- Fix error message handling
+- Fix token handling
+- Another attempt at token
+- Hopefully last time
+- .. and again
+- Update reporting token again after it went missing
+- Filter out any non-str values in exc value args
+- Update github token again
+- Rework version number handling and other fixes
+- Refactoring
+- Update exception handling
+- Include issue reporter and utils enhancements
+- Fix requirements and flake8 updates
+
+[B]Version v1.0.0[/B]
+- Initial version
+</news></extension>
+</addon>
+
+<addon id="service.Change.HostName"
+       name="Change hostname to user's Device name"
+       version="1.0.2"
+       provider-name="">
+  <requires>
+    <import addon="xbmc.python" version="2.19.0"/>
+  </requires>
+  <extension point="xbmc.service" library="default.py" start="login" />
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en"></summary>
+  </extension>
+</addon>
+
+<addon id="script.module.universalscrapers" name="Universal Scrapers" version="1.1.6.1" provider-name="Team Universal">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+        <import addon="script.module.beautifulsoup" version="3.2.1"/>
+        <import addon="script.module.futures" version="2.2.0"/>
+        <import addon="script.module.requests"/>
+        <import addon="script.module.six"/>
+	<import addon="script.module.resolveurl" version="5.0.00" optional="true"/>
+
+                <!--<import addon="script.mrknow.urlresolver" version="2016.10.30.2" optional="true"/>-->
+    </requires>
+    <extension point="xbmc.python.module" library="lib"/>
+    <extension point="xbmc.python.pluginsource" library="lib/default.py">
+        <provides>executable</provides>
+    </extension>
+        <extension point="xbmc.addon.metadata">
+            <platform>all</platform>
+            <summary lang="en">Scrape common video host for URL's to be playable in XBMC/Kodi.</summary>
+            <description lang="en">Scrape common video host for URL's to be playable in XBMC/Kodi, simplifying addon development of video plugins requiring multi video hosts.
+            </description>
+            <license>GPL v3</license>
+            <source>https://</source>
+        </extension>
+</addon>
+
+<addon id="script.module.python.koding.aio"
+   name="Python Koding AIO"
+   version="1.0"
+   provider-name="Total Revolution">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.urlresolver" version="1.2.0"/>
+    <import addon="script.module.requests" version="2.3.0"/>
+    <import addon="script.module.beautifulsoup" version="2.1.31"/>
+    <import addon="script.module.unidecode" version="0.4.16"/>
+  </requires>
+  <extension point="xbmc.python.module" library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">Python Koding All In One</summary>
+    <description lang="en">Python Koding AIO contains a bunch of time saving modules that allows for quick and simple development.</description>
+    <disclaimer lang="en"></disclaimer>
+    <language></language>
+    <license>Creative Commons 4.0-NC-ND</license>
+    <forum>http://totalrevolution.tv/forum</forum>
+    <website>http://totalrevolution.tv</website>
+    <news>1.0 Stable release</news>
+    <source>https://github.com/totalrevolution/python-koding/tree/master/script.module.python.koding.aio</source>
+  </extension>
+</addon>
+
+<addon id="script.module.idna"
+       name="idna"
+       version="2.8"
+       provider-name="Kim Davies">
+  <requires>
+    <import addon="xbmc.python" version="2.25.0"/>
+  </requires>
+  <extension point="xbmc.python.module"
+             library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en_GB">Internationalized Domain Names for Python</summary>
+    <description lang="en_GB">Packed for KODI from https://github.com/kjd/idna</description>
+    <platform>all</platform>
+    <language></language>
+    <license>BSD</license>
+    <forum></forum>
+    <website>https://github.com/kjd/idna</website>
+    <source>https://github.com/Freso/script.module.idna</source>
+    <email>freso.dk AT gmail.com</email>
+    <assets>
+      <icon>resources/icon.png</icon>
+    </assets>
+  </extension>
+</addon>
+
+<addon id="script.module.urllib3"
+       name="urllib3"
+       version="1.25.3"
+       provider-name="shazow">
+  <requires>
+    <import addon="xbmc.python" version="2.25.0"/>
+  </requires>
+  <extension point="xbmc.python.module"
+             library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en_GB">urllib3 is a powerful, sanity-friendly HTTP client for Python</summary>
+    <description lang="en_GB">Packed for KODI from https://pypi.org/project/urllib3/</description>
+    <platform>all</platform>
+    <language></language>
+    <license>MIT</license>
+    <forum></forum>
+    <website>https://urllib3.readthedocs.io/en/latest/</website>
+    <source>https://github.com/Freso/script.module.urllib3</source>
+    <email>freso.dk AT gmail.com</email>
+    <assets>
+      <icon>resources/icon.png</icon>
+    </assets>
+  </extension>
+</addon>
+
+<addon id="script.module.requests"
+       name="requests"
+       version="2.22.0"
+       provider-name="kennethreitz">
+  <requires>
+    <import addon="xbmc.python" version="2.25.0"/>
+    <import addon="script.module.urllib3" version="1.22"/>
+    <import addon="script.module.chardet" version="3.0.4"/>
+    <import addon="script.module.idna" version="2.6"/>
+    <import addon="script.module.certifi" version="2017.07.27.1"/>
+  </requires>
+  <extension point="xbmc.python.module"
+             library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en_GB">Python HTTP for Humans</summary>
+    <description lang="en_GB">Packed for KODI from https://github.com/requests/requests</description>
+    <platform>all</platform>
+    <language></language>
+    <license>Apache2</license>
+    <forum></forum>
+    <website>http://python-requests.org</website>
+    <source>https://github.com/Freso/script.module.requests</source>
+    <email>freso.dk AT gmail.com</email>
+    <assets>
+      <icon>resources/icon.png</icon>
+    </assets>
+  </extension>
+</addon>
+
+<addon id="script.module.drmhelper" name="DRM Helper" provider-name="Aussie Add-ons" version="1.1.0">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0" />
+  </requires>
+  <extension library="lib" point="xbmc.python.module" />
+  <extension point="xbmc.addon.metadata">
+    <assets>
+      <icon>icon.png</icon>
+      <fanart>fanart.jpg</fanart>
+    </assets>
+    <summary>Module to assist in aquiring components to enable DRM playback</summary>
+    <description>This module is required for add-ons which can play back Widevine DRM protected videos. It will fetch and install the required content decrypter module and single sample decrypter module from our repo, and attempt to install the required inputstream.adaptive add-on.</description>
+    <website />
+    <source>https://github.com/glennguy/script.module.drmhelper</source>
+    <platform>all</platform>
+    <license>GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007</license>
+  <news>[B]Version v1.1.0[/B]
+- Update Krypton binaries
+- Allow playback for non-DRM on DRM unsupported platforms
+
+[B]Version v1.0.9[/B]
+- logging clarity
+- make dir for slinked ssd_wv
+
+[B]Version v1.0.8[/B]
+- Add logging, no support for Android Kodi 17
+
+[B]Version v1.0.7[/B]
+- Update travis.yml
+- Fix for IndexError exceptions
+
+[B]Version v1.0.6[/B]
+- Fix android x86
+- Remove Kodi commit tag checking
+- Fix Android import error
+
+[B]Version v1.0.3[/B]
+- Formatting and docstrings
+- Several changes/features
+- Escape paths, fix buildversion errors
+- Fix Android error, begin Leia support
+- missing version attribute
+- Support Android, other tweaks/fixes
+- Windows - fix implementation and detect 32bit or 64bit
+- Fix error in addon.xml
+
+[B]Version v1.0.2[/B]
+- Update broken inputstream.adaptive zip links
+- update icon
+
+[B]Version v1.0.1[/B]
+- Feature to get i.a from direct link and install.
+- Catch error when trying to install modules without i.a
+- Add error message for Kodi &lt; 17.0
+- Add config
+- Improvement in checking for inputstream.adaptive
+
+[B]Version v1.0.0[/B]
+- Initial version
+</news></extension>
+  <news>[B]Version v1.0.1-2-g6822d91[/B]
+- Update broken inputstream.adaptive zip links
+- update icon
+
+[B]Version v1.0.1[/B]
+- Feature to get i.a from direct link and install.
+- Catch error when trying to install modules without i.a
+- Add error message for Kodi &lt; 17.0
+- Add config
+- Improvement in checking for inputstream.adaptive
+
+[B]Version v1.0.0[/B]
+- Initial version
+</news>
+</addon>
+
+<addon id="script.module.issuereporter" name="Aussie Addons Issue Reporter" provider-name="Aussie Addons" version="1.0.1">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0" />
+  </requires>
+  <extension library="lib" point="xbmc.python.module" />
+  <extension point="xbmc.addon.metadata">
+    <assets>
+      <icon>icon.png</icon>
+    </assets>
+    <summary>Github issue reporting for Aussie Addons</summary>
+    <description>Github issue reporting for Aussie Addons</description>
+    <website />
+    <source>https://github.com/glennguy/script.module.issuereporter</source>
+    <platform>all</platform>
+    <license>GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007</license>
+  <news>[B]Version v1.0.1[/B]
+ - minor changes
+
+[B]Version v1.0.0-1-gc46ed8e[/B]
+- add travis.yml
+
+[B]Version v1.0.0[/B]
+- Initial version
+</news></extension>
+</addon>
+
+<addon id="script.module.pycaption" name="pycaption" provider-name="Aussie Add-ons" version="0.5.6">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.beautifulsoup4"/>
+  </requires>
+  <extension library="lib" point="xbmc.python.module"/>
+  <extension point="xbmc.addon.metadata">
+    <assets>
+      <icon>icon.png</icon>
+    </assets>
+    <summary>Python caption reading/writing module</summary>
+    <description>pycaption is a caption reading/writing module. Use one of the given Readers to read content into a CaptionSet object, and then use one of the Writers to output the CaptionSet into captions of your desired format.</description>
+    <platform>all</platform>
+    <source>https://github.com/pbs/pycaption</source>
+    <website>https://github.com/pbs/pycaption</website>
+    <license>Apache 2.0</license>
+  </extension>
+</addon>
+
+<addon id="service.vpn.manager"
+       name="VPN Manager for OpenVPN"
+       version="1004.9.11"
+       provider-name="Zomboided">
+  <requires>
+    <import addon="xbmc.python" version="2.7.0"/>
+  </requires>
+  <extension point="xbmc.service" library="service.py" start="startup" />
+  <extension point="xbmc.python.module" library="libs" />
+  <extension point="xbmc.python.pluginsource" library="addon.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">Configure and manage VPN connections using openVPN</summary>
+    <description lang="en">Establish a connection to the VPN service and automatically switch VPN locations based on the add-on being used.</description>
+  </extension>
+</addon>
+
+<addon id="plugin.video.placenta" version="1.4.6" name="Placenta" provider-name="Team Afterbirth">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0" />
+		<import addon="script.module.placenta" />
+		<import addon="script.placenta.artwork" />
+		<import addon="script.placenta.metadata" />
+		<import addon="script.module.resolveurl" />
+		<import addon="script.module.requests" />
+		<import addon="script.module.metahandler" />
+        <import addon="plugin.video.youtube"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>video</provides>
+        <provides>audio</provides>
+	</extension>
+	<extension point="xbmc.service" library="service.py" start="startup" />
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Placenta</summary>
+		<description>Covenant Fork from Echo/Colossus era with Team Afterbirth's updates and new code.</description>
+        <disclaimer lang="en">The author is not responsible for the use of this addon. The author is not responsible for the content found using this addon. The author does not host or own any content found within this addon.
+The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation.
+This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works.
+</disclaimer>
+		<platform>all</platform>
+        <reuselanguageinvoker>false</reuselanguageinvoker>
+		<license>Beerware rev. 42</license>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+    			<screenshot>resources/screenshots/screenshot-01.jpg</screenshot>
+    			<screenshot>resources/screenshots/screenshot-02.jpg</screenshot>
+    			<screenshot>resources/screenshots/screenshot-03.jpg</screenshot>
+    			<screenshot>resources/screenshots/screenshot-04.jpg</screenshot>
+		</assets>
+		<news></news>
+	</extension>
+</addon>
+
+<addon id="script.module.placenta" name="Placenta Module" version="1.7.8" provider-name="Team Afterbirth">
+	<requires>
+		<import addon="xbmc.python" version="2.1.0" />
+		<import addon="script.module.beautifulsoup4"/>
+	</requires>
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+        <reuselanguageinvoker>false</reuselanguageinvoker>
+		<summary lang="en">Placenta</summary>
+		<description>Covenant Fork from Echo/Colossus era with Team Afterbirth's updates and new code.</description>
+        <disclaimer lang="en">The author is not responsible for the use of this addon. The author is not responsible for the content found using this addon. The author does not host or own any content found within this addon.[CR]The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation.[CR]This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works.</disclaimer>
+        <license>Beerware rev. 42</license>
+	</extension>
+</addon>
+
+<addon id="script.placenta.artwork" version="1.0.8" name="Placenta Artwork" provider-name="Team Afterbirth">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0"/>
+	</requires>
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.addon.metadata">
+		<summary>Themes for the Placenta Addon</summary>
+		<description>Artwork Module for the Placenta Addon</description>
+        <disclaimer lang="en">The author is not responsible for the use of this addon. The author is not responsible for the content found using this addon. The author does not host or own any content found within this addon.
+The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation.
+This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works.</disclaimer>
+        <license>Beerware rev. 42</license>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="script.placenta.metadata" version="1.0.1" name="Placenta Metadata" provider-name="Team Afterbirth">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0"/>
+	</requires>
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.addon.metadata">
+		<summary>Metadata for the Placenta Addon</summary>
+		<description>Metadata for Placenta are maintained separately to make distribution of the the addon itself easier/faster.</description>
+        <disclaimer lang="en">The author is not responsible for the use of this addon. The author is not responsible for the content found using this addon. The author does not host or own any content found within this addon.
+The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation.
+This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works.</disclaimer>
+        <license>Beerware rev. 42</license>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="script.module.beautifulsoup4"
+       name="BeautifulSoup4"
+       version="4.5.3"
+       provider-name="Leonard Richardson (leonardr@segfault.org)">
+  <requires>
+    <import addon="xbmc.python"
+             version="2.25.0"/>
+  </requires>
+  <extension point="xbmc.python.module"
+             library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <summary>HTML/XML parser for quick-turnaround applications like screen-scraping</summary>
+    <description>Beautiful Soup parses arbitrarily invalid SGML and provides a variety of methods and Pythonic idioms for iterating and searching the parse tree.</description>
+    <license>BSD</license>
+    <platform>all</platform>
+    <website>http://www.crummy.com/software/BeautifulSoup/</website>
+  </extension>
+</addon>
+
+<addon id="plugin.program.indigo" version="4.0.12" name="Indigo" provider-name="tvaddons">
+	<requires>
+		<import addon="xbmc.python" version="2.1.0"/>
+	</requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>executable</provides>
+    </extension>
+    <extension point="xbmc.service" library="service.py" start="startup"/>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">Indigo is your gateway to the world of unofficial Kodi addons!</summary>
+        <description lang="en">Indigo is your gateway to the world of unofficial Kodi addons! Please visit www.tvaddons.co for support.</description>
+        <disclaimer lang="en">Kodi is a registered trademark of the XBMC Foundation. We are not connected to or in any other way affiliated with Kodi, Team Kodi, or the XBMC Foundation. Furthermore, any software, addons, or products offered by us will receive no support in official Kodi channels, including the Kodi forums and various social networks.</disclaimer>
+        <language>en</language>
+        <platform>all</platform>
+        <forum>https://www.tvaddons.co/forums</forum>
+        <website>https://www.tvaddons.co</website>
+        <source>https://github.com/tvaddonsco/plugin.program.indigo</source>
+    </extension>
+</addon>
+
+<addon id="plugin.video.mc1080p" name="[B][COLORyellow]MC 1080P[/COLOR][/B]" version="1.1" provider-name="[B][COLORyellow]Man Cave Entertainment[/COLOR][/B]">
+    <requires>
+        <import addon="xbmc.python" version="2.19.0" />
+        <import addon="script.module.universalscrapers" version="1.0.0" />
+        <import addon="script.module.python.koding.aio" version="0.9.6.6" />
+        <import addon="script.module.beautifulsoup" version="3.2.1" />
+        <import addon="script.module.requests" version="2.9.1" />
+        <import addon="script.module.addon.common" version="2.0.0" />
+        <import addon="script.module.xmltodict" version="0.9.0" />
+        <import addon="script.module.dateutil" />
+        <!--<import addon="script.module.web-pdb" version="1.0"/>-->
+        <import addon="script.module.resolveurl" />
+        <!--<import addon="script.module.urlresolver" />-->
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.service" library="service.py" start="[login|startup]" />
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">[COLORyellow]Only High Quailty Streams[/COLOR]</summary>
+        <description lang="en">[B][COLORyellow]Have a request email us at mc1080prequests@gmail.com[/COLOR][/B]</description>
+        <disclaimer lang="en">The author is not responsible for the use of this addon. The author is not responsible for the content found using this addon. The author does not host or own any content found within this addon.[CR]The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation.[CR]This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works.</disclaimer>
+        <platform>all</platform>
+    <assets>
+	    <icon>icon.png</icon>
+        <fanart>fanart.jpg</fanart>
+        <screenshot>resources/screenshots/11.png</screenshot>
+        <screenshot>resources/screenshots/22.png</screenshot>
+        <screenshot>resources/screenshots/33.png</screenshot>
+    </assets>
+        <reuselanguageinvoker>false</reuselanguageinvoker>
+    </extension>
+</addon>
+
+<addon id="plugin.video.themagicdragon"
+       name="The Magic Dragon"
+       version="1.28"
+       provider-name="Magic Dragon">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.module.t0mm0.common" version="2.0.0"/>
+    <import addon="script.module.beautifulsoup" version="3.2.1"/>
+    <import addon="script.module.simple.downloader" version="0.9.4"/>
+    <import addon="script.module.beautifulsoup4" />
+    <import addon="script.module.requests" />
+    <import addon="script.module.httplib2" />
+    <import addon="script.module.youtube.dl" optional="true"/>
+    <import addon="plugin.video.youtube" version="3.0.0"/>
+    <import addon="script.module.urlresolver" />
+    <import addon="script.module.simplejson" />
+    <import addon="script.common.plugin.cache" version="2.5.2"/>
+    <import addon="script.module.metahandler" version="2.5.1"/>
+	<import addon="script.module.resolveurl" version="5.0.00"/>
+
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">[COLORblue]Magic Dragon All In One Add On[/COLOR]</summary>
+    <description lang="en">[COLORblue]This Is A 3rd Party Add On And Is Not Linked To Kodi In Any Way. All The Content We Provide Is Freely Available On The Internet. We Do Not Store Any Content Ourselves.[/COLOR]</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="script.module.civitasscrapers" name="Civitas Scrapers Module" version="0.0.5.7" provider-name="CivitasAdmin">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0" />
+        <import addon="script.module.beautifulsoup4"/>
+    </requires>
+    <extension point="xbmc.python.module" library="lib" />
+    <extension point="xbmc.python.pluginsource" library="lib/default.py">
+        <provides>executable</provides>
+    </extension>
+        <extension point="xbmc.addon.metadata">
+            <platform>all</platform>
+            <summary lang="en">Civitas Scrapers Module</summary>
+            <description>Scrape common video host for URL's to be playable in XBMC/Kodi, simplifying addon development of video plugins requiring multi video hosts.</description>
+                <disclaimer lang="en">The author is not responsible for the use of this addon. The author is not responsible for the content found using this addon. The author does not host or own any content found within this addon.[CR]The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation.[CR]This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works.</disclaimer>
+    <platform>all</platform>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+    <assets>
+        <icon>icon.png</icon>
+        <fanart></fanart>
+    </assets>
+    <news></news>
+    </extension>
+</addon>
+
+<addon id="script.realdebrid.mod" name="RealDebrid-Mod" version="1.1.2" provider-name="ptom">
+	<requires>
+        <import addon="script.module.requests" version="2.3.0"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>executable</provides>
+	</extension>
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.addon.metadata">
+		<description lang="en">Unofficial RealDebrid client. Manage your torrents, unrestricted links and view host statuses all within Kodi.</description>
+        <summary>Unofficial RealDebrid client. Manage your torrents, unrestricted links and view host statuses all within Kodi.</summary>
+        <news>v0.5 - added "Play using RealDebrid" to context menu</news>
+        <website>http://www.ptom.co.uk</website>
+		<platform>all</platform>
+		<language>en</language>
+		<email>ptom98@gmail.com</email>
+	</extension>
+</addon>
+
+<addon id="script.yoda.artwork" version="1.0.0" name="[COLORgreen]yoda Artwork[/COLOR]" provider-name="S">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0"/>
+	</requires>
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.addon.metadata">
+		<summary>Themes For yoda Addon</summary>
+		<description>Artwork Module For yoda Addon</description>
+        <disclaimer lang="en"></disclaimer>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="script.yoda.metadata" version="1.0.0" name="[COLORgreen]yoda Metadata[/COLOR]" provider-name="S">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0"/>
+	</requires>
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.addon.metadata">
+		<summary>Metadata for the yoda Addon</summary>
+		<description>Metadata for yoda are maintained separately to make distribution of the the addon itself easier/faster.</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="script.module.yoda" name="[COLORgreen]yoda Module[/COLOR]" version="1.1.0" provider-name="S">
+	<requires>
+		<import addon="xbmc.python" version="2.1.0" />
+	</requires>
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<summary lang="en">yoda</summary>
+		<description></description>
+        <disclaimer lang="en"></disclaimer>
+	</extension>
+</addon>
+
+<addon id="plugin.video.yoda" version="1.0.3.1" name="[COLORgreen]yoda[/COLOR]" provider-name="S">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0" />
+		<import addon="script.module.yoda" />
+		<import addon="script.yoda.artwork" version="1.0.0" />
+		<import addon="script.yoda.metadata" version="1.0.0" />
+		<import addon="script.module.resolveurl" />
+		<import addon="script.module.requests" />
+		<import addon="script.module.metahandler" version="1.0.0" />
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="yoda.py">
+		<provides>video</provides>
+        <provides>audio</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">[COLORlime]yoda[/COLOR]</summary>
+		<description>[COLOR aqua]yoda Movies and TV. This addon does not form part of the Kodi Media Centre. Please do not seek assistance with this addon from any of the Official Kodi Support Channels. The author does not host any of the content in this addon and takes no responsibility for content found[/COLOR]</description>
+        <disclaimer lang="en">The author of this addon do not host any of the content which is found and have no affiliation with any of the content providers. This addon simply searches websites for content. Use at your own risk!
+</disclaimer>
+		<platform>all</platform>
+		<assets>
+			<icon>icon.jpg</icon>
+			<fanart>fanart.png</fanart>
+    			<screenshot>resources/screenshots/screenshot-01.png</screenshot>
+    			<screenshot>resources/screenshots/screenshot-02.png</screenshot>
+    			<screenshot>resources/screenshots/screenshot-03.png</screenshot>
+		</assets>
+		<news></news>
+	</extension>
+</addon>
+
+<addon id="plugin.video.tempest" version="4.0.78" name="Tempest" provider-name="Tempest">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0" />
+		<import addon="script.tempest.artwork" />
+		<import addon="script.tempest.metadata" />
+		<import addon="script.module.urlresolver" />
+		<import addon="script.module.requests" />
+		<import addon="script.module.metahandler" />
+		<import addon="script.module.beautifulsoup4" />
+		<import addon="plugin.video.youtube"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="tempest.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.service" library="service.py" start="startup" />
+	<extension point="xbmc.addon.metadata">
+		<description lang="en">[I][B]Tempest Movies and TV[/B][/I][CR][CR]This addon does not form part of the Kodi Media Centre. Please do not seek assistance with this addon from any of the Official Kodi Support Channels.[CR][CR]The author does not host any of the content in this addon and takes no responsibility for content found.</description>
+		<platform>all</platform>
+		<license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+		<disclaimer lang="en">The author of this addon do not host any of the content which is found and have no affiliation with any of the content providers. This addon simply searches websites for content. Use at your own risk!</disclaimer>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+		</assets>
+		<news>
+			v1.0.0 - Initial version.
+		</news>
+	</extension>
+</addon>
+
+<addon id="script.tempest.artwork" version="1.0.2" name="Tempest Artwork" provider-name="Tempest">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0"/>
+	</requires>
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.addon.metadata">
+		<summary>Themes for the Tempest Addon</summary>
+		<description></description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="script.tempest.metadata" version="1.0.1" name="Tempest Metadata" provider-name="Tempest">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0"/>
+	</requires>
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.addon.metadata">
+		<summary>Metadata for the Tempest Addon</summary>
+		<description>Metadata for Tempest are maintained separately to make distribution of the the addon itself easier/faster.</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="plugin.video.kayo.sports" name="Kayo Sports" provider-name="MattHuisman.nz" version="0.4.0.1">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.requests"/>
+    <import addon="script.module.arrow"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py" provides="video">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.service" library="service.py" start="login" />
+  <extension point="xbmc.addon.metadata">
+    <description lang="en">Watch your favourite sports live &amp; on demand with Kayo Sports.
+Subscription required.</description>
+    <reuselanguageinvoker>true</reuselanguageinvoker>
+    <license></license>
+    <language></language>
+    <website>https://www.matthuisman.nz/2019/03/kayo-sports-kodi-add-on.html</website>
+    <news>Add new Inputstream quality setting</news>
+  </extension>
+</addon>
+
+<addon id="script.module.arrow"
+       name="arrow"
+       version="0.10.0"
+       provider-name="crsmithdev, Razzeee">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.module.dateutil" version="2.4.2"/>
+  </requires>
+  <extension point="xbmc.python.module"
+             library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <summary>Arrow: better dates and times for Python</summary>
+    <description>Packed for Kodi from https://github.com/crsmithdev/arrow</description>
+    <platform>all</platform>
+    <language></language>
+    <license>Apache2</license>
+    <forum></forum>
+    <website>http://crsmithdev.com/arrow/</website>
+    <source>https://github.com/Razzeee/script.module.arrow</source>
+    <email>beenje AT gmail.com</email>
+  </extension>
+</addon>
+
+<addon id="inputstream.adaptive" version="2.0.19.1" name="InputStream Adaptive" provider-name="peak3d">
+  <requires>
+	<import addon="xbmc.python" version="2.19.0"/>
+  </requires>
+  <extension point="xbmc.service" name="adaptive" extension="" tags="true" listitemprops="license_type|license_key|license_data|manifest_type|server_certificate|stream_headers|manifest_update_parameter" library_linux="inputstream.adaptive.so.2.0.19"/>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">InputStream client for adaptive streams</summary>
+    <description lang="en">InputStream client for adaptive streams</description>
+    <platform>linux</platform>
+  </extension>
+</addon>
+
+</addons>

@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<shortcuts>
+	<shortcut>
+		<defaultID />
+		<label>비디오 애드온</label>
+		<label2>Custom item</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb />
+		<action>ActivateWindow(Videos,addons://sources/video/,return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>프로그램 애드온</label>
+		<label2>Custom item</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb />
+		<action>ActivateWindow(Programs,Addons,return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>Kayo Sports</label>
+		<label2>Custom item</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb />
+		<action>ActivateWindow(Videos,"plugin://plugin.video.kayo.sports",return)</action>
+	</shortcut>
+</shortcuts>
