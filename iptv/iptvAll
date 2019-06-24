@@ -1,0 +1,8 @@
+#!/bin/sh
+
+./iptv-check-all "List1"
+sleep 1
+./iptv-check-all "List2"
+sleep 1
+./iptv-check-all "List3"
+
