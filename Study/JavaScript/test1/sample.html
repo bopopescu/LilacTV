@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <script src="object.js"></script>
+    <title></title>
+  </head>
+  <body>
+    <input type="button" id="hw1" value="RegExp1" />
+    <input type="button" id="hw2" value="RegExp2" />
+    <script type="text/javascript">
+      function Func(arg) {
+        // instanceof 로 생성자 함수임을 확인
+        if (!(this instanceof arguments.callee))
+          return new Func(arg);
+        this.value = arg || 0;
+      }
+      var a = new Func(100);
+      var b = Func(200);
+      console.log(a.value);
+      console.log(b.value);
+    </script>
+  </body>
+</html>
