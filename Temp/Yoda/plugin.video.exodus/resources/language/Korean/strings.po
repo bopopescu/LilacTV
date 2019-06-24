@@ -1,0 +1,800 @@
+# Addon Name: Exodus
+# Addon id: plugin.video.exodus
+# Addon Provider: Exodus
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+msgid ""
+msgstr ""
+"Project-Id-Version: Exodus\n"
+"POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2016-08-01 02:03+0000\n"
+"Last-Translator: lambda81\n"
+"Language-Team: English (http://www.transifex.com/tv-addons/exodus/language/en/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+
+msgctxt "#32001"
+msgid "Movies"
+msgstr "영화"
+
+msgctxt "#32002"
+msgid "TV Shows"
+msgstr "드라마"
+
+msgctxt "#32003"
+msgid "My Movies"
+msgstr "내 영화"
+
+msgctxt "#32004"
+msgid "My TV Shows"
+msgstr "내 드라마"
+
+msgctxt "#32005"
+msgid "New Movies"
+msgstr "최신 영화"
+
+msgctxt "#32006"
+msgid "New Episodes"
+msgstr "최신 에피소드"
+
+msgctxt "#32007"
+msgid "Channels"
+msgstr "채널"
+
+msgctxt "#32008"
+msgid "Tools"
+msgstr "도구"
+
+msgctxt "#32009"
+msgid "Downloads"
+msgstr "다운로드"
+
+msgctxt "#32010"
+msgid "Search"
+msgstr "검색"
+
+msgctxt "#32011"
+msgid "Genres"
+msgstr "장르"
+
+msgctxt "#32012"
+msgid "Year"
+msgstr "연도"
+
+msgctxt "#32013"
+msgid "People"
+msgstr "인물"
+
+msgctxt "#32014"
+msgid "Languages"
+msgstr "언어"
+
+msgctxt "#32015"
+msgid "Certificates"
+msgstr "시청등급"
+
+msgctxt "#32016"
+msgid "Networks"
+msgstr "네트워크"
+
+msgctxt "#32017"
+msgid "People Watching"
+msgstr "트렌드"
+
+msgctxt "#32018"
+msgid "Most Popular"
+msgstr "인기작"
+
+msgctxt "#32019"
+msgid "Most Voted"
+msgstr "추천작"
+
+msgctxt "#32020"
+msgid "Box Office"
+msgstr "박스 오피스"
+
+msgctxt "#32021"
+msgid "Oscar Winners"
+msgstr "아카데미 수상작"
+
+msgctxt "#32022"
+msgid "In Theaters"
+msgstr "상영중"
+
+msgctxt "#32023"
+msgid "Highly Rated"
+msgstr "고평점"
+
+msgctxt "#32024"
+msgid "Airing today"
+msgstr "오늘 방송"
+
+msgctxt "#32025"
+msgid "Returning TV Shows"
+msgstr "시즌 재시작"
+
+msgctxt "#32026"
+msgid "New TV Shows"
+msgstr "최신 드라마"
+
+msgctxt "#32027"
+msgid "TV Calendar"
+msgstr "드라마 달력"
+
+msgctxt "#32028"
+msgid "People Search"
+msgstr "인물 검색"
+
+msgctxt "#32029"
+msgid "People (Movies)"
+msgstr "인물 (영화)"
+
+msgctxt "#32030"
+msgid "People (TV)"
+msgstr "인물 (TV)"
+
+msgctxt "#32031"
+msgid "Discover"
+msgstr ""
+
+msgctxt "#32032"
+msgid "Collection"
+msgstr ""
+
+msgctxt "#32033"
+msgid "Watchlist"
+msgstr ""
+
+msgctxt "#32034"
+msgid "IMDb"
+msgstr ""
+
+msgctxt "#32035"
+msgid "Featured"
+msgstr "주요작"
+
+msgctxt "#32036"
+msgid "History"
+msgstr "역사"
+
+msgctxt "#32037"
+msgid "Progress"
+msgstr "진행"
+
+msgctxt "#32038"
+msgid "Episodes"
+msgstr "에피소드"
+
+msgctxt "#32039"
+msgid "Movie Lists"
+msgstr "영화 목록"
+
+msgctxt "#32040"
+msgid "TV Show Lists"
+msgstr "드라마 목록"
+
+msgctxt "#32041"
+msgid "Episode Lists"
+msgstr "에피소드 목록"
+
+msgctxt "#32042"
+msgid "No Trakt or IMDb account found."
+msgstr ""
+
+msgctxt "#32043"
+msgid "[B]SETTINGS[/B] : General"
+msgstr "[B]SETTINGS[/B] : 장르"
+
+msgctxt "#32044"
+msgid "[B]SETTINGS[/B] : Accounts"
+msgstr "[B]SETTINGS[/B] : 계정"
+
+msgctxt "#32045"
+msgid "[B]SETTINGS[/B] : Playback"
+msgstr "[B]SETTINGS[/B] : 재생"
+
+msgctxt "#32046"
+msgid "[B]SETTINGS[/B] : Subtitles"
+msgstr "[B]SETTINGS[/B] : 자막"
+
+msgctxt "#32047"
+msgid "[B]SETTINGS[/B] : Providers"
+msgstr "[B]SETTINGS[/B] : 서버 공급자"
+
+msgctxt "#32048"
+msgid "[B]EXODUS[/B] : Downloads"
+msgstr "[B]EXODUS[/B] : 다운로드"
+
+msgctxt "#32049"
+msgid "[B]EXODUS[/B] : Viewtypes"
+msgstr ""
+
+msgctxt "#32050"
+msgid "[B]EXODUS[/B] : Clear providers..."
+msgstr ""
+
+msgctxt "#32051"
+msgid "[B]EXODUS[/B] : Clear metadata..."
+msgstr ""
+
+msgctxt "#32052"
+msgid "[B]EXODUS[/B] : Clear cache..."
+msgstr ""
+
+msgctxt "#32053"
+msgid "[I]Next Page[/I]"
+msgstr "[I]다음 페이지[/I]"
+
+msgctxt "#32054"
+msgid "Seasons"
+msgstr "시즌"
+
+msgctxt "#32055"
+msgid "Season"
+msgstr "시즌"
+
+msgctxt "#32056"
+msgid "Are you sure?"
+msgstr "확실 합니까?"
+
+msgctxt "#32057"
+msgid "Process Complete"
+msgstr "진행 완료"
+
+msgctxt "#32058"
+msgid "This will slow down things until they are re-cached!"
+msgstr ""
+
+msgctxt "#32059"
+msgid "CLICK HERE TO SAVE VIEW"
+msgstr "저장을 위해 여기를 클릭하세요."
+
+msgctxt "#32060"
+msgid "January|February|March|April|May|June|July|August|September|October|November|December"
+msgstr "1월|2월|3월|4월|5월|6월|7월|8월|9월|10월|11월|12월"
+
+msgctxt "#32061"
+msgid "Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday"
+msgstr "월|화|수|목|금|토|일"
+
+msgctxt "#32062"
+msgid "[B]%s[/B] : %s"
+msgstr ""
+
+msgctxt "#32063"
+msgid "Play using..."
+msgstr "목록에서 재생"
+
+msgctxt "#32064"
+msgid "Auto Play"
+msgstr "자동 재생"
+
+msgctxt "#32065"
+msgid "Queue item"
+msgstr ""
+
+msgctxt "#32066"
+msgid "Watched in Exodus"
+msgstr ""
+
+msgctxt "#32067"
+msgid "Unwatched in Exodus"
+msgstr ""
+
+msgctxt "#32068"
+msgid "Watched in Trakt"
+msgstr ""
+
+msgctxt "#32069"
+msgid "Unwatched in Trakt"
+msgstr ""
+
+msgctxt "#32070"
+msgid "Trakt Manager"
+msgstr ""
+
+msgctxt "#32071"
+msgid "Browse Series"
+msgstr ""
+
+msgctxt "#32072"
+msgid "Refresh"
+msgstr ""
+
+msgctxt "#32073"
+msgid "[B]HELP[/B] : www.tvaddons.ag"
+msgstr ""
+
+msgctxt "#32074"
+msgid "[B]HELP[/B]"
+msgstr ""
+
+msgctxt "#32301"
+msgid "Enabled"
+msgstr ""
+
+msgctxt "#32302"
+msgid "Disabled"
+msgstr ""
+
+msgctxt "#32303"
+msgid "User"
+msgstr ""
+
+msgctxt "#32304"
+msgid "Email"
+msgstr ""
+
+msgctxt "#32305"
+msgid "ID"
+msgstr ""
+
+msgctxt "#32306"
+msgid "Authorization..."
+msgstr ""
+
+msgctxt "#32307"
+msgid "Password"
+msgstr ""
+
+msgctxt "#32308"
+msgid "PIN"
+msgstr ""
+
+msgctxt "#32309"
+msgid "API"
+msgstr ""
+
+msgctxt "#32310"
+msgid "General"
+msgstr "일반"
+
+msgctxt "#32311"
+msgid "Appearance"
+msgstr "모양"
+
+msgctxt "#32312"
+msgid "Providers Timeout"
+msgstr ""
+
+msgctxt "#32313"
+msgid "Indicators"
+msgstr ""
+
+msgctxt "#32314"
+msgid "Local"
+msgstr ""
+
+msgctxt "#32315"
+msgid "Trakt"
+msgstr ""
+
+msgctxt "#32316"
+msgid "Info Language"
+msgstr ""
+
+msgctxt "#32317"
+msgid "Flatten TV seasons"
+msgstr ""
+
+msgctxt "#32318"
+msgid "Enable Fanart"
+msgstr ""
+
+msgctxt "#32319"
+msgid "Menu"
+msgstr "메뉴"
+
+msgctxt "#32320"
+msgid "New Movies"
+msgstr "최신 영화"
+
+msgctxt "#32321"
+msgid "Featured"
+msgstr "주요작"
+
+msgctxt "#32322"
+msgid "People Watching"
+msgstr "트렌드"
+
+msgctxt "#32323"
+msgid "Most Popular"
+msgstr "인기작"
+
+msgctxt "#32324"
+msgid "In Theaters"
+msgstr "상영중"
+
+msgctxt "#32325"
+msgid "New Episodes"
+msgstr "최신 에피소드"
+
+msgctxt "#32326"
+msgid "Episodes"
+msgstr "에피소드"
+
+msgctxt "#32327"
+msgid "Trakt Progress"
+msgstr ""
+
+msgctxt "#32328"
+msgid "Trakt Episodes"
+msgstr ""
+
+msgctxt "#32329"
+msgid "My Lists"
+msgstr "내 목록"
+
+msgctxt "#32330"
+msgid "Playback"
+msgstr "재생"
+
+msgctxt "#32331"
+msgid "Default action"
+msgstr ""
+
+msgctxt "#32332"
+msgid "Dialog"
+msgstr ""
+
+msgctxt "#32333"
+msgid "Directory"
+msgstr ""
+
+msgctxt "#32334"
+msgid "Auto Play"
+msgstr ""
+
+msgctxt "#32335"
+msgid "Progress Dialog"
+msgstr ""
+
+msgctxt "#32336"
+msgid "Foreground"
+msgstr ""
+
+msgctxt "#32337"
+msgid "Background"
+msgstr ""
+
+msgctxt "#32338"
+msgid "File Hosting Filters"
+msgstr ""
+
+msgctxt "#32339"
+msgid "Max Quality"
+msgstr ""
+
+msgctxt "#32340"
+msgid "SD Hosters in Auto Play"
+msgstr ""
+
+msgctxt "#32341"
+msgid "Hosters with captchas"
+msgstr ""
+
+msgctxt "#32342"
+msgid "Sort by Provider"
+msgstr ""
+
+msgctxt "#32343"
+msgid "When playback starts..."
+msgstr ""
+
+msgctxt "#32344"
+msgid "Resume Playback"
+msgstr "이어보기"
+
+msgctxt "#32345"
+msgid "Providers"
+msgstr "서버 공급자"
+
+msgctxt "#32346"
+msgid "Accounts"
+msgstr "계정"
+
+msgctxt "#32347"
+msgid "Downloads"
+msgstr "다운로드"
+
+msgctxt "#32348"
+msgid "Enable downloads"
+msgstr ""
+
+msgctxt "#32349"
+msgid "Movies"
+msgstr "영화"
+
+msgctxt "#32350"
+msgid "TV"
+msgstr ""
+
+msgctxt "#32351"
+msgid "Downloading features are disabled by default."
+msgstr ""
+
+msgctxt "#32352"
+msgid "Set up your download folders in order to enable them."
+msgstr ""
+
+msgctxt "#32353"
+msgid "Subtitles"
+msgstr "자막"
+
+msgctxt "#32354"
+msgid "Enable subtitles"
+msgstr ""
+
+msgctxt "#32355"
+msgid "Convert subtitles to UTF-8"
+msgstr ""
+
+msgctxt "#32356"
+msgid "Primary Language"
+msgstr ""
+
+msgctxt "#32357"
+msgid "Secondary Language"
+msgstr ""
+
+msgctxt "#32358"
+msgid "Subtitles could be unavailable or out of sync."
+msgstr ""
+
+msgctxt "#32359"
+msgid "In that case use your own subtitles."
+msgstr ""
+
+msgctxt "#32360"
+msgid "Providers Language"
+msgstr ""
+
+msgctxt "#32401"
+msgid "No stream available"
+msgstr "영상 소스를 찾기 못했습니다."
+
+msgctxt "#32402"
+msgid "Playback outside Exodus is not allowed"
+msgstr ""
+
+msgctxt "#32403"
+msgid "Download"
+msgstr "다운로드"
+
+msgctxt "#32404"
+msgid "Time elapsed: %s seconds"
+msgstr "진행 시간 : %s 초"
+
+msgctxt "#32405"
+msgid "%s seconds"
+msgstr "%s 초 "
+
+msgctxt "#32406"
+msgid "Remaining providers: %s"
+msgstr "남은 서버 : %s"
+
+msgctxt "#32407"
+msgid "Are you sure?"
+msgstr "확실 합니까?"
+
+msgctxt "#32408"
+msgid "Process Complete"
+msgstr "진행 완료"
+
+msgctxt "#32501"
+msgid "Start from beginning"
+msgstr "처음부터 시작"
+
+msgctxt "#32502"
+msgid "Resume from %s"
+msgstr "%s부터 이어서 보기"
+
+msgctxt "#32503"
+msgid "Resume"
+msgstr "이어보기"
+
+msgctxt "#32511"
+msgid "An account already exists."
+msgstr ""
+
+msgctxt "#32512"
+msgid "Do you want to reset?"
+msgstr ""
+
+msgctxt "#32513"
+msgid "1) Visit : [COLOR skyblue]%s[/COLOR]"
+msgstr ""
+
+msgctxt "#32514"
+msgid "2) When prompted enter : [COLOR skyblue]%s[/COLOR]"
+msgstr ""
+
+msgctxt "#32515"
+msgid "Trakt Manager"
+msgstr ""
+
+msgctxt "#32516"
+msgid "Add to [B]Collection[/B]"
+msgstr ""
+
+msgctxt "#32517"
+msgid "Remove from [B]Collection[/B]"
+msgstr ""
+
+msgctxt "#32518"
+msgid "Add to [B]Watchlist[/B]"
+msgstr ""
+
+msgctxt "#32519"
+msgid "Remove from [B]Watchlist[/B]"
+msgstr ""
+
+msgctxt "#32520"
+msgid "Add to [B]new List[/B]"
+msgstr ""
+
+msgctxt "#32521"
+msgid "Add to [B]%s[/B]"
+msgstr ""
+
+msgctxt "#32522"
+msgid "Remove from [B]%s[/B]"
+msgstr ""
+
+msgctxt "#32531"
+msgid "An account already exists."
+msgstr ""
+
+msgctxt "#32532"
+msgid "Do you want to reset?"
+msgstr ""
+
+msgctxt "#32533"
+msgid "1) Visit : [COLOR skyblue]%s[/COLOR]"
+msgstr ""
+
+msgctxt "#32534"
+msgid "2) When prompted enter : [COLOR skyblue]%s[/COLOR]"
+msgstr ""
+
+msgctxt "#32535"
+msgid "Play Random"
+msgstr ""
+
+msgctxt "#32536"
+msgid "Playing"
+msgstr ""
+
+msgctxt "#32537"
+msgid "Nothing found to play"
+msgstr ""
+
+msgctxt "#32538"
+msgid "DEBRID-SERVICE"
+msgstr ""
+
+msgctxt "#32539"
+msgid "Configure Debrid Services in URLResolver Settings."
+msgstr ""
+
+msgctxt "#32540"
+msgid "URLResolver Settings"
+msgstr ""
+
+msgctxt "#32541"
+msgid "Library"
+msgstr ""
+
+msgctxt "#32542"
+msgid "Exodus folders will be imported to library if they are added to media sources."
+msgstr ""
+
+msgctxt "#32543"
+msgid "Movies"
+msgstr "영화"
+
+msgctxt "#32544"
+msgid "TV"
+msgstr ""
+
+msgctxt "#32545"
+msgid "Auto update TV Shows"
+msgstr ""
+
+msgctxt "#32546"
+msgid "Show notifications during update"
+msgstr ""
+
+msgctxt "#32547"
+msgid "Update library after adding content"
+msgstr ""
+
+msgctxt "#32548"
+msgid "Avoid creating duplicate content"
+msgstr ""
+
+msgctxt "#32549"
+msgid "Check movie before adding it"
+msgstr ""
+
+msgctxt "#32550"
+msgid "Check first episode of season before adding it"
+msgstr ""
+
+msgctxt "#32551"
+msgid "Add to Library"
+msgstr "라이브러리에 추가"
+
+msgctxt "#32552"
+msgid "Adding to library..."
+msgstr "라이브러리에 추가중"
+
+msgctxt "#32553"
+msgid "Updating TV shows..."
+msgstr "드라마 업데이트중"
+
+msgctxt "#32554"
+msgid "Process Complete"
+msgstr "진행 완료"
+
+msgctxt "#32555"
+msgid "Are you sure?"
+msgstr "확실 합니까?"
+
+msgctxt "#32556"
+msgid "[B]EXODUS[/B] : Library"
+msgstr ""
+
+msgctxt "#32557"
+msgid "[B]LIBRARY[/B] : Settings"
+msgstr ""
+
+msgctxt "#32558"
+msgid "[B]EXODUS[/B] : Update library..."
+msgstr ""
+
+msgctxt "#32559"
+msgid "[B]EXODUS[/B] : Movie folder..."
+msgstr ""
+
+msgctxt "#32560"
+msgid "[B]EXODUS[/B] : TV folder..."
+msgstr ""
+
+msgctxt "#32561"
+msgid "[B]TRAKT[/B] : Import Collection..."
+msgstr ""
+
+msgctxt "#32562"
+msgid "[B]TRAKT[/B] : Import Watchlist..."
+msgstr ""
+
+msgctxt "#32563"
+msgid "[B]TRAKT[/B] : Import TV Collection..."
+msgstr ""
+
+msgctxt "#32564"
+msgid "[B]TRAKT[/B] : Import TV Watchlist..."
+msgstr ""
+
+msgctxt "#32565"
+msgid "Include episodes with unknown air dates"
+msgstr ""

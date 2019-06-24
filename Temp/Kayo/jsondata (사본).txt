@@ -1,0 +1,7 @@
+{"username": "railrac23@gmail.com",
+"password": "Por96311",
+"realm": "prod-martian-database",
+"audience": "kayosports.com.au",
+"client_id": "qjmv9ZvaMDS9jGvHOxVfImLgQ3G5NrT2",
+"scope": "openid offline_access",
+"grant_type": "http://auth0.com/oauth/grant-type/password-realm"}
