@@ -642,7 +642,7 @@ For updates check the readme.
 		</extension>
 	</addon>
 
-<addon id="script.module.urlresolver" name="URLResolver" version="1005.0.37" provider-name="tvaddons">
+<addon id="script.module.urlresolver" name="URLResolver" version="1005.0.38" provider-name="tvaddons">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
 		<import addon="plugin.video.youtube" optional="true" />
@@ -1177,7 +1177,7 @@ For updates check the readme.
   </extension>
 </addon>
 
-<addon id="script.module.resolveurl" name="ResolveURL" version="5.0.32" provider-name="jsergio">
+<addon id="script.module.resolveurl" name="ResolveURL" version="5.0.33" provider-name="jsergio">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
 		<import addon="plugin.video.youtube" optional="true" />

@@ -17,7 +17,7 @@
 				<Name>Addons</Name>
 				<Comments />
 				<Colour>0</Colour>
-				<LocalDir>/media/jin/Data500/LilacTV/Addons/Addons/</LocalDir>
+				<LocalDir>/media/jin/Data500/LilacTV/Addons/LilacTV/</LocalDir>
 				<RemoteDir>1 0 3 opt 18 lampstack-5.6.24-0 7 apache2 6 htdocs 6 BadJin 6 Addons</RemoteDir>
 				<SyncBrowsing>0</SyncBrowsing>
 				<DirectoryComparison>0</DirectoryComparison>
@@ -166,7 +166,7 @@
 				<Name>Addons</Name>
 				<Comments />
 				<Colour>0</Colour>
-				<LocalDir>/media/jin/Data500/SeeboTV/Addons</LocalDir>
+				<LocalDir>/media/jin/Data500/LilacTV/Addons/SeeboTV</LocalDir>
 				<RemoteDir>1 0 3 var 3 www 12 kowan_addons 5 kowan</RemoteDir>
 				<SyncBrowsing>0</SyncBrowsing>
 				<DirectoryComparison>0</DirectoryComparison>
