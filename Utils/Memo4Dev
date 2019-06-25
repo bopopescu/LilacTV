@@ -281,3 +281,5 @@ adb remount adb push package.apk /system/apps/
 
 echo -n Welcome | md5sum
 fba5cd974fc638f8bd8b8868f4bdfc81
+
+youtube-dl --extract-audio --audio-format mp3 <video URL>
