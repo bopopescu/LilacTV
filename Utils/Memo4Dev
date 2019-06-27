@@ -283,3 +283,6 @@ echo -n Welcome | md5sum
 fba5cd974fc638f8bd8b8868f4bdfc81
 
 youtube-dl --extract-audio --audio-format mp3 <video URL>
+
+out of memory about jack_server
+https://stackoverflow.com/questions/35579646/android-source-code-compile-error-try-increasing-heap-size-with-java-option
