@@ -1914,7 +1914,7 @@ This is a Non-profit resource, organized solely for educational purposes which i
 
 <addon id="plugin.video.themagicdragon"
        name="The Magic Dragon"
-       version="1.28"
+       version="1.30"
        provider-name="Magic Dragon">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
