@@ -210,6 +210,6 @@ if __name__=='__main__':
         AddNewAddon('repository.supremacy', 'plugin.video.yoda')
         AddNewAddon('repository.lilac', 'plugin.video.kayo.sports')
         AddNewAddon('repository.matthuisman', 'plugin.video.au.freeview')
-        AddNewRepo('EzzerMacsWizard')
+        AddNewRepo('repository.EzzerMacsWizard')
 
         dis_or_enable_addon("pvr.vdr.vnsi", "false")
