@@ -58,7 +58,7 @@ def AddNewRepo(repo):
             time.sleep(0.5)
             #xbmc.executebuiltin('UpdateLocalAddons')
             #time.sleep(2)
-            #dis_or_enable_addon(repo)
+            dis_or_enable_addon(repo)
 
         os.system("rm -rf "+sPath)
 
@@ -70,7 +70,6 @@ def AddNewAddon(repo, addon):
     if not os.path.exists(AddonPath):
         #Add-ons
         AddNewRepo(repo)
-        dis_or_enable_addon(repo)
         time.sleep(2)
         xbmc.executebuiltin('InstallAddon(%s)' % addon)
         Flag = True
@@ -211,5 +210,6 @@ if __name__=='__main__':
         AddNewAddon('repository.supremacy', 'plugin.video.yoda')
         AddNewAddon('repository.lilac', 'plugin.video.kayo.sports')
         AddNewAddon('repository.matthuisman', 'plugin.video.au.freeview')
-        
+        AddNewRepo('EzzerMacsWizard')
+
         dis_or_enable_addon("pvr.vdr.vnsi", "false")
