@@ -58,9 +58,9 @@ def AddNewRepo(repo):
             time.sleep(0.5)
             #xbmc.executebuiltin('UpdateLocalAddons')
             #time.sleep(2)
-            dis_or_enable_addon(repo)
 
         os.system("rm -rf "+sPath)
+    dis_or_enable_addon(repo)
 
 
 def AddNewAddon(repo, addon):

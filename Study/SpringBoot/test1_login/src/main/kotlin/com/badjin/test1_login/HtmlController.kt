@@ -1,4 +1,4 @@
-package com.badjin.test1
+package com.badjin.test1_login
 
 import org.springframework.stereotype.Controller
 import org.springframework.ui.Model
