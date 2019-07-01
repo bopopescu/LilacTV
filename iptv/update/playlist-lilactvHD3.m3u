@@ -1,7 +1,5 @@
 #EXTM3U
 #EXTINF:-1 tvg-id="164" tvg-logo="http://i.imgur.com/K2ztoDT.png" group-title="Korea",SBS
-http://118.218.172.32:9981/stream/channelid/1443038535?ticket=C7EB15DD7C0CEDDEE9F7C2C7AF74B338538E79F8&profile=pass
-#EXTINF:-1 tvg-id="164" tvg-logo="http://i.imgur.com/K2ztoDT.png" group-title="Korea",SBS
 http://1.233.136.3:9981/stream/channelid/1933958848
 #EXTINF:-1 tvg-id="164" tvg-logo="http://i.imgur.com/K2ztoDT.png" group-title="Korea",SBS
 http://211.207.173.34:9981/stream/channelid/2118804452
@@ -9,8 +7,8 @@ http://211.207.173.34:9981/stream/channelid/2118804452
 http://211.245.55.198:22515/m2u/239.192.41.2:49220
 #EXTINF:-1 tvg-id="164" tvg-logo="http://i.imgur.com/K2ztoDT.png" group-title="Korea",SBS
 http://222.236.197.77:9981/stream/channelid/210436603
-#EXTINF:-1 tvg-id="166" tvg-logo="http://i.imgur.com/D1EYJmr.png" group-title="Korea",SBS funE
-http://118.218.172.32:9981/stream/channelid/936512365?ticket=25188EA822D6BD74BA4CCF6BD7C61D77151AADC4&profile=pass
+#EXTINF:-1 tvg-id="164" tvg-logo="http://i.imgur.com/K2ztoDT.png" group-title="Korea",SBS
+http://175.113.154.14:9981/stream/channelid/188596249?ticket=9687A1944AB04C7F00D7FC1F54A7DCCC89B004E0&profile=matroska
 #EXTINF:-1 tvg-id="166" tvg-logo="http://i.imgur.com/D1EYJmr.png" group-title="Korea",SBS funE
 http://1.233.136.3:9981/stream/channelid/413832509
 #EXTINF:-1 tvg-id="166" tvg-logo="http://i.imgur.com/D1EYJmr.png" group-title="Korea",SBS funE
@@ -19,8 +17,8 @@ http://211.207.173.34:9981/stream/channelid/1987315839
 http://211.245.55.198:22515/m2u/239.192.55.3:49220
 #EXTINF:-1 tvg-id="166" tvg-logo="http://i.imgur.com/D1EYJmr.png" group-title="Korea",SBS funE
 http://222.236.197.77:9981/stream/channelid/2115568785
-#EXTINF:-1 tvg-id="110" tvg-logo="http://i.imgur.com/e31o5gw.png" group-title="Korea",KBS1
-http://118.218.172.32:9981/stream/channelid/1022068140?ticket=651826D787E143A8C2072AA21D7B841E429A17F3&profile=pass
+#EXTINF:-1 tvg-id="166" tvg-logo="http://i.imgur.com/D1EYJmr.png" group-title="Korea",SBS funE
+http://175.113.154.14:9981/stream/channelid/1436643837?ticket=415381E73FD5D5F0460441FC61535DEEA7F9F63D&profile=matroska
 #EXTINF:-1 tvg-id="110" tvg-logo="http://i.imgur.com/e31o5gw.png" group-title="Korea",KBS1
 http://1.233.136.3:9981/stream/channelid/2105086368
 #EXTINF:-1 tvg-id="110" tvg-logo="http://i.imgur.com/e31o5gw.png" group-title="Korea",KBS1
@@ -29,8 +27,8 @@ http://211.207.173.34:9981/stream/channelid/1854190025
 http://211.245.55.198:22515/m2u/239.192.38.1:49220
 #EXTINF:-1 tvg-id="110" tvg-logo="http://i.imgur.com/e31o5gw.png" group-title="Korea",KBS1
 http://222.236.197.77:9981/stream/channelid/25876953
-#EXTINF:-1 tvg-id="111" tvg-logo="http://i.imgur.com/XgibZbD.png" group-title="Korea",KBS2
-http://118.218.172.32:9981/stream/channelid/796448061?ticket=F7A17FE22A4D7F1034F7317C55C11ED3EA962795&profile=pass
+#EXTINF:-1 tvg-id="110" tvg-logo="http://i.imgur.com/e31o5gw.png" group-title="Korea",KBS1
+http://175.113.154.14:9981/stream/channelid/839066479?ticket=FF68036589F1376C8A060017AA04A39605459A16&profile=matroska
 #EXTINF:-1 tvg-id="111" tvg-logo="http://i.imgur.com/XgibZbD.png" group-title="Korea",KBS2
 http://1.233.136.3:9981/stream/channelid/1710080273
 #EXTINF:-1 tvg-id="111" tvg-logo="http://i.imgur.com/XgibZbD.png" group-title="Korea",KBS2
@@ -39,18 +37,18 @@ http://211.207.173.34:9981/stream/channelid/397513708
 http://211.245.55.198:22515/m2u/239.192.67.99:49220
 #EXTINF:-1 tvg-id="111" tvg-logo="http://i.imgur.com/XgibZbD.png" group-title="Korea",KBS2
 http://222.236.197.77:9981/stream/channelid/794204807
-#EXTINF:-1 tvg-id="104" tvg-logo="http://i.imgur.com/D1o9by9.png" group-title="Korea",KBS JOY
-http://118.218.172.32:9981/stream/channelid/1373224507?ticket=F126B075AAFBA4C72C662542654B9FAA7581F105&profile=pass
-#EXTINF:-1 tvg-id="104" tvg-logo="http://i.imgur.com/D1o9by9.png" group-title="Korea",KBS JOY
-http://118.218.172.32:9981/stream/channelid/941356454?ticket=5339F238291C29B628B23030054186E42F5003B9&profile=pass
+#EXTINF:-1 tvg-id="111" tvg-logo="http://i.imgur.com/XgibZbD.png" group-title="Korea",KBS2
+http://175.113.154.14:9981/stream/channelid/864370985?ticket=EBA9DB365AD2C05FF0B07FFDADFE672DA345357B&profile=matroska
 #EXTINF:-1 tvg-id="104" tvg-logo="http://i.imgur.com/D1o9by9.png" group-title="Korea",KBS JOY
 http://1.233.136.3:9981/stream/channelid/302947805
 #EXTINF:-1 tvg-id="104" tvg-logo="http://i.imgur.com/D1o9by9.png" group-title="Korea",KBS JOY
 http://211.207.173.34:9981/stream/channelid/191678688
 #EXTINF:-1 tvg-id="104" tvg-logo="http://i.imgur.com/D1o9by9.png" group-title="Korea",KBS JOY
 http://211.245.55.198:22515/m2u/239.192.56.6:49220
-#EXTINF:-1 tvg-id="122" tvg-logo="http://i.imgur.com/duig32i.png" group-title="Korea",MBC
-http://118.218.172.32:9981/stream/channelid/970295571?ticket=DC522F642F2449A674EC117745EE89E9EBD18A20&profile=pass
+#EXTINF:-1 tvg-id="104" tvg-logo="http://i.imgur.com/D1o9by9.png" group-title="Korea",KBS JOY
+http://222.236.197.77:9981/stream/channelid/1101379890
+#EXTINF:-1 tvg-id="104" tvg-logo="http://i.imgur.com/D1o9by9.png" group-title="Korea",KBS JOY
+http://175.113.154.14:9981/stream/channelid/930743906?ticket=647902654A201E79D650AB167FC6FE0B8F963005&profile=matroska
 #EXTINF:-1 tvg-id="122" tvg-logo="http://i.imgur.com/duig32i.png" group-title="Korea",MBC
 http://1.233.136.3:9981/stream/channelid/1336268195
 #EXTINF:-1 tvg-id="122" tvg-logo="http://i.imgur.com/duig32i.png" group-title="Korea",MBC
@@ -59,8 +57,8 @@ http://211.207.173.34:9981/stream/channelid/251822327
 http://211.245.55.198:22515/m2u/239.192.40.26:49220
 #EXTINF:-1 tvg-id="122" tvg-logo="http://i.imgur.com/duig32i.png" group-title="Korea",MBC
 http://222.236.197.77:9981/stream/channelid/1355839757
-#EXTINF:-1 tvg-id="123" tvg-logo="http://i.imgur.com/oOnpFes.png" group-title="Korea",MBC Every1
-http://118.218.172.32:9981/stream/channelid/354725422?ticket=EAFEEE96E974106C73795EE936EF495922C41D4E&profile=pass
+#EXTINF:-1 tvg-id="122" tvg-logo="http://i.imgur.com/duig32i.png" group-title="Korea",MBC
+http://175.113.154.14:9981/stream/channelid/519287946?ticket=76FD5F030705A41FA0093EF38719D4D9CCD8692C&profile=matroska
 #EXTINF:-1 tvg-id="123" tvg-logo="http://i.imgur.com/oOnpFes.png" group-title="Korea",MBC Every1
 http://1.233.136.3:9981/stream/channelid/1141313311
 #EXTINF:-1 tvg-id="123" tvg-logo="http://i.imgur.com/oOnpFes.png" group-title="Korea",MBC Every1
@@ -70,8 +68,6 @@ http://211.245.55.198:22515/m2u/239.192.50.6:49220
 #EXTINF:-1 tvg-id="123" tvg-logo="http://i.imgur.com/oOnpFes.png" group-title="Korea",MBC Every1
 http://175.113.154.14:9981/stream/channelid/1095456275?ticket=AFDECA2453F5BEED4199119B747E4B367EF4D8AD&profile=matroska
 #EXTINF:-1 tvg-id="60" tvg-logo="http://i.imgur.com/WViFruZ.png" group-title="Korea",EBS
-http://118.218.172.32:9981/stream/channelid/114952968?ticket=A4CBDA8F6863DE184690A2A2191F5AFB1BAEE48F&profile=pass
-#EXTINF:-1 tvg-id="60" tvg-logo="http://i.imgur.com/WViFruZ.png" group-title="Korea",EBS
 http://1.233.136.3:9981/stream/channelid/1308360310
 #EXTINF:-1 tvg-id="60" tvg-logo="http://i.imgur.com/WViFruZ.png" group-title="Korea",EBS
 http://1.233.136.3:9981/stream/channelid/1870811472
@@ -79,8 +75,8 @@ http://1.233.136.3:9981/stream/channelid/1870811472
 http://1.233.136.3:9981/stream/channelid/1408578459
 #EXTINF:-1 tvg-id="60" tvg-logo="http://i.imgur.com/WViFruZ.png" group-title="Korea",EBS
 http://211.245.55.198:22515/m2u/239.192.42.1:49220
-#EXTINF:-1 tvg-id="61" tvg-logo="http://i.imgur.com/RIrBF4D.png" group-title="Korea",EBS2
-http://118.218.172.32:9981/stream/channelid/1886235835?ticket=E6C42962719DC1A588EB5F9507487905355D78F7&profile=pass
+#EXTINF:-1 tvg-id="60" tvg-logo="http://i.imgur.com/WViFruZ.png" group-title="Korea",EBS
+http://175.113.154.14:9981/stream/channelid/140577025?ticket=416980FFB6596911789A2B4262537B4779AEBCD1&profile=matroska
 #EXTINF:-1 tvg-id="61" tvg-logo="http://i.imgur.com/RIrBF4D.png" group-title="Korea",EBS2
 http://1.233.136.3:9981/stream/channelid/1675439050
 #EXTINF:-1 tvg-id="61" tvg-logo="http://i.imgur.com/RIrBF4D.png" group-title="Korea",EBS2
@@ -88,27 +84,21 @@ http://1.233.136.3:9981/stream/channelid/901155994
 #EXTINF:-1 tvg-id="61" tvg-logo="http://i.imgur.com/RIrBF4D.png" group-title="Korea",EBS2
 http://175.113.154.14:9981/stream/channelid/618716491?ticket=A4FFFCE18C016738AEF41C64C23755FAFB6214B5&profile=matroska
 #EXTINF:-1 tvg-id="97" tvg-logo="http://i.imgur.com/YOYosLG.png" group-title="Korea",JTBC
-http://118.218.172.32:9981/stream/channelid/1180202336?ticket=489658259C5683A449DEA338C7DB514D07441017&profile=pass
-#EXTINF:-1 tvg-id="97" tvg-logo="http://i.imgur.com/YOYosLG.png" group-title="Korea",JTBC
-http://118.218.172.32:9981/stream/channelid/40313113?ticket=8F5D164F6A973DB29F58F3CD23E96F646F754C96&profile=pass
-#EXTINF:-1 tvg-id="97" tvg-logo="http://i.imgur.com/YOYosLG.png" group-title="Korea",JTBC
 http://1.233.136.3:9981/stream/channelid/554151581
+#EXTINF:-1 tvg-id="97" tvg-logo="http://i.imgur.com/YOYosLG.png" group-title="Korea",JTBC
+http://118.218.172.32:9981/stream/channelid/1180202336?ticket=489658259C5683A449DEA338C7DB514D07441017&profile=pass
 #EXTINF:-1 tvg-id="97" tvg-logo="http://i.imgur.com/YOYosLG.png" group-title="Korea",JTBC
 http://211.207.173.34:9981/stream/channelid/312259017
 #EXTINF:-1 tvg-id="97" tvg-logo="http://i.imgur.com/YOYosLG.png" group-title="Korea",JTBC
 http://211.245.55.198:22515/m2u/239.192.58.7:49220
-#EXTINF:-1 tvg-id="99" tvg-logo="http://i.imgur.com/WtXDuFU.png" group-title="Korea",JTBC2
-http://118.218.172.32:9981/stream/channelid/954789579?ticket=68C546421A8AEFFBF6CFC39C515FFAD94EC8D76A&profile=pass
-#EXTINF:-1 tvg-id="99" tvg-logo="http://i.imgur.com/WtXDuFU.png" group-title="Korea",JTBC2
-http://118.218.172.32:9981/stream/channelid/1874730694?ticket=9885892B3D39C8752358E6BEA5E06D3B9D66873A&profile=pass
+#EXTINF:-1 tvg-id="97" tvg-logo="http://i.imgur.com/YOYosLG.png" group-title="Korea",JTBC
+http://211.245.55.198:22515/m2u/239.192.70.228:49220
 #EXTINF:-1 tvg-id="99" tvg-logo="http://i.imgur.com/WtXDuFU.png" group-title="Korea",JTBC2
 http://1.233.136.3:9981/stream/channelid/1838293178
 #EXTINF:-1 tvg-id="99" tvg-logo="http://i.imgur.com/WtXDuFU.png" group-title="Korea",JTBC2
 http://222.236.197.77:9981/stream/channelid/1755244913
 #EXTINF:-1 tvg-id="99" tvg-logo="http://i.imgur.com/WtXDuFU.png" group-title="Korea",JTBC2
 http://175.113.154.14:9981/stream/channelid/1803181668?ticket=5A64B1F70B10961BD537D58352261EF86190FFEB&profile=matroska
-#EXTINF:-1 tvg-id="129" tvg-logo="http://i.imgur.com/p0mvIJN.png" group-title="Korea",MBN
-http://118.218.172.32:9981/stream/channelid/889047245?ticket=4630CF935473C6A2F5670336BB19A2CDED0B7C55&profile=pass
 #EXTINF:-1 tvg-id="129" tvg-logo="http://i.imgur.com/p0mvIJN.png" group-title="Korea",MBN
 http://1.233.136.3:9981/stream/channelid/552135440
 #EXTINF:-1 tvg-id="129" tvg-logo="http://i.imgur.com/p0mvIJN.png" group-title="Korea",MBN
@@ -118,8 +108,6 @@ http://211.245.55.198:22515/m2u/239.192.45.5:49220
 #EXTINF:-1 tvg-id="129" tvg-logo="http://i.imgur.com/p0mvIJN.png" group-title="Korea",MBN
 http://175.113.154.14:9981/stream/channelid/1571542367?ticket=E9626F03681B26A6CB4C9905EB7DC34F03C08A52&profile=matroska
 #EXTINF:-1 tvg-id="207" tvg-logo="http://i.imgur.com/OJ9A8fZ.png" group-title="Korea",tvN
-http://118.218.172.32:9981/stream/channelid/558199083?ticket=96BB2D12B02C65502CECBFACD28A1EDFD6DE889D&profile=pass
-#EXTINF:-1 tvg-id="207" tvg-logo="http://i.imgur.com/OJ9A8fZ.png" group-title="Korea",tvN
 http://1.233.136.3:9981/stream/channelid/600342559
 #EXTINF:-1 tvg-id="207" tvg-logo="http://i.imgur.com/OJ9A8fZ.png" group-title="Korea",tvN
 http://211.207.173.34:9981/stream/channelid/252211090
@@ -127,8 +115,8 @@ http://211.207.173.34:9981/stream/channelid/252211090
 http://211.245.55.198:22515/m2u/239.192.53.7:49220
 #EXTINF:-1 tvg-id="207" tvg-logo="http://i.imgur.com/OJ9A8fZ.png" group-title="Korea",tvN
 http://222.236.197.77:9981/stream/channelid/611543449
-#EXTINF:-1 tvg-id="281" tvg-logo="http://i.imgur.com/xti35f5.png" group-title="Korea",채널A
-http://118.218.172.32:9981/stream/channelid/478740176?ticket=3076748B35C363E8420DE3BF26A24F992A2CE4EE&profile=pass
+#EXTINF:-1 tvg-id="207" tvg-logo="http://i.imgur.com/OJ9A8fZ.png" group-title="Korea",tvN
+http://175.113.154.14:9981/stream/channelid/24030312?ticket=0F174F4F08B602E7F492D8B30D6BC97784285F6F&profile=matroska
 #EXTINF:-1 tvg-id="281" tvg-logo="http://i.imgur.com/xti35f5.png" group-title="Korea",채널A
 http://1.233.136.3:9981/stream/channelid/1130040958
 #EXTINF:-1 tvg-id="281" tvg-logo="http://i.imgur.com/xti35f5.png" group-title="Korea",채널A
@@ -138,23 +126,17 @@ http://211.245.55.198:22515/m2u/239.192.47.4:49220
 #EXTINF:-1 tvg-id="281" tvg-logo="http://i.imgur.com/xti35f5.png" group-title="Korea",채널A
 http://175.113.154.14:9981/stream/channelid/559117551?ticket=F37133924A88FD21643D4159CB511533CACED1EE&profile=matroska
 #EXTINF:-1 tvg-id="208" tvg-logo="http://i.imgur.com/ShJ5joR.png" group-title="Korea",TV조선
-http://118.218.172.32:9981/stream/channelid/90296012?ticket=5FCC3DBADE692C65CD5A4D673C6F9142D36F55F1&profile=pass
-#EXTINF:-1 tvg-id="208" tvg-logo="http://i.imgur.com/ShJ5joR.png" group-title="Korea",TV조선
 http://1.233.136.3:9981/stream/channelid/1902464927
 #EXTINF:-1 tvg-id="208" tvg-logo="http://i.imgur.com/ShJ5joR.png" group-title="Korea",TV조선
 http://211.245.55.198:22515/m2u/239.192.50.3:49220
-#EXTINF:-1 tvg-id="208" tvg-logo="http://i.imgur.com/ShJ5joR.png" group-title="Korea",TV조선
-http://175.113.154.14:9981/stream/channelid/860685096?ticket=7DA83E9D81410C7CC5F4E6928A3EA86E072BAB50&profile=matroska
-#EXTINF:-1 tvg-id="121" tvg-logo="http://i.imgur.com/putHm2b.png" group-title="Korea",Mnet
-http://118.218.172.32:9981/stream/channelid/1118435048?ticket=E70F1329DB5A53091353BD0D927C22EC0DE98B29&profile=pass
 #EXTINF:-1 tvg-id="121" tvg-logo="http://i.imgur.com/putHm2b.png" group-title="Korea",Mnet
 http://1.233.136.3:9981/stream/channelid/1429821016
 #EXTINF:-1 tvg-id="121" tvg-logo="http://i.imgur.com/putHm2b.png" group-title="Korea",Mnet
 http://211.207.173.34:9981/stream/channelid/1056525010
 #EXTINF:-1 tvg-id="121" tvg-logo="http://i.imgur.com/putHm2b.png" group-title="Korea",Mnet
 http://211.245.55.198:22515/m2u/239.192.48.5:49220
-#EXTINF:-1 tvg-id="268" tvg-logo="http://i.imgur.com/KlTCP8V.png" group-title="Korea",연합뉴스TV
-http://118.218.172.32:9981/stream/channelid/806959083?ticket=12056F51A7EA1334B776B2A6DB8F415BD4B6088B&profile=pass
+#EXTINF:-1 tvg-id="121" tvg-logo="http://i.imgur.com/putHm2b.png" group-title="Korea",Mnet
+http://175.113.154.14:9981/stream/channelid/798635856?ticket=D53B68875C45B491A2F7E391CC211B78E52809DC&profile=matroska
 #EXTINF:-1 tvg-id="268" tvg-logo="http://i.imgur.com/KlTCP8V.png" group-title="Korea",연합뉴스TV
 http://1.233.136.3:9981/stream/channelid/1364519788
 #EXTINF:-1 tvg-id="268" tvg-logo="http://i.imgur.com/KlTCP8V.png" group-title="Korea",연합뉴스TV
@@ -164,17 +146,15 @@ http://222.236.197.77:9981/stream/channelid/1156649224
 #EXTINF:-1 tvg-id="268" tvg-logo="http://i.imgur.com/KlTCP8V.png" group-title="Korea",연합뉴스TV
 http://175.113.154.14:9981/stream/channelid/82082170?ticket=72C1380C54E09B2A01CBA619143B9197E7A33FD7&profile=matroska
 #EXTINF:-1 tvg-id="218" tvg-logo="http://i.imgur.com/ByeeX5e.png" group-title="Korea",YTN
-http://118.218.172.32:9981/stream/channelid/1085116135?ticket=5EB7A20FCD09A7AD4C39BB1349826E472AD52B26&profile=pass
-#EXTINF:-1 tvg-id="218" tvg-logo="http://i.imgur.com/ByeeX5e.png" group-title="Korea",YTN
-http://118.218.172.32:9981/stream/channelid/237826233?ticket=B87639F4A3E8122ED3E57F602F623017747F40A2&profile=pass
-#EXTINF:-1 tvg-id="218" tvg-logo="http://i.imgur.com/ByeeX5e.png" group-title="Korea",YTN
 http://1.233.136.3:9981/stream/channelid/1206678915
 #EXTINF:-1 tvg-id="218" tvg-logo="http://i.imgur.com/ByeeX5e.png" group-title="Korea",YTN
 http://211.245.55.198:22515/m2u/239.192.47.7:49220
 #EXTINF:-1 tvg-id="218" tvg-logo="http://i.imgur.com/ByeeX5e.png" group-title="Korea",YTN
 http://222.236.197.77:9981/stream/channelid/1206492325
-#EXTINF:-1 tvg-id="98" tvg-logo="http://i.imgur.com/Bnw7O5U.png" group-title="Korea",JTBC Golf
-http://118.218.172.32:9981/stream/channelid/2057923382?ticket=FBA288B52CBFACF4DD279B4370D877E17F9090C3&profile=pass
+#EXTINF:-1 tvg-id="218" tvg-logo="http://i.imgur.com/ByeeX5e.png" group-title="Korea",YTN
+http://222.236.197.77:9981/stream/channelid/2146175448
+#EXTINF:-1 tvg-id="218" tvg-logo="http://i.imgur.com/ByeeX5e.png" group-title="Korea",YTN
+http://175.113.154.14:9981/stream/channelid/2002037038?ticket=70345356604A97CB592F5E1A2728F534B6E84452&profile=matroska
 #EXTINF:-1 tvg-id="98" tvg-logo="http://i.imgur.com/Bnw7O5U.png" group-title="Korea",JTBC Golf
 http://211.245.55.198:22515/m2u/239.192.59.5:49220
 #EXTINF:-1 tvg-id="98" tvg-logo="http://i.imgur.com/Bnw7O5U.png" group-title="Korea",JTBC Golf
@@ -182,25 +162,15 @@ http://222.236.197.77:9981/stream/channelid/752753346
 #EXTINF:-1 tvg-id="98" tvg-logo="http://i.imgur.com/Bnw7O5U.png" group-title="Korea",JTBC Golf
 http://175.113.154.14:9981/stream/channelid/1501772852?ticket=A2E52F4AD0F8F5960302EC72111E415587E2191B&profile=matroska
 #EXTINF:-1 tvg-id="167" tvg-logo="http://i.imgur.com/HdS0GNV.png" group-title="Korea",SBS GOLF
-http://118.218.172.32:9981/stream/channelid/1395395222?ticket=D5A2BF840F0236E4DB3EB8CB5AE5AA0CA70AF1B4&profile=pass
-#EXTINF:-1 tvg-id="167" tvg-logo="http://i.imgur.com/HdS0GNV.png" group-title="Korea",SBS GOLF
 http://1.233.136.3:9981/stream/channelid/106590898
 #EXTINF:-1 tvg-id="167" tvg-logo="http://i.imgur.com/HdS0GNV.png" group-title="Korea",SBS GOLF
-http://211.245.55.198:22515/m2u/239.192.57.5:49220
-#EXTINF:-1 tvg-id="167" tvg-logo="http://i.imgur.com/HdS0GNV.png" group-title="Korea",SBS GOLF
 http://222.236.197.77:9981/stream/channelid/279879118
-#EXTINF:-1 tvg-id="167" tvg-logo="http://i.imgur.com/HdS0GNV.png" group-title="Korea",SBS GOLF
-http://175.113.154.14:9981/stream/channelid/358994389?ticket=B71751A5D859E386CB8BDB03AEA0374DD115BD10&profile=matroska
-#EXTINF:-1 tvg-id="169" tvg-logo="http://i.imgur.com/j1vHAu6.png" group-title="Korea",SBS Sports
-http://118.218.172.32:9981/stream/channelid/1344269403?ticket=6EA6D4A983507DEB11D524DD8100836B73C6B6F8&profile=pass
 #EXTINF:-1 tvg-id="169" tvg-logo="http://i.imgur.com/j1vHAu6.png" group-title="Korea",SBS Sports
 http://1.233.136.3:9981/stream/channelid/646030511
 #EXTINF:-1 tvg-id="169" tvg-logo="http://i.imgur.com/j1vHAu6.png" group-title="Korea",SBS Sports
 http://211.207.173.34:9981/stream/channelid/339386391
 #EXTINF:-1 tvg-id="169" tvg-logo="http://i.imgur.com/j1vHAu6.png" group-title="Korea",SBS Sports
 http://211.245.55.198:22515/m2u/239.192.67.130:49220
-#EXTINF:-1 tvg-id="107" tvg-logo="http://i.imgur.com/xspD7UE.png" group-title="Korea",KBS N Sports
-http://118.218.172.32:9981/stream/channelid/822356905?ticket=3B44237F3443ED69FF43B99841E6AB5786CC4421&profile=pass
 #EXTINF:-1 tvg-id="107" tvg-logo="http://i.imgur.com/xspD7UE.png" group-title="Korea",KBS N Sports
 http://1.233.136.3:9981/stream/channelid/1968876446
 #EXTINF:-1 tvg-id="107" tvg-logo="http://i.imgur.com/xspD7UE.png" group-title="Korea",KBS N Sports
@@ -210,8 +180,6 @@ http://211.245.55.198:22515/m2u/239.192.67.132:49220
 #EXTINF:-1 tvg-id="107" tvg-logo="http://i.imgur.com/xspD7UE.png" group-title="Korea",KBS N Sports
 http://222.236.197.77:9981/stream/channelid/1966764029
 #EXTINF:-1 tvg-id="126" tvg-logo="http://i.imgur.com/Su21uj3.png" group-title="Korea",MBC SPORTS+
-http://118.218.172.32:9981/stream/channelid/1657819432?ticket=549A13AC8371536489F7B39A37F2D8CA4D8678B6&profile=pass
-#EXTINF:-1 tvg-id="126" tvg-logo="http://i.imgur.com/Su21uj3.png" group-title="Korea",MBC SPORTS+
 http://1.233.136.3:9981/stream/channelid/637994031
 #EXTINF:-1 tvg-id="126" tvg-logo="http://i.imgur.com/Su21uj3.png" group-title="Korea",MBC SPORTS+
 http://211.207.173.34:9981/stream/channelid/1206507453
@@ -219,18 +187,18 @@ http://211.207.173.34:9981/stream/channelid/1206507453
 http://211.245.55.198:22515/m2u/239.192.67.131:49220
 #EXTINF:-1 tvg-id="126" tvg-logo="http://i.imgur.com/Su21uj3.png" group-title="Korea",MBC SPORTS+
 http://211.245.55.198:22515/m2u/239.192.59.3:49220
-#EXTINF:-1 tvg-id="183" tvg-logo="http://i.imgur.com/cIpIf6b.png" group-title="Korea",SPOTV
-http://118.218.172.32:9981/stream/channelid/521054254?ticket=95FD6C3132C04D8E4C06A9AD3679F56A12963AB3&profile=pass
-#EXTINF:-1 tvg-id="183" tvg-logo="http://i.imgur.com/cIpIf6b.png" group-title="Korea",SPOTV
-http://118.218.172.32:9981/stream/channelid/823739158?ticket=6D595932329E53088C9B7991280EFF369CD5A1F1&profile=pass
+#EXTINF:-1 tvg-id="126" tvg-logo="http://i.imgur.com/Su21uj3.png" group-title="Korea",MBC SPORTS+
+http://222.236.197.77:9981/stream/channelid/807109876
 #EXTINF:-1 tvg-id="183" tvg-logo="http://i.imgur.com/cIpIf6b.png" group-title="Korea",SPOTV
 http://1.233.136.3:9981/stream/channelid/110941311
 #EXTINF:-1 tvg-id="183" tvg-logo="http://i.imgur.com/cIpIf6b.png" group-title="Korea",SPOTV
 http://211.207.173.34:9981/stream/channelid/929350497
 #EXTINF:-1 tvg-id="183" tvg-logo="http://i.imgur.com/cIpIf6b.png" group-title="Korea",SPOTV
 http://211.245.55.198:22515/m2u/239.192.67.133:49220
-#EXTINF:-1 tvg-id="185" tvg-logo="http://i.imgur.com/81Fshnn.png" group-title="Korea",SPOTV+
-http://118.218.172.32:9981/stream/channelid/1931013791?ticket=E696F6F59EADCFB81A933D7B381AAACF6217E847&profile=pass
+#EXTINF:-1 tvg-id="183" tvg-logo="http://i.imgur.com/cIpIf6b.png" group-title="Korea",SPOTV
+http://222.236.197.77:9981/stream/channelid/71717322
+#EXTINF:-1 tvg-id="183" tvg-logo="http://i.imgur.com/cIpIf6b.png" group-title="Korea",SPOTV
+http://175.113.154.14:9981/stream/channelid/1196793338?ticket=FB5929129D92129F053B8C9071D93B570EF2C69B&profile=matroska
 #EXTINF:-1 tvg-id="185" tvg-logo="http://i.imgur.com/81Fshnn.png" group-title="Korea",SPOTV+
 http://1.233.136.3:9981/stream/channelid/1829118489
 #EXTINF:-1 tvg-id="185" tvg-logo="http://i.imgur.com/81Fshnn.png" group-title="Korea",SPOTV+
@@ -239,8 +207,8 @@ http://211.207.173.34:9981/stream/channelid/788930393
 http://211.245.55.198:22515/m2u/239.192.67.163:49220
 #EXTINF:-1 tvg-id="185" tvg-logo="http://i.imgur.com/81Fshnn.png" group-title="Korea",SPOTV+
 http://222.236.197.77:9981/stream/channelid/1503346880
-#EXTINF:-1 tvg-id="186" tvg-logo="http://i.imgur.com/GNicmGY.png" group-title="Korea",SPOTV2
-http://118.218.172.32:9981/stream/channelid/886537651?ticket=B0421F6F120AEA7B9B78494649E005865406515E&profile=pass
+#EXTINF:-1 tvg-id="185" tvg-logo="http://i.imgur.com/81Fshnn.png" group-title="Korea",SPOTV+
+http://175.113.154.14:9981/stream/channelid/281301762?ticket=EF8ADFD7967126386ADFBC2013EE1F84DF9D77F7&profile=matroska
 #EXTINF:-1 tvg-id="186" tvg-logo="http://i.imgur.com/GNicmGY.png" group-title="Korea",SPOTV2
 http://1.233.136.3:9981/stream/channelid/294888686
 #EXTINF:-1 tvg-id="186" tvg-logo="http://i.imgur.com/GNicmGY.png" group-title="Korea",SPOTV2
@@ -249,24 +217,22 @@ http://211.207.173.34:9981/stream/channelid/143285062
 http://211.245.55.198:22515/m2u/239.192.69.42:49220
 #EXTINF:-1 tvg-id="186" tvg-logo="http://i.imgur.com/GNicmGY.png" group-title="Korea",SPOTV2
 http://222.236.197.77:9981/stream/channelid/1729379958
-#EXTINF:-1 tvg-id="178" tvg-logo="http://i.imgur.com/QHV9bdA.png" group-title="Korea",SkySports
-http://118.218.172.32:9981/stream/channelid/475518019?ticket=525485CB045A0EB63C3AA3A0F8C82323231E0615&profile=pass
+#EXTINF:-1 tvg-id="186" tvg-logo="http://i.imgur.com/GNicmGY.png" group-title="Korea",SPOTV2
+http://175.113.154.14:9981/stream/channelid/1294214091?ticket=0C3B991A3549890A63CE7000048AED6F649ED58F&profile=matroska
 #EXTINF:-1 tvg-id="178" tvg-logo="http://i.imgur.com/QHV9bdA.png" group-title="Korea",SkySports
 http://1.233.136.3:9981/stream/channelid/202051177
 #EXTINF:-1 tvg-id="178" tvg-logo="http://i.imgur.com/QHV9bdA.png" group-title="Korea",SkySports
 http://211.207.173.34:9981/stream/channelid/359067551
 #EXTINF:-1 tvg-id="178" tvg-logo="http://i.imgur.com/QHV9bdA.png" group-title="Korea",SkySports
 http://211.245.55.198:22515/m2u/239.192.67.162:49220
-#EXTINF:-1 tvg-id="100" tvg-logo="http://i.imgur.com/KvGwEc1.png" group-title="Korea",JTBC3
-http://118.218.172.32:9981/stream/channelid/1068361334?ticket=160B7ECE25959CBBC3B707981B587338D14E6277&profile=pass
+#EXTINF:-1 tvg-id="178" tvg-logo="http://i.imgur.com/QHV9bdA.png" group-title="Korea",SkySports
+http://175.113.154.14:9981/stream/channelid/1851765421?ticket=502631C7667D6DCAF8513365871CA198CD305F2E&profile=matroska
 #EXTINF:-1 tvg-id="100" tvg-logo="http://i.imgur.com/KvGwEc1.png" group-title="Korea",JTBC3
 http://1.233.136.3:9981/stream/channelid/1391275106
 #EXTINF:-1 tvg-id="100" tvg-logo="http://i.imgur.com/KvGwEc1.png" group-title="Korea",JTBC3
 http://211.207.173.34:9981/stream/channelid/1221484805
 #EXTINF:-1 tvg-id="100" tvg-logo="http://i.imgur.com/KvGwEc1.png" group-title="Korea",JTBC3
 http://211.245.55.198:22515/m2u/239.192.69.7:49220
-#EXTINF:-1 tvg-id="153" tvg-logo="http://i.imgur.com/tLtSTaq.png" group-title="Korea",OGN
-http://118.218.172.32:9981/stream/channelid/2008917390?ticket=E925DA7725A1942C190976F6B8B361C12501955C&profile=pass
 #EXTINF:-1 tvg-id="153" tvg-logo="http://i.imgur.com/tLtSTaq.png" group-title="Korea",OGN
 http://1.233.136.3:9981/stream/channelid/1749936236
 #EXTINF:-1 tvg-id="153" tvg-logo="http://i.imgur.com/tLtSTaq.png" group-title="Korea",OGN
@@ -275,8 +241,8 @@ http://211.207.173.34:9981/stream/channelid/1175165690
 http://211.245.55.198:22515/m2u/239.192.58.5:49220
 #EXTINF:-1 tvg-id="153" tvg-logo="http://i.imgur.com/tLtSTaq.png" group-title="Korea",OGN
 http://222.236.197.77:9981/stream/channelid/1645699615
-#EXTINF:-1 tvg-id="184" tvg-logo="http://i.imgur.com/5IMfa6N.png" group-title="Korea",SPOTV Games
-http://118.218.172.32:9981/stream/channelid/1799063772?ticket=669871BB936311E1E6D79200E964A96B6CF1A532&profile=pass
+#EXTINF:-1 tvg-id="153" tvg-logo="http://i.imgur.com/tLtSTaq.png" group-title="Korea",OGN
+http://175.113.154.14:9981/stream/channelid/794862302?ticket=BB7D09983CA5EFC263659CEC6EAD72F941D97EBC&profile=matroska
 #EXTINF:-1 tvg-id="184" tvg-logo="http://i.imgur.com/5IMfa6N.png" group-title="Korea",SPOTV Games
 http://1.233.136.3:9981/stream/channelid/216144217
 #EXTINF:-1 tvg-id="184" tvg-logo="http://i.imgur.com/5IMfa6N.png" group-title="Korea",SPOTV Games
@@ -286,8 +252,6 @@ http://211.245.55.198:22515/m2u/239.192.69.49:49220
 #EXTINF:-1 tvg-id="184" tvg-logo="http://i.imgur.com/5IMfa6N.png" group-title="Korea",SPOTV Games
 http://175.113.154.14:9981/stream/channelid/407448939?ticket=A89076477BABD205A3174116FAE7E928363E02E1&profile=matroska
 #EXTINF:-1 tvg-id="151" tvg-logo="http://i.imgur.com/IXh6dwo.png" group-title="Korea",OCN
-http://118.218.172.32:9981/stream/channelid/1079384959?ticket=1FF14325C0803A51746E48AD555396C8B4A1260D&profile=pass
-#EXTINF:-1 tvg-id="151" tvg-logo="http://i.imgur.com/IXh6dwo.png" group-title="Korea",OCN
 http://1.233.136.3:9981/stream/channelid/2058420810
 #EXTINF:-1 tvg-id="151" tvg-logo="http://i.imgur.com/IXh6dwo.png" group-title="Korea",OCN
 http://211.207.173.34:9981/stream/channelid/154272361
@@ -295,18 +259,16 @@ http://211.207.173.34:9981/stream/channelid/154272361
 http://211.245.55.198:22515/m2u/239.192.52.8:49220
 #EXTINF:-1 tvg-id="151" tvg-logo="http://i.imgur.com/IXh6dwo.png" group-title="Korea",OCN
 http://222.236.197.77:9981/stream/channelid/1864325487
-#EXTINF:-1 tvg-id="171" tvg-logo="http://i.imgur.com/lTK9VD4.png" group-title="Korea",스크린
-http://118.218.172.32:9981/stream/channelid/1146523089?ticket=3F0734FBE6A6BBC5B2FDCF51683F8EA718E32E38&profile=pass
-#EXTINF:-1 tvg-id="171" tvg-logo="http://i.imgur.com/lTK9VD4.png" group-title="Korea",스크린
-http://118.218.172.32:9981/stream/channelid/850585253?ticket=9BA098DC425F5217B65D5F35B8F94CEC0EAA0DAA&profile=pass
+#EXTINF:-1 tvg-id="151" tvg-logo="http://i.imgur.com/IXh6dwo.png" group-title="Korea",OCN
+http://175.113.154.14:9981/stream/channelid/2001507621?ticket=8E5D53CEBE8C61FF15DD05C4583680E97221B101&profile=matroska
 #EXTINF:-1 tvg-id="171" tvg-logo="http://i.imgur.com/lTK9VD4.png" group-title="Korea",스크린
 http://1.233.136.3:9981/stream/channelid/2047648866
 #EXTINF:-1 tvg-id="171" tvg-logo="http://i.imgur.com/lTK9VD4.png" group-title="Korea",스크린
 http://211.207.173.34:9981/stream/channelid/92264020
 #EXTINF:-1 tvg-id="171" tvg-logo="http://i.imgur.com/lTK9VD4.png" group-title="Korea",스크린
 http://211.245.55.198:22515/m2u/239.192.67.229:49220
-#EXTINF:-1 tvg-id="283" tvg-logo="http://i.imgur.com/fwjRwkx.png" group-title="Korea",채널CGV
-http://118.218.172.32:9981/stream/channelid/823931235?ticket=83498B883632B7D58616F374C4D7B97672861597&profile=pass
+#EXTINF:-1 tvg-id="171" tvg-logo="http://i.imgur.com/lTK9VD4.png" group-title="Korea",스크린
+http://222.236.197.77:9981/stream/channelid/384619804
 #EXTINF:-1 tvg-id="283" tvg-logo="http://i.imgur.com/fwjRwkx.png" group-title="Korea",채널CGV
 http://211.207.173.34:9981/stream/channelid/1801900825
 #EXTINF:-1 tvg-id="283" tvg-logo="http://i.imgur.com/fwjRwkx.png" group-title="Korea",채널CGV
@@ -316,8 +278,6 @@ http://222.236.197.77:9981/stream/channelid/1967499184
 #EXTINF:-1 tvg-id="283" tvg-logo="http://i.imgur.com/fwjRwkx.png" group-title="Korea",채널CGV
 http://175.113.154.14:9981/stream/channelid/961856033?ticket=4EBE96CA6CF65622BF6E77E4D26EB45573790D17&profile=matroska
 #EXTINF:-1 tvg-id="196" tvg-logo="http://i.imgur.com/D9PzDBr.png" group-title="Korea",슈퍼액션
-http://118.218.172.32:9981/stream/channelid/1483366708?ticket=EDF7F4DF81D2DFFB6214658A2FF7B92A70C4F015&profile=pass
-#EXTINF:-1 tvg-id="196" tvg-logo="http://i.imgur.com/D9PzDBr.png" group-title="Korea",슈퍼액션
 http://1.233.136.3:9981/stream/channelid/748168504
 #EXTINF:-1 tvg-id="196" tvg-logo="http://i.imgur.com/D9PzDBr.png" group-title="Korea",슈퍼액션
 http://211.245.55.198:22515/m2u/239.192.53.9:49220
@@ -326,17 +286,15 @@ http://222.236.197.77:9981/stream/channelid/1061273733
 #EXTINF:-1 tvg-id="196" tvg-logo="http://i.imgur.com/D9PzDBr.png" group-title="Korea",슈퍼액션
 http://175.113.154.14:9981/stream/channelid/1932685791?ticket=A909010C2503D3E078DDB04E2E3BD16E78170A2A&profile=matroska
 #EXTINF:-1 tvg-id="134" tvg-logo="http://i.imgur.com/dOOBYJm.png" group-title="Korea",mplex
-http://118.218.172.32:9981/stream/channelid/1690828947?ticket=D6D6D87451171DF4D654E12724F09130625D9065&profile=pass
-#EXTINF:-1 tvg-id="134" tvg-logo="http://i.imgur.com/dOOBYJm.png" group-title="Korea",mplex
-http://118.218.172.32:9981/stream/channelid/267532292?ticket=3371D8DAD93606E1A1C10EBFBA2B33CDC7D0B061&profile=pass
-#EXTINF:-1 tvg-id="134" tvg-logo="http://i.imgur.com/dOOBYJm.png" group-title="Korea",mplex
 http://1.233.136.3:9981/stream/channelid/952974229
 #EXTINF:-1 tvg-id="134" tvg-logo="http://i.imgur.com/dOOBYJm.png" group-title="Korea",mplex
 http://211.207.173.34:9981/stream/channelid/1728646669
 #EXTINF:-1 tvg-id="134" tvg-logo="http://i.imgur.com/dOOBYJm.png" group-title="Korea",mplex
 http://211.207.173.34:9981/stream/channelid/1517259489
-#EXTINF:-1 tvg-id="74" tvg-logo="http://i.imgur.com/8usDWOC.png" group-title="Korea",FOX
-http://118.218.172.32:9981/stream/channelid/257604946?ticket=55F5EA401AC738B5A23D648DD3157088225E1B21&profile=pass
+#EXTINF:-1 tvg-id="134" tvg-logo="http://i.imgur.com/dOOBYJm.png" group-title="Korea",mplex
+http://211.245.55.198:22515/m2u/239.192.64.10:49220
+#EXTINF:-1 tvg-id="134" tvg-logo="http://i.imgur.com/dOOBYJm.png" group-title="Korea",mplex
+http://222.236.197.77:9981/stream/channelid/1321170809
 #EXTINF:-1 tvg-id="74" tvg-logo="http://i.imgur.com/8usDWOC.png" group-title="Korea",FOX
 http://1.233.136.3:9981/stream/channelid/1288899188
 #EXTINF:-1 tvg-id="74" tvg-logo="http://i.imgur.com/8usDWOC.png" group-title="Korea",FOX
@@ -345,18 +303,16 @@ http://211.207.173.34:9981/stream/channelid/482649295
 http://211.245.55.198:22515/m2u/239.192.57.4:49220
 #EXTINF:-1 tvg-id="74" tvg-logo="http://i.imgur.com/8usDWOC.png" group-title="Korea",FOX
 http://222.236.197.77:9981/stream/channelid/1625172566
-#EXTINF:-1 tvg-id="10" tvg-logo="http://i.imgur.com/QrAXBEm.png" group-title="Korea",AXN
-http://118.218.172.32:9981/stream/channelid/1994106231?ticket=FAC84133FDA4C45512D09C10566E182A8DCC5E96&profile=pass
-#EXTINF:-1 tvg-id="10" tvg-logo="http://i.imgur.com/QrAXBEm.png" group-title="Korea",AXN
-http://118.218.172.32:9981/stream/channelid/905388188?ticket=89653888D116F6F0C10A667FA46173277D537C7E&profile=pass
+#EXTINF:-1 tvg-id="74" tvg-logo="http://i.imgur.com/8usDWOC.png" group-title="Korea",FOX
+http://175.113.154.14:9981/stream/channelid/1934310832?ticket=AD24A676DDA96E7448F7D278013A260448185699&profile=matroska
 #EXTINF:-1 tvg-id="10" tvg-logo="http://i.imgur.com/QrAXBEm.png" group-title="Korea",AXN
 http://1.233.136.3:9981/stream/channelid/989558096
 #EXTINF:-1 tvg-id="10" tvg-logo="http://i.imgur.com/QrAXBEm.png" group-title="Korea",AXN
 http://211.207.173.34:9981/stream/channelid/2126058038
 #EXTINF:-1 tvg-id="10" tvg-logo="http://i.imgur.com/QrAXBEm.png" group-title="Korea",AXN
 http://211.245.55.198:22515/m2u/239.192.69.48:49220
-#EXTINF:-1 tvg-id="216" tvg-logo="https://i.imgur.com/gGqDBjb.png" group-title="Korea",XtvN
-http://118.218.172.32:9981/stream/channelid/1555295720?ticket=78E026677B4B2963E42E127ED2ADB6E4E6DF9648&profile=pass
+#EXTINF:-1 tvg-id="10" tvg-logo="http://i.imgur.com/QrAXBEm.png" group-title="Korea",AXN
+http://175.113.154.14:9981/stream/channelid/1860768996?ticket=86EE5AA2114C74C86DB7C8491BEDB4D45FB1203A&profile=matroska
 #EXTINF:-1 tvg-id="216" tvg-logo="https://i.imgur.com/gGqDBjb.png" group-title="Korea",XtvN
 http://1.233.136.3:9981/stream/channelid/1665239298
 #EXTINF:-1 tvg-id="216" tvg-logo="https://i.imgur.com/gGqDBjb.png" group-title="Korea",XtvN
@@ -365,8 +321,8 @@ http://211.207.173.34:9981/stream/channelid/746932433
 http://211.245.55.198:22515/m2u/239.192.57.6:49220
 #EXTINF:-1 tvg-id="216" tvg-logo="https://i.imgur.com/gGqDBjb.png" group-title="Korea",XtvN
 http://222.236.197.77:9981/stream/channelid/1678275537
-#EXTINF:-1 tvg-id="147" tvg-logo="http://i.imgur.com/0SMl3O5.png" group-title="Korea",O tvN
-http://118.218.172.32:9981/stream/channelid/1218955876?ticket=5D42C527CA2907EEDD9BFDA43DCE01B5A1454A90&profile=pass
+#EXTINF:-1 tvg-id="216" tvg-logo="https://i.imgur.com/gGqDBjb.png" group-title="Korea",XtvN
+http://175.113.154.14:9981/stream/channelid/708025455?ticket=3D01483A6F3E73DA0998BE76E77D96A006C2B483&profile=matroska
 #EXTINF:-1 tvg-id="147" tvg-logo="http://i.imgur.com/0SMl3O5.png" group-title="Korea",O tvN
 http://1.233.136.3:9981/stream/channelid/2102338755
 #EXTINF:-1 tvg-id="147" tvg-logo="http://i.imgur.com/0SMl3O5.png" group-title="Korea",O tvN
@@ -375,8 +331,8 @@ http://211.207.173.34:9981/stream/channelid/824699192
 http://211.245.55.198:22515/m2u/239.192.53.10:49220
 #EXTINF:-1 tvg-id="147" tvg-logo="http://i.imgur.com/0SMl3O5.png" group-title="Korea",O tvN
 http://222.236.197.77:9981/stream/channelid/1285935293
-#EXTINF:-1 tvg-id="154" tvg-logo="http://i.imgur.com/9brMDfR.png" group-title="Korea",온스타일
-http://118.218.172.32:9981/stream/channelid/1151947301?ticket=C4D2A309074454DF77A908A02FE290BFE07D6D3F&profile=pass
+#EXTINF:-1 tvg-id="147" tvg-logo="http://i.imgur.com/0SMl3O5.png" group-title="Korea",O tvN
+http://175.113.154.14:9981/stream/channelid/1658705219?ticket=99A605F9E49488BDBBB18A8F01B694EEE492A2D5&profile=matroska
 #EXTINF:-1 tvg-id="154" tvg-logo="http://i.imgur.com/9brMDfR.png" group-title="Korea",온스타일
 http://1.233.136.3:9981/stream/channelid/510995575
 #EXTINF:-1 tvg-id="154" tvg-logo="http://i.imgur.com/9brMDfR.png" group-title="Korea",온스타일
@@ -385,8 +341,8 @@ http://211.207.173.34:9981/stream/channelid/1734004954
 http://211.245.55.198:22515/m2u/239.192.54.9:49220
 #EXTINF:-1 tvg-id="154" tvg-logo="http://i.imgur.com/9brMDfR.png" group-title="Korea",온스타일
 http://222.236.197.77:9981/stream/channelid/183788909
-#EXTINF:-1 tvg-id="148" tvg-logo="http://i.imgur.com/5kF0Ypt.png" group-title="Korea",올리브
-http://118.218.172.32:9981/stream/channelid/905366370?ticket=8B77836DA16D2462D7DB979FB812E5369B970AB3&profile=pass
+#EXTINF:-1 tvg-id="154" tvg-logo="http://i.imgur.com/9brMDfR.png" group-title="Korea",온스타일
+http://175.113.154.14:9981/stream/channelid/2103648647?ticket=CBB898883736D186E99206B1CA158667FCBDEB36&profile=matroska
 #EXTINF:-1 tvg-id="148" tvg-logo="http://i.imgur.com/5kF0Ypt.png" group-title="Korea",올리브
 http://1.233.136.3:9981/stream/channelid/1337853466
 #EXTINF:-1 tvg-id="148" tvg-logo="http://i.imgur.com/5kF0Ypt.png" group-title="Korea",올리브
@@ -395,66 +351,50 @@ http://211.207.173.34:9981/stream/channelid/1265059778
 http://211.245.55.198:22515/m2u/239.192.58.10:49220
 #EXTINF:-1 tvg-id="148" tvg-logo="http://i.imgur.com/5kF0Ypt.png" group-title="Korea",올리브
 http://222.236.197.77:9981/stream/channelid/327454232
-#EXTINF:-1 tvg-id="72" tvg-logo="http://i.imgur.com/Go4FdK1.png" group-title="Korea",FISHING TV
-http://118.218.172.32:9981/stream/channelid/98357966?ticket=E8FD3D084040313E553F670A957D390D5FED28AD&profile=pass
+#EXTINF:-1 tvg-id="148" tvg-logo="http://i.imgur.com/5kF0Ypt.png" group-title="Korea",올리브
+http://175.113.154.14:9981/stream/channelid/597225892?ticket=0B5E6F4371E257462CA4ED0F618B778ADC26742F&profile=matroska
 #EXTINF:-1 tvg-id="72" tvg-logo="http://i.imgur.com/Go4FdK1.png" group-title="Korea",FISHING TV
 http://1.233.136.3:9981/stream/channelid/1394409809
 #EXTINF:-1 tvg-id="72" tvg-logo="http://i.imgur.com/Go4FdK1.png" group-title="Korea",FISHING TV
 http://211.245.55.198:22515/m2u/239.192.65.4:49220
 #EXTINF:-1 tvg-id="78" tvg-logo="http://i.imgur.com/eI9wGgS.png" group-title="Korea",FTV
-http://118.218.172.32:9981/stream/channelid/503770705?ticket=4B9D769B38C63326CD527617721C4A19C42ED60A&profile=pass
-#EXTINF:-1 tvg-id="78" tvg-logo="http://i.imgur.com/eI9wGgS.png" group-title="Korea",FTV
 http://1.233.136.3:9981/stream/channelid/241319695
 #EXTINF:-1 tvg-id="78" tvg-logo="http://i.imgur.com/eI9wGgS.png" group-title="Korea",FTV
 http://211.245.55.198:22515/m2u/239.192.68.5:49220
-#EXTINF:-1 tvg-id="245" tvg-logo="http://i.imgur.com/jbRu8T2.png" group-title="Korea",바둑TV
-http://118.218.172.32:9981/stream/channelid/876137741?ticket=A14946F728D2DD891E7B5A8D1F18DEB027B960C7&profile=pass
-#EXTINF:-1 tvg-id="245" tvg-logo="http://i.imgur.com/jbRu8T2.png" group-title="Korea",바둑TV
-http://118.218.172.32:9981/stream/channelid/1600494551?ticket=69330DFC1622335ED934B0324BA884EF4EB3B79B&profile=pass
 #EXTINF:-1 tvg-id="245" tvg-logo="http://i.imgur.com/jbRu8T2.png" group-title="Korea",바둑TV
 http://1.233.136.3:9981/stream/channelid/180208920
 #EXTINF:-1 tvg-id="245" tvg-logo="http://i.imgur.com/jbRu8T2.png" group-title="Korea",바둑TV
 http://211.245.55.198:22515/m2u/239.192.66.11:49220
 #EXTINF:-1 tvg-id="245" tvg-logo="http://i.imgur.com/jbRu8T2.png" group-title="Korea",바둑TV
 http://222.236.197.77:9981/stream/channelid/304728168
-#EXTINF:-1 tvg-id="133" tvg-logo="http://i.imgur.com/4nLYnVC.png" group-title="Korea",마운틴TV
-http://118.218.172.32:9981/stream/channelid/820487246?ticket=9E9BFDC4BFF15A5B0BBE840051B83FA5AC024286&profile=pass
+#EXTINF:-1 tvg-id="245" tvg-logo="http://i.imgur.com/jbRu8T2.png" group-title="Korea",바둑TV
+http://175.113.154.14:9981/stream/channelid/1537488850?ticket=EF0F2A7B167D3D79B0BFB6FE6762D736DC080368&profile=matroska
 #EXTINF:-1 tvg-id="133" tvg-logo="http://i.imgur.com/4nLYnVC.png" group-title="Korea",마운틴TV
 http://1.233.136.3:9981/stream/channelid/1183146308
 #EXTINF:-1 tvg-id="133" tvg-logo="http://i.imgur.com/4nLYnVC.png" group-title="Korea",마운틴TV
 http://211.245.55.198:22515/m2u/239.192.66.12:49220
 #EXTINF:-1 tvg-id="179" tvg-logo="http://i.imgur.com/fAJgmna.png" group-title="Korea",SkyTravel
-http://118.218.172.32:9981/stream/channelid/845543023?ticket=4C02B238EB09844841BD873E5AAF6F1302E8F8DA&profile=pass
-#EXTINF:-1 tvg-id="179" tvg-logo="http://i.imgur.com/fAJgmna.png" group-title="Korea",SkyTravel
 http://1.233.136.3:9981/stream/channelid/264336496
-#EXTINF:-1 tvg-id="138" tvg-logo="http://i.imgur.com/mqTSPMN.png" group-title="Korea",NGC
-http://118.218.172.32:9981/stream/channelid/1181610295?ticket=64D3E9A76C51E349A7056A4517DF2F5EF4C30C31&profile=pass
 #EXTINF:-1 tvg-id="138" tvg-logo="http://i.imgur.com/mqTSPMN.png" group-title="Korea",NGC
 http://211.207.173.34:9981/stream/channelid/1310282897
 #EXTINF:-1 tvg-id="138" tvg-logo="http://i.imgur.com/mqTSPMN.png" group-title="Korea",NGC
 http://211.245.55.198:22515/m2u/239.192.68.4:49220
 #EXTINF:-1 tvg-id="51" tvg-logo="http://i.imgur.com/1SgSI0P.png" group-title="Korea",디스커버리채널
-http://118.218.172.32:9981/stream/channelid/796598025?ticket=2F655738359ECB46C916025722954F519F9FE3E5&profile=pass
-#EXTINF:-1 tvg-id="51" tvg-logo="http://i.imgur.com/1SgSI0P.png" group-title="Korea",디스커버리채널
 http://211.207.173.34:9981/stream/channelid/117864828
 #EXTINF:-1 tvg-id="51" tvg-logo="http://i.imgur.com/1SgSI0P.png" group-title="Korea",디스커버리채널
 http://211.245.55.198:22515/m2u/239.192.69.103:49220
-#EXTINF:-1 tvg-id="138" tvg-logo="http://i.imgur.com/mqTSPMN.png" group-title="Korea",History
-http://118.218.172.32:9981/stream/channelid/1710455354?ticket=06001942C0993AA8F3F1E1EF3D3ED773B77F07DD&profile=pass
+#EXTINF:-1 tvg-id="51" tvg-logo="http://i.imgur.com/1SgSI0P.png" group-title="Korea",디스커버리채널
+http://175.113.154.14:9981/stream/channelid/934251598?ticket=AA071F5254CB5BA30D65BF97A08EA2C399790CBE&profile=matroska
 #EXTINF:-1 tvg-id="138" tvg-logo="http://i.imgur.com/mqTSPMN.png" group-title="Korea",History
 http://211.245.55.198:22515/m2u/239.192.69.174:49220
 #EXTINF:-1 tvg-id="138" tvg-logo="http://i.imgur.com/mqTSPMN.png" group-title="Korea",History
 http://175.113.154.14:9981/stream/channelid/50534128?ticket=6456363DEDF55B9EAEC70A5E16C1E3B2EE7DB91B&profile=matroska
-#EXTINF:-1 tvg-id="96" tvg-logo="http://i.imgur.com/NoNRdSt.png" group-title="Korea",JEI 재능TV
-http://118.218.172.32:9981/stream/channelid/728262238?ticket=351E9326806694FFE0235D8EC00510B23249054C&profile=pass
 #EXTINF:-1 tvg-id="96" tvg-logo="http://i.imgur.com/NoNRdSt.png" group-title="Korea",JEI 재능TV
 http://1.233.136.3:9981/stream/channelid/790600140
 #EXTINF:-1 tvg-id="96" tvg-logo="http://i.imgur.com/NoNRdSt.png" group-title="Korea",JEI 재능TV
 http://211.207.173.34:9981/stream/channelid/1826505054
 #EXTINF:-1 tvg-id="96" tvg-logo="http://i.imgur.com/NoNRdSt.png" group-title="Korea",JEI 재능TV
 http://211.245.55.198:22515/m2u/239.192.69.142:49220
-#EXTINF:-1 tvg-id="202" tvg-logo="http://i.imgur.com/VUqSOjx.png" group-title="Korea",Tooniverse
-http://118.218.172.32:9981/stream/channelid/872000644?ticket=B7029A97C32C2B6EA4ACCF2BD50D29C50055D111&profile=pass
 #EXTINF:-1 tvg-id="202" tvg-logo="http://i.imgur.com/VUqSOjx.png" group-title="Korea",Tooniverse
 http://1.233.136.3:9981/stream/channelid/1456029025
 #EXTINF:-1 tvg-id="202" tvg-logo="http://i.imgur.com/VUqSOjx.png" group-title="Korea",Tooniverse
@@ -463,8 +403,8 @@ http://211.207.173.34:9981/stream/channelid/1825843683
 http://211.245.55.198:22515/m2u/239.192.54.7:49220
 #EXTINF:-1 tvg-id="202" tvg-logo="http://i.imgur.com/VUqSOjx.png" group-title="Korea",Tooniverse
 http://222.236.197.77:9981/stream/channelid/648550137
-#EXTINF:-1 tvg-id="235" tvg-logo="http://i.imgur.com/qZdqeZo.png" group-title="Korea",Disney Channel
-http://118.218.172.32:9981/stream/channelid/503156378?ticket=0B575FFB036D2870B8BEC0ADEC3A7764B211E591&profile=pass
+#EXTINF:-1 tvg-id="202" tvg-logo="http://i.imgur.com/VUqSOjx.png" group-title="Korea",Tooniverse
+http://175.113.154.14:9981/stream/channelid/135644887?ticket=FA5F105DA5546AE11138183928B8983037D90F80&profile=matroska
 #EXTINF:-1 tvg-id="235" tvg-logo="http://i.imgur.com/qZdqeZo.png" group-title="Korea",Disney Channel
 http://1.233.136.3:9981/stream/channelid/542588778
 #EXTINF:-1 tvg-id="235" tvg-logo="http://i.imgur.com/qZdqeZo.png" group-title="Korea",Disney Channel
@@ -473,8 +413,8 @@ http://1.233.136.3:9981/stream/channelid/470673398
 http://211.207.173.34:9981/stream/channelid/36888718
 #EXTINF:-1 tvg-id="235" tvg-logo="http://i.imgur.com/qZdqeZo.png" group-title="Korea",Disney Channel
 http://211.245.55.198:22515/m2u/239.192.54.5:49220
-#EXTINF:-1 tvg-id="234" tvg-logo="http://i.imgur.com/EGiEKhj.png" group-title="Korea",디즈니주니어
-http://118.218.172.32:9981/stream/channelid/530901879?ticket=E89A09277BFB4B6D7FED702304228B5F3960A3F7&profile=pass
+#EXTINF:-1 tvg-id="235" tvg-logo="http://i.imgur.com/qZdqeZo.png" group-title="Korea",Disney Channel
+http://222.236.197.77:9981/stream/channelid/1718028994
 #EXTINF:-1 tvg-id="234" tvg-logo="http://i.imgur.com/EGiEKhj.png" group-title="Korea",디즈니주니어
 http://1.233.136.3:9981/stream/channelid/667309480
 #EXTINF:-1 tvg-id="234" tvg-logo="http://i.imgur.com/EGiEKhj.png" group-title="Korea",디즈니주니어
