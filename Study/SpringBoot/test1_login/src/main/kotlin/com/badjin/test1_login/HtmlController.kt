@@ -24,7 +24,7 @@ class HtmlController {
             response = "sign"
         } else if (formType.equals("login")) {
             response = "login"
-        }
+            }
         model["title"] = response
 
         return response

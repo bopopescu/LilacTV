@@ -286,3 +286,10 @@ youtube-dl --extract-audio --audio-format mp3 <video URL>
 
 out of memory about jack_server
 https://stackoverflow.com/questions/35579646/android-source-code-compile-error-try-increasing-heap-size-with-java-option
+
+Atom 단축키
+ctrl+d >>> 블럭 다중 선택
+shift + del >>> line 삭제
+ctrl + shift +k >>> line 삭제
+ctrl + up/down >>> line 이동
+ctrl + / >>> 주석처리
