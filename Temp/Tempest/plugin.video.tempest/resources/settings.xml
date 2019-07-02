@@ -35,6 +35,9 @@
         <setting id="HEVC" type="bool" label="32363" default="true" />
         <setting id="hosts.captcha" type="bool" label="32341" default="false" />
         <setting id="hosts.sort.provider" type="bool" label="32342" default="false" />
+        <setting id="preemptive.termination" type="bool" label="Pre-Emptive Termination" default="false" />
+        <setting id="preemptive.limit" type="slider" label="Pre-Emptive Limit" default="10" range="1,50" option="int" enable="!eq(-1,false)"/>
+        <setting type="text" label="Warning: Pre-Emptive options might have bugs." enable="false" />
         <setting type="sep" />
         <setting type="lsep" label="32343" enable="false" />
         <setting id="bookmarks" type="bool" label="32344" default="true" />
@@ -95,6 +98,7 @@
         <setting id="provider.gomoviesink" type="bool" label="GOMOVIESINK" default="true" />
         <setting id="provider.gowatchseries" type="bool" label="GOWATCHSERIES" default="true" />
         <setting id="provider.hdpopcorneu" type="bool" label="HDPOPCORNEU" default="true" />
+        <setting id="provider.iwannawatch" type="bool" label="IWANNAWATCH" default="true" />
         <setting id="provider.movie4kis" type="bool" label="MOVIE4KIS" default="true" />
         <setting id="provider.moviescouch" type="bool" label="MOVIECOUCH" default="true" />
         <setting id="provider.mycouchtuner" type="bool" label="MYCOUCHTUNER" default="true" />
@@ -193,7 +197,6 @@
         <setting label="Disable All Torrent Providers" type="action" option="close" action="RunPlugin(plugin://plugin.video.tempest/?mode=toggleAllTorrent&amp;setting=false&amp;openSettings&amp;query=6.0)"/>
         <setting label="Enable All Torrent Providers" type="action" option="close" action="RunPlugin(plugin://plugin.video.tempest/?mode=toggleAllTorrent&amp;setting=true&amp;openSettings&amp;query=6.0)"/>
         <setting type="sep" />
-        <setting id="provider.111ys" type="bool" label="111YS" default="false" />
         <setting id="provider.1337x" type="bool" label="1337X" default="false" />
         <setting id="provider.eztv" type="bool" label="EZTV" default="false" />
         <setting id="provider.glodls" type="bool" label="GLODLS" default="false" />

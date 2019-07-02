@@ -7,6 +7,7 @@ import re,urllib,urlparse
 from resources.lib.modules import client
 from resources.lib.modules import debrid,source_utils,control
 
+
 class source:
 
     def __init__(self):
@@ -81,7 +82,7 @@ class source:
                             continue
                         u = self.base_link + u
                         r = client.request(u)
-                        r = client.parseDOM(r, 'div', attrs={'class': 'torrent-category-detail clearfix'})
+                        r = client.parseDOM(r, 'div', attrs={'class': 'col-9 page-content'})
                         for t in r:
                             link = re.findall('href="magnet:(.+?)" onclick=".+?"', t)[0]
                             link = 'magnet:%s' % link

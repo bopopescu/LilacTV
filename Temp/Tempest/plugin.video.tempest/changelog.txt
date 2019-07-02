@@ -1,5 +1,9 @@
 Report any issues at https://github.com/Tempest0580/tempest/issues
 
+[B][COLOR gold] 4.0.79 [/COLOR][/B]
+- Few Updates
+- Added Pre-Emptive Termination (Testing)
+
 [B][COLOR gold] 4.0.78 [/COLOR][/B]
 - Fixed Allucxyz
 - Added Timewatch (Thanks to Jewbmx)

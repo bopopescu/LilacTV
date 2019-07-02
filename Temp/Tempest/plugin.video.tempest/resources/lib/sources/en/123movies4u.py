@@ -12,7 +12,7 @@ class source:
         self.priority = 1
         self.language = ['en']
         self.domains = ['123movies4u.pro', '123movies4u.ch', '123movies4u.me']
-        self.base_link = 'https://123movies4u.pro'
+        self.base_link = 'https://123movies4u.cz'
         self.movie_link = '/movie/%s'
         self.tv_link = '/show/%s/season/%s/episode/%s'
 

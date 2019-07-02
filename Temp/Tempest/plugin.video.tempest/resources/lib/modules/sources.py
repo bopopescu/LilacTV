@@ -412,6 +412,9 @@ class sources:
         source_sd = d_source_sd = 0
         total = d_total = 0
 
+        pre_emp = control.setting('preemptive.termination')
+        pre_emp_limit = control.setting('preemptive.limit')
+
         debrid_list = debrid.debrid_resolvers
         debrid_status = debrid.status()
 
@@ -420,6 +423,19 @@ class sources:
         pdiag_bg_format = '4K:%s(%s)|1080p:%s(%s)|720p:%s(%s)|SD:%s(%s)|T:%s(%s)'.split('|')
 
         for i in range(0, 4 * timeout):
+            if str(pre_emp) == 'true':
+                if quality in ['1', '0']:
+                    if (source_1080 + d_source_1080) >= int(pre_emp_limit):
+                        break
+                elif quality in ['2']:
+                    if (source_720 + d_source_720) >= int(pre_emp_limit):
+                        break
+                elif quality in ['3']:
+                    if (source_sd + d_source_sd) >= int(pre_emp_limit):
+                        break
+                else:
+                    if (source_sd + d_source_sd) >= int(pre_emp_limit):
+                        break
             try:
                 if xbmc.abortRequested is True:
                     return sys.exit()

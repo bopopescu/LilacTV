@@ -440,7 +440,7 @@ def toggleAll(setting, query=None, sourceList=None):
 if mode == "toggleAllNormal":
     sourcelist = ['1putlocker', '123movies4u', 'allucxyz', 'cartoonhd', 'animetoon',
                   'cartoonwire', 'cmovieshd', 'cmovieshdbz', 'fmoviesio', 'gomoviesink', 'gowatchseries',
-                  'hdpopcorneu', 'movie4kis', 'moviescouch', 'mycouchtuner', 'odb',
+                  'hdpopcorneu', 'iwannawatch', 'movie4kis', 'moviescouch', 'mycouchtuner', 'odb',
                   'projectfreetv', 'reddit', 'seehd', 'series9', 'seriesfree', 'seriesonline',
                   'solarmoviez', 'streamdreams', 'swatchseries', 'timewatch', 'watchepisodes4', 'watchfree',
                   'watchseries', 'wsunblock', 'yesmoviesgg']

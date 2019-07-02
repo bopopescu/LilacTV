@@ -8,7 +8,6 @@
 from resources.lib.modules import cleantitle
 from resources.lib.modules import source_utils
 from resources.lib.modules import client
-from resources.lib.modules import cfscrape
 
 
 class source:
@@ -17,9 +16,8 @@ class source:
         self.language = ['en']
         self.domains = ['streamdreams.org']
         self.base_link = 'https://streamdreams.org'
-        self.search_movie = '/movies/%s'
-        self.search_tv = '/shows/%s'
-        self.scraper = cfscrape.create_scraper()
+        self.search_movie = '/movies/access-%s-links/'
+        self.search_tv = '/shows/access-%s-links/'
 
     def movie(self, imdb, title, localtitle, aliases, year):
         try:
@@ -50,8 +48,7 @@ class source:
         try:
             sources = []
             hostDict = hostprDict + hostDict
-            headers = {'Referer': url}
-            r = self.scraper.get(url, headers=headers).content
+            r = client.request(url)
             u = client.parseDOM(r, "span", attrs={"class": "movie_version_link"})
             for t in u:
                 match = client.parseDOM(t, 'a', ret='data-href')
