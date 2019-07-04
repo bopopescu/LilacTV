@@ -1,0 +1,45 @@
+#EXTM3U
+#EXTINF:-1,JTBC2
+http://27.117.63.174:9981/stream/channelid/41
+#EXTINF:-1,MBC SPORTS+
+http://27.117.63.174:9981/stream/channelid/44
+#EXTINF:-1,MBN
+http://27.117.63.174:9981/stream/channelid/13
+#EXTINF:-1,Mnet
+http://27.117.63.174:9981/stream/channelid/28
+#EXTINF:-1,O tvN
+http://27.117.63.174:9981/stream/channelid/30
+#EXTINF:-1,OCN
+http://27.117.63.174:9981/stream/channelid/24
+#EXTINF:-1,SBS funE
+http://27.117.63.174:9981/stream/channelid/49
+#EXTINF:-1,XtvN
+http://27.117.63.174:9981/stream/channelid/33
+#EXTINF:-1,tvN
+http://27.117.63.174:9981/stream/channelid/11
+#EXTINF:-1,KBS1
+http://27.117.63.174:9981/stream/channelid/57
+#EXTINF:-1,슈퍼액션
+http://27.117.63.174:9981/stream/channelid/45
+#EXTINF:-1,연합뉴스TV
+http://27.117.63.174:9981/stream/channelid/21
+#EXTINF:-1,채널A
+http://27.117.63.174:9981/stream/channelid/15
+#EXTINF:-1,FOX
+http://27.117.63.174:9981/stream/channelid/23
+#EXTINF:-1,SBS GOLF
+http://27.117.63.174:9981/stream/channelid/53
+#EXTINF:-1,SBS Sports
+http://27.117.63.174:9981/stream/channelid/50
+#EXTINF:-1,KBS2
+http://27.117.63.174:9981/stream/channelid/58
+#EXTINF:-1,스크린
+http://27.117.63.174:9981/stream/channelid/25
+#EXTINF:-1,온스타일
+http://27.117.63.174:9981/stream/channelid/54
+#EXTINF:-1,올리브
+http://27.117.63.174:9981/stream/channelid/27
+#EXTINF:-1,JTBC
+http://27.117.63.174:9981/stream/channelid/12
+#EXTINF:-1,TV조선
+http://27.117.63.174:9981/stream/channelid/14
