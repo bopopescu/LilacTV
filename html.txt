@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="copyright" content="ODK Media, Inc"/>
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Indie Movie Theater : 07/05/2019 - OnDemandKorea</title>
+    <link rel="alternate" hreflang="x-default" href="https://www.ondemandkorea.com/" />
+    <link rel="shortcut icon" href="https://production-static.ondemandkorea.com/img/favicon.ico" />
+    <link rel="icon" sizes="192x192" href="https://production-static.ondemandkorea.com/img/icon192x192.png" />
+    <link rel="icon" sizes="128x128" href="https://production-static.ondemandkorea.com/img/icon128x128.png" />
+    <link rel="apple-touch-icon" href="https://production-static.ondemandkorea.com/img/apple-touch-icon.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="https://production-static.ondemandkorea.com/img/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="https://production-static.ondemandkorea.com/img/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="https://production-static.ondemandkorea.com/img/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="https://production-static.ondemandkorea.com/img/apple-touch-icon-152x152.png" />
+    <link rel="apple-touch-icon" sizes="167x167" href="https://production-static.ondemandkorea.com/img/apple-touch-icon-167x167.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="https://production-static.ondemandkorea.com/img/apple-touch-icon-180x180.png" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <meta name="description" content="Experience the Unique Energy of Indie Movies"/>
+
+<meta property="og:title" content="독립영화관 : 07/05/2019, Indie Movie Theater : 07/05/2019"/>
+<meta property="og:description" content="Experience the Unique Energy of Indie Movies"/>
+<meta property="og:url" content="https://www.ondemandkorea.com/indie-movie-theater-e20190705.html"/>
+<meta property="og:type" content="tv_episode"/>
+<meta property="og:image" content="https://sp.ondemandkorea.com/includes/timthumb.php?h=200&src=/wp-content/themes/ondemandkorea/uploads/thumbnail/952490_20190705_1.jpg"/>
+<meta property="og:site_name" content="OnDemandKorea"/>
+<meta property="fb:app_id" content="309479342402963"/>
+
+    <!-- non-responsive Bootstrap -->
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+
+    
+      
+      <!-- Latest compiled and minified Bootstrap 4 CSS (check out before deployment!) -->
+      <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
+      <!-- Your stuff: Third-party CSS libraries go here -->
+      <link href="https://production-static.ondemandkorea.com/vendor/css/jquery.fancybox.3.0.40.min.css" rel="stylesheet" type="text/css" media="screen" />
+      <link href="https://production-static.ondemandkorea.com/vendor/css/jquery.tzineClock.css" rel="stylesheet" type="text/css" />
+      <link href="https://production-static.ondemandkorea.com/vendor/scroller/jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css" media="all" />
+
+      <link rel="stylesheet" href="https://production-static.ondemandkorea.com/CACHE/css/d9b0320be932.css" type="text/css" /><link rel="stylesheet" href="https://production-static.ondemandkorea.com/CACHE/css/d563997dd523.css" type="text/css" media="screen" />
+
+      
+<link rel="stylesheet" type="text/css" href="https://production-static.ondemandkorea.com/vendor/css/slick/slick.css"/>
+<link rel="stylesheet" href="https://production-static.ondemandkorea.com/CACHE/css/db498e4cbe18.css" type="text/css" />
+
+
+    
+
+    <!--[if lt IE 9]>
+      <script src="https://production-static.ondemandkorea.com/vendor/js/html5shiv.min.js%3Fv%3D3.7.3"></script>
+      <script src="https://production-static.ondemandkorea.com/vendor/js/respond.min.js%3Fv%3D1.4.2"></script>
+    <![endif]-->
+    <script>
+    var $buoop = {required:{e:-4,f:-3,o:-3,s:-1,c:-3},insecure:true,api:2018.09 };
+    function $buo_f(){
+     var e = document.createElement("script");
+     e.src = "//browser-update.org/update.min.js";
+     document.body.appendChild(e);
+    };
+    try {document.addEventListener("DOMContentLoaded", $buo_f,false)}
+    catch(e){window.attachEvent("onload", $buo_f)}
+</script>
+
+    <!-- Tracking thirdparty scripts -->
+    <!-- GTM static data layer -->
+    <script>
+    dataLayer = [{
+      'userLanguage': 'en'
+      , 'videoCategory': 'variety'
+      
+      , 'isPlusMember': 'guest'
+      , 'equippedPass': ''
+      , 'version': '2019-06-12:1b67099bc46a8ca62d49f0d44d3d297b7cd7331d'
+    }];
+    
+    </script>
+    <!-- End GTM static data layer -->
+    <!-- Google Tag Manager -->
+    <script>
+      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-553KLMM');
+    </script>
+    <!-- End Google Tag Manager -->
+    <!-- Google Scripts for banner ads -->
+    <script async src="https://www.googletagservices.com/tag/js/gpt.js"></script>
+    <script async src="https://production-static.ondemandkorea.com/vendor/prebid/prebid1.37.0.js"></script>
+    <script type="text/javascript">
+      // Amazon(A9) PreBid Adopter
+      !function(a9,a,p,s,t,A,g){if(a[a9])return;function q(c,r){a[a9]._Q.push([c,r])}a[a9]={init:function(){q("i",arguments)},fetchBids:function(){q("f",arguments)},setDisplayBids:function(){},targetingKeys:function(){return[]},_Q:[]};A=p.createElement(s);A.async=!0;A.src=t;g=p.getElementsByTagName(s)[0];g.parentNode.insertBefore(A,g)}("apstag",window,document,"script","//c.amazon-adsystem.com/aax2/apstag.js");
+
+      var dfp_dict = {
+        'category': 'variety',
+        'program': 'indie-movie-theater',
+        'episode': 'indie-movie-theater-e20190705',
+        'partner': 'kbs',
+        'platform': 'odk_web',
+        'lang': 'en',
+        'country': 'AU',
+        'region': 'VIC',
+        'domain': location.hostname,
+        'Domain': location.hostname
+      };
+      
+    </script>
+    <script type="text/javascript" src="https://production-static.ondemandkorea.com/CACHE/js/170fbfeb3620.js"></script>
+  </head>
+  <body id="en" class="webapp-base">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-553KLMM"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    
+    <header>
+      <section class="header">
+        <h1 class="logo"><a href="/" class="odk">OnDemandKorea</a></h1>
+        <div class="gnb">
+          <div class="paymentState bi-membership">
+            
+              
+                <a href="/membership"
+                   class="plus en"></a>
+              
+            
+          </div>
+          <ul class="account">
+          
+            <li><a href="/includes15/signup" class="sign-up-link">Sign Up</a></li>
+            <li><a href="/includes15/login" class="login_menu">Log In</a></li>
+          
+          </ul>
+          <div class="languageToggleBox">
+            <a href="#">
+              <i class="material-icons ls">&#xE894;</i>
+              English
+              <i class="material-icons rs">&#xE5CF;</i>
+            </a>
+            <div class="languageToggleMenu">
+              <a href="javascript:setLang('ko');">한국어</a>
+              <a href="javascript:setLang('en');">English</a>
+            </div>
+            <form id="form-set-lang" action="/setlang/" method="post"><input type='hidden' name='csrfmiddlewaretoken' value='bS128nPTilVlI3aldvxX8VmKRYwTauH6QGc1d6uvhXuGAYrgs9XFlWAorTZvX3zo' />
+                <input name="next" type="hidden" value="/indie-movie-theater-e20190705.html" />
+                
+                
+                <input name="language" type="hidden" value="en">
+            </form>
+          </div>
+          <div class="searchBox">
+              <span id="searchindicator"></span>
+              <span id="searchsubmit" aria-hidden="true"></span>
+              <input id="s" name="s" type="search" autocomplete="off" placeholder="Search for titles or people">
+              <span id="searchreset" style="display: none;"></span>
+          </div>
+          <ul class="browser">
+            <li><a href="//">Home</a></li>
+            <li><a href="/movie">Movie</a></li>
+            <li><a href="/tv-guide">TV Guide</a></li>
+          </ul>
+        </div>
+        <div class="floatBanner right">
+  <a id="floating_banner_item" href="https://www.promo.ondemandkorea.com/whitestorm2" target="_blank" rel=noopener>
+    <img src="/wp-content/themes/ondemandkorea/uploads/en_background/1561746865white_storm_odk_float_en.jpg" style="width:150px;height:320px;">
+  </a>
+</div>
+        <div id="search_result" class="searchResult"></div>
+      </section>
+      <nav>
+        
+<ul class="navigation">
+  <li ><a href="/k-pop">K-pop</a></li>
+  <li ><a href="/pay-per-view">Pay-Per-View</a></li>
+  <li ><a href="/korean-news">News</a></li>
+  <li ><a href="/drama">Drama</a></li>
+  <li class="active"><a href="/variety">Variety</a></li>
+  <li ><a href="/documentary">Documentary</a></li>
+  <li class="navToggleBox ">
+    <a href="/life">
+      <span class="toggleText">Life</span>
+      <i class="material-icons">&#xE5CF;</i>
+    </a>
+    <div class="navToggleMenu">
+      <a href="/food">Food</a>
+      <a href="/beauty">Beauty</a>
+      <a href="/health">Health</a>
+    </div>
+  </li>
+  <li ><a href="/kids">Kids</a></li>
+  <li class="navToggleBox ">
+    <a href="/sports">
+      <span class="toggleText">Sports</span>
+      <i class="material-icons">&#xE5CF;</i>
+    </a>
+    <div class="navToggleMenu">
+      <a href="/baseball">Baseball</a>
+      <a href="/billiards">Billiards</a>
+      <a href="/golf">Golf</a>
+      <a href="/fishing">Fishing</a>
+    </div>
+  </li>
+  <li ><a href="/education">Education</a></li>
+  <li ><a href="/religion">Religion</a></li>
+  <li class="navToggleBox ">
+    <a href="/web-tv">
+      <span class="toggleText">Web TV</span>
+      <i class="material-icons">&#xE5CF;</i>
+    </a>
+    <div class="navToggleMenu">
+      <a href="/web-drama">Web Drama</a>
+      <a href="/web-variety">Web Variety</a>
+    </div>
+  </li>
+  <li ><a href="/kocowa">KOCOWA</a></li>
+</ul>
+
+      </nav>
+    </header>
+
+    <section class="wrapper">
+      
+      
+  
+
+
+<link rel="stylesheet" href="https://production-static.ondemandkorea.com/CACHE/css/eba4aa7710ee.css" type="text/css" />
+
+
+
+
+<script id="ad_block_template" type="text/html">
+  <div class="player-inner-message adblock">
+    <div class="message">
+      <strong>Are you using AdBlock?</strong>
+      <p>OnDemandKorea provides free legal streaming service to our users through ad revenue. <b>You can watch all content in full HD without video ads with an ODK Membership.</b></p>
+      <a href="/membership" target="_blank" rel="noopener">
+        <div class="learn-more">
+          <p>Learn more ODK membership</p>
+        </div>
+      </a>
+      <a href="https://www.wikihow.com/Disable-AdBlock" target="_blank" rel="noopener"></a>
+    </div>
+  </div>
+</script>
+
+
+
+<!-- UA: PC / Linux / Chrome 23.0.1271 -->
+<div id="playback_app" class="">
+  
+  <div class="flex-left">
+    
+
+<div class="player-inner-message geo-block">
+  <div class="icon">
+    <img src="https://production-static.ondemandkorea.com/playback/img/emoji-sad.svg" width="70" height="70" />
+  </div>
+  <div class="message">
+    <strong>Video Available in North/South America Only</strong>
+    <p>This content is not available in your region. OnDemandKorea is only serviced in North/South America. If you are located in North/South America and see this message, Please send us an email to <a href="mailto:help@ondemandkorea.com">help@ondemandkorea.com</a> for further assist. Thank you.</p>
+    <p class="sub">*Some contents including CJ contents are not available in South America.</p>
+  </div>
+</div>
+
+  </div>
+  
+
+
+  
+    <div class="flex-right">
+      <div class="side-ads" id="top"></div>
+      <div class="side-ads" id="mid"></div>
+      <div class="side-ads" id="bot"></div>
+    </div>
+  
+</div>
+
+  
+  <div class="container">
+    <div class="episode_infos">
+      <div>
+        <p class="episode_title">Indie Movie Theater : 07/05/2019 - 07/05/2019</p>
+        <p class="episode_subtitle">Synopsis</p>
+        <p class="episode_desc01">Experience the Unique Energy of Indie Movies</p>
+        <p class="episode_desc01"></p>
+        <p class="episode_desc02">This program introduces indie movies that are rarely available at movie theaters or on TV. Experience the power of indie movies that embrace cultural diversity as they reflect the spirit of the age.</p>
+        <p class="episode_tags"><span>Tags</span> Indie Movie Theater, watch Indie Movie Theater again, KBS, variety</p>
+      </div>
+      <div class="player_banner_300x250">
+        
+          <div id="companion" class="_odkAdUnit code:/66416091/Player_Page_300x250"></div>
+        
+        <div id="LR_companion"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Episode List -->
+  
+  <div class="container episodeWrap">
+    <p class="title">Indie Movie Theater - Episode</p>
+    <div id="program_episode_list"></div>
+    <div class="clear"></div>
+    <div id="pg"></div>
+    <div class="clear"></div>
+  </div>
+  
+  <!-- New Update List -->
+  <div class="container newUpdateWrap">
+    <p class="title">New Episode</p>
+    <ul class="mediaList">
+    
+      <li class="portraitItem">
+        <a href="/cheap-tour-e81.html" title="Cheap Tour : E81">
+          <p class="thumbnail">
+            <img src="https://sp.ondemandkorea.com/includes/timthumb.php?w=168&h=238&src=/wp-content/themes/ondemandkorea/uploads/poster/3251_cheap_tour_new.jpg"
+                 class="mutual_poster"
+                 alt="Cheap Tour : E81"
+                 title="Cheap Tour : E81" />
+          </p>
+          <p class="title">Cheap Tour : E81</p>
+          
+          <p class="info">07/01/2019</p>
+          
+        </a>
+      </li>
+    
+      <li class="portraitItem">
+        <a href="/how-much-is-it-e93.html" title="How Much Is It? : E93">
+          <p class="thumbnail">
+            <img src="https://sp.ondemandkorea.com/includes/timthumb.php?w=168&h=238&src=/wp-content/themes/ondemandkorea/uploads/poster/5634_how_much_is_it_kr.jpg"
+                 class="mutual_poster"
+                 alt="How Much Is It? : E93"
+                 title="How Much Is It? : E93" />
+          </p>
+          <p class="title">How Much Is It? : E93</p>
+          
+          <p class="info">07/01/2019</p>
+          
+        </a>
+      </li>
+    
+      <li class="portraitItem">
+        <a href="/every-question-e4379.html" title="Every Question :  The law of inheritance and bestowal">
+          <p class="thumbnail">
+            <img src="https://sp.ondemandkorea.com/includes/timthumb.php?w=168&h=238&src=/wp-content/themes/ondemandkorea/uploads/poster/Every_Question_fx.jpg"
+                 class="mutual_poster"
+                 alt="Every Question :  The law of inheritance and bestowal"
+                 title="Every Question :  The law of inheritance and bestowal" />
+          </p>
+          <p class="title">Every Question :  The law of inheritance and bestowal</p>
+          
+          <p class="info">07/05/2019</p>
+          
+        </a>
+      </li>
+    
+      <li class="portraitItem">
+        <a href="/variety-24hrs-07042019.html" title="Variety 24hrs : 07/04/2019">
+          <p class="thumbnail">
+            <img src="https://sp.ondemandkorea.com/includes/timthumb.php?w=168&h=238&src=/wp-content/themes/ondemandkorea/uploads/poster/variety_poster.jpg"
+                 class="mutual_poster"
+                 alt="Variety 24hrs : 07/04/2019"
+                 title="Variety 24hrs : 07/04/2019" />
+          </p>
+          <p class="title">Variety 24hrs : 07/04/2019</p>
+          
+          <p class="info">07/04/2019</p>
+          
+        </a>
+      </li>
+    
+      <li class="portraitItem">
+        <a href="/perfume-e10.html" title="Perfume : E10">
+          <p class="thumbnail">
+            <img src="https://sp.ondemandkorea.com/includes/timthumb.php?w=168&h=238&src=/wp-content/themes/ondemandkorea/uploads/poster/5882_perfume_1.jpg"
+                 class="mutual_poster"
+                 alt="Perfume : E10"
+                 title="Perfume : E10" />
+          </p>
+          <p class="title">Perfume : E10</p>
+          
+          <p class="info">07/02/2019</p>
+          
+        </a>
+      </li>
+    
+      <li class="portraitItem">
+        <a href="/charles-the-next-door-neighbor-e195.html" title="Charles the Next Door Neighbor : E195">
+          <p class="thumbnail">
+            <img src="https://sp.ondemandkorea.com/includes/timthumb.php?w=168&h=238&src=/wp-content/themes/ondemandkorea/uploads/poster/charles_the_next_door_neighbor_poster-1.jpg"
+                 class="mutual_poster"
+                 alt="Charles the Next Door Neighbor : E195"
+                 title="Charles the Next Door Neighbor : E195" />
+          </p>
+          <p class="title">Charles the Next Door Neighbor : E195</p>
+          
+          <p class="info">07/02/2019</p>
+          
+        </a>
+      </li>
+    
+      <li class="portraitItem">
+        <a href="/show-champion-e323.html" title="Show! Champion :  Leo, Space Girl, SF9, Chungha, Stray Kids, Children, D-Crunch, We in the Zone, OnlyOneOf, NOIR, Park Jaejung, n.tic, Lana, Chic Angel, Rockit Girl, Gina Yu, PlayJay, Young-gi">
+          <p class="thumbnail">
+            <img src="https://sp.ondemandkorea.com/includes/timthumb.php?w=168&h=238&src=/wp-content/themes/ondemandkorea/uploads/poster/3314_show_champion_poster_enkr.jpg"
+                 class="mutual_poster"
+                 alt="Show! Champion :  Leo, Space Girl, SF9, Chungha, Stray Kids, Children, D-Crunch, We in the Zone, OnlyOneOf, NOIR, Park Jaejung, n.tic, Lana, Chic Angel, Rockit Girl, Gina Yu, PlayJay, Young-gi"
+                 title="Show! Champion :  Leo, Space Girl, SF9, Chungha, Stray Kids, Children, D-Crunch, We in the Zone, OnlyOneOf, NOIR, Park Jaejung, n.tic, Lana, Chic Angel, Rockit Girl, Gina Yu, PlayJay, Young-gi" />
+          </p>
+          <p class="title">Show! Champion :  Leo, Space Girl, SF9, Chungha, Stray Kids, Children, D-Crunch, We in the Zone, OnlyOneOf, NOIR, Park Jaejung, n.tic, Lana, Chic Angel, Rockit Girl, Gina Yu, PlayJay, Young-gi</p>
+          
+          <p class="info">07/03/2019</p>
+          
+        </a>
+      </li>
+    
+      <li class="portraitItem">
+        <a href="/brother-sister-e06.html" title="Brother Sister : E06">
+          <p class="thumbnail">
+            <img src="https://sp.ondemandkorea.com/includes/timthumb.php?w=168&h=238&src=/wp-content/themes/ondemandkorea/uploads/poster/5890_brother_sister.jpg"
+                 class="mutual_poster"
+                 alt="Brother Sister : E06"
+                 title="Brother Sister : E06" />
+          </p>
+          <p class="title">Brother Sister : E06</p>
+          
+          <p class="info">07/05/2019</p>
+          
+        </a>
+      </li>
+    
+      <li class="portraitItem">
+        <a href="/suspicious-mother-in-law-e31.html" title="Suspicious Mother-in-Law : E31">
+          <p class="thumbnail">
+            <img src="https://sp.ondemandkorea.com/includes/timthumb.php?w=168&h=238&src=/wp-content/themes/ondemandkorea/uploads/poster/5845_suspicious_mother_in_law_poster-update.jpg"
+                 class="mutual_poster"
+                 alt="Suspicious Mother-in-Law : E31"
+                 title="Suspicious Mother-in-Law : E31" />
+          </p>
+          <p class="title">Suspicious Mother-in-Law : E31</p>
+          
+          <p class="info">07/03/2019</p>
+          
+        </a>
+      </li>
+    
+      <li class="portraitItem">
+        <a href="/grand-blue-e02.html" title="Grand Blue : E02">
+          <p class="thumbnail">
+            <img src="https://sp.ondemandkorea.com/includes/timthumb.php?w=168&h=238&src=/wp-content/themes/ondemandkorea/uploads/poster/poster_grand_blue.jpg"
+                 class="mutual_poster"
+                 alt="Grand Blue : E02"
+                 title="Grand Blue : E02" />
+          </p>
+          <p class="title">Grand Blue : E02</p>
+          
+          <p class="info">07/05/2019</p>
+          
+        </a>
+      </li>
+    
+    </ul>
+  </div>
+  <!-- player end -->
+  
+  <script id="episode_template" type="text/x-handlebars-template">
+    <div class="ep_wrap">
+      <div class="ep">
+        <a href="{{url}}" title="{{title}}" class="poster">
+          <img src="{{thumbnail}}" title="{{title}}" alt="{{title}}">
+          <div class="ep_title">
+            <b>{{title}}</b>
+            <span class="ep_secondline">{{second_line_text}}</span>
+          </div>
+        </a>
+        {{#if episode_badge_url}}
+        <div class="episode-badge">
+          <img src="{{episode_badge_url}}" />
+        </div>
+        {{/if}}
+        {{#if subtitles.length}}
+        <div class="availble-subtitles">
+          {{#each subtitles}}
+            <span>
+              <img src="{{this}}" />
+            </span>
+          {{/each}}
+        </div>
+        {{/if}}
+      </div>
+    </div>
+  </script>
+  
+
+    </section>
+
+    <footer>
+      
+        
+          
+            
+              <div id='player-btf-728-90' class="banner_728x90 _odkAdUnit code:/66416091/Player_Page_Footer_728x90"></div>
+            
+          
+        
+      
+      <div class="links">
+        <a href="/">Home</a>
+        <a href="//www.odkmedia.net" target="_blank" rel="noopener">Company</a>
+        <a href="/privacy-policy">Privacy Policy</a>
+        <a href="/terms-of-use">Terms of Use</a>
+        <a href="//odkmedia.bamboohr.com/jobs/" target="_blank" rel="noopener">Career</a>
+        <a href="/ads">Advertise</a>
+        <a href="/features">Features</a>
+        <a href="/help">Contact Us</a>
+        <a href="/faq">FAQs</a>
+      </div>
+      <p class="copyright">
+        &copy; 2012-2019 ODK Media, Inc.<br />Have a question? Please send an email to <a href="mailto:help@ondemandkorea.com">help@ondemandkorea.com</a>
+      </p>
+    </footer>
+
+    
+
+    
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    
+      
+<script id="adblock_message" type="text/html">
+  Are you using AdBlock?\nIf you enable AdBlock, your service accessibility on OnDemandKorea may be limited. Please disable AdBlock.
+</script>
+
+
+      <!-- Required by Bootstrap v4 -->
+      <!--<script src="//code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>-->
+      <!-- when it goes with other js framework instead of jQuery, then we need only slim version of jQuery for bootstrap, which can reduce 20% of file size -->
+      <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+
+      <!-- Your stuff: Third-party javascript libraries go here -->
+      <script src="https://production-static.ondemandkorea.com/vendor/js/jquery.tzineClock.min.js" type="text/javascript" ></script>
+      <script src="https://production-static.ondemandkorea.com/vendor/js/jquery.iosslider.min.js" type="text/javascript" ></script>
+      <script src="https://production-static.ondemandkorea.com/vendor/js/jquery.fancybox.3.0.40.min.js" type="text/javascript" ></script>
+      <script src="https://production-static.ondemandkorea.com/vendor/js/js.cookie.js" type="text/javascript" ></script>
+      <script src="https://production-static.ondemandkorea.com/vendor/js/list.js/v1.5.0/list.min.js" type="text/javascript"></script>
+      <script src="https://production-static.ondemandkorea.com/vendor/scroller/jquery.mCustomScrollbar.concat.min.js" type="text/javascript" ></script>
+
+      <script type="text/javascript" src="/jsi18n/?en"></script>
+      <script type="text/javascript" src="https://production-static.ondemandkorea.com/CACHE/js/94d865729bcd.js"></script>
+
+      <!-- misc script -->
+      <script>
+        $(document).ready(function() {
+          function csrfSafeMethod(method) {
+            // these HTTP methods do not require CSRF protection
+            return (/^(GET|HEAD|OPTIONS|TRACE)$/.test(method));
+          }
+          var csrftoken = Cookies.get('csrf_token');
+          $.ajaxSetup({
+            beforeSend: function(xhr, settings) {
+              if (!csrfSafeMethod(settings.type) && !this.crossDomain) {
+                xhr.setRequestHeader("X-CSRFToken", csrftoken);
+              }
+            }
+          });
+
+          // 광고 초기화
+          odkAd.init();
+        });
+
+        function close_fancybox() {
+          $.fancybox.close();
+        }
+
+        function setCookie(cname, value, exdays) {
+          exdays = typeof exdays !== 'undefined' ? exdays : 3650;
+          Cookies.set(cname, value, { path: "/", expires: exdays });
+        }
+
+        function getCookie(cname) {
+          var ret = Cookies.get(cname, { path: "/" });
+          return ret === undefined ? "" : ret;
+        }
+
+        $('.login_menu, .sign-up-link').on('click', function(e) {
+          e.preventDefault();
+          var url = $(this).attr('href');
+          var pathname = window.location.pathname;
+
+          if (pathname !== '/') {
+            url += '?next=' + pathname;
+          }
+          window.location.href = url;
+        });
+      </script>
+      <!-- misc script end-->
+      
+      
+    
+
+    <!-- Page specific javascript -->
+    <!-- HAVE_NO_IDEA -->
+    <!-- TODO: implement this with relevant logic -->
+    <script>var is_bot = false;</script>
+    <!-- HAVE_NO_IDEA end -->
+    
+  <script type="text/javascript" src="https://production-static.ondemandkorea.com/vendor/js/slick/slick.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.js"></script>
+  
+
+  <script type="text/javascript" src="https://production-static.ondemandkorea.com/CACHE/js/98be8a2383dd.js"></script>
+  <script>
+    odkEpisode.setPageDataUrl('/includes15/episode_page/indie-movie-theater_215830_en_-00000000');
+    odkEpisode.loadVideos(1);
+  </script>
+
+  
+
+
+  
+  <script type="text/javascript" src="https://production-static.ondemandkorea.com/CACHE/js/38107a9626ae.js"></script>
+
+  <script>
+    jwplayer.key="G5AxXru4aWvxlEQF3m0Ymp4TgLjljSJ/b3XpTw==";
+    odkPlayer.setConfig(
+      '215830',
+      '',
+      '',
+      ['https://www.ondemandkorea.com/includes/daily_1x1.php?parent=6&program=2585&post_id=215830&post_name=indie-movie-theater-e20190705'],
+      'en',
+      0,
+      0,
+      {
+        smart_tv_error_message: 'The video you are watching has been paused due to a media banner ad. Press the play button to continue watching the video. If a media ad is playing in the banner, please stop the ad and play the video.'
+      }
+    )
+    odkPlayer.init([{'tracks': [], 'sources': [{'file': 'https://odk-hls.akamaized.net/742370/v1/201907/variety/indie-movie-theater/indie-movie-theater-e20190705/playlist_720.m3u8'}]}], {'adbreak1': {'offset': 'pre', 'tag': 'https://pubads.g.doubleclick.net/gampad/ads?sz=640x360&iu=/114479492/odk_player&ciu_szs=300x250&impl=s&gdfp_req=1&env=vp&output=vast&unviewed_position_start=0&pmnd=0&pmxd=360000&pmad=3&correlator=46008&pod=1&url=https%3A%2F%2Fwww.ondemandkorea.com%2Findie-movie-theater-e20190705.html&ad_rule=0&vpos=preroll&cust_params=category%3Dvariety%26program%3Dindie-movie-theater%26episode%3Dindie-movie-theater-e20190705%26partner%3Dkbs%26platform%3Dodk_web%26lang%3Den'}, 'adbreak2': {'offset': '720', 'tag': 'https://pubads.g.doubleclick.net/gampad/ads?sz=640x360&iu=/114479492/odk_player&ciu_szs=300x250&impl=s&gdfp_req=1&env=vp&output=vast&unviewed_position_start=0&pmnd=0&pmxd=360000&pmad=3&correlator=277662&pod=2&url=https%3A%2F%2Fwww.ondemandkorea.com%2Findie-movie-theater-e20190705.html&ad_rule=0&vpos=midroll&cust_params=category%3Dvariety%26program%3Dindie-movie-theater%26episode%3Dindie-movie-theater-e20190705%26partner%3Dkbs%26platform%3Dodk_web%26lang%3Den'}, 'adbreak3': {'offset': '1440', 'tag': 'https://pubads.g.doubleclick.net/gampad/ads?sz=640x360&iu=/114479492/odk_player&ciu_szs=300x250&impl=s&gdfp_req=1&env=vp&output=vast&unviewed_position_start=0&pmnd=0&pmxd=360000&pmad=3&correlator=112758&pod=3&url=https%3A%2F%2Fwww.ondemandkorea.com%2Findie-movie-theater-e20190705.html&ad_rule=0&vpos=midroll&cust_params=category%3Dvariety%26program%3Dindie-movie-theater%26episode%3Dindie-movie-theater-e20190705%26partner%3Dkbs%26platform%3Dodk_web%26lang%3Den'}, 'adbreak4': {'offset': '2160', 'tag': 'https://pubads.g.doubleclick.net/gampad/ads?sz=640x360&iu=/114479492/odk_player&ciu_szs=300x250&impl=s&gdfp_req=1&env=vp&output=vast&unviewed_position_start=0&pmnd=0&pmxd=360000&pmad=3&correlator=644028&pod=4&url=https%3A%2F%2Fwww.ondemandkorea.com%2Findie-movie-theater-e20190705.html&ad_rule=0&vpos=midroll&cust_params=category%3Dvariety%26program%3Dindie-movie-theater%26episode%3Dindie-movie-theater-e20190705%26partner%3Dkbs%26platform%3Dodk_web%26lang%3Den'}, 'adbreak5': {'offset': '2880', 'tag': 'https://pubads.g.doubleclick.net/gampad/ads?sz=640x360&iu=/114479492/odk_player&ciu_szs=300x250&impl=s&gdfp_req=1&env=vp&output=vast&unviewed_position_start=0&pmnd=0&pmxd=360000&pmad=3&correlator=263097&pod=5&url=https%3A%2F%2Fwww.ondemandkorea.com%2Findie-movie-theater-e20190705.html&ad_rule=0&vpos=midroll&cust_params=category%3Dvariety%26program%3Dindie-movie-theater%26episode%3Dindie-movie-theater-e20190705%26partner%3Dkbs%26platform%3Dodk_web%26lang%3Den'}, 'adbreak6': {'offset': '3600', 'tag': 'https://pubads.g.doubleclick.net/gampad/ads?sz=640x360&iu=/114479492/odk_player&ciu_szs=300x250&impl=s&gdfp_req=1&env=vp&output=vast&unviewed_position_start=0&pmnd=0&pmxd=360000&pmad=3&correlator=790125&pod=6&url=https%3A%2F%2Fwww.ondemandkorea.com%2Findie-movie-theater-e20190705.html&ad_rule=0&vpos=midroll&cust_params=category%3Dvariety%26program%3Dindie-movie-theater%26episode%3Dindie-movie-theater-e20190705%26partner%3Dkbs%26platform%3Dodk_web%26lang%3Den'}, 'adbreak7': {'offset': '4320', 'tag': 'https://pubads.g.doubleclick.net/gampad/ads?sz=640x360&iu=/114479492/odk_player&ciu_szs=300x250&impl=s&gdfp_req=1&env=vp&output=vast&unviewed_position_start=0&pmnd=0&pmxd=360000&pmad=3&correlator=247001&pod=7&url=https%3A%2F%2Fwww.ondemandkorea.com%2Findie-movie-theater-e20190705.html&ad_rule=0&vpos=midroll&cust_params=category%3Dvariety%26program%3Dindie-movie-theater%26episode%3Dindie-movie-theater-e20190705%26partner%3Dkbs%26platform%3Dodk_web%26lang%3Den'}, 'adbreak8': {'offset': '5040', 'tag': 'https://pubads.g.doubleclick.net/gampad/ads?sz=640x360&iu=/114479492/odk_player&ciu_szs=300x250&impl=s&gdfp_req=1&env=vp&output=vast&unviewed_position_start=0&pmnd=0&pmxd=360000&pmad=3&correlator=55945&pod=8&url=https%3A%2F%2Fwww.ondemandkorea.com%2Findie-movie-theater-e20190705.html&ad_rule=0&vpos=midroll&cust_params=category%3Dvariety%26program%3Dindie-movie-theater%26episode%3Dindie-movie-theater-e20190705%26partner%3Dkbs%26platform%3Dodk_web%26lang%3Den'}, 'adbreak9': {'offset': '5760', 'tag': 'https://pubads.g.doubleclick.net/gampad/ads?sz=640x360&iu=/114479492/odk_player&ciu_szs=300x250&impl=s&gdfp_req=1&env=vp&output=vast&unviewed_position_start=0&pmnd=0&pmxd=360000&pmad=3&correlator=728304&pod=9&url=https%3A%2F%2Fwww.ondemandkorea.com%2Findie-movie-theater-e20190705.html&ad_rule=0&vpos=midroll&cust_params=category%3Dvariety%26program%3Dindie-movie-theater%26episode%3Dindie-movie-theater-e20190705%26partner%3Dkbs%26platform%3Dodk_web%26lang%3Den'}, 'adbreak10': {'offset': '6480', 'tag': 'https://pubads.g.doubleclick.net/gampad/ads?sz=640x360&iu=/114479492/odk_player&ciu_szs=300x250&impl=s&gdfp_req=1&env=vp&output=vast&unviewed_position_start=0&pmnd=0&pmxd=360000&pmad=3&correlator=61735&pod=10&url=https%3A%2F%2Fwww.ondemandkorea.com%2Findie-movie-theater-e20190705.html&ad_rule=0&vpos=midroll&cust_params=category%3Dvariety%26program%3Dindie-movie-theater%26episode%3Dindie-movie-theater-e20190705%26partner%3Dkbs%26platform%3Dodk_web%26lang%3Den'}, 'adbreak11': {'offset': 'post', 'tag': 'https://pubads.g.doubleclick.net/gampad/ads?sz=640x360&iu=/114479492/odk_player&ciu_szs=300x250&impl=s&gdfp_req=1&env=vp&output=vast&unviewed_position_start=0&pmnd=0&pmxd=360000&pmad=3&correlator=965704&pod=11&url=https%3A%2F%2Fwww.ondemandkorea.com%2Findie-movie-theater-e20190705.html&ad_rule=0&vpos=postroll&cust_params=category%3Dvariety%26program%3Dindie-movie-theater%26episode%3Dindie-movie-theater-e20190705%26partner%3Dkbs%26platform%3Dodk_web%26lang%3Den'}});
+    odkSidebanner.init(0, 'en');
+  </script>
+
+
+
+
+  </body>
+  <!-- GIT_ID: 1b67099bc46a8ca62d49f0d44d3d297b7cd7331d -->
+</html>

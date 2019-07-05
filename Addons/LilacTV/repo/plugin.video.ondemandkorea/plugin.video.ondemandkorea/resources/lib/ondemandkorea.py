@@ -184,6 +184,7 @@ def parseEpisodePage2(page_url, page=1, koPage=True):
 
 def GetProgram(source):
     html = source.encode('utf-8')
+
     match = re.search(r"""(http[^'"]*m3u8)""", html, re.I|re.U)
     if match:
         url = match.group(1)
