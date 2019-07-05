@@ -133,6 +133,7 @@
         <setting id="provider.ddlspot" type="bool" label="DDLSPOT" default="true" />
         <setting id="provider.ddlvalley" type="bool" label="DDLVALLEY" default="true" />
         <setting id="provider.directdl" type="bool" label="DIRECTDL" default="true" />
+        <setting id="provider.exenbetgiris" type="bool" label="EXENBETGIRIS" default="true" />
         <setting id="provider.ganool" type="bool" label="GANOOL" default="true" />
         <setting id="provider.moviesleak" type="bool" label="MOVIESLEAK" default="true" />
         <setting id="provider.mvrls" type="bool" label="MVRLS" default="true" />
@@ -143,7 +144,6 @@
         <setting id="provider.rlslog" type="bool" label="RLSLOG" default="true" />
         <setting id="provider.sceneddl" type="bool" label="SCENEDDL" default="true" />
         <setting id="provider.scenerls" type="bool" label="SCENERLS" default="true" />
-        <setting id="provider.scnsrc" type="bool" label="SCNSRC" default="true" />
         <setting id="provider.ultrahd" type="bool" label="ULTRAHD" default="true" />
     </category>
     <category label="Direct Providers">

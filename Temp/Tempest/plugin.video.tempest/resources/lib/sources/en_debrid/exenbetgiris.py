@@ -63,7 +63,6 @@ class source:
             url = self.search_link % urllib.quote_plus(query)
             url = urlparse.urljoin(self.base_link, url).replace('-', '+')
             r = self.scraper.get(url).content
-            print r
             if r is None and 'tvshowtitle' in data:
                 season = re.search('S(.*?)E', hdlr)
                 season = season.group(1)

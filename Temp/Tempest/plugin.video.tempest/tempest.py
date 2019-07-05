@@ -447,9 +447,9 @@ if mode == "toggleAllNormal":
     toggleAll(params['setting'], params['query'], sourcelist)
 
 if mode == "toggleAllDebrid":
-    sourcelist = ['2ddl', '300mbdownload', '300mbfilms', 'ddlspot', 'ddlvalley', 'directdl', 'ganool',
+    sourcelist = ['2ddl', '300mbdownload', '300mbfilms', 'ddlspot', 'ddlvalley', 'directdl', 'exenbetgiris', 'ganool',
                   'moviesleak', 'mvrls', 'myvideolinks', 'rapidmoviez', 'rlsb', 'rlsbb', 'rlslog', 'sceneddl',
-                  'scenerls', 'scnsrc', 'ultrahd']
+                  'scenerls', 'ultrahd']
     toggleAll(params['setting'], params['query'], sourcelist)
 
 if mode == "toggleAllDirect":
