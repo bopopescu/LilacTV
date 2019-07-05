@@ -293,3 +293,5 @@ shift + del >>> line 삭제
 ctrl + shift +k >>> line 삭제
 ctrl + up/down >>> line 이동
 ctrl + / >>> 주석처리
+
+https://stackoverflow.com/questions/21944936/error-1045-28000-access-denied-for-user-rootlocalhost-using-password-y
