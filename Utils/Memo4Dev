@@ -165,7 +165,7 @@ MyServer ssh root@172.104.51.248
 
 
 For new compile evironment:
-sudo apt-get install subversion curl git build-essential u-boot-tools gcc-multilib lib32stdc++6 lzop xmlstarlet Help2man zlib1g:i386 texlive
+sudo apt-get install subversion curl git build-essential u-boot-tools gcc-multilib lib32stdc++6 lzop xmlstarlet  zlib1g:i386 texlive
 
 Real EPG : http://123.231.13.241:8082/EPG/EPGServlet
 
