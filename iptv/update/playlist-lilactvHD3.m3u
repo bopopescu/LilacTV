@@ -181,6 +181,8 @@ http://175.116.137.152:9981/stream/channelid/383919185
 http://211.245.55.198:22515/m2u/239.192.59.5:49220
 #EXTINF:-1 tvg-id="98" tvg-logo="http://i.imgur.com/Bnw7O5U.png" group-title="스포츠",JTBC Golf
 http://222.236.197.77:9981/stream/channelid/752753346
+#EXTINF:-1 tvg-id="98" tvg-logo="http://i.imgur.com/Bnw7O5U.png" group-title="스포츠",JTBC Golf
+http://175.113.154.14:9981/stream/channelid/1501772852?ticket=A2E52F4AD0F8F5960302EC72111E415587E2191B&profile=matroska
 #EXTINF:-1 tvg-id="167" tvg-logo="http://i.imgur.com/HdS0GNV.png" group-title="스포츠",SBS GOLF
 http://1.233.136.3:9981/stream/channelid/106590898
 #EXTINF:-1 tvg-id="167" tvg-logo="http://i.imgur.com/HdS0GNV.png" group-title="스포츠",SBS GOLF
@@ -259,6 +261,8 @@ http://175.116.137.152:9981/stream/channelid/44568887
 http://211.207.173.34:9981/stream/channelid/359067551
 #EXTINF:-1 tvg-id="178" tvg-logo="http://i.imgur.com/QHV9bdA.png" group-title="스포츠",SkySports
 http://211.245.55.198:22515/m2u/239.192.67.162:49220
+#EXTINF:-1 tvg-id="178" tvg-logo="http://i.imgur.com/QHV9bdA.png" group-title="스포츠",SkySports
+http://175.113.154.14:9981/stream/channelid/1851765421?ticket=502631C7667D6DCAF8513365871CA198CD305F2E&profile=matroska
 #EXTINF:-1 tvg-id="100" tvg-logo="http://i.imgur.com/KvGwEc1.png" group-title="스포츠",JTBC3
 http://1.233.136.3:9981/stream/channelid/1391275106
 #EXTINF:-1 tvg-id="100" tvg-logo="http://i.imgur.com/KvGwEc1.png" group-title="스포츠",JTBC3
@@ -283,8 +287,6 @@ http://175.116.137.152:9981/stream/channelid/1948920168
 http://211.207.173.34:9981/stream/channelid/233751583
 #EXTINF:-1 tvg-id="184" tvg-logo="http://i.imgur.com/5IMfa6N.png" group-title="스포츠",SPOTV Games
 http://211.245.55.198:22515/m2u/239.192.69.49:49220
-#EXTINF:-1 tvg-id="184" tvg-logo="http://i.imgur.com/5IMfa6N.png" group-title="스포츠",SPOTV Games
-http://175.113.154.14:9981/stream/channelid/407448939?ticket=A89076477BABD205A3174116FAE7E928363E02E1&profile=matroska
 #EXTINF:-1 tvg-id="151" tvg-logo="http://i.imgur.com/IXh6dwo.png" group-title="영화",OCN
 http://1.233.136.3:9981/stream/channelid/2058420810
 #EXTINF:-1 tvg-id="151" tvg-logo="http://i.imgur.com/IXh6dwo.png" group-title="영화",OCN
@@ -431,8 +433,6 @@ http://175.116.137.152:9981/stream/channelid/1442520373
 http://211.207.173.34:9981/stream/channelid/117864828
 #EXTINF:-1 tvg-id="51" tvg-logo="http://i.imgur.com/1SgSI0P.png" group-title="아웃도어",디스커버리채널
 http://211.245.55.198:22515/m2u/239.192.69.103:49220
-#EXTINF:-1 tvg-id="51" tvg-logo="http://i.imgur.com/1SgSI0P.png" group-title="아웃도어",디스커버리채널
-http://175.113.154.14:9981/stream/channelid/934251598?ticket=AA071F5254CB5BA30D65BF97A08EA2C399790CBE&profile=matroska
 #EXTINF:-1 tvg-id="138" tvg-logo="http://i.imgur.com/mqTSPMN.png" group-title="아웃도어",History
 http://175.116.137.152:9981/stream/channelid/1114831193
 #EXTINF:-1 tvg-id="138" tvg-logo="http://i.imgur.com/mqTSPMN.png" group-title="아웃도어",History
