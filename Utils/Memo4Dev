@@ -294,4 +294,11 @@ ctrl + shift +k >>> line 삭제
 ctrl + up/down >>> line 이동
 ctrl + / >>> 주석처리
 
-https://stackoverflow.com/questions/21944936/error-1045-28000-access-denied-for-user-rootlocalhost-using-password-y
+In the new my-sql if the password is left empty while installing then it is based on the auth_socket plugin.
+The correct way is to login to my-sql with sudo privilege.
+$ sudo mysql -u root -p
+And then updating the password using:
+$ ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'new-password';
+Once this is done stop and start the mysql server.
+$  sudo service mysql stop
+$  sudo service mysql start
