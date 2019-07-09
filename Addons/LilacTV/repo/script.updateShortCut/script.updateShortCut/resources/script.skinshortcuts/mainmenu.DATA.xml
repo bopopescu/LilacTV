@@ -14,7 +14,7 @@
 		<label2>Custom item</label2>
 		<icon>special://skin/extras/icons/film.png</icon>
 		<thumb />
-		<action>ActivateWindow(Videos,"plugin://plugin.video.yoda/?action=movieNavigator",return)</action>
+		<action>ActivateWindow(Videos,"plugin://plugin.video.tempest/?action=movieNavigator",return)</action>
 	</shortcut>
 	<shortcut>
 		<defaultID>tvshows</defaultID>

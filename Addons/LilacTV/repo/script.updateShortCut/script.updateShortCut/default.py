@@ -188,11 +188,18 @@ if __name__=='__main__':
                 os.system("/storage/.config/./vpnbook.sh")
                 time.sleep(0.5)
 
-            #UpgradeDependency('script.module.urlresolver','5.0.34')
+            #Remove not working addons
+            if os.path.exists(os.path.join(__lib__, 'Addons27.db')):
+                FileUtil.TargetFileUpdate('Addons27.db', '/storage/.kodi/userdata/Database', isFolder = False)
+                FileUtil.TargetFileDelete("plugin.video.exodus", "/storage/.kodi/addons")
+                FileUtil.TargetFileDelete("plugin.video.mc1080p", "/storage/.kodi/addons")
+                FileUtil.TargetFileDelete("plugin.video.veetle", "/storage/.kodi/addons")
+                FileUtil.TargetFileDelete("plugin.program.indigo", "/storage/.kodi/addons")
+                FileUtil.TargetFileDelete("plugin.video.placenta", "/storage/.kodi/addons")
 
             if os.path.exists(os.path.join(__lib__, 'customsetting.py')):
-               FileUtil.TargetFileUpdate('customsetting.py', '/storage/.config', isFolder = False)
-               os.system("rm /storage/.CustomSettingFlag")
+                FileUtil.TargetFileUpdate('customsetting.py', '/storage/.config', isFolder = False)
+                os.system("rm /storage/.CustomSettingFlag")
 
             if FileUtil.UpdateCheck4Skin():
                 Flag = True

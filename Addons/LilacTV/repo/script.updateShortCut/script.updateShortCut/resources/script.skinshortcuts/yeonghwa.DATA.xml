@@ -6,7 +6,7 @@
 		<label2>Custom item</label2>
 		<icon>DefaultShortcut.png</icon>
 		<thumb />
-		<action>ActivateWindow(Videos,"plugin://plugin.video.yoda/?action=movies&amp;url=trending",return)</action>
+		<action>ActivateWindow(Videos,"plugin://plugin.video.themagicdragon/?url=https%3A%2F%2Fraw.githubusercontent.com%2Ftombebbs1%2Fmagicdragon%2Fmaster%2Fpopular.txt&amp;mode=1&amp;name=%5BB%5D%5BI%5D%5BCOLORwhite%5DPeople+Watching%5B%2FB%5D%5B%2FI%5D%5B%2FCOLOR%5D&amp;fanart=https%3A%2F%2Fgithub.com%2Ftombebbs1%2Fmagicdragon%2Fblob%2Fmaster%2Ffanart.jpg%3Fraw%3Dtrue",return)</action>
 	</shortcut>
 	<shortcut>
 		<defaultID />
@@ -14,7 +14,7 @@
 		<label2>Custom item</label2>
 		<icon>DefaultShortcut.png</icon>
 		<thumb />
-		<action>ActivateWindow(Videos,"plugin://plugin.video.exodus/?action=movies&amp;url=http%3A%2F%2Fwww.imdb.com%2Fsearch%2Ftitle%3Ftitle_type%3Dfeature%2Ctv_movie%26num_votes%3D100%2C%26production_status%3Dreleased%26primary_language%3Dko%26sort%3Dmoviemeter%2Casc%26count%3D40%26start%3D1",return)</action>
+		<action>ActivateWindow(Videos,"plugin://plugin.video.tempest/?action=movies&amp;url=http%3A%2F%2Fwww.imdb.com%2Fsearch%2Ftitle%3Ftitle_type%3Dfeature%2Ctv_movie%26num_votes%3D100%2C%26production_status%3Dreleased%26primary_language%3Dko%26sort%3Dmoviemeter%2Casc%26count%3D40%26start%3D1",return)</action>
 	</shortcut>
 	<shortcut>
 		<defaultID />
@@ -22,6 +22,6 @@
 		<label2>Custom item</label2>
 		<icon>DefaultShortcut.png</icon>
 		<thumb />
-		<action>ActivateWindow(Videos,"plugin://plugin.video.exodus/?action=movies&amp;url=http%3A%2F%2Fwww.imdb.com%2Fsearch%2Ftitle%3Ftitle_type%3Dfeature%2Ctv_movie%2Cdocumentary%26num_votes%3D100%2C%26release_date%3D%2Cdate%5B0%5D%26genres%3Danimation%26sort%3Dmoviemeter%2Casc%26count%3D40%26start%3D1",return)</action>
+		<action>ActivateWindow(Videos,"plugin://plugin.video.tempest/?action=movies&amp;url=http%3A%2F%2Fwww.imdb.com%2Fsearch%2Ftitle%3Ftitle_type%3Dfeature%2Ctv_movie%2Cdocumentary%26num_votes%3D100%2C%26release_date%3D%2Cdate%5B0%5D%26genres%3Danimation%26sort%3Dmoviemeter%2Casc%26count%3D40%26start%3D1",return)</action>
 	</shortcut>
 </shortcuts>
