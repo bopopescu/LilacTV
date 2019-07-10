@@ -44,7 +44,7 @@ def getHwAddr(ifname):
     return str
 
 def main(config):
-    #output = []
+    output = []
     db = mysql.connector.Connect(**config)
     cursor = db.cursor()
 
@@ -77,11 +77,16 @@ def main(config):
     mac_add_eth0 = getHwAddr('eth0')
     mac_add_wlan = getHwAddr('wlan0')
 
-    device = ((mac_add_eth0, mac_add_wlan, ip_add),)
-    stmt_insert = "INSERT INTO devices (mac_add_eth0, mac_add_wlan, ip_add) VALUES (%s,%s,%s)"
-    cursor.executemany(stmt_insert, device)
-    db.commit()
-
+    stmt_select = "SELECT * FROM devices WHERE mac_add_eth0 = VALUES (%s)"
+    output = cursor.executemany(stmt_select, mac_add_eth0)
+    if not output:
+        device = ((mac_add_eth0, mac_add_wlan, ip_add),)
+        stmt_insert = "INSERT INTO devices (mac_add_eth0, mac_add_wlan, ip_add) VALUES (%s,%s,%s)"
+        cursor.executemany(stmt_insert, device)
+        db.commit()
+    # else:
+    #     stmt_select = "SELECT id, mac_add_eth0, mac_add_wlan, ip_add FROM devices ORDER BY id"
+    #     cursor.execute(stmt_select)
     # # Read the names again and print them
     # stmt_select = "SELECT id, ip_add, mac_add_eth0, mac_add_wlan FROM user ORDER BY id"
     # cursor.execute(stmt_select)
