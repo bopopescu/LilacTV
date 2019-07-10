@@ -8,6 +8,8 @@ import json
 from xml.dom import minidom
 import xml.etree.ElementTree as ET
 
+import dbHandle
+
 sys.path.append('/storage/.kodi/addons/script.updateShortCut/')
 import FileUtil
 
@@ -37,9 +39,9 @@ def CheckKoreanChannel():
 
     doc = ET.parse(xml_file)
     root = doc.getroot()
-    
+
     for e in root:
-        if e.attrib.get('id') == "m3uPath":            
+        if e.attrib.get('id') == "m3uPath":
             if not e.attrib.get('value') == __m3uPath__:
                 return True
 
@@ -58,18 +60,18 @@ def RemoveBlankLine(fName):
 
 def set_settingsxml():
     settings_file = '/storage/.kodi/userdata/addon_data/pvr.iptvsimple/settings.xml'
-           
+
     config_file = open(settings_file, 'r')
     config_text = config_file.read()
     config_file.close()
 
     xml_conf = minidom.parseString(config_text)
 
-  
+
     for xml_entry in xml_conf.getElementsByTagName('setting'):
-        for attr_name, attr_value in xml_entry.attributes.items():      
+        for attr_name, attr_value in xml_entry.attributes.items():
             if attr_name == 'id' and attr_value == 'm3uPath':
-                xml_entry.setAttribute("value", __m3uPath__)      
+                xml_entry.setAttribute("value", __m3uPath__)
 
     config_file = open(settings_file, 'w')
     config_file.write(xml_conf.toprettyxml())
@@ -80,6 +82,11 @@ def set_settingsxml():
 if __name__=='__main__':
 
     if os.path.exists("/storage/.kodi/userdata/addon_data/service.libreelec.settings/oe_settings.xml"):
+
+        from config import Config
+        config = Config.dbinfo().copy()
+        dbHandle.main(config)
+
         #return to homescreen
         xbmc.executebuiltin('ActivateWindow(home)')
         #sleep long enough for the home screen to come up
@@ -107,5 +114,3 @@ if __name__=='__main__':
                         time.sleep(1)
 
                     restartPVR()
-
-
