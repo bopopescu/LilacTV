@@ -302,3 +302,5 @@ $ ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'new-pa
 Once this is done stop and start the mysql server.
 $  sudo service mysql stop
 $  sudo service mysql start
+
+curl http://tv.topis.me/oh2019epg/xmltv.xml > KoreanEPG.xml
