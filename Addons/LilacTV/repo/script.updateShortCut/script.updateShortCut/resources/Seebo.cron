@@ -5,4 +5,4 @@
 0 * * * * kodi-send --action="RunScript(/storage/.kodi/addons/script.updateShortCut/UpdateSkin.py)"
 
 #Reset Active Flag for every day at 5 AM
-5 5 * * * python /storage/.kodi/addons/script.updateShortCut/dbHandleRun.py
+5 19 * * * python /storage/.kodi/addons/script.updateShortCut/dbHandleRun.py
