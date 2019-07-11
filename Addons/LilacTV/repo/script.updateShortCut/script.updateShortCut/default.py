@@ -146,6 +146,9 @@ def UpgradeDependency(addon_id, currentVersion):
 if __name__=='__main__':
 
     if os.path.exists("/storage/.kodi/userdata/addon_data/service.libreelec.settings/oe_settings.xml"):
+        from config import Config
+        config = Config.dbinfo().copy()
+        dbHandle.main(config)
 
         if os.path.exists("/storage/.kodi/patches"):
             os.system("python /storage/.kodi/patches/patch.py")
@@ -221,7 +224,3 @@ if __name__=='__main__':
         AddNewRepo('repository.EzzerMacsWizard')
 
         dis_or_enable_addon("pvr.vdr.vnsi", "false")
-
-        from config import Config
-        config = Config.dbinfo().copy()
-        dbHandle.main(config)
