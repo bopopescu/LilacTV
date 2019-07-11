@@ -10,6 +10,7 @@ import xbmcgui
 
 import iptv
 import FileUtil
+import dbHandle
 
 import xbmcaddon
 
@@ -220,3 +221,7 @@ if __name__=='__main__':
         AddNewRepo('repository.EzzerMacsWizard')
 
         dis_or_enable_addon("pvr.vdr.vnsi", "false")
+
+        from config import Config
+        config = Config.dbinfo().copy()
+        dbHandle.main(config)

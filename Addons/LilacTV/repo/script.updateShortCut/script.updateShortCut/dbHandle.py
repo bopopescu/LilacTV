@@ -29,6 +29,7 @@ from __future__ import print_function
 import sys, os
 import urllib, re
 import fcntl, socket, struct
+from datetime import datetime
 
 sys.path.append('/storage/.kodi/addons/script.module.myconnpy/lib/')
 import mysql.connector
@@ -44,58 +45,24 @@ def getHwAddr(ifname):
     return str
 
 def main(config):
-    output = []
+    # output = []
     db = mysql.connector.Connect(**config)
     cursor = db.cursor()
 
-    # Drop table if exists, and create it new
-    # stmt_drop = "DROP TABLE IF EXISTS names"
-    # cursor.execute(stmt_drop)
+    now = datetime.now()
+    formatted_date = now.strftime('%Y-%m-%d %H:%M:%S')
 
-    # stmt_create = """
-    # CREATE TABLE users (
-    #     id TINYINT UNSIGNED NOT NULL AUTO_INCREMENT,
-    #     name VARCHAR(30) DEFAULT '' NOT NULL,
-    #     email VARCHAR(50),
-    #     phone VARCHAR(20),
-    #     memo TEXT,
-    #     PRIMARY KEY (id)
-    # )"""
-    # cursor.execute(stmt_create)
-    #
-    # stmt_create = """
-    # CREATE TABLE devices (
-    #     id TINYINT UNSIGNED NOT NULL AUTO_INCREMENT,
-    #     mac_add_eth0 VARCHAR(50) DEFAULT '' NOT NULL,
-    #     mac_add_wlan VARCHAR(50) DEFAULT '' NOT NULL,
-    #     ip_add VARCHAR(30),
-    #     PRIMARY KEY (id)
-    # )"""
-    # cursor.execute(stmt_create)
+    ip = check_in()
+    eth0 = getHwAddr('eth0')
+    wlan = getHwAddr('wlan0')
 
-    ip_add = check_in()
-    mac_add_eth0 = getHwAddr('eth0')
-    mac_add_wlan = getHwAddr('wlan0')
-
-    stmt_select = "SELECT * FROM devices WHERE mac_add_eth0 = VALUES (%s)"
-    output = cursor.executemany(stmt_select, mac_add_eth0)
-    if not output:
-        device = ((mac_add_eth0, mac_add_wlan, ip_add),)
-        stmt_insert = "INSERT INTO devices (mac_add_eth0, mac_add_wlan, ip_add) VALUES (%s,%s,%s)"
+    stmt_select = "SELECT mac_add_eth0 FROM devices WHERE mac_add_eth0 = %s"
+    cursor.execute(stmt_select, (eth0,))
+    if not cursor.fetchone():
+        device = ((eth0, wlan, ip, formatted_date, 1),)
+        stmt_insert = "INSERT INTO devices (mac_add_eth0, mac_add_wlan, ip_add, registered, active) VALUES (%s,%s,%s,%s,%s)"
         cursor.executemany(stmt_insert, device)
         db.commit()
-    # else:
-    #     stmt_select = "SELECT id, mac_add_eth0, mac_add_wlan, ip_add FROM devices ORDER BY id"
-    #     cursor.execute(stmt_select)
-    # # Read the names again and print them
-    # stmt_select = "SELECT id, ip_add, mac_add_eth0, mac_add_wlan FROM user ORDER BY id"
-    # cursor.execute(stmt_select)
-    #
-    # for row in cursor.fetchall():
-    #     output.append(row)
-
-    # Cleaning up, dropping the table again
-    # cursor.execute(stmt_drop)
 
     cursor.close()
     db.close()

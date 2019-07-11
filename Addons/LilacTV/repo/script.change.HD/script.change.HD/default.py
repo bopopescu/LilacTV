@@ -8,8 +8,6 @@ import json
 from xml.dom import minidom
 import xml.etree.ElementTree as ET
 
-import dbHandle
-
 sys.path.append('/storage/.kodi/addons/script.updateShortCut/')
 import FileUtil
 
@@ -82,10 +80,6 @@ def set_settingsxml():
 if __name__=='__main__':
 
     if os.path.exists("/storage/.kodi/userdata/addon_data/service.libreelec.settings/oe_settings.xml"):
-
-        from config import Config
-        config = Config.dbinfo().copy()
-        dbHandle.main(config)
 
         #return to homescreen
         xbmc.executebuiltin('ActivateWindow(home)')
