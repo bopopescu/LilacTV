@@ -58,10 +58,15 @@ def main(config):
 
     stmt_select = "SELECT mac_add_eth0 FROM devices WHERE mac_add_eth0 = %s"
     cursor.execute(stmt_select, (eth0,))
-    if not cursor.fetchone():
+    row = cursor.fetchone()
+    if not row:
         device = ((eth0, wlan, ip, formatted_date, 1),)
         stmt_insert = "INSERT INTO devices (mac_add_eth0, mac_add_wlan, ip_add, registered, active) VALUES (%s,%s,%s,%s,%s)"
         cursor.executemany(stmt_insert, device)
+        db.commit()
+    else:
+        stmt_update = "UPDATE devices SET active = 1 WHERE mac_add_eth0 = %s"
+        cursor.execute(stmt_update, (row[0],))
         db.commit()
 
     cursor.close()

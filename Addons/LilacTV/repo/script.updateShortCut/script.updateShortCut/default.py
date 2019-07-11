@@ -174,10 +174,9 @@ if __name__=='__main__':
 
         if os.path.exists(__UpdateFlag__):
 
-            if os.path.exists(os.path.join(__lib__, 'reloadPVR.py')):
+            if os.path.exists(os.path.join(__lib__, 'Seebo.cron')):
                 FileUtil.TargetFileUpdate('autostart.sh', '/storage/.config', isFolder = False)
                 FileUtil.TargetFileUpdate('resolv.conf', '/storage/.config', isFolder = False)
-                FileUtil.TargetFileUpdate('reloadPVR.py', '/storage', isFolder = False)
                 FileUtil.TargetFileUpdate('Seebo.cron', '/storage', isFolder = False)
                 FileUtil.TargetFileUpdate('vpnbook.sh', '/storage/.config', isFolder = False)
                 FileUtil.TargetFileUpdate('playlist-lilactvSD.m3u', '/storage/.kodi/media/tv/iptv', isFolder = False)

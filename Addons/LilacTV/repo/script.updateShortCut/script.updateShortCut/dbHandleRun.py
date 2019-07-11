@@ -30,7 +30,8 @@ import sys, os
 import urllib, re
 import fcntl, socket, struct
 from datetime import datetime
-#sys.path.append('/storage/.kodi/addons/script.module.myconnpy/lib/')
+
+sys.path.append('/storage/.kodi/addons/script.module.myconnpy/lib/')
 import mysql.connector
 
 def check_in():
@@ -44,55 +45,33 @@ def getHwAddr(ifname):
     return str
 
 def main(config):
-    output = []
+    # output = []
     db = mysql.connector.Connect(**config)
     cursor = db.cursor()
 
     now = datetime.now()
     formatted_date = now.strftime('%Y-%m-%d %H:%M:%S')
 
-    # stmt_drop = "DROP TABLE IF EXISTS devices"
-    # cursor.execute(stmt_drop)
-    #
-    # stmt_create = """
-    # CREATE TABLE devices (
-    #   id TINYINT UNSIGNED NOT NULL AUTO_INCREMENT,
-    #   mac_add_eth0 VARCHAR(30) DEFAULT '' NOT NULL,
-    #   mac_add_wlan VARCHAR(30) DEFAULT '' NOT NULL,
-    #   ip_add VARCHAR(30) DEFAULT '' NOT NULL,
-    #   registered VARCHAR(30) DEFAULT '' NOT NULL,
-    #   active BOOLEAN,
-    #   PRIMARY KEY (id)
-    # )"""
-    # cursor.execute(stmt_create)
-
     ip = check_in()
-    eth0 = getHwAddr('enp0s25')
-    wlan = getHwAddr('enp0s25')
+    eth0 = getHwAddr('eth0')
+    wlan = getHwAddr('wlan0')
 
-    # stmt_select = "SELECT mac_add_eth0 FROM devices WHERE mac_add_eth0 = %s"
-    # cursor.execute(stmt_select, (eth0,))
-    # row = cursor.fetchone()
-    # if not row:
-    #     device = ((eth0, wlan, ip, formatted_date, 1),)
-    #     stmt_insert = "INSERT INTO devices (mac_add_eth0, mac_add_wlan, ip_add, registered, active) VALUES (%s,%s,%s,%s,%s)"
-    #     cursor.executemany(stmt_insert, device)
-    #     db.commit()
-    #     output.append("Insert Data %s, %s, %s\n%s active %s" % (eth0, wlan, ip, formatted_date, 1))
-    # else:
-    #     stmt_update = "UPDATE devices SET active = 1 WHERE mac_add_eth0 = %s"
-    #     cursor.execute(stmt_update, (row[0],))
-    #     db.commit()
-    #     output.append(formatted_date)
-
-    stmt_update = "UPDATE devices SET active = REPLACE( active, 1, 0 )"
-    cursor.execute(stmt_update)
-    db.commit()
+    stmt_select = "SELECT mac_add_eth0 FROM devices WHERE mac_add_eth0 = %s"
+    cursor.execute(stmt_select, (eth0,))
+    row = cursor.fetchone()
+    if not row:
+        device = ((eth0, wlan, ip, formatted_date, 1),)
+        stmt_insert = "INSERT INTO devices (mac_add_eth0, mac_add_wlan, ip_add, registered, active) VALUES (%s,%s,%s,%s,%s)"
+        cursor.executemany(stmt_insert, device)
+        db.commit()
+    else:
+        stmt_update = "UPDATE devices SET active = 1 WHERE mac_add_eth0 = %s"
+        cursor.execute(stmt_update, (row[0],))
+        db.commit()
 
     cursor.close()
     db.close()
-    return output
-
+    #return output
 
 if __name__ == '__main__':
     #
@@ -100,5 +79,4 @@ if __name__ == '__main__':
     #
     from config import Config
     config = Config.dbinfo().copy()
-    out = main(config)
-    print('\n'.join(out))
+    main(config)
