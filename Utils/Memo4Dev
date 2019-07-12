@@ -304,3 +304,9 @@ $  sudo service mysql stop
 $  sudo service mysql start
 
 curl http://tv.topis.me/oh2019epg/xmltv.xml > KoreanEPG.xml
+
+원격서버 업데이트 및 실행
+1)ssh root@lilactv.ml -> Por96311  ---> cd  /home/SpringBoot/ ---> git pull origin step1_static_html
+2)cd my-slipp ---> 기본 jar를 지우고 다시 빌드 ./gradlew clean build
+3)포트 확인 netstat -lnp | grep 8081 ---> 사용중이면 kill -9 프로세스id
+4)백그라운드로 실행 java -jar build/libs/my-slipp-0.0.1-SNAPSHOT.jar &
