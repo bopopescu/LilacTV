@@ -65,8 +65,8 @@ def main(config):
         cursor.executemany(stmt_insert, device)
         db.commit()
     else:
-        stmt_update = "UPDATE devices SET active = 1 WHERE mac_add_eth0 = %s"
-        cursor.execute(stmt_update, (row[0],))
+        stmt_update = "UPDATE devices SET ip_add = %s, active = %s WHERE mac_add_eth0 = %s"
+        cursor.executemany(stmt_update, ((ip, 1, row[0]),))
         db.commit()
 
     cursor.close()

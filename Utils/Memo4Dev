@@ -303,6 +303,13 @@ Once this is done stop and start the mysql server.
 $  sudo service mysql stop
 $  sudo service mysql start
 
+MySQL 계정 추가 권한 부여
+mysql -uroot -p
+>use mysql;
+>create 'userid'@'%' indentified by 'password';
+>grant select, update on LilacTVDB.devices to railracUser@'%' identified by 'rarilrac';
+
+
 curl http://tv.topis.me/oh2019epg/xmltv.xml > KoreanEPG.xml
 
 원격서버 업데이트 및 실행

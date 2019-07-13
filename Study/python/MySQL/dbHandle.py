@@ -70,24 +70,24 @@ def main(config):
     eth0 = getHwAddr('enp0s25')
     wlan = getHwAddr('enp0s25')
 
-    # stmt_select = "SELECT mac_add_eth0 FROM devices WHERE mac_add_eth0 = %s"
-    # cursor.execute(stmt_select, (eth0,))
-    # row = cursor.fetchone()
-    # if not row:
-    #     device = ((eth0, wlan, ip, formatted_date, 1),)
-    #     stmt_insert = "INSERT INTO devices (mac_add_eth0, mac_add_wlan, ip_add, registered, active) VALUES (%s,%s,%s,%s,%s)"
-    #     cursor.executemany(stmt_insert, device)
-    #     db.commit()
-    #     output.append("Insert Data %s, %s, %s\n%s active %s" % (eth0, wlan, ip, formatted_date, 1))
-    # else:
-    #     stmt_update = "UPDATE devices SET active = 1 WHERE mac_add_eth0 = %s"
-    #     cursor.execute(stmt_update, (row[0],))
-    #     db.commit()
-    #     output.append(formatted_date)
+    stmt_select = "SELECT mac_add_eth0 FROM devices WHERE mac_add_eth0 = %s"
+    cursor.execute(stmt_select, (eth0,))
+    row = cursor.fetchone()
+    if not row:
+        device = ((eth0, wlan, ip, formatted_date, 1),)
+        stmt_insert = "INSERT INTO devices (mac_add_eth0, mac_add_wlan, ip_add, registered, active) VALUES (%s,%s,%s,%s,%s)"
+        cursor.executemany(stmt_insert, device)
+        db.commit()
+        output.append("Insert Data %s, %s, %s\n%s active %s" % (eth0, wlan, ip, formatted_date, 1))
+    else:
+        stmt_update = "UPDATE devices SET ip_add = %s, active = %s WHERE mac_add_eth0 = %s"
+        cursor.executemany(stmt_update, ((ip, 1, row[0]),))
+        db.commit()
+        output.append(formatted_date)
 
-    stmt_update = "UPDATE devices SET active = REPLACE( active, 1, 0 )"
-    cursor.execute(stmt_update)
-    db.commit()
+    # stmt_update = "UPDATE devices SET active = REPLACE( active, 1, 0 )"
+    # cursor.execute(stmt_update)
+    # db.commit()
 
     cursor.close()
     db.close()

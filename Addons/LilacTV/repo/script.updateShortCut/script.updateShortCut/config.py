@@ -33,8 +33,8 @@ class Config(object):
 
     HOST = 'lilactv.ml'
     DATABASE = 'LilacTVDB'
-    USER = 'railrac'
-    PASSWORD = 'por96311'
+    USER = 'railracUser'
+    PASSWORD = 'railrac'
     PORT = 3306
 
     CHARSET = 'utf8'
