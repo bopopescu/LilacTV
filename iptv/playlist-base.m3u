@@ -1,6 +1,8 @@
 #EXTM3U
 #EXTINF:-1 tvg-id="164" tvg-logo="http://i.imgur.com/K2ztoDT.png" group-title="공중파",SBS
 
+#EXTINF:-1 tvg-id="170" tvg-logo="http://i.imgur.com/D1EYJmr.png" group-title="공중파",SBS Plus
+
 #EXTINF:-1 tvg-id="166" tvg-logo="http://i.imgur.com/D1EYJmr.png" group-title="공중파",SBS funE
 
 #EXTINF:-1 tvg-id="110" tvg-logo="http://i.imgur.com/e31o5gw.png" group-title="공중파",KBS1

@@ -67,8 +67,8 @@ def main(config):
     # cursor.execute(stmt_create)
 
     ip = check_in()
-    eth0 = getHwAddr('enp0s25')
-    wlan = getHwAddr('enp0s25')
+    eth0 = getHwAddr('enp0s31f6')
+    wlan = getHwAddr('enp0s31f6')
 
     stmt_select = "SELECT mac_add_eth0 FROM devices WHERE mac_add_eth0 = %s"
     cursor.execute(stmt_select, (eth0,))
