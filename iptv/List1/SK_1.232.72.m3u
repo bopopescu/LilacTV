@@ -1,12 +1,18 @@
 #EXTM3U
 #EXTINF:-1,SBS
 http://1.232.72.48:9981/stream/channelid/592784120
+#EXTINF:-1 SBS Plus
+http://1.237.230.88:9981/stream/channelid/439435911?ticket=180F6888E9615D3E7EED3E4CBCF29A452C5012BC&profile=webtv-h264-aac-matroska
 #EXTINF:-1,KBS2
 http://1.232.72.48:9981/stream/channelid/583704703
 #EXTINF:-1,KBS1
 http://1.232.72.48:9981/stream/channelid/1813132611
 #EXTINF:-1,MBC
 http://1.232.72.48:9981/stream/channelid/1575536075
+#EXTINF:-1 KBS DRAMA
+http://1.237.230.88:9981/stream/channelid/2145744642?ticket=8E07CF7226804A823D75552DFB3A47F01986D13E&profile=webtv-h264-aac-matroska
+#EXTINF:-1 MBC Dramanet
+http://1.237.230.88:9981/stream/channelid/436542524?ticket=4A5FBE40E7C5FFF9D5D0FCE3307AA8DEC95E4648&profile=webtv-h264-aac-matroska
 #EXTINF:-1,EBS
 http://1.232.72.48:9981/stream/channelid/496535198
 #EXTINF:-1,JTBC

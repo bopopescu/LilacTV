@@ -3,6 +3,10 @@
 http://1.251.114.88:9981/stream/channelid/848910117
 #EXTINF:-1,SBS
 http://1.251.114.88:9981/stream/channelid/299903092
+#EXTINF:-1 SBS Plus
+http://39.119.147.3:9981/stream/channelid/392059722
+#EXTINF:-1 KBS DRAMA
+http://211.211.124.249:9981/stream/channelid/493924583
 #EXTINF:-1,KBS2
 http://1.251.114.88:9981/stream/channelid/420543989
 #EXTINF:-1,KBS1

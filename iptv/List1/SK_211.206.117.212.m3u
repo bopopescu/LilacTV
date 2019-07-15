@@ -3,12 +3,18 @@
 http://211.206.117.212:9981/stream/channelid/1512655690
 #EXTINF:-1,SBS
 http://211.206.117.212:9981/stream/channelid/1743139644
+#EXTINF:-1,SBS Plus
+http://211.206.117.212:9981/stream/channelid/1520471270
 #EXTINF:-1,KBS2
 http://211.206.117.212:9981/stream/channelid/1916227740
 #EXTINF:-1,KBS1
 http://211.206.117.212:9981/stream/channelid/1779815835
 #EXTINF:-1,MBC
 http://211.206.117.212:9981/stream/channelid/758842098
+#EXTINF:-1,KBS DRAMA
+http://211.206.117.212:9981/stream/channelid/1818173883
+#EXTINF:-1,MBC Dramanet
+http://211.206.117.212:9981/stream/channelid/1615099843
 #EXTINF:-1,EBS
 http://211.206.117.212:9981/stream/channelid/1075891918
 #EXTINF:-1,JTBC
