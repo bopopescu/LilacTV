@@ -5,8 +5,8 @@ import re
 import chardet
 
 
-__base_m3u_file__ = "/home/badjin/LilacTV/custom/iptv/iptv/playlist-base.m3u"
-__out_m3u_file__ = "/home/badjin/LilacTV/custom/iptv/iptv/update/playlist-lilactvHD"
+__base_m3u_file__ = "playlist-base.m3u"
+__out_m3u_file__ = "update/playlist-tvheadend"
 
 ###################################################################################################
 def usage(msg=None, exit_code=1):
@@ -64,7 +64,7 @@ def UpdateChannelURL(m3u_file):
 	if blines < 0:
 		return False
 
-	for n in range(1,2):
+	for n in range(1,3):
 		ifp = open(temp)
 		m3u_sgml = ifp.read()
 		ifp.close()
@@ -78,13 +78,13 @@ def UpdateChannelURL(m3u_file):
 		for bline in blines:
 			sndx = bline.upper().find('#EXTINF')
 			if sndx >= 0 and blines[blcnt+1].find('http://') < 0:
-				m = re.search(r'#EXTINF:-1\s+.+\s.+,(.+)', bline, flags=re.IGNORECASE)			
+				m = re.search(r'#EXTINF:-1\s+.+\s.+,(.+)', bline, flags=re.IGNORECASE)
 				channel = m.group(1)
 				lcnt = 0
 				for line in lines:
 					tndx = line.upper().find('#EXTINF')
 					if tndx >= 0:
-						m = re.search(r'#EXTINF:-1.*,(.+)', line, flags=re.IGNORECASE)
+						m = re.search('#EXTINF:-1,*(.+)', line, flags=re.IGNORECASE)
 						if channel == m.group(1) and lines[lcnt+1].find('http://') >= 0:
 							blines[blcnt+1] = lines[lcnt+1]
 							lines[lcnt+1] = ""
@@ -115,11 +115,10 @@ def doConvert():
 		usage()
 	for iptv_file in sys.argv[1:]:
 		if UpdateChannelURL(iptv_file):
-			#os.system("/home/badjin/LilacTV/custom/iptv/iptv/./UploadM3U")
+			os.system("./UploadM3U")
 			print "Updating <%s> OK!" % iptv_file
 		else:
 			print "Updating <%s> Failture!" % iptv_file
 ###################################################################################################
 if __name__ == '__main__':
 	doConvert()
-

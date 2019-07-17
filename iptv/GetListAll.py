@@ -86,7 +86,7 @@ def UpdateChannelURL(m3u_file, No):
 			for line in lines:
 				tndx = line.upper().find('#EXTINF')
 				if tndx >= 0:
-					m = re.search(r'#EXTINF:-1.*,(.+)', line, flags=re.IGNORECASE)
+					m = re.search(r'#EXTINF:-1,*,(.+)', line, flags=re.IGNORECASE)
 					if channel == m.group(1) and lines[lcnt+1].find('http://') >= 0 and chcnt < 5:
 						#blines[blcnt+1] = lines[lcnt+1]
 						#lines[lcnt+1] = ""
@@ -116,10 +116,10 @@ def UpdateChannelURL(m3u_file, No):
 ###################################################################################################
 def doConvert():
 	if len(sys.argv) <= 1:
-		usage()       
+		usage()
 	for iptv_file in sys.argv[1:]:
 		ListNo = re.search("(\d)[.]",iptv_file).group(1)
-		if UpdateChannelURL(iptv_file, ListNo):			
+		if UpdateChannelURL(iptv_file, ListNo):
 			#os.system(path+"/./UploadM3U_all"+" "+ListNo)
 			print "Updating <%s> OK!" % iptv_file
 		else:

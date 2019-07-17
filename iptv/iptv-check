@@ -231,7 +231,7 @@ wget -q "$chkf" -O "$path/temp/stream" & echo $! > "$path/temp/pid.tmp"
 pid=$(sed -n 1p < "$path/temp/pid.tmp")
 
 # 4 seconds is the time that wget will download the stream befores gets killed
-sleep 4 
+sleep 4
 # checks if wget pid is still active
 rpid=$(ps -p "$pid" -o pid= | awk '{print$1}')
 
@@ -342,7 +342,7 @@ do
     localf
 done
 sleep 1
-python $path/reTestHD.py $wfile
+python $path/reTestSD.py $wfile
 exit 1
 
 fi

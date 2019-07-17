@@ -1,0 +1,19 @@
+#!/bin/sh
+
+if [ "x$1" = "x" ]; then
+         cd /SeeboData/iptv
+         /usr/bin/python tvheadend.py List2.m3u
+    exit 0
+fi
+
+case "$1" in
+    --description)
+    echo "My custom grabber"
+    ;;
+    --version)
+    echo "1.0"
+    ;;
+    --capabilities)
+    echo "baseline"
+    ;;
+esac
