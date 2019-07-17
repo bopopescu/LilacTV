@@ -82,33 +82,13 @@ http://1.251.114.88:9981/stream/channelid/87502387
 #EXTINF:-1,AXN
 http://1.251.114.88:9981/stream/channelid/980208841
 #EXTINF:-1,SPOTV
-http://1.251.114.88:9981/stream/channelid/788937343
-#EXTINF:-1,SPOTV
-http://1.251.114.88:9981/stream/channelid/518871068
-#EXTINF:-1,SPOTV
 http://1.251.114.88:9981/stream/channelid/1765632415
 #EXTINF:-1,KBS N Sports
 http://1.251.114.88:9981/stream/channelid/413165989
 #EXTINF:-1,KBS N Sports
 http://1.251.114.88:9981/stream/channelid/1604810191
-#EXTINF:-1,KBS N Sports
-http://1.251.114.88:9981/stream/channelid/345436053
-#EXTINF:-1,SBS Sports
-http://1.251.114.88:9981/stream/channelid/517319573
-#EXTINF:-1,SBS Sports
-http://1.251.114.88:9981/stream/channelid/503175572
-#EXTINF:-1,SBS Sports
-http://1.251.114.88:9981/stream/channelid/1958575432
-#EXTINF:-1,SBS Sports
-http://1.251.114.88:9981/stream/channelid/1013149577
-#EXTINF:-1,SBS Sports
-http://1.251.114.88:9981/stream/channelid/1860395815
-#EXTINF:-1,SBS Sports
-http://1.251.114.88:9981/stream/channelid/1122261790
 #EXTINF:-1,SBS Sports
 http://1.251.114.88:9981/stream/channelid/1689803681
-#EXTINF:-1,MBC SPORTS+
-http://1.251.114.88:9981/stream/channelid/1963188938
 #EXTINF:-1,MBC SPORTS+
 http://1.251.114.88:9981/stream/channelid/1557059415
 #EXTINF:-1,SkySports
@@ -120,19 +100,13 @@ http://1.251.114.88:9981/stream/channelid/1112602037
 #EXTINF:-1,SPOTV+
 http://1.251.114.88:9981/stream/channelid/1613045415
 #EXTINF:-1,SPOTV2
-http://1.251.114.88:9981/stream/channelid/626993869
-#EXTINF:-1,SPOTV2
 http://1.251.114.88:9981/stream/channelid/124250041
 #EXTINF:-1,SPOTV2
 http://1.251.114.88:9981/stream/channelid/2125520604
 #EXTINF:-1,SBS GOLF
 http://1.251.114.88:9981/stream/channelid/18411159
-#EXTINF:-1,SBS GOLF
-http://1.251.114.88:9981/stream/channelid/1176760930
 #EXTINF:-1,JTBC Golf
 http://1.251.114.88:9981/stream/channelid/825875865
-#EXTINF:-1,JTBC Golf
-http://1.251.114.88:9981/stream/channelid/2008386423
 #EXTINF:-1,OGN
 http://1.251.114.88:9981/stream/channelid/536773943
 #EXTINF:-1,Tooniverse
@@ -143,8 +117,6 @@ http://1.251.114.88:9981/stream/channelid/364371757
 http://1.251.114.88:9981/stream/channelid/481522238
 #EXTINF:-1,온스타일
 http://1.251.114.88:9981/stream/channelid/1613058915
-#EXTINF:-1,바둑TV
-http://1.251.114.88:9981/stream/channelid/878083520
 #EXTINF:-1,바둑TV
 http://1.251.114.88:9981/stream/channelid/1942708467
 #EXTINF:-1,마운틴TV
