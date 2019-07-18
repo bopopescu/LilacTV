@@ -38,24 +38,6 @@ def dis_or_enable_addon(addon_id, enable="true"):
             xbmc.log("### Disabled %s, response = %s" % (addon_id, response))
     return xbmc.executebuiltin('Container.Update(%s)' % xbmc.getInfoLabel('Container.FolderPath'))
 
-def tvheadend(enable="true"):
-    addon_id = "pvr.hts"
-    addon = '"%s"' % addon_id
-    if xbmc.getCondVisibility("System.HasAddon(%s)" % addon_id) and enable == "true":
-        return xbmc.log("### Skipped %s, reason = allready enabled" % addon_id)
-    elif not xbmc.getCondVisibility("System.HasAddon(%s)" % addon_id) and enable == "false":
-        xbmc.log("### Skipped %s, reason = not installed" % addon_id)
-        quit()
-    else:
-        dis_or_enable_addon("pvr.iptvsimple", false)
-        time.sleep(2)
-        do_json = '{"jsonrpc":"2.0","id":1,"method":"Addons.SetAddonEnabled","params":{"addonid":%s,"enabled":%s}}' % (addon, enable)
-        query = xbmc.executeJSONRPC(do_json)
-        response = json.loads(query)
-        xbmc.log("### Enabled %s, response = %s" % (addon_id, response))
-
-    return xbmc.executebuiltin('Container.Update(%s)' % xbmc.getInfoLabel('Container.FolderPath'))
-
 
 def AddonEnable():
     fi=open(os.path.join(__UpdateFlag__, 'mainmenu.DATA.xml'))
@@ -95,6 +77,7 @@ def AddNewAddon(repo, addon):
 
     time.sleep(2)
     dis_or_enable_addon(addon)
+
     #Custom file
     UsrDataPath = os.path.join(__lib__, 'usr', addon)
     if os.path.exists(UsrDataPath):
@@ -249,5 +232,4 @@ if __name__=='__main__':
         AddNewAddon('repository.matthuisman', 'plugin.video.au.freeview')
         AddNewRepo('repository.EzzerMacsWizard')
 
-        # tvheadend()
-        # dis_or_enable_addon("pvr.vdr.vnsi", "false")
+        dis_or_enable_addon("pvr.vdr.vnsi", "false")

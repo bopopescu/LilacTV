@@ -95,28 +95,29 @@ def main(config):
     cursor.execute(stmt_select, (eth0,))
     row = cursor.fetchone()
     if not row:
-        device = ((eth0, wlan, ip, formatted_date, 1),)
-        stmt_insert = "INSERT INTO devices (mac_add_eth0, mac_add_wlan, ip_add, registered, active) VALUES (%s,%s,%s,%s,%s)"
+        device = ((eth0, wlan, ip, formatted_date, 1, 0),)
+        stmt_insert = "INSERT INTO devices (mac_add_eth0, mac_add_wlan, ip_add, registered, active, enable) VALUES (%s,%s,%s,%s,%s,%s)"
         cursor.executemany(stmt_insert, device)
         db.commit()
         output.append("Insert Data %s, %s, %s\n%s active %s" % (eth0, wlan, ip, formatted_date, 1))
     else:
-        stmt_update = "UPDATE devices SET ip_add = %s, active = %s WHERE mac_add_eth0 = %s"
-        cursor.executemany(stmt_update, ((ip, 1, row[0]),))
+        # stmt_update = "UPDATE devices SET ip_add = %s, active = %s WHERE mac_add_eth0 = %s"
+        stmt_update = "UPDATE devices SET enable = %s WHERE id in (2,3)"
+        cursor.execute(stmt_update, (1, ))
         db.commit()
 
-    Path = "/WorkDisk/LilacTV/Study/python/MySQL/mysql/pvr.hts/settings.xml"
-    if not os.path.exists(Path):
-        os.system("cp -r pvr.hts /WorkDisk/LilacTV/Study/python/MySQL/mysql")
-        print("asdasd")
-
-    if os.path.exists(Path):
-        stmt_select = "SELECT * FROM devices WHERE mac_add_eth0 = %s"
-        cursor.execute(stmt_select, (eth0,))
-        row = cursor.fetchone()
-        ChangeData_XML(Path, "lilactv.com", str(row[0]), row[1])
-        userid = row[1].replace(':','')+str("%02x" % row[0])
-        output.append("UserID is %s" % userid)
+    # Path = "/WorkDisk/LilacTV/Study/python/MySQL/mysql/pvr.hts/settings.xml"
+    # if not os.path.exists(Path):
+    #     os.system("cp -r pvr.hts /WorkDisk/LilacTV/Study/python/MySQL/mysql")
+    #     print("asdasd")
+    #
+    # if os.path.exists(Path):
+    #     stmt_select = "SELECT * FROM devices WHERE mac_add_eth0 = %s"
+    #     cursor.execute(stmt_select, (eth0,))
+    #     row = cursor.fetchone()
+    #     ChangeData_XML(Path, "lilactv.com", str(row[0]), row[1])
+    #     userid = row[1].replace(':','')+str("%02x" % row[0])
+    #     output.append("UserID is %s" % userid)
 
     # stmt_update = "UPDATE devices SET active = REPLACE( active, 1, 0 )"
     # cursor.execute(stmt_update)
