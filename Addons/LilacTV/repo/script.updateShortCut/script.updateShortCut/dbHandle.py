@@ -26,10 +26,12 @@
 
 from __future__ import print_function
 
-import sys, os
+import sys, os, time
 import urllib, re
 import fcntl, socket, struct
 from datetime import datetime
+import xbmc, xbmcgui
+import json
 
 sys.path.append('/storage/.kodi/addons/script.module.myconnpy/lib/')
 import mysql.connector
@@ -64,6 +66,41 @@ def getHwAddr(ifname):
     str = ':'.join(['%02x' % ord(char) for char in info[18:24]])
     return str
 
+def IsPvrEnable(addon_id):
+    if xbmc.getCondVisibility("System.HasAddon(%s)" % addon_id):
+        return True
+    else:
+        return False
+
+# def dis_or_enable_addon(addon_id, enable="true"):
+#     addon = '"%s"' % addon_id
+#     if xbmc.getCondVisibility("System.HasAddon(%s)" % addon_id) and enable == "true":
+#         return False
+#     elif not xbmc.getCondVisibility("System.HasAddon(%s)" % addon_id) and enable == "false":
+#         xbmc.log("### Skipped %s, reason = not installed" % addon_id)
+#         quit()
+#     else:
+#         do_json = '{"jsonrpc":"2.0","id":1,"method":"Addons.SetAddonEnabled","params":{"addonid":%s,"enabled":%s}}' % (addon, enable)
+#         query = xbmc.executeJSONRPC(do_json)
+#         response = json.loads(query)
+#         if enable == "true":
+#             xbmc.log("### Enabled %s, response = %s" % (addon_id, response))
+#         else:
+#             xbmc.log("### Disabled %s, response = %s" % (addon_id, response))
+#         xbmc.executebuiltin('Container.Update(%s)' % xbmc.getInfoLabel('Container.FolderPath'))
+#         return True
+
+def dis_or_enable_addon(addon_id, enable):
+    addon = '"%s"' % addon_id
+    do_json = '{"jsonrpc":"2.0","id":1,"method":"Addons.SetAddonEnabled","params":{"addonid":%s,"enabled":%s}}' % (addon, enable)
+    query = xbmc.executeJSONRPC(do_json)
+    response = json.loads(query)
+    if enable == "true":
+        xbmc.log("### Enabled %s, response = %s" % (addon_id, response))
+    else:
+        xbmc.log("### Disabled %s, response = %s" % (addon_id, response))
+    return xbmc.executebuiltin('Container.Update(%s)' % xbmc.getInfoLabel('Container.FolderPath'))
+
 def main(config):
     # output = []
     db = mysql.connector.Connect(**config)
@@ -97,8 +134,22 @@ def main(config):
         stmt_select = "SELECT * FROM devices WHERE mac_add_eth0 = %s"
         cursor.execute(stmt_select, (eth0,))
         row = cursor.fetchone()
+        cursor.close()
+        db.close()
         ChangeData_XML(Path, "lilactv.com", str(row[0]), row[1])
+        if (row[7] == True):
+            time.sleep(4)
+            # xbmc.executebuiltin( "ActivateWindow(busydialog)" )
+            dialog = xbmcgui.Dialog()
+            if not IsPvrEnable("pvr.hts"):
+                if IsPvrEnable("pvr.iptvsimple"):
+                    dialog.ok("현재의 TV 서비스 끄기","1. [애드온] > [내 애드온] > [PVR 클라이언트]", "2. 첫번째 [PVR IPTV Simple Client] 선택", "3. [사용안함] 선택후 재시작 합니다.")
 
-    cursor.close()
-    db.close()
-    #return output
+                elif dialog.ok("새로운 TV 서비스 시작","Tvheadend 클라이언트를 시작합니다."):
+                    dis_or_enable_addon("pvr.hts", "true")
+                    time.sleep(3)
+            else:
+                if IsPvrEnable("pvr.iptvsimple"):
+                    dialog.ok("기존의 TV 서비스 끄기","1. [애드온] > [내 애드온] > [PVR 클라이언트]", "2. 첫번째 [PVR iptvsimple] 선택", "3. [사용안함] 선택후 재시작 합니다.")
+            # xbmc.executebuiltin( "Dialog.Close(busydialog)" )
+            
