@@ -1,111 +1,77 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
-import sys
-import os
-import time
+
+# MySQL Connector/Python - MySQL driver written in Python.
+# Copyright (c) 2009, 2013, Oracle and/or its affiliates. All rights reserved.
+
+# MySQL Connector/Python is licensed under the terms of the GPLv2
+# <http://www.gnu.org/licenses/old-licenses/gpl-2.0.html>, like most
+# MySQL Connectors. There are special exceptions to the terms and
+# conditions of the GPLv2 as it is applied to this software, see the
+# FOSS License Exception
+# <http://www.mysql.com/about/legal/licensing/foss-exception.html>.
+#
+# This program is free software; you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program; if not, write to the Free Software
+# Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA
+
+from __future__ import print_function
+
+import sys, os, time
+import urllib, re
+import fcntl, socket, struct
+from datetime import datetime
 import xbmc
 import xbmcgui
-import json
-from xml.dom import minidom
-import xml.etree.ElementTree as ET
 
-sys.path.append('/storage/.kodi/addons/script.updateShortCut/')
-import FileUtil
+sys.path.append('/storage/.kodi/addons/script.module.myconnpy/lib/')
+import mysql.connector
 
-__m3uPath__ = '/storage/.kodi/media/tv/iptv/playlist-lilactvHD.m3u'
-__m3uFile__ = 'playlist-lilactvHD.m3u'
+def getHwAddr(ifname):
+    s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+    info = fcntl.ioctl(s.fileno(), 0x8927,  struct.pack('256s', ifname[:15]))
+    str = ':'.join(['%02x' % ord(char) for char in info[18:24]])
+    return str
 
-def dis_or_enable_addon(addon_id, enable):
-    addon = '"%s"' % addon_id
-    do_json = '{"jsonrpc":"2.0","id":1,"method":"Addons.SetAddonEnabled","params":{"addonid":%s,"enabled":%s}}' % (addon, enable)
-    query = xbmc.executeJSONRPC(do_json)
-    response = json.loads(query)
-    if enable == "true":
-        xbmc.log("### Enabled %s, response = %s" % (addon_id, response))
+def main(config):
+    # output = []
+    db = mysql.connector.Connect(**config)
+    cursor = db.cursor()
+
+    eth0 = getHwAddr('eth0')
+
+    stmt_select = "SELECT * FROM devices WHERE mac_add_eth0 = %s"
+    cursor.execute(stmt_select, (eth0,))
+    row = cursor.fetchone()
+
+    #return to homescreen
+    xbmc.executebuiltin('ActivateWindow(home)')
+    #sleep long enough for the home screen to come up
+    time.sleep(1)
+    dialog = xbmcgui.Dialog()
+    if not row:
+        dialog.ok("WARNING","등록되지 않은 제품입니다.", " ", "lilactv.com에 문의하여 주세요.")
     else:
-        xbmc.log("### Disabled %s, response = %s" % (addon_id, response))
-    return xbmc.executebuiltin('Container.Update(%s)' % xbmc.getInfoLabel('Container.FolderPath'))
+        userid = row[1].replace(':','')+str("%02x" % row[0])
+        dialog.ok("제품정보", "Version : Kor-1.0.6", "IP ADD : "+row[3], "ID : "+userid,)
 
-def restartPVR():
-    dis_or_enable_addon("pvr.vdr.vnsi", "true")
-    time.sleep(2)
-    dis_or_enable_addon("pvr.vdr.vnsi", "false")
+    cursor.close()
+    db.close()
+    #return output
 
-def CheckKoreanChannel():
-    xml_file = '/storage/.kodi/userdata/addon_data/pvr.iptvsimple/settings.xml'
-    if not (os.path.exists(xml_file)):
-        return False
-
-    doc = ET.parse(xml_file)
-    root = doc.getroot()
-    
-    for e in root:
-        if e.attrib.get('id') == "m3uPath":            
-            if not e.attrib.get('value') == __m3uPath__:
-                return True
-
-    return False
-
-
-def RemoveBlankLine(fName):
-    clean_lines = []
-    with open(fName, "r") as f:
-        lines = f.readlines()
-        clean_lines = [l.strip() for l in lines if l.strip()]
-
-    with open(fName, "w") as f:
-        f.writelines('\n'.join(clean_lines))
-
-
-def set_settingsxml():
-    settings_file = '/storage/.kodi/userdata/addon_data/pvr.iptvsimple/settings.xml'
-           
-    config_file = open(settings_file, 'r')
-    config_text = config_file.read()
-    config_file.close()
-
-    xml_conf = minidom.parseString(config_text)
-
-  
-    for xml_entry in xml_conf.getElementsByTagName('setting'):
-        for attr_name, attr_value in xml_entry.attributes.items():      
-            if attr_name == 'id' and attr_value == 'm3uPath':
-                xml_entry.setAttribute("value", __m3uPath__)      
-
-    config_file = open(settings_file, 'w')
-    config_file.write(xml_conf.toprettyxml())
-    config_file.close()
-    RemoveBlankLine(settings_file)
-
-
-if __name__=='__main__':
-
-    if os.path.exists("/storage/.kodi/userdata/addon_data/service.libreelec.settings/oe_settings.xml"):
-        #return to homescreen
-        xbmc.executebuiltin('ActivateWindow(home)')
-        #sleep long enough for the home screen to come up
-        time.sleep(1)
-        if CheckKoreanChannel():
-            os.system("curl http://172.104.51.248/BadJin/Favourites/System/"+__m3uFile__+" > "+__m3uPath__)
-            set_settingsxml()
-            dialog = xbmcgui.Dialog()
-            if dialog.ok("TV채널 업데이트","고화질[1080p]로 리스트를 구성합니다.", " ", "***예고없이 방송이 중단될 수 있습니다.***"):
-                xbmc.executebuiltin('ActivateWindow(TVChannels)')
-                time.sleep(1)
-                xbmc.executebuiltin("PlayerControl(Stop)")
-                time.sleep(1)
-                restartPVR()
-
-        else:
-            if FileUtil.UpdateCheck4TVChannels(__m3uFile__):
-                dialog = xbmcgui.Dialog()
-                if dialog.ok("TV채널 업데이트", " ", "채널의 정보가 업데이트 되었습니다."):
-                    xbmc.executebuiltin('ActivateWindow(TVChannels)')
-                    time.sleep(1)
-                    condition = xbmc.getCondVisibility('Player.HasMedia')
-                    if condition:
-                        xbmc.executebuiltin("PlayerControl(Stop)")
-                        time.sleep(1)
-
-                    restartPVR()
-
-
+if __name__ == '__main__':
+    #
+    # Configure MySQL login and database to use in config.py
+    #
+    from config import Config
+    config = Config.dbinfo().copy()
+    main(config)

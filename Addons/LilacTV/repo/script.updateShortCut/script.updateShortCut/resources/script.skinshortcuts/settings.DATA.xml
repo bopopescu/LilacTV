@@ -32,4 +32,12 @@
 		<thumb />
 		<action>ActivateWindow(Programs,"plugin://plugin.program.super.favourites",return)</action>
 	</shortcut>
+	<shortcut>
+		<defaultID>script.change.SD</defaultID>
+		<label>제품정보</label>
+		<label2>프로그램</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://%2fstorage%2f.kodi%2faddons%2fscript.change.SD%2ficon.png/</thumb>
+		<action>ActivateWindow(Programs,"plugin://script.change.SD",return)</action>
+	</shortcut>
 </shortcuts>

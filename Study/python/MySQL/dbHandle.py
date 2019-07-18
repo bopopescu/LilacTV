@@ -32,6 +32,27 @@ import fcntl, socket, struct
 from datetime import datetime
 #sys.path.append('/storage/.kodi/addons/script.module.myconnpy/lib/')
 import mysql.connector
+import xml.etree.ElementTree as ET
+
+def ChangeData_XML(xml_file, value1, value2, value3):
+    doc = ET.parse(xml_file)
+    root = doc.getroot()
+    removeFlag = False
+
+    for e in root.findall("setting"):
+        if e.get("id") == "host":
+            e.set("value", value1)
+            removeFlag = True
+        if e.get("id") == "user":
+            e.set("value", "user"+value2)
+            removeFlag = True
+        if e.get("id") == "pass":
+            e.set("value", value3)
+            removeFlag = True
+
+    if removeFlag:
+        doc.write(xml_file, encoding="utf-8", xml_declaration=True)
+
 
 def check_in():
     wan = re.search(re.compile(r'\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}'),urllib.urlopen('http://checkip.dyndns.org').read()).group()
@@ -67,8 +88,8 @@ def main(config):
     # cursor.execute(stmt_create)
 
     ip = check_in()
-    eth0 = getHwAddr('enp0s31f6')
-    wlan = getHwAddr('enp0s31f6')
+    eth0 = getHwAddr('enp0s25')
+    wlan = getHwAddr('enp0s25')
 
     stmt_select = "SELECT mac_add_eth0 FROM devices WHERE mac_add_eth0 = %s"
     cursor.execute(stmt_select, (eth0,))
@@ -83,7 +104,19 @@ def main(config):
         stmt_update = "UPDATE devices SET ip_add = %s, active = %s WHERE mac_add_eth0 = %s"
         cursor.executemany(stmt_update, ((ip, 1, row[0]),))
         db.commit()
-        output.append(formatted_date)
+
+    Path = "/WorkDisk/LilacTV/Study/python/MySQL/mysql/pvr.hts/settings.xml"
+    if not os.path.exists(Path):
+        os.system("cp -r pvr.hts /WorkDisk/LilacTV/Study/python/MySQL/mysql")
+        print("asdasd")
+
+    if os.path.exists(Path):
+        stmt_select = "SELECT * FROM devices WHERE mac_add_eth0 = %s"
+        cursor.execute(stmt_select, (eth0,))
+        row = cursor.fetchone()
+        ChangeData_XML(Path, "lilactv.com", str(row[0]), row[1])
+        userid = row[1].replace(':','')+str("%02x" % row[0])
+        output.append("UserID is %s" % userid)
 
     # stmt_update = "UPDATE devices SET active = REPLACE( active, 1, 0 )"
     # cursor.execute(stmt_update)

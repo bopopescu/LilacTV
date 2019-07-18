@@ -31,7 +31,7 @@ class Config(object):
         mysql.connector.Connect(**Config.dbinfo())
     """
 
-    HOST = 'lilactv.ml'
+    HOST = 'lilactv.com'
     DATABASE = 'LilacTVDB'
     USER = 'railracUser'
     PASSWORD = 'railrac'

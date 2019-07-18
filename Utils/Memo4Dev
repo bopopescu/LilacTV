@@ -277,8 +277,6 @@ find . -exec perl -pi -e 's/\/khadas\//\/amlogic\//g' {} \;
 
 iconv -c -f euc-kr -t utf-8 자막이름.smi > 자막이름.smi
 
-adb remount adb push package.apk /system/apps/
-
 echo -n Welcome | md5sum
 fba5cd974fc638f8bd8b8868f4bdfc81
 
@@ -293,6 +291,7 @@ shift + del >>> line 삭제
 ctrl + shift +k >>> line 삭제
 ctrl + up/down >>> line 이동
 ctrl + / >>> 주석처리
+shit + tab >>> 블럭 Tab 지우기
 
 In the new my-sql if the password is left empty while installing then it is based on the auth_socket plugin.
 The correct way is to login to my-sql with sudo privilege.
