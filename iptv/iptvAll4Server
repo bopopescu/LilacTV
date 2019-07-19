@@ -1,7 +1,7 @@
 #!/bin/sh
 
 cd /root/LilacTV
-git pull origin master
+git pull https://badjin:Por96311@github.com/badjin/LilacTV.git master
 
 cd iptv
 ./iptv-check-all "List1"
@@ -13,4 +13,4 @@ sleep 1
 cd ../
 git add .
 git commit -m "List Update"
-git pull https://badjin:Por96311@github.com/badjin/LilacTV.git master
+git push https://badjin:Por96311@github.com/badjin/LilacTV.git master
