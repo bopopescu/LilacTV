@@ -7,18 +7,12 @@ echo "  **                                                                      
 echo "  **                                                           by Bad Jin   **"
 echo "  ****************************************************************************"
 
-tIP="172.104.51.248"
 path=$(pwd)
 ListNo=$1
 sourcePath=$path/update/playlist-lilactvHD$1.m3u
-Password="Por96311"
-
-ip="$(ifconfig | grep -A 1 'eth0' | tail -1 | cut -d ':' -f 2 | cut -d ' ' -f 1)"
-option=StrictHostKeyChecking=no
 targetPath="/opt/lampstack-5.6.24-0/apache2/htdocs/BadJin/Favourites/System"
 
 echo " "
-ssh-keygen -f ~/.ssh/known_hosts -R ${tIP}
-echo "  == Upload M3U files to the ${tIP}"
-sshpass -p $Password scp -o $option -r $sourcePath root@${tIP}:/$targetPath
+echo "  == Copy all M3U files to the target folder"
+cp $sourcePath $targetPath
 echo " "

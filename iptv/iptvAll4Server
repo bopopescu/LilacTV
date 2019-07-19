@@ -1,6 +1,9 @@
 #!/bin/sh
 
-cd /WorkDisk/LilacTV/iptv
+cd /root/LilacTV
+git pull origin master
+
+cd iptv
 ./iptv-check-all "List1"
 sleep 1
 ./iptv-check-all "List2"
