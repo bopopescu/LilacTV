@@ -9,11 +9,8 @@ sleep 1
 ./iptv-check-all "List2"
 sleep 1
 ./iptv-check-all "List3"
-<<<<<<< HEAD
 
 cd ../
 git add .
 git commit -m "List Update"
 git push https://badjin:Por96311@github.com/badjin/LilacTV.git master
-=======
->>>>>>> f264038c6fe9e485aa0252a7895fc5e21bd82bf9
