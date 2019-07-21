@@ -1,6 +1,6 @@
 #!/bin/sh
 
-cd /root/LilacTV
+cd /SeeboData/LilacTV
 git pull https://badjin:Por96311@github.com/badjin/LilacTV.git master
 
 cd iptv
