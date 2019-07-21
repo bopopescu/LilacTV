@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 #
 #       Copyright (C) 2014-2015
 #       Sean Poyser (seanpoyser@gmail.com)
@@ -466,10 +467,12 @@ def GetSFFolder(text):
     if len(startFolder) == 0 or not sfile.exists(startFolder):
         startFolder = None
 
-    dia=xbmcgui.Dialog()
-    dia.ok("Test",startFolder)
+    dialog = xbmcgui.Dialog()
+    if dialog.ok("즐겨찾기", " ", "즐겨찾기에 추가하시겠습니까?"):    
+        folder = "special://profile/addon_data/plugin.program.super.favourites/Super Favourites/즐겨찾기/"
 
-    folder = GetFolder(text, startFolder)
+    # folder = GetFolder(text, startFolder)
+
     if not folder:
         return None
 

@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 #
 #       Copyright (C) 2014-
 #       Sean Poyser (seanpoyser@gmail.com)
@@ -17,7 +18,6 @@
 #  the Free Software Foundation, 675 Mass Ave, Cambridge, MA 02139, USA.
 #  http://www.gnu.org/copyleft/gpl.html
 #
-
 
 import xbmc
 import xbmcaddon
@@ -241,6 +241,7 @@ def main():
     addMainItems()
 
     addingMainItems = False
+
     parseFolder(PROFILE)
 
 
@@ -499,30 +500,21 @@ def convertSFToFave(name, thumb, cmd, keyword):
 
 def addToSF(name, thumb, cmd,  keyword, meta):
     text   = GETTEXT(30019)
-    # folder = utils.GetSFFolder(text)
-    #
-    # if not folder:
-    #     return False
+    folder = utils.GetSFFolder(text)
 
-    dialog = xbmcgui.Dialog()
-    if dialog.ok("즐겨찾기", " ", "즐겨찾기에 추가하시겠습니까?"):
-        temp1 = 'special://profile/addon_data/plugin.program.super.favourites/'
-        temp2 =  os.path.join(ROOT, 'Super Favourites')
-        folder =  os.path.join(temp, '즐겨찾기')
-
-        fave    = convertSFToFave(name, thumb, cmd,  keyword)
-        fave[2] = favourite.updateSFOption(fave[2], 'meta', urllib.quote_plus(meta))
-
-        file = os.path.join(folder, FILENAME)
-
-        #if it is already in there don't add again
-        if favourite.findFave(file, fave[2])[0]:
-            return False
-
-        return addToFile(fave, file)
-    else:
+    if not folder:
         return False
 
+    fave    = convertSFToFave(name, thumb, cmd,  keyword)
+    fave[2] = favourite.updateSFOption(fave[2], 'meta', urllib.quote_plus(meta))
+
+    file = os.path.join(folder, FILENAME)
+
+    #if it is already in there don't add again
+    if favourite.findFave(file, fave[2])[0]:
+        return False
+
+    return addToFile(fave, file)
 
 
 def addToFile(fave, file):
@@ -1134,6 +1126,9 @@ def changePlaybackMode(file, cmd):
 def editFolder(path, name):
     cfg       = os.path.join(path, FOLDERCFG)
     cfg       = parameters.getParams(cfg)
+
+    # dialog = xbmcgui.Dialog()
+    # dialog.ok("즐겨찾기", " ", "즐겨찾기에서 삭제합니다.")
 
     thumb     = parameters.getParam('ICON',     cfg)
     fanart    = parameters.getParam('FANART',   cfg)
