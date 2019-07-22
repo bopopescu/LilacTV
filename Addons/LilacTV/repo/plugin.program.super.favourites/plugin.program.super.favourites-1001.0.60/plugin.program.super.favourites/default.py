@@ -1127,9 +1127,6 @@ def editFolder(path, name):
     cfg       = os.path.join(path, FOLDERCFG)
     cfg       = parameters.getParams(cfg)
 
-    # dialog = xbmcgui.Dialog()
-    # dialog.ok("즐겨찾기", " ", "즐겨찾기에서 삭제합니다.")
-
     thumb     = parameters.getParam('ICON',     cfg)
     fanart    = parameters.getParam('FANART',   cfg)
     lock      = parameters.getParam('LOCK',     cfg)
@@ -2858,7 +2855,6 @@ def addDir(label, mode, index=-1, path = '', cmd = '', thumbnail='', isFolder=Tr
 
     xbmcplugin.addDirectoryItem(handle=int(sys.argv[1]), url=u, listitem=liz, isFolder=isFolder, totalItems=totalItems)
 
-
 ## --------------------------------------------------------------------------------------------------------------------------
 
 params = utils.get_params(sys.argv[2])
@@ -2880,6 +2876,8 @@ except: mode = _MAIN
 try:    cmd = params['cmd']
 except: cmd = None
 
+# mode = _MAIN
+# cmd = None
 
 #----------------------------------------------------------------
 if mode == _ACTIVATEWINDOW:
@@ -2895,6 +2893,9 @@ if mode == _ACTIVATEWINDOW:
 
         try:    cmd = params['cmd']
         except: cmd = None
+
+        # mode = _FOLDER
+        # cmd = None
 #----------------------------------------------------------------
 
 global itemIndex
@@ -3001,6 +3002,8 @@ utils.log('-------------------------------------------------------')
 
 
 if mode == _PLAYMEDIA:
+    dialog = xbmcgui.Dialog()
+    dialog.ok("test", "test1")
     if not contentMode:
         mode = _IGNORE
         if isHome:
@@ -3010,6 +3013,9 @@ if mode == _PLAYMEDIA:
 
 
 elif mode == _ACTIVATEWINDOW:
+    dialog = xbmcgui.Dialog()
+    dialog.ok("test", "test2")
+    # mode = _FOLDER
     if not contentMode and not isHome:
         mode  = _IGNORE
         doEnd = False
@@ -3039,6 +3045,8 @@ elif mode  == _ACTIVATEWINDOW_XBMC:
 
 
 elif mode == _PLAYLIST:
+    dialog = xbmcgui.Dialog()
+    dialog.ok("test", "test5")
     import playlist
     playlist.play(cmd)
 
@@ -3056,7 +3064,6 @@ elif mode == _XBMC:
 elif mode == _FOLDER:
     thepath   = path
     theFolder = label
-
     import locking
     if locking.unlock(thepath):
         if mode != _MAIN:
