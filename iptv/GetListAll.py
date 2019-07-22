@@ -120,8 +120,8 @@ def doConvert():
 	for iptv_file in sys.argv[1:]:
 		ListNo = re.search("(\d)[.]",iptv_file).group(1)
 		if UpdateChannelURL(iptv_file, ListNo):
-			# os.system(path+"/./UploadM3U_all"+" "+ListNo)
-			os.system(path+"/./cp2M3U_all"+" "+ListNo)
+			os.system(path+"/./UploadM3U_all"+" "+ListNo)
+			#os.system(path+"/./cp2M3U_all"+" "+ListNo)
 			print "Updating <%s> OK!" % iptv_file
 		else:
 			print "Updating <%s> Failture!" % iptv_file
