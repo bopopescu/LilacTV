@@ -3162,7 +3162,6 @@ elif mode == _ADDTOSF:
     meta    = params['meta']
     addToSF(name, thumb, cmd, keyword, meta)
 
-
 elif mode == _COPYTOSF:
     thumb  = params['thumb']
     fanart = params['fanart']
