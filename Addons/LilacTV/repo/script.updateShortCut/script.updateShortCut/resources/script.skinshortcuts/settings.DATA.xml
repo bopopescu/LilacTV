@@ -25,14 +25,6 @@
 		<action>ActivateWindow(FileManager)</action>
 	</shortcut>
 	<shortcut>
-		<defaultID />
-		<label>즐겨찾기 설정</label>
-		<label2>Custom item</label2>
-		<icon>DefaultShortcut.png</icon>
-		<thumb />
-		<action>ActivateWindow(Programs,"plugin://plugin.program.super.favourites",return)</action>
-	</shortcut>
-	<shortcut>
 		<defaultID>script.change.SD</defaultID>
 		<label>제품정보</label>
 		<label2>프로그램</label2>
