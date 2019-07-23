@@ -2,10 +2,10 @@
 <shortcuts>
 	<shortcut>
 		<defaultID />
-		<label>PLEX</label>
+		<label>즐겨찾기 변경</label>
 		<label2>Custom item</label2>
 		<icon>DefaultShortcut.png</icon>
 		<thumb />
-		<action>RunAddOn(script.plex)</action>
+		<action>ActivateWindow(Programs,"plugin://plugin.program.super.favourites/?label=%EC%A6%90%EA%B2%A8%EC%B0%BE%EA%B8%B0&amp;mode=400&amp;path=special%3A%2F%2Fprofile%2Faddon_data%2Fplugin.program.super.favourites%2FSuper+Favourites%2F%EC%A6%90%EA%B2%A8%EC%B0%BE%EA%B8%B0&amp;image=http%3A%2F%2Fpost.phinf.naver.net%2FMjAxOTA2MjdfMTMg%2FMDAxNTYxNTk4MDE2MTk1.lNFEK2r5J1RJEpLlsW5st6GIQhBfE2yyXvPRuMwYr6Ug.12Wj8A63Qo4c0uIeAy-kSZBEgqZmyjWHARw-kw7-P34g.JPEG%2FIIVXkDKTP6eL4kqRUGPzemX9UJ_g.jpg&amp;fanart=special%3A%2F%2Fhome%2Fmedia%2FWallpaper%2Fwallpaper_20170511_134106.jpg&amp;content_type=",return)</action>
 	</shortcut>
 </shortcuts>

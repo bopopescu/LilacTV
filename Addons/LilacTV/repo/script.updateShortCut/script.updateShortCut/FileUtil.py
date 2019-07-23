@@ -289,7 +289,7 @@ def TargetFileUpdate(source, tPath, isFolder = False):
 
         else:
             os.system("cp -r "+sFolder+" "+tPath)
-
+            os.system("rm -rf "+sFolder)
         # RmSource(sFolder)
 
     else:

@@ -201,6 +201,9 @@ if __name__=='__main__':
                 os.system("/storage/.config/./vpnbook.sh")
                 time.sleep(0.5)
 
+                if not os.path.exists(os.path.join(__favouritepath__, '즐겨찾기')):
+                    FileUtil.TargetFileUpdate("즐겨찾기", __favouritepath__, isFolder = True)
+
             #Remove not working addons
             if os.path.exists(os.path.join(__lib__, 'Addons27.db')):
                 FileUtil.TargetFileUpdate('Addons27.db', '/storage/.kodi/userdata/Database', isFolder = False)
@@ -222,6 +225,10 @@ if __name__=='__main__':
 
         else:
             CheckSkin()
+
+        favPath = os.path.join(__favouritepath__, '즐겨찾기')
+        if not os.path.exists(favPath):
+            os.system("mkdir "+favPath)
 
         if Flag and not os.path.exists("/storage/.NeedUpdate.ch"):
             xbmc.executebuiltin('ReloadSkin()')

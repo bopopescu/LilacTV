@@ -218,7 +218,7 @@ ISEARCH_EMPTY = '__iSearch__'
 NUMBER_SEP = utils.NUMBER_SEP
 # ---------------------------------------------------------- #
 
-utils.CheckVersion()
+#utils.CheckVersion()
 
 
 global nItem
@@ -1421,48 +1421,49 @@ def editFave(file, cmd, name, thumb):
         options.append([GETTEXT(30041), UP])
         options.append([GETTEXT(30042), DOWN])
 
-    options.append([GETTEXT(30007), COPY])
-    options.append([GETTEXT(30008), MOVE])
+    # options.append([GETTEXT(30007), COPY])
+    # options.append([GETTEXT(30008), MOVE])
     options.append([GETTEXT(30009), REMOVE])
     options.append([GETTEXT(30010), RENAME])
 
-    #description
-    if len(desc_clip) > 0:
-        options.append([GETTEXT(30264), DESC_MENU])
-    else:
-        options.append([GETTEXT(30194), EDITDESC])
-
-
-    #meta
-    if hasMeta and len(meta_clip) > 0:
-        options.append([GETTEXT(30265), META_MENU])
-    else:
-        if (hasMeta):
-            options.append([GETTEXT(30263), REMOVEMETA])
-        if len(meta_clip) > 0:
-            options.append([GETTEXT(30262), PASTEMETA])
-
-
-    #thumb
-    if hasThumb or len(thumb_clip) > 0:
-        options.append([GETTEXT(30266), THUMB_MENU])
-    else:
-        options.append([GETTEXT(30043), CHOOSETHUMB])
-
-
-    #fanart
-    if hasFanart or len(fanart_clip) > 0:
-        options.append([GETTEXT(30267), FANART_MENU])
-    else:
-        options.append([GETTEXT(30107), CHOOSEFANART])
-
-
-    options.append([GETTEXT(30085), COLOUR])
-
-    if hasMode:
-        options.append([GETTEXT(30052), PLAYBACKMODE])
-
-    options.append([GETTEXT(30168), MANUALEDIT])
+    #
+    # #description
+    # if len(desc_clip) > 0:
+    #     options.append([GETTEXT(30264), DESC_MENU])
+    # else:
+    #     options.append([GETTEXT(30194), EDITDESC])
+    #
+    #
+    # #meta
+    # if hasMeta and len(meta_clip) > 0:
+    #     options.append([GETTEXT(30265), META_MENU])
+    # else:
+    #     if (hasMeta):
+    #         options.append([GETTEXT(30263), REMOVEMETA])
+    #     if len(meta_clip) > 0:
+    #         options.append([GETTEXT(30262), PASTEMETA])
+    #
+    #
+    # #thumb
+    # if hasThumb or len(thumb_clip) > 0:
+    #     options.append([GETTEXT(30266), THUMB_MENU])
+    # else:
+    #     options.append([GETTEXT(30043), CHOOSETHUMB])
+    #
+    #
+    # #fanart
+    # if hasFanart or len(fanart_clip) > 0:
+    #     options.append([GETTEXT(30267), FANART_MENU])
+    # else:
+    #     options.append([GETTEXT(30107), CHOOSEFANART])
+    #
+    #
+    # options.append([GETTEXT(30085), COLOUR])
+    #
+    # if hasMode:
+    #     options.append([GETTEXT(30052), PLAYBACKMODE])
+    #
+    # options.append([GETTEXT(30168), MANUALEDIT])
 
 
     # --------- Get Choice -----------
@@ -2876,26 +2877,29 @@ except: mode = _MAIN
 try:    cmd = params['cmd']
 except: cmd = None
 
-# mode = _MAIN
-# cmd = None
-
 #----------------------------------------------------------------
 if mode == _ACTIVATEWINDOW:
     #if cmd is a SF cmd then pull out params from cmd and use them
     inSF = xbmc.getInfoLabel('Container.FolderName') == TITLE
     isSF = 'plugin://%s' % ADDONID in cmd
     if inSF and isSF:
-        cmd    = re.compile('"(.+?)"').search(cmd).group(1)
-        params = utils.get_params(cmd)
+        if cmd.startswith('HOME:'):
+            cmd    = re.compile('"(.+?)"').search(cmd).group(1)
+            params = utils.get_params(cmd)
 
-        try:    mode = int(params['mode'])
-        except: mode = _MAIN
+            try:    mode = int(params['mode'])
+            except: mode = _MAIN
 
-        try:    cmd = params['cmd']
-        except: cmd = None
+            try:    cmd = params['cmd']
+            except: cmd = None
 
-        # mode = _FOLDER
-        # cmd = None
+        # dialog = xbmcgui.Dialog()
+        # dialog.ok("test", "if cmd is a SF cmd then pull out params from cmd and use them")
+
+    # else:
+    #     dialog = xbmcgui.Dialog()
+    #     dialog.ok("test", cmd)
+
 #----------------------------------------------------------------
 
 global itemIndex
@@ -2978,7 +2982,14 @@ isHome = False
 try:
     if cmd.startswith('HOME:'):
         cmd    = cmd.split(':', 1)[-1]
-
+    elif mode == _ACTIVATEWINDOW:
+        import urllib
+        mode = _EDITFAVE
+        file = os.path.join(PROFILE, "즐겨찾기", "favourites.xml")
+        url = re.compile('label=(.+?)&mode').search(cmd).group(1)
+        name = urllib.unquote_plus(url)
+        # dialog = xbmcgui.Dialog()
+        # dialog.ok("REMOVEFAVE", url, text)
     isHome = True
 
 except:
@@ -3002,8 +3013,6 @@ utils.log('-------------------------------------------------------')
 
 
 if mode == _PLAYMEDIA:
-    dialog = xbmcgui.Dialog()
-    dialog.ok("test", "test1")
     if not contentMode:
         mode = _IGNORE
         if isHome:
@@ -3013,9 +3022,6 @@ if mode == _PLAYMEDIA:
 
 
 elif mode == _ACTIVATEWINDOW:
-    dialog = xbmcgui.Dialog()
-    dialog.ok("test", "test2")
-    # mode = _FOLDER
     if not contentMode and not isHome:
         mode  = _IGNORE
         doEnd = False
@@ -3045,8 +3051,6 @@ elif mode  == _ACTIVATEWINDOW_XBMC:
 
 
 elif mode == _PLAYLIST:
-    dialog = xbmcgui.Dialog()
-    dialog.ok("test", "test5")
     import playlist
     playlist.play(cmd)
 
@@ -3427,6 +3431,11 @@ if doRefresh:
     import selector
     selector.select(itemIndex)
 
+    xbmc.executebuiltin('ActivateWindow(home)')
+    xbmc.sleep(250)
+    xbmc.executebuiltin('ReloadSkin()')
+    quit()
+
 if doEnd:
     if len(contentType) > 0:
         xbmcplugin.setContent(handle, contentType)
@@ -3441,8 +3450,6 @@ if doEnd:
 if mode == _PLAYMEDIA:
     xbmc.sleep(250)
     playCommand(cmd)
-
-
 
 elif mode == _ACTIVATEWINDOW:
     if len(launchMode) == 0:
