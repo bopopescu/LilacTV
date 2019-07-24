@@ -1,0 +1,4 @@
+<favourites>
+	<favourite name="멜론 TOP 100 " thumb="special://home/media/youtube/melon.png">ActivateWindow(10025,&quot;plugin://plugin.video.youtube/channel/UCzEFn_4-KfMXmDE_mseCCJQ/playlist/PLBSvleni5is2u66UMpc7nLOK6hh7w5OrQ/?sf_options=fanart%3Dspecial%3A%2F%2Fhome%2Fmedia%2Fyoutube%2Ffanart.jpg%26_options_sf&quot;,return)</favourite>
+	<favourite name="Vevo Hot This Week 2017" thumb="special://home/media/youtube/vevo.png">ActivateWindow(10025,&quot;plugin://plugin.video.youtube/channel/UC1crMgATGeegnQTZTImZuqA/playlist/PL9NY5axt700H1sW_vK8E4KTETLHoD6_0K/?sf_options=fanart%3Dspecial%3A%2F%2Fhome%2Fmedia%2Fyoutube%2Ffanart.jpg%26meta%3Dlabel%253DVevo%252BHot%252BThis%252BWeek%252B2017%26_options_sf&quot;,return)</favourite>
+</favourites>
