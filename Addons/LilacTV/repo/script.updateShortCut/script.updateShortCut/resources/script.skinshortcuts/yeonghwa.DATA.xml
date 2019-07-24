@@ -6,7 +6,7 @@
 		<label2>Custom item</label2>
 		<icon>DefaultShortcut.png</icon>
 		<thumb />
-		<action>ActivateWindow(Videos,"plugin://plugin.video.themagicdragon/?url=https%3A%2F%2Fraw.githubusercontent.com%2Ftombebbs1%2Fmagicdragon%2Fmaster%2Fpopular.txt&amp;mode=1&amp;name=%5BB%5D%5BI%5D%5BCOLORwhite%5DPeople+Watching%5B%2FB%5D%5B%2FI%5D%5B%2FCOLOR%5D&amp;fanart=https%3A%2F%2Fgithub.com%2Ftombebbs1%2Fmagicdragon%2Fblob%2Fmaster%2Ffanart.jpg%3Fraw%3Dtrue",return)</action>
+		<action>ActivateWindow(Videos,"plugin://plugin.video.tempest/?action=movies&amp;url=trending",return)</action>
 	</shortcut>
 	<shortcut>
 		<defaultID />

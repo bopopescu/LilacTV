@@ -113,16 +113,16 @@ def main(config):
     eth0 = getHwAddr('eth0')
     wlan = getHwAddr('wlan0')
 
-    stmt_select = "SELECT mac_add_eth0 FROM devices WHERE mac_add_eth0 = %s"
+    stmt_select = "SELECT macAddEth0 FROM devices WHERE macAddEth0 = %s"
     cursor.execute(stmt_select, (eth0,))
     row = cursor.fetchone()
     if not row:
-        device = ((eth0, wlan, ip, formatted_date, 1),)
-        stmt_insert = "INSERT INTO devices (mac_add_eth0, mac_add_wlan, ip_add, registered, active) VALUES (%s,%s,%s,%s,%s)"
+        device = ((eth0, wlan, ip, 1),)
+        stmt_insert = "INSERT INTO devices (macAddEth0, macAddWlan, ipAdd, online) VALUES (%s,%s,%s,%s)"
         cursor.executemany(stmt_insert, device)
         db.commit()
     else:
-        stmt_update = "UPDATE devices SET ip_add = %s, active = %s WHERE mac_add_eth0 = %s"
+        stmt_update = "UPDATE devices SET ipAdd = %s, online = %s WHERE macAddEth0 = %s"
         cursor.executemany(stmt_update, ((ip, 1, row[0]),))
         db.commit()
 
@@ -131,13 +131,13 @@ def main(config):
         os.system("cp -r /storage/.kodi/addons/script.updateShortCut/pvr.hts /storage/.kodi/userdata/addon_data")
 
     if os.path.exists(Path):
-        stmt_select = "SELECT * FROM devices WHERE mac_add_eth0 = %s"
+        stmt_select = "SELECT * FROM devices WHERE macAddEth0 = %s"
         cursor.execute(stmt_select, (eth0,))
         row = cursor.fetchone()
         cursor.close()
         db.close()
-        ChangeData_XML(Path, "lilactv.com", str(row[0]), row[1])
-        if (row[7] == True):
+        ChangeData_XML(Path, "lilactv.com", str(row[0]), row[0])
+        if (row[4] == True):
             time.sleep(4)
             # xbmc.executebuiltin( "ActivateWindow(busydialog)" )
             dialog = xbmcgui.Dialog()
@@ -152,4 +152,3 @@ def main(config):
                 if IsPvrEnable("pvr.iptvsimple"):
                     dialog.ok("기존의 TV 서비스 끄기","1. [애드온] > [내 애드온] > [PVR 클라이언트]", "2. 첫번째 [PVR iptvsimple] 선택", "3. [사용안함] 선택후 재시작 합니다.")
             # xbmc.executebuiltin( "Dialog.Close(busydialog)" )
-            
