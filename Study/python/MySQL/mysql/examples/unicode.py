@@ -27,50 +27,59 @@
 from __future__ import print_function
 
 import sys, os
-import urllib, re
-import fcntl, socket, struct
-from datetime import datetime
 
-sys.path.append('/storage/.kodi/addons/script.module.myconnpy/lib/')
 import mysql.connector
 
-def check_in():
-    wan = re.search(re.compile(r'\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}'),urllib.urlopen('http://checkip.dyndns.org').read()).group()
-    return "%s"%wan
+"""
 
-def getHwAddr(ifname):
-    s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-    info = fcntl.ioctl(s.fileno(), 0x8927,  struct.pack('256s', ifname[:15]))
-    str = ':'.join(['%02x' % ord(char) for char in info[18:24]])
-    return str
+Example using MySQL Connector/Python showing:
+* the usefulness of unicode, if it works correctly..
+* dropping and creating a table
+* inserting and selecting a row
+"""
+
+info = """
+For this to work you need to make sure your terminal can output
+unicode character correctly. Check if the encoding of your terminal
+is set to UTF-8.
+"""
 
 def main(config):
     output = []
     db = mysql.connector.Connect(**config)
     cursor = db.cursor()
 
-    now = datetime.now()
-    formatted_date = now.strftime('%Y-%m-%d %H:%M:%S')
+    # Show the unicode string we're going to use
+    unistr = "Show the unicode string we're going to use"
+    output.append("Unicode string: %s" % unistr.encode('utf8'))
 
-    ip = check_in()
-    eth0 = getHwAddr('eth0')
-    wlan = getHwAddr('wlan0')
+    # Drop table if exists, and create it new
+    # stmt_drop = "DROP TABLE IF EXISTS unicode"
+    # cursor.execute(stmt_drop)
 
-    device = ((eth0, wlan, ip))
-    stmt_insert = """
-        INSERT INTO items (macaddeth0, macaddwlan, ipadd, online)
-        VALUES (%s,%s,%s,1)
-        ON DUPLICATE KEY UPDATE
-        ipadd = VALUES(ipadd), online = VALUES(online)
-    """
-    try:
-        cursor.execute(stmt_insert, device)
+    # stmt_create = """
+    # CREATE TABLE unicode (
+    #     id TINYINT UNSIGNED NOT NULL AUTO_INCREMENT,
+    #     str VARCHAR(50) DEFAULT '' NOT NULL,
+    #     PRIMARY KEY (id)
+    # ) CHARACTER SET 'utf8'"""
+    # cursor.execute(stmt_create)
 
-    except (mysql.connector.errors.Error, TypeError) as e:
-        output.append("Failed inserting %s\nError: %s\n" % (device,e))
-        raise    
-
+    # Insert a row
+    stmt_insert = "INSERT INTO unicode (str) VALUES (%s)"
+    cursor.execute(stmt_insert, (unistr,))
     db.commit()
+
+    # Select it again and show it
+    stmt_select = "SELECT str FROM unicode WHERE id = %s"
+    cursor.execute(stmt_select, (1,))
+    row = cursor.fetchone()
+
+    output.append("Unicode string coming from db: %s" % row[0].encode('utf8'))
+
+    # Cleaning up, dropping the table again
+    # cursor.execute(stmt_drop)
+
     cursor.close()
     db.close()
     return output
@@ -81,5 +90,6 @@ if __name__ == '__main__':
     #
     from config import Config
     config = Config.dbinfo().copy()
+    print(info)
     out = main(config)
     print('\n'.join(out))

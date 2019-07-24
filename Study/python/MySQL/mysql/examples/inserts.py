@@ -27,50 +27,56 @@
 from __future__ import print_function
 
 import sys, os
-import urllib, re
-import fcntl, socket, struct
-from datetime import datetime
 
-sys.path.append('/storage/.kodi/addons/script.module.myconnpy/lib/')
 import mysql.connector
 
-def check_in():
-    wan = re.search(re.compile(r'\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}'),urllib.urlopen('http://checkip.dyndns.org').read()).group()
-    return "%s"%wan
+"""
 
-def getHwAddr(ifname):
-    s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-    info = fcntl.ioctl(s.fileno(), 0x8927,  struct.pack('256s', ifname[:15]))
-    str = ':'.join(['%02x' % ord(char) for char in info[18:24]])
-    return str
+Example using MySQL Connector/Python showing:
+* dropping and creating a table
+* inserting 3 rows using executemany()
+* selecting data and showing it
+
+"""
 
 def main(config):
     output = []
     db = mysql.connector.Connect(**config)
     cursor = db.cursor()
+    
+    # Drop table if exists, and create it new
+    stmt_drop = "DROP TABLE IF EXISTS names"
+    cursor.execute(stmt_drop)
+    
+    stmt_create = """
+    CREATE TABLE names (
+        id TINYINT UNSIGNED NOT NULL AUTO_INCREMENT,
+        name VARCHAR(30) DEFAULT '' NOT NULL,
+        info TEXT DEFAULT '',
+        age TINYINT UNSIGNED DEFAULT '30',
+        PRIMARY KEY (id)
+    )"""
+    cursor.execute(stmt_create)
 
-    now = datetime.now()
-    formatted_date = now.strftime('%Y-%m-%d %H:%M:%S')
+    info = "abc"*10000
 
-    ip = check_in()
-    eth0 = getHwAddr('eth0')
-    wlan = getHwAddr('wlan0')
-
-    device = ((eth0, wlan, ip))
-    stmt_insert = """
-        INSERT INTO items (macaddeth0, macaddwlan, ipadd, online)
-        VALUES (%s,%s,%s,1)
-        ON DUPLICATE KEY UPDATE
-        ipadd = VALUES(ipadd), online = VALUES(online)
-    """
-    try:
-        cursor.execute(stmt_insert, device)
-
-    except (mysql.connector.errors.Error, TypeError) as e:
-        output.append("Failed inserting %s\nError: %s\n" % (device,e))
-        raise    
-
+    # Insert 3 records
+    names = ( ('Geert',info), ('Jan',info), ('Michel',info) )
+    stmt_insert = "INSERT INTO names (name,info) VALUES (%s,%s)"
+    cursor.executemany(stmt_insert, names)
     db.commit()
+    
+    # Read the names again and print them
+    stmt_select = "SELECT id, name, info, age FROM names ORDER BY id"
+    cursor.execute(stmt_select)
+
+    for row in cursor.fetchall():
+        output.append("%d | %s | %d\nInfo: %s..\n" % 
+            (row[0], row[1], row[3], row[2][20]))
+    	
+    # Cleaning up, dropping the table again
+    cursor.execute(stmt_drop)
+    
     cursor.close()
     db.close()
     return output

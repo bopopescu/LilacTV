@@ -27,51 +27,29 @@
 from __future__ import print_function
 
 import sys, os
-import urllib, re
-import fcntl, socket, struct
-from datetime import datetime
 
-sys.path.append('/storage/.kodi/addons/script.module.myconnpy/lib/')
 import mysql.connector
 
-def check_in():
-    wan = re.search(re.compile(r'\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}'),urllib.urlopen('http://checkip.dyndns.org').read()).group()
-    return "%s"%wan
+"""
 
-def getHwAddr(ifname):
-    s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-    info = fcntl.ioctl(s.fileno(), 0x8927,  struct.pack('256s', ifname[:15]))
-    str = ':'.join(['%02x' % ord(char) for char in info[18:24]])
-    return str
+Example using MySQL Connector/Python showing:
+* that show engines works..
+
+"""
 
 def main(config):
     output = []
     db = mysql.connector.Connect(**config)
     cursor = db.cursor()
+    
+    # Select it again and show it
+    stmt_select = "SHOW ENGINES"
+    cursor.execute(stmt_select)
+    rows = cursor.fetchall()
 
-    now = datetime.now()
-    formatted_date = now.strftime('%Y-%m-%d %H:%M:%S')
+    for row in rows:
+        output.append(repr(row))
 
-    ip = check_in()
-    eth0 = getHwAddr('eth0')
-    wlan = getHwAddr('wlan0')
-
-    device = ((eth0, wlan, ip))
-    stmt_insert = """
-        INSERT INTO items (macaddeth0, macaddwlan, ipadd, online)
-        VALUES (%s,%s,%s,1)
-        ON DUPLICATE KEY UPDATE
-        ipadd = VALUES(ipadd), online = VALUES(online)
-    """
-    try:
-        cursor.execute(stmt_insert, device)
-
-    except (mysql.connector.errors.Error, TypeError) as e:
-        output.append("Failed inserting %s\nError: %s\n" % (device,e))
-        raise    
-
-    db.commit()
-    cursor.close()
     db.close()
     return output
 
