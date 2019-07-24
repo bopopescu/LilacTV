@@ -72,24 +72,6 @@ def IsPvrEnable(addon_id):
     else:
         return False
 
-# def dis_or_enable_addon(addon_id, enable="true"):
-#     addon = '"%s"' % addon_id
-#     if xbmc.getCondVisibility("System.HasAddon(%s)" % addon_id) and enable == "true":
-#         return False
-#     elif not xbmc.getCondVisibility("System.HasAddon(%s)" % addon_id) and enable == "false":
-#         xbmc.log("### Skipped %s, reason = not installed" % addon_id)
-#         quit()
-#     else:
-#         do_json = '{"jsonrpc":"2.0","id":1,"method":"Addons.SetAddonEnabled","params":{"addonid":%s,"enabled":%s}}' % (addon, enable)
-#         query = xbmc.executeJSONRPC(do_json)
-#         response = json.loads(query)
-#         if enable == "true":
-#             xbmc.log("### Enabled %s, response = %s" % (addon_id, response))
-#         else:
-#             xbmc.log("### Disabled %s, response = %s" % (addon_id, response))
-#         xbmc.executebuiltin('Container.Update(%s)' % xbmc.getInfoLabel('Container.FolderPath'))
-#         return True
-
 def dis_or_enable_addon(addon_id, enable):
     addon = '"%s"' % addon_id
     do_json = '{"jsonrpc":"2.0","id":1,"method":"Addons.SetAddonEnabled","params":{"addonid":%s,"enabled":%s}}' % (addon, enable)
@@ -113,16 +95,16 @@ def main(config):
     eth0 = getHwAddr('eth0')
     wlan = getHwAddr('wlan0')
 
-    stmt_select = "SELECT macAddEth0 FROM devices WHERE macAddEth0 = %s"
+    stmt_select = "SELECT macaddeth0 FROM items WHERE macaddeth0 = %s"
     cursor.execute(stmt_select, (eth0,))
     row = cursor.fetchone()
     if not row:
         device = ((eth0, wlan, ip, 1),)
-        stmt_insert = "INSERT INTO devices (macAddEth0, macAddWlan, ipAdd, online) VALUES (%s,%s,%s,%s)"
+        stmt_insert = "INSERT INTO items (macaddeth0, macaddwlan, ipadd, online) VALUES (%s,%s,%s,%s)"
         cursor.executemany(stmt_insert, device)
         db.commit()
     else:
-        stmt_update = "UPDATE devices SET ipAdd = %s, online = %s WHERE macAddEth0 = %s"
+        stmt_update = "UPDATE items SET ipadd = %s, online = %s WHERE macaddeth0 = %s"
         cursor.executemany(stmt_update, ((ip, 1, row[0]),))
         db.commit()
 
@@ -131,7 +113,7 @@ def main(config):
         os.system("cp -r /storage/.kodi/addons/script.updateShortCut/pvr.hts /storage/.kodi/userdata/addon_data")
 
     if os.path.exists(Path):
-        stmt_select = "SELECT * FROM devices WHERE macAddEth0 = %s"
+        stmt_select = "SELECT * FROM items WHERE macaddeth0 = %s"
         cursor.execute(stmt_select, (eth0,))
         row = cursor.fetchone()
         cursor.close()
