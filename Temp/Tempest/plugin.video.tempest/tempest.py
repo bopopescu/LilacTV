@@ -438,16 +438,16 @@ def toggleAll(setting, query=None, sourceList=None):
 
 
 if mode == "toggleAllNormal":
-    sourcelist = ['1putlocker', '123movies4u', 'allucxyz', 'cartoonhd', 'animetoon',
-                  'cartoonwire', 'cmovieshd', 'cmovieshdbz', 'fmoviesio', 'gomoviesink', 'gowatchseries',
+    sourcelist = ['cartoonhd', 'animetoon',
+                  'cartoonwire', 'cmovieshd', 'extramovies', 'gomoviesink', 'gowatchseries',
                   'hdpopcorneu', 'iwannawatch', 'movie4kis', 'moviescouch', 'mycouchtuner', 'odb',
                   'projectfreetv', 'reddit', 'seehd', 'series9', 'seriesfree', 'seriesonline',
-                  'solarmoviez', 'streamdreams', 'swatchseries', 'timewatch', 'watchepisodes4', 'watchfree',
-                  'watchseries', 'wsunblock', 'yesmoviesgg']
+                  'solarmoviez', 'swatchseries', 'timewatch', 'watchepisodes4', 'watchfree',
+                  'watchseries', 'wsunblock']
     toggleAll(params['setting'], params['query'], sourcelist)
 
 if mode == "toggleAllDebrid":
-    sourcelist = ['2ddl', '300mbdownload', '300mbfilms', 'ddlspot', 'ddlvalley', 'directdl', 'exenbetgiris', 'ganool',
+    sourcelist = ['2ddl', '300mbdownload', '300mbfilms', 'ddlspot', 'ddlvalley', 'directdl', 'maxrls', 'ganool',
                   'moviesleak', 'mvrls', 'myvideolinks', 'rapidmoviez', 'rlsb', 'rlsbb', 'rlslog', 'sceneddl',
                   'scenerls', 'ultrahd']
     toggleAll(params['setting'], params['query'], sourcelist)
@@ -464,5 +464,5 @@ if mode == "toggleAllDirect":
 
 if mode == "toggleAllTorrent":
     sourcelist = ['111ys', '1337x', 'eztv', 'glodls', 'kickass2', 'limetorr', 'magnetdl', 'mkvcage', 'piratebay',
-                  'skytorrents', 'torrapi', 'torrdown', 'yifyddl', 'ytsam', 'zoogle']
+                  'skytorrents', 'torrapi', 'torrdown', 'torrentquest', 'yifyddl', 'ytsam', 'zoogle']
     toggleAll(params['setting'], params['query'], sourcelist)

@@ -70,7 +70,7 @@ class source:
             s = client.request(self.base_link)
             s = re.findall('\'(http.+?)\'', s) + re.findall('\"(http.+?)\"', s)
             s = [i for i in s if urlparse.urlparse(self.base_link).netloc in i and len(i.strip('/').split('/')) > 3]
-            s = s[0] if s else urlparse.urljoin(self.base_link, 'up')
+            s = s[0] if s else urlparse.urljoin(self.base_link, 'mv1')
             s = s.strip('/')
 
             url = s + self.search_link % urllib.quote_plus(query)
