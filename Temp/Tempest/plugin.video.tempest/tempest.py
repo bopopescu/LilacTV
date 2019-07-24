@@ -441,13 +441,13 @@ if mode == "toggleAllNormal":
     sourcelist = ['cartoonhd', 'animetoon',
                   'cartoonwire', 'cmovieshd', 'extramovies', 'gomoviesink', 'gowatchseries',
                   'hdpopcorneu', 'iwannawatch', 'movie4kis', 'moviescouch', 'mycouchtuner', 'odb',
-                  'projectfreetv', 'reddit', 'seehd', 'series9', 'seriesfree', 'seriesonline',
-                  'solarmoviez', 'swatchseries', 'timewatch', 'watchepisodes4', 'watchfree',
+                  'projectfreetv', 'reddit', 'seehd', 'series9', 'seriesonline',
+                  'solarmoviez', 'swatchseries', 'telepisodes', 'timewatch', 'watchepisodes4', 'watchfree',
                   'watchseries', 'wsunblock']
     toggleAll(params['setting'], params['query'], sourcelist)
 
 if mode == "toggleAllDebrid":
-    sourcelist = ['2ddl', '300mbdownload', '300mbfilms', 'ddlspot', 'ddlvalley', 'directdl', 'maxrls', 'ganool',
+    sourcelist = ['2ddl', '300mbdownload', '300mbfilms', 'ddlspot', 'directdl', 'maxrls', 'ganool',
                   'moviesleak', 'mvrls', 'myvideolinks', 'rapidmoviez', 'rlsb', 'rlsbb', 'rlslog', 'sceneddl',
                   'scenerls', 'ultrahd']
     toggleAll(params['setting'], params['query'], sourcelist)

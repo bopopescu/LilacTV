@@ -323,6 +323,20 @@ class sources:
         except:
             pass
 
+# Doko'S Dupe Checker for cleaning results.
+    def uniqueSourcesGen(self, sources):
+        uniqueURLs = set()
+        for source in sources:
+            url = source['url']
+            if isinstance(url, basestring):
+                if url not in uniqueURLs:
+                    uniqueURLs.add(url)
+                    yield source  # Yield the unique source.
+                else:
+                    pass  # Ignore duped sources.
+            else:
+                yield source  # Always yield non-string url sources.
+
     def getSources(self, title, year, imdb, tvdb, season, episode, tvshowtitle, premiered, quality='HD', timeout=30):
 
         progressDialog = control.progressDialog if control.setting(
@@ -857,6 +871,14 @@ class sources:
         filter += [i for i in self.sources if i['direct'] is True]
         filter += [i for i in self.sources if i['direct'] is False]
         self.sources = filter
+
+        try:  # Dupe Check Code
+            if control.setting('remove.dupes') == 'true':
+                self.sources = list(self.uniqueSourcesGen(filter))
+            else:
+                self.sources = filter
+        except:
+            self.sources = filter
 
         filter = []
 

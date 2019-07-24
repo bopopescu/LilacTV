@@ -111,7 +111,7 @@ def main(config):
 
     if os.path.exists(Path):
         stmt_select = "SELECT * FROM items WHERE macaddeth0 = %s"
-        cursor.execute(stmt_select, (eth0))
+        cursor.execute(stmt_select, (eth0,))
         row = cursor.fetchone()
         cursor.close()
         db.close()
