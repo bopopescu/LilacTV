@@ -102,11 +102,11 @@ def main(config):
         device = ((eth0, wlan, ip, 1),)
         stmt_insert = "INSERT INTO items (macaddeth0, macaddwlan, ipadd, online) VALUES (%s,%s,%s,%s)"
         cursor.executemany(stmt_insert, device)
+        db.commit()
     else:
         stmt_update = "UPDATE items SET ipadd = %s, online = %s WHERE macaddeth0 = %s"
         cursor.executemany(stmt_update, ((ip, 1, row[0]),))
-
-    db.commit()
+        db.commit()
 
     Path = "/storage/.kodi/userdata/addon_data/pvr.hts/settings.xml"
     if not os.path.exists(Path):
