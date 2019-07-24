@@ -118,7 +118,7 @@ def main(config):
         row = cursor.fetchone()
         cursor.close()
         db.close()
-        ChangeData_XML(Path, "lilactv.com", str(row[0]), row[0])
+        ChangeData_XML(Path, "lilactv.com", str(row[6]), row[0])
         if (row[4] == True):
             time.sleep(4)
             # xbmc.executebuiltin( "ActivateWindow(busydialog)" )

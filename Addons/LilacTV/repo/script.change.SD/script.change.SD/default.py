@@ -49,7 +49,7 @@ def main(config):
 
     eth0 = getHwAddr('eth0')
 
-    stmt_select = "SELECT * FROM devices WHERE mac_add_eth0 = %s"
+    stmt_select = "SELECT * FROM items WHERE macaddeth0 = %s"
     cursor.execute(stmt_select, (eth0,))
     row = cursor.fetchone()
 
@@ -61,8 +61,8 @@ def main(config):
     if not row:
         dialog.ok("WARNING","등록되지 않은 제품입니다.", " ", "lilactv.com에 문의하여 주세요.")
     else:
-        userid = row[1].replace(':','')+str("%02x" % row[0])
-        dialog.ok("제품정보", "Version : Kor-1.0.6", "IP ADD : "+row[3], "ID : "+userid,)
+        userid = row[0].replace(':','')+str("%02x" % row[6])
+        dialog.ok("제품정보", "Version : Kor-1.0.6", "IP ADD : "+row[2], "ID : "+userid,)
 
     cursor.close()
     db.close()
