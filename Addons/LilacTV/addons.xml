@@ -738,7 +738,7 @@ Subscription required.</description>
   </extension>
 </addon>
 
-<addon id="plugin.program.super.favourites" name="Super Favourites" version="1001.0.62" provider-name="spoyser">
+<addon id="plugin.program.super.favourites" name="Super Favourites" version="1001.0.63" provider-name="spoyser">
   <requires>
     <import addon="xbmc.python" version="2.14.0"/>
     <import addon="script.module.metahandler" optional="true" />
