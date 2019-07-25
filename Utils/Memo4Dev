@@ -249,21 +249,9 @@ seebo_eco/EPG_Server_Development/EPGServer/src/com/seebo/epg/parsers
 Grabbers:
 /seebo_eco/EPG_Server_Development/EPGServer/src/com/seebo/epg/grabber
 
-find . -name '*.pyo' -exec rm {} \;
-xbmc-send --action="UpdateAddonRepos"
-xbmc.executebuiltin('UpdateAddonRepos')
-
 Xstreaz compile server ssh root@192.168.15.15 setfree123
 /opt/905X_1018SDK/20161008update-no-git
 setfree123 > release key
-
-For 905x-7.1.2
-1. eth0 issue
-   https://ubuntuforums.org/showthread.php?t=2337580
-2. javac issue
-   source /etc/environment
-   javac -J-version
-   update-alternatives --config javac
 
 http://iptvtop.ddns.net:25461/get.php?username=railrac23@gmail.com
 &password=MmkR875lu3&type=m3u_plus&output=ts
@@ -326,3 +314,7 @@ AUTO_INCREMENT가 적용된 컬럼값 재정렬하기
 
 kotlin-jpa plugin runtime 적용
 https://stackoverflow.com/questions/43170391/no-default-constructor-for-jpa-entity-with-kotlin-even-with-noarg-plugin
+
+find . -name '*.pyo' -exec rm {} \;
+xbmc-send --action="UpdateAddonRepos"
+xbmc.executebuiltin('UpdateAddonRepos')
