@@ -2982,12 +2982,12 @@ isHome = False
 try:
     if cmd.startswith('HOME:'):
         cmd    = cmd.split(':', 1)[-1]
-    elif mode == _ACTIVATEWINDOW:
-        import urllib
-        mode = _EDITFAVE
-        file = os.path.join(PROFILE, "즐겨찾기", "favourites.xml")
-        url = re.compile('label=(.+?)&mode').search(cmd).group(1)
-        name = urllib.unquote_plus(url)
+    # elif mode == _ACTIVATEWINDOW:
+    #     import urllib
+    #     mode = _EDITFAVE
+    #     file = os.path.join(PROFILE, "즐겨찾기", "favourites.xml")
+    #     url = re.compile('label=(.+?)&mode').search(cmd).group(1)
+    #     name = urllib.unquote_plus(url)
         # dialog = xbmcgui.Dialog()
         # dialog.ok("REMOVEFAVE", url, text)
     isHome = True
