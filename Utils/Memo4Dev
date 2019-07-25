@@ -319,10 +319,10 @@ curl http://tv.topis.me/oh2019epg/xmltv.xml > KoreanEPG.xml
 5)백그라운드로 실행 java -jar build/libs/lilactv-0.0.1-SNAPSHOT.jar &
 
 AUTO_INCREMENT 값 초기화 하기
-  ALTER TABLE user AUTO_INCREMENT=1
+  ALTER TABLE users AUTO_INCREMENT=1
 AUTO_INCREMENT가 적용된 컬럼값 재정렬하기
   SET @COUNT = 0;
-  UPDATE [테이블명] SET [컬럼명] = @COUNT:=@COUNT+1;
+  UPDATE users SET id = @COUNT:=@COUNT+1;
 
 kotlin-jpa plugin runtime 적용
 https://stackoverflow.com/questions/43170391/no-default-constructor-for-jpa-entity-with-kotlin-even-with-noarg-plugin
