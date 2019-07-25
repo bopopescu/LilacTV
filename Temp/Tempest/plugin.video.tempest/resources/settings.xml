@@ -29,6 +29,7 @@
         <setting type="lsep" label="32338" enable="false" />
         <setting type="sep" />
         <setting id="hosts.quality" type="enum" label="32339" values="4K|1080p|720p|SD" default="0" />
+        <setting id="remove.dupes" type="bool" label="Enable Results Dupe Checker" default="false" />
         <setting id="debrid.only" type="bool" label="Debrid Sources Only" default="false" />
         <setting id="autoplay.sd" type="bool" label="32340" default="false" />
         <setting id="sources.extrainfo" type="bool" label="32587" default="true" />
@@ -101,10 +102,10 @@
         <setting id="provider.projectfreetv" type="bool" label="PROJECTFREETV" default="true" />
         <setting id="provider.seehd" type="bool" label="SEEHD" default="true" />
         <setting id="provider.series9" type="bool" label="SERIES9" default="true" />
-        <setting id="provider.seriesfree" type="bool" label="SERIESFREE" default="true" />
         <setting id="provider.seriesonline" type="bool" label="SERIESONLINE" default="true" />
         <setting id="provider.solarmoviez" type="bool" label="SOLARMOVIEZ" default="true" />
         <setting id="provider.swatchseries" type="bool" label="SWATCHSERIES" default="true" />
+        <setting id="provider.telepisodes" type="bool" label="TELEPSODES" default="true" />
         <setting id="provider.timewatch" type="bool" label="TIMEWATCH" default="true" />
         <setting id="provider.watchepisodes4" type="bool" label="WATCHEPISODES4" default="true" />
         <setting id="provider.watchfree" type="bool" label="WATCHFREE" default="true" />
@@ -124,7 +125,6 @@
         <setting id="provider.300mbdownload" type="bool" label="300MBDOWNLOAD" default="true" />
         <setting id="provider.300mbfilms" type="bool" label="300MBFILMS" default="true" />
         <setting id="provider.ddlspot" type="bool" label="DDLSPOT" default="true" />
-        <setting id="provider.ddlvalley" type="bool" label="DDLVALLEY" default="true" />
         <setting id="provider.directdl" type="bool" label="DIRECTDL" default="true" />
         <setting id="provider.ganool" type="bool" label="GANOOL" default="true" />
         <setting id="provider.maxrls" type="bool" label="MAX-RLS" default="true" />
@@ -138,6 +138,7 @@
         <setting id="provider.sceneddl" type="bool" label="SCENEDDL" default="true" />
         <setting id="provider.scenerls" type="bool" label="SCENERLS" default="true" />
         <setting id="provider.ultrahd" type="bool" label="ULTRAHD" default="true" />
+        <setting id="provider.warezmovies" type="bool" label="WAREZMOVIES" default="true" />
     </category>
     <category label="Direct Providers">
         <setting label="Direct Providers" type="lsep" enable="false" />
@@ -165,7 +166,6 @@
         <setting id="provider.dlmeliupload" type="bool" label="DLMELIUPLOAD" default="true" />
         <setting id="provider.dlmyfilm" type="bool" label="DLMYFILM" default="true" />
         <setting id="provider.dlsrvdl" type="bool" label="DLSRVDL" default="true" />
-        <setting id="provider.gmovies" type="bool" label="GMOVIES" default="true" />
         <setting id="provider.hdpopcorns" type="bool" label="HDPOPCORNS" default="true" />
         <setting id="provider.iwaatch" type="bool" label="IWAATCH" default="true" />
         <setting id="provider.mihanpix" type="bool" label="MINANPIX" default="true" />

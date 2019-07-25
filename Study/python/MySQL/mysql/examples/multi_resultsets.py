@@ -27,50 +27,61 @@
 from __future__ import print_function
 
 import sys, os
-import urllib, re
-import fcntl, socket, struct
-from datetime import datetime
 
-sys.path.append('/storage/.kodi/addons/script.module.myconnpy/lib/')
 import mysql.connector
 
-def check_in():
-    wan = re.search(re.compile(r'\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}'),urllib.urlopen('http://checkip.dyndns.org').read()).group()
-    return "%s"%wan
+"""
 
-def getHwAddr(ifname):
-    s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-    info = fcntl.ioctl(s.fileno(), 0x8927,  struct.pack('256s', ifname[:15]))
-    str = ':'.join(['%02x' % ord(char) for char in info[18:24]])
-    return str
+Example using MySQL Connector/Python showing:
+* sending multiple statements and iterating over the results
+
+"""
 
 def main(config):
     output = []
     db = mysql.connector.Connect(**config)
     cursor = db.cursor()
+    
+    # Drop table if exists, and create it new
+    stmt_drop = "DROP TABLE IF EXISTS names"
+    cursor.execute(stmt_drop)
+    
+    stmt_create = """
+    CREATE TABLE names (
+        id TINYINT UNSIGNED NOT NULL AUTO_INCREMENT,
+        name VARCHAR(30) DEFAULT '' NOT NULL,
+        info TEXT DEFAULT '',
+        age TINYINT UNSIGNED DEFAULT '30',
+        PRIMARY KEY (id)
+    )"""
+    cursor.execute(stmt_create)
 
-    now = datetime.now()
-    formatted_date = now.strftime('%Y-%m-%d %H:%M:%S')
+    info = "abc"*10000
+    
+    stmts = [
+        "INSERT INTO names (name) VALUES ('Geert')",
+        "SELECT COUNT(*) AS cnt FROM names",
+        "INSERT INTO names (name) VALUES ('Jan'),('Michel')",
+        "SELECT name FROM names",
+        ]
+    
+    # Note 'multi=True' when calling cursor.execute()
+    for result in cursor.execute(' ; '.join(stmts), multi=True):
+        if result.with_rows:
+            if result.statement == stmts[3]:
+                output.append("Names in table: " + 
+                    ' '.join([ name[0] for name in result]))
+            else:
+                output.append("Number of rows: %d" % result.fetchone()[0])
+        else:
+            if result.rowcount > 1:
+                tmp = 's'
+            else:
+                tmp = ''
+            output.append("Inserted %d row%s" % (result.rowcount, tmp))
+    
+    cursor.execute(stmt_drop)
 
-    ip = check_in()
-    eth0 = getHwAddr('eth0')
-    wlan = getHwAddr('wlan0')
-
-    device = ((eth0, wlan, ip))
-    stmt_insert = """
-        INSERT INTO items (macaddeth0, macaddwlan, ipadd, online)
-        VALUES (%s,%s,%s,1)
-        ON DUPLICATE KEY UPDATE
-        ipadd = VALUES(ipadd), online = VALUES(online)
-    """
-    try:
-        cursor.execute(stmt_insert, device)
-
-    except (mysql.connector.errors.Error, TypeError) as e:
-        output.append("Failed inserting %s\nError: %s\n" % (device,e))
-        raise    
-
-    db.commit()
     cursor.close()
     db.close()
     return output

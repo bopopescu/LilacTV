@@ -158,7 +158,8 @@ if __name__=='__main__':
 
     if os.path.exists("/storage/.kodi/userdata/addon_data/service.libreelec.settings/oe_settings.xml"):
 
-        DBsetting()
+        if not os.path.exists(__UpdateFlag__):
+            DBsetting()
 
         if os.path.exists("/storage/.kodi/patches"):
             os.system("python /storage/.kodi/patches/patch.py")

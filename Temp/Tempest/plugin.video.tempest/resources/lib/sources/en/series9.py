@@ -13,7 +13,7 @@ class source:
         self.priority = 1
         self.language = ['en']
         self.domains = ['seriesonline.io', 'www1.seriesonline.io', 'series9.io']
-        self.base_link = 'https://www2.series9.io'
+        self.base_link = 'https://www2.series9.to'
         self.search_link = '/movie/search/%s'
 
     def matchAlias(self, title, aliases):
@@ -59,7 +59,7 @@ class source:
             title = cleantitle.normalize(title)
             search = '%s Season %01d' % (title, int(season))
             url = urlparse.urljoin(self.base_link, self.search_link % cleantitle.geturl(search))
-            r = client.request(url, headers=headers, timeout='15')
+            r = client.request(url, headers=headers, timeout='10')
             r = client.parseDOM(r, 'div', attrs={'class': 'ml-item'})
             r = zip(client.parseDOM(r, 'a', ret='href'), client.parseDOM(r, 'a', ret='title'))
             r = [(i[0], i[1], re.findall('(.*?)\s+-\s+Season\s+(\d)', i[1])) for i in r]
@@ -74,9 +74,9 @@ class source:
         try:
             title = cleantitle.normalize(title)
             url = urlparse.urljoin(self.base_link, self.search_link % cleantitle.geturl(title))
-            r = client.request(url, headers=headers, timeout='15')
+            r = client.request(url, headers=headers, timeout='10')
             r = client.parseDOM(r, 'div', attrs={'class': 'ml-item'})
-            r = zip(client.parseDOM(r, 'a', ret='href'), client.parseDOM(r, 'a', ret='title'))
+            r = zip(client.parseDOM(r, 'a', ret='href'), client.parseDOM(r, 'a', ret='oldtitle'))
             results = [(i[0], i[1], re.findall('\((\d{4})', i[1])) for i in r]
             try:
                 r = [(i[0], i[1], i[2][0]) for i in results if len(i[2]) > 0]
@@ -116,7 +116,8 @@ class source:
 
             else:
                 url = self.searchMovie(data['title'], data['year'], aliases, headers)
-
+                if url is None:
+                    url = '%s/film/%s/watching.html?ep=0' % (self.base_link, cleantitle.geturl(data['title']))
             if url is None:
                 raise Exception()
 
@@ -141,7 +142,8 @@ class source:
                 else:
                     try:
                         host = re.findall('([\w]+[.][\w]+)$', urlparse.urlparse(link.strip().lower()).netloc)[0]
-                        if host not in hostDict: raise Exception()
+                        if host not in hostDict:
+                            raise Exception()
                         host = client.replaceHTMLCodes(host)
                         host = host.encode('utf-8')
 
