@@ -2,13 +2,13 @@
 #EXTINF:-1 tvg-id="164" tvg-logo="http://i.imgur.com/K2ztoDT.png" group-title="공중파",SBS
 http://114.204.150.69:9981/stream/channelid/1166986084?ticket=1ea286ee6b028d51b9dadf20554ab0f6b24f6dda&profile=htsp
 #EXTINF:-1 tvg-id="164" tvg-logo="http://i.imgur.com/K2ztoDT.png" group-title="공중파",SBS
+http://1.233.136.3:9981/stream/channelid/1933958848?ticket=EDDB19E617BECF2613DCA488F77F847FD21FDBB0&profile=pass
+#EXTINF:-1 tvg-id="164" tvg-logo="http://i.imgur.com/K2ztoDT.png" group-title="공중파",SBS
 http://175.116.137.152:9981/stream/channelid/1551266533?ticket=C385731F8C0996AA3BA320573EBB6D3E3EAE0C37&profile=pass
 #EXTINF:-1 tvg-id="164" tvg-logo="http://i.imgur.com/K2ztoDT.png" group-title="공중파",SBS
 http://175.125.162.47:9981/stream/channelid/1739170354?ticket=7F761320B337A107FE9C923F0E42F22DBB76F2EB&profile=pass
 #EXTINF:-1 tvg-id="164" tvg-logo="http://i.imgur.com/K2ztoDT.png" group-title="공중파",SBS
 http://211.207.173.34:9981/stream/channelid/2118804452?ticket=92FE18392607CEA9033DD88B09C65790DEAB9F0D&profile=pass
-#EXTINF:-1 tvg-id="164" tvg-logo="http://i.imgur.com/K2ztoDT.png" group-title="공중파",SBS
-http://58.229.138.182:9981/stream/channelid/1256248067?ticket=9E6F36DE586903BA501B646F275C7128B856E433&profile=pass
 #EXTINF:-1 tvg-id="170" tvg-logo="http://i.imgur.com/asfyrTm.png" group-title="공중파",SBS Plus
 http://175.125.162.47:9981/stream/channelid/340520212?ticket=DD7FDEF35020E39D91DC0C18B07469CFC5F0331B&profile=pass
 #EXTINF:-1 tvg-id="166" tvg-logo="http://i.imgur.com/D1EYJmr.png" group-title="공중파",SBS funE
@@ -56,8 +56,6 @@ http://211.207.173.34:9981/stream/channelid/191678688?ticket=2CDAA40DDCCB3C706BA
 #EXTINF:-1 tvg-id="104" tvg-logo="http://i.imgur.com/D1o9by9.png" group-title="공중파",KBS JOY
 http://58.229.138.182:9981/stream/channelid/1557058813?ticket=98FE42DBC71DAAC86B077B1BBA316BE5DEE4E227&profile=pass
 #EXTINF:-1 tvg-id="122" tvg-logo="http://i.imgur.com/duig32i.png" group-title="공중파",MBC
-http://114.204.150.69:9981/stream/channelid/1280924237?ticket=e196c4107880af44e784e5a0934f5ee6da9d2de3&profile=htsp
-#EXTINF:-1 tvg-id="122" tvg-logo="http://i.imgur.com/duig32i.png" group-title="공중파",MBC
 http://1.233.136.3:9981/stream/channelid/1336268195?ticket=9076729F318102CD6EE97A3E4ADEF42FB09483A0&profile=pass
 #EXTINF:-1 tvg-id="122" tvg-logo="http://i.imgur.com/duig32i.png" group-title="공중파",MBC
 http://1.255.204.7:9981/stream/channelid/276171895?ticket=E21CBA39DAA7AB3B3FB3D5C74E3E7BFB051874C9&profile=pass
@@ -65,10 +63,14 @@ http://1.255.204.7:9981/stream/channelid/276171895?ticket=E21CBA39DAA7AB3B3FB3D5
 http://175.116.137.152:9981/stream/channelid/1374502145?ticket=45EEE37C056EA310A9D3A6CED1AE54670EB433B7&profile=pass
 #EXTINF:-1 tvg-id="122" tvg-logo="http://i.imgur.com/duig32i.png" group-title="공중파",MBC
 http://175.125.162.47:9981/stream/channelid/875625226?ticket=1E64BF52044D2EEB8FD470541532F5457B814E1E&profile=pass
+#EXTINF:-1 tvg-id="122" tvg-logo="http://i.imgur.com/duig32i.png" group-title="공중파",MBC
+http://211.207.173.34:9981/stream/channelid/251822327?ticket=CDC790E35108ED31F619D2EDBCDEEEFA1DD504B5&profile=pass
 #EXTINF:-1 tvg-id="128" tvg-logo="http://i.imgur.com/VBMFcZ3.png" group-title="공중파",MBC Dramanet
 http://175.125.162.47:9981/stream/channelid/476197668?ticket=DFE15EBD4F74D3910ABED65057F30CBB937AC382&profile=pass
 #EXTINF:-1 tvg-id="128" tvg-logo="http://i.imgur.com/VBMFcZ3.png" group-title="공중파",MBC Dramanet
 http://58.229.138.182:9981/stream/channelid/1767818639?ticket=EB21EA79E15CFEEB1576B9CFDDB257A38EB1D88F&profile=pass
+#EXTINF:-1 tvg-id="123" tvg-logo="http://i.imgur.com/oOnpFes.png" group-title="공중파",MBC Every1
+http://114.204.150.69:9981/stream/channelid/1987214006?ticket=51f85ab8542a321b6f39f9fabeac629ac36a9c40&profile=htsp
 #EXTINF:-1 tvg-id="123" tvg-logo="http://i.imgur.com/oOnpFes.png" group-title="공중파",MBC Every1
 http://1.233.136.3:9981/stream/channelid/1141313311?ticket=40BA9DDE2581B203397061B5663656A7C753F5D5&profile=pass
 #EXTINF:-1 tvg-id="123" tvg-logo="http://i.imgur.com/oOnpFes.png" group-title="공중파",MBC Every1
@@ -77,28 +79,26 @@ http://1.255.204.7:9981/stream/channelid/1734714847?ticket=9FD134F63B6B3BEA9B549
 http://1.255.204.7:9981/stream/channelid/1714894994?ticket=1E4C9CAA629A82084F6B2D37AC578A7F6B6D4FDE&profile=pass
 #EXTINF:-1 tvg-id="123" tvg-logo="http://i.imgur.com/oOnpFes.png" group-title="공중파",MBC Every1
 http://175.116.137.152:9981/stream/channelid/448178833?ticket=D87395F966CDD3C84B5BB833764E3294109753C0&profile=pass
-#EXTINF:-1 tvg-id="123" tvg-logo="http://i.imgur.com/oOnpFes.png" group-title="공중파",MBC Every1
-http://175.125.162.47:9981/stream/channelid/37775472?ticket=86E6541E770982000B018C50347938ED5E35EA3B&profile=pass
 #EXTINF:-1 tvg-id="60" tvg-logo="http://i.imgur.com/WViFruZ.png" group-title="공중파",EBS
 http://114.204.150.69:9981/stream/channelid/1921855933?ticket=fe3ac48367487b834070a06bb4ba1ac44e80edd9&profile=htsp
 #EXTINF:-1 tvg-id="60" tvg-logo="http://i.imgur.com/WViFruZ.png" group-title="공중파",EBS
 http://1.233.136.3:9981/stream/channelid/1308360310?ticket=06ECFFF2969122651509A0C74B3A90910F3DA549&profile=pass
 #EXTINF:-1 tvg-id="60" tvg-logo="http://i.imgur.com/WViFruZ.png" group-title="공중파",EBS
+http://1.233.136.3:9981/stream/channelid/1870811472?ticket=D58D489B22C8988984BBB203FD08013935A7C90E&profile=pass
+#EXTINF:-1 tvg-id="60" tvg-logo="http://i.imgur.com/WViFruZ.png" group-title="공중파",EBS
+http://1.233.136.3:9981/stream/channelid/1408578459?ticket=256788F1823E2306C75C2EC32E7AFF22B84DF90D&profile=pass
+#EXTINF:-1 tvg-id="60" tvg-logo="http://i.imgur.com/WViFruZ.png" group-title="공중파",EBS
 http://175.116.137.152:9981/stream/channelid/1935811696?ticket=0E8C06D8C4379D8B73701AE3441A368AF1D6C613&profile=pass
-#EXTINF:-1 tvg-id="60" tvg-logo="http://i.imgur.com/WViFruZ.png" group-title="공중파",EBS
-http://175.125.162.47:9981/stream/channelid/1027096151?ticket=A2BBCEAC992147A029253648CB9FC434B922AAC4&profile=pass
-#EXTINF:-1 tvg-id="60" tvg-logo="http://i.imgur.com/WViFruZ.png" group-title="공중파",EBS
-http://58.229.138.182:9981/stream/channelid/1126968227?ticket=FCCBB6A8F9DC463D34888998FC4329ECD0D556C9&profile=pass
 #EXTINF:-1 tvg-id="61" tvg-logo="http://i.imgur.com/RIrBF4D.png" group-title="공중파",EBS2
 http://114.204.150.69:9981/stream/channelid/474044395?ticket=53fe98f451a48ba78d9a5b4dfba2f7fbd3a0a714&profile=htsp
 #EXTINF:-1 tvg-id="61" tvg-logo="http://i.imgur.com/RIrBF4D.png" group-title="공중파",EBS2
 http://1.233.136.3:9981/stream/channelid/1675439050?ticket=69492C3449499C21C6382039BD23D16B6CD6174C&profile=pass
 #EXTINF:-1 tvg-id="61" tvg-logo="http://i.imgur.com/RIrBF4D.png" group-title="공중파",EBS2
+http://1.233.136.3:9981/stream/channelid/901155994?ticket=C45B30F317B7B34E8228326AF33D52DE51B68A00&profile=pass
+#EXTINF:-1 tvg-id="61" tvg-logo="http://i.imgur.com/RIrBF4D.png" group-title="공중파",EBS2
 http://175.116.137.152:9981/stream/channelid/322257672?ticket=A1C5FA9653D442F140C7884E5397ADA9C06D1F53&profile=pass
 #EXTINF:-1 tvg-id="61" tvg-logo="http://i.imgur.com/RIrBF4D.png" group-title="공중파",EBS2
 http://175.125.162.47:9981/stream/channelid/469035379?ticket=C075A00A1CC07DBA21C430318E2D63B2606ED868&profile=pass
-#EXTINF:-1 tvg-id="61" tvg-logo="http://i.imgur.com/RIrBF4D.png" group-title="공중파",EBS2
-http://58.229.138.182:9981/stream/channelid/801460345?ticket=FDE8EEEC74C3DF9AA503EACC1C9E871ADCA83F15&profile=pass
 #EXTINF:-1 tvg-id="97" tvg-logo="http://i.imgur.com/YOYosLG.png" group-title="종편",JTBC
 http://114.204.150.69:9981/stream/channelid/1227783418?ticket=c30cbc8903eeb30dabd008244d267628b62718b6&profile=htsp
 #EXTINF:-1 tvg-id="97" tvg-logo="http://i.imgur.com/YOYosLG.png" group-title="종편",JTBC
@@ -150,8 +150,6 @@ http://175.116.137.152:9981/stream/channelid/322143236?ticket=5544715A70D08DDE64
 #EXTINF:-1 tvg-id="281" tvg-logo="http://i.imgur.com/xti35f5.png" group-title="종편",채널A
 http://175.125.162.47:9981/stream/channelid/1840484568?ticket=4721778F01DE7DE3FE4D72E5521A2961CBF95BA8&profile=pass
 #EXTINF:-1 tvg-id="208" tvg-logo="http://i.imgur.com/ShJ5joR.png" group-title="종편",TV조선
-http://114.204.150.69:9981/stream/channelid/2135572750?ticket=307136ffcb69cd51e7268b3709ef7f280e30a3fa&profile=htsp
-#EXTINF:-1 tvg-id="208" tvg-logo="http://i.imgur.com/ShJ5joR.png" group-title="종편",TV조선
 http://1.233.136.3:9981/stream/channelid/1902464927?ticket=92121CD68DE8CE809E6A22050C4FB762EE9D1959&profile=pass
 #EXTINF:-1 tvg-id="208" tvg-logo="http://i.imgur.com/ShJ5joR.png" group-title="종편",TV조선
 http://1.255.204.7:9981/stream/channelid/394037256?ticket=989388F7637BC2B2E80A4DFEB3931A3552D5FCE0&profile=pass
@@ -159,6 +157,8 @@ http://1.255.204.7:9981/stream/channelid/394037256?ticket=989388F7637BC2B2E80A4D
 http://175.116.137.152:9981/stream/channelid/1527398470?ticket=61ED1A5A077C96C28BF49F73EE94FBE2AED84E87&profile=pass
 #EXTINF:-1 tvg-id="208" tvg-logo="http://i.imgur.com/ShJ5joR.png" group-title="종편",TV조선
 http://175.125.162.47:9981/stream/channelid/890217859?ticket=D2985F432BE464CCDBA919DBAF113F4BC3593E79&profile=pass
+#EXTINF:-1 tvg-id="208" tvg-logo="http://i.imgur.com/ShJ5joR.png" group-title="종편",TV조선
+http://58.229.138.182:9981/stream/channelid/1795818970?ticket=C9774A97BA456E8B5AE1FE1C7C878A422FFF25F1&profile=pass
 #EXTINF:-1 tvg-id="121" tvg-logo="http://i.imgur.com/putHm2b.png" group-title="종편",Mnet
 http://114.204.150.69:9981/stream/channelid/928215967?ticket=ac38aac7b34283bb3f26fbf90918b5479def1a00&profile=htsp
 #EXTINF:-1 tvg-id="121" tvg-logo="http://i.imgur.com/putHm2b.png" group-title="종편",Mnet
@@ -169,8 +169,6 @@ http://175.116.137.152:9981/stream/channelid/1253019398?ticket=4236C243D9F6EA0FE
 http://175.125.162.47:9981/stream/channelid/1416514089?ticket=9F450037E4996C6C485485ED87337263EF479F67&profile=pass
 #EXTINF:-1 tvg-id="121" tvg-logo="http://i.imgur.com/putHm2b.png" group-title="종편",Mnet
 http://211.207.173.34:9981/stream/channelid/1056525010?ticket=EAA4249D9D5A530A2829267AB8C5F79A93D47FA5&profile=pass
-#EXTINF:-1 tvg-id="268" tvg-logo="http://i.imgur.com/KlTCP8V.png" group-title="종편",연합뉴스TV
-http://114.204.150.69:9981/stream/channelid/1024317643?ticket=e79ea80e5057f521521875aab3a453a6d4e92afe&profile=htsp
 #EXTINF:-1 tvg-id="268" tvg-logo="http://i.imgur.com/KlTCP8V.png" group-title="종편",연합뉴스TV
 http://175.125.162.47:9981/stream/channelid/2109021562?ticket=B5492BD7A00BB165DD666FB4CF2D8389A6402D38&profile=pass
 #EXTINF:-1 tvg-id="268" tvg-logo="http://i.imgur.com/KlTCP8V.png" group-title="종편",연합뉴스TV
@@ -188,17 +186,15 @@ http://175.116.137.152:9981/stream/channelid/1875685438?ticket=6D43A3647B61ED863
 #EXTINF:-1 tvg-id="98" tvg-logo="http://i.imgur.com/Bnw7O5U.png" group-title="스포츠",JTBC Golf
 http://1.255.204.7:9981/stream/channelid/699796542?ticket=DCD48A68B904A9F3A07921D9E04D783C68D5064B&profile=pass
 #EXTINF:-1 tvg-id="98" tvg-logo="http://i.imgur.com/Bnw7O5U.png" group-title="스포츠",JTBC Golf
+http://175.113.154.14:9981/stream/channelid/1501772852?ticket=8CD2537FF4328150181ED188A5FA9714C23B1CD9&profile=matroska
+#EXTINF:-1 tvg-id="98" tvg-logo="http://i.imgur.com/Bnw7O5U.png" group-title="스포츠",JTBC Golf
 http://175.116.137.152:9981/stream/channelid/383919185?ticket=EBED5B29B272332737492FB561322F2699615D21&profile=pass
 #EXTINF:-1 tvg-id="98" tvg-logo="http://i.imgur.com/Bnw7O5U.png" group-title="스포츠",JTBC Golf
 http://175.116.137.152:9981/stream/channelid/2009854502?ticket=6FBB93B1E2D28AE08AA271CEA29EE84A9601F2EC&profile=pass
 #EXTINF:-1 tvg-id="98" tvg-logo="http://i.imgur.com/Bnw7O5U.png" group-title="스포츠",JTBC Golf
 http://175.125.162.47:9981/stream/channelid/1125311998?ticket=3515EEDB11FECBD78B00AD36A57BACA186133F87&profile=pass
-#EXTINF:-1 tvg-id="98" tvg-logo="http://i.imgur.com/Bnw7O5U.png" group-title="스포츠",JTBC Golf
-http://58.229.138.182:9981/stream/channelid/129089706?ticket=D0484C5A293876AF822E01757CD23DD26D424AE1&profile=pass
 #EXTINF:-1 tvg-id="167" tvg-logo="http://i.imgur.com/HdS0GNV.png" group-title="스포츠",SBS GOLF
 http://1.255.204.7:9981/stream/channelid/1196095908?ticket=3DD82AD4D3666AA7D9D7534B185F0A81B1D49F5C&profile=pass
-#EXTINF:-1 tvg-id="167" tvg-logo="http://i.imgur.com/HdS0GNV.png" group-title="스포츠",SBS GOLF
-http://175.113.154.14:9981/stream/channelid/358994389?ticket=AE78FE7FF96A17A5C6784ECB3AAFC9EBE06ED92F&profile=matroska
 #EXTINF:-1 tvg-id="167" tvg-logo="http://i.imgur.com/HdS0GNV.png" group-title="스포츠",SBS GOLF
 http://175.116.137.152:9981/stream/channelid/1403458037?ticket=1117C2FF1EFC4AF91ECFF94BC1B78A01EAE74ABC&profile=pass
 #EXTINF:-1 tvg-id="167" tvg-logo="http://i.imgur.com/HdS0GNV.png" group-title="스포츠",SBS GOLF
@@ -208,13 +204,13 @@ http://58.229.138.182:9981/stream/channelid/660955866?ticket=6EABA86650977A09FB9
 #EXTINF:-1 tvg-id="169" tvg-logo="http://i.imgur.com/j1vHAu6.png" group-title="스포츠",SBS Sports
 http://1.255.204.7:9981/stream/channelid/1802128219?ticket=D58DF002867D6F3C441B9DBD3C5BD65FD028A2DA&profile=pass
 #EXTINF:-1 tvg-id="169" tvg-logo="http://i.imgur.com/j1vHAu6.png" group-title="스포츠",SBS Sports
+http://175.113.154.14:9981/stream/channelid/65750717?ticket=CCAC34F3F0C42E45012DDF1B7D123AD908BB7B44&profile=matroska
+#EXTINF:-1 tvg-id="169" tvg-logo="http://i.imgur.com/j1vHAu6.png" group-title="스포츠",SBS Sports
 http://175.116.137.152:9981/stream/channelid/767875792?ticket=6C60FFEE408DB3DB17403B9C50B02E719E7E65F8&profile=pass
 #EXTINF:-1 tvg-id="169" tvg-logo="http://i.imgur.com/j1vHAu6.png" group-title="스포츠",SBS Sports
 http://175.116.137.152:9981/stream/channelid/680287432?ticket=C7D439A2FA174E552C6B581D6C1A41FAF948264F&profile=pass
 #EXTINF:-1 tvg-id="169" tvg-logo="http://i.imgur.com/j1vHAu6.png" group-title="스포츠",SBS Sports
 http://175.116.137.152:9981/stream/channelid/1783255557?ticket=22C314211017C457F5A134C729521248EF5A7B68&profile=pass
-#EXTINF:-1 tvg-id="169" tvg-logo="http://i.imgur.com/j1vHAu6.png" group-title="스포츠",SBS Sports
-http://175.125.162.47:9981/stream/channelid/423764148?ticket=B9230703434CCB2615B74CE3AD08AD29A2068BE4&profile=pass
 #EXTINF:-1 tvg-id="107" tvg-logo="http://i.imgur.com/xspD7UE.png" group-title="스포츠",KBS N Sports
 http://1.233.136.3:9981/stream/channelid/1968876446?ticket=FF8F54E76757D09822215A0E87E5E02569BB201D&profile=pass
 #EXTINF:-1 tvg-id="107" tvg-logo="http://i.imgur.com/xspD7UE.png" group-title="스포츠",KBS N Sports
@@ -238,13 +234,13 @@ http://175.125.162.47:9981/stream/channelid/352756360?ticket=E0CF70DD3CE4368B193
 #EXTINF:-1 tvg-id="183" tvg-logo="http://i.imgur.com/cIpIf6b.png" group-title="스포츠",SPOTV
 http://114.204.150.69:9981/stream/channelid/8642966?ticket=6bc22990885effd33435fdaf9e65f7cbb9720c2b&profile=htsp
 #EXTINF:-1 tvg-id="183" tvg-logo="http://i.imgur.com/cIpIf6b.png" group-title="스포츠",SPOTV
+http://175.113.154.14:9981/stream/channelid/1196793338?ticket=ABDCA69A4743149D0FC1976FF2AA279217CBEAE8&profile=matroska
+#EXTINF:-1 tvg-id="183" tvg-logo="http://i.imgur.com/cIpIf6b.png" group-title="스포츠",SPOTV
 http://175.116.137.152:9981/stream/channelid/415881875?ticket=CD8403C7EA54FE04365CA1C9B79C6FACEEF1405D&profile=pass
 #EXTINF:-1 tvg-id="183" tvg-logo="http://i.imgur.com/cIpIf6b.png" group-title="스포츠",SPOTV
 http://175.116.137.152:9981/stream/channelid/183201919?ticket=A5F137F9A4EB83F51707317B40903A3C39D3CAEA&profile=pass
 #EXTINF:-1 tvg-id="183" tvg-logo="http://i.imgur.com/cIpIf6b.png" group-title="스포츠",SPOTV
 http://175.116.137.152:9981/stream/channelid/2059945483?ticket=A27C3D0BC59C4243F5DE2D7938966279779A59BB&profile=pass
-#EXTINF:-1 tvg-id="183" tvg-logo="http://i.imgur.com/cIpIf6b.png" group-title="스포츠",SPOTV
-http://175.125.162.47:9981/stream/channelid/1879860848?ticket=D0E4EA07774E083C063EFE0E5F6FEAB067AEA43A&profile=pass
 #EXTINF:-1 tvg-id="185" tvg-logo="http://i.imgur.com/81Fshnn.png" group-title="스포츠",SPOTV+
 http://1.233.136.3:9981/stream/channelid/1829118489?ticket=09B81C6FA68B45B2E7A0EC2A284F20443DDCE9DF&profile=pass
 #EXTINF:-1 tvg-id="185" tvg-logo="http://i.imgur.com/81Fshnn.png" group-title="스포츠",SPOTV+
@@ -256,6 +252,8 @@ http://175.125.162.47:9981/stream/channelid/1394515346?ticket=DD828F9DB8EFA6EF45
 #EXTINF:-1 tvg-id="185" tvg-logo="http://i.imgur.com/81Fshnn.png" group-title="스포츠",SPOTV+
 http://211.207.173.34:9981/stream/channelid/788930393?ticket=7343B165484686B16D75CA02E2CE53C7769C60D3&profile=pass
 #EXTINF:-1 tvg-id="186" tvg-logo="http://i.imgur.com/GNicmGY.png" group-title="스포츠",SPOTV2
+http://1.233.136.3:9981/stream/channelid/294888686?ticket=AFDDF35528CF36269533F9F37797C37E90425782&profile=pass
+#EXTINF:-1 tvg-id="186" tvg-logo="http://i.imgur.com/GNicmGY.png" group-title="스포츠",SPOTV2
 http://1.255.204.7:9981/stream/channelid/945187718?ticket=483A89D53B379CFD1853A8B64E416CB4A57F229D&profile=pass
 #EXTINF:-1 tvg-id="186" tvg-logo="http://i.imgur.com/GNicmGY.png" group-title="스포츠",SPOTV2
 http://175.116.137.152:9981/stream/channelid/980666380?ticket=4DD38DFD68383438AE97694884191F601212B73A&profile=pass
@@ -263,8 +261,6 @@ http://175.116.137.152:9981/stream/channelid/980666380?ticket=4DD38DFD68383438AE
 http://175.116.137.152:9981/stream/channelid/1853207186?ticket=54A8548F6FB8F208B4FF855CECF42FED18B60A9F&profile=pass
 #EXTINF:-1 tvg-id="186" tvg-logo="http://i.imgur.com/GNicmGY.png" group-title="스포츠",SPOTV2
 http://175.116.137.152:9981/stream/channelid/371713776?ticket=7714BAAA0F1279439C3876BD3185488703F9BD3B&profile=pass
-#EXTINF:-1 tvg-id="186" tvg-logo="http://i.imgur.com/GNicmGY.png" group-title="스포츠",SPOTV2
-http://175.125.162.47:9981/stream/channelid/1638983399?ticket=5EDE5FD49D6F44D69B0F3F2D2ED428206E4AE828&profile=pass
 #EXTINF:-1 tvg-id="178" tvg-logo="http://i.imgur.com/QHV9bdA.png" group-title="스포츠",SkySports
 http://1.233.136.3:9981/stream/channelid/202051177?ticket=E0DDB59AAA93868ACAE7D08B16F1A13CE5E4E787&profile=pass
 #EXTINF:-1 tvg-id="178" tvg-logo="http://i.imgur.com/QHV9bdA.png" group-title="스포츠",SkySports
@@ -275,6 +271,8 @@ http://175.116.137.152:9981/stream/channelid/44568887?ticket=2FBD284E95B15016C74
 http://175.125.162.47:9981/stream/channelid/153961514?ticket=F7460EA942B0F9A0BB6D8CA6D46A90239945DC68&profile=pass
 #EXTINF:-1 tvg-id="178" tvg-logo="http://i.imgur.com/QHV9bdA.png" group-title="스포츠",SkySports
 http://211.207.173.34:9981/stream/channelid/359067551?ticket=82A7F7747600FBE809BE71D6B23CF4887C5309FB&profile=pass
+#EXTINF:-1 tvg-id="100" tvg-logo="http://i.imgur.com/KvGwEc1.png" group-title="스포츠",JTBC3
+http://1.233.136.3:9981/stream/channelid/1391275106?ticket=AE6677EE159D15EF14FF34FCF57F03F4C2676939&profile=pass
 #EXTINF:-1 tvg-id="100" tvg-logo="http://i.imgur.com/KvGwEc1.png" group-title="스포츠",JTBC3
 http://1.255.204.7:9981/stream/channelid/1583261289?ticket=0A9E2C03490DA2628051316A7A8C3540BA80A830&profile=pass
 #EXTINF:-1 tvg-id="100" tvg-logo="http://i.imgur.com/KvGwEc1.png" group-title="스포츠",JTBC3
@@ -308,7 +306,7 @@ http://114.204.150.69:9981/stream/channelid/1024537787?ticket=8202cacd256aa12312
 #EXTINF:-1 tvg-id="151" tvg-logo="http://i.imgur.com/IXh6dwo.png" group-title="영화",OCN
 http://1.233.136.3:9981/stream/channelid/2058420810?ticket=EACFECB7E7B2CEB1BCC448989ECC61D0D88AB7E8&profile=pass
 #EXTINF:-1 tvg-id="151" tvg-logo="http://i.imgur.com/IXh6dwo.png" group-title="영화",OCN
-http://175.116.137.152:9981/stream/channelid/515127590?ticket=3264F196A8FDD074D5620A76A35D95219089B545&profile=pass
+http://1.233.136.3:9981/stream/channelid/2056534108?ticket=E805EA2AE1A4E4258C46257590197557A55EF856&profile=pass
 #EXTINF:-1 tvg-id="151" tvg-logo="http://i.imgur.com/IXh6dwo.png" group-title="영화",OCN
 http://175.116.137.152:9981/stream/channelid/1071719764?ticket=B75BA7CC90E15768AD323D1792D67D7267505353&profile=pass
 #EXTINF:-1 tvg-id="151" tvg-logo="http://i.imgur.com/IXh6dwo.png" group-title="영화",OCN
@@ -324,6 +322,8 @@ http://1.255.204.7:9981/stream/channelid/1330685131?ticket=7494CE792919A390D0C78
 #EXTINF:-1 tvg-id="171" tvg-logo="http://i.imgur.com/lTK9VD4.png" group-title="영화",스크린
 http://175.116.137.152:9981/stream/channelid/135733033?ticket=E0B937D361CA7C79FEBB86F136C7DA21C86BBD9A&profile=pass
 #EXTINF:-1 tvg-id="283" tvg-logo="http://i.imgur.com/fwjRwkx.png" group-title="영화",채널CGV
+http://114.204.150.69:9981/stream/channelid/952077157?ticket=81b03ff31f31af0ed73750b5bfc09980dc19addc&profile=htsp
+#EXTINF:-1 tvg-id="283" tvg-logo="http://i.imgur.com/fwjRwkx.png" group-title="영화",채널CGV
 http://1.255.204.7:9981/stream/channelid/811549430?ticket=E498FE024EBE50E024B5D114EAD0668B3913B16A&profile=pass
 #EXTINF:-1 tvg-id="283" tvg-logo="http://i.imgur.com/fwjRwkx.png" group-title="영화",채널CGV
 http://1.255.204.7:9981/stream/channelid/307908492?ticket=65EB410F0C9757EA2741DE2F2051C0E18EA701ED&profile=pass
@@ -331,10 +331,6 @@ http://1.255.204.7:9981/stream/channelid/307908492?ticket=65EB410F0C9757EA2741DE
 http://175.116.137.152:9981/stream/channelid/1261772078?ticket=1CB1BBCEF78BCECD6B36ADEF83530DD20605470A&profile=pass
 #EXTINF:-1 tvg-id="283" tvg-logo="http://i.imgur.com/fwjRwkx.png" group-title="영화",채널CGV
 http://175.116.137.152:9981/stream/channelid/1259545741?ticket=63DBE7055A1C26525664A09334E7EA3ADF9979BF&profile=pass
-#EXTINF:-1 tvg-id="283" tvg-logo="http://i.imgur.com/fwjRwkx.png" group-title="영화",채널CGV
-http://175.125.162.47:9981/stream/channelid/1694201783?ticket=2D8F064EA1B714175F81B82FDF43CD9409C6490E&profile=pass
-#EXTINF:-1 tvg-id="196" tvg-logo="http://i.imgur.com/D9PzDBr.png" group-title="영화",슈퍼액션
-http://114.204.150.69:9981/stream/channelid/2138213845?ticket=73228024238bfdada5a64bd06d9ea50031e67e62&profile=htsp
 #EXTINF:-1 tvg-id="196" tvg-logo="http://i.imgur.com/D9PzDBr.png" group-title="영화",슈퍼액션
 http://1.233.136.3:9981/stream/channelid/748168504?ticket=F64FB2587ACCE74624390F7097165C9261F6BC65&profile=pass
 #EXTINF:-1 tvg-id="196" tvg-logo="http://i.imgur.com/D9PzDBr.png" group-title="영화",슈퍼액션
@@ -343,6 +339,10 @@ http://175.116.137.152:9981/stream/channelid/1243752613?ticket=730D5B8D5820E49E5
 http://175.116.137.152:9981/stream/channelid/46616181?ticket=232B36D02553A5F0BAEAF8F99A8FBD09FBD436C8&profile=pass
 #EXTINF:-1 tvg-id="196" tvg-logo="http://i.imgur.com/D9PzDBr.png" group-title="영화",슈퍼액션
 http://175.125.162.47:9981/stream/channelid/1198135379?ticket=3C5D41144828B085C1C7CCA0E25A1E3EAD8BB1AB&profile=pass
+#EXTINF:-1 tvg-id="196" tvg-logo="http://i.imgur.com/D9PzDBr.png" group-title="영화",슈퍼액션
+http://58.229.138.182:9981/stream/channelid/221546799?ticket=1B3476A2911BF74A15C4750878468934432716F4&profile=pass
+#EXTINF:-1 tvg-id="134" tvg-logo="http://i.imgur.com/dOOBYJm.png" group-title="영화",mplex
+http://1.233.136.3:9981/stream/channelid/952974229?ticket=B5C3A643EC1D1E7326FA85664DC68C50F2BCE125&profile=pass
 #EXTINF:-1 tvg-id="134" tvg-logo="http://i.imgur.com/dOOBYJm.png" group-title="영화",mplex
 http://1.255.204.7:9981/stream/channelid/372029503?ticket=CB800766EDEECBDA15212103CEC40FC5B8DCE876&profile=pass
 #EXTINF:-1 tvg-id="134" tvg-logo="http://i.imgur.com/dOOBYJm.png" group-title="영화",mplex
@@ -351,38 +351,36 @@ http://175.116.137.152:9981/stream/channelid/2062516026?ticket=4B966E97E80FE16A3
 http://175.125.162.47:9981/stream/channelid/508817627?ticket=82F431DF1710261D2E713329AE0073D69EB31D7B&profile=pass
 #EXTINF:-1 tvg-id="134" tvg-logo="http://i.imgur.com/dOOBYJm.png" group-title="영화",mplex
 http://211.207.173.34:9981/stream/channelid/1728646669?ticket=7F2D2EB1DEF8EABEDE34CCBFF4C583CDD98BAD93&profile=pass
-#EXTINF:-1 tvg-id="134" tvg-logo="http://i.imgur.com/dOOBYJm.png" group-title="영화",mplex
-http://211.207.173.34:9981/stream/channelid/1517259489?ticket=8373CFFB77CCEE43C854FDC03F757080BCD04BC4&profile=pass
-#EXTINF:-1 tvg-id="74" tvg-logo="http://i.imgur.com/8usDWOC.png" group-title="영화",FOX
-http://114.204.150.69:9981/stream/channelid/474820671?ticket=b36cc53968340335ae2b751c6609faa1f59dd1ae&profile=htsp
 #EXTINF:-1 tvg-id="74" tvg-logo="http://i.imgur.com/8usDWOC.png" group-title="영화",FOX
 http://1.255.204.7:9981/stream/channelid/73404505?ticket=3A7FE486A7524AABEC6E5251A3ACB2996AA88C90&profile=pass
+#EXTINF:-1 tvg-id="74" tvg-logo="http://i.imgur.com/8usDWOC.png" group-title="영화",FOX
+http://175.113.154.14:9981/stream/channelid/155352112?ticket=BDB9D46C8A24F95CE63344A65820BF83825F53E2&profile=matroska
+#EXTINF:-1 tvg-id="74" tvg-logo="http://i.imgur.com/8usDWOC.png" group-title="영화",FOX
+http://175.113.154.14:9981/stream/channelid/1934310832?ticket=6B4BEDE8619373F1CE5DA5C6C694E65352C7F9D5&profile=matroska
 #EXTINF:-1 tvg-id="74" tvg-logo="http://i.imgur.com/8usDWOC.png" group-title="영화",FOX
 http://175.116.137.152:9981/stream/channelid/57828452?ticket=BCCE99580617DBBC2DBCF6AB8526E0FDB0B8EA44&profile=pass
 #EXTINF:-1 tvg-id="74" tvg-logo="http://i.imgur.com/8usDWOC.png" group-title="영화",FOX
 http://175.125.162.47:9981/stream/channelid/223188842?ticket=B2C1A68FAACE21D6A5DD189E8F7111FF47B69046&profile=pass
-#EXTINF:-1 tvg-id="74" tvg-logo="http://i.imgur.com/8usDWOC.png" group-title="영화",FOX
-http://211.207.173.34:9981/stream/channelid/482649295?ticket=2E9165D4AA884D554C7F19DD8EAB4825A1B8944D&profile=pass
 #EXTINF:-1 tvg-id="10" tvg-logo="http://i.imgur.com/QrAXBEm.png" group-title="영화",AXN
 http://1.233.136.3:9981/stream/channelid/989558096?ticket=2D90ED3B401B9013E979C714E05C4FF7A2ED68DB&profile=pass
 #EXTINF:-1 tvg-id="10" tvg-logo="http://i.imgur.com/QrAXBEm.png" group-title="영화",AXN
 http://1.255.204.7:9981/stream/channelid/144196258?ticket=E0B32A6C8757046EA9A2095224196BD105ED575B&profile=pass
 #EXTINF:-1 tvg-id="10" tvg-logo="http://i.imgur.com/QrAXBEm.png" group-title="영화",AXN
+http://175.113.154.14:9981/stream/channelid/1860768996?ticket=ED4500CDD0ADDE4D3A796E2D3D5129A240FACAFD&profile=matroska
+#EXTINF:-1 tvg-id="10" tvg-logo="http://i.imgur.com/QrAXBEm.png" group-title="영화",AXN
 http://175.116.137.152:9981/stream/channelid/927439466?ticket=BE0EA2621A98FAAFB802E1702C16BD03ADD184A8&profile=pass
 #EXTINF:-1 tvg-id="10" tvg-logo="http://i.imgur.com/QrAXBEm.png" group-title="영화",AXN
 http://211.207.173.34:9981/stream/channelid/1935213459?ticket=FAF4711823BD616CC5FF63D5C09DDCD0B85BC9F1&profile=pass
-#EXTINF:-1 tvg-id="10" tvg-logo="http://i.imgur.com/QrAXBEm.png" group-title="영화",AXN
-http://211.207.173.34:9981/stream/channelid/2126058038?ticket=694F3FE119730197ED73C2C9D6EE090F92285BA1&profile=pass
+#EXTINF:-1 tvg-id="216" tvg-logo="https://i.imgur.com/gGqDBjb.png" group-title="종편",XtvN
+http://114.204.150.69:9981/stream/channelid/706139971?ticket=3b6de8b428a502b5dfe8f99a92730edaf81e5757&profile=htsp
+#EXTINF:-1 tvg-id="216" tvg-logo="https://i.imgur.com/gGqDBjb.png" group-title="종편",XtvN
+http://1.233.136.3:9981/stream/channelid/1665239298?ticket=6367CB7BE4BC571EC026F4647D78F9CA7C9A5AF1&profile=pass
 #EXTINF:-1 tvg-id="216" tvg-logo="https://i.imgur.com/gGqDBjb.png" group-title="종편",XtvN
 http://1.255.204.7:9981/stream/channelid/761015706?ticket=981285D5A229A690F6BBDBAF3718627031A833A7&profile=pass
 #EXTINF:-1 tvg-id="216" tvg-logo="https://i.imgur.com/gGqDBjb.png" group-title="종편",XtvN
 http://175.116.137.152:9981/stream/channelid/484036159?ticket=AF7BE22167FE95C04095C6D6C777BCDB223D50F0&profile=pass
 #EXTINF:-1 tvg-id="216" tvg-logo="https://i.imgur.com/gGqDBjb.png" group-title="종편",XtvN
 http://175.125.162.47:9981/stream/channelid/311191614?ticket=0D5EDDA35E00D548E2F62ECB46713B60522EE646&profile=pass
-#EXTINF:-1 tvg-id="216" tvg-logo="https://i.imgur.com/gGqDBjb.png" group-title="종편",XtvN
-http://211.207.173.34:9981/stream/channelid/746932433?ticket=77D6B390B14A886574FC7BE4811F6ADED84EA5C3&profile=pass
-#EXTINF:-1 tvg-id="216" tvg-logo="https://i.imgur.com/gGqDBjb.png" group-title="종편",XtvN
-http://58.229.138.182:9981/stream/channelid/30902912?ticket=D410C16553EF618D4E3FBABFDB197A328A8DCBF1&profile=pass
 #EXTINF:-1 tvg-id="147" tvg-logo="http://i.imgur.com/0SMl3O5.png" group-title="종편",O tvN
 http://1.233.136.3:9981/stream/channelid/2102338755?ticket=AA275B95AE9542C4C1F8A13A6455221F5F6BB18E&profile=pass
 #EXTINF:-1 tvg-id="147" tvg-logo="http://i.imgur.com/0SMl3O5.png" group-title="종편",O tvN
@@ -400,13 +398,15 @@ http://211.207.173.34:9981/stream/channelid/1734004954?ticket=94566D4605B7701781
 #EXTINF:-1 tvg-id="154" tvg-logo="http://i.imgur.com/9brMDfR.png" group-title="종편",온스타일
 http://58.229.138.182:9981/stream/channelid/16149368?ticket=27764DA4E9BCB8A6F6066DA1BF2DF3936AFD2B21&profile=pass
 #EXTINF:-1 tvg-id="148" tvg-logo="http://i.imgur.com/5kF0Ypt.png" group-title="종편",올리브
+http://114.204.150.69:9981/stream/channelid/515841251?ticket=b2df4fff9829098e0f1a2fd51d2074f100ddc430&profile=htsp
+#EXTINF:-1 tvg-id="148" tvg-logo="http://i.imgur.com/5kF0Ypt.png" group-title="종편",올리브
+http://1.233.136.3:9981/stream/channelid/1337853466?ticket=76826516B4BDDCFC9FAF8F06417D282F1C6FCC89&profile=pass
+#EXTINF:-1 tvg-id="148" tvg-logo="http://i.imgur.com/5kF0Ypt.png" group-title="종편",올리브
 http://1.255.204.7:9981/stream/channelid/956687452?ticket=0519409185450466540D0DE538539DAAFE19490D&profile=pass
 #EXTINF:-1 tvg-id="148" tvg-logo="http://i.imgur.com/5kF0Ypt.png" group-title="종편",올리브
 http://175.116.137.152:9981/stream/channelid/837817404?ticket=205E4A8E21D090AA4BBFC73247C3ED17082E8C94&profile=pass
 #EXTINF:-1 tvg-id="148" tvg-logo="http://i.imgur.com/5kF0Ypt.png" group-title="종편",올리브
 http://211.207.173.34:9981/stream/channelid/1265059778?ticket=9E1B3E88A09AB95E59804E1D38655AB47CD862C8&profile=pass
-#EXTINF:-1 tvg-id="148" tvg-logo="http://i.imgur.com/5kF0Ypt.png" group-title="종편",올리브
-http://58.229.138.182:9981/stream/channelid/1626301219?ticket=924EB0DA3404F5451BA2E58089D4B5BB9030F1E5&profile=pass
 #EXTINF:-1 tvg-id="72" tvg-logo="http://i.imgur.com/Go4FdK1.png" group-title="아웃도어",FISHING TV
 http://1.233.136.3:9981/stream/channelid/1394409809?ticket=FAB4B13B24FC2FA8667EBFC4668744A33FB1C71E&profile=pass
 #EXTINF:-1 tvg-id="72" tvg-logo="http://i.imgur.com/Go4FdK1.png" group-title="아웃도어",FISHING TV
@@ -420,7 +420,7 @@ http://58.229.138.182:9981/stream/channelid/40785689?ticket=7B88CD4E3701CAEB5CBA
 #EXTINF:-1 tvg-id="245" tvg-logo="http://i.imgur.com/jbRu8T2.png" group-title="아웃도어",바둑TV
 http://114.204.150.69:9981/stream/channelid/946772582?ticket=9300d6c605a3ab63847f6f28294a38bded250c51&profile=htsp
 #EXTINF:-1 tvg-id="245" tvg-logo="http://i.imgur.com/jbRu8T2.png" group-title="아웃도어",바둑TV
-http://114.204.150.69:9981/stream/channelid/413995176?ticket=2a9345a304c3ff8f00c14892f857f328b9afb2e2&profile=htsp
+http://1.233.136.3:9981/stream/channelid/180208920?ticket=1EAE6C4B40CA6A938255D72EC0E7C5669D59997B&profile=pass
 #EXTINF:-1 tvg-id="245" tvg-logo="http://i.imgur.com/jbRu8T2.png" group-title="아웃도어",바둑TV
 http://175.116.137.152:9981/stream/channelid/1762370901?ticket=B3CBA424BEB464979DDF32AA38FE8CF7FA9D4528&profile=pass
 #EXTINF:-1 tvg-id="245" tvg-logo="http://i.imgur.com/jbRu8T2.png" group-title="아웃도어",바둑TV
@@ -458,9 +458,9 @@ http://58.229.138.182:9981/stream/channelid/226093748?ticket=744F8C5F02AF19900EF
 #EXTINF:-1 tvg-id="138" tvg-logo="http://i.imgur.com/SSkop4X.png" group-title="아웃도어",History
 http://1.255.204.7:9981/stream/channelid/1694979354?ticket=CE8650C757B178D524839C7E77510C3A4842B3DA&profile=pass
 #EXTINF:-1 tvg-id="138" tvg-logo="http://i.imgur.com/SSkop4X.png" group-title="아웃도어",History
-http://175.116.137.152:9981/stream/channelid/1114831193?ticket=A79AE33C685DF7302CEBAEC00A88AB600A0F2C74&profile=pass
-#EXTINF:-1 tvg-id="138" tvg-logo="http://i.imgur.com/SSkop4X.png" group-title="아웃도어",History
 http://58.229.138.182:9981/stream/channelid/2077612410?ticket=92D0AA67677D61C71599E68CB3577383EC669E46&profile=pass
+#EXTINF:-1 tvg-id="96" tvg-logo="http://i.imgur.com/NoNRdSt.png" group-title="Kids",JEI 재능TV
+http://1.233.136.3:9981/stream/channelid/790600140?ticket=97B496DA386251078D7D55C472D7C1A57FA17ABC&profile=pass
 #EXTINF:-1 tvg-id="96" tvg-logo="http://i.imgur.com/NoNRdSt.png" group-title="Kids",JEI 재능TV
 http://175.125.162.47:9981/stream/channelid/1336018236?ticket=6D9B7A8AE51805D493055326864D3D8B74192A55&profile=pass
 #EXTINF:-1 tvg-id="96" tvg-logo="http://i.imgur.com/NoNRdSt.png" group-title="Kids",JEI 재능TV
