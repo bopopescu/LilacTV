@@ -201,12 +201,10 @@ http://180.70.214.22:9981/stream/channelid/618683794
 http://180.70.214.22:9981/stream/channelid/562421239
 #EXTINF:-1,FTV
 http://180.70.214.22:9981/stream/channelid/822800302
-#EXTINF:-1,XtvN
-http://211.207.173.34:9981/stream/channelid/746932433
+#EXTINF:-1,OCN
+http://211.207.173.34:9981/stream/channelid/154272361
 #EXTINF:-1,SBS Plus
 http://211.212.43.82:9981/stream/channelid/1893399789
-#EXTINF:-1,KBS2
-http://211.212.43.82:9981/stream/channelid/1281161372
 #EXTINF:-1,KBS1
 http://211.212.43.82:9981/stream/channelid/672326226
 #EXTINF:-1,MBC
@@ -261,10 +259,6 @@ http://211.212.43.82:9981/stream/channelid/1506960605
 http://211.212.43.82:9981/stream/channelid/1322568121
 #EXTINF:-1,FOX
 http://211.212.43.82:9981/stream/channelid/318405851
-#EXTINF:-1,SPOTV
-http://211.212.43.82:9981/stream/channelid/1111947735
-#EXTINF:-1,MBC SPORTS+
-http://211.212.43.82:9981/stream/channelid/589682823
 #EXTINF:-1,SkySports
 http://211.212.43.82:9981/stream/channelid/203448233
 #EXTINF:-1,JTBC3
