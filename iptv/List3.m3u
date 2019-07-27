@@ -79,6 +79,14 @@ http://175.116.137.152:9981/stream/channelid/81882240
 http://175.116.137.152:9981/stream/channelid/680287432
 #EXTINF:-1,SBS Sports
 http://175.116.137.152:9981/stream/channelid/767875792
+#EXTINF:-1,MBC SPORTS+
+http://175.116.137.152:9981/stream/channelid/465490833
+#EXTINF:-1,MBC SPORTS+
+http://175.116.137.152:9981/stream/channelid/1822377455
+#EXTINF:-1,SkySports
+http://175.116.137.152:9981/stream/channelid/44568887
+#EXTINF:-1,SPOTV+
+http://175.116.137.152:9981/stream/channelid/2091788699
 #EXTINF:-1,SPOTV+
 http://175.116.137.152:9981/stream/channelid/1744011175
 #EXTINF:-1,SPOTV2
@@ -117,6 +125,8 @@ http://175.116.137.152:9981/stream/channelid/1442520373
 http://175.116.137.152:9981/stream/channelid/1114831193
 #EXTINF:-1,SBS Sports
 http://175.116.137.152:9981/stream/channelid/1783255557
+#EXTINF:-1,MBC SPORTS+
+http://180.70.214.22:9981/stream/channelid/178608731
 #EXTINF:-1,FOX
 http://211.207.173.34:9981/stream/channelid/482649295
 #EXTINF:-1,KBS JOY
@@ -195,8 +205,8 @@ http://211.207.173.34:9981/stream/channelid/117864828
 http://211.207.173.34:9981/stream/channelid/824699192
 #EXTINF:-1,SBS funE
 http://211.207.173.34:9981/stream/channelid/1987315839
-#EXTINF:-1,EBS
-http://211.212.43.82:9981/stream/channelid/2137644022
+#EXTINF:-1,KBS1
+http://211.212.43.82:9981/stream/channelid/672326226
 #EXTINF:-1,SBS
 http://211.245.55.198:22515/m2u/239.192.41.2:49220
 #EXTINF:-1,KBS2
