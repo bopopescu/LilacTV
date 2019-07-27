@@ -9,8 +9,6 @@ http://1.233.136.3:9981/stream/channelid/2105086368
 http://1.233.136.3:9981/stream/channelid/1336268195
 #EXTINF:-1,EBS
 http://1.233.136.3:9981/stream/channelid/1308360310
-#EXTINF:-1,EBS
-http://1.233.136.3:9981/stream/channelid/1870811472
 #EXTINF:-1,JTBC
 http://1.233.136.3:9981/stream/channelid/554151581
 #EXTINF:-1,MBN
@@ -75,6 +73,8 @@ http://1.233.136.3:9981/stream/channelid/1408578459
 http://1.233.136.3:9981/stream/channelid/510995575
 #EXTINF:-1,O tvN
 http://1.233.136.3:9981/stream/channelid/2102338755
+#EXTINF:-1,올리브
+http://1.233.136.3:9981/stream/channelid/1337853466
 #EXTINF:-1,OGN
 http://1.233.136.3:9981/stream/channelid/1749936236
 #EXTINF:-1,바둑TV
@@ -107,50 +107,30 @@ http://1.233.136.3:9981/stream/channelid/485835135
 http://1.233.136.3:9981/stream/channelid/803712634
 #EXTINF:-1,KBS JOY
 http://1.233.136.3:9981/stream/channelid/1944017103
+#EXTINF:-1,SBS
+http://1.251.114.88:9981/stream/channelid/848910117
 #EXTINF:-1 SBS Plus
 http://39.119.147.3:9981/stream/channelid/392059722
 #EXTINF:-1,MBC
-http://1.251.114.88:9981/stream/channelid/549734655
-#EXTINF:-1,EBS
-http://1.251.114.88:9981/stream/channelid/1910510832
+http://1.251.114.88:9981/stream/channelid/902709545
 #EXTINF:-1,TV조선
-http://1.251.114.88:9981/stream/channelid/1642085432
-#EXTINF:-1,연합뉴스TV
-http://1.251.114.88:9981/stream/channelid/827837113
-#EXTINF:-1,YTN
-http://1.251.114.88:9981/stream/channelid/474243569
-#EXTINF:-1,YTN
-http://1.251.114.88:9981/stream/channelid/1833682817
+http://1.251.114.88:9981/stream/channelid/1137326506
 #EXTINF:-1,MBC Every1
 http://1.251.114.88:9981/stream/channelid/942479267
-#EXTINF:-1,슈퍼액션
-http://1.251.114.88:9981/stream/channelid/2010133753
-#EXTINF:-1,스크린
-http://1.251.114.88:9981/stream/channelid/538358204
-#EXTINF:-1,KBS JOY
-http://1.251.114.88:9981/stream/channelid/708921268
-#EXTINF:-1,JTBC2
-http://1.251.114.88:9981/stream/channelid/56076159
-#EXTINF:-1,O tvN
-http://1.251.114.88:9981/stream/channelid/474378825
-#EXTINF:-1,XtvN
-http://1.251.114.88:9981/stream/channelid/437656702
+#EXTINF:-1,OCN
+http://1.251.114.88:9981/stream/channelid/23984950
+#EXTINF:-1,mplex
+http://1.251.114.88:9981/stream/channelid/197862319
 #EXTINF:-1,FOX
 http://1.251.114.88:9981/stream/channelid/1975992599
-#EXTINF:-1,MBC SPORTS+
-http://1.251.114.88:9981/stream/channelid/1557059415
 #EXTINF:-1,SkySports
 http://1.251.114.88:9981/stream/channelid/76380312
-#EXTINF:-1,JTBC3
-http://1.251.114.88:9981/stream/channelid/2042758067
-#EXTINF:-1,SPOTV+
-http://1.251.114.88:9981/stream/channelid/1112602037
-#EXTINF:-1,SPOTV+
-http://1.251.114.88:9981/stream/channelid/1613045415
-#EXTINF:-1,Disney Channel
-http://1.251.114.88:9981/stream/channelid/364371757
-#EXTINF:-1,스포츠 4채널 #1
-http://1.251.114.88:9981/stream/channelid/644888616
+#EXTINF:-1,JTBC Golf
+http://1.251.114.88:9981/stream/channelid/825875865
+#EXTINF:-1,마운틴TV
+http://1.251.114.88:9981/stream/channelid/1404586036
+#EXTINF:-1,스포츠 4채널 #2
+http://1.251.114.88:9981/stream/channelid/1252752586
 #EXTINF:-1,디스커버리채널
 http://175.125.162.47:9981/stream/channelid/1262954060
 #EXTINF:-1,EBS2
@@ -231,14 +211,10 @@ http://175.125.162.47:9981/stream/channelid/2103565704
 http://175.125.162.47:9981/stream/channelid/2037089414
 #EXTINF:-1,JTBC3
 http://175.125.162.47:9981/stream/channelid/740285141
-#EXTINF:-1,OCN
-http://180.70.214.22:9981/stream/channelid/470907812
 #EXTINF:-1,tvN
-http://211.206.117.212:9981/stream/channelid/1512655690
+http://180.70.214.22:9981/stream/channelid/788151542
 #EXTINF:-1,SBS
 http://211.206.117.212:9981/stream/channelid/1743139644
-#EXTINF:-1,SBS Plus
-http://211.206.117.212:9981/stream/channelid/1520471270
 #EXTINF:-1,KBS2
 http://211.206.117.212:9981/stream/channelid/1916227740
 #EXTINF:-1,KBS1
@@ -329,6 +305,8 @@ http://211.206.117.212:9981/stream/channelid/1856048781
 http://211.206.117.212:9981/stream/channelid/1535452684
 #EXTINF:-1,JTBC Golf
 http://211.206.117.212:9981/stream/channelid/1862992554
+#EXTINF:-1,JTBC Golf
+http://211.206.117.212:9981/stream/channelid/95862072
 #EXTINF:-1,OGN
 http://211.206.117.212:9981/stream/channelid/2008115725
 #EXTINF:-1,SPOTV Games
