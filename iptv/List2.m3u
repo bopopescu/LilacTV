@@ -9,8 +9,8 @@ http://114.204.150.69:9981/stream/channelid/2137543220?ticket=9c2c3e62c1bf79c7dc
 http://114.204.150.69:9981/stream/channelid/93272930?ticket=c0c1bac19d88e60e698bb5692c595f0be374d797&profile=htsp
 #EXTINF:-1,KBS2
 http://114.204.150.69:9981/stream/channelid/1685797477?ticket=88d73b43a52ce331a65b3664fcd042530ffb0781&profile=htsp
-#EXTINF:-1,MBC
-http://114.204.150.69:9981/stream/channelid/1280924237?ticket=e196c4107880af44e784e5a0934f5ee6da9d2de3&profile=htsp
+#EXTINF:-1,JTBC
+http://114.204.150.69:9981/stream/channelid/1227783418?ticket=c30cbc8903eeb30dabd008244d267628b62718b6&profile=htsp
 #EXTINF:-1,tvN
 http://114.204.150.69:9981/stream/channelid/1556822812?ticket=0ba78192a55e58e542f168fe5796d0388651bd9c&profile=htsp
 #EXTINF:-1,Mnet
@@ -33,8 +33,20 @@ http://114.204.150.69:9981/stream/channelid/1024317643?ticket=e79ea80e5057f52152
 http://114.204.150.69:9981/stream/channelid/2138213845?ticket=73228024238bfdada5a64bd06d9ea50031e67e62&profile=htsp
 #EXTINF:-1,FOX
 http://114.204.150.69:9981/stream/channelid/474820671?ticket=b36cc53968340335ae2b751c6609faa1f59dd1ae&profile=htsp
-#EXTINF:-1,NGC
-http://114.204.150.69:9981/stream/channelid/482718203?ticket=8cfa755add829135a6c25da3655716890690c845&profile=htsp
+#EXTINF:-1,스크린
+http://114.204.150.69:9981/stream/channelid/1383109821?ticket=49281defcd4ae174f3ae7e736295340827dad9ed&profile=htsp
+#EXTINF:-1,바둑TV
+http://114.204.150.69:9981/stream/channelid/413995176?ticket=2a9345a304c3ff8f00c14892f857f328b9afb2e2&profile=htsp
+#EXTINF:-1,EBS
+http://114.204.150.69:9981/stream/channelid/1921855933?ticket=fe3ac48367487b834070a06bb4ba1ac44e80edd9&profile=htsp
+#EXTINF:-1,EBS2
+http://114.204.150.69:9981/stream/channelid/474044395?ticket=53fe98f451a48ba78d9a5b4dfba2f7fbd3a0a714&profile=htsp
+#EXTINF:-1,MBC SPORTS+
+http://114.204.150.69:9981/stream/channelid/951818951?ticket=60ab31e0ff6988687d2456fa86d1195b9587b6cf&profile=htsp
+#EXTINF:-1,SPOTV
+http://114.204.150.69:9981/stream/channelid/8642966?ticket=6bc22990885effd33435fdaf9e65f7cbb9720c2b&profile=htsp
+#EXTINF:-1,디스커버리채널
+http://114.204.150.69:9981/stream/channelid/113345936?ticket=e0a71c90eb41776766547ab4a70c16895c099db3&profile=htsp
 #EXTINF:-1,Disney Channel
 http://114.204.150.69:9981/stream/channelid/1346466780?ticket=faa5accaea551d9b01570fde92d4bfcd667ec5ac&profile=htsp
 #EXTINF:-1,디즈니주니어
@@ -45,8 +57,6 @@ http://114.204.150.69:9981/stream/channelid/1127483874?ticket=c2e108743eb1d7475a
 http://114.204.150.69:9981/stream/channelid/706139971?ticket=3b6de8b428a502b5dfe8f99a92730edaf81e5757&profile=htsp
 #EXTINF:-1,MBC Every1
 http://114.204.150.69:9981/stream/channelid/1987214006?ticket=51f85ab8542a321b6f39f9fabeac629ac36a9c40&profile=htsp
-#EXTINF:-1,올리브
-http://114.204.150.69:9981/stream/channelid/515841251?ticket=b2df4fff9829098e0f1a2fd51d2074f100ddc430&profile=htsp
 #EXTINF:-1,FOX
 http://1.255.204.7:9981/stream/channelid/73404505?ticket=3A7FE486A7524AABEC6E5251A3ACB2996AA88C90&profile=pass
 #EXTINF:-1,JTBC Golf
@@ -128,6 +138,8 @@ http://175.113.154.14:9981/stream/channelid/839066479?ticket=60B07996A0EAA5E649E
 #EXTINF:-1,MBC
 http://175.113.154.14:9981/stream/channelid/519287946?ticket=3E7F3D4F76F821D7D8E33A97A93C80A582205DA8&profile=matroska
 #EXTINF:-1 MBC Dramanet
+http://175.113.154.14:9981/stream/channelid/1509028276?ticket=433CE997CC8FBC56EDF64A71C0010F99F648870A&profile=matroska
+#EXTINF:-1 MBC Dramanet
 http://175.113.154.14:9981/stream/channelid/1509028276?ticket=67B67E9F2800778B20380EA1F38D7385A2CBB4EF&profile=matroska
 #EXTINF:-1,EBS
 http://175.113.154.14:9981/stream/channelid/140577025?ticket=966FAF28DFF8DD1598D4D7CEE3EC0B6858D89956&profile=matroska
@@ -137,8 +149,6 @@ http://175.113.154.14:9981/stream/channelid/1571542367?ticket=AEE0E4C360E1EE8507
 http://175.113.154.14:9981/stream/channelid/559117551?ticket=37D763D5B63DA6BDB6C123D03341EBE6C5583DF1&profile=matroska
 #EXTINF:-1,TV조선
 http://175.113.154.14:9981/stream/channelid/860685096?ticket=60967C89804555AFF5B8552BF7CF06A4DDBD283C&profile=matroska
-#EXTINF:-1,연합뉴스TV
-http://175.113.154.14:9981/stream/channelid/82082170?ticket=939192AA37CC5C7186C42BC95C13FA1CB4459B55&profile=matroska
 #EXTINF:-1,Mnet
 http://175.113.154.14:9981/stream/channelid/798635856?ticket=685F13B18CB894C3C7DA744A0C44F65C92962B9F&profile=matroska
 #EXTINF:-1,MBC Every1
@@ -153,14 +163,12 @@ http://175.113.154.14:9981/stream/channelid/2001507621?ticket=2E31B35992AFF9BA95
 http://175.113.154.14:9981/stream/channelid/1932685791?ticket=B0E77C406A070AA8C4FEAC9184850F4FDE47E19D&profile=matroska
 #EXTINF:-1,스크린
 http://175.113.154.14:9981/stream/channelid/1833391395?ticket=898EF8BD16A2D099D6DC1FEB47957015DA110684&profile=matroska
-#EXTINF:-1,mplex
-http://175.113.154.14:9981/stream/channelid/225639757?ticket=690E8E5211015B748377A514EB2E8E63DED43100&profile=matroska
 #EXTINF:-1,KBS JOY
 http://175.113.154.14:9981/stream/channelid/930743906?ticket=CE92B6D1A89B8FB70E4AFF2DA440BE3B9081990E&profile=matroska
-#EXTINF:-1,SBS funE
-http://175.113.154.14:9981/stream/channelid/1436643837?ticket=956559F643BE9E1C13E8EB5192D8BA5686AA5CCF&profile=matroska
 #EXTINF:-1,JTBC2
 http://175.113.154.14:9981/stream/channelid/1803181668?ticket=307347E60BE36BB76806E5A1738C8BA270F2D2B8&profile=matroska
+#EXTINF:-1,O tvN
+http://175.113.154.14:9981/stream/channelid/1658705219?ticket=F90A1D5B6865CE8CD06A1F0692D7AE59A06C0BFE&profile=matroska
 #EXTINF:-1,XtvN
 http://175.113.154.14:9981/stream/channelid/708025455?ticket=D0C78F3D9112C221DB90653997967DB34013838A&profile=matroska
 #EXTINF:-1,EBS2
@@ -607,6 +615,8 @@ http://58.229.138.182:9981/stream/channelid/387814770?ticket=D32CEB6A356DC1C9913
 http://58.229.138.182:9981/stream/channelid/1344876514?ticket=60FAD507E7FA31EFA515369098C4A02660A1DFA4&profile=pass
 #EXTINF:-1,JEI 재능TV
 http://58.229.138.182:9981/stream/channelid/994871156?ticket=55556727F79BFA67D8CE4301BF8D01039BE850D9&profile=pass
+#EXTINF:-1,온스타일
+http://58.229.138.182:9981/stream/channelid/16149368?ticket=27764DA4E9BCB8A6F6066DA1BF2DF3936AFD2B21&profile=pass
 #EXTINF:-1,바둑TV
 http://58.229.138.182:9981/stream/channelid/949368616?ticket=37C02138C4F4E4211468FE8D24700ABCC20DE91D&profile=pass
 #EXTINF:-1,바둑TV
