@@ -113,6 +113,8 @@ http://1.251.114.88:9981/stream/channelid/1942708467
 http://1.251.114.88:9981/stream/channelid/1404586036
 #EXTINF:-1,스포츠 4채널 #2
 http://1.251.114.88:9981/stream/channelid/1252752586
+#EXTINF:-1,스포츠 4채널 #1
+http://1.251.114.88:9981/stream/channelid/644888616
 #EXTINF:-1,디스커버리채널
 http://175.125.162.47:9981/stream/channelid/1262954060
 #EXTINF:-1,EBS2
@@ -193,8 +195,6 @@ http://175.125.162.47:9981/stream/channelid/2103565704
 http://175.125.162.47:9981/stream/channelid/2037089414
 #EXTINF:-1,JTBC3
 http://175.125.162.47:9981/stream/channelid/740285141
-#EXTINF:-1,SBS
-http://180.70.214.22:9981/stream/channelid/808152473
 #EXTINF:-1,KBS2
 http://180.70.214.22:9981/stream/channelid/1645234319
 #EXTINF:-1,KBS1
@@ -249,6 +249,12 @@ http://180.70.214.22:9981/stream/channelid/2087060642
 http://180.70.214.22:9981/stream/channelid/928629585
 #EXTINF:-1,FOX
 http://180.70.214.22:9981/stream/channelid/283354401
+#EXTINF:-1,SPOTV
+http://180.70.214.22:9981/stream/channelid/1136894879
+#EXTINF:-1,KBS N Sports
+http://180.70.214.22:9981/stream/channelid/839516947
+#EXTINF:-1,SBS Sports
+http://180.70.214.22:9981/stream/channelid/81583125
 #EXTINF:-1,MBC SPORTS+
 http://180.70.214.22:9981/stream/channelid/178608731
 #EXTINF:-1,SkySports
