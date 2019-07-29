@@ -11,8 +11,8 @@ from urlresolver.resolver import UrlResolver, ResolverError
  
 class XStreamCDNResolver(UrlResolver):
     name = 'XStreamCDN'
-    domains = ['xstreamcdn.com']
-    pattern = '(?://|\.)(xstreamcdn\.com)/v/([\w-]+)' # Host and media-id pattern.
+    domains = ["xstreamcdn.com", "gcloud.live", "there.to", "animeproxy.info"]
+    pattern = '(?://|\.)((?:xstreamcdn\.com|gcloud\.live|there\.to|animeproxy\.info))/v/([\w-]+)' # Host and media-id pattern.
  
     def __init__(self):
         self.net = Net()
@@ -23,8 +23,7 @@ class XStreamCDNResolver(UrlResolver):
             'X-Requested-With': 'XMLHttpRequest',
             'DNT': '1'
         }
- 
- 
+
     def get_media_url(self, host, media_id):
         self.desktopHeaders['Referer'] = self.get_url(host, media_id)
  
@@ -45,8 +44,7 @@ class XStreamCDNResolver(UrlResolver):
             )
             return source + helpers.append_headers(self.desktopHeaders)
         raise ResolverError('Unable to locate video')
- 
- 
+
     def get_url(self, host, media_id):
         return self._default_get_url(host, media_id, template='https://{host}/v/{media_id}')
 

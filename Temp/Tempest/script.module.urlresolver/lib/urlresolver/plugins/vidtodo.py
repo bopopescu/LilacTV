@@ -24,8 +24,8 @@ from urlresolver.resolver import UrlResolver, ResolverError
 
 class VidToDoResolver(UrlResolver):
     name = 'Vidtodo'
-    domains = ['vidtodoo.com', 'vidtodo.com']
-    pattern = '(?://|\.)((?:vidtodoo|vidtodo)\.(?:com))/(?:embed-)?([0-9a-zA-Z]+)'
+    domains = ['vidtodu.com', 'vidtodo.com', 'vidtodoo.com']
+    pattern = '(?://|\.)((?:vidtodu|vidtodo|vidtodoo)\.(?:com))/(?:embed-)?([0-9a-zA-Z]+)'
  
     def __init__(self):
         self.net = Net()
@@ -65,4 +65,4 @@ class VidToDoResolver(UrlResolver):
         raise ResolverError('Unable to locate video')
 
     def get_url(self, host, media_id):
-        return self._default_get_url(host, media_id, template='https://{host}/{media_id}')
+        return self._default_get_url(host, media_id, template='https://vidtodu.com/{media_id}')

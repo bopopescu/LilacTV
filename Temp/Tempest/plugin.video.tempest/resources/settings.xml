@@ -92,21 +92,22 @@
         <setting id="provider.cartoonwire" type="bool" label="CARTOONWIRE" default="true" />
         <setting id="provider.cmovieshd" type="bool" label="CMOVIESHD" default="true" />
         <setting id="provider.extramovies" type="bool" label="EXTRAMOVIES" default="true" />
+        <setting id="provider.ganoolrip" type="bool" label="GANOOLRIP" default="true" />
+        <setting id="provider.geektv" type="bool" label="GEEKTV" default="true" />
         <setting id="provider.gowatchseries" type="bool" label="GOWATCHSERIES" default="true" />
-        <setting id="provider.hdpopcorneu" type="bool" label="HDPOPCORNEU" default="true" />
+        <setting id="provider.hdbest" type="bool" label="HDBEST" default="true" />
         <setting id="provider.iwannawatch" type="bool" label="IWANNAWATCH" default="true" />
-        <setting id="provider.movie4kis" type="bool" label="MOVIE4KIS" default="true" />
         <setting id="provider.moviescouch" type="bool" label="MOVIECOUCH" default="true" />
         <setting id="provider.mycouchtuner" type="bool" label="MYCOUCHTUNER" default="true" />
-        <setting id="provider.odb" type="bool" label="ODB" default="true" />
+        <setting id="provider.newepisodes" type="bool" label="NEWEPISODES" default="true"/>
         <setting id="provider.projectfreetv" type="bool" label="PROJECTFREETV" default="true" />
         <setting id="provider.seehd" type="bool" label="SEEHD" default="true" />
-        <setting id="provider.series9" type="bool" label="SERIES9" default="true" />
         <setting id="provider.seriesonline" type="bool" label="SERIESONLINE" default="true" />
-        <setting id="provider.solarmoviez" type="bool" label="SOLARMOVIEZ" default="true" />
+        <setting id="provider.streamdreams" type="bool" label="STREAMDREAMS" default="true" />
         <setting id="provider.swatchseries" type="bool" label="SWATCHSERIES" default="true" />
         <setting id="provider.telepisodes" type="bool" label="TELEPSODES" default="true" />
         <setting id="provider.timewatch" type="bool" label="TIMEWATCH" default="true" />
+        <setting id="provider.tvmovieflix" type="bool" label="TVMOVIEFLIX" default="true" />
         <setting id="provider.watchepisodes4" type="bool" label="WATCHEPISODES4" default="true" />
         <setting id="provider.watchfree" type="bool" label="WATCHFREE" default="true" />
         <setting id="provider.watchseries" type="bool" label="WATCHSERIES" default="true" />

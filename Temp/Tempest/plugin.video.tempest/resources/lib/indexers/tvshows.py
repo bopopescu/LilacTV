@@ -1350,6 +1350,7 @@ class tvshows:
 
         control.content(syshandle, 'tvshows')
         control.directory(syshandle, cacheToDisc=True)
+        control.sleep(1000)
         views.setView('tvshows', {'skin.estuary': 55, 'skin.confluence': 500})
 
     def addDirectory(self, items, queue=False):

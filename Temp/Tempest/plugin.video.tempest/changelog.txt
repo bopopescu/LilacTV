@@ -1,5 +1,11 @@
 Report any issues at https://github.com/Tempest0580/tempest/issues
 
+[B][COLOR gold] 4.0.83 [/COLOR][/B]
+- Added Duplicate Sources Checker, Disabled by default (Thanks to doko-desuka)
+- Fixed a few Scrapers
+- Added a few scrapers (Some Thanks to Jewbmk)
+- Removed few dead scrapers
+
 [B][COLOR gold] 4.0.82 [/COLOR][/B]
 - Removed a few Dead Scrapers
 - Fexed a few Scrapers

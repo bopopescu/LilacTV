@@ -48,7 +48,8 @@ class source:
 
             for url in urls:
                 valid, hoster = source_utils.is_host_valid(url, hostDict)
-                if not valid: continue
+                if not valid:
+                    continue
                 try:
                     url.decode('utf-8')
                     sources.append({'source': hoster, 'quality': 'SD', 'language': 'en', 'url': url, 'direct': False, 'debridonly': False})

@@ -439,11 +439,11 @@ def toggleAll(setting, query=None, sourceList=None):
 
 if mode == "toggleAllNormal":
     sourcelist = ['cartoonhd', 'animetoon',
-                  'cartoonwire', 'cmovieshd', 'extramovies', 'gomoviesink', 'gowatchseries',
-                  'hdpopcorneu', 'iwannawatch', 'movie4kis', 'moviescouch', 'mycouchtuner', 'odb',
-                  'projectfreetv', 'reddit', 'seehd', 'series9', 'seriesonline',
-                  'solarmoviez', 'swatchseries', 'telepisodes', 'timewatch', 'watchepisodes4', 'watchfree',
-                  'watchseries', 'wsunblock']
+                  'cartoonwire', 'cmovieshd', 'extramovies', 'ganoolrip', 'geektv', 'gomoviesink', 'gowatchseries',
+                  'hdbest', 'iwannawatch', 'moviescouch', 'mycouchtuner', 'newepisodes',
+                  'projectfreetv', 'reddit', 'seehd', 'series9', 'seriesonline', 'solarmoviez',
+                  'streamdreams', 'swatchseries', 'telepisodes', 'timewatch', 'tvmovieflix','watchepisodes4',
+                  'watchfree', 'watchseries', 'wsunblock']
     toggleAll(params['setting'], params['query'], sourcelist)
 
 if mode == "toggleAllDebrid":

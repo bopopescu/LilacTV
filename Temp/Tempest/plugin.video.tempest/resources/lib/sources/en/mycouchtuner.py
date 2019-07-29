@@ -27,8 +27,9 @@ class source:
 
     def episode(self, url, imdb, tvdb, title, premiered, season, episode):
         try:
-            if not url: return
-            r = client.request(url)
+            if not url:
+                return
+            r = self.scraper.get(url).content
             match = re.compile('2mycouchtuner\..+?/(.+?)/\' title=\'.+? Season ' + season + ' Episode ' + episode + '\:').findall(r)
             for url in match:
                 url = 'https://mycouchtuner.li/' + url
