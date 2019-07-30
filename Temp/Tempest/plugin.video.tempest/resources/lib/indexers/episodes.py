@@ -646,8 +646,8 @@ class seasons:
 
                 item.setArt(art)
                 item.addContextMenuItems(cm)
-                item.setInfo(type='Video', infoLabels = control.metadataClean(meta))
-                #item.setInfo(type='Video', infoLabels=meta) # old code
+                item.setInfo(type='Video', infoLabels=control.metadataClean(meta))
+                # item.setInfo(type='Video', infoLabels=meta) # old code
 
                 video_streaminfo = {'codec': 'h264'}
                 item.addStreamInfo('video', video_streaminfo)
@@ -1872,7 +1872,8 @@ class episodes:
                     pass
                 try:
                     meta.update({'title': i['label']})
-                except: pass
+                except:
+                    pass
 
                 sysmeta = urllib.quote_plus(json.dumps(meta))
 
