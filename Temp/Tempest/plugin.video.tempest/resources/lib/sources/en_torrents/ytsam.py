@@ -35,9 +35,7 @@ class source:
             data = dict([(i, data[i][0]) if data[i] else (i, '') for i in data])
             query = '%s %s' % (data['title'], data['year'])
             url = self.search_link % urllib.quote(query)
-            print url
             url = urlparse.urljoin(self.base_link, url)
-            print url
             html = client.request(url)
             try:
                 results = client.parseDOM(html, 'div', attrs={'class': 'row'})[2]

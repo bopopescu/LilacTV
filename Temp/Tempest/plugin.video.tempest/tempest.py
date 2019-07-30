@@ -438,28 +438,24 @@ def toggleAll(setting, query=None, sourceList=None):
 
 
 if mode == "toggleAllNormal":
-    sourcelist = ['cartoonhd', 'animetoon',
-                  'cartoonwire', 'cmovieshd', 'extramovies', 'ganoolrip', 'geektv', 'gomoviesink', 'gowatchseries',
-                  'hdbest', 'iwannawatch', 'moviescouch', 'mycouchtuner', 'newepisodes',
-                  'projectfreetv', 'reddit', 'seehd', 'series9', 'seriesonline', 'solarmoviez',
-                  'streamdreams', 'swatchseries', 'telepisodes', 'timewatch', 'tvmovieflix','watchepisodes4',
-                  'watchfree', 'watchseries', 'wsunblock']
+    sourcelist = ['animetoon', 'cartoonhd', 'cartoonhdto', 'cmovieshd', 'divxcrawler', 'extramovies', 'ganoolrip',
+                  'geektv', 'getmywatchseries', 'gomoviesink', 'gowatchseries', 'hdbest', 'iwannawatch', 'moviescouch',
+                  'mycouchtuner', 'newepisodes', 'primewire', 'projectfreetv', 'reddit', 'seehd', 'series9',
+                  'seriesonline', 'solarmoviez', 'streamdreams', 'swatchseries', 'telepisodes', 'timewatch',
+                  'tvmovieflix','watchepisodes4', 'watchfree', 'watchseries', 'watchseriessto', 'wsunblock', 'zmovies']
     toggleAll(params['setting'], params['query'], sourcelist)
 
 if mode == "toggleAllDebrid":
-    sourcelist = ['2ddl', '300mbdownload', '300mbfilms', 'ddlspot', 'directdl', 'maxrls', 'ganool',
-                  'moviesleak', 'mvrls', 'myvideolinks', 'rapidmoviez', 'rlsb', 'rlsbb', 'rlslog', 'sceneddl',
-                  'scenerls', 'ultrahd']
+    sourcelist = ['2ddl', '300mbdownload', '300mbfilms', 'ddlspot', 'directdl', 'maxrls', 'ganool', 'moviesleak',
+                  'mvrls', 'myvideolinks', 'rapidmoviez', 'rlsb', 'rlsbb', 'rlslog', 'sceneddl', 'scenerls',
+                  'scenerlsc', 'ultrahd']
     toggleAll(params['setting'], params['query'], sourcelist)
 
 if mode == "toggleAllDirect":
-    sourcelist = ['d1dldrm', 'dl2dlb3d', 'dl3dlb3d', 'dl3f2m', 'dl4dlb3d',
-                  'dl4lavinmovie', 'dl5dlb3d', 'dl5f2m', 'dl6dlb3d', 'dl6f2m', 'dl7dlb3d', 'dl7f2m',
-                  'dl7lavinmovie', 'dl8dlb3d', 'dl8lavinmovie', 'dl12dlb3d',
-                  'dl20mihanpix', 'dldlb3d', 'dlmeliupload', 'dlmyfilm', 'dlsitemovie',
-                  'dlsrvdl', 'gmovies', 'hdpopcorns', 'iwaatch', 'mihanpix',
-                  'movieminions', 'pz10028', 'pz10093', 's1dlserver', 's1tinydl', 's2dlserver',
-                  's19bitdl', 'stgpz10139']
+    sourcelist = ['d1dldrm', 'dl2dlb3d', 'dl3dlb3d', 'dl3f2m', 'dl4dlb3d', 'dl4lavinmovie', 'dl5dlb3d', 'dl5f2m',
+                  'dl6dlb3d', 'dl6f2m', 'dl7dlb3d', 'dl7f2m', 'dl7lavinmovie', 'dl8dlb3d', 'dl8lavinmovie', 'dl12dlb3d',
+                  'dldlb3d', 'dlmeliupload', 'dlmyfilm', 'dlsitemovie', 'dlsrvdl', 'gmovies',
+                  'pz10028', 'pz10093', 's1dlserver', 's1tinydl', 's2dlserver', 's19bitdl', 'stgpz10139']
     toggleAll(params['setting'], params['query'], sourcelist)
 
 if mode == "toggleAllTorrent":

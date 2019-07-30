@@ -339,7 +339,8 @@ class tvshows:
         else:
             self.list = cache.get(self.imdb_person_list, 1, url)
 
-        for i in range(0, len(self.list)): self.list[i].update({'action': 'tvshows'})
+        for i in range(0, len(self.list)):
+            self.list[i].update({'action': 'tvshows'})
         self.addDirectory(self.list)
         return self.list
 

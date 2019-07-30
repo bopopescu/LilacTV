@@ -27,7 +27,6 @@ class source:
     def episode(self, url, imdb, tvdb, title, premiered, season, episode):
         try:
             url = urlparse.urljoin(self.base_link, self.search_link % (url, season, episode))
-            print url
             return url
         except:
             return
@@ -40,11 +39,9 @@ class source:
 
             hostDict =  hostDict + hostprDict
             result = client.request(url)
-            print result
 
             dom = dom_parser.parse_dom(result, 'a', req='data-video')
             urls = [i.attrs['data-video'] if i.attrs['data-video'].startswith('https') else 'https:' + i.attrs['data-video'] for i in dom]
-            print urls
 
             for url in urls:
                 valid, hoster = source_utils.is_host_valid(url, hostDict)

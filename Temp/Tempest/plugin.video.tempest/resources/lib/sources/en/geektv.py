@@ -41,7 +41,7 @@ class source:
             r = self.session.get(url, headers=self.headers).content
             match = re.compile("<iframe.+?src='(.+?)'", re.DOTALL | re.M).findall(r)
             for link in match:
-                link =  "https:" + link if not link.startswith('http') else link
+                link = "https:" + link if not link.startswith('http') else link
                 valid, host = source_utils.is_host_valid(link, hostDict)
                 if valid:
                     quality, info = source_utils.get_release_quality(link, link)
