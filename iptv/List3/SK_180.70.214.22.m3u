@@ -1,4 +1,6 @@
 #EXTM3U
+#EXTINF:-1,SBS Plus
+http://180.70.214.22:9981/stream/channelid/2544496
 #EXTINF:-1,SBS
 http://180.70.214.22:9981/stream/channelid/808152473
 #EXTINF:-1,KBS2
@@ -27,6 +29,10 @@ http://180.70.214.22:9981/stream/channelid/556654581
 http://180.70.214.22:9981/stream/channelid/1523450075
 #EXTINF:-1,MBC Every1
 http://180.70.214.22:9981/stream/channelid/578886270
+#EXTINF:-1,KBS DRAMA
+http://180.70.214.22:9981/stream/channelid/60269005
+#EXTINF:-1,MBC Dramanet
+http://180.70.214.22:9981/stream/channelid/819551953
 #EXTINF:-1,올리브
 http://180.70.214.22:9981/stream/channelid/1384261654
 #EXTINF:-1,채널CGV
@@ -75,3 +81,21 @@ http://180.70.214.22:9981/stream/channelid/618683794
 http://180.70.214.22:9981/stream/channelid/562421239
 #EXTINF:-1,FTV
 http://180.70.214.22:9981/stream/channelid/822800302
+#EXTINF:-1,SkyTravel
+http://180.70.214.22:9981/stream/channelid/2044531304
+#EXTINF:-1,연합뉴스TV
+http://180.70.214.22:9981/stream/channelid/185070743
+#EXTINF:-1,KBS DRAMA
+http://180.70.214.22:9981/stream/channelid/763063093
+#EXTINF:-1,mplex
+http://180.70.214.22:9981/stream/channelid/157230992
+#EXTINF:-1,KBS JOY
+http://180.70.214.22:9981/stream/channelid/1169702451
+#EXTINF:-1,FOX
+http://180.70.214.22:9981/stream/channelid/1083523863
+#EXTINF:-1,SPOTV
+http://180.70.214.22:9981/stream/channelid/996093701
+#EXTINF:-1,SBS Sports
+http://180.70.214.22:9981/stream/channelid/2146144270
+#EXTINF:-1,MBC SPORTS+
+http://180.70.214.22:9981/stream/channelid/1935089886

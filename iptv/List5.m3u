@@ -1,0 +1,5 @@
+#EXTM3U
+#EXTINF:-1,MBC Every1
+http://121.171.228.205:9981/stream/channelid/20
+#EXTINF:-1,tvN
+http://121.171.228.205:9981/stream/channelid/19
