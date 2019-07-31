@@ -57,8 +57,8 @@ http://220.81.169.165:9981/stream/channelid/1377542707
 http://220.81.169.165:9981/stream/channelid/700635755
 #EXTINF:-1,채널CGV
 http://180.70.214.22:9981/stream/channelid/477375300
-#EXTINF:-1,JTBC
-http://211.207.173.34:9981/stream/channelid/312259017
+#EXTINF:-1,KBS2
+http://211.207.173.34:9981/stream/channelid/397513708
 #EXTINF:-1,SBS Plus
 http://211.212.43.82:9981/stream/channelid/1893399789
 #EXTINF:-1,SBS
@@ -69,6 +69,10 @@ http://211.212.43.82:9981/stream/channelid/1281161372
 http://211.212.43.82:9981/stream/channelid/672326226
 #EXTINF:-1,MBC
 http://211.212.43.82:9981/stream/channelid/1740034327
+#EXTINF:-1,EBS
+http://211.212.43.82:9981/stream/channelid/2137644022
+#EXTINF:-1,JTBC
+http://211.212.43.82:9981/stream/channelid/1130825941
 #EXTINF:-1,MBN
 http://211.212.43.82:9981/stream/channelid/1048787051
 #EXTINF:-1,tvN
@@ -81,10 +85,6 @@ http://211.212.43.82:9981/stream/channelid/1517406268
 http://211.212.43.82:9981/stream/channelid/1486163681
 #EXTINF:-1,YTN
 http://211.212.43.82:9981/stream/channelid/1261960433
-#EXTINF:-1,Mnet
-http://211.212.43.82:9981/stream/channelid/514773821
-#EXTINF:-1,MBC Every1
-http://211.212.43.82:9981/stream/channelid/1341960714
 #EXTINF:-1,KBS DRAMA
 http://211.212.43.82:9981/stream/channelid/1774488237
 #EXTINF:-1,MBC Dramanet
@@ -125,6 +125,10 @@ http://211.212.43.82:9981/stream/channelid/589682823
 http://211.212.43.82:9981/stream/channelid/203448233
 #EXTINF:-1,JTBC3
 http://211.212.43.82:9981/stream/channelid/276686660
+#EXTINF:-1,SBS GOLF
+http://211.212.43.82:9981/stream/channelid/208254445
+#EXTINF:-1,JTBC Golf
+http://211.212.43.82:9981/stream/channelid/1590302031
 #EXTINF:-1,OGN
 http://211.212.43.82:9981/stream/channelid/1879010559
 #EXTINF:-1,Tooniverse
@@ -135,12 +139,6 @@ http://211.212.43.82:9981/stream/channelid/1551611467
 http://211.212.43.82:9981/stream/channelid/596961437
 #EXTINF:-1,바둑TV
 http://211.212.43.82:9981/stream/channelid/345573518
-#EXTINF:-1,FTV
-http://211.212.43.82:9981/stream/channelid/303838789
-#EXTINF:-1,FISHING TV
-http://211.212.43.82:9981/stream/channelid/2078502775
-#EXTINF:-1,SkyTravel
-http://211.212.43.82:9981/stream/channelid/1420664561
 #EXTINF:-1,마운틴TV
 http://211.212.43.82:9981/stream/channelid/651541008
 #EXTINF:-1,NGC
