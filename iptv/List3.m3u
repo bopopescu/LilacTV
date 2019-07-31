@@ -55,32 +55,6 @@ http://220.81.169.165:9981/stream/channelid/2124340202
 http://220.81.169.165:9981/stream/channelid/1377542707
 #EXTINF:-1,JEI 재능TV
 http://220.81.169.165:9981/stream/channelid/700635755
-#EXTINF:-1,SBS GOLF
-http://118.218.172.32:9981/stream/channelid/1395395222?ticket=D5A2BF840F0236E4DB3EB8CB5AE5AA0CA70AF1B4&profile=pass
-#EXTINF:-1,JTBC Golf
-http://118.218.172.32:9981/stream/channelid/2057923382?ticket=FBA288B52CBFACF4DD279B4370D877E17F9090C3&profile=pass
-#EXTINF:-1,OGN
-http://118.218.172.32:9981/stream/channelid/2008917390?ticket=E925DA7725A1942C190976F6B8B361C12501955C&profile=pass
-#EXTINF:-1,Tooniverse
-http://118.218.172.32:9981/stream/channelid/872000644?ticket=B7029A97C32C2B6EA4ACCF2BD50D29C50055D111&profile=pass
-#EXTINF:-1,Disney Channel
-http://118.218.172.32:9981/stream/channelid/503156378?ticket=0B575FFB036D2870B8BEC0ADEC3A7764B211E591&profile=pass
-#EXTINF:-1,JEI 재능TV
-http://118.218.172.32:9981/stream/channelid/728262238?ticket=351E9326806694FFE0235D8EC00510B23249054C&profile=pass
-#EXTINF:-1,온스타일
-http://118.218.172.32:9981/stream/channelid/1151947301?ticket=C4D2A309074454DF77A908A02FE290BFE07D6D3F&profile=pass
-#EXTINF:-1,바둑TV
-http://118.218.172.32:9981/stream/channelid/876137741?ticket=A14946F728D2DD891E7B5A8D1F18DEB027B960C7&profile=pass
-#EXTINF:-1,바둑TV
-http://118.218.172.32:9981/stream/channelid/1600494551?ticket=69330DFC1622335ED934B0324BA884EF4EB3B79B&profile=pass
-#EXTINF:-1,FTV
-http://118.218.172.32:9981/stream/channelid/503770705?ticket=4B9D769B38C63326CD527617721C4A19C42ED60A&profile=pass
-#EXTINF:-1,SkyTravel
-http://118.218.172.32:9981/stream/channelid/845543023?ticket=4C02B238EB09844841BD873E5AAF6F1302E8F8DA&profile=pass
-#EXTINF:-1,NGC
-http://118.218.172.32:9981/stream/channelid/1181610295?ticket=64D3E9A76C51E349A7056A4517DF2F5EF4C30C31&profile=pass
-#EXTINF:-1,디스커버리채널
-http://118.218.172.32:9981/stream/channelid/796598025?ticket=2F655738359ECB46C916025722954F519F9FE3E5&profile=pass
 #EXTINF:-1,채널CGV
 http://180.70.214.22:9981/stream/channelid/477375300
 #EXTINF:-1,FOX
@@ -133,34 +107,6 @@ http://211.207.173.34:9981/stream/channelid/154272361
 http://211.207.173.34:9981/stream/channelid/746932433
 #EXTINF:-1,채널CGV
 http://211.207.173.34:9981/stream/channelid/1801900825
-#EXTINF:-1,AXN
-http://211.207.173.34:9981/stream/channelid/2126058038
-#EXTINF:-1,SPOTV Games
-http://211.207.173.34:9981/stream/channelid/233751583
-#EXTINF:-1,SkySports
-http://211.207.173.34:9981/stream/channelid/359067551
-#EXTINF:-1,Tooniverse
-http://211.207.173.34:9981/stream/channelid/1825843683
-#EXTINF:-1,JEI 재능TV
-http://211.207.173.34:9981/stream/channelid/1826505054
-#EXTINF:-1,Disney Channel
-http://211.207.173.34:9981/stream/channelid/36888718
-#EXTINF:-1,디즈니주니어
-http://211.207.173.34:9981/stream/channelid/175634969
-#EXTINF:-1,온스타일
-http://211.207.173.34:9981/stream/channelid/1734004954
-#EXTINF:-1,NGC
-http://211.207.173.34:9981/stream/channelid/1310282897
-#EXTINF:-1,올리브
-http://211.207.173.34:9981/stream/channelid/1265059778
-#EXTINF:-1,JTBC3
-http://211.207.173.34:9981/stream/channelid/1221484805
-#EXTINF:-1,디스커버리채널
-http://211.207.173.34:9981/stream/channelid/117864828
-#EXTINF:-1,O tvN
-http://211.207.173.34:9981/stream/channelid/824699192
-#EXTINF:-1,SBS funE
-http://211.207.173.34:9981/stream/channelid/1987315839
 #EXTINF:-1,SBS Plus
 http://211.212.43.82:9981/stream/channelid/1893399789
 #EXTINF:-1,SBS
@@ -187,8 +133,6 @@ http://211.212.43.82:9981/stream/channelid/1517406268
 http://211.212.43.82:9981/stream/channelid/1486163681
 #EXTINF:-1,YTN
 http://211.212.43.82:9981/stream/channelid/1261960433
-#EXTINF:-1,Mnet
-http://211.212.43.82:9981/stream/channelid/514773821
 #EXTINF:-1,MBC Every1
 http://211.212.43.82:9981/stream/channelid/1341960714
 #EXTINF:-1,KBS DRAMA
@@ -245,6 +189,8 @@ http://211.212.43.82:9981/stream/channelid/1551611467
 http://211.212.43.82:9981/stream/channelid/596961437
 #EXTINF:-1,바둑TV
 http://211.212.43.82:9981/stream/channelid/345573518
+#EXTINF:-1,FTV
+http://211.212.43.82:9981/stream/channelid/303838789
 #EXTINF:-1,FISHING TV
 http://211.212.43.82:9981/stream/channelid/2078502775
 #EXTINF:-1,SkyTravel
