@@ -49,26 +49,37 @@ def main(config):
     db = mysql.connector.Connect(**config)
     cursor = db.cursor()
 
-    now = datetime.now()
-    formatted_date = now.strftime('%Y-%m-%d %H:%M:%S')
+    # now = datetime.now()
+    # formatted_date = now.strftime('%Y-%m-%d %H:%M:%S')
 
     ip = check_in()
     eth0 = getHwAddr('eth0')
     wlan = getHwAddr('wlan0')
 
-    device = ((eth0, wlan, ip))
-    stmt_insert = """
-        INSERT INTO items (macaddeth0, macaddwlan, ipadd, online)
-        VALUES (%s,%s,%s,1)
-        ON DUPLICATE KEY UPDATE
-        ipadd = VALUES(ipadd), online = VALUES(online)
-    """
-    try:
-        cursor.execute(stmt_insert, device)
+    # device = ((eth0, wlan, ip))
+    # stmt_insert = """
+    #     INSERT INTO items (macaddeth0, macaddwlan, ipadd, online)
+    #     VALUES (%s,%s,%s,1)
+    #     ON DUPLICATE KEY UPDATE
+    #     ipadd = VALUES(ipadd), online = VALUES(online)
+    # """
+    # try:
+    #     cursor.execute(stmt_insert, device)
+    #
+    # except (mysql.connector.errors.Error, TypeError) as e:
+    #     output.append("Failed inserting %s\nError: %s\n" % (device,e))
+    #     raise
 
-    except (mysql.connector.errors.Error, TypeError) as e:
-        output.append("Failed inserting %s\nError: %s\n" % (device,e))
-        raise    
+    stmt_select = "SELECT macaddeth0 FROM items WHERE macaddeth0 = %s"
+    cursor.execute(stmt_select, (eth0,))
+    row = cursor.fetchone()
+    if not row:
+        device = ((eth0, wlan, ip, 1),)
+        stmt_insert = "INSERT INTO items (macaddeth0, macaddwlan, ipadd, online) VALUES (%s,%s,%s,%s)"
+        cursor.executemany(stmt_insert, device)
+    else:
+        stmt_update = "UPDATE items SET ipadd = %s, online = %s WHERE macaddeth0 = %s"
+        cursor.executemany(stmt_update, ((ip, 1, row[0]),))
 
     db.commit()
     cursor.close()
