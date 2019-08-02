@@ -63,34 +63,30 @@ http://220.118.47.135:9981/stream/channelid/1633639304
 http://220.118.47.135:9981/stream/channelid/525148401
 #EXTINF:-1,SBS
 http://1.251.114.88:9981/stream/channelid/848910117
-#EXTINF:-1,SBS
-http://1.251.114.88:9981/stream/channelid/299903092
 #EXTINF:-1 SBS Plus
 http://39.119.147.3:9981/stream/channelid/392059722
-#EXTINF:-1,EBS
-http://1.251.114.88:9981/stream/channelid/1910510832
-#EXTINF:-1,연합뉴스TV
-http://1.251.114.88:9981/stream/channelid/827837113
-#EXTINF:-1,슈퍼액션
-http://1.251.114.88:9981/stream/channelid/2010133753
-#EXTINF:-1,KBS JOY
-http://1.251.114.88:9981/stream/channelid/708921268
-#EXTINF:-1,O tvN
-http://1.251.114.88:9981/stream/channelid/474378825
-#EXTINF:-1,FOX
-http://1.251.114.88:9981/stream/channelid/1975992599
+#EXTINF:-1,JTBC
+http://1.251.114.88:9981/stream/channelid/42260877
+#EXTINF:-1,JTBC
+http://1.251.114.88:9981/stream/channelid/1808598960
+#EXTINF:-1,YTN
+http://1.251.114.88:9981/stream/channelid/1833682817
+#EXTINF:-1,MBC Every1
+http://1.251.114.88:9981/stream/channelid/942479267
+#EXTINF:-1,채널CGV
+http://1.251.114.88:9981/stream/channelid/2019734881
+#EXTINF:-1,스크린
+http://1.251.114.88:9981/stream/channelid/507291108
+#EXTINF:-1,XtvN
+http://1.251.114.88:9981/stream/channelid/437656702
 #EXTINF:-1,KBS N Sports
 http://1.251.114.88:9981/stream/channelid/1604810191
-#EXTINF:-1,MBC SPORTS+
-http://1.251.114.88:9981/stream/channelid/1557059415
 #EXTINF:-1,SPOTV2
 http://1.251.114.88:9981/stream/channelid/124250041
-#EXTINF:-1,SBS GOLF
-http://1.251.114.88:9981/stream/channelid/18411159
-#EXTINF:-1,디즈니주니어
-http://1.251.114.88:9981/stream/channelid/481522238
-#EXTINF:-1,바둑TV
-http://1.251.114.88:9981/stream/channelid/1942708467
+#EXTINF:-1,SPOTV2
+http://1.251.114.88:9981/stream/channelid/2125520604
+#EXTINF:-1,온스타일
+http://1.251.114.88:9981/stream/channelid/1613058915
 #EXTINF:-1,SBS
 http://175.116.137.152:9981/stream/channelid/1551266533
 #EXTINF:-1,KBS2
@@ -297,23 +293,3 @@ http://175.125.162.47:9981/stream/channelid/2103565704
 http://175.125.162.47:9981/stream/channelid/2037089414
 #EXTINF:-1,JTBC3
 http://175.125.162.47:9981/stream/channelid/740285141
-#EXTINF:-1,JTBC
-http://211.245.55.198:22515/m2u/239.192.58.7:49220
-#EXTINF:-1,MBN
-http://211.245.55.198:22515/m2u/239.192.45.5:49220
-#EXTINF:-1,채널A
-http://211.245.55.198:22515/m2u/239.192.47.4:49220
-#EXTINF:-1,YTN
-http://211.245.55.198:22515/m2u/239.192.47.7:49220
-#EXTINF:-1,SPOTV
-http://211.245.55.198:22515/m2u/239.192.67.133:49220
-#EXTINF:-1,KBS N Sports
-http://211.245.55.198:22515/m2u/239.192.67.132:49220
-#EXTINF:-1,SBS Sports
-http://211.245.55.198:22515/m2u/239.192.67.130:49220
-#EXTINF:-1,MBC SPORTS+
-http://211.245.55.198:22515/m2u/239.192.67.131:49220
-#EXTINF:-1,SPOTV+
-http://211.245.55.198:22515/m2u/239.192.67.163:49220
-#EXTINF:-1,JEI 재능TV
-http://211.245.55.198:22515/m2u/239.192.69.142:49220
