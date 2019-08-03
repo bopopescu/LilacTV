@@ -440,14 +440,14 @@ def toggleAll(setting, query=None, sourceList=None):
 if mode == "toggleAllNormal":
     sourcelist = ['animetoon', 'cartoonhd', 'cartoonhdto', 'cmovieshd', 'divxcrawler', 'extramovies', 'ganoolrip',
                   'geektv', 'getmywatchseries', 'gomoviesink', 'gowatchseries', 'hdbest', 'iwannawatch', 'moviescouch',
-                  'mycouchtuner', 'newepisodes', 'primewire', 'projectfreetv', 'reddit', 'seehd', 'series9',
-                  'seriesonline', 'solarmoviez', 'streamdreams', 'swatchseries', 'telepisodes', 'timewatch',
+                  'mycouchtuner', 'myvideolinks', 'newepisodes', 'primewire', 'projectfreetv', 'reddit', 'seehd',
+                  'series9', 'seriesonline', 'solarmoviez', 'streamdreams', 'swatchseries', 'telepisodes', 'timewatch',
                   'tvmovieflix','watchepisodes4', 'watchfree', 'watchseries', 'watchseriessto', 'wsunblock', 'zmovies']
     toggleAll(params['setting'], params['query'], sourcelist)
 
 if mode == "toggleAllDebrid":
     sourcelist = ['2ddl', '300mbdownload', '300mbfilms', 'ddlspot', 'directdl', 'maxrls', 'ganool', 'moviesleak',
-                  'mvrls', 'myvideolinks', 'rapidmoviez', 'rlsb', 'rlsbb', 'rlslog', 'sceneddl', 'scenerls',
+                  'mvrls', 'rapidmoviez', 'rlsb', 'rlsbb', 'rlslog', 'sceneddl', 'scenerls',
                   'scenerlsc', 'ultrahd']
     toggleAll(params['setting'], params['query'], sourcelist)
 
@@ -459,6 +459,7 @@ if mode == "toggleAllDirect":
     toggleAll(params['setting'], params['query'], sourcelist)
 
 if mode == "toggleAllTorrent":
-    sourcelist = ['111ys', '1337x', 'eztv', 'glodls', 'kickass2', 'limetorr', 'magnetdl', 'mkvcage', 'piratebay',
-                  'skytorrents', 'torrapi', 'torrdown', 'torrentquest', 'yifyddl', 'ytsam', 'zoogle']
+    sourcelist = ['1337x', 'btdb', 'btscene', 'digbt', 'doublr', 'eztv', 'glodls', 'kickass2', 'limetorr', 'magnetdl',
+                  'mkvcage', 'piratebay', 'skytorrents', 'torrapi', 'torrdown', 'torrentquest', 'yifyddl', 'ytsam',
+                  'zoogle']
     toggleAll(params['setting'], params['query'], sourcelist)
