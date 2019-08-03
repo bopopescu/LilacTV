@@ -4,11 +4,15 @@ http://61.84.33.152:9981/stream/channelid/2119622143
 #EXTINF:-1,SBS
 http://61.84.33.152:9981/stream/channelid/1466384088
 #EXTINF:-1,KBS1
-http://61.84.33.152:9981/stream/channelid/1417373258
-#EXTINF:-1,KBS1
 http://61.84.33.152:9981/stream/channelid/689811290
 #EXTINF:-1,KBS1
 http://61.84.33.152:9981/stream/channelid/710223628
+#EXTINF:-1,MBC
+http://61.84.33.152:9981/stream/channelid/1449368857
+#EXTINF:-1,MBC
+http://61.84.33.152:9981/stream/channelid/187795431
+#EXTINF:-1,EBS
+http://61.84.33.152:9981/stream/channelid/1568537959
 #EXTINF:-1,EBS
 http://61.84.33.152:9981/stream/channelid/157602843
 #EXTINF:-1,JTBC
@@ -25,49 +29,9 @@ http://61.84.33.152:9981/stream/channelid/77440523
 http://61.84.33.152:9981/stream/channelid/233195680
 #EXTINF:-1,SPOTV Games
 http://61.84.33.152:9981/stream/channelid/742193385
-#EXTINF:-1,JTBC
-http://116.40.8.83:9981/stream/channelid/479102165
-#EXTINF:-1,KBS1
-http://116.40.8.83:9981/stream/channelid/768123082
-#EXTINF:-1,KBS2
-http://116.40.8.83:9981/stream/channelid/630887506
-#EXTINF:-1,EBS
-http://116.40.8.83:9981/stream/channelid/653988547
-#EXTINF:-1,EBS2
-http://116.40.8.83:9981/stream/channelid/1337614225
-#EXTINF:-1,FTV
-http://116.40.8.83:9981/stream/channelid/706150689
-#EXTINF:-1,JTBC
-http://116.40.8.83:9981/stream/channelid/1336670198
-#EXTINF:-1,JTBC Golf
-http://116.40.8.83:9981/stream/channelid/203803303
-#EXTINF:-1,JTBC3
-http://116.40.8.83:9981/stream/channelid/1019757420
-#EXTINF:-1,MBC
-http://116.40.8.83:9981/stream/channelid/1010634634
-#EXTINF:-1,MBC Every1
-http://116.40.8.83:9981/stream/channelid/894414266
-#EXTINF:-1,MBN
-http://116.40.8.83:9981/stream/channelid/1361301865
-#EXTINF:-1,SBS
-http://116.40.8.83:9981/stream/channelid/719535705
-#EXTINF:-1,SBS funE
-http://116.40.8.83:9981/stream/channelid/796171670
+#EXTINF:-1,JEI 재능TV
+http://61.84.33.152:9981/stream/channelid/111122264
+#EXTINF:-1,JEI 재능TV
+http://61.84.33.152:9981/stream/channelid/1774483861
 #EXTINF:-1,SBS GOLF
-http://116.40.8.83:9981/stream/channelid/2133556657
-#EXTINF:-1,SBS Sports
-http://116.40.8.83:9981/stream/channelid/20864224
-#EXTINF:-1,YTN
-http://116.40.8.83:9981/stream/channelid/353002792
-#EXTINF:-1,디즈니주니어
-http://116.40.8.83:9981/stream/channelid/1014215879
-#EXTINF:-1,Disney Channel
-http://116.40.8.83:9981/stream/channelid/496456047
-#EXTINF:-1,연합뉴스TV
-http://116.40.8.83:9981/stream/channelid/1310108613
-#EXTINF:-1,채널A
-http://116.40.8.83:9981/stream/channelid/196969362
-#EXTINF:-1,디스커버리채널
-http://116.40.8.83:9981/stream/channelid/1460606682
-#EXTINF:-1,JTBC Golf
-http://175.113.154.14:9981/stream/channelid/1501772852?ticket=8CD2537FF4328150181ED188A5FA9714C23B1CD9&profile=matroska
+http://175.113.154.14:9981/stream/channelid/358994389?ticket=AE78FE7FF96A17A5C6784ECB3AAFC9EBE06ED92F&profile=matroska
