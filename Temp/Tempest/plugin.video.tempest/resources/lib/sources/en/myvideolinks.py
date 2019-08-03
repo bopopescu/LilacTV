@@ -15,7 +15,7 @@ class source:
         self.priority = 1
         self.language = ['en']
         self.domains = ['myvideolinks.net']
-        self.base_link = 'http://myvideolinks.net/'
+        self.base_link = 'http://myvideolinks.net'
         self.search_link = '/?s=%s'
 
     def movie(self, imdb, title, localtitle, aliases, year):
@@ -54,9 +54,6 @@ class source:
             if url is None:
                 return sources
 
-            if debrid.status() is False:
-                raise Exception()
-
             data = urlparse.parse_qs(url)
             data = dict([(i, data[i][0]) if data[i] else (i, '') for i in data])
 
@@ -67,14 +64,13 @@ class source:
             query = '%s S%02dE%02d' % (data['tvshowtitle'], int(data['season']), int(data['episode'])) if 'tvshowtitle' in data else '%s %s' % (data['title'], data['year'])
             query = re.sub('(\\\|/| -|:|;|\*|\?|"|\'|<|>|\|)', ' ', query)
 
-            s = client.request(self.base_link)
-            s = re.findall('\'(http.+?)\'', s) + re.findall('\"(http.+?)\"', s)
-            s = [i for i in s if urlparse.urlparse(self.base_link).netloc in i and len(i.strip('/').split('/')) > 3]
-            s = s[0] if s else urlparse.urljoin(self.base_link, 'mv1')
-            s = s.strip('/')
+            result = client.request(self.base_link)
+            result = re.findall('<meta http-equiv = "refresh" .+? url = (http://myvideolinks.net/...)', result)
+            for url in result:
+                link = url
 
-            url = s + self.search_link % urllib.quote_plus(query)
-
+                url = link + self.search_link
+                url = url % urllib.quote_plus(query)
             r = client.request(url)
 
             r = client.parseDOM(r, 'h2')
@@ -171,7 +167,7 @@ class source:
                     host = client.replaceHTMLCodes(host)
                     host = host.encode('utf-8')
 
-                    sources.append({'source': host, 'quality': quality, 'language': 'en', 'url': url, 'info': info, 'direct': False, 'debridonly': True})
+                    sources.append({'source': host, 'quality': quality, 'language': 'en', 'url': url, 'info': info, 'direct': False, 'debridonly': False})
                 except:
                     pass
 

@@ -101,6 +101,7 @@
         <setting id="provider.iwannawatch" type="bool" label="IWANNAWATCH" default="true" />
         <setting id="provider.moviescouch" type="bool" label="MOVIECOUCH" default="true" />
         <setting id="provider.mycouchtuner" type="bool" label="MYCOUCHTUNER" default="true" />
+        <setting id="provider.myvideolinks" type="bool" label="MYVIDEOLINKS" default="true" />
         <setting id="provider.newepisodes" type="bool" label="NEWEPISODES" default="true"/>
         <setting id="provider.projectfreetv" type="bool" label="PROJECTFREETV" default="true" />
         <setting id="provider.seehd" type="bool" label="SEEHD" default="true" />
@@ -135,7 +136,6 @@
         <setting id="provider.maxrls" type="bool" label="MAX-RLS" default="true" />
         <setting id="provider.moviesleak" type="bool" label="MOVIESLEAK" default="true" />
         <setting id="provider.mvrls" type="bool" label="MVRLS" default="true" />
-        <setting id="provider.myvideolinks" type="bool" label="MYVIDEOLINKS" default="true" />
         <setting id="provider.rapidmoviez" type="bool" label="RAPIDMOVIEZ" default="true" />
         <setting id="provider.rlsb" type="bool" label="RLSB" default="true" />
         <setting id="provider.rlsbb" type="bool" label="RLSBB" default="true" />
@@ -192,6 +192,10 @@
         <setting label="Enable All Torrent Providers" type="action" option="close" action="RunPlugin(plugin://plugin.video.tempest/?mode=toggleAllTorrent&amp;setting=true&amp;openSettings&amp;query=6.0)"/>
         <setting type="sep" />
         <setting id="provider.1337x" type="bool" label="1337X" default="false" />
+        <setting id="provider.btdb" type="bool" label="BTDB" default="false" />
+        <setting id="provider.btscene" type="bool" label="BTSCENE" default="false" />
+        <setting id="provider.digbt" type="bool" label="DIGBT" default="false" />
+        <setting id="provider.doublr" type="bool" label="DOUBLR" default="false" />
         <setting id="provider.eztv" type="bool" label="EZTV" default="false" />
         <setting id="provider.glodls" type="bool" label="GLODLS" default="false" />
         <setting id="provider.kickass2" type="bool" label="KICKASS2" default="false" />

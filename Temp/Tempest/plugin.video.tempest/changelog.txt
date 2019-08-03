@@ -1,5 +1,9 @@
 Report any issues at https://github.com/Tempest0580/tempest/issues
 
+[B][COLOR gold] 4.0.87 [/COLOR][/B]
+- Updated a few Scrapers
+- Added a few Torrent Scrapers
+
 [B][COLOR gold] 4.0.86 [/COLOR][/B]
 - Added a few Scrapers
 - Updated a few Scrapers
