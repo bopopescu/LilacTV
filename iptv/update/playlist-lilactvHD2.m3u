@@ -36,8 +36,6 @@ http://116.40.8.83:9981/stream/channelid/1336670198
 #EXTINF:-1 tvg-id="99" tvg-logo="http://i.imgur.com/WtXDuFU.png" group-title="종편",JTBC2
 http://116.40.8.83:9981/stream/channelid/440146051
 #EXTINF:-1 tvg-id="129" tvg-logo="http://i.imgur.com/p0mvIJN.png" group-title="종편",MBN
-http://61.84.33.152:9981/stream/channelid/1596053507
-#EXTINF:-1 tvg-id="129" tvg-logo="http://i.imgur.com/p0mvIJN.png" group-title="종편",MBN
 http://116.40.8.83:9981/stream/channelid/1361301865
 #EXTINF:-1 tvg-id="281" tvg-logo="http://i.imgur.com/xti35f5.png" group-title="종편",채널A
 http://61.84.33.152:9981/stream/channelid/516014999
@@ -57,6 +55,8 @@ http://61.84.33.152:9981/stream/channelid/233195680
 http://116.40.8.83:9981/stream/channelid/353002792
 #EXTINF:-1 tvg-id="98" tvg-logo="http://i.imgur.com/Bnw7O5U.png" group-title="스포츠",JTBC Golf
 http://116.40.8.83:9981/stream/channelid/203803303
+#EXTINF:-1 tvg-id="98" tvg-logo="http://i.imgur.com/Bnw7O5U.png" group-title="스포츠",JTBC Golf
+http://175.113.154.14:9981/stream/channelid/1501772852?ticket=8CD2537FF4328150181ED188A5FA9714C23B1CD9&profile=matroska
 #EXTINF:-1 tvg-id="167" tvg-logo="http://i.imgur.com/HdS0GNV.png" group-title="스포츠",SBS GOLF
 http://116.40.8.83:9981/stream/channelid/2133556657
 #EXTINF:-1 tvg-id="100" tvg-logo="http://i.imgur.com/KvGwEc1.png" group-title="스포츠",JTBC3

@@ -13,8 +13,6 @@ http://61.84.33.152:9981/stream/channelid/710223628
 http://61.84.33.152:9981/stream/channelid/1449368857
 #EXTINF:-1,JTBC
 http://61.84.33.152:9981/stream/channelid/913201591
-#EXTINF:-1,MBN
-http://61.84.33.152:9981/stream/channelid/1596053507
 #EXTINF:-1,채널A
 http://61.84.33.152:9981/stream/channelid/516014999
 #EXTINF:-1,TV조선
@@ -71,7 +69,7 @@ http://116.40.8.83:9981/stream/channelid/1310108613
 http://116.40.8.83:9981/stream/channelid/196969362
 #EXTINF:-1,디스커버리채널
 http://116.40.8.83:9981/stream/channelid/1460606682
-#EXTINF:-1 SBS Plus
-http://175.113.154.14:9981/stream/channelid/1499249812?ticket=39FA56C216DF35E1124C551E8C148B2F181C2A07&profile=matroska
-#EXTINF:-1 SBS Plus
-http://175.113.154.14:9981/stream/channelid/1499249812?ticket=234CF6EC1073B4223567384D0726256C166B211A&profile=matroska
+#EXTINF:-1 MBC Dramanet
+http://175.113.154.14:9981/stream/channelid/1509028276?ticket=67B67E9F2800778B20380EA1F38D7385A2CBB4EF&profile=matroska
+#EXTINF:-1,JTBC Golf
+http://175.113.154.14:9981/stream/channelid/1501772852?ticket=8CD2537FF4328150181ED188A5FA9714C23B1CD9&profile=matroska
