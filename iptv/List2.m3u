@@ -5,22 +5,26 @@ http://61.84.33.152:9981/stream/channelid/2119622143
 http://61.84.33.152:9981/stream/channelid/1466384088
 #EXTINF:-1,KBS2
 http://61.84.33.152:9981/stream/channelid/876634605
+#EXTINF:-1,KBS2
+http://61.84.33.152:9981/stream/channelid/1221546873
+#EXTINF:-1,KBS1
+http://61.84.33.152:9981/stream/channelid/1417373258
 #EXTINF:-1,KBS1
 http://61.84.33.152:9981/stream/channelid/689811290
 #EXTINF:-1,KBS1
 http://61.84.33.152:9981/stream/channelid/710223628
 #EXTINF:-1,MBC
 http://61.84.33.152:9981/stream/channelid/1449368857
+#EXTINF:-1,MBC
+http://61.84.33.152:9981/stream/channelid/187795431
 #EXTINF:-1,JTBC
 http://61.84.33.152:9981/stream/channelid/913201591
 #EXTINF:-1,채널A
 http://61.84.33.152:9981/stream/channelid/516014999
-#EXTINF:-1,TV조선
-http://61.84.33.152:9981/stream/channelid/400506817
 #EXTINF:-1,연합뉴스TV
 http://61.84.33.152:9981/stream/channelid/77440523
-#EXTINF:-1,YTN
-http://61.84.33.152:9981/stream/channelid/233195680
+#EXTINF:-1,EBS2
+http://61.84.33.152:9981/stream/channelid/842620883
 #EXTINF:-1,SPOTV Games
 http://61.84.33.152:9981/stream/channelid/742193385
 #EXTINF:-1,JTBC
@@ -55,8 +59,6 @@ http://116.40.8.83:9981/stream/channelid/719535705
 http://116.40.8.83:9981/stream/channelid/796171670
 #EXTINF:-1,SBS GOLF
 http://116.40.8.83:9981/stream/channelid/2133556657
-#EXTINF:-1,TV조선
-http://116.40.8.83:9981/stream/channelid/1338443711
 #EXTINF:-1,YTN
 http://116.40.8.83:9981/stream/channelid/353002792
 #EXTINF:-1,디즈니주니어
@@ -69,7 +71,5 @@ http://116.40.8.83:9981/stream/channelid/1310108613
 http://116.40.8.83:9981/stream/channelid/196969362
 #EXTINF:-1,디스커버리채널
 http://116.40.8.83:9981/stream/channelid/1460606682
-#EXTINF:-1 MBC Dramanet
-http://175.113.154.14:9981/stream/channelid/1509028276?ticket=67B67E9F2800778B20380EA1F38D7385A2CBB4EF&profile=matroska
 #EXTINF:-1,JTBC Golf
 http://175.113.154.14:9981/stream/channelid/1501772852?ticket=8CD2537FF4328150181ED188A5FA9714C23B1CD9&profile=matroska
