@@ -105,8 +105,6 @@ http://1.251.114.88:9981/stream/channelid/942479267
 http://1.251.114.88:9981/stream/channelid/2019734881
 #EXTINF:-1,채널CGV
 http://1.251.114.88:9981/stream/channelid/309296454
-#EXTINF:-1,OCN
-http://1.251.114.88:9981/stream/channelid/23984950
 #EXTINF:-1,슈퍼액션
 http://1.251.114.88:9981/stream/channelid/2010133753
 #EXTINF:-1,슈퍼액션
@@ -129,10 +127,6 @@ http://1.251.114.88:9981/stream/channelid/56076159
 http://1.251.114.88:9981/stream/channelid/474378825
 #EXTINF:-1,XtvN
 http://1.251.114.88:9981/stream/channelid/437656702
-#EXTINF:-1,EBS2
-http://1.251.114.88:9981/stream/channelid/976442879
-#EXTINF:-1,FOX
-http://1.251.114.88:9981/stream/channelid/1975992599
 #EXTINF:-1,AXN
 http://1.251.114.88:9981/stream/channelid/980208841
 #EXTINF:-1,SPOTV
@@ -143,10 +137,6 @@ http://1.251.114.88:9981/stream/channelid/413165989
 http://1.251.114.88:9981/stream/channelid/1604810191
 #EXTINF:-1,MBC SPORTS+
 http://1.251.114.88:9981/stream/channelid/1557059415
-#EXTINF:-1,SkySports
-http://1.251.114.88:9981/stream/channelid/76380312
-#EXTINF:-1,JTBC3
-http://1.251.114.88:9981/stream/channelid/2042758067
 #EXTINF:-1,SPOTV+
 http://1.251.114.88:9981/stream/channelid/1112602037
 #EXTINF:-1,SPOTV+
@@ -163,10 +153,6 @@ http://1.251.114.88:9981/stream/channelid/825875865
 http://1.251.114.88:9981/stream/channelid/536773943
 #EXTINF:-1,Tooniverse
 http://1.251.114.88:9981/stream/channelid/1077127039
-#EXTINF:-1,Disney Channel
-http://1.251.114.88:9981/stream/channelid/364371757
-#EXTINF:-1,디즈니주니어
-http://1.251.114.88:9981/stream/channelid/481522238
 #EXTINF:-1,온스타일
 http://1.251.114.88:9981/stream/channelid/1613058915
 #EXTINF:-1,바둑TV
@@ -175,6 +161,8 @@ http://1.251.114.88:9981/stream/channelid/1942708467
 http://1.251.114.88:9981/stream/channelid/1404586036
 #EXTINF:-1,스포츠 4채널 #2
 http://1.251.114.88:9981/stream/channelid/1252752586
+#EXTINF:-1,스포츠 4채널 #1
+http://1.251.114.88:9981/stream/channelid/644888616
 #EXTINF:-1,SBS
 http://175.116.137.152:9981/stream/channelid/1551266533
 #EXTINF:-1,KBS2
@@ -257,8 +245,6 @@ http://175.116.137.152:9981/stream/channelid/680287432
 http://175.116.137.152:9981/stream/channelid/767875792
 #EXTINF:-1,MBC SPORTS+
 http://175.116.137.152:9981/stream/channelid/465490833
-#EXTINF:-1,MBC SPORTS+
-http://175.116.137.152:9981/stream/channelid/1822377455
 #EXTINF:-1,SkySports
 http://175.116.137.152:9981/stream/channelid/44568887
 #EXTINF:-1,SPOTV+
