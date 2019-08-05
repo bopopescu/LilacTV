@@ -16,12 +16,4 @@
 		<thumb />
 		<action>ActivateWindow(Programs,Addons,return)</action>
 	</shortcut>
-	<shortcut>
-		<defaultID />
-		<label>Kayo Sports</label>
-		<label2>Custom item</label2>
-		<icon>DefaultShortcut.png</icon>
-		<thumb />
-		<action>ActivateWindow(Videos,"plugin://plugin.video.kayo.sports",return)</action>
-	</shortcut>
 </shortcuts>

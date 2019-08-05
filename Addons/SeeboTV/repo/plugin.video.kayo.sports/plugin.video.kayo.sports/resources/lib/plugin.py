@@ -8,7 +8,7 @@ from matthuisman.constants import ROUTE_LIVE_SUFFIX, ROUTE_LIVE_TAG
 
 from .api import API
 from .language import _
-from .constants import HEADERS, SERVICE_TIME, LIVE_PLAY_TYPES, FROM_LIVE, FROM_START, FROM_CHOOSE, IMG_URL, SPORT_LOGO, CHANNELS_PANEL, PREFER_PROVIDER, SUPPORTED_FORMATS, PREFER_FORMAT, FORMAT_HLS_TS, FORMAT_DASH, PLAYLIST_URL, EPG_URL
+from .constants import HEADERS, SERVICE_TIME, LIVE_PLAY_TYPES, FROM_LIVE, FROM_START, FROM_CHOOSE, IMG_URL, SPORT_LOGO, CHANNELS_PANEL, PREFER_PROVIDER, SUPPORTED_FORMATS, PREFER_FORMAT, FORMAT_HLS_TS, FORMAT_DASH, EPG_URL
 
 api = API()
 
@@ -21,7 +21,7 @@ def before_dispatch():
 def home(**kwargs):
     folder = plugin.Folder(cacheToDisc=False)
 
-    if not api.logged_in:
+    if not api.logged_in:        
         folder.add_item(label=_(_.LOGIN, _bold=True),  path=plugin.url_for(login))
     else:
         folder.add_item(label=_(_.SHOWS, _bold=True),  path=plugin.url_for(shows))
@@ -63,7 +63,7 @@ def logout(**kwargs):
 def shows(**kwargs):
     folder = plugin.Folder(title=_.SHOWS)
     folder.add_items(_landing('shows'))
-    return folder 
+    return folder
 
 @plugin.route()
 def sports(**kwargs):
@@ -146,16 +146,6 @@ def alert(asset, title, **kwargs):
 
     userdata.set('alerts', alerts)
     gui.refresh()
-
-@plugin.route()
-@plugin.merge()
-def playlist(output, **kwargs):
-    Session().chunked_dl(PLAYLIST_URL, output)
-
-@plugin.route()
-@plugin.merge()
-def epg(output, **kwargs):
-    Session().chunked_dl(EPG_URL, output)
 
 @plugin.route()
 @plugin.login_required()
@@ -284,7 +274,7 @@ def _parse_video(row):
     asset   = row['asset']
     display = row['contentDisplay']
     alerts  = userdata.get('alerts', [])
-    
+
     now      = arrow.now()
     start    = arrow.get(asset['transmissionTime'])
     precheck = start
@@ -299,7 +289,7 @@ def _parse_video(row):
     title = display['title']
     if 'heroHeader' in display:
         title += ' [' + display['heroHeader'].replace('${DATE_HUMANISED}', _makeHumanised(now, start).upper()).replace('${TIME}', _makeTime(start)) + ']'
-    
+
     item = plugin.Item(
         label = title,
         art  = {
@@ -381,12 +371,11 @@ def play(id, start_from=0, play_type=FROM_LIVE, **kwargs):
     if stream['mediaFormat'] == FORMAT_DASH:
         item.inputstream = inputstream.MPD()
     elif stream['mediaFormat'] == FORMAT_HLS_TS:
-        hls = inputstream.HLS()
+        if is_live:
+            item.inputstream = inputstream.HLS()
 
-        if is_live and start_from == 0 and not hls.check():
-            raise PluginError(_.HLS_REQUIRED)
-        else:
-            item.inputstream = hls
+            if start_from == 0 and not item.inputstream.check():
+                raise PluginError(_.HLS_REQUIRED)
 
     if start_from:
         item.properties['ResumeTime'] = start_from
@@ -403,7 +392,7 @@ def service():
     now     = arrow.now()
     notify  = []
     _alerts = []
-    
+
     for id in alerts:
         asset = api.event(id)
         start = arrow.get(asset.get('preCheckTime', asset['transmissionTime']))
@@ -423,10 +412,50 @@ def service():
         with signals.throwable():
             start_from = 1
             start      = arrow.get(asset['transmissionTime'])
-            
+
             if start < now and 'preCheckTime' in asset:
                 precheck = arrow.get(asset['preCheckTime'])
                 if precheck < start:
                     start_from = (start - precheck).seconds
 
             play(id=asset['id'], start_from=start_from, play_type=settings.getEnum('live_play_type', LIVE_PLAY_TYPES, default=FROM_CHOOSE))
+
+@plugin.route()
+@plugin.merge()
+def playlist(output, **kwargs):
+    EPG_MAP = {
+        68330: 'RACING',
+        53208: 'FSCRICHD',
+        53210: 'FSLEAGUEHD',
+        53211: 'FS3HD',
+        53212: 'FSFOOTYHD',
+        53214: 'FS5HD',
+        53215: 'FS6HD',
+        53216: 'FSMHD',
+        53217: 'FSNHD2',
+        53169: 'ESPNHD',
+        53207: 'ESPN2HD',
+        53153: 'BEIN1HD',
+        53154: 'BEIN2HD',
+        53167: 'BEIN3HD',
+    }
+
+    data = api.panel(CHANNELS_PANEL)
+
+    with open(output, 'wb') as f:
+        f.write('#EXTM3U\n')
+
+        for row in data.get('contents', []):
+            asset = row['data']['asset']
+
+            if row['contentType'] != 'video':
+                continue
+
+            f.write('#EXTINF:-1 tvg-id="{id}" tvg-logo="{logo}",{name}\n{path}\n'.format(
+                id=EPG_MAP.get(int(asset['id']), asset['id']), logo=_get_image(asset, 'video', 'thumb').encode('utf8'),
+                    name=asset['title'].encode('utf8'), path=plugin.url_for(play, id=asset['id'], _is_live=True)))
+
+@plugin.route()
+@plugin.merge()
+def epg(output, **kwargs):
+    Session().chunked_dl(EPG_URL, output)
