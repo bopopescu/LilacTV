@@ -137,6 +137,8 @@ http://211.207.173.34:9981/stream/channelid/1987315839
 http://211.212.43.82:9981/stream/channelid/1893399789
 #EXTINF:-1,SBS
 http://211.212.43.82:9981/stream/channelid/2130276664
+#EXTINF:-1,KBS1
+http://211.212.43.82:9981/stream/channelid/672326226
 #EXTINF:-1,MBC
 http://211.212.43.82:9981/stream/channelid/1740034327
 #EXTINF:-1,EBS
@@ -193,6 +195,8 @@ http://211.212.43.82:9981/stream/channelid/318405851
 http://211.212.43.82:9981/stream/channelid/1111947735
 #EXTINF:-1,SBS Sports
 http://211.212.43.82:9981/stream/channelid/401627221
+#EXTINF:-1,SkySports
+http://211.212.43.82:9981/stream/channelid/203448233
 #EXTINF:-1,JTBC3
 http://211.212.43.82:9981/stream/channelid/276686660
 #EXTINF:-1,SBS GOLF

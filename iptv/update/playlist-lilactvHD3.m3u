@@ -26,6 +26,8 @@ http://220.81.169.165:9981/stream/channelid/333658975
 #EXTINF:-1 tvg-id="110" tvg-logo="http://i.imgur.com/e31o5gw.png" group-title="공중파",KBS1
 http://211.207.173.34:9981/stream/channelid/1854190025
 #EXTINF:-1 tvg-id="110" tvg-logo="http://i.imgur.com/e31o5gw.png" group-title="공중파",KBS1
+http://211.212.43.82:9981/stream/channelid/672326226
+#EXTINF:-1 tvg-id="110" tvg-logo="http://i.imgur.com/e31o5gw.png" group-title="공중파",KBS1
 http://39.117.250.106:9981/stream/channelid/1694283305
 #EXTINF:-1 tvg-id="111" tvg-logo="http://i.imgur.com/XgibZbD.png" group-title="공중파",KBS2
 http://220.81.169.165:9981/stream/channelid/644177626
@@ -185,6 +187,8 @@ http://211.207.173.34:9981/stream/channelid/143285062
 http://220.81.169.165:9981/stream/channelid/1072084575
 #EXTINF:-1 tvg-id="178" tvg-logo="http://i.imgur.com/QHV9bdA.png" group-title="스포츠",SkySports
 http://211.207.173.34:9981/stream/channelid/359067551
+#EXTINF:-1 tvg-id="178" tvg-logo="http://i.imgur.com/QHV9bdA.png" group-title="스포츠",SkySports
+http://211.212.43.82:9981/stream/channelid/203448233
 #EXTINF:-1 tvg-id="100" tvg-logo="http://i.imgur.com/KvGwEc1.png" group-title="스포츠",JTBC3
 http://211.207.173.34:9981/stream/channelid/1221484805
 #EXTINF:-1 tvg-id="100" tvg-logo="http://i.imgur.com/KvGwEc1.png" group-title="스포츠",JTBC3

@@ -85,6 +85,8 @@ http://1.251.114.88:9981/stream/channelid/42260877
 http://1.251.114.88:9981/stream/channelid/1808598960
 #EXTINF:-1,MBN
 http://1.251.114.88:9981/stream/channelid/1104678191
+#EXTINF:-1,tvN
+http://1.251.114.88:9981/stream/channelid/72188586
 #EXTINF:-1,채널A
 http://1.251.114.88:9981/stream/channelid/1304582642
 #EXTINF:-1,TV조선
@@ -155,6 +157,8 @@ http://1.251.114.88:9981/stream/channelid/124250041
 http://1.251.114.88:9981/stream/channelid/2125520604
 #EXTINF:-1,SBS GOLF
 http://1.251.114.88:9981/stream/channelid/18411159
+#EXTINF:-1,JTBC Golf
+http://1.251.114.88:9981/stream/channelid/825875865
 #EXTINF:-1,OGN
 http://1.251.114.88:9981/stream/channelid/536773943
 #EXTINF:-1,Tooniverse
