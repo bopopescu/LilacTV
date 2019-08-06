@@ -135,6 +135,10 @@ http://211.207.173.34:9981/stream/channelid/824699192
 http://211.207.173.34:9981/stream/channelid/1987315839
 #EXTINF:-1,SBS Plus
 http://211.212.43.82:9981/stream/channelid/1893399789
+#EXTINF:-1,SBS
+http://211.212.43.82:9981/stream/channelid/2130276664
+#EXTINF:-1,KBS2
+http://211.212.43.82:9981/stream/channelid/1281161372
 #EXTINF:-1,KBS1
 http://211.212.43.82:9981/stream/channelid/672326226
 #EXTINF:-1,MBC
@@ -151,8 +155,6 @@ http://211.212.43.82:9981/stream/channelid/1429416369
 http://211.212.43.82:9981/stream/channelid/495747965
 #EXTINF:-1,TV조선
 http://211.212.43.82:9981/stream/channelid/1517406268
-#EXTINF:-1,연합뉴스TV
-http://211.212.43.82:9981/stream/channelid/1486163681
 #EXTINF:-1,YTN
 http://211.212.43.82:9981/stream/channelid/1261960433
 #EXTINF:-1,Mnet
@@ -191,6 +193,10 @@ http://211.212.43.82:9981/stream/channelid/1322568121
 http://211.212.43.82:9981/stream/channelid/318405851
 #EXTINF:-1,SPOTV
 http://211.212.43.82:9981/stream/channelid/1111947735
+#EXTINF:-1,SBS Sports
+http://211.212.43.82:9981/stream/channelid/401627221
+#EXTINF:-1,MBC SPORTS+
+http://211.212.43.82:9981/stream/channelid/589682823
 #EXTINF:-1,SkySports
 http://211.212.43.82:9981/stream/channelid/203448233
 #EXTINF:-1,JTBC3
@@ -205,10 +211,6 @@ http://211.212.43.82:9981/stream/channelid/1879010559
 http://211.212.43.82:9981/stream/channelid/1545380088
 #EXTINF:-1,디즈니주니어
 http://211.212.43.82:9981/stream/channelid/1551611467
-#EXTINF:-1,온스타일
-http://211.212.43.82:9981/stream/channelid/596961437
-#EXTINF:-1,바둑TV
-http://211.212.43.82:9981/stream/channelid/345573518
 #EXTINF:-1,FTV
 http://211.212.43.82:9981/stream/channelid/303838789
 #EXTINF:-1,FISHING TV
