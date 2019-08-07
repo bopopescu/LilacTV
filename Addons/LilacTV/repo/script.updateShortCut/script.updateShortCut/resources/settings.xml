@@ -5,7 +5,7 @@
 <setting id="epgPathType" value="1"/>
 <setting id="epgTSOverride" value="false"/>
 <setting id="epgTimeShift" value="0.000000"/>
-<setting id="epgUrl" value="http://172.104.51.248/BadJin/EPG/epg2xml/KoreanEPG.xml"/>
+<setting id="epgUrl" value="http://lilactv.com:8080/BadJin/EPG/epg2xml/KoreanEPG.xml"/>
 <setting id="logoBaseUrl" value=""/>
 <setting id="logoFromEpg" value="0"/>
 <setting id="logoPath" value="/storage/.kodi/media/tv/iptv/ChannelLogos/"/>
