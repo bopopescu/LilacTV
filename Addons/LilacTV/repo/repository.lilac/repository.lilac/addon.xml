@@ -1,0 +1,12 @@
+<addon id="repository.lilac" name="Lilac [COLOR orange]Addons[/COLOR]" version="1.1.3" provider-name="BadJin">
+    <extension point="xbmc.addon.repository" name="Lilac addons">
+        <info compressed="false">http://lilactv.com/BadJin/Addons/addons.xml</info>
+        <checksum>http://lilactv.com/BadJin/Addons/addons.xml.md5</checksum>
+        <datadir zip="true">http://lilactv.com/BadJin/Addons/repo/</datadir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>Lilac Addons for Kodi</summary>
+        <description>Download and install addons for Lilac</description>
+        <platform>all</platform>
+    </extension>
+</addon>

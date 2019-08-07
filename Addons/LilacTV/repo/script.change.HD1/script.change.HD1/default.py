@@ -85,7 +85,7 @@ if __name__=='__main__':
         #sleep long enough for the home screen to come up
         time.sleep(1)
         if CheckKoreanChannel():
-            os.system("curl http://lilactv.com:8080/BadJin/Favourites/System/"+__m3uFile__+" > "+__m3uPath__)
+            os.system("curl http://lilactv.com/BadJin/Favourites/System/"+__m3uFile__+" > "+__m3uPath__)
             set_settingsxml()
             dialog = xbmcgui.Dialog()
             if dialog.ok("TV채널 업데이트 -[Test Version]","고화질[1080p]로 리스트를 구성합니다. -52채널", " ", "***예고없이 방송이 중단될 수 있습니다.***"):
