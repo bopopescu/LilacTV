@@ -179,56 +179,26 @@ http://1.229.56.173:9981/stream/channelid/2035379348
 http://1.229.56.173:9981/stream/channelid/2119895391
 #EXTINF:-1,SBS
 http://1.251.114.88:9981/stream/channelid/848910117
-#EXTINF:-1,SBS
-http://1.251.114.88:9981/stream/channelid/299903092
 #EXTINF:-1,MBC
 http://1.251.114.88:9981/stream/channelid/902709545
-#EXTINF:-1,MBC
-http://1.251.114.88:9981/stream/channelid/549734655
+#EXTINF:-1,채널A
+http://1.251.114.88:9981/stream/channelid/1304582642
 #EXTINF:-1,TV조선
 http://1.251.114.88:9981/stream/channelid/1137326506
-#EXTINF:-1,TV조선
-http://1.251.114.88:9981/stream/channelid/1642085432
-#EXTINF:-1,연합뉴스TV
-http://1.251.114.88:9981/stream/channelid/827837113
-#EXTINF:-1,YTN
-http://1.251.114.88:9981/stream/channelid/474243569
-#EXTINF:-1,YTN
-http://1.251.114.88:9981/stream/channelid/1833682817
-#EXTINF:-1,MBC Every1
-http://1.251.114.88:9981/stream/channelid/942479267
-#EXTINF:-1,슈퍼액션
-http://1.251.114.88:9981/stream/channelid/2010133753
-#EXTINF:-1,슈퍼액션
-http://1.251.114.88:9981/stream/channelid/711685828
-#EXTINF:-1,스크린
-http://1.251.114.88:9981/stream/channelid/538358204
-#EXTINF:-1,SBS funE
-http://1.251.114.88:9981/stream/channelid/421651155
-#EXTINF:-1,O tvN
-http://1.251.114.88:9981/stream/channelid/474378825
-#EXTINF:-1,AXN
-http://1.251.114.88:9981/stream/channelid/980208841
-#EXTINF:-1,KBS N Sports
-http://1.251.114.88:9981/stream/channelid/413165989
-#EXTINF:-1,KBS N Sports
-http://1.251.114.88:9981/stream/channelid/1604810191
+#EXTINF:-1,채널CGV
+http://1.251.114.88:9981/stream/channelid/309296454
+#EXTINF:-1,mplex
+http://1.251.114.88:9981/stream/channelid/1784900867
+#EXTINF:-1,mplex
+http://1.251.114.88:9981/stream/channelid/197862319
+#EXTINF:-1,EBS2
+http://1.251.114.88:9981/stream/channelid/976442879
 #EXTINF:-1,MBC SPORTS+
 http://1.251.114.88:9981/stream/channelid/1557059415
 #EXTINF:-1,SkySports
 http://1.251.114.88:9981/stream/channelid/76380312
-#EXTINF:-1,SPOTV+
-http://1.251.114.88:9981/stream/channelid/1112602037
-#EXTINF:-1,SPOTV2
-http://1.251.114.88:9981/stream/channelid/2125520604
-#EXTINF:-1,JTBC Golf
-http://1.251.114.88:9981/stream/channelid/825875865
-#EXTINF:-1,Disney Channel
-http://1.251.114.88:9981/stream/channelid/364371757
-#EXTINF:-1,온스타일
-http://1.251.114.88:9981/stream/channelid/1613058915
-#EXTINF:-1,마운틴TV
-http://1.251.114.88:9981/stream/channelid/1404586036
+#EXTINF:-1,스포츠 4채널 #1
+http://1.251.114.88:9981/stream/channelid/644888616
 #EXTINF:-1,SBS
 http://175.116.137.152:9981/stream/channelid/1551266533
 #EXTINF:-1,KBS2
@@ -483,6 +453,22 @@ http://219.250.105.94:9981/stream/channelid/621010328?ticket=A51675AF65591340F1D
 http://219.250.105.94:9981/stream/channelid/385149967?ticket=9BA5F3642FB091A109A37112A7763F37BD1AF8F7&profile=pass
 #EXTINF:-1,AXN
 http://219.250.105.94:9981/stream/channelid/643884050?ticket=B216DADC9A06D046E29A861882BED51AD7441B82&profile=pass
+#EXTINF:-1,JTBC
+http://219.250.105.94:9981/stream/channelid/1559598099?ticket=AE0D15355045D102CB22A798D194E98498A2F1CD&profile=pass
+#EXTINF:-1,MBN
+http://219.250.105.94:9981/stream/channelid/1175927034?ticket=F7EAA20C5CBCD0FEA0ED12B58CA7C52D41E4CA2D&profile=pass
+#EXTINF:-1,채널A
+http://219.250.105.94:9981/stream/channelid/379879927?ticket=B20BF090F19233E067E9C0BDC0453C7BD89FD14C&profile=pass
+#EXTINF:-1,TV조선
+http://219.250.105.94:9981/stream/channelid/636272785?ticket=F75854FF93499FC60C3992B12AE093E61779AEBA&profile=pass
+#EXTINF:-1,마운틴TV
+http://219.250.105.94:9981/stream/channelid/401253369?ticket=3954E3D878F5FAF4890CE8AE2C8DAC49D33C47E5&profile=pass
+#EXTINF:-1,SPOTV Games
+http://219.250.105.94:9981/stream/channelid/1334671362?ticket=D0F2C831A39F7553BA96C37E2D8A4F9A8B553458&profile=pass
+#EXTINF:-1,History
+http://219.250.105.94:9981/stream/channelid/348007095?ticket=9FCE4DB36783F192677E4016396020E6D5E8A2D2&profile=pass
+#EXTINF:-1,FTV
+http://219.250.105.94:9981/stream/channelid/1874277436?ticket=834E958E2384D0292EA2281FAAC83215E02E22BE&profile=pass
 #EXTINF:-1,SkySports
 http://219.250.105.94:9981/stream/channelid/240797212?ticket=F33853882A9778115D3A6D50D503865604E74985&profile=pass
 #EXTINF:-1,SkyTravel
