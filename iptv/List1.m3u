@@ -177,6 +177,8 @@ http://1.229.56.173:9981/stream/channelid/778310229
 http://1.229.56.173:9981/stream/channelid/2035379348
 #EXTINF:-1,History
 http://1.229.56.173:9981/stream/channelid/2119895391
+#EXTINF:-1,MBC SPORTS+
+http://1.251.114.88:9981/stream/channelid/1557059415
 #EXTINF:-1,SBS
 http://175.116.137.152:9981/stream/channelid/1551266533
 #EXTINF:-1,KBS2
