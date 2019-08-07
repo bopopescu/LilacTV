@@ -147,6 +147,36 @@ http://1.229.56.173:9981/stream/channelid/1169613907
 http://1.229.56.173:9981/stream/channelid/1335832299
 #EXTINF:-1,JTBC Golf
 http://1.229.56.173:9981/stream/channelid/1856592281
+#EXTINF:-1,OGN
+http://1.229.56.173:9981/stream/channelid/1747888652
+#EXTINF:-1,SPOTV Games
+http://1.229.56.173:9981/stream/channelid/1077074322
+#EXTINF:-1,Tooniverse
+http://1.229.56.173:9981/stream/channelid/1434845598
+#EXTINF:-1,Disney Channel
+http://1.229.56.173:9981/stream/channelid/1051683369
+#EXTINF:-1,디즈니주니어
+http://1.229.56.173:9981/stream/channelid/254149288
+#EXTINF:-1,JEI 재능TV
+http://1.229.56.173:9981/stream/channelid/818930257
+#EXTINF:-1,온스타일
+http://1.229.56.173:9981/stream/channelid/1520503951
+#EXTINF:-1,바둑TV
+http://1.229.56.173:9981/stream/channelid/925967596
+#EXTINF:-1,FTV
+http://1.229.56.173:9981/stream/channelid/1494518696
+#EXTINF:-1,FISHING TV
+http://1.229.56.173:9981/stream/channelid/59706906
+#EXTINF:-1,SkyTravel
+http://1.229.56.173:9981/stream/channelid/1040160079
+#EXTINF:-1,마운틴TV
+http://1.229.56.173:9981/stream/channelid/302068419
+#EXTINF:-1,NGC
+http://1.229.56.173:9981/stream/channelid/778310229
+#EXTINF:-1,디스커버리채널
+http://1.229.56.173:9981/stream/channelid/2035379348
+#EXTINF:-1,History
+http://1.229.56.173:9981/stream/channelid/2119895391
 #EXTINF:-1,SBS
 http://1.251.114.88:9981/stream/channelid/848910117
 #EXTINF:-1,SBS
@@ -167,6 +197,10 @@ http://1.251.114.88:9981/stream/channelid/1910510832
 http://1.251.114.88:9981/stream/channelid/42260877
 #EXTINF:-1,JTBC
 http://1.251.114.88:9981/stream/channelid/1808598960
+#EXTINF:-1,MBN
+http://1.251.114.88:9981/stream/channelid/1104678191
+#EXTINF:-1,tvN
+http://1.251.114.88:9981/stream/channelid/72188586
 #EXTINF:-1,채널A
 http://1.251.114.88:9981/stream/channelid/1304582642
 #EXTINF:-1,TV조선
@@ -177,16 +211,14 @@ http://1.251.114.88:9981/stream/channelid/1642085432
 http://1.251.114.88:9981/stream/channelid/827837113
 #EXTINF:-1,YTN
 http://1.251.114.88:9981/stream/channelid/474243569
-#EXTINF:-1,YTN
-http://1.251.114.88:9981/stream/channelid/1833682817
 #EXTINF:-1,MBC Every1
 http://1.251.114.88:9981/stream/channelid/942479267
+#EXTINF:-1,채널CGV
+http://1.251.114.88:9981/stream/channelid/2019734881
 #EXTINF:-1,채널CGV
 http://1.251.114.88:9981/stream/channelid/309296454
 #EXTINF:-1,OCN
 http://1.251.114.88:9981/stream/channelid/23984950
-#EXTINF:-1,슈퍼액션
-http://1.251.114.88:9981/stream/channelid/2010133753
 #EXTINF:-1,슈퍼액션
 http://1.251.114.88:9981/stream/channelid/711685828
 #EXTINF:-1,스크린
@@ -201,20 +233,24 @@ http://1.251.114.88:9981/stream/channelid/197862319
 http://1.251.114.88:9981/stream/channelid/708921268
 #EXTINF:-1,SBS funE
 http://1.251.114.88:9981/stream/channelid/421651155
+#EXTINF:-1,JTBC2
+http://1.251.114.88:9981/stream/channelid/56076159
 #EXTINF:-1,O tvN
 http://1.251.114.88:9981/stream/channelid/474378825
+#EXTINF:-1,XtvN
+http://1.251.114.88:9981/stream/channelid/437656702
 #EXTINF:-1,EBS2
 http://1.251.114.88:9981/stream/channelid/976442879
+#EXTINF:-1,FOX
+http://1.251.114.88:9981/stream/channelid/1975992599
 #EXTINF:-1,AXN
 http://1.251.114.88:9981/stream/channelid/980208841
 #EXTINF:-1,SPOTV
 http://1.251.114.88:9981/stream/channelid/1765632415
-#EXTINF:-1,KBS N Sports
-http://1.251.114.88:9981/stream/channelid/413165989
-#EXTINF:-1,KBS N Sports
-http://1.251.114.88:9981/stream/channelid/1604810191
 #EXTINF:-1,MBC SPORTS+
 http://1.251.114.88:9981/stream/channelid/1557059415
+#EXTINF:-1,SkySports
+http://1.251.114.88:9981/stream/channelid/76380312
 #EXTINF:-1,JTBC3
 http://1.251.114.88:9981/stream/channelid/2042758067
 #EXTINF:-1,SPOTV+
@@ -227,16 +263,16 @@ http://1.251.114.88:9981/stream/channelid/124250041
 http://1.251.114.88:9981/stream/channelid/2125520604
 #EXTINF:-1,SBS GOLF
 http://1.251.114.88:9981/stream/channelid/18411159
-#EXTINF:-1,OGN
-http://1.251.114.88:9981/stream/channelid/536773943
+#EXTINF:-1,JTBC Golf
+http://1.251.114.88:9981/stream/channelid/825875865
 #EXTINF:-1,디즈니주니어
 http://1.251.114.88:9981/stream/channelid/481522238
 #EXTINF:-1,온스타일
 http://1.251.114.88:9981/stream/channelid/1613058915
 #EXTINF:-1,바둑TV
 http://1.251.114.88:9981/stream/channelid/1942708467
-#EXTINF:-1,스포츠 4채널 #2
-http://1.251.114.88:9981/stream/channelid/1252752586
+#EXTINF:-1,마운틴TV
+http://1.251.114.88:9981/stream/channelid/1404586036
 #EXTINF:-1,스포츠 4채널 #1
 http://1.251.114.88:9981/stream/channelid/644888616
 #EXTINF:-1,SBS
