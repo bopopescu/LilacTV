@@ -10,7 +10,7 @@ import hashlib
 __userpath__ = '/storage/.kodi/userdata/addon_data'
 __favouritepath__ = '/storage/.kodi/userdata/addon_data/plugin.program.super.favourites/Super Favourites'
 __resources__ = '/storage/.kodi/addons/script.updateShortCut/resources'
-ServerURL='http://lilactv.com:8080/BadJin/'
+ServerURL='http://lilactv.com/BadJin/'
 temp='/storage/.kodi/addons/script.updateShortCut/resources/favourites.xml'
 
 __iptv__ = '/storage/.kodi/media/tv/iptv'

@@ -16,17 +16,17 @@
         </source>
         <source>
             <name>VOD</name>
-            <path pathversion="1">http://172.104.51.248/BadJin/VOD</path>
+            <path pathversion="1">http://lilactv.com/BadJin/VOD</path>
             <allowsharing>true</allowsharing>
         </source>
         <source>
             <name>VOD2</name>
-            <path pathversion="1">http://172.104.51.248/BadJin/VOD2</path>
+            <path pathversion="1">http://lilactv.com/BadJin/VOD2</path>
             <allowsharing>true</allowsharing>
         </source>
         <source>
             <name>VOD4TVSHOWS</name>
-            <path pathversion="1">http://172.104.51.248/BadJin/vod2temp</path>
+            <path pathversion="1">http://lilactv.com/BadJin/vod2temp</path>
             <allowsharing>true</allowsharing>
         </source>
     </video>
