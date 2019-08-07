@@ -155,10 +155,8 @@ http://211.212.43.82:9981/stream/channelid/1429416369
 http://211.212.43.82:9981/stream/channelid/495747965
 #EXTINF:-1,TV조선
 http://211.212.43.82:9981/stream/channelid/1517406268
-#EXTINF:-1,YTN
-http://211.212.43.82:9981/stream/channelid/1261960433
-#EXTINF:-1,Mnet
-http://211.212.43.82:9981/stream/channelid/514773821
+#EXTINF:-1,연합뉴스TV
+http://211.212.43.82:9981/stream/channelid/1486163681
 #EXTINF:-1,MBC Every1
 http://211.212.43.82:9981/stream/channelid/1341960714
 #EXTINF:-1,KBS DRAMA
@@ -197,30 +195,6 @@ http://211.212.43.82:9981/stream/channelid/1111947735
 http://211.212.43.82:9981/stream/channelid/401627221
 #EXTINF:-1,MBC SPORTS+
 http://211.212.43.82:9981/stream/channelid/589682823
-#EXTINF:-1,SkySports
-http://211.212.43.82:9981/stream/channelid/203448233
-#EXTINF:-1,JTBC3
-http://211.212.43.82:9981/stream/channelid/276686660
-#EXTINF:-1,SBS GOLF
-http://211.212.43.82:9981/stream/channelid/208254445
-#EXTINF:-1,JTBC Golf
-http://211.212.43.82:9981/stream/channelid/1590302031
-#EXTINF:-1,OGN
-http://211.212.43.82:9981/stream/channelid/1879010559
-#EXTINF:-1,Tooniverse
-http://211.212.43.82:9981/stream/channelid/1545380088
-#EXTINF:-1,디즈니주니어
-http://211.212.43.82:9981/stream/channelid/1551611467
-#EXTINF:-1,FTV
-http://211.212.43.82:9981/stream/channelid/303838789
-#EXTINF:-1,FISHING TV
-http://211.212.43.82:9981/stream/channelid/2078502775
-#EXTINF:-1,SkyTravel
-http://211.212.43.82:9981/stream/channelid/1420664561
-#EXTINF:-1,마운틴TV
-http://211.212.43.82:9981/stream/channelid/651541008
-#EXTINF:-1,NGC
-http://211.212.43.82:9981/stream/channelid/818349472
 #EXTINF:-1,SBS Plus
 http://39.117.250.106:9981/stream/channelid/544670281
 #EXTINF:-1,SBS
