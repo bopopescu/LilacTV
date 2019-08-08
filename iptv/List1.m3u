@@ -444,13 +444,9 @@ http://1.251.114.88:9981/stream/channelid/72188586
 #EXTINF:-1,채널A
 http://1.251.114.88:9981/stream/channelid/1304582642
 #EXTINF:-1,TV조선
-http://1.251.114.88:9981/stream/channelid/1137326506
-#EXTINF:-1,TV조선
 http://1.251.114.88:9981/stream/channelid/1642085432
 #EXTINF:-1,연합뉴스TV
 http://1.251.114.88:9981/stream/channelid/827837113
-#EXTINF:-1,YTN
-http://1.251.114.88:9981/stream/channelid/474243569
 #EXTINF:-1,YTN
 http://1.251.114.88:9981/stream/channelid/1833682817
 #EXTINF:-1,MBC Every1
@@ -507,6 +503,8 @@ http://1.251.114.88:9981/stream/channelid/1112602037
 http://1.251.114.88:9981/stream/channelid/1613045415
 #EXTINF:-1,SPOTV2
 http://1.251.114.88:9981/stream/channelid/124250041
+#EXTINF:-1,SPOTV2
+http://1.251.114.88:9981/stream/channelid/2125520604
 #EXTINF:-1,SBS GOLF
 http://1.251.114.88:9981/stream/channelid/18411159
 #EXTINF:-1,JTBC Golf

@@ -59,10 +59,6 @@ http://220.81.169.165:9981/stream/channelid/700635755
 http://1.245.7.46:9981/stream/channelid/278970190
 #EXTINF:-1,TV조선
 http://1.245.7.46:9981/stream/channelid/1468073349
-#EXTINF:-1,YTN
-http://1.245.7.46:9981/stream/channelid/1323709981
-#EXTINF:-1,연합뉴스TV
-http://1.245.7.46:9981/stream/channelid/380094765
 #EXTINF:-1,연합뉴스TV
 http://1.245.7.46:9981/stream/channelid/1048965361
 #EXTINF:-1,SBS Plus
@@ -147,10 +143,6 @@ http://1.245.7.46:9981/stream/channelid/966361634
 http://1.245.7.46:9981/stream/channelid/383296633
 #EXTINF:-1,SBS GOLF
 http://1.245.7.46:9981/stream/channelid/1202280807
-#EXTINF:-1,JTBC Golf
-http://1.245.7.46:9981/stream/channelid/908575835
-#EXTINF:-1,OGN
-http://1.245.7.46:9981/stream/channelid/1423977611
 #EXTINF:-1,SPOTV Games
 http://1.245.7.46:9981/stream/channelid/554981865
 #EXTINF:-1,Tooniverse
@@ -263,12 +255,10 @@ http://211.212.43.82:9981/stream/channelid/1893399789
 http://211.212.43.82:9981/stream/channelid/2130276664
 #EXTINF:-1,KBS2
 http://211.212.43.82:9981/stream/channelid/1281161372
+#EXTINF:-1,KBS1
+http://211.212.43.82:9981/stream/channelid/672326226
 #EXTINF:-1,MBC
 http://211.212.43.82:9981/stream/channelid/1740034327
-#EXTINF:-1,EBS
-http://211.212.43.82:9981/stream/channelid/2137644022
-#EXTINF:-1,JTBC
-http://211.212.43.82:9981/stream/channelid/1130825941
 #EXTINF:-1,MBN
 http://211.212.43.82:9981/stream/channelid/1048787051
 #EXTINF:-1,tvN
@@ -321,12 +311,8 @@ http://211.212.43.82:9981/stream/channelid/1111947735
 http://211.212.43.82:9981/stream/channelid/401627221
 #EXTINF:-1,MBC SPORTS+
 http://211.212.43.82:9981/stream/channelid/589682823
-#EXTINF:-1,JTBC3
-http://211.212.43.82:9981/stream/channelid/276686660
-#EXTINF:-1,SBS GOLF
-http://211.212.43.82:9981/stream/channelid/208254445
-#EXTINF:-1,JTBC Golf
-http://211.212.43.82:9981/stream/channelid/1590302031
+#EXTINF:-1,SkySports
+http://211.212.43.82:9981/stream/channelid/203448233
 #EXTINF:-1,OGN
 http://211.212.43.82:9981/stream/channelid/1879010559
 #EXTINF:-1,Tooniverse
