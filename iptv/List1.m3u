@@ -271,38 +271,6 @@ http://1.238.144.88:9981/stream/channelid/516546165
 http://1.238.144.88:9981/stream/channelid/2047964683
 #EXTINF:-1,디즈니주니어
 http://1.238.144.88:9981/stream/channelid/1108472914
-#EXTINF:-1,JTBC
-http://1.242.249.81:9981/stream/channelid/2046257034
-#EXTINF:-1,JTBC
-http://1.242.249.81:9981/stream/channelid/1537848465
-#EXTINF:-1,MBN
-http://1.242.249.81:9981/stream/channelid/1064057079
-#EXTINF:-1,tvN
-http://1.242.249.81:9981/stream/channelid/506352218
-#EXTINF:-1,tvN
-http://1.242.249.81:9981/stream/channelid/1791833807
-#EXTINF:-1,채널A
-http://1.242.249.81:9981/stream/channelid/1954536226
-#EXTINF:-1,TV조선
-http://1.242.249.81:9981/stream/channelid/2043731242
-#EXTINF:-1,연합뉴스TV
-http://1.242.249.81:9981/stream/channelid/86349458
-#EXTINF:-1,YTN
-http://1.242.249.81:9981/stream/channelid/60899224
-#EXTINF:-1,Mnet
-http://1.242.249.81:9981/stream/channelid/864935353
-#EXTINF:-1,MBC Every1
-http://1.242.249.81:9981/stream/channelid/2111763560
-#EXTINF:-1,MBC Every1
-http://1.242.249.81:9981/stream/channelid/102461931
-#EXTINF:-1,SBS Plus
-http://1.242.249.81:9981/stream/channelid/1948177045
-#EXTINF:-1,SBS Plus
-http://1.242.249.81:9981/stream/channelid/954934411
-#EXTINF:-1,SBS
-http://1.242.249.81:9981/stream/channelid/1452237185
-#EXTINF:-1,SBS
-http://1.242.249.81:9981/stream/channelid/2065079153
 #EXTINF:-1,KBS2
 http://1.242.249.81:9981/stream/channelid/309753666
 #EXTINF:-1,KBS2
@@ -444,9 +412,13 @@ http://1.251.114.88:9981/stream/channelid/72188586
 #EXTINF:-1,채널A
 http://1.251.114.88:9981/stream/channelid/1304582642
 #EXTINF:-1,TV조선
+http://1.251.114.88:9981/stream/channelid/1137326506
+#EXTINF:-1,TV조선
 http://1.251.114.88:9981/stream/channelid/1642085432
 #EXTINF:-1,연합뉴스TV
 http://1.251.114.88:9981/stream/channelid/827837113
+#EXTINF:-1,YTN
+http://1.251.114.88:9981/stream/channelid/474243569
 #EXTINF:-1,YTN
 http://1.251.114.88:9981/stream/channelid/1833682817
 #EXTINF:-1,MBC Every1
@@ -509,6 +481,8 @@ http://1.251.114.88:9981/stream/channelid/2125520604
 http://1.251.114.88:9981/stream/channelid/18411159
 #EXTINF:-1,JTBC Golf
 http://1.251.114.88:9981/stream/channelid/825875865
+#EXTINF:-1,OGN
+http://1.251.114.88:9981/stream/channelid/536773943
 #EXTINF:-1,Tooniverse
 http://1.251.114.88:9981/stream/channelid/1077127039
 #EXTINF:-1,Disney Channel
