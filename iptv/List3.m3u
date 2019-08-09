@@ -229,6 +229,12 @@ http://219.250.105.94:9981/stream/channelid/387423330
 http://219.250.105.94:9981/stream/channelid/366354238
 #EXTINF:-1,바둑TV
 http://219.250.105.94:9981/stream/channelid/1648257819
+#EXTINF:-1,FTV
+http://219.250.105.94:9981/stream/channelid/463714403
+#EXTINF:-1,YTN
+http://219.250.105.94:9981/stream/channelid/871764548
+#EXTINF:-1,tvN
+http://219.250.105.94:9981/stream/channelid/1846157344
 #EXTINF:-1,Mnet
 http://219.250.105.94:9981/stream/channelid/898983026
 #EXTINF:-1,MBC Every1
