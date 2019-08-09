@@ -99,8 +99,6 @@ http://211.212.43.82:9981/stream/channelid/1543935085
 http://211.212.43.82:9981/stream/channelid/139487287
 #EXTINF:-1,스크린
 http://211.212.43.82:9981/stream/channelid/577290724
-#EXTINF:-1,SBS funE
-http://211.212.43.82:9981/stream/channelid/778484312
 #EXTINF:-1,JTBC2
 http://211.212.43.82:9981/stream/channelid/1146022698
 #EXTINF:-1,O tvN
@@ -145,22 +143,8 @@ http://211.212.43.82:9981/stream/channelid/1420664561
 http://211.212.43.82:9981/stream/channelid/651541008
 #EXTINF:-1,NGC
 http://211.212.43.82:9981/stream/channelid/818349472
-#EXTINF:-1,FOX
-http://219.250.105.94:9981/stream/channelid/1255053537
-#EXTINF:-1,JTBC Golf
-http://219.250.105.94:9981/stream/channelid/374738416
 #EXTINF:-1,KBS JOY
 http://219.250.105.94:9981/stream/channelid/231227707
-#EXTINF:-1,MBC SPORTS+
-http://219.250.105.94:9981/stream/channelid/1894788338
-#EXTINF:-1,SBS
-http://219.250.105.94:9981/stream/channelid/1829683892
-#EXTINF:-1,SBS GOLF
-http://219.250.105.94:9981/stream/channelid/2021760777
-#EXTINF:-1,SBS Sports
-http://219.250.105.94:9981/stream/channelid/227406816
-#EXTINF:-1,스크린
-http://219.250.105.94:9981/stream/channelid/865179397
 #EXTINF:-1,SPOTV
 http://219.250.105.94:9981/stream/channelid/1156275062
 #EXTINF:-1,SPOTV+
