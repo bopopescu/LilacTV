@@ -91,8 +91,6 @@ http://219.250.105.94:9981/stream/channelid/878875147
 http://39.117.250.106:9981/stream/channelid/1601243142
 #EXTINF:-1 tvg-id="123" tvg-logo="http://i.imgur.com/oOnpFes.png" group-title="공중파",MBC Every1
 http://39.119.149.8:9981/stream/channelid/1788241577?profile=pass
-#EXTINF:-1 tvg-id="123" tvg-logo="http://i.imgur.com/oOnpFes.png" group-title="공중파",MBC Every1
-http://39.120.6.252:9981/stream/channelid/1889410040
 #EXTINF:-1 tvg-id="60" tvg-logo="http://i.imgur.com/WViFruZ.png" group-title="공중파",EBS
 http://211.212.43.82:9981/stream/channelid/2137644022
 #EXTINF:-1 tvg-id="60" tvg-logo="http://i.imgur.com/WViFruZ.png" group-title="공중파",EBS
@@ -511,3 +509,5 @@ http://39.120.6.252:9981/stream/channelid/521855736
 http://222.236.197.77:9981/stream/channelid/1479490208
 #EXTINF:-1 tvg-id="234" tvg-logo="http://i.imgur.com/EGiEKhj.png" group-title="Kids",디즈니주니어
 http://39.117.250.106:9981/stream/channelid/418485629
+#EXTINF:-1 tvg-id="234" tvg-logo="http://i.imgur.com/EGiEKhj.png" group-title="Kids",디즈니주니어
+http://39.120.6.252:9981/stream/channelid/881889685

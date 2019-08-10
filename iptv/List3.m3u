@@ -509,6 +509,8 @@ http://39.120.6.252:9981/stream/channelid/2002617020
 http://39.120.6.252:9981/stream/channelid/625699945
 #EXTINF:-1,KBS2
 http://39.120.6.252:9981/stream/channelid/558228364
+#EXTINF:-1,KBS1
+http://39.120.6.252:9981/stream/channelid/2145693542
 #EXTINF:-1,MBC
 http://39.120.6.252:9981/stream/channelid/26896382
 #EXTINF:-1,EBS
@@ -517,26 +519,22 @@ http://39.120.6.252:9981/stream/channelid/747377372
 http://39.120.6.252:9981/stream/channelid/1848828733
 #EXTINF:-1,MBN
 http://39.120.6.252:9981/stream/channelid/996567051
-#EXTINF:-1,tvN
-http://39.120.6.252:9981/stream/channelid/342665952
 #EXTINF:-1,채널A
 http://39.120.6.252:9981/stream/channelid/636995833
 #EXTINF:-1,TV조선
 http://39.120.6.252:9981/stream/channelid/500095038
-#EXTINF:-1,연합뉴스TV
-http://39.120.6.252:9981/stream/channelid/1519487688
 #EXTINF:-1,YTN
 http://39.120.6.252:9981/stream/channelid/144988807
 #EXTINF:-1,Mnet
 http://39.120.6.252:9981/stream/channelid/293204742
-#EXTINF:-1,MBC Every1
-http://39.120.6.252:9981/stream/channelid/1889410040
 #EXTINF:-1,KBS DRAMA
 http://39.120.6.252:9981/stream/channelid/671073077
 #EXTINF:-1,KBS DRAMA
 http://39.120.6.252:9981/stream/channelid/849593434
 #EXTINF:-1,올리브
 http://39.120.6.252:9981/stream/channelid/1703891369
+#EXTINF:-1,JTBC2
+http://39.120.6.252:9981/stream/channelid/574771372
 #EXTINF:-1,채널CGV
 http://39.120.6.252:9981/stream/channelid/1100341941
 #EXTINF:-1,OCN
@@ -548,13 +546,9 @@ http://39.120.6.252:9981/stream/channelid/54893204
 #EXTINF:-1,mplex
 http://39.120.6.252:9981/stream/channelid/82213593
 #EXTINF:-1,KBS JOY
-http://39.120.6.252:9981/stream/channelid/2000339571
-#EXTINF:-1,KBS JOY
 http://39.120.6.252:9981/stream/channelid/511091314
 #EXTINF:-1,SBS funE
 http://39.120.6.252:9981/stream/channelid/1971623898
-#EXTINF:-1,O tvN
-http://39.120.6.252:9981/stream/channelid/443734315
 #EXTINF:-1,XtvN
 http://39.120.6.252:9981/stream/channelid/42964798
 #EXTINF:-1,EBS2
@@ -591,6 +585,8 @@ http://39.120.6.252:9981/stream/channelid/593116703
 http://39.120.6.252:9981/stream/channelid/134173965
 #EXTINF:-1,Disney Channel
 http://39.120.6.252:9981/stream/channelid/521855736
+#EXTINF:-1,디즈니주니어
+http://39.120.6.252:9981/stream/channelid/881889685
 #EXTINF:-1,JEI 재능TV
 http://39.120.6.252:9981/stream/channelid/1201635565
 #EXTINF:-1,온스타일
