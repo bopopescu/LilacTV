@@ -107,6 +107,8 @@ http://211.212.43.82:9981/stream/channelid/2127150665
 http://211.212.43.82:9981/stream/channelid/778484312
 #EXTINF:-1,JTBC2
 http://211.212.43.82:9981/stream/channelid/1146022698
+#EXTINF:-1,XtvN
+http://211.212.43.82:9981/stream/channelid/1506960605
 #EXTINF:-1,EBS2
 http://211.212.43.82:9981/stream/channelid/1322568121
 #EXTINF:-1,FOX
