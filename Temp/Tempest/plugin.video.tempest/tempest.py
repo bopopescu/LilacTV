@@ -448,7 +448,7 @@ if mode == "toggleAllNormal":
 if mode == "toggleAllDebrid":
     sourcelist = ['2ddl', '300mbdownload', '300mbfilms', 'ddlspot', 'directdl', 'maxrls', 'ganool', 'moviesleak',
                   'mvrls', 'rapidmoviez', 'rlsb', 'rlsbb', 'rlslog', 'sceneddl', 'scenerls',
-                  'scenerlsc', 'ultrahd']
+                  'scenerlsc', 'ultrahd', 'warezmovies']
     toggleAll(params['setting'], params['query'], sourcelist)
 
 if mode == "toggleAllDirect":
@@ -460,6 +460,6 @@ if mode == "toggleAllDirect":
 
 if mode == "toggleAllTorrent":
     sourcelist = ['1337x', 'btdb', 'btscene', 'digbt', 'doublr', 'eztv', 'glodls', 'kickass2', 'limetorr', 'magnetdl',
-                  'mkvcage', 'piratebay', 'skytorrents', 'torrapi', 'torrdown', 'torrentquest', 'yifyddl', 'ytsam',
-                  'zoogle']
+                  'mkvcage', 'piratebay', 'skytorrents', 'torrapi', 'torrdown', 'torrentgalaxy', 'torrentquest',
+                  'yifyddl', 'ytsam', 'zoogle']
     toggleAll(params['setting'], params['query'], sourcelist)
