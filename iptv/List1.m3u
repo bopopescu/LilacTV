@@ -65,6 +65,10 @@ http://220.118.47.135:9981/stream/channelid/525148401
 http://1.251.114.88:9981/stream/channelid/848910117
 #EXTINF:-1,SBS
 http://1.251.114.88:9981/stream/channelid/299903092
+#EXTINF:-1,KBS2
+http://1.251.114.88:9981/stream/channelid/420543989
+#EXTINF:-1,KBS1
+http://1.251.114.88:9981/stream/channelid/32304494
 #EXTINF:-1,KBS1
 http://1.251.114.88:9981/stream/channelid/1773765262
 #EXTINF:-1,MBC
@@ -87,6 +91,8 @@ http://1.251.114.88:9981/stream/channelid/1304582642
 http://1.251.114.88:9981/stream/channelid/1137326506
 #EXTINF:-1,TV조선
 http://1.251.114.88:9981/stream/channelid/1642085432
+#EXTINF:-1,연합뉴스TV
+http://1.251.114.88:9981/stream/channelid/827837113
 #EXTINF:-1,YTN
 http://1.251.114.88:9981/stream/channelid/474243569
 #EXTINF:-1,YTN
@@ -159,8 +165,6 @@ http://1.251.114.88:9981/stream/channelid/1077127039
 http://1.251.114.88:9981/stream/channelid/364371757
 #EXTINF:-1,디즈니주니어
 http://1.251.114.88:9981/stream/channelid/481522238
-#EXTINF:-1,온스타일
-http://1.251.114.88:9981/stream/channelid/1613058915
 #EXTINF:-1,바둑TV
 http://1.251.114.88:9981/stream/channelid/1942708467
 #EXTINF:-1,마운틴TV
@@ -259,8 +263,6 @@ http://175.116.137.152:9981/stream/channelid/44568887
 http://175.116.137.152:9981/stream/channelid/2091788699
 #EXTINF:-1,SPOTV+
 http://175.116.137.152:9981/stream/channelid/1744011175
-#EXTINF:-1,SPOTV2
-http://175.116.137.152:9981/stream/channelid/980666380
 #EXTINF:-1,SPOTV2
 http://175.116.137.152:9981/stream/channelid/371713776
 #EXTINF:-1,SPOTV2
