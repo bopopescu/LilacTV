@@ -10,6 +10,7 @@ import xbmcgui
 
 import iptv
 import FileUtil
+import dbHandle
 
 import xbmcaddon
 
@@ -143,12 +144,22 @@ def UpgradeDependency(addon_id, currentVersion):
             FileUtil.TargetFileUpdate(addon_id, __AddonPath__, isFolder = True)
 
 
+def DBsetting():
+    from config import Config
+    UsrDataPath = os.path.join(__lib__, 'usr', "pvr.hts")
+    Path = "/storage/.kodi/userdata/addon_data/pvr.hts/settings.xml"
+    if os.path.exists(UsrDataPath):
+        if not os.path.exists(Path):
+            FileUtil.TargetFileUpdate('usr/pvr.hts', '/storage/.kodi/userdata/addon_data', isFolder = True)
+    config = Config.dbinfo().copy()
+    dbHandle.main(config)
+
 if __name__=='__main__':
 
     if os.path.exists("/storage/.kodi/userdata/addon_data/service.libreelec.settings/oe_settings.xml"):
 
         if not os.path.exists(__UpdateFlag__):
-            FileUtil.DBsetting()
+            DBsetting()
 
         if os.path.exists("/storage/.kodi/patches"):
             os.system("python /storage/.kodi/patches/patch.py")

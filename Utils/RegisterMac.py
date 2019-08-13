@@ -69,15 +69,19 @@ def main(config):
     #     output.append("Failed inserting %s\nError: %s\n" % (device,e))
     #     raise
 
-    stmt_select = "SELECT * FROM items WHERE macaddeth0 = %s"
+    stmt_select = "SELECT macaddeth0 FROM items WHERE macaddeth0 = %s"
     cursor.execute(stmt_select, (eth0,))
     row = cursor.fetchone()
 
-    if row:
+    if not row:
+        device = ((eth0, wlan, ip, 1),)
+        stmt_insert = "INSERT INTO items (macaddeth0, macaddwlan, ipadd, online) VALUES (%s,%s,%s,%s)"
+        cursor.executemany(stmt_insert, device)
+    else:
         stmt_update = "UPDATE items SET ipadd = %s, online = %s WHERE macaddeth0 = %s"
         cursor.executemany(stmt_update, ((ip, 1, row[0]),))
-        db.commit()
 
+    db.commit()
     cursor.close()
     db.close()
     return output

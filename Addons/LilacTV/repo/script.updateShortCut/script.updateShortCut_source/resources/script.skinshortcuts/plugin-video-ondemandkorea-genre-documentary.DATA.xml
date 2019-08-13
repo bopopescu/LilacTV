@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<shortcuts>
+	<shortcut>
+		<defaultID />
+		<label>교육</label>
+		<label2>Custom item</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb />
+		<action>ActivateWindow(Videos,"plugin://plugin.video.ondemandkorea/genre/education/",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>경제</label>
+		<label2>Custom item</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb />
+		<action>ActivateWindow(Videos,"plugin://plugin.video.ondemandkorea/genre/economy/",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>건강</label>
+		<label2>Custom item</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb />
+		<action>ActivateWindow(Videos,"plugin://plugin.video.ondemandkorea/genre/health/",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>종교</label>
+		<label2>Custom item</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb />
+		<action>ActivateWindow(Videos,"plugin://plugin.video.ondemandkorea/genre/religion/",return)</action>
+	</shortcut>
+</shortcuts>

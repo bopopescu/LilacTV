@@ -38,9 +38,6 @@ sys.path.append('/storage/.kodi/addons/script.module.myconnpy/lib/')
 import mysql.connector
 import xml.etree.ElementTree as ET
 
-__cwd__ = '/storage/.kodi/addons/script.updateShortCut'
-
-
 def ChangeData_XML(xml_file, value1, value2, value3):
     doc = ET.parse(xml_file)
     root = doc.getroot()
@@ -120,7 +117,6 @@ def main(config):
         dialog.ok("Error", "등록되지 않은 라일락TV 소프트웨어 입니다.")
         os.system("killall kodi.bin")
     else:
-        time.sleep(5)
         if (row[7] == 1): #owner_id가 admin이면
             dialog = xbmcgui.Dialog()
             message = """
@@ -146,7 +142,7 @@ def main(config):
             cursor.execute(stmt_select, (row[6],))
             sub = cursor.fetchone()
             now = datetime.now()
-            restDays = ((sub[2] - now).days)+1
+            restDays = (sub[2] - datetime.now()).days
             endDate = sub[2].strftime('%Y-%m-%d')
             if (sub[3] == 3): #subscription의 state가 "Expired"이면
                 dialog = xbmcgui.Dialog()
@@ -155,22 +151,15 @@ def main(config):
             elif (sub[3] == 2): #subscription의 state가 "Activated"이면
                 if (restDays < 8): #만료일 7일 전부터 알림
                     dialog = xbmcgui.Dialog()
-                    dialog.ok("사용기간이 곧 만료됩니다.", "만료일까지 "+str(restDays)+"일 남았습니다.", "", "종료일시 : "+endDate)
-                    if (restDays <= 0): #만료일에 "Expired" 저장
-                        cursor.executemany("UPDATE subscription SET status_id = %s WHERE lilac_tv_id = %s", ((3, row[6]),))
+                    dialog.ok("사용기간이 곧 만료됩니다.", "만료일까지 "+str(restDays)+"일 남았습니다.", "종료일시 : "+endDate)
+                    if (restDays == 0): #만료일에 "Expired" 저장
+                        cursor.execute("UPDATE subscription SET status_id = %s WHERE lilac_tv_id = %s", (3,row[6],))
 
 
         stmt_update = "UPDATE items SET ipadd = %s, online = %s WHERE macaddeth0 = %s"
         cursor.executemany(stmt_update, ((ip, 1, row[0]),))
 
     db.commit()
-
-
-    if os.path.exists(os.path.join(__cwd__, 'FileUtil.py')):
-        os.system("rm "+__cwd__+"/FileUtil.py")
-
-# For the future
-#===================================================================================================
 
     Path = "/storage/.kodi/userdata/addon_data/pvr.hts/settings.xml"
     if not os.path.exists(Path):
