@@ -65,10 +65,6 @@ http://220.118.47.135:9981/stream/channelid/525148401
 http://1.251.114.88:9981/stream/channelid/848910117
 #EXTINF:-1,SBS
 http://1.251.114.88:9981/stream/channelid/299903092
-#EXTINF:-1,KBS2
-http://1.251.114.88:9981/stream/channelid/420543989
-#EXTINF:-1,KBS1
-http://1.251.114.88:9981/stream/channelid/32304494
 #EXTINF:-1,KBS1
 http://1.251.114.88:9981/stream/channelid/1773765262
 #EXTINF:-1,MBC
@@ -91,8 +87,6 @@ http://1.251.114.88:9981/stream/channelid/1304582642
 http://1.251.114.88:9981/stream/channelid/1137326506
 #EXTINF:-1,TV조선
 http://1.251.114.88:9981/stream/channelid/1642085432
-#EXTINF:-1,연합뉴스TV
-http://1.251.114.88:9981/stream/channelid/827837113
 #EXTINF:-1,YTN
 http://1.251.114.88:9981/stream/channelid/474243569
 #EXTINF:-1,YTN
@@ -155,6 +149,10 @@ http://1.251.114.88:9981/stream/channelid/124250041
 http://1.251.114.88:9981/stream/channelid/2125520604
 #EXTINF:-1,SBS GOLF
 http://1.251.114.88:9981/stream/channelid/18411159
+#EXTINF:-1,JTBC Golf
+http://1.251.114.88:9981/stream/channelid/825875865
+#EXTINF:-1,OGN
+http://1.251.114.88:9981/stream/channelid/536773943
 #EXTINF:-1,Tooniverse
 http://1.251.114.88:9981/stream/channelid/1077127039
 #EXTINF:-1,Disney Channel
