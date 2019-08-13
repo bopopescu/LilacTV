@@ -489,6 +489,8 @@ http://39.120.6.252:9981/stream/channelid/1524789429
 http://39.120.6.252:9981/stream/channelid/221396403
 #EXTINF:-1,MBC SPORTS+
 http://39.120.6.252:9981/stream/channelid/2133706821
+#EXTINF:-1,SkySports
+http://39.120.6.252:9981/stream/channelid/846199895
 #EXTINF:-1,JTBC3
 http://39.120.6.252:9981/stream/channelid/1178441168
 #EXTINF:-1,SPOTV2
