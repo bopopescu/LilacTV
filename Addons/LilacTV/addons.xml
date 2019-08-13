@@ -130,7 +130,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.youtube" name="YouTube" version="1006.5.1" provider-name="anxdpanic, bromix">
+<addon id="plugin.video.youtube" name="YouTube" version="1006.5.0" provider-name="anxdpanic, bromix">
     <requires>
         <import addon="xbmc.python" version="2.20.0"/>
         <import addon="script.module.six" version="1.11.0"/>
@@ -144,14 +144,21 @@
     <extension point="xbmc.python.module" library="resources/lib/"/>
     <extension point="xbmc.addon.metadata">
         <news>
-6.5.1
-[add] get_live to youtube_requests module to retrieve live stream info for a channel
-[add] Adaptive (MP4) and Adaptive (WEBM) to MPEG-DASH - Video quality
-[fix] live stream playback
-[fix] unable to seek when using mpeg-dash
-[fix] mpeg-dash video quality selection
-[fix] sqlite requests breaking when another add-on/module uses sqlite3.register_converter(..)
-[fix] signal endofdirectory in case of a provider navigation exception |contrib: enen92|
+6.5.0
+[add] Video quality selection to Settings - MPEG-DASH
+[add] Limit to 30fps to Settings - MPEG-DASH
+[add] Uploads playlist to channel playlists
+[chg] Use search for channel videos instead of the Uploads playlist
+[fix] Signature cipher, some videos unplayable (ie. music videos)
+[fix] Playback monitoring using Python 3
+[fix] unescape html entities in title and plot
+[fix] handling of invalid grant when refreshing access token
+[fix] adding suggested videos when played from some widgets
+[fix] http server /client_ip using Python 3 |contrib: t6|
+[upd] refactor youtube_resolver.resolve
+[lang] el_gr strings |contrib: twilight0|
+[lang] es_es strings |contrib: roliverosc|
+[lang] ko_kr strings |contrib: parkmino|
         </news>
         <assets>
             <icon>icon.png</icon>
@@ -238,7 +245,7 @@
   </extension>
 </addon>
 
-<addon id="script.updateShortCut" name="LilacTV Content Update" version="1.2.18" provider-name="BadJin">
+<addon id="script.updateShortCut" name="LilacTV Content Update" version="1.2.14" provider-name="BadJin">
   <requires>
     <import addon="xbmc.python" version="2.19.0"/>
   </requires>
@@ -298,11 +305,11 @@
   </extension>
 </addon>
 
-<addon id="repository.lilac" name="Lilac [COLOR orange]Addons[/COLOR]" version="1.1.3" provider-name="BadJin">
+<addon id="repository.lilac" name="Lilac [COLOR orange]Addons[/COLOR]" version="1.1.1" provider-name="BadJin">
     <extension point="xbmc.addon.repository" name="Lilac addons">
-        <info compressed="false">http://lilactv.com/BadJin/Addons/addons.xml</info>
-        <checksum>http://lilactv.com/BadJin/Addons/addons.xml.md5</checksum>
-        <datadir zip="true">http://lilactv.com/BadJin/Addons/repo/</datadir>
+        <info compressed="false">http://172.104.51.248/BadJin/Addons/addons.xml</info>
+        <checksum>http://172.104.51.248/BadJin/Addons/addons.xml.md5</checksum>
+        <datadir zip="true">http://172.104.51.248/BadJin/Addons/repo/</datadir>
     </extension>
     <extension point="xbmc.addon.metadata">
         <summary>Lilac Addons for Kodi</summary>
@@ -368,6 +375,92 @@
   </extension>
 </addon>
 
+<addon id="plugin.video.placenta" version="1.4.6.1" name="Placenta" provider-name="Team Afterbirth">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0" />
+		<import addon="script.module.placenta" />
+		<import addon="script.placenta.artwork" />
+		<import addon="script.placenta.metadata" />
+		<import addon="script.module.resolveurl" />
+		<import addon="script.module.requests" />
+		<import addon="script.module.metahandler" />
+        <import addon="plugin.video.youtube"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>video</provides>
+        <provides>audio</provides>
+	</extension>
+	<extension point="xbmc.service" library="service.py" start="startup" />
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Placenta</summary>
+		<description>Covenant Fork from Echo/Colossus era with Team Afterbirth's updates and new code.</description>
+        <disclaimer lang="en">The author is not responsible for the use of this addon. The author is not responsible for the content found using this addon. The author does not host or own any content found within this addon.
+The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation.
+This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works.
+</disclaimer>
+		<platform>all</platform>
+        <reuselanguageinvoker>false</reuselanguageinvoker>
+		<license>Beerware rev. 42</license>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+    			<screenshot>resources/screenshots/screenshot-01.jpg</screenshot>
+    			<screenshot>resources/screenshots/screenshot-02.jpg</screenshot>
+    			<screenshot>resources/screenshots/screenshot-03.jpg</screenshot>
+    			<screenshot>resources/screenshots/screenshot-04.jpg</screenshot>
+		</assets>
+		<news></news>
+	</extension>
+</addon>
+
+<addon id="script.module.placenta" name="Placenta Module" version="1.7.8.1" provider-name="Team Afterbirth">
+	<requires>
+		<import addon="xbmc.python" version="2.1.0" />
+		<import addon="script.module.beautifulsoup4"/>
+	</requires>
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+        <reuselanguageinvoker>false</reuselanguageinvoker>
+		<summary lang="en">Placenta</summary>
+		<description>Covenant Fork from Echo/Colossus era with Team Afterbirth's updates and new code.</description>
+        <disclaimer lang="en">The author is not responsible for the use of this addon. The author is not responsible for the content found using this addon. The author does not host or own any content found within this addon.[CR]The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation.[CR]This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works.</disclaimer>
+        <license>Beerware rev. 42</license>
+	</extension>
+</addon>
+
+<addon id="script.placenta.artwork" version="1.0.8.1" name="Placenta Artwork" provider-name="Team Afterbirth">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0"/>
+	</requires>
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.addon.metadata">
+		<summary>Themes for the Placenta Addon</summary>
+		<description>Artwork Module for the Placenta Addon</description>
+        <disclaimer lang="en">The author is not responsible for the use of this addon. The author is not responsible for the content found using this addon. The author does not host or own any content found within this addon.
+The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation.
+This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works.</disclaimer>
+        <license>Beerware rev. 42</license>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="script.placenta.metadata" version="1.0.1.1" name="Placenta Metadata" provider-name="Team Afterbirth">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0"/>
+	</requires>
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.addon.metadata">
+		<summary>Metadata for the Placenta Addon</summary>
+		<description>Metadata for Placenta are maintained separately to make distribution of the the addon itself easier/faster.</description>
+        <disclaimer lang="en">The author is not responsible for the use of this addon. The author is not responsible for the content found using this addon. The author does not host or own any content found within this addon.
+The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation.
+This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works.</disclaimer>
+        <license>Beerware rev. 42</license>
+		<platform>all</platform>
+	</extension>
+</addon>
+
 <addon id="plugin.program.indigo" version="4.0.10.2" name="Indigo" provider-name="tvaddons">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0"/>
@@ -411,7 +504,24 @@
   </extension>
 </addon>
 
-<addon id="script.change.SD" name="Change Channel Quality to SD" version="0.0.16" provider-name="BadJin">
+<addon id="plugin.video.oksusu" name="oksusu" version="0.3.0" provider-name="soju6jan">
+	<requires>
+		<import addon="xbmc.python" version="2.1.0"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="kodi.py">
+    	<provides>video</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">oksusu</summary>
+		<summary lang="kr">oksusu</summary>
+		<description lang="en">oksusu</description>
+		<description lang="kr">oksusu</description>
+		<language></language>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="script.change.SD" name="Change Channel Quality to SD" version="0.0.14" provider-name="BadJin">
   <requires>
     <import addon="xbmc.python" version="2.19.0"/>
   </requires>
@@ -424,7 +534,7 @@
   </extension>
 </addon>
 
-<addon id="script.change.HD" name="Change Channel Quality to HD" version="0.0.9" provider-name="BadJin">
+<addon id="script.change.HD" name="Change Channel Quality to HD" version="0.0.7" provider-name="BadJin">
   <requires>
     <import addon="xbmc.python" version="2.19.0"/>
   </requires>
@@ -437,7 +547,7 @@
   </extension>
 </addon>
 
-<addon id="script.change.HD1" name="Change Channel Quality to HD1" version="0.0.9" provider-name="BadJin">
+<addon id="script.change.HD1" name="Change Channel Quality to HD1" version="0.0.7" provider-name="BadJin">
   <requires>
     <import addon="xbmc.python" version="2.19.0"/>
   </requires>
@@ -450,7 +560,7 @@
   </extension>
 </addon>
 
-<addon id="script.change.HD2" name="Change Channel Quality to HD2" version="0.0.9" provider-name="BadJin">
+<addon id="script.change.HD2" name="Change Channel Quality to HD2" version="0.0.7" provider-name="BadJin">
   <requires>
     <import addon="xbmc.python" version="2.19.0"/>
   </requires>
@@ -463,7 +573,7 @@
   </extension>
 </addon>
 
-<addon id="script.change.HD3" name="Change Channel Quality to HD3" version="0.0.10" provider-name="BadJin">
+<addon id="script.change.HD3" name="Change Channel Quality to HD3" version="0.0.8" provider-name="BadJin">
   <requires>
     <import addon="xbmc.python" version="2.19.0"/>
   </requires>
