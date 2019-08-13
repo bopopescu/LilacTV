@@ -18,7 +18,7 @@ newVPNpass=/storage/freevpn.txt
 Passfile=/storage/.kodi/addons/service.vpn.manager/VPNBook.com-OpenVPN-CA1/pass.txt
 
 OldPassword=`cat $Passfile | sed -n '2p'`
-curl 172.104.51.248/BadJin/Favourites/VPN.txt > $newVPNpass
+curl lilactv.com/BadJin/Favourites/VPN.txt > $newVPNpass
 . $newVPNpass
 NewPassword=`echo $Password | awk -F" " '{print $1}'`
 if [ -n "$NewPassword" ]; then

@@ -43,9 +43,9 @@ def CheckKoreanChannel():
 
     doc = ET.parse(xml_file)
     root = doc.getroot()
-    
+
     for e in root:
-        if e.attrib.get('id') == "m3uPath":            
+        if e.attrib.get('id') == "m3uPath":
             if not e.attrib.get('value') == __m3uPath__:
                 return True
 
@@ -64,18 +64,18 @@ def RemoveBlankLine(fName):
 
 def set_settingsxml():
     settings_file = '/storage/.kodi/userdata/addon_data/pvr.iptvsimple/settings.xml'
-           
+
     config_file = open(settings_file, 'r')
     config_text = config_file.read()
     config_file.close()
 
     xml_conf = minidom.parseString(config_text)
 
-  
+
     for xml_entry in xml_conf.getElementsByTagName('setting'):
-        for attr_name, attr_value in xml_entry.attributes.items():      
+        for attr_name, attr_value in xml_entry.attributes.items():
             if attr_name == 'id' and attr_value == 'm3uPath':
-                xml_entry.setAttribute("value", __m3uPath__)      
+                xml_entry.setAttribute("value", __m3uPath__)
 
     config_file = open(settings_file, 'w')
     config_file.write(xml_conf.toprettyxml())
@@ -91,7 +91,7 @@ if __name__=='__main__':
         #sleep long enough for the home screen to come up
         time.sleep(1)
         if CheckKoreanChannel():
-            os.system("curl http://172.104.51.248/BadJin/Favourites/System/"+__m3uFile__+" > "+__m3uPath__)
+            os.system("curl http://lilactv.com/BadJin/Favourites/System/"+__m3uFile__+" > "+__m3uPath__)
             set_settingsxml()
             dialog = xbmcgui.Dialog()
             if dialog.ok("TV채널 업데이트 -[Test Version]","고화질[1080p]로 리스트를 구성합니다. -52채널", " ", "***예고없이 방송이 중단될 수 있습니다.***"):
@@ -110,5 +110,3 @@ if __name__=='__main__':
                     xbmc.executebuiltin("PlayerControl(Stop)")
                     time.sleep(1)
                     restartPVR()
-
-

@@ -185,8 +185,8 @@
         <setting id="torrent.identify" type="enum" label="32634"  enable="eq(-1,true)" lvalues="32589|32590|32591|32592|32593|32594|32595|32596|32597|32598" default="4" />
         <setting id="torrent.min.seeders" type="slider" label="32638" enable="eq(-2,true)" default="10" range="1,100" option="int" />
         <setting id="torrent.sort.them.up" type="bool" label="32639" enable="eq(-3,true)"  default="true" />
-        <setting id="torrent.resolveurl2" type="action" label="32640" enable="eq(-4,true)" option="close" action="RunPlugin(plugin://plugin.video.tempest/?action=urlResolverRDTorrent&amp;query=1.30)" />
-        <setting id="torrent.resolveurl" type="action" label="32637" enable="eq(-5,true)" option="close" action="RunPlugin(plugin://plugin.video.tempest/?action=urlResolverRDTorrent&amp;query=1.40)" />
+        <setting id="torrent.resolveurl2" type="action" label="32640" enable="eq(-4,true)" option="close" action="RunPlugin(plugin://plugin.video.tempest/?action=urlResolverRDTorrent&amp;query=1.46)" />
+        <setting id="torrent.resolveurl" type="action" label="32637" enable="eq(-5,true)" option="close" action="RunPlugin(plugin://plugin.video.tempest/?action=urlResolverRDTorrent&amp;query=1.56)" />
         <setting label="Torrent Providers" type="lsep" />
         <setting label="Disable All Torrent Providers" type="action" option="close" action="RunPlugin(plugin://plugin.video.tempest/?mode=toggleAllTorrent&amp;setting=false&amp;openSettings&amp;query=6.0)"/>
         <setting label="Enable All Torrent Providers" type="action" option="close" action="RunPlugin(plugin://plugin.video.tempest/?mode=toggleAllTorrent&amp;setting=true&amp;openSettings&amp;query=6.0)"/>
@@ -206,6 +206,7 @@
         <setting id="provider.skytorrents" type="bool" label="SKYTORRENTS" default="false" />
         <setting id="provider.torrapi" type="bool" label="TORRAPI" default="false" />
         <setting id="provider.torrdown" type="bool" label="TORRDOWN" default="false" />
+        <setting id="provider.torrentqalaxy" type="bool" label="TORRENTGALAXY" default="false" />
         <setting id="provider.torrentquest" type="bool" label="TORRENTQUEST" default="false" />
         <setting id="provider.ytsam" type="bool" label="YTSAM" default="false" />
         <setting id="provider.yifyddl" type="bool" label="YIFYDDL" default="false" />

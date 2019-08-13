@@ -307,6 +307,7 @@ using git checkout filename
 
 3)기본 jar를 지우고 다시 빌드 ./gradlew clean build
 4)포트 확인 netstat -lnp | grep 8081 ---> 사용중이면 kill -9 프로세스id
+4-1) pid=$(lsof -i:8081 -t); kill -TERM $pid || kill -KILL $pid
 5)백그라운드로 실행 java -jar build/libs/lilactv-0.0.1-SNAPSHOT.jar &
 
 AUTO_INCREMENT 값 초기화 하기
@@ -321,3 +322,5 @@ https://stackoverflow.com/questions/43170391/no-default-constructor-for-jpa-enti
 find . -name '*.pyo' -exec rm {} \;
 xbmc-send --action="UpdateAddonRepos"
 xbmc.executebuiltin('UpdateAddonRepos')
+기기용 앱 비밀번호
+apjimusplyfvxtec

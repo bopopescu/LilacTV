@@ -170,7 +170,7 @@ if __name__=='__main__':
                 CheckUpdate()
 
         Flag = False
-        if FileUtil.UpdateCheck4Favourites("예능"):
+        if FileUtil.UpdateCheck4Favourites("즐겨찾기"):
             Flag = True
         if FileUtil.UpdateCheck4Favourites("애드온"):
             Flag = True

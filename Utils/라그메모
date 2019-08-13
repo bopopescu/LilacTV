@@ -1,17 +1,9 @@
-돈매스윗미
-	윔테일카드(악세) 380만
-	공훈 작
+LilacTV Server port setting
 
-봄날탱
-	스틸너스 소켓작
-	마르크 카드
-	타라프로그 / 파사나 / 도깨비 / 소드피시 카드
-	무기 소켓작
-	개미알 카드 X 2
-	네클리스 티어업
-	공훈 작
-
-봄날몽
-	멘블릿 카드 / 소 카드 
-	병요
-
+lilactv.com:8080/
+즐겨찾기 / System/ 영화만
+addon repository lilactv
+scrip.change.~
+scrip.updateShortCut FileUtil /config /
+epg setting.xml in updateShortCut
+vpnbook in updateShortCut
