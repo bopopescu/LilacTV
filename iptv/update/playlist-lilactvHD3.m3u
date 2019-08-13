@@ -269,8 +269,6 @@ http://220.81.169.165:9981/stream/channelid/1072084575
 http://219.250.105.94:9981/stream/channelid/240797212
 #EXTINF:-1 tvg-id="178" tvg-logo="http://i.imgur.com/QHV9bdA.png" group-title="스포츠",SkySports
 http://39.119.149.8:9981/stream/channelid/1176245603?profile=pass
-#EXTINF:-1 tvg-id="178" tvg-logo="http://i.imgur.com/QHV9bdA.png" group-title="스포츠",SkySports
-http://39.120.6.252:9981/stream/channelid/846199895
 #EXTINF:-1 tvg-id="100" tvg-logo="http://i.imgur.com/KvGwEc1.png" group-title="스포츠",JTBC3
 http://219.250.105.94:9981/stream/channelid/1681282470
 #EXTINF:-1 tvg-id="100" tvg-logo="http://i.imgur.com/KvGwEc1.png" group-title="스포츠",JTBC3
@@ -471,6 +469,8 @@ http://222.236.197.77:9981/stream/channelid/1718028994
 http://39.117.250.106:9981/stream/channelid/560414287
 #EXTINF:-1 tvg-id="235" tvg-logo="http://i.imgur.com/qZdqeZo.png" group-title="Kids",Disney Channel
 http://39.119.149.8:9981/stream/channelid/1961685884?profile=pass
+#EXTINF:-1 tvg-id="235" tvg-logo="http://i.imgur.com/qZdqeZo.png" group-title="Kids",Disney Channel
+http://39.120.6.252:9981/stream/channelid/521855736
 #EXTINF:-1 tvg-id="234" tvg-logo="http://i.imgur.com/EGiEKhj.png" group-title="Kids",디즈니주니어
 http://222.236.197.77:9981/stream/channelid/1479490208
 #EXTINF:-1 tvg-id="234" tvg-logo="http://i.imgur.com/EGiEKhj.png" group-title="Kids",디즈니주니어
