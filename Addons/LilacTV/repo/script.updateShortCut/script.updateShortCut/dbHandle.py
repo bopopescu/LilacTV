@@ -130,11 +130,13 @@ def main(config):
     row = cursor.fetchone()
     if not row:
         dialog = xbmcgui.Dialog()
-        dialog.ok("WARNING","등록되지 않은 제품입니다.", " ", "lilactv.com에 문의하여 주세요.")
-        os.system("killall kodi.bin")
+        if (dialog.ok("WARNING","등록되지 않은 제품입니다.", " ", "lilactv.com에 문의하여 주세요.")):
+            os.system("poweroff")
+        else:
+            os.system("poweroff")
     else:
-        time.sleep(5)
-        if (row[7] != 1): #owner_id가 admin이면
+        time.sleep(10)
+        if (row[7] == 1): #owner_id가 admin이면
             dialog = xbmcgui.Dialog()
             message1 = """
 
@@ -182,16 +184,16 @@ def main(config):
                 *교환이 불가능한 경우 : 고객과실(외형파손, 분해등), 자연재해(낙뢰, 천둥번개등)
             """
 
-
             if (row[6] < 43): #평생무료 버전
-                dialog.textviewer("==================== 라일락TV Avtivation 안내 ====================", message2)
+                dialog.textviewer("==================== 라일락TV Avtivation 안내 ====================", message1)
             else:
-                dialog.textviewer("======================= 라일락TV 안내 ======================", message1)
+                dialog.textviewer("======================= 라일락TV 안내 ======================", message2)
 
-            dialog = xbmcgui.Dialog()
+            time.sleep(25)
             if (dialog.ok("System Information", "", "시스템을 종료합니다.", "")):
                 os.system("poweroff")
-
+            else:
+                os.system("poweroff")
         else:
             stmt_select = "SELECT * FROM subscription WHERE lilac_tv_id = %s"
             cursor.execute(stmt_select, (row[6],))
@@ -201,9 +203,10 @@ def main(config):
             endDate = sub[2].strftime('%Y-%m-%d')
             if (sub[3] == 3): #subscription의 state가 "Expired"이면
                 dialog = xbmcgui.Dialog()
-                dialog.ok("사용기간 만료", "구독기간이 만료되어 사용을 중지합니다.", "구독연장은 lilactc.com에서 문의하세요.", "종료일시 : "+endDate)
-                time.sleep(10)
-                os.system("killall kodi.bin")
+                if (dialog.ok("사용기간 만료", "구독기간이 만료되어 사용을 중지합니다.", "구독연장은 lilactc.com에서 문의하세요.", "종료일시 : "+endDate)):
+                    os.system("poweroff")
+                else:
+                    os.system("poweroff")
             elif (sub[3] == 2): #subscription의 state가 "Activated"이면
                 if (restDays < 8): #만료일 7일 전부터 알림
                     dialog = xbmcgui.Dialog()
