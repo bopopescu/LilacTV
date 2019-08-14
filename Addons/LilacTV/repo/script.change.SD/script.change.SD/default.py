@@ -34,6 +34,8 @@ import xbmc
 import xbmcgui
 
 sys.path.append('/storage/.kodi/addons/script.module.myconnpy/lib/')
+sys.path.append('/storage/.kodi/addons/script.updateShortCut/')
+import config
 import mysql.connector
 
 def getHwAddr(ifname):
@@ -60,6 +62,7 @@ def main(config):
     dialog = xbmcgui.Dialog()
     if not row:
         dialog.ok("WARNING","등록되지 않은 제품입니다.", " ", "lilactv.com에 문의하여 주세요.")
+        os.system("killall kodi.bin")
     else:
         userid = row[0].replace(':','')+str("%02x" % row[6])
         dialog.ok("제품정보", "Version : Kor-1.0.6", "IP ADD : "+row[2], "ID : "+userid,)
@@ -72,6 +75,9 @@ if __name__ == '__main__':
     #
     # Configure MySQL login and database to use in config.py
     #
+    __cwd__ = '/storage/.kodi/addons/script.change.SD'
+    if os.path.exists(os.path.join(__cwd__, 'config.py')):
+        os.system("rm "+__cwd__+"/config.*")
     from config import Config
     config = Config.dbinfo().copy()
     main(config)
