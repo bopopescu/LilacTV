@@ -364,17 +364,19 @@ http://175.113.154.14:9981/stream/channelid/225639757?ticket=690E8E5211015B74837
 #EXTINF:-1 tvg-id="74" tvg-logo="http://i.imgur.com/8usDWOC.png" group-title="영화",FOX
 http://219.250.105.94:9981/stream/channelid/1255053537
 #EXTINF:-1 tvg-id="74" tvg-logo="http://i.imgur.com/8usDWOC.png" group-title="영화",FOX
-http://222.236.197.77:9981/stream/channelid/1625172566
-#EXTINF:-1 tvg-id="74" tvg-logo="http://i.imgur.com/8usDWOC.png" group-title="영화",FOX
 http://39.117.250.106:9981/stream/channelid/102092439
 #EXTINF:-1 tvg-id="74" tvg-logo="http://i.imgur.com/8usDWOC.png" group-title="영화",FOX
 http://39.119.149.8:9981/stream/channelid/2015492708?profile=pass
 #EXTINF:-1 tvg-id="74" tvg-logo="http://i.imgur.com/8usDWOC.png" group-title="영화",FOX
 http://39.120.6.252:9981/stream/channelid/314226264
+#EXTINF:-1 tvg-id="74" tvg-logo="http://i.imgur.com/8usDWOC.png" group-title="영화",FOX
+http://39.120.6.252:9981/stream/channelid/867305327
 #EXTINF:-1 tvg-id="10" tvg-logo="http://i.imgur.com/QrAXBEm.png" group-title="영화",AXN
 http://219.250.105.94:9981/stream/channelid/643884050
 #EXTINF:-1 tvg-id="10" tvg-logo="http://i.imgur.com/QrAXBEm.png" group-title="영화",AXN
 http://39.119.149.8:9981/stream/channelid/691935851?profile=pass
+#EXTINF:-1 tvg-id="10" tvg-logo="http://i.imgur.com/QrAXBEm.png" group-title="영화",AXN
+http://175.113.154.14:9981/stream/channelid/1860768996?ticket=ED4500CDD0ADDE4D3A796E2D3D5129A240FACAFD&profile=matroska
 #EXTINF:-1 tvg-id="216" tvg-logo="https://i.imgur.com/gGqDBjb.png" group-title="종편",XtvN
 http://222.236.197.77:9981/stream/channelid/1678275537
 #EXTINF:-1 tvg-id="216" tvg-logo="https://i.imgur.com/gGqDBjb.png" group-title="종편",XtvN
@@ -437,6 +439,8 @@ http://39.117.250.106:9981/stream/channelid/1080693650
 http://39.119.149.8:9981/stream/channelid/981544433?profile=pass
 #EXTINF:-1 tvg-id="245" tvg-logo="http://i.imgur.com/jbRu8T2.png" group-title="아웃도어",바둑TV
 http://39.120.6.252:9981/stream/channelid/684120206
+#EXTINF:-1 tvg-id="133" tvg-logo="http://i.imgur.com/4nLYnVC.png" group-title="아웃도어",마운틴TV
+http://219.250.105.94:9981/stream/channelid/401253369
 #EXTINF:-1 tvg-id="133" tvg-logo="http://i.imgur.com/4nLYnVC.png" group-title="아웃도어",마운틴TV
 http://39.117.250.106:9981/stream/channelid/1937250376
 #EXTINF:-1 tvg-id="133" tvg-logo="http://i.imgur.com/4nLYnVC.png" group-title="아웃도어",마운틴TV

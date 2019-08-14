@@ -111,6 +111,8 @@ http://219.250.105.94:9981/stream/channelid/1175927034
 http://219.250.105.94:9981/stream/channelid/379879927
 #EXTINF:-1,TV조선
 http://219.250.105.94:9981/stream/channelid/636272785
+#EXTINF:-1,마운틴TV
+http://219.250.105.94:9981/stream/channelid/401253369
 #EXTINF:-1,SPOTV Games
 http://219.250.105.94:9981/stream/channelid/1334671362
 #EXTINF:-1,History
@@ -185,8 +187,6 @@ http://222.236.197.77:9981/stream/channelid/1755244913
 http://222.236.197.77:9981/stream/channelid/1285935293
 #EXTINF:-1,XtvN
 http://222.236.197.77:9981/stream/channelid/1678275537
-#EXTINF:-1,FOX
-http://222.236.197.77:9981/stream/channelid/1625172566
 #EXTINF:-1,SPOTV
 http://222.236.197.77:9981/stream/channelid/71717322
 #EXTINF:-1,KBS N Sports
@@ -591,6 +591,8 @@ http://175.113.154.14:9981/stream/channelid/618716491?ticket=CA29D60B4C932D75231
 http://175.113.154.14:9981/stream/channelid/155352112?ticket=BDB9D46C8A24F95CE63344A65820BF83825F53E2&profile=matroska
 #EXTINF:-1,FOX
 http://175.113.154.14:9981/stream/channelid/1934310832?ticket=6B4BEDE8619373F1CE5DA5C6C694E65352C7F9D5&profile=matroska
+#EXTINF:-1,AXN
+http://175.113.154.14:9981/stream/channelid/1860768996?ticket=ED4500CDD0ADDE4D3A796E2D3D5129A240FACAFD&profile=matroska
 #EXTINF:-1,SPOTV
 http://175.113.154.14:9981/stream/channelid/1196793338?ticket=ABDCA69A4743149D0FC1976FF2AA279217CBEAE8&profile=matroska
 #EXTINF:-1,SBS Sports
