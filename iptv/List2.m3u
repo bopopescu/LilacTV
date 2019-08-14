@@ -49,8 +49,6 @@ http://116.40.8.83:9981/stream/channelid/768123082
 http://116.40.8.83:9981/stream/channelid/630887506
 #EXTINF:-1,EBS
 http://116.40.8.83:9981/stream/channelid/653988547
-#EXTINF:-1,EBS2
-http://116.40.8.83:9981/stream/channelid/1337614225
 #EXTINF:-1,FTV
 http://116.40.8.83:9981/stream/channelid/706150689
 #EXTINF:-1,JTBC
@@ -73,20 +71,6 @@ http://116.40.8.83:9981/stream/channelid/719535705
 http://116.40.8.83:9981/stream/channelid/796171670
 #EXTINF:-1,SBS GOLF
 http://116.40.8.83:9981/stream/channelid/2133556657
-#EXTINF:-1,TV조선
-http://116.40.8.83:9981/stream/channelid/1338443711
-#EXTINF:-1,YTN
-http://116.40.8.83:9981/stream/channelid/353002792
-#EXTINF:-1,디즈니주니어
-http://116.40.8.83:9981/stream/channelid/1014215879
-#EXTINF:-1,Disney Channel
-http://116.40.8.83:9981/stream/channelid/496456047
-#EXTINF:-1,연합뉴스TV
-http://116.40.8.83:9981/stream/channelid/1310108613
-#EXTINF:-1,채널A
-http://116.40.8.83:9981/stream/channelid/196969362
-#EXTINF:-1,디스커버리채널
-http://116.40.8.83:9981/stream/channelid/1460606682
 #EXTINF:-1,MBN
 http://14.5.82.44:9981/stream/channelid/1920937963
 #EXTINF:-1,온스타일
@@ -261,6 +245,8 @@ http://1.245.102.167:9981/stream/channelid/518585192
 http://211.204.15.24:9981/stream/channelid/1952895652
 #EXTINF:-1,SBS
 http://211.204.15.24:9981/stream/channelid/883462703
+#EXTINF:-1,KBS2
+http://211.204.15.24:9981/stream/channelid/1000447289
 #EXTINF:-1,MBC
 http://211.204.15.24:9981/stream/channelid/2058151557
 #EXTINF:-1,JTBC
@@ -285,6 +271,16 @@ http://211.204.15.24:9981/stream/channelid/980684761
 http://211.204.15.24:9981/stream/channelid/1370170376
 #EXTINF:-1,KBS DRAMA
 http://211.204.15.24:9981/stream/channelid/1533674152
+#EXTINF:-1,KBS DRAMA
+http://211.204.15.24:9981/stream/channelid/15021754
+#EXTINF:-1,MBC Dramanet
+http://211.204.15.24:9981/stream/channelid/627700406
+#EXTINF:-1,올리브
+http://211.204.15.24:9981/stream/channelid/919245585
+#EXTINF:-1,채널CGV
+http://211.204.15.24:9981/stream/channelid/603754319
+#EXTINF:-1,OCN
+http://211.204.15.24:9981/stream/channelid/694267098
 #EXTINF:-1,슈퍼액션
 http://211.204.15.24:9981/stream/channelid/1525223994
 #EXTINF:-1,mplex
@@ -299,6 +295,8 @@ http://211.204.15.24:9981/stream/channelid/1644485691
 http://211.204.15.24:9981/stream/channelid/410636271
 #EXTINF:-1,XtvN
 http://211.204.15.24:9981/stream/channelid/2144644084
+#EXTINF:-1,FOX
+http://211.204.15.24:9981/stream/channelid/1930524825
 #EXTINF:-1,FOX
 http://211.204.15.24:9981/stream/channelid/1649860593
 #EXTINF:-1,SPOTV
