@@ -134,7 +134,7 @@ def main(config):
         os.system("killall kodi.bin")
     else:
         time.sleep(5)
-        if (row[7] == 1): #owner_id가 admin이면
+        if (row[7] != 1): #owner_id가 admin이면
             dialog = xbmcgui.Dialog()
             message1 = """
 
@@ -156,7 +156,6 @@ def main(config):
             """
 
             message2 = """
-
             1. Activation
             라일락TV 소프트웨어의 무단사용 및 제공되는 콘텐츠의 트래픽 과부화의 방지를 위하여
             라일락TV는 연간 회원제로 운영됩니다. 라일락TV 장치의 사용은 Activation(활성화)을
@@ -170,7 +169,6 @@ def main(config):
             [설정]의 서브메뉴(왼쪽방향키)의 [제품정보]란에서 확인하실 수 있습니다.
 
             자세한 사항은 [lilactv.com]의 사용자 가이드 항목에서 관련동영상을 참고하십시요.
-
 
             2. WARRANTY
                 1) 신제품 교체
@@ -186,11 +184,13 @@ def main(config):
 
 
             if (row[6] < 43): #평생무료 버전
-                dialog.textviewer("==================== 라일락TV Avtivation 안내 ====================", message1)
+                dialog.textviewer("==================== 라일락TV Avtivation 안내 ====================", message2)
             else:
-                dialog.textviewer("======================= 라일락TV 안내 ======================", message2)
+                dialog.textviewer("======================= 라일락TV 안내 ======================", message1)
 
-            os.system("killall kodi.bin")
+            dialog = xbmcgui.Dialog()
+            if (dialog.ok("System Information", "", "시스템을 종료합니다.", "")):
+                os.system("poweroff")
 
         else:
             stmt_select = "SELECT * FROM subscription WHERE lilac_tv_id = %s"
@@ -202,6 +202,7 @@ def main(config):
             if (sub[3] == 3): #subscription의 state가 "Expired"이면
                 dialog = xbmcgui.Dialog()
                 dialog.ok("사용기간 만료", "구독기간이 만료되어 사용을 중지합니다.", "구독연장은 lilactc.com에서 문의하세요.", "종료일시 : "+endDate)
+                time.sleep(10)
                 os.system("killall kodi.bin")
             elif (sub[3] == 2): #subscription의 state가 "Activated"이면
                 if (restDays < 8): #만료일 7일 전부터 알림
