@@ -115,25 +115,26 @@ def makeAccount4PvrHts(id, mac, tvheadend):
 
 
 def setCrontab(enable = True):
+    if (enable):
+        commentTag = ""
+    else:
+        commentTag = "#"
+
     path = "/storage/Seebo.cron"
-    cronCurrent = "30 * * * * kodi-send --action='RunScript(/storage/.kodi/addons/script.updateShortCut/dbHandle.py)'"
+    cronCurrent = "*/10 * * * * kodi-send --action='RunScript(/storage/.kodi/addons/script.updateShortCut/dbHandle.py)'"
+    cronContent = commentTag + cronCurrent
 
     fi=open(path)
     lines=fi.readlines()
     fi.close()
 
-    newList = []
     for line in lines:
-        if not cronCurrent in line:
-            newList.append(line)
+        if cronContent in line:
+            return
 
-    if (enable):
-        newList.append(cronCurrent)
-
-    ofp = open("/storage/Seebo.cron", "w")
-    for line in newList:
-        ofp.write(line)
-    ofp.close()
+    f = open("/storage/Seebo.cron", "a+")
+    f.write("\n\n"+cronContent)
+    f.close()
 
     os.system("crontab /storage/Seebo.cron")
 

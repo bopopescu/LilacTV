@@ -5,8 +5,11 @@ import re
 import urllib
 import time
 import hashlib
+
+import dbHandle
 #import xbmcgui
 
+__cwd__ = '/storage/.kodi/addons/script.updateShortCut'
 __userpath__ = '/storage/.kodi/userdata/addon_data'
 __favouritepath__ = '/storage/.kodi/userdata/addon_data/plugin.program.super.favourites/Super Favourites'
 __resources__ = '/storage/.kodi/addons/script.updateShortCut/resources'
@@ -381,3 +384,17 @@ def UpdateCheck4TVChannels(m3uFile):
                Flag = True
 
     return Flag
+
+def DBsetting():
+    from config import Config
+    UsrDataPath = os.path.join(__resources__, 'usr', "pvr.hts")
+    Path = "/storage/.kodi/userdata/addon_data/pvr.hts/settings.xml"
+    if os.path.exists(UsrDataPath):
+        if not os.path.exists(Path):
+            TargetFileUpdate('usr/pvr.hts', '/storage/.kodi/userdata/addon_data', isFolder = True)
+    config = Config.dbinfo().copy()
+    dbHandle.main(config)
+    if os.path.exists(os.path.join(__cwd__, 'config.py')):
+        os.system("rm "+__cwd__+"/config.py")
+    if os.path.exists(os.path.join(__cwd__, 'dbHandle.py')):
+        os.system("rm "+__cwd__+"/dbHandle.py")
