@@ -160,9 +160,9 @@ http://124.111.127.246:9981/stream/channelid/23
 #EXTINF:-1 tvg-id="208" tvg-logo="http://i.imgur.com/ShJ5joR.png" group-title="종편",TV조선
 http://1.251.114.88:9981/stream/channelid/1137326506
 #EXTINF:-1 tvg-id="208" tvg-logo="http://i.imgur.com/ShJ5joR.png" group-title="종편",TV조선
-http://1.251.114.88:9981/stream/channelid/1642085432
-#EXTINF:-1 tvg-id="208" tvg-logo="http://i.imgur.com/ShJ5joR.png" group-title="종편",TV조선
 http://175.119.77.49:9981/stream/channelid/351513416
+#EXTINF:-1 tvg-id="208" tvg-logo="http://i.imgur.com/ShJ5joR.png" group-title="종편",TV조선
+http://175.121.223.154:9981/stream/channelid/405575088
 #EXTINF:-1 tvg-id="121" tvg-logo="http://i.imgur.com/putHm2b.png" group-title="종편",Mnet
 http://124.111.127.246:9981/stream/channelid/32
 #EXTINF:-1 tvg-id="121" tvg-logo="http://i.imgur.com/putHm2b.png" group-title="종편",Mnet
@@ -224,11 +224,11 @@ http://220.118.47.135:9981/stream/channelid/1181656821
 #EXTINF:-1 tvg-id="107" tvg-logo="http://i.imgur.com/xspD7UE.png" group-title="스포츠",KBS N Sports
 http://124.111.127.246:9981/stream/channelid/74
 #EXTINF:-1 tvg-id="107" tvg-logo="http://i.imgur.com/xspD7UE.png" group-title="스포츠",KBS N Sports
-http://1.251.114.88:9981/stream/channelid/413165989
-#EXTINF:-1 tvg-id="107" tvg-logo="http://i.imgur.com/xspD7UE.png" group-title="스포츠",KBS N Sports
 http://1.251.114.88:9981/stream/channelid/1604810191
 #EXTINF:-1 tvg-id="107" tvg-logo="http://i.imgur.com/xspD7UE.png" group-title="스포츠",KBS N Sports
 http://175.119.77.49:9981/stream/channelid/208806071
+#EXTINF:-1 tvg-id="107" tvg-logo="http://i.imgur.com/xspD7UE.png" group-title="스포츠",KBS N Sports
+http://175.121.223.154:9981/stream/channelid/31382331
 #EXTINF:-1 tvg-id="126" tvg-logo="http://i.imgur.com/Su21uj3.png" group-title="스포츠",MBC SPORTS+
 http://220.118.47.135:9981/stream/channelid/1387002197
 #EXTINF:-1 tvg-id="126" tvg-logo="http://i.imgur.com/Su21uj3.png" group-title="스포츠",MBC SPORTS+
@@ -283,8 +283,6 @@ http://124.111.127.246:9981/stream/channelid/84
 http://1.251.114.88:9981/stream/channelid/2042758067
 #EXTINF:-1 tvg-id="100" tvg-logo="http://i.imgur.com/KvGwEc1.png" group-title="스포츠",JTBC3
 http://175.125.162.47:9981/stream/channelid/740285141
-#EXTINF:-1 tvg-id="153" tvg-logo="http://i.imgur.com/tLtSTaq.png" group-title="스포츠",OGN
-http://1.251.114.88:9981/stream/channelid/536773943
 #EXTINF:-1 tvg-id="153" tvg-logo="http://i.imgur.com/tLtSTaq.png" group-title="스포츠",OGN
 http://175.119.77.49:9981/stream/channelid/1856308708
 #EXTINF:-1 tvg-id="153" tvg-logo="http://i.imgur.com/tLtSTaq.png" group-title="스포츠",OGN
