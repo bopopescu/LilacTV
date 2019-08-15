@@ -397,8 +397,6 @@ http://39.120.6.252:9981/stream/channelid/2133706821
 http://39.120.6.252:9981/stream/channelid/846199895
 #EXTINF:-1,JTBC3
 http://39.120.6.252:9981/stream/channelid/1178441168
-#EXTINF:-1,SPOTV2
-http://39.120.6.252:9981/stream/channelid/1900609481
 #EXTINF:-1,SBS GOLF
 http://39.120.6.252:9981/stream/channelid/31771979
 #EXTINF:-1,SBS GOLF
@@ -433,5 +431,5 @@ http://39.120.6.252:9981/stream/channelid/2076477558
 http://39.120.6.252:9981/stream/channelid/667834501
 #EXTINF:-1,History
 http://39.120.6.252:9981/stream/channelid/1397766919
-#EXTINF:-1,올리브
-http://175.113.154.14:9981/stream/channelid/597225892?ticket=F915DC0DDD1EDEFE9C07F91B088EBCAB1F6A1BB7&profile=matroska
+#EXTINF:-1,MBC
+http://175.113.154.14:9981/stream/channelid/519287946?ticket=3E7F3D4F76F821D7D8E33A97A93C80A582205DA8&profile=matroska

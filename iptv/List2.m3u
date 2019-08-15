@@ -13,8 +13,6 @@ http://220.85.148.178:9981/stream/channelid/91
 http://220.85.148.178:9981/stream/channelid/99
 #EXTINF:-1,KBS2
 http://220.85.148.178:9981/stream/channelid/98
-#EXTINF:-1,KBS N Sports
-http://220.85.148.178:9981/stream/channelid/5
 #EXTINF:-1,KBS DRAMA
 http://220.85.148.178:9981/stream/channelid/29
 #EXTINF:-1,MBC
@@ -25,8 +23,6 @@ http://220.85.148.178:9981/stream/channelid/55
 http://220.85.148.178:9981/stream/channelid/52
 #EXTINF:-1,MBC Every1
 http://220.85.148.178:9981/stream/channelid/41
-#EXTINF:-1,MBN
-http://220.85.148.178:9981/stream/channelid/77
 #EXTINF:-1,Mnet
 http://220.85.148.178:9981/stream/channelid/37
 #EXTINF:-1,mplex
@@ -109,6 +105,8 @@ http://61.84.33.152:9981/stream/channelid/742193385
 http://61.84.33.152:9981/stream/channelid/111122264
 #EXTINF:-1,JEI 재능TV
 http://61.84.33.152:9981/stream/channelid/1774483861
+#EXTINF:-1,JTBC
+http://116.40.8.83:9981/stream/channelid/479102165
 #EXTINF:-1,KBS1
 http://116.40.8.83:9981/stream/channelid/768123082
 #EXTINF:-1,KBS2
