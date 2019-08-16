@@ -34,11 +34,11 @@ http://61.84.33.152:9981/stream/channelid/876634605
 #EXTINF:-1 tvg-id="111" tvg-logo="http://i.imgur.com/XgibZbD.png" group-title="공중파",KBS2
 http://61.84.33.152:9981/stream/channelid/1221546873
 #EXTINF:-1 tvg-id="111" tvg-logo="http://i.imgur.com/XgibZbD.png" group-title="공중파",KBS2
-http://116.40.8.83:9981/stream/channelid/630887506
-#EXTINF:-1 tvg-id="111" tvg-logo="http://i.imgur.com/XgibZbD.png" group-title="공중파",KBS2
 http://14.5.82.44:9981/stream/channelid/793700511
 #EXTINF:-1 tvg-id="111" tvg-logo="http://i.imgur.com/XgibZbD.png" group-title="공중파",KBS2
 http://211.204.15.24:9981/stream/channelid/1000447289
+#EXTINF:-1 tvg-id="111" tvg-logo="http://i.imgur.com/XgibZbD.png" group-title="공중파",KBS2
+http://219.250.105.94:9981/stream/channelid/2730145?ticket=BEDAA252385FD8A7AC2359789889BAECC1A2BBC0&profile=pass
 #EXTINF:-1 tvg-id="103" tvg-logo="http://i.imgur.com/CrLMIEQ.png" group-title="공중파",KBS DRAMA
 http://211.204.15.24:9981/stream/channelid/1533674152
 #EXTINF:-1 tvg-id="103" tvg-logo="http://i.imgur.com/CrLMIEQ.png" group-title="공중파",KBS DRAMA
@@ -120,6 +120,8 @@ http://220.85.148.178:9981/stream/channelid/76
 #EXTINF:-1 tvg-id="281" tvg-logo="http://i.imgur.com/xti35f5.png" group-title="종편",채널A
 http://61.84.33.152:9981/stream/channelid/516014999
 #EXTINF:-1 tvg-id="281" tvg-logo="http://i.imgur.com/xti35f5.png" group-title="종편",채널A
+http://116.40.8.83:9981/stream/channelid/196969362
+#EXTINF:-1 tvg-id="281" tvg-logo="http://i.imgur.com/xti35f5.png" group-title="종편",채널A
 http://14.5.82.44:9981/stream/channelid/261911061
 #EXTINF:-1 tvg-id="281" tvg-logo="http://i.imgur.com/xti35f5.png" group-title="종편",채널A
 http://219.250.105.94:9981/stream/channelid/379879927?ticket=B20BF090F19233E067E9C0BDC0453C7BD89FD14C&profile=pass
@@ -168,11 +170,13 @@ http://116.40.8.83:9981/stream/channelid/2133556657
 #EXTINF:-1 tvg-id="167" tvg-logo="http://i.imgur.com/HdS0GNV.png" group-title="스포츠",SBS GOLF
 http://14.5.82.44:9981/stream/channelid/1237997637
 #EXTINF:-1 tvg-id="167" tvg-logo="http://i.imgur.com/HdS0GNV.png" group-title="스포츠",SBS GOLF
-http://1.245.102.167:9981/stream/channelid/447834862
-#EXTINF:-1 tvg-id="167" tvg-logo="http://i.imgur.com/HdS0GNV.png" group-title="스포츠",SBS GOLF
 http://211.204.15.24:9981/stream/channelid/1218335876
 #EXTINF:-1 tvg-id="167" tvg-logo="http://i.imgur.com/HdS0GNV.png" group-title="스포츠",SBS GOLF
 http://211.204.15.24:9981/stream/channelid/30285970
+#EXTINF:-1 tvg-id="167" tvg-logo="http://i.imgur.com/HdS0GNV.png" group-title="스포츠",SBS GOLF
+http://219.250.105.94:9981/stream/channelid/2021760777?ticket=3F82E081095457FCDB9E22B4C202F0D29BBF6338&profile=pass
+#EXTINF:-1 tvg-id="169" tvg-logo="http://i.imgur.com/j1vHAu6.png" group-title="스포츠",SBS Sports
+http://116.40.8.83:9981/stream/channelid/20864224
 #EXTINF:-1 tvg-id="169" tvg-logo="http://i.imgur.com/j1vHAu6.png" group-title="스포츠",SBS Sports
 http://14.5.82.44:9981/stream/channelid/608815830
 #EXTINF:-1 tvg-id="169" tvg-logo="http://i.imgur.com/j1vHAu6.png" group-title="스포츠",SBS Sports
@@ -286,11 +290,11 @@ http://116.40.8.83:9981/stream/channelid/706150689
 #EXTINF:-1 tvg-id="78" tvg-logo="http://i.imgur.com/eI9wGgS.png" group-title="아웃도어",FTV
 http://14.5.82.44:9981/stream/channelid/1467248656
 #EXTINF:-1 tvg-id="78" tvg-logo="http://i.imgur.com/eI9wGgS.png" group-title="아웃도어",FTV
+http://1.245.102.167:9981/stream/channelid/1690807446
+#EXTINF:-1 tvg-id="78" tvg-logo="http://i.imgur.com/eI9wGgS.png" group-title="아웃도어",FTV
 http://211.204.15.24:9981/stream/channelid/506255461
 #EXTINF:-1 tvg-id="78" tvg-logo="http://i.imgur.com/eI9wGgS.png" group-title="아웃도어",FTV
 http://219.250.105.94:9981/stream/channelid/1874277436?ticket=834E958E2384D0292EA2281FAAC83215E02E22BE&profile=pass
-#EXTINF:-1 tvg-id="78" tvg-logo="http://i.imgur.com/eI9wGgS.png" group-title="아웃도어",FTV
-http://219.250.105.94:9981/stream/channelid/463714403?ticket=55B9E7CF54F1D977EDA5152A96B6F291AF64FA1E&profile=pass
 #EXTINF:-1 tvg-id="245" tvg-logo="http://i.imgur.com/jbRu8T2.png" group-title="아웃도어",바둑TV
 http://211.204.15.24:9981/stream/channelid/990433157
 #EXTINF:-1 tvg-id="245" tvg-logo="http://i.imgur.com/jbRu8T2.png" group-title="아웃도어",바둑TV
