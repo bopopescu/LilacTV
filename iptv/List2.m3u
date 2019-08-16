@@ -51,34 +51,40 @@ http://116.40.8.83:9981/stream/channelid/479102165
 http://116.40.8.83:9981/stream/channelid/768123082
 #EXTINF:-1,KBS2
 http://116.40.8.83:9981/stream/channelid/630887506
-#EXTINF:-1,EBS
-http://116.40.8.83:9981/stream/channelid/653988547
 #EXTINF:-1,EBS2
 http://116.40.8.83:9981/stream/channelid/1337614225
 #EXTINF:-1,FTV
 http://116.40.8.83:9981/stream/channelid/706150689
 #EXTINF:-1,JTBC
 http://116.40.8.83:9981/stream/channelid/1336670198
+#EXTINF:-1,JTBC Golf
+http://116.40.8.83:9981/stream/channelid/203803303
+#EXTINF:-1,JTBC2
+http://116.40.8.83:9981/stream/channelid/440146051
 #EXTINF:-1,JTBC3
 http://116.40.8.83:9981/stream/channelid/1019757420
 #EXTINF:-1,MBC
 http://116.40.8.83:9981/stream/channelid/1010634634
 #EXTINF:-1,MBC Every1
 http://116.40.8.83:9981/stream/channelid/894414266
-#EXTINF:-1,MBN
-http://116.40.8.83:9981/stream/channelid/1361301865
 #EXTINF:-1,SBS funE
 http://116.40.8.83:9981/stream/channelid/796171670
 #EXTINF:-1,SBS GOLF
 http://116.40.8.83:9981/stream/channelid/2133556657
 #EXTINF:-1,TV조선
 http://116.40.8.83:9981/stream/channelid/1338443711
+#EXTINF:-1,YTN
+http://116.40.8.83:9981/stream/channelid/353002792
 #EXTINF:-1,디즈니주니어
 http://116.40.8.83:9981/stream/channelid/1014215879
 #EXTINF:-1,Disney Channel
 http://116.40.8.83:9981/stream/channelid/496456047
+#EXTINF:-1,연합뉴스TV
+http://116.40.8.83:9981/stream/channelid/1310108613
 #EXTINF:-1,채널A
 http://116.40.8.83:9981/stream/channelid/196969362
+#EXTINF:-1,디스커버리채널
+http://116.40.8.83:9981/stream/channelid/1460606682
 #EXTINF:-1,MBN
 http://14.5.82.44:9981/stream/channelid/1920937963
 #EXTINF:-1,온스타일
@@ -139,15 +145,9 @@ http://14.5.82.44:9981/stream/channelid/1661876737
 http://14.5.82.44:9981/stream/channelid/1859423595
 #EXTINF:-1,SBS GOLF
 http://1.245.102.167:9981/stream/channelid/447834862
-#EXTINF:-1,연합뉴스TV
-http://211.204.15.24:9981/stream/channelid/1482549480
-#EXTINF:-1,YTN
-http://211.204.15.24:9981/stream/channelid/1441751218
-#EXTINF:-1,Mnet
-http://211.204.15.24:9981/stream/channelid/980684761
-#EXTINF:-1,MBC Every1
-http://211.204.15.24:9981/stream/channelid/1370170376
-#EXTINF:-1,KBS DRAMA
-http://211.204.15.24:9981/stream/channelid/1533674152
-#EXTINF:-1,KBS DRAMA
-http://211.204.15.24:9981/stream/channelid/15021754
+#EXTINF:-1,SPOTV
+http://211.204.15.24:9981/stream/channelid/1453527454
+#EXTINF:-1,SPOTV
+http://211.204.15.24:9981/stream/channelid/38928538
+#EXTINF:-1,OCN
+http://219.250.105.94:9981/stream/channelid/75366710?ticket=0016941F25DAFE303EFFAD6DA07BCB80AAB1F4C6&profile=pass
