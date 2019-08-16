@@ -65,8 +65,6 @@ http://116.40.8.83:9981/stream/channelid/203803303
 http://116.40.8.83:9981/stream/channelid/440146051
 #EXTINF:-1,JTBC3
 http://116.40.8.83:9981/stream/channelid/1019757420
-#EXTINF:-1,MBC
-http://116.40.8.83:9981/stream/channelid/1010634634
 #EXTINF:-1,MBC Every1
 http://116.40.8.83:9981/stream/channelid/894414266
 #EXTINF:-1,MBN
@@ -151,55 +149,9 @@ http://14.5.82.44:9981/stream/channelid/1661876737
 http://14.5.82.44:9981/stream/channelid/1859423595
 #EXTINF:-1,SBS Sports
 http://1.245.102.167:9981/stream/channelid/1297841658
-#EXTINF:-1,SBS funE
-http://211.204.15.24:9981/stream/channelid/1945181727
-#EXTINF:-1,JTBC2
-http://211.204.15.24:9981/stream/channelid/1644485691
-#EXTINF:-1,XtvN
-http://211.204.15.24:9981/stream/channelid/2144644084
-#EXTINF:-1,FOX
-http://211.204.15.24:9981/stream/channelid/1930524825
-#EXTINF:-1,FOX
-http://211.204.15.24:9981/stream/channelid/1649860593
 #EXTINF:-1,SPOTV
 http://211.204.15.24:9981/stream/channelid/1453527454
 #EXTINF:-1,SPOTV
 http://211.204.15.24:9981/stream/channelid/38928538
-#EXTINF:-1,KBS N Sports
-http://211.204.15.24:9981/stream/channelid/1346520761
-#EXTINF:-1,SBS Sports
-http://211.204.15.24:9981/stream/channelid/580186206
-#EXTINF:-1,SBS Sports
-http://211.204.15.24:9981/stream/channelid/31733561
-#EXTINF:-1,MBC SPORTS+
-http://211.204.15.24:9981/stream/channelid/1284391878
-#EXTINF:-1,MBC SPORTS+
-http://211.204.15.24:9981/stream/channelid/64483805
-#EXTINF:-1,SkySports
-http://211.204.15.24:9981/stream/channelid/979345529
-#EXTINF:-1,JTBC3
-http://211.204.15.24:9981/stream/channelid/905590880
-#EXTINF:-1,SBS GOLF
-http://211.204.15.24:9981/stream/channelid/1218335876
-#EXTINF:-1,SBS GOLF
-http://211.204.15.24:9981/stream/channelid/30285970
-#EXTINF:-1,JTBC Golf
-http://211.204.15.24:9981/stream/channelid/1865298993
-#EXTINF:-1,OGN
-http://211.204.15.24:9981/stream/channelid/620584224
-#EXTINF:-1,Tooniverse
-http://211.204.15.24:9981/stream/channelid/1307842256
-#EXTINF:-1,디즈니주니어
-http://211.204.15.24:9981/stream/channelid/1780121902
-#EXTINF:-1,온스타일
-http://211.204.15.24:9981/stream/channelid/205090454
-#EXTINF:-1,바둑TV
-http://211.204.15.24:9981/stream/channelid/990433157
-#EXTINF:-1,바둑TV
-http://211.204.15.24:9981/stream/channelid/247175781
-#EXTINF:-1,FTV
-http://211.204.15.24:9981/stream/channelid/506255461
-#EXTINF:-1,FISHING TV
-http://211.204.15.24:9981/stream/channelid/834591917
-#EXTINF:-1,스크린
-http://219.250.105.94:9981/stream/channelid/865179397?ticket=B22CEF06EF6235E5B041748D1EF97F778A006058&profile=pass
+#EXTINF:-1,MBN
+http://219.250.105.94:9981/stream/channelid/1175927034?ticket=F7EAA20C5CBCD0FEA0ED12B58CA7C52D41E4CA2D&profile=pass
