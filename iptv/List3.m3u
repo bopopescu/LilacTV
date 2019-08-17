@@ -245,51 +245,7 @@ http://39.117.250.106:9981/stream/channelid/1672304788
 http://39.117.250.106:9981/stream/channelid/1172758446
 #EXTINF:-1,tvN
 http://39.117.250.106:9981/stream/channelid/1672170329
-#EXTINF:-1,채널A
-http://39.117.250.106:9981/stream/channelid/1746448031
-#EXTINF:-1,TV조선
-http://39.117.250.106:9981/stream/channelid/1539284014
-#EXTINF:-1,연합뉴스TV
-http://39.117.250.106:9981/stream/channelid/1829410372
-#EXTINF:-1,YTN
-http://39.117.250.106:9981/stream/channelid/701919495
-#EXTINF:-1,Mnet
-http://39.117.250.106:9981/stream/channelid/721051533
-#EXTINF:-1,MBC Every1
-http://39.117.250.106:9981/stream/channelid/1601243142
-#EXTINF:-1,KBS DRAMA
-http://39.117.250.106:9981/stream/channelid/1683857055
-#EXTINF:-1,MBC Dramanet
-http://39.117.250.106:9981/stream/channelid/2057282576
-#EXTINF:-1,O tvN
-http://39.117.250.106:9981/stream/channelid/1980019702
-#EXTINF:-1,채널CGV
-http://39.117.250.106:9981/stream/channelid/1916200231
-#EXTINF:-1,OCN
-http://39.117.250.106:9981/stream/channelid/1300838411
-#EXTINF:-1,슈퍼액션
-http://39.117.250.106:9981/stream/channelid/173362945
-#EXTINF:-1,mplex
-http://39.117.250.106:9981/stream/channelid/1927183532
-#EXTINF:-1,KBS JOY
-http://39.117.250.106:9981/stream/channelid/1557937156
-#EXTINF:-1,SBS funE
-http://39.117.250.106:9981/stream/channelid/1616207824
-#EXTINF:-1,JTBC2
-http://39.117.250.106:9981/stream/channelid/1663215977
-#EXTINF:-1,올리브
-http://39.117.250.106:9981/stream/channelid/1109188013
-#EXTINF:-1,XtvN
-http://39.117.250.106:9981/stream/channelid/1323847238
-#EXTINF:-1,EBS2
-http://39.117.250.106:9981/stream/channelid/440538211
-#EXTINF:-1,FOX
-http://39.117.250.106:9981/stream/channelid/102092439
-#EXTINF:-1,SPOTV
-http://39.117.250.106:9981/stream/channelid/1778366585
-#EXTINF:-1,KBS N Sports
-http://39.117.250.106:9981/stream/channelid/273720841
-#EXTINF:-1,SBS Sports
-http://39.117.250.106:9981/stream/channelid/760481066
-#EXTINF:-1,JTBC2
-http://175.113.154.14:9981/stream/channelid/1803181668?ticket=307347E60BE36BB76806E5A1738C8BA270F2D2B8&profile=matroska
+#EXTINF:-1 KBS DRAMA
+http://175.113.154.14:9981/stream/channelid/1780025022?ticket=C27C858BA04FA381D2FCC3570ED646795F8C23C6&profile=matroska
+#EXTINF:-1 KBS DRAMA
+http://175.113.154.14:9981/stream/channelid/1780025022?ticket=762EA855410D45F4CEEF89762C97969B6A7CD219&profile=matroska
