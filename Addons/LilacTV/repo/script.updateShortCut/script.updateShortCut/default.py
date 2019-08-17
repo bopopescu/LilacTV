@@ -239,5 +239,8 @@ if __name__=='__main__':
         AddNewAddon('repository.lilac', 'plugin.video.kayo.sports')
         AddNewAddon('repository.matthuisman', 'plugin.video.au.freeview')
         AddNewRepo('repository.EzzerMacsWizard')
+        #api update to devs one as 5
+        AddNewAddon('repository.lilac', 'plugin.video.youtube')
+
 
         dis_or_enable_addon("pvr.vdr.vnsi", "false")
