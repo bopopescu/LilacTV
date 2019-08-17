@@ -2,7 +2,6 @@
 
 import re,urllib,urlparse
 
-from resources.lib.modules import cleantitle
 from resources.lib.modules import client
 from resources.lib.modules import debrid
 from resources.lib.modules import source_utils
@@ -13,8 +12,8 @@ class source:
         self.priority = 1
         self.language = ['en']
         self.domains = ['300mbfilms.co']
-        self.base_link = 'https://www.300mbfilms.co'
-        self.search_link = '/search/%s/feed/rss2/'
+        self.base_link = 'https://www.300mbfilms.io'
+        self.search_link = '/?s=%s'
 
     def movie(self, imdb, title, localtitle, aliases, year):
         try:
@@ -34,7 +33,8 @@ class source:
 
     def episode(self, url, imdb, tvdb, title, premiered, season, episode):
         try:
-            if url is None: return
+            if url is None:
+                return
 
             url = urlparse.parse_qs(url)
             url = dict([(i, url[i][0]) if url[i] else (i, '') for i in url])
@@ -61,7 +61,7 @@ class source:
 
             hdlr = 'S%02dE%02d' % (int(data['season']), int(data['episode'])) if 'tvshowtitle' in data else data['year']
 
-            query = '%s S%02dE%02d' % (data['tvshowtitle'], int(data['season']), int(data['episode'])) if 'tvshowtitle' in data else '%s %s' % (data['title'], data['year'])
+            query = '%s s%02de%02d' % (data['tvshowtitle'], int(data['season']), int(data['episode'])) if 'tvshowtitle' in data else '%s %s' % (data['title'], data['year'])
             query = re.sub('(\\\|/| -|:|;|\*|\?|"|\'|<|>|\|)', ' ', query)
 
             url = self.search_link % urllib.quote_plus(query)
@@ -69,56 +69,26 @@ class source:
 
             r = client.request(url)
 
-            posts = client.parseDOM(r, 'item')
+            posts = client.parseDOM(r, 'h2')
 
             hostDict = hostprDict + hostDict
 
-            items = []
-
-            for post in posts:
-                try:
-                    t = client.parseDOM(post, 'title')[0]
-                    u = client.parseDOM(post, 'link')[0]
-                    s = re.findall('((?:\d+\.\d+|\d+\,\d+|\d+)\s*(?:GiB|MiB|GB|MB))', t)
-                    s = s[0] if s else '0'
-
-                    items += [(t, u, s)]
-
-                except:
-                    pass
-
             urls = []
-            for item in items:
+            for item in posts:
 
                 try:
+                    item = re.compile('a href="(.+?)"').findall(item)
                     name = item[0]
+                    query = query.replace(" ", "-").lower()
+                    if query not in name:
+                        continue
                     name = client.replaceHTMLCodes(name)
 
-                    t = re.sub('(\.|\(|\[|\s)(\d{4}|S\d*E\d*|S\d*|3D)(\.|\)|\]|\s|)(.+|)', '', name)
-
-                    if not cleantitle.get(t) == cleantitle.get(title): raise Exception()
-
-                    y = re.findall('[\.|\(|\[|\s](\d{4}|S\d*E\d*|S\d*)[\.|\)|\]|\s]', name)[-1].upper()
-
-                    if not y == hdlr:
-                        raise Exception()
-
-                    quality, info = source_utils.get_release_quality(name, item[1])
+                    quality, info = source_utils.get_release_quality(name, item[0])
                     if any(x in quality for x in ['CAM', 'SD']):
                         continue
 
-                    try:
-                        size = re.sub('i', '', item[2])
-                        div = 1 if size.endswith('GB') else 1024
-                        size = float(re.sub('[^0-9|/.|/,]', '', size))/div
-                        size = '%.2f GB' % size
-                        info.append(size)
-                    except:
-                        pass
-
-                    info = ' | '.join(info)
-
-                    url = item[1]
+                    url = item
                     links = self.links(url)
                     urls += [(i, quality, info) for i in links]
 
@@ -126,7 +96,6 @@ class source:
                     pass
 
             for item in urls:
-
                 if 'earn-money' in item[0]:
                     continue
                 if any(x in item[0] for x in ['.rar', '.zip', '.iso']):
@@ -140,7 +109,7 @@ class source:
                 host = client.replaceHTMLCodes(host)
                 host = host.encode('utf-8')
 
-                sources.append({'source': host, 'quality': item[1], 'language': 'en', 'url': url, 'info': item[2], 'direct': False, 'debridonly': True})
+                sources.append({'source': host, 'quality': item[1], 'language': 'en', 'url': url, 'direct': False, 'debridonly': True})
 
             return sources
         except:
@@ -151,29 +120,30 @@ class source:
         try:
             if url is None:
                 return
-            r = client.request(url)
-            r = client.parseDOM(r, 'div', attrs={'class': 'entry'})
-            r = client.parseDOM(r, 'a', ret='href')
-            r1 = [i for i in r if 'money' in i][0]
-            r = client.request(r1)
-            r = client.parseDOM(r, 'div', attrs={'id': 'post-\d+'})[0]
+            for url in url:
+                r = client.request(url)
+                r = client.parseDOM(r, 'div', attrs={'class': 'entry'})
+                r = client.parseDOM(r, 'a', ret='href')
+                r1 = [i for i in r if 'money' in i][0]
+                r = client.request(r1)
+                r = client.parseDOM(r, 'div', attrs={'id': 'post-\d+'})[0]
 
-            if 'enter the password' in r:
-                plink= client.parseDOM(r, 'form', ret='action')[0]
+                if 'enter the password' in r:
+                    plink= client.parseDOM(r, 'form', ret='action')[0]
 
-                post = {'post_password': '300mbfilms', 'Submit': 'Submit'}
-                send_post = client.request(plink, post=post, output='cookie')
-                link = client.request(r1, cookie=send_post)
-            else:
-                link = client.request(r1)
+                    post = {'post_password': '300mbfilms', 'Submit': 'Submit'}
+                    send_post = client.request(plink, post=post, output='cookie')
+                    link = client.request(r1, cookie=send_post)
+                else:
+                    link = client.request(r1)
 
-            link = re.findall('<strong>Single(.+?)</tr', link, re.DOTALL)[0]
-            link = client.parseDOM(link, 'a', ret='href')
-            link = [(i.split('=')[-1]) for i in link]
-            for i in link:
-                urls.append(i)
+                link = re.findall('<strong>Single(.+?)</tr', link, re.DOTALL)[0]
+                link = client.parseDOM(link, 'a', ret='href')
+                link = [(i.split('=')[-1]) for i in link]
+                for i in link:
+                    urls.append(i)
 
-            return urls
+                return urls
         except:
             pass
 

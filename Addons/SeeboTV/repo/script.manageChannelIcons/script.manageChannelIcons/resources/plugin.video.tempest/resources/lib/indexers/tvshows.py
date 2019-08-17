@@ -339,7 +339,8 @@ class tvshows:
         else:
             self.list = cache.get(self.imdb_person_list, 1, url)
 
-        for i in range(0, len(self.list)): self.list[i].update({'action': 'tvshows'})
+        for i in range(0, len(self.list)):
+            self.list[i].update({'action': 'tvshows'})
         self.addDirectory(self.list)
         return self.list
 
@@ -1350,6 +1351,7 @@ class tvshows:
 
         control.content(syshandle, 'tvshows')
         control.directory(syshandle, cacheToDisc=True)
+        control.sleep(1000)
         views.setView('tvshows', {'skin.estuary': 55, 'skin.confluence': 500})
 
     def addDirectory(self, items, queue=False):

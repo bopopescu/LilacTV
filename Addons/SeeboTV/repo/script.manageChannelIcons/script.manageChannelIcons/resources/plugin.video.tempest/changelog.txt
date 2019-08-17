@@ -1,4 +1,86 @@
 Report any issues at https://github.com/Tempest0580/tempest/issues
+New Repo https://tempest0580.github.io/
+
+[B][COLOR gold] 4.0.88 [/COLOR][/B]
+- Small Updates
+
+[B][COLOR gold] 4.0.87 [/COLOR][/B]
+- Updated a few Scrapers
+- Added a few Torrent Scrapers
+
+[B][COLOR gold] 4.0.86 [/COLOR][/B]
+- Added a few Scrapers
+- Updated a few Scrapers
+- Removed a few Dead Scrapers
+
+[B][COLOR gold] 4.0.85 [/COLOR][/B]
+- Issue with Scraper Removed Temp
+
+[B][COLOR gold] 4.0.84 [/COLOR][/B]
+- Fixed and added back a couple old Scrapers
+
+[B][COLOR gold] 4.0.83 [/COLOR][/B]
+- Added Duplicate Sources Checker, Disabled by default (Thanks to doko-desuka)
+- Fixed a few Scrapers
+- Added a few scrapers (Some Thanks to Jewbmk)
+- Removed few dead scrapers
+
+[B][COLOR gold] 4.0.82 [/COLOR][/B]
+- Removed a few Dead Scrapers
+- Fexed a few Scrapers
+- Added a few Scrapers (Thanks to Jewbmx)
+
+[B][COLOR gold] 4.0.81 [/COLOR][/B]
+- Cfscrape update
+- Removed a few Dead Scrapers
+- Fixed a few Scrapers
+- Added a few Scrapers
+
+[B][COLOR gold] 4.0.80 [/COLOR][/B]
+- Cfscrape update
+- Tweeked a few scrapers
+
+[B][COLOR gold] 4.0.79 [/COLOR][/B]
+- Few Updates
+- Added Pre-Emptive Termination (Testing)
+
+[B][COLOR gold] 4.0.78 [/COLOR][/B]
+- Fixed Allucxyz
+- Added Timewatch (Thanks to Jewbmx)
+- Added Fmoviesio (Thanks to Jewbmx)
+- Removed Dead Scrapers
+
+[B][COLOR gold] 4.0.77 [/COLOR][/B]
+- Removed Dead Scrapers
+- Minor Code Cleanup
+
+[B][COLOR gold] 4.0.76 [/COLOR][/B]
+- Few Updates, Few scrapers added
+- Added Wsunblock scraper (Thanks to Jewbmx)
+- Added Yesmoviesgg scraper (Thanks to Jewbmx)
+- Fixed Ddlvalley scraper
+- Fixed Mkvcage scraper
+
+[B][COLOR gold] 4.0.75 [/COLOR][/B]
+- Removed Dead Scrapers
+- Fixed Gomoviesink scraper
+- Fixed Moviescouch scraper
+- Fixed 300mbfilms scraper
+- Fixed Watchseries scraper (Bug in old code, Ill fix it later)
+
+[B][COLOR gold] 4.0.74 [/COLOR][/B]
+- Removed Dead or broken scrapers
+
+[B][COLOR gold] 4.0.73 [/COLOR][/B]
+- Seems The issue is still in my code, Reverting back to 4.0.70 code until i can figure out the issue
+
+[B][COLOR gold] 4.0.72 [/COLOR][/B]
+- Fixed Scraper Filtering issue
+
+[B][COLOR gold] 4.0.71 [/COLOR][/B]
+- Removed Duplicate Sources, Disabled by default (Thanks to doko-desuka)
+- Removed Dead Scrapers
+- More To Come
 
 [B][COLOR gold] 4.0.70 [/COLOR][/B]
 - Added New In Theater (Thanks to Jewbmx - Better than the old one, Renamed old way to Theater old)

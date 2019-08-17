@@ -15,7 +15,7 @@ class source:
         self.priority = 1
         self.language = ['en']
         self.domains = ['www.mkvcage.cc']
-        self.base_link = 'https://www.mkvcage.cc/'
+        self.base_link = 'https://www.mkvcage.fun/'
         self.search_link = '?s=%s'
 
     def movie(self, imdb, title, localtitle, aliases, year):

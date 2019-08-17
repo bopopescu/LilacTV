@@ -13,7 +13,7 @@ class source:
         self.priority = 1
         self.language = ['en']
         self.domains = ['watchepisodes4.com']
-        self.base_link = 'http://www.watchepisodes4.com/'
+        self.base_link = 'https://www.watchepisodes4.com/'
 
     def tvshow(self, imdb, tvdb, tvshowtitle, localtvshowtitle, aliases, year):
         try:
@@ -25,7 +25,8 @@ class source:
 
     def episode(self, url, imdb, tvdb, title, premiered, season, episode):
         try:
-            if not url: return
+            if not url:
+                return
             r = client.request(url)
 
             r = re.compile('<a title=".+? Season ' + season + ' Episode ' + episode + ' .+?" href="(.+?)">').findall(r)

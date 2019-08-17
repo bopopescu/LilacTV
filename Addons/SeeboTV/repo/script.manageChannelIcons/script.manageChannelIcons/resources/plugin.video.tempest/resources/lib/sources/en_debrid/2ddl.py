@@ -14,7 +14,7 @@ class source:
     def __init__(self):
         self.priority = 1
         self.language = ['en']
-        self.domains = ['twoddl.net', 'invictus.ws']
+        self.domains = ['2ddl.vg', 'twoddl.net', 'invictus.ws']
         self.base_link = 'https://2ddl.vg'
         self.search_link = '/?s=%s'
 

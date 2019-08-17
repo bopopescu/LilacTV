@@ -14,7 +14,7 @@ class source:
         self.priority = 1
         self.language = ['en']
         self.domains = ['ganool.ws', 'ganol.si', 'ganool123.com']
-        self.base_link = 'https://ganool.ws'
+        self.base_link = 'https://www1.ganool.ws'
         self.search_link = '/search/?q=%s'
         self.scraper = cfscrape.create_scraper()
 
@@ -38,7 +38,7 @@ class source:
             q = '%s' % cleantitle.get_gan_url(data['title'])
             url = self.base_link + self.search_link % q
             r = self.scraper.get(url).content
-            v = re.compile('<a href="(.+?)" class="ml-mask jt" title="(.+?)">\n<span class=".+?">(.+?)</span>').findall(r)
+            v = re.compile('<a href="(.+?)" class="ml-mask jt" title="(.+?)">\r\n\t\t\t\t\t\t\t\t\t\t\t\t<span class=".+?">(.+?)</span>').findall(r)
             for url, check, quality in v:
                 t = '%s (%s)' % (data['title'], data['year'])
                 if t not in check:

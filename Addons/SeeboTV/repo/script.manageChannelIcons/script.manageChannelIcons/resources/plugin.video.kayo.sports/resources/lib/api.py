@@ -1,6 +1,10 @@
-from time import time
+import json
 
-from matthuisman import userdata, settings
+from time import time
+from base64 import b64decode
+
+from matthuisman import userdata
+from matthuisman.log import log
 from matthuisman.session import Session
 from matthuisman.exceptions import Error
 
@@ -17,8 +21,6 @@ class API(object):
         self._session = Session(HEADERS)
         self._set_authentication()
         
-        settings.setBool('_logged_in', self.logged_in)
-
     def _set_authentication(self):
         access_token = userdata.get('access_token')
         if not access_token:
@@ -31,6 +33,19 @@ class API(object):
         token_data = self._session.post('https://auth.kayosports.com.au/oauth/token', json=data).json()
         if 'error' in token_data:
             raise APIError(_(_.LOGIN_ERROR, msg=token_data.get('error_description')))
+
+        #account_status = None
+        #try:
+        #    b64_string = token_data['access_token'].split('.')[1]
+        #    b64_string += "=" * ((4 - len(b64_string) % 4) % 4) #fix padding
+
+        #    data = json.loads(b64decode(b64_string))
+        #    account_status = data['https://kayosports.com.au/status']['account_status']
+        #except:
+        #    log.debug('Failed to get account status')
+
+        #if account_status and account_status != 'ACTIVE_SUBSCRIPTION':
+        #    raise APIError(_.INVALID_SUBSCRIPTION)
 
         userdata.set('access_token', token_data['access_token'])
         userdata.set('expires', int(time() + token_data['expires_in'] - 15))
@@ -78,10 +93,7 @@ class API(object):
     #landing has heros and panels
     def landing(self, name, **kwargs):
         params = {
-            'evaluate': 99, 
-            'resourcesEnv': 'production',
-            'chromecastEnv': 'production',
-            'statsEnv': 'production',
+            'evaluate': 3, 
         }
 
         params.update(**kwargs)

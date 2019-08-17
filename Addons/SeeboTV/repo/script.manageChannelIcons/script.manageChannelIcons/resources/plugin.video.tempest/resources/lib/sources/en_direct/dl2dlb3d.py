@@ -3,8 +3,8 @@
 **Created by Tempest**
 """
 
-import re,requests
-
+import re
+import requests
 from resources.lib.modules import cleantitle
 from resources.lib.modules import source_utils
 
@@ -58,8 +58,10 @@ class source:
                     r = requests.get(result, timeout=10).content
                     r = re.compile('a href=".+?" title="(.+?)"').findall(r)
                     for url in r:
-                        if not self.title in url: continue
-                        if any(x in url for x in ['Trailer', 'Dubbed', 'rar']): raise Exception()
+                        if not self.title in url:
+                            continue
+                        if any(x in url for x in ['Trailer', 'Dubbed', 'rar']):
+                            raise Exception()
                         url = result + url
                         quality = source_utils.check_url(url)
                         sources.append({'source': 'DL', 'quality': quality, 'language': 'en', 'url': url, 'direct': True, 'debridonly': False})
@@ -70,7 +72,8 @@ class source:
                     r = requests.get(result, timeout=10).content
                     r = re.findall('a href=".+?" title="(.+?)"', r)
                     for url in r:
-                        if self.se not in url: continue
+                        if self.se not in url:
+                            continue
                         url = result + url
                         quality = source_utils.check_url(url)
                         sources.append({'source': 'DL', 'quality': quality, 'language': 'en', 'url': url, 'direct': True, 'debridonly': False})
@@ -79,7 +82,8 @@ class source:
                     r = requests.get(result2, timeout=5).content
                     r = re.findall('a href=".+?" title="(.+?)"', r)
                     for url in r:
-                        if not self.se in url: continue
+                        if self.se not in url:
+                            continue
                         url = result2 + url
                         sources.append({'source': 'DL', 'quality': '4K', 'language': 'en', 'url': url, 'direct': True, 'debridonly': False})
 
@@ -87,7 +91,8 @@ class source:
                     r = requests.get(result2, timeout=5).content
                     r = re.findall('a href=".+?" title="(.+?)"', r)
                     for url in r:
-                        if not self.se in url: continue
+                        if self.se not in url:
+                            continue
                         url = result2 + url
                         sources.append({'source': 'DL', 'quality': '1080p', 'language': 'en', 'url': url, 'direct': True, 'debridonly': False})
 
@@ -167,7 +172,8 @@ class source:
                     r = requests.get(result2, timeout=5).content
                     r = re.findall('a href=".+?" title="(.+?)"', r)
                     for url in r:
-                        if not self.se in url: continue
+                        if self.se not in url:
+                            continue
                         url = result2 + url
                         sources.append({'source': 'DL', 'quality': 'SD', 'language': 'en', 'url': url, 'direct': False, 'debridonly': False})
                 except:

@@ -85,14 +85,15 @@ class source:
         try:
             sources = []
 
-            if url is None: return sources
+            if url is None:
+                return sources
 
             url = urlparse.urljoin(self.base_link, url)
 
             r = proxy.request(url, 'tv shows')
 
             links = client.parseDOM(r, 'a', ret='href', attrs={'target': '.+?'})
-            links = [x for y,x in enumerate(links) if x not in links[:y]]
+            links = [x for y, x in enumerate(links) if x not in links[:y]]
 
             for i in links:
                 try:

@@ -26,3 +26,5 @@ FROM_CHOOSE = 0
 FROM_LIVE   = 1
 FROM_START  = 2
 LIVE_PLAY_TYPES = [FROM_CHOOSE, FROM_LIVE, FROM_START]
+
+EPG_URL      = 'http://i.mjh.nz/au/Kayo/epg.xml'

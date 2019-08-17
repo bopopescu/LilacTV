@@ -29,12 +29,16 @@
         <setting type="lsep" label="32338" enable="false" />
         <setting type="sep" />
         <setting id="hosts.quality" type="enum" label="32339" values="4K|1080p|720p|SD" default="0" />
+        <setting id="remove.dupes" type="bool" label="Enable Results Dupe Checker" default="false" />
         <setting id="debrid.only" type="bool" label="Debrid Sources Only" default="false" />
         <setting id="autoplay.sd" type="bool" label="32340" default="false" />
         <setting id="sources.extrainfo" type="bool" label="32587" default="true" />
         <setting id="HEVC" type="bool" label="32363" default="true" />
         <setting id="hosts.captcha" type="bool" label="32341" default="false" />
         <setting id="hosts.sort.provider" type="bool" label="32342" default="false" />
+        <setting id="preemptive.termination" type="bool" label="Pre-Emptive Termination" default="false" />
+        <setting id="preemptive.limit" type="slider" label="Pre-Emptive Limit" default="10" range="1,50" option="int" enable="!eq(-1,false)"/>
+        <setting type="text" label="Warning: Pre-Emptive options might have bugs." enable="false" />
         <setting type="sep" />
         <setting type="lsep" label="32343" enable="false" />
         <setting id="bookmarks" type="bool" label="32344" default="true" />
@@ -83,41 +87,36 @@
         <setting label="Disable All Normal Providers" type="action" option="close" action="RunPlugin(plugin://plugin.video.tempest/?mode=toggleAllNormal&amp;setting=false&amp;openSettings&amp;query=3.0)"/>
         <setting label="Enable All Normal Providers" type="action" option="close" action="RunPlugin(plugin://plugin.video.tempest/?mode=toggleAllNormal&amp;setting=true&amp;openSettings&amp;query=3.0)"/>
         <setting type="sep" />
-        <setting id="provider.1putlocker" type="bool" label="1PUTLOCKER" default="true" />
-        <setting id="provider.123moviehd" type="bool" label="123MOVIEHD" default="true" />
-        <setting id="provider.123movies4u" type="bool" label="123MOVIES4U" default="true" />
-        <setting id="provider.123123movies" type="bool" label="123123MOVIES" default="true" />
-        <setting id="provider.allucxyz" type="bool" label="ALLUCXYZ" default="true" />
         <setting id="provider.animetoon" type="bool" label="ANIMETOON" default="true" />
         <setting id="provider.cartoonhd" type="bool" label="CARTOONHD" default="true" />
-        <setting id="provider.cartoonwire" type="bool" label="CARTOONWIRE" default="true" />
+        <setting id="provider.cartoonhdto" type="bool" label="CARTOONHDTO" default="true" />
         <setting id="provider.cmovieshd" type="bool" label="CMOVIESHD" default="true" />
-        <setting id="provider.cmovieshdbz" type="bool" label="CMOVIESHDBZ" default="true" />
-        <setting id="provider.filmxy" type="bool" label="FILMXY" default="true" />
-        <setting id="provider.gomoviesink" type="bool" label="GOMOVIESINK" default="true" />
+        <setting id="provider.divxcrawler" type="bool" label="DIVXCRAWLER" default="true" />
+        <setting id="provider.extramovies" type="bool" label="EXTRAMOVIES" default="true" />
+        <setting id="provider.ganoolrip" type="bool" label="GANOOLRIP" default="true" />
+        <setting id="provider.geektv" type="bool" label="GEEKTV" default="true" />
+        <setting id="provider.getmywatchseries" type="bool" label="GETMYWATCHSERIES" default="true" />
         <setting id="provider.gowatchseries" type="bool" label="GOWATCHSERIES" default="true" />
-        <setting id="provider.hdpopcorneu" type="bool" label="HDPOPCORNEU" default="true" />
-        <setting id="provider.movie4kis" type="bool" label="MOVIE4KIS" default="true" />
-        <setting id="provider.moviefullhd" type="bool" label="MOVIEFULLHD" default="true" />
+        <setting id="provider.hdbest" type="bool" label="HDBEST" default="true" />
+        <setting id="provider.iwannawatch" type="bool" label="IWANNAWATCH" default="true" />
         <setting id="provider.moviescouch" type="bool" label="MOVIECOUCH" default="true" />
         <setting id="provider.mycouchtuner" type="bool" label="MYCOUCHTUNER" default="true" />
-        <setting id="provider.odb" type="bool" label="ODB" default="true" />
-        <setting id="provider.openloadmovie" type="bool" label="OPENLOADMOVIE" default="true" />
+        <setting id="provider.myvideolinks" type="bool" label="MYVIDEOLINKS" default="true" />
+        <setting id="provider.newepisodes" type="bool" label="NEWEPISODES" default="true"/>
         <setting id="provider.projectfreetv" type="bool" label="PROJECTFREETV" default="true" />
-        <setting id="provider.reddit" type="bool" label="REDDIT" default="true" />
         <setting id="provider.seehd" type="bool" label="SEEHD" default="true" />
-        <setting id="provider.series9" type="bool" label="SERIES9" default="true" />
-        <setting id="provider.seriesfree" type="bool" label="SERIESFREE" default="true" />
         <setting id="provider.seriesonline" type="bool" label="SERIESONLINE" default="true" />
-        <setting id="provider.solarmoviez" type="bool" label="SOLARMOVIEZ" default="true" />
-        <setting id="provider.spacemov" type="bool" label="SPACEMOV" default="true" />
         <setting id="provider.streamdreams" type="bool" label="STREAMDREAMS" default="true" />
         <setting id="provider.swatchseries" type="bool" label="SWATCHSERIES" default="true" />
+        <setting id="provider.telepisodes" type="bool" label="TELEPSODES" default="true" />
+        <setting id="provider.timewatch" type="bool" label="TIMEWATCH" default="true" />
+        <setting id="provider.tvmovieflix" type="bool" label="TVMOVIEFLIX" default="true" />
         <setting id="provider.watchepisodes4" type="bool" label="WATCHEPISODES4" default="true" />
         <setting id="provider.watchfree" type="bool" label="WATCHFREE" default="true" />
-        <setting id="provider.watchfree1" type="bool" label="WATCHFREE1" default="true" />
         <setting id="provider.watchseries" type="bool" label="WATCHSERIES" default="true" />
-        <setting id="provider.watchserieshd" type="bool" label="WATCHSERIESHD" default="true" />
+        <setting id="provider.watchseriessto" type="bool" label="WATCHSERIESSTO" default="true" />
+        <setting id="provider.wsunblock" type="bool" label="WSUNBLOCK" default="true" />
+        <setting id="provider.zmovies" type="bool" label="ZMOVIES" default="true" />
         <setting type="sep" />
         <setting label="Local Scrapers" type="lsep" enable="false" />
         <setting id="provider.library" type="bool" label="LIBRARY" default="false" />
@@ -131,24 +130,21 @@
         <setting id="provider.2ddl" type="bool" label="2DDL" default="true" />
         <setting id="provider.300mbdownload" type="bool" label="300MBDOWNLOAD" default="true" />
         <setting id="provider.300mbfilms" type="bool" label="300MBFILMS" default="true" />
-        <setting id="provider.bestmoviez" type="bool" label="BESTMOVIEZ" default="true" />
         <setting id="provider.ddlspot" type="bool" label="DDLSPOT" default="true" />
-        <setting id="provider.ddlvalley" type="bool" label="DDLVALLEY" default="true" />
         <setting id="provider.directdl" type="bool" label="DIRECTDL" default="true" />
         <setting id="provider.ganool" type="bool" label="GANOOL" default="true" />
+        <setting id="provider.maxrls" type="bool" label="MAX-RLS" default="true" />
         <setting id="provider.moviesleak" type="bool" label="MOVIESLEAK" default="true" />
         <setting id="provider.mvrls" type="bool" label="MVRLS" default="true" />
-        <setting id="provider.myvideolinks" type="bool" label="MYVIDEOLINKS" default="true" />
         <setting id="provider.rapidmoviez" type="bool" label="RAPIDMOVIEZ" default="true" />
         <setting id="provider.rlsb" type="bool" label="RLSB" default="true" />
         <setting id="provider.rlsbb" type="bool" label="RLSBB" default="true" />
         <setting id="provider.rlslog" type="bool" label="RLSLOG" default="true" />
         <setting id="provider.sceneddl" type="bool" label="SCENEDDL" default="true" />
         <setting id="provider.scenerls" type="bool" label="SCENERLS" default="true" />
-        <setting id="provider.scnsrc" type="bool" label="SCNSRC" default="true" />
-        <setting id="provider.tvdownload" type="bool" label="TVDOWNLOAD" default="true" />
+        <setting id="provider.scenerlsc" type="bool" label="SCENERLSC" default="true" />
         <setting id="provider.ultrahd" type="bool" label="ULTRAHD" default="true" />
-        <setting id="provider.wrzcraft" type="bool" label="WRZCRAFT" default="true" />
+        <setting id="provider.warezmovies" type="bool" label="WAREZMOVIES" default="true" />
     </category>
     <category label="Direct Providers">
         <setting label="Direct Providers" type="lsep" enable="false" />
@@ -157,50 +153,29 @@
         <setting type="sep" />
         <setting id="provider.d1dldrm" type="bool" label="D1DLDRM" default="true" />
         <setting id="provider.dl2dlb3d" type="bool" label="DL2DLB3D" default="true" />
-        <setting id="provider.dl2f2m" type="bool" label="DL2F2M" default="true" />
-        <setting id="provider.dl2lavinmovie" type="bool" label="DL2LAVINMOVIE" default="true" />
         <setting id="provider.dl3dlb3d" type="bool" label="DL3DLB3D" default="true" />
         <setting id="provider.dl3f2m" type="bool" label="DL3F2M" default="true" />
         <setting id="provider.dl4dlb3d" type="bool" label="DL4DLB3D" default="true" />
-        <setting id="provider.dl4download" type="bool" label="DL4DOWNLOAD" default="true" />
         <setting id="provider.dl4lavinmovie" type="bool" label="DL4LAVINMOVIE" default="true" />
         <setting id="provider.dl5dlb3d" type="bool" label="DL5DLB3D" default="true" />
         <setting id="provider.dl5f2m" type="bool" label="DL5F2M" default="true" />
-        <setting id="provider.dl5lavinmovie" type="bool" label="DL5LAVINMOVIE" default="true" />
         <setting id="provider.dl6dlb3d" type="bool" label="DL6DLB3D" default="true" />
         <setting id="provider.dl6f2m" type="bool" label="DL6F2M" default="true" />
         <setting id="provider.dl7dlb3d" type="bool" label="DL7DLB3D" default="true" />
         <setting id="provider.dl7f2m" type="bool" label="DL7F2M" default="true" />
         <setting id="provider.dl7lavinmovie" type="bool" label="DL7LAVIN" default="true" />
         <setting id="provider.dl8lavinmovie" type="bool" label="DL8LAVIN" default="true" />
-        <setting id="provider.dl9lavinmovie" type="bool" label="DL9LAVIN" default="true" />
         <setting id="provider.dl8dlb3d" type="bool" label="DL8DLB3D" default="true" />
-        <setting id="provider.dl8heyserver" type="bool" label="DL8HEYSERVER" default="true" />
         <setting id="provider.dl12dlb3d" type="bool" label="DL12DLB3D" default="true" />
-        <setting id="provider.dl20mihanpix" type="bool" label="DL20MIHANPIX" default="true" />
         <setting id="provider.dldlb3d" type="bool" label="DLDLB3D" default="true" />
-        <setting id="provider.dlf2m" type="bool" label="DLF2M" default="true" />
-        <setting id="provider.dlfarshow" type="bool" label="DLFARSHOW" default="true" />
-        <setting id="provider.dlfilm" type="bool" label="DLFILM" default="true" />
         <setting id="provider.dlmeliupload" type="bool" label="DLMELIUPLOAD" default="true" />
         <setting id="provider.dlmyfilm" type="bool" label="DLMYFILM" default="true" />
-        <setting id="provider.dlsitemovie" type="bool" label="DLSITEMOVIE" default="true" />
         <setting id="provider.dlsrvdl" type="bool" label="DLSRVDL" default="true" />
-        <setting id="provider.dlupdlf" type="bool" label="DLUPDLF" default="true" />
-        <setting id="provider.dlupload8" type="bool" label="DLUPLOAD8" default="true" />
-        <setting id="provider.gmovies" type="bool" label="GMOVIES" default="true" />
-        <setting id="provider.hdpopcorns" type="bool" label="HDPOPCORNS" default="true" />
-        <setting id="provider.iwaatch" type="bool" label="IWAATCH" default="true" />
-        <setting id="provider.lalbatte" type="bool" label="LALBATTE" default="true" />
-        <setting id="provider.mihanpix" type="bool" label="MINANPIX" default="true" />
-        <setting id="provider.movieminions" type="bool" label="MOVIEMINIONS" default="true" />
-        <setting id="provider.ns5" type="bool" label="NS5" default="true" />
         <setting id="provider.pz10028" type="bool" label="PZ10128" default="true" />
         <setting id="provider.pz10093" type="bool" label="PZ10193" default="true" />
         <setting id="provider.s1dlserver" type="bool" label="S1DLSERVER" default="true" />
         <setting id="provider.s1tinydl" type="bool" label="S1TINYDL" default="true" />
         <setting id="provider.s2dlserver" type="bool" label="S2DLSERVER" default="true" />
-        <setting id="provider.s16bitdl" type="bool" label="S16BITDL" default="true" />
         <setting id="provider.s19bitdl" type="bool" label="S16BITDL" default="true" />
         <setting id="provider.stgpz10139" type="bool" label="STGPZ10139" default="true" />
     </category>
@@ -210,14 +185,17 @@
         <setting id="torrent.identify" type="enum" label="32634"  enable="eq(-1,true)" lvalues="32589|32590|32591|32592|32593|32594|32595|32596|32597|32598" default="4" />
         <setting id="torrent.min.seeders" type="slider" label="32638" enable="eq(-2,true)" default="10" range="1,100" option="int" />
         <setting id="torrent.sort.them.up" type="bool" label="32639" enable="eq(-3,true)"  default="true" />
-        <setting id="torrent.resolveurl2" type="action" label="32640" enable="eq(-4,true)" option="close" action="RunPlugin(plugin://plugin.video.tempest/?action=urlResolverRDTorrent&amp;query=1.30)" />
-        <setting id="torrent.resolveurl" type="action" label="32637" enable="eq(-5,true)" option="close" action="RunPlugin(plugin://plugin.video.tempest/?action=urlResolverRDTorrent&amp;query=1.40)" />
+        <setting id="torrent.resolveurl2" type="action" label="32640" enable="eq(-4,true)" option="close" action="RunPlugin(plugin://plugin.video.tempest/?action=urlResolverRDTorrent&amp;query=1.46)" />
+        <setting id="torrent.resolveurl" type="action" label="32637" enable="eq(-5,true)" option="close" action="RunPlugin(plugin://plugin.video.tempest/?action=urlResolverRDTorrent&amp;query=1.56)" />
         <setting label="Torrent Providers" type="lsep" />
         <setting label="Disable All Torrent Providers" type="action" option="close" action="RunPlugin(plugin://plugin.video.tempest/?mode=toggleAllTorrent&amp;setting=false&amp;openSettings&amp;query=6.0)"/>
         <setting label="Enable All Torrent Providers" type="action" option="close" action="RunPlugin(plugin://plugin.video.tempest/?mode=toggleAllTorrent&amp;setting=true&amp;openSettings&amp;query=6.0)"/>
         <setting type="sep" />
-        <setting id="provider.111ys" type="bool" label="111YS" default="false" />
         <setting id="provider.1337x" type="bool" label="1337X" default="false" />
+        <setting id="provider.btdb" type="bool" label="BTDB" default="false" />
+        <setting id="provider.btscene" type="bool" label="BTSCENE" default="false" />
+        <setting id="provider.digbt" type="bool" label="DIGBT" default="false" />
+        <setting id="provider.doublr" type="bool" label="DOUBLR" default="false" />
         <setting id="provider.eztv" type="bool" label="EZTV" default="false" />
         <setting id="provider.glodls" type="bool" label="GLODLS" default="false" />
         <setting id="provider.kickass2" type="bool" label="KICKASS2" default="false" />
@@ -228,6 +206,8 @@
         <setting id="provider.skytorrents" type="bool" label="SKYTORRENTS" default="false" />
         <setting id="provider.torrapi" type="bool" label="TORRAPI" default="false" />
         <setting id="provider.torrdown" type="bool" label="TORRDOWN" default="false" />
+        <setting id="provider.torrentqalaxy" type="bool" label="TORRENTGALAXY" default="false" />
+        <setting id="provider.torrentquest" type="bool" label="TORRENTQUEST" default="false" />
         <setting id="provider.ytsam" type="bool" label="YTSAM" default="false" />
         <setting id="provider.yifyddl" type="bool" label="YIFYDDL" default="false" />
         <setting id="provider.zoogle" type="bool" label="ZOOGLE" default="false" />
