@@ -75,6 +75,8 @@ http://116.40.8.83:9981/stream/channelid/719535705
 http://116.40.8.83:9981/stream/channelid/796171670
 #EXTINF:-1,SBS GOLF
 http://116.40.8.83:9981/stream/channelid/2133556657
+#EXTINF:-1,SBS Sports
+http://116.40.8.83:9981/stream/channelid/20864224
 #EXTINF:-1,TV조선
 http://116.40.8.83:9981/stream/channelid/1338443711
 #EXTINF:-1,YTN
@@ -147,20 +149,8 @@ http://14.5.82.44:9981/stream/channelid/793700511
 http://14.5.82.44:9981/stream/channelid/1661876737
 #EXTINF:-1,SBS
 http://14.5.82.44:9981/stream/channelid/1859423595
-#EXTINF:-1,슈퍼액션
-http://211.204.15.24:9981/stream/channelid/1525223994
-#EXTINF:-1,바둑TV
-http://211.204.15.24:9981/stream/channelid/990433157
-#EXTINF:-1,바둑TV
-http://211.204.15.24:9981/stream/channelid/247175781
-#EXTINF:-1,FTV
-http://211.204.15.24:9981/stream/channelid/506255461
-#EXTINF:-1,FISHING TV
-http://211.204.15.24:9981/stream/channelid/834591917
-#EXTINF:-1,SkyTravel
-http://211.204.15.24:9981/stream/channelid/427148117
-#EXTINF:-1,NGC
-http://211.204.15.24:9981/stream/channelid/2088799471
+#EXTINF:-1,JTBC Golf
+http://211.204.15.24:9981/stream/channelid/1865298993
 #EXTINF:-1,FOX
 http://219.250.105.94:9981/stream/channelid/1255053537?ticket=752FFF9E4A21380CAC76FBD18D3E13AC4C42AFB8&profile=pass
 #EXTINF:-1,JTBC Golf
