@@ -321,11 +321,7 @@ http://39.117.250.106:9981/stream/channelid/1871924874
 http://39.117.250.106:9981/stream/channelid/1937250376
 #EXTINF:-1,NGC
 http://39.117.250.106:9981/stream/channelid/1548308868
-#EXTINF:-1,SkySports
-http://39.120.6.252:9981/stream/channelid/846199895
-#EXTINF:-1,History
-http://39.120.6.252:9981/stream/channelid/1397766919
-#EXTINF:-1 KBS DRAMA
-http://175.113.154.14:9981/stream/channelid/1780025022?ticket=C27C858BA04FA381D2FCC3570ED646795F8C23C6&profile=matroska
-#EXTINF:-1 KBS DRAMA
-http://175.113.154.14:9981/stream/channelid/1780025022?ticket=762EA855410D45F4CEEF89762C97969B6A7CD219&profile=matroska
+#EXTINF:-1,SBS Sports
+http://39.120.6.252:9981/stream/channelid/221396403
+#EXTINF:-1,tvN
+http://175.113.154.14:9981/stream/channelid/24030312?ticket=9CF87CD2F761100363F8E870A811127E8BCDC3E5&profile=matroska

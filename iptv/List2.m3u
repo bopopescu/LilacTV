@@ -53,8 +53,6 @@ http://116.40.8.83:9981/stream/channelid/768123082
 http://116.40.8.83:9981/stream/channelid/630887506
 #EXTINF:-1,EBS
 http://116.40.8.83:9981/stream/channelid/653988547
-#EXTINF:-1,EBS2
-http://116.40.8.83:9981/stream/channelid/1337614225
 #EXTINF:-1,FTV
 http://116.40.8.83:9981/stream/channelid/706150689
 #EXTINF:-1,JTBC
@@ -149,8 +147,8 @@ http://14.5.82.44:9981/stream/channelid/793700511
 http://14.5.82.44:9981/stream/channelid/1661876737
 #EXTINF:-1,SBS
 http://14.5.82.44:9981/stream/channelid/1859423595
-#EXTINF:-1,FTV
-http://1.245.102.167:9981/stream/channelid/1690807446
+#EXTINF:-1,SBS Sports
+http://1.245.102.167:9981/stream/channelid/1297841658
 #EXTINF:-1,KBS N Sports
 http://211.204.15.24:9981/stream/channelid/1346520761
 #EXTINF:-1,FOX
