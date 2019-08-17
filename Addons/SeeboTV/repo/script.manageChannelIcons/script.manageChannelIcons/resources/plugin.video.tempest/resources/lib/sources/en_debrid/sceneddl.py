@@ -19,8 +19,8 @@ class source:
     def __init__(self):
         self.priority = 1
         self.language = ['en']
-        self.domains = ['sceneddl.online']
-        self.base_link = 'http://www.sceneddl.online'
+        self.domains = ['www.sceneddl.me']
+        self.base_link = 'http://www.sceneddl.me'
         self.search_link = '/?s=%s'
 
     def movie(self, imdb, title, localtitle, aliases, year):
@@ -87,7 +87,7 @@ class source:
 
                     r = client.request(url)
 
-                posts = client.parseDOM(r, "div", attrs={"class": "title"})
+                posts = client.parseDOM(r, "h2", attrs={"class": "entry-title"})
                 hostDict = hostprDict + hostDict
                 items = []
                 for post in posts:
@@ -105,11 +105,11 @@ class source:
                 try:
                     i = str(item)
                     r = client.request(i)
-                    u = client.parseDOM(r, "div", attrs={"class": "dlinks"})
+                    u = client.parseDOM(r, "div", attrs={"class": "entry-content"})
                     for t in u:
                         r = client.parseDOM(t, 'a', ret='href')
                         for url in r:
-                            if 'redbunker' in url:
+                            if '.rar' in url:
                                 continue
                             quality, info = source_utils.get_release_quality(url)
                             valid, host = source_utils.is_host_valid(url, hostDict)

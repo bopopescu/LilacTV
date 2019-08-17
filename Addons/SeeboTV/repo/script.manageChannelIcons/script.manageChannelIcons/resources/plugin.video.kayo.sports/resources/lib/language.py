@@ -28,5 +28,6 @@ class Language(BaseLanguage):
     HLS_REQUIRED     = 30025
     CHOOSE           = 30026
     PLAY_FROM        = 30027
+    INVALID_SUBSCRIPTION = 30028
 
 _ = Language()

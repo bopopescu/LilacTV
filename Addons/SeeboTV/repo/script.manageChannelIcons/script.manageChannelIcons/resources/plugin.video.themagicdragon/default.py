@@ -110,23 +110,23 @@ def Search_loop():
 	else:
 		Search_title = Search_name.lower().replace(' ','')
 		if Search_title[0] in 'abcd':
-			url_to_open = 'http://supremacy.org.uk/tombraider/dogsbollocks/A-D.txt'
+			url_to_open = 'https://raw.githubusercontent.com/tombebbs1/magicdragon/master/A-D.txt'
 		elif Search_title[0] in 'efgh':
-			url_to_open = 'http://supremacy.org.uk/tombraider/dogsbollocks/E-H.txt'
+			url_to_open = 'https://raw.githubusercontent.com/tombebbs1/magicdragon/master/E-H.txt'
 		elif Search_title[0] in 'ijkl':
-			url_to_open = 'http://supremacy.org.uk/tombraider/dogsbollocks/I-L.txt'
+			url_to_open = 'https://raw.githubusercontent.com/tombebbs1/magicdragon/master/I-L.txt'
 		elif Search_title[0] in 'mnop':
-			url_to_open = 'http://supremacy.org.uk/tombraider/dogsbollocks/M-P.txt'
+			url_to_open = 'https://raw.githubusercontent.com/tombebbs1/magicdragon/master/M-P.txt'
 		elif Search_title[0] in 'qrs':
-			url_to_open = 'http://supremacy.org.uk/tombraider/dogsbollocks/Q-S.txt'
+			url_to_open = 'https://raw.githubusercontent.com/tombebbs1/magicdragon/master/Q-S.txt'
 		elif Search_title[0] in 't':
-			url_to_open = 'http://supremacy.org.uk/tombraider/dogsbollocks/T.txt'
+			url_to_open = 'https://raw.githubusercontent.com/tombebbs1/magicdragon/master/T.txt'
 		elif Search_title[0] in 'uvwxyz':
-			url_to_open = 'http://supremacy.org.uk/tombraider/dogsbollocks/U-Z.txt'
+			url_to_open = 'https://raw.githubusercontent.com/tombebbs1/magicdragon/master/U-Z.txt'
 		elif Search_title[0] in '0123456789':
-			url_to_open = 'http://supremacy.org.uk/tombraider/dogsbollocks/0-1000000.txt.txt'
+			url_to_open = 'https://raw.githubusercontent.com/tombebbs1/magicdragon/master/0-1000000.txt.txt'
 		elif Search_title[0] in '':
-			url_to_open = 'http://supremacy.org.uk/tombraider/dogsbollocks/realdebrid.txt'			
+			url_to_open = 'https://raw.githubusercontent.com/tombebbs1/magicdragon/master/realdebrid.txt'			
 			
 		HTML = Open_Url(url_to_open)
 		match = re.compile('<title>(.+?)</title>.+?<link>(.+?)</link>.+?<thumbnail>(.+?)</thumbnail>',re.DOTALL).findall(HTML)
@@ -139,7 +139,7 @@ def Search_loop():
 			else:
 				if Search_title in name.lower().replace(' ',''):
 					addLink(url, name,img,FANART,'','','','',None,'',1)				
-		HTML2 = Open_Url('http://supremacy.org.uk/tombraider/dogsbollocks/newreleases.txt')
+		HTML2 = Open_Url('https://raw.githubusercontent.com/tombebbs1/magicdragon/master/newreleases.txt')
 		match2 = re.compile('<title>(.+?)</title>.+?<link>(.+?)</link>.+?<thumbnail>(.+?)</thumbnail>.+?<fanart>(.+?)/fanart>',re.DOTALL).findall(HTML2)
 		for name2,url2,image2,fanart2 in match2:
 			if fanart2 == '<':
@@ -152,7 +152,7 @@ def Search_loop():
 			else:
 				if Search_title in name2.lower().replace(' ',''):
 					addDir(name2,url2,1,image2,fanart2,'','','','')
-		HTML14 = Open_Url('http://supremacy.org.uk/tombraider/dogsbollocks/cams.txt')
+		HTML14 = Open_Url('https://raw.githubusercontent.com/tombebbs1/magicdragon/master/cams.txt')
 		match2 = re.compile('<title>(.+?)</title>.+?<link>(.+?)</link>.+?<thumbnail>(.+?)</thumbnail>.+?<fanart>(.+?)/fanart>',re.DOTALL).findall(HTML14)
 		for name2,url2,image2,fanart2 in match2:
 			if fanart2 == '<':
@@ -165,7 +165,7 @@ def Search_loop():
 			else:
 				if Search_title in name2.lower().replace(' ',''):
 					addDir(name2,url2,1,image2,fanart2,'','','','')					
-		HTML3 = Open_Url('http://supremacy.org.uk/tombraider/dogsbollocks/boxsets.txt')
+		HTML3 = Open_Url('https://raw.githubusercontent.com/tombebbs1/magicdragon/master/boxsets.txt')
 		match3 = re.compile('<channel>.+?<name>(.+?)</name>.+?<thumbnail>(.+?)</thumbnail>.+?<externallink>(.+?)</externallink>.+?<fanart>(.+?)/fanart>.+?<info>(.+?)/info>.+?</channel>',re.DOTALL).findall(HTML3)
 		for name3,image3,url3,fanart3,info3 in match3:
 			if fanart3 == '<':
@@ -178,7 +178,7 @@ def Search_loop():
 				info3 = info3.replace('<','')
 			if Search_title in name3.lower().replace(' ',''):
 				addDir(name3,url3,1,image3,fanart3,info3,'','','')
-		HTML13 = Open_Url('http://supremacy.org.uk/tombraider/dogsbollocks/fullseries.txt')
+		HTML13 = Open_Url('https://raw.githubusercontent.com/tombebbs1/magicdragon/master/fullseries.txt')
 		match3 = re.compile('<channel>.+?<name>(.+?)</name>.+?<thumbnail>(.+?)</thumbnail>.+?<externallink>(.+?)</externallink>.+?<fanart>(.+?)/fanart>.+?<info>(.+?)/info>.+?</channel>',re.DOTALL).findall(HTML13)
 		for name3,image3,url3,fanart3,info3 in match3:
 			if fanart3 == '<':
@@ -191,7 +191,7 @@ def Search_loop():
 				info3 = info3.replace('<','')
 			if Search_title in name3.lower().replace(' ',''):
 				addDir(name3,url3,1,image3,fanart3,info3,'','','')					
-		HTML4 = Open_Url('http://supremacy.org.uk/tombraider/dogsbollocks/realdebrid.txt')
+		HTML4 = Open_Url('https://raw.githubusercontent.com/tombebbs1/magicdragon/master/realdebrid.txt')
 		match2 = re.compile('<title>(.+?)</title>.+?<link>(.+?)</link>.+?<thumbnail>(.+?)</thumbnail>.+?<fanart>(.+?)/fanart>',re.DOTALL).findall(HTML4)
 		for name2,url2,image2,fanart2 in match2:
 			if fanart2 == '<':
@@ -204,7 +204,7 @@ def Search_loop():
 			else:
 				if Search_title in name2.lower().replace(' ',''):
 					addDir(name2,url2,1,image2,fanart2,'','','','')
-		HTML5 = Open_Url('http://supremacy.org.uk/tombraider/dogsbollocks/specials.txt')
+		HTML5 = Open_Url('https://raw.githubusercontent.com/tombebbs1/magicdragon/master/specials.txt')
 		match2 = re.compile('<title>(.+?)</title>.+?<link>(.+?)</link>.+?<thumbnail>(.+?)</thumbnail>.+?<fanart>(.+?)/fanart>',re.DOTALL).findall(HTML5)
 		for name2,url2,image2,fanart2 in match2:
 			if fanart2 == '<':
@@ -217,7 +217,7 @@ def Search_loop():
 			else:
 				if Search_title in name2.lower().replace(' ',''):
 					addDir(name2,url2,1,image2,fanart2,'','','','')	
-		HTML6 = Open_Url('http://supremacy.org.uk/tombraider/dogsbollocks/kidsmovies.txt')
+		HTML6 = Open_Url('https://raw.githubusercontent.com/tombebbs1/magicdragon/master/kidsmovies.txt')
 		match2 = re.compile('<title>(.+?)</title>.+?<link>(.+?)</link>.+?<thumbnail>(.+?)</thumbnail>.+?<fanart>(.+?)/fanart>',re.DOTALL).findall(HTML6)
 		for name2,url2,image2,fanart2 in match2:
 			if fanart2 == '<':
@@ -230,7 +230,7 @@ def Search_loop():
 			else:
 				if Search_title in name2.lower().replace(' ',''):
 					addDir(name2,url2,1,image2,fanart2,'','','','')
-		HTML7 = Open_Url('http://supremacy.org.uk/tombraider/dogsbollocks/horror.txt')
+		HTML7 = Open_Url('https://raw.githubusercontent.com/tombebbs1/magicdragon/master/horror.txt')
 		match2 = re.compile('<title>(.+?)</title>.+?<link>(.+?)</link>.+?<thumbnail>(.+?)</thumbnail>.+?<fanart>(.+?)/fanart>',re.DOTALL).findall(HTML7)
 		for name2,url2,image2,fanart2 in match2:
 			if fanart2 == '<':
@@ -243,7 +243,7 @@ def Search_loop():
 			else:
 				if Search_title in name2.lower().replace(' ',''):
 					addDir(name2,url2,1,image2,fanart2,'','','','')	
-		HTML8 = Open_Url('http://supremacy.org.uk/tombraider/dogsbollocks/A-D.txt')
+		HTML8 = Open_Url('https://raw.githubusercontent.com/tombebbs1/magicdragon/master/A-D.txt')
 		match2 = re.compile('<title>(.+?)</title>.+?<link>(.+?)</link>.+?<thumbnail>(.+?)</thumbnail>.+?<fanart>(.+?)/fanart>',re.DOTALL).findall(HTML8)
 		for name2,url2,image2,fanart2 in match2:
 			if fanart2 == '<':
@@ -256,7 +256,7 @@ def Search_loop():
 			else:
 				if Search_title in name2.lower().replace(' ',''):
 					addDir(name2,url2,1,image2,fanart2,'','','','')	
-		HTML9 = Open_Url('http://supremacy.org.uk/tombraider/dogsbollocks/0-1000000.txt')
+		HTML9 = Open_Url('https://raw.githubusercontent.com/tombebbs1/magicdragon/master/0-1000000.txt')
 		match2 = re.compile('<title>(.+?)</title>.+?<link>(.+?)</link>.+?<thumbnail>(.+?)</thumbnail>.+?<fanart>(.+?)/fanart>',re.DOTALL).findall(HTML9)
 		for name2,url2,image2,fanart2 in match2:
 			if fanart2 == '<':
@@ -269,7 +269,7 @@ def Search_loop():
 			else:
 				if Search_title in name2.lower().replace(' ',''):
 					addDir(name2,url2,1,image2,fanart2,'','','','')
-		HTML10 = Open_Url('http://supremacy.org.uk/tombraider/dogsbollocks/E-H.txt')
+		HTML10 = Open_Url('https://raw.githubusercontent.com/tombebbs1/magicdragon/master/E-H.txt')
 		match2 = re.compile('<title>(.+?)</title>.+?<link>(.+?)</link>.+?<thumbnail>(.+?)</thumbnail>.+?<fanart>(.+?)/fanart>',re.DOTALL).findall(HTML10)
 		for name2,url2,image2,fanart2 in match2:
 			if fanart2 == '<':
@@ -282,7 +282,7 @@ def Search_loop():
 			else:
 				if Search_title in name2.lower().replace(' ',''):
 					addDir(name2,url2,1,image2,fanart2,'','','','')	
-		HTML11 = Open_Url('http://supremacy.org.uk/tombraider/dogsbollocks/I-L.txt')
+		HTML11 = Open_Url('https://raw.githubusercontent.com/tombebbs1/magicdragon/master/I-L.txt')
 		match2 = re.compile('<title>(.+?)</title>.+?<link>(.+?)</link>.+?<thumbnail>(.+?)</thumbnail>.+?<fanart>(.+?)/fanart>',re.DOTALL).findall(HTML11)
 		for name2,url2,image2,fanart2 in match2:
 			if fanart2 == '<':
@@ -295,7 +295,7 @@ def Search_loop():
 			else:
 				if Search_title in name2.lower().replace(' ',''):
 					addDir(name2,url2,1,image2,fanart2,'','','','')	
-		HTML12 = Open_Url('http://supremacy.org.uk/tombraider/dogsbollocks/M-P.txt')
+		HTML12 = Open_Url('https://raw.githubusercontent.com/tombebbs1/magicdragon/master/M-P.txt')
 		match2 = re.compile('<title>(.+?)</title>.+?<link>(.+?)</link>.+?<thumbnail>(.+?)</thumbnail>.+?<fanart>(.+?)/fanart>',re.DOTALL).findall(HTML12)
 		for name2,url2,image2,fanart2 in match2:
 			if fanart2 == '<':
@@ -308,7 +308,7 @@ def Search_loop():
 			else:
 				if Search_title in name2.lower().replace(' ',''):
 					addDir(name2,url2,1,image2,fanart2,'','','','')	
-		HTML13 = Open_Url('http://supremacy.org.uk/tombraider/dogsbollocks/Q-S.txt')
+		HTML13 = Open_Url('https://raw.githubusercontent.com/tombebbs1/magicdragon/master/Q-S.txt')
 		match2 = re.compile('<title>(.+?)</title>.+?<link>(.+?)</link>.+?<thumbnail>(.+?)</thumbnail>.+?<fanart>(.+?)/fanart>',re.DOTALL).findall(HTML13)
 		for name2,url2,image2,fanart2 in match2:
 			if fanart2 == '<':
@@ -321,7 +321,7 @@ def Search_loop():
 			else:
 				if Search_title in name2.lower().replace(' ',''):
 					addDir(name2,url2,1,image2,fanart2,'','','','')
-		HTML14 = Open_Url('http://supremacy.org.uk/tombraider/dogsbollocks/T.txt')
+		HTML14 = Open_Url('https://raw.githubusercontent.com/tombebbs1/magicdragon/master/T.txt')
 		match2 = re.compile('<title>(.+?)</title>.+?<link>(.+?)</link>.+?<thumbnail>(.+?)</thumbnail>.+?<fanart>(.+?)/fanart>',re.DOTALL).findall(HTML14)
 		for name2,url2,image2,fanart2 in match2:
 			if fanart2 == '<':
@@ -334,7 +334,7 @@ def Search_loop():
 			else:
 				if Search_title in name2.lower().replace(' ',''):
 					addDir(name2,url2,1,image2,fanart2,'','','','')
-		HTML15 = Open_Url('http://supremacy.org.uk/tombraider/dogsbollocks/U-Z.txt')
+		HTML15 = Open_Url('https://raw.githubusercontent.com/tombebbs1/magicdragon/master/U-Z.txt')
 		match2 = re.compile('<title>(.+?)</title>.+?<link>(.+?)</link>.+?<thumbnail>(.+?)</thumbnail>.+?<fanart>(.+?)/fanart>',re.DOTALL).findall(HTML15)
 		for name2,url2,image2,fanart2 in match2:
 			if fanart2 == '<':
@@ -347,7 +347,7 @@ def Search_loop():
 			else:
 				if Search_title in name2.lower().replace(' ',''):
 					addDir(name2,url2,1,image2,fanart2,'','','','')						
-		HTML17 = Open_Url('http://supremacy.org.uk/tombraider/dogsbollocks/documentaries.txt')
+		HTML17 = Open_Url('https://raw.githubusercontent.com/tombebbs1/magicdragon/master/documentaries.txt')
 		match2 = re.compile('<title>(.+?)</title>.+?<link>(.+?)</link>.+?<thumbnail>(.+?)</thumbnail>.+?<fanart>(.+?)/fanart>',re.DOTALL).findall(HTML17)
 		for name2,url2,image2,fanart2 in match2:
 			if fanart2 == '<':
@@ -360,7 +360,7 @@ def Search_loop():
 			else:
 				if Search_title in name2.lower().replace(' ',''):
 					addDir(name2,url2,1,image2,fanart2,'','','','')		
-		HTML23 = Open_Url('http://supremacy.org.uk/tombraider/dogsbollocks/top10action.txt')
+		HTML23 = Open_Url('https://raw.githubusercontent.com/tombebbs1/magicdragon/master/top10action.txt')
 		match2 = re.compile('<title>(.+?)</title>.+?<link>(.+?)</link>.+?<thumbnail>(.+?)</thumbnail>.+?<fanart>(.+?)/fanart>',re.DOTALL).findall(HTML23)
 		for name2,url2,image2,fanart2 in match2:
 			if fanart2 == '<':
@@ -373,7 +373,7 @@ def Search_loop():
 			else:
 				if Search_title in name2.lower().replace(' ',''):
 					addDir(name2,url2,1,image2,fanart2,'','','','')
-		HTML24 = Open_Url('http://supremacy.org.uk/tombraider/dogsbollocks/top10alieninvasion.txt')
+		HTML24 = Open_Url('https://raw.githubusercontent.com/tombebbs1/magicdragon/master/top10alieninvasion.txt')
 		match2 = re.compile('<title>(.+?)</title>.+?<link>(.+?)</link>.+?<thumbnail>(.+?)</thumbnail>.+?<fanart>(.+?)/fanart>',re.DOTALL).findall(HTML24)
 		for name2,url2,image2,fanart2 in match2:
 			if fanart2 == '<':
@@ -386,7 +386,7 @@ def Search_loop():
 			else:
 				if Search_title in name2.lower().replace(' ',''):
 					addDir(name2,url2,1,image2,fanart2,'','','','')	
-		HTML25 = Open_Url('http://supremacy.org.uk/tombraider/dogsbollocks/top10animation.txt')
+		HTML25 = Open_Url('https://raw.githubusercontent.com/tombebbs1/magicdragon/master/top10animation.txt')
 		match2 = re.compile('<title>(.+?)</title>.+?<link>(.+?)</link>.+?<thumbnail>(.+?)</thumbnail>.+?<fanart>(.+?)/fanart>',re.DOTALL).findall(HTML25)
 		for name2,url2,image2,fanart2 in match2:
 			if fanart2 == '<':
@@ -399,7 +399,7 @@ def Search_loop():
 			else:
 				if Search_title in name2.lower().replace(' ',''):
 					addDir(name2,url2,1,image2,fanart2,'','','','')
-		HTML26 = Open_Url('http://supremacy.org.uk/tombraider/dogsbollocks/top10comedies.txt')
+		HTML26 = Open_Url('https://raw.githubusercontent.com/tombebbs1/magicdragon/master/top10comedies.txt')
 		match2 = re.compile('<title>(.+?)</title>.+?<link>(.+?)</link>.+?<thumbnail>(.+?)</thumbnail>.+?<fanart>(.+?)/fanart>',re.DOTALL).findall(HTML26)
 		for name2,url2,image2,fanart2 in match2:
 			if fanart2 == '<':
@@ -412,7 +412,7 @@ def Search_loop():
 			else:
 				if Search_title in name2.lower().replace(' ',''):
 					addDir(name2,url2,1,image2,fanart2,'','','','')	
-		HTML27 = Open_Url('http://supremacy.org.uk/tombraider/dogsbollocks/top10disaster.txt')
+		HTML27 = Open_Url('https://raw.githubusercontent.com/tombebbs1/magicdragon/master/top10disaster.txt')
 		match2 = re.compile('<title>(.+?)</title>.+?<link>(.+?)</link>.+?<thumbnail>(.+?)</thumbnail>.+?<fanart>(.+?)/fanart>',re.DOTALL).findall(HTML27)
 		for name2,url2,image2,fanart2 in match2:
 			if fanart2 == '<':
@@ -425,7 +425,7 @@ def Search_loop():
 			else:
 				if Search_title in name2.lower().replace(' ',''):
 					addDir(name2,url2,1,image2,fanart2,'','','','')	
-		HTML28 = Open_Url('http://supremacy.org.uk/tombraider/dogsbollocks/top10fight.txt')
+		HTML28 = Open_Url('https://raw.githubusercontent.com/tombebbs1/magicdragon/master/top10fight.txt')
 		match2 = re.compile('<title>(.+?)</title>.+?<link>(.+?)</link>.+?<thumbnail>(.+?)</thumbnail>.+?<fanart>(.+?)/fanart>',re.DOTALL).findall(HTML28)
 		for name2,url2,image2,fanart2 in match2:
 			if fanart2 == '<':
@@ -438,7 +438,7 @@ def Search_loop():
 			else:
 				if Search_title in name2.lower().replace(' ',''):
 					addDir(name2,url2,1,image2,fanart2,'','','','')	
-		HTML29 = Open_Url('http://supremacy.org.uk/tombraider/dogsbollocks/top10gangster.txt')
+		HTML29 = Open_Url('https://raw.githubusercontent.com/tombebbs1/magicdragon/master/top10gangster.txt')
 		match2 = re.compile('<title>(.+?)</title>.+?<link>(.+?)</link>.+?<thumbnail>(.+?)</thumbnail>.+?<fanart>(.+?)/fanart>',re.DOTALL).findall(HTML29)
 		for name2,url2,image2,fanart2 in match2:
 			if fanart2 == '<':
@@ -451,7 +451,7 @@ def Search_loop():
 			else:
 				if Search_title in name2.lower().replace(' ',''):
 					addDir(name2,url2,1,image2,fanart2,'','','','')	
-		HTML30 = Open_Url('http://supremacy.org.uk/tombraider/dogsbollocks/top10ghosthorror.txt')
+		HTML30 = Open_Url('https://raw.githubusercontent.com/tombebbs1/magicdragon/master/top10ghosthorror.txt')
 		match2 = re.compile('<title>(.+?)</title>.+?<link>(.+?)</link>.+?<thumbnail>(.+?)</thumbnail>.+?<fanart>(.+?)/fanart>',re.DOTALL).findall(HTML30)
 		for name2,url2,image2,fanart2 in match2:
 			if fanart2 == '<':
@@ -464,7 +464,7 @@ def Search_loop():
 			else:
 				if Search_title in name2.lower().replace(' ',''):
 					addDir(name2,url2,1,image2,fanart2,'','','','')	
-		HTML31 = Open_Url('http://supremacy.org.uk/tombraider/dogsbollocks/top10harrisonford.txt')
+		HTML31 = Open_Url('https://raw.githubusercontent.com/tombebbs1/magicdragon/master/top10harrisonford.txt')
 		match2 = re.compile('<title>(.+?)</title>.+?<link>(.+?)</link>.+?<thumbnail>(.+?)</thumbnail>.+?<fanart>(.+?)/fanart>',re.DOTALL).findall(HTML31)
 		for name2,url2,image2,fanart2 in match2:
 			if fanart2 == '<':
@@ -477,7 +477,7 @@ def Search_loop():
 			else:
 				if Search_title in name2.lower().replace(' ',''):
 					addDir(name2,url2,1,image2,fanart2,'','','','')	
-		HTML32 = Open_Url('http://supremacy.org.uk/tombraider/dogsbollocks/top10horror.txt')
+		HTML32 = Open_Url('https://raw.githubusercontent.com/tombebbs1/magicdragon/master/top10horror.txt')
 		match2 = re.compile('<title>(.+?)</title>.+?<link>(.+?)</link>.+?<thumbnail>(.+?)</thumbnail>.+?<fanart>(.+?)/fanart>',re.DOTALL).findall(HTML32)
 		for name2,url2,image2,fanart2 in match2:
 			if fanart2 == '<':
@@ -490,7 +490,7 @@ def Search_loop():
 			else:
 				if Search_title in name2.lower().replace(' ',''):
 					addDir(name2,url2,1,image2,fanart2,'','','','')	
-		HTML33 = Open_Url('http://supremacy.org.uk/tombraider/dogsbollocks/top10kubrick.txt')
+		HTML33 = Open_Url('https://raw.githubusercontent.com/tombebbs1/magicdragon/master/top10kubrick.txt')
 		match2 = re.compile('<title>(.+?)</title>.+?<link>(.+?)</link>.+?<thumbnail>(.+?)</thumbnail>.+?<fanart>(.+?)/fanart>',re.DOTALL).findall(HTML33)
 		for name2,url2,image2,fanart2 in match2:
 			if fanart2 == '<':
@@ -503,7 +503,7 @@ def Search_loop():
 			else:
 				if Search_title in name2.lower().replace(' ',''):
 					addDir(name2,url2,1,image2,fanart2,'','','','')	
-		HTML34 = Open_Url('http://supremacy.org.uk/tombraider/dogsbollocks/top10musicals.txt')
+		HTML34 = Open_Url('https://raw.githubusercontent.com/tombebbs1/magicdragon/master/top10musicals.txt')
 		match2 = re.compile('<title>(.+?)</title>.+?<link>(.+?)</link>.+?<thumbnail>(.+?)</thumbnail>.+?<fanart>(.+?)/fanart>',re.DOTALL).findall(HTML34)
 		for name2,url2,image2,fanart2 in match2:
 			if fanart2 == '<':
@@ -516,7 +516,7 @@ def Search_loop():
 			else:
 				if Search_title in name2.lower().replace(' ',''):
 					addDir(name2,url2,1,image2,fanart2,'','','','')	
-		HTML35 = Open_Url('http://supremacy.org.uk/tombraider/dogsbollocks/top10oscarwinners.txt')
+		HTML35 = Open_Url('https://raw.githubusercontent.com/tombebbs1/magicdragon/master/top10oscarwinners.txt')
 		match2 = re.compile('<title>(.+?)</title>.+?<link>(.+?)</link>.+?<thumbnail>(.+?)</thumbnail>.+?<fanart>(.+?)/fanart>',re.DOTALL).findall(HTML35)
 		for name2,url2,image2,fanart2 in match2:
 			if fanart2 == '<':
@@ -529,7 +529,7 @@ def Search_loop():
 			else:
 				if Search_title in name2.lower().replace(' ',''):
 					addDir(name2,url2,1,image2,fanart2,'','','','')	
-		HTML36 = Open_Url('http://supremacy.org.uk/tombraider/dogsbollocks/top10romance.txt')
+		HTML36 = Open_Url('https://raw.githubusercontent.com/tombebbs1/magicdragon/master/top10romance.txt')
 		match2 = re.compile('<title>(.+?)</title>.+?<link>(.+?)</link>.+?<thumbnail>(.+?)</thumbnail>.+?<fanart>(.+?)/fanart>',re.DOTALL).findall(HTML36)
 		for name2,url2,image2,fanart2 in match2:
 			if fanart2 == '<':
@@ -542,7 +542,7 @@ def Search_loop():
 			else:
 				if Search_title in name2.lower().replace(' ',''):
 					addDir(name2,url2,1,image2,fanart2,'','','','')	
-		HTML37 = Open_Url('http://supremacy.org.uk/tombraider/dogsbollocks/top10scifi.txt')
+		HTML37 = Open_Url('https://raw.githubusercontent.com/tombebbs1/magicdragon/master/top10scifi.txt')
 		match2 = re.compile('<title>(.+?)</title>.+?<link>(.+?)</link>.+?<thumbnail>(.+?)</thumbnail>.+?<fanart>(.+?)/fanart>',re.DOTALL).findall(HTML37)
 		for name2,url2,image2,fanart2 in match2:
 			if fanart2 == '<':
@@ -555,7 +555,7 @@ def Search_loop():
 			else:
 				if Search_title in name2.lower().replace(' ',''):
 					addDir(name2,url2,1,image2,fanart2,'','','','')
-		HTML38 = Open_Url('http://supremacy.org.uk/tombraider/dogsbollocks/top10spielberg.txt')
+		HTML38 = Open_Url('https://raw.githubusercontent.com/tombebbs1/magicdragon/master/top10spielberg.txt')
 		match2 = re.compile('<title>(.+?)</title>.+?<link>(.+?)</link>.+?<thumbnail>(.+?)</thumbnail>.+?<fanart>(.+?)/fanart>',re.DOTALL).findall(HTML38)
 		for name2,url2,image2,fanart2 in match2:
 			if fanart2 == '<':
@@ -568,7 +568,7 @@ def Search_loop():
 			else:
 				if Search_title in name2.lower().replace(' ',''):
 					addDir(name2,url2,1,image2,fanart2,'','','','')	
-		HTML39 = Open_Url('http://supremacy.org.uk/tombraider/dogsbollocks/top10stephenking.txt')
+		HTML39 = Open_Url('https://raw.githubusercontent.com/tombebbs1/magicdragon/master/top10stephenking.txt')
 		match2 = re.compile('<title>(.+?)</title>.+?<link>(.+?)</link>.+?<thumbnail>(.+?)</thumbnail>.+?<fanart>(.+?)/fanart>',re.DOTALL).findall(HTML39)
 		for name2,url2,image2,fanart2 in match2:
 			if fanart2 == '<':
@@ -581,7 +581,7 @@ def Search_loop():
 			else:
 				if Search_title in name2.lower().replace(' ',''):
 					addDir(name2,url2,1,image2,fanart2,'','','','')	
-		HTML40 = Open_Url('http://supremacy.org.uk/tombraider/dogsbollocks/top10vampire.txt')
+		HTML40 = Open_Url('https://raw.githubusercontent.com/tombebbs1/magicdragon/master/top10vampire.txt')
 		match2 = re.compile('<title>(.+?)</title>.+?<link>(.+?)</link>.+?<thumbnail>(.+?)</thumbnail>.+?<fanart>(.+?)/fanart>',re.DOTALL).findall(HTML40)
 		for name2,url2,image2,fanart2 in match2:
 			if fanart2 == '<':
@@ -594,7 +594,7 @@ def Search_loop():
 			else:
 				if Search_title in name2.lower().replace(' ',''):
 					addDir(name2,url2,1,image2,fanart2,'','','','')
-		HTML41 = Open_Url('http://supremacy.org.uk/tombraider/dogsbollocks/top10war.txt')
+		HTML41 = Open_Url('https://raw.githubusercontent.com/tombebbs1/magicdragon/master/top10war.txt')
 		match2 = re.compile('<title>(.+?)</title>.+?<link>(.+?)</link>.+?<thumbnail>(.+?)</thumbnail>.+?<fanart>(.+?)/fanart>',re.DOTALL).findall(HTML41)
 		for name2,url2,image2,fanart2 in match2:
 			if fanart2 == '<':
@@ -607,7 +607,7 @@ def Search_loop():
 			else:
 				if Search_title in name2.lower().replace(' ',''):
 					addDir(name2,url2,1,image2,fanart2,'','','','')
-		HTML42 = Open_Url('http://supremacy.org.uk/tombraider/dogsbollocks/top10westerns.txt')
+		HTML42 = Open_Url('https://raw.githubusercontent.com/tombebbs1/magicdragon/master/top10westerns.txt')
 		match2 = re.compile('<title>(.+?)</title>.+?<link>(.+?)</link>.+?<thumbnail>(.+?)</thumbnail>.+?<fanart>(.+?)/fanart>',re.DOTALL).findall(HTML42)
 		for name2,url2,image2,fanart2 in match2:
 			if fanart2 == '<':
@@ -620,7 +620,7 @@ def Search_loop():
 			else:
 				if Search_title in name2.lower().replace(' ',''):
 					addDir(name2,url2,1,image2,fanart2,'','','','')	
-		HTML49 = Open_Url('http://supremacy.org.uk/tombraider/dogsbollocks/nr2.txt')
+		HTML49 = Open_Url('https://raw.githubusercontent.com/tombebbs1/magicdragon/master/nr2.txt')
 		match2 = re.compile('<title>(.+?)</title>.+?<link>(.+?)</link>.+?<thumbnail>(.+?)</thumbnail>.+?<fanart>(.+?)/fanart>',re.DOTALL).findall(HTML49)
 		for name2,url2,image2,fanart2 in match2:
 			if fanart2 == '<':
@@ -633,7 +633,7 @@ def Search_loop():
 			else:
 				if Search_title in name2.lower().replace(' ',''):
 					addDir(name2,url2,1,image2,fanart2,'','','','')	
-		HTML50 = Open_Url('http://supremacy.org.uk/tombraider/dogsbollocks/oldepisodes.txt')
+		HTML50 = Open_Url('https://raw.githubusercontent.com/tombebbs1/magicdragon/master/oldepisodes.txt')
 		match2 = re.compile('<title>(.+?)</title>.+?<link>(.+?)</link>.+?<thumbnail>(.+?)</thumbnail>.+?<fanart>(.+?)/fanart>',re.DOTALL).findall(HTML50)
 		for name2,url2,image2,fanart2 in match2:
 			if fanart2 == '<':
@@ -646,7 +646,7 @@ def Search_loop():
 			else:
 				if Search_title in name2.lower().replace(' ',''):
 					addDir(name2,url2,1,image2,fanart2,'','','','')
-		HTML51 = Open_Url('http://supremacy.org.uk/tombraider/dogsbollocks/xmasmovies.txt')
+		HTML51 = Open_Url('https://raw.githubusercontent.com/tombebbs1/magicdragon/master/xmasmovies.txt')
 		match2 = re.compile('<title>(.+?)</title>.+?<link>(.+?)</link>.+?<thumbnail>(.+?)</thumbnail>.+?<fanart>(.+?)/fanart>',re.DOTALL).findall(HTML51)
 		for name2,url2,image2,fanart2 in match2:
 			if fanart2 == '<':
@@ -659,7 +659,7 @@ def Search_loop():
 			else:
 				if Search_title in name2.lower().replace(' ',''):
 					addDir(name2,url2,1,image2,fanart2,'','','','')	
-		HTML52 = Open_Url('http://supremacy.org.uk/tombraider/dogsbollocks/TorrentsHD.txt')
+		HTML52 = Open_Url('https://raw.githubusercontent.com/tombebbs1/magicdragon/master/TorrentsHD.txt')
 		match2 = re.compile('<title>(.+?)</title>.+?<link>(.+?)</link>.+?<thumbnail>(.+?)</thumbnail>.+?<fanart>(.+?)/fanart>',re.DOTALL).findall(HTML52)
 		for name2,url2,image2,fanart2 in match2:
 			if fanart2 == '<':
@@ -672,7 +672,7 @@ def Search_loop():
 			else:
 				if Search_title in name2.lower().replace(' ',''):
 					addDir(name2,url2,1,image2,fanart2,'','','','')	
-		HTML53 = Open_Url('http://supremacy.org.uk/tombraider/dogsbollocks/nr3.txt')
+		HTML53 = Open_Url('https://raw.githubusercontent.com/tombebbs1/magicdragon/master/nr3.txt')
 		match2 = re.compile('<title>(.+?)</title>.+?<link>(.+?)</link>.+?<thumbnail>(.+?)</thumbnail>.+?<fanart>(.+?)/fanart>',re.DOTALL).findall(HTML53)
 		for name2,url2,image2,fanart2 in match2:
 			if fanart2 == '<':
@@ -935,7 +935,7 @@ def getSoup(url,data=None):
 
 
 def getData(url,fanart):
-	if 'http://supremacy.org.uk/tombraider/dogsbollocks/latesttv.txt' in url:
+	if 'https://raw.githubusercontent.com/tombebbs1/magicdragon/master/latesttv.txt' in url:
 		catchuptv()
 	else:
 		print 'url-getData',url

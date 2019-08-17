@@ -323,6 +323,20 @@ class sources:
         except:
             pass
 
+# Doko'S Dupe Checker for cleaning results.
+    def uniqueSourcesGen(self, sources):
+        uniqueURLs = set()
+        for source in sources:
+            url = source['url']
+            if isinstance(url, basestring):
+                if url not in uniqueURLs:
+                    uniqueURLs.add(url)
+                    yield source  # Yield the unique source.
+                else:
+                    pass  # Ignore duped sources.
+            else:
+                yield source  # Always yield non-string url sources.
+
     def getSources(self, title, year, imdb, tvdb, season, episode, tvshowtitle, premiered, quality='HD', timeout=30):
 
         progressDialog = control.progressDialog if control.setting(
@@ -412,6 +426,9 @@ class sources:
         source_sd = d_source_sd = 0
         total = d_total = 0
 
+        pre_emp = control.setting('preemptive.termination')
+        pre_emp_limit = control.setting('preemptive.limit')
+
         debrid_list = debrid.debrid_resolvers
         debrid_status = debrid.status()
 
@@ -420,6 +437,19 @@ class sources:
         pdiag_bg_format = '4K:%s(%s)|1080p:%s(%s)|720p:%s(%s)|SD:%s(%s)|T:%s(%s)'.split('|')
 
         for i in range(0, 4 * timeout):
+            if str(pre_emp) == 'true':
+                if quality in ['1', '0']:
+                    if (source_1080 + d_source_1080) >= int(pre_emp_limit):
+                        break
+                elif quality in ['2']:
+                    if (source_720 + d_source_720) >= int(pre_emp_limit):
+                        break
+                elif quality in ['3']:
+                    if (source_sd + d_source_sd) >= int(pre_emp_limit):
+                        break
+                else:
+                    if (source_sd + d_source_sd) >= int(pre_emp_limit):
+                        break
             try:
                 if xbmc.abortRequested is True:
                     return sys.exit()
@@ -458,19 +488,19 @@ class sources:
                     if len(self.sources) > 0:
                         for d in debrid_list:
                             if quality in ['0']:
-                                d_source_4k = len([e for e in self.sources if e['quality'] == '4K' and d.valid_url(str(e['url']), e['source'])])
-                                d_source_1080 = len([e for e in self.sources if e['quality'] in '1080p' and d.valid_url(str(e['url']), e['source'])])
-                                d_source_720 = len([e for e in self.sources if e['quality'] in '720p' and d.valid_url(str(e['url']), e['source'])])
-                                d_source_sd = len([e for e in self.sources if e['quality'] == 'SD' and d.valid_url(str(e['url']), e['source'])])
+                                d_source_4k = len([e for e in self.sources if e['quality'] == '4K' and d.valid_url(e['url'], e['source'])])
+                                d_source_1080 = len([e for e in self.sources if e['quality'] in '1080p' and d.valid_url(e['url'], e['source'])])
+                                d_source_720 = len([e for e in self.sources if e['quality'] in '720p' and d.valid_url(e['url'], e['source'])])
+                                d_source_sd = len([e for e in self.sources if e['quality'] == 'SD' and d.valid_url(e['url'], e['source'])])
                             elif quality in ['1']:
-                                d_source_1080 = len([e for e in self.sources if e['quality'] in '1080p' and d.valid_url(str(e['url']), e['source'])])
-                                d_source_720 = len([e for e in self.sources if e['quality'] in '720p' and d.valid_url(str(e['url']), e['source'])])
-                                d_source_sd = len([e for e in self.sources if e['quality'] == 'SD' and d.valid_url(str(e['url']), e['source'])])
+                                d_source_1080 = len([e for e in self.sources if e['quality'] in '1080p' and d.valid_url(e['url'], e['source'])])
+                                d_source_720 = len([e for e in self.sources if e['quality'] in '720p' and d.valid_url(e['url'], e['source'])])
+                                d_source_sd = len([e for e in self.sources if e['quality'] == 'SD' and d.valid_url(e['url'], e['source'])])
                             elif quality in ['2']:
-                                d_source_720 = len([e for e in self.sources if e['quality'] in '720p' and d.valid_url(str(e['url']), e['source'])])
-                                d_source_sd = len([e for e in self.sources if e['quality'] == 'SD' and d.valid_url(str(e['url']), e['source'])])
+                                d_source_720 = len([e for e in self.sources if e['quality'] in '720p' and d.valid_url(e['url'], e['source'])])
+                                d_source_sd = len([e for e in self.sources if e['quality'] == 'SD' and d.valid_url(e['url'], e['source'])])
                             else:
-                                d_source_sd = len([e for e in self.sources if e['quality'] == 'SD' and d.valid_url(str(e['url']), e['source'])])
+                                d_source_sd = len([e for e in self.sources if e['quality'] == 'SD' and d.valid_url(e['url'], e['source'])])
 
                             d_total = d_source_4k + d_source_1080 + d_source_720 + d_source_sd
 
@@ -842,6 +872,14 @@ class sources:
         filter += [i for i in self.sources if i['direct'] is False]
         self.sources = filter
 
+        try:  # Dupe Check Code
+            if control.setting('remove.dupes') == 'true':
+                self.sources = list(self.uniqueSourcesGen(filter))
+            else:
+                self.sources = filter
+        except:
+            self.sources = filter
+
         filter = []
 
         for d in debrid.debrid_resolvers:
@@ -898,7 +936,7 @@ class sources:
             self.sources = [i for i in self.sources if not i['language'] ==
                             'en'] + [i for i in self.sources if i['language'] == 'en']
         
-        self.sources = self.sources[:2500]
+        self.sources = self.sources[:4500]
 
         extra_info = control.setting('sources.extrainfo')
 
@@ -1005,7 +1043,7 @@ class sources:
             provider = item['provider']
             call = [i[1] for i in self.sourceDict if i[0] == provider][0]
             u = url = call.resolve(url)
-            if url is None or '://' not in url and not local and 'magnet:' not in url:
+            if url is None or (not '://' in url and not local and 'magnet:' not in url):
                 raise Exception()
 
             if not local:

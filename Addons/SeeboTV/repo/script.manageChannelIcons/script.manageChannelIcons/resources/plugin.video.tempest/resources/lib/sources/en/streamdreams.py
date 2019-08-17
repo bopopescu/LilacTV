@@ -2,7 +2,7 @@
 
 """
     **Created by Tempest**
-
+    Thanks Jewbmx For the fix
 """
 
 from resources.lib.modules import cleantitle
@@ -17,8 +17,8 @@ class source:
         self.language = ['en']
         self.domains = ['streamdreams.org']
         self.base_link = 'https://streamdreams.org'
-        self.search_movie = '/movies/%s'
-        self.search_tv = '/shows/%s'
+        self.search_movie = '/movies/!!-%s/'
+        self.search_tv = '/shows/!!-%s/'
         self.scraper = cfscrape.create_scraper()
 
     def movie(self, imdb, title, localtitle, aliases, year):
@@ -31,24 +31,26 @@ class source:
 
     def tvshow(self, imdb, tvdb, tvshowtitle, localtvshowtitle, aliases, year):
         try:
-            url = cleantitle.geturl(tvshowtitle)
+            tvtitle = cleantitle.geturl(tvshowtitle)
+            url = self.base_link + self.search_tv % tvtitle
             return url
         except:
             return
 
     def episode(self, url, imdb, tvdb, title, premiered, season, episode):
         try:
-            if not url: return
-
-            url = self.base_link + self.search_tv % url
+            if not url:
+                return
             url = url + '?session=%s&episode=%s' % (season, episode)
             return url
         except:
             return
 
     def sources(self, url, hostDict, hostprDict):
+        sources = []
         try:
-            sources = []
+            if url is None:
+                return sources
             hostDict = hostprDict + hostDict
             headers = {'Referer': url}
             r = self.scraper.get(url, headers=headers).content
@@ -56,15 +58,12 @@ class source:
             for t in u:
                 match = client.parseDOM(t, 'a', ret='data-href')
                 for url in match:
-                    if 'BDRip' in url:
-                        quality = '720p'
-                    elif 'HD' in url:
-                        quality = '720p'
-                    else:
-                        quality = 'SD'
+                    if url in str(sources):
+                        continue
+                    quality, info = source_utils.get_release_quality(url, url)
                     valid, host = source_utils.is_host_valid(url, hostDict)
                     if valid:
-                        sources.append({'source': host, 'quality': quality, 'language': 'en', 'url': url, 'direct': False, 'debridonly': False})
+                        sources.append({'source': host, 'quality': quality, 'language': 'en', 'info': info, 'url': url, 'direct': False, 'debridonly': False})
             return sources
         except:
             return sources

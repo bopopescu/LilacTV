@@ -1089,7 +1089,7 @@ For updates check the readme.
   </extension>
 </addon>
 
-<addon id="script.manageChannelIcons" name="Management for channels' icons" version="1.0.28" provider-name="BadJin">
+<addon id="script.manageChannelIcons" name="Management for channels' icons" version="1.0.29" provider-name="BadJin">
   <requires>
 	<import addon="xbmc.python" version="2.19.0"/>
   </requires>

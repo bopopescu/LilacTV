@@ -48,15 +48,15 @@ def TargetFileUpdate(tFile,tPath):
 def TargetFileUpdate2(tFile,tPath):
   Flag = False
   sPath=os.path.join(__lib__, tFile)
-  if os.path.exists(sPath):  
+  if os.path.exists(sPath):
     if not os.path.exists(os.path.join(tPath,tFile)):
       #xbmc.executebuiltin("XBMC.UpdateAddonRepos()")
       #time.sleep(2)
       #xbmc.executebuiltin("XBMC.InstallAddon(%s)" % tFile)
       os.system("cp -r "+sPath+" "+tPath)
       Flag = True
-    
-    os.system("rm -rf "+sPath)    
+
+    os.system("rm -rf "+sPath)
 
   return Flag
 
@@ -66,7 +66,7 @@ def TargetFileRemove(tFile,tPath):
     os.system("rm -rf "+sPath)
 
 
-def dis_or_enable_addon(addon_id, enable="true"):    
+def dis_or_enable_addon(addon_id, enable="true"):
     addon = '"%s"' % addon_id
     if xbmc.getCondVisibility("System.HasAddon(%s)" % addon_id) and enable == "true":
         return xbmc.log("### Skipped %s, reason = allready enabled" % addon_id)
@@ -80,7 +80,7 @@ def dis_or_enable_addon(addon_id, enable="true"):
         if enable == "true":
             xbmc.log("### Enabled %s, response = %s" % (addon_id, response))
         else:
-            xbmc.log("### Disabled %s, response = %s" % (addon_id, response))            
+            xbmc.log("### Disabled %s, response = %s" % (addon_id, response))
     return xbmc.executebuiltin('Container.Update(%s)' % xbmc.getInfoLabel('Container.FolderPath'))
 
 
@@ -107,8 +107,8 @@ if __name__=='__main__':
   sPath=os.path.join(USERPATH1,"plugin.video.afl-video")
   if os.path.exists(sPath):
     str1="AFL / NRL /Cricket / netball"
- 
-    dialog = xbmcgui.Dialog()    
+
+    dialog = xbmcgui.Dialog()
     yes = dialog.yesno("Remove add-ons",str1,"These Add-ons will no longer be operating.","Please refer [http://aussieaddons.com]")
     if yes:
       TargetFileRemove("plugin.video.afl-video",USERPATH1)
@@ -121,8 +121,8 @@ if __name__=='__main__':
   sPath=os.path.join(USERPATH1,"plugin.video.covenant")
   if os.path.exists(sPath):
     str1="StreamHub / Survivor / Covenant"
- 
-    dialog = xbmcgui.Dialog()    
+
+    dialog = xbmcgui.Dialog()
     yes = dialog.yesno("Remove add-ons",str1,"These Add-ons will no longer be operating.")
     if yes:
       TargetFileRemove("plugin.video.streamhub",USERPATH1)
@@ -133,8 +133,8 @@ if __name__=='__main__':
 
   sPath=os.path.join(USERPATH1,"plugin.video.neptune")
   if os.path.exists(sPath):
-    str1="Neptune Rising" 
-    dialog = xbmcgui.Dialog()    
+    str1="Neptune Rising"
+    dialog = xbmcgui.Dialog()
     yes = dialog.yesno("Remove add-ons",str1,"This Add-on will no longer be operating.")
     if yes:
       TargetFileRemove("plugin.video.neptune",USERPATH1)
@@ -174,7 +174,7 @@ if __name__=='__main__':
       str3="The system will be restarted to enable this add-on."
       dialog = xbmcgui.Dialog()
       dialog.ok("Update new add-on for movies TV shows",str2,str3)
-      time.sleep(1)      
+      time.sleep(1)
       RebootFlag = True
 
     str1 = "plugin.video.tempest"
@@ -186,19 +186,19 @@ if __name__=='__main__':
       str3="The system will be restarted to enable this add-on."
       dialog = xbmcgui.Dialog()
       dialog.ok("Update new add-on for movies TV shows",str2,str3)
-      time.sleep(1)      
+      time.sleep(1)
       RebootFlag = True
 
   str1 = "plugin.video.kayo.sports"
   sPath=os.path.join(USERPATH1,str1)
-  if not os.path.exists(sPath) and not os.path.exists("/storage/DontAskAgain"):    
+  if not os.path.exists(sPath) and not os.path.exists("/storage/DontAskAgain"):
     str2="This is an add-on that requires a paid subscription."
     str3="For more information, please visit https://kayosports.com.au"
     str4="Would you like to install it?"
     dialog = xbmcgui.Dialog()
     if dialog.yesno("[Kayo Sports] add-on is available now",str2,str3,str4):
       TargetFileUpdate(str1,USERPATH1)
-      TargetFileUpdate('script.module.arrow',USERPATH1)      
+      TargetFileUpdate('script.module.arrow',USERPATH1)
       dialog = xbmcgui.Dialog()
       dialog.ok("Update new add-on for Spotrs","Kayo Sports","The system will be restarted to enable this add-on.")
       time.sleep(1)
@@ -209,15 +209,12 @@ if __name__=='__main__':
       dialog.ok("[Kayo Sports] add-on is available now",str2,str3)
       os.system("touch /storage/DontAskAgain")
 
-    TargetFileUpdate('inputstream.adaptive',USERPATH1)    
+    TargetFileUpdate('inputstream.adaptive',USERPATH1)
+
+  if os.path.exists(os.path.join(__lib__, "usr/plugin.video.youtube")):
+    TargetFileUpdate("usr/plugin.video.youtube",USERPATH2)
 
   if RebootFlag:
     os.system("reboot")
 
   dis_or_enable_addon("pvr.iptvsimple", "true")
-
-
-
-
-
-

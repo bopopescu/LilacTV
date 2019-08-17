@@ -10,7 +10,7 @@ class source:
         self.priority = 1
         self.language = ['en']
         self.domains = ['yts.am']
-        self.base_link = 'https://yts.am/'
+        self.base_link = 'https://yts.lt/'
         self.search_link = 'browse-movies/%s/all/all/0/latest'
         self.min_seeders = int(control.setting('torrent.min.seeders'))
 
@@ -35,9 +35,7 @@ class source:
             data = dict([(i, data[i][0]) if data[i] else (i, '') for i in data])
             query = '%s %s' % (data['title'], data['year'])
             url = self.search_link % urllib.quote(query)
-            print url
             url = urlparse.urljoin(self.base_link, url)
-            print url
             html = client.request(url)
             try:
                 results = client.parseDOM(html, 'div', attrs={'class': 'row'})[2]

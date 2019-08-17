@@ -56,8 +56,10 @@ class source:
                 r = requests.get(result, timeout=10).content
                 r = re.compile('a href="(.+?)" title=".+?"').findall(r)
                 for url in r:
-                    if not self.title in url: continue
-                    if any(x in url for x in ['Trailer', 'Dubbed', 'rar']): continue
+                    if not self.title in url:
+                        continue
+                    if any(x in url for x in ['Trailer', 'Dubbed', 'rar']):
+                        continue
                     url = result + url
                     quality = source_utils.check_url(url)
                     sources.append({'source': 'DL', 'quality': quality, 'language': 'en', 'url': url, 'direct': True, 'debridonly': False})
@@ -66,8 +68,10 @@ class source:
                     r = requests.get(result, timeout=10).content
                     r = re.findall('a href=".+?" title="(.+?)"', r)
                     for url in r:
-                        if self.se not in url: continue
-                        if any(x in url for x in ['Dubbed']): raise Exception()
+                        if self.se not in url:
+                            continue
+                        if any(x in url for x in ['Dubbed']):
+                            raise Exception()
                         url = result + url
                         quality = source_utils.check_url(url)
                         sources.append({'source': 'DL', 'quality': quality, 'language': 'en', 'url': url, 'direct': True, 'debridonly': False})
@@ -76,8 +80,10 @@ class source:
                     r = requests.get(i, timeout=10).content
                     r = re.findall('a href=".+?" title="(.+?)"', r)
                     for url in r:
-                        if self.se not in url: continue
-                        if any(x in url for x in ['Dubbed']): raise Exception()
+                        if self.se not in url:
+                            continue
+                        if any(x in url for x in ['Dubbed']):
+                            raise Exception()
                         url = i + url
                         quality = source_utils.check_url(url)
                         sources.append({'source': 'DL', 'quality': quality, 'language': 'en', 'url': url, 'direct': True, 'debridonly': False})

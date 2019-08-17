@@ -12,8 +12,8 @@ class source:
     def __init__(self):
         self.priority = 1
         self.language = ['en']
-        self.domains = ['mycouchtuner.li', 'ecouchtuner.eu']
-        self.base_link = 'https://2mycouchtuner.one'
+        self.domains = ['2mycouchtuner.me', '2mycouchtuner.one', 'mycouchtuner.li', 'ecouchtuner.eu']
+        self.base_link = 'https://2mycouchtuner.me'
         self.search_link = '/watch-%s-online/'
         self.scraper = cfscrape.create_scraper()
 
@@ -27,8 +27,9 @@ class source:
 
     def episode(self, url, imdb, tvdb, title, premiered, season, episode):
         try:
-            if not url: return
-            r = client.request(url)
+            if not url:
+                return
+            r = self.scraper.get(url).content
             match = re.compile('2mycouchtuner\..+?/(.+?)/\' title=\'.+? Season ' + season + ' Episode ' + episode + '\:').findall(r)
             for url in match:
                 url = 'https://mycouchtuner.li/' + url
