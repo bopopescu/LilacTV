@@ -121,6 +121,7 @@ def main(config):
     Path = "/storage/.kodi/userdata/addon_data/pvr.hts/settings.xml"
     if not os.path.exists(Path):
         os.system("cp -r /storage/.kodi/addons/script.updateShortCut/pvr.hts /storage/.kodi/userdata/addon_data")
+        time(2)
 
     if os.path.exists(Path):
         stmt_select = "SELECT * FROM items WHERE macaddeth0 = %s"

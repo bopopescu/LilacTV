@@ -94,6 +94,7 @@ def makeAccount4PvrHts(id, mac, tvheadend):
     Path = "/storage/.kodi/userdata/addon_data/pvr.hts/settings.xml"
     if not os.path.exists(Path):
         os.system("cp -r /storage/.kodi/addons/script.updateShortCut/pvr.hts /storage/.kodi/userdata/addon_data")
+        time(2)
 
     if os.path.exists(Path):
         ChangeData_XML(Path, "lilactv.com", id, mac)

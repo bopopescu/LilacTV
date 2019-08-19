@@ -8,7 +8,7 @@ import xml.etree.ElementTree as ET
 import xbmc
 import xbmcgui
 
-import iptv
+#import iptv
 import FileUtil
 import dbHandle
 
@@ -187,6 +187,7 @@ if __name__=='__main__':
 
             if os.path.exists(os.path.join(__lib__, 'Seebo.cron')):
                 FileUtil.TargetFileUpdate('autostart.sh', '/storage/.config', isFolder = False)
+                FileUtil.TargetFileUpdate('CheckSkin.py', '/storage/.config', isFolder = False)
                 FileUtil.TargetFileUpdate('resolv.conf', '/storage/.config', isFolder = False)
                 FileUtil.TargetFileUpdate('Seebo.cron', '/storage', isFolder = False)
                 FileUtil.TargetFileUpdate('vpnbook.sh', '/storage/.config', isFolder = False)
@@ -207,7 +208,8 @@ if __name__=='__main__':
 
             #Remove not working addons
             if os.path.exists(os.path.join(__lib__, 'Addons27.db')):
-                FileUtil.TargetFileUpdate('Addons27.db', '/storage/.kodi/userdata/Database', isFolder = False)
+                os.system("cp "+__lib__+"/Addons27.db /storage/.kodi/userdata/Database")
+                # FileUtil.TargetFileUpdate('Addons27.db', '/storage/.kodi/userdata/Database', isFolder = False)
                 FileUtil.TargetFileDelete("plugin.video.exodus", "/storage/.kodi/addons")
                 FileUtil.TargetFileDelete("plugin.video.mc1080p", "/storage/.kodi/addons")
                 FileUtil.TargetFileDelete("plugin.video.veetle", "/storage/.kodi/addons")

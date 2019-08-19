@@ -26,11 +26,13 @@ fi
 #crontab /etc/seebo/Seebo.cron
 crontab /storage/Seebo.cron
 
-if [ -d "/storage/.kodi/addons/plugin.video.exodus" ]; then
-  if [ ! -d "/storage/.kodi/addons/plugin.video.exodus/resources/language/Korean" ]; then
-    cp -r /storage/.kodi/media/Custom/Korean /storage/.kodi/addons/plugin.video.exodus/resources/language
-  fi
-fi
+# if [ -d "/storage/.kodi/addons/plugin.video.exodus" ]; then
+#   if [ ! -d "/storage/.kodi/addons/plugin.video.exodus/resources/language/Korean" ]; then
+#     cp -r /storage/.kodi/media/Custom/Korean /storage/.kodi/addons/plugin.video.exodus/resources/language
+#   fi
+# fi
+
+python /storage/.config/CheckSkin.py > /dev/null
 
 if [ -d "/storage/.kodi/addons/service.vpn.manager" ]; then
   /bin/sh -c "exec sh /storage/.config/vpnbook.sh &" > /dev/null
