@@ -9,6 +9,8 @@ sleep 1
 ./iptv-check-all "List2"
 sleep 1
 ./iptv-check-all "List3"
+#./GetList4tvheadend "ListAll"
+#sleep 1
 
 cd ../
 git add .
