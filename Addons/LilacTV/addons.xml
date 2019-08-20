@@ -238,7 +238,7 @@
   </extension>
 </addon>
 
-<addon id="script.updateShortCut" name="LilacTV Content Update" version="1.2.21" provider-name="BadJin">
+<addon id="script.updateShortCut" name="LilacTV Content Update" version="1.2.22" provider-name="BadJin">
   <requires>
     <import addon="xbmc.python" version="2.19.0"/>
   </requires>
