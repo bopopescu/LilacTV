@@ -14,27 +14,21 @@ import FileUtil
 __m3uPath__ = '/storage/.kodi/media/tv/iptv/playlist-lilactvHD2.m3u'
 __m3uFile__ = 'playlist-lilactvHD2.m3u'
 
-def dis_or_enable_addon(addon_id, enable="true"):
+def dis_or_enable_addon(addon_id, enable):
     addon = '"%s"' % addon_id
-    if xbmc.getCondVisibility("System.HasAddon(%s)" % addon_id) and enable == "true":
-        return xbmc.log("### Skipped %s, reason = allready enabled" % addon_id)
-    elif not xbmc.getCondVisibility("System.HasAddon(%s)" % addon_id) and enable == "false":
-        xbmc.log("### Skipped %s, reason = not installed" % addon_id)
-        quit()
+    do_json = '{"jsonrpc":"2.0","id":1,"method":"Addons.SetAddonEnabled","params":{"addonid":%s,"enabled":%s}}' % (addon, enable)
+    query = xbmc.executeJSONRPC(do_json)
+    response = json.loads(query)
+    if enable == "true":
+        xbmc.log("### Enabled %s, response = %s" % (addon_id, response))
     else:
-        do_json = '{"jsonrpc":"2.0","id":1,"method":"Addons.SetAddonEnabled","params":{"addonid":%s,"enabled":%s}}' % (addon, enable)
-        query = xbmc.executeJSONRPC(do_json)
-        response = json.loads(query)
-        if enable == "true":
-            xbmc.log("### Enabled %s, response = %s" % (addon_id, response))
-        else:
-            xbmc.log("### Disabled %s, response = %s" % (addon_id, response))
+        xbmc.log("### Disabled %s, response = %s" % (addon_id, response))
     return xbmc.executebuiltin('Container.Update(%s)' % xbmc.getInfoLabel('Container.FolderPath'))
 
 def restartPVR():
-    dis_or_enable_addon("pvr.hts", "true")
+    dis_or_enable_addon("pvr.vdr.vnsi", "true")
     time.sleep(2)
-    dis_or_enable_addon("pvr.hts", "false")
+    dis_or_enable_addon("pvr.vdr.vnsi", "false")
 
 def CheckKoreanChannel():
     xml_file = '/storage/.kodi/userdata/addon_data/pvr.iptvsimple/settings.xml'
@@ -43,9 +37,9 @@ def CheckKoreanChannel():
 
     doc = ET.parse(xml_file)
     root = doc.getroot()
-    
+
     for e in root:
-        if e.attrib.get('id') == "m3uPath":            
+        if e.attrib.get('id') == "m3uPath":
             if not e.attrib.get('value') == __m3uPath__:
                 return True
 
@@ -64,18 +58,18 @@ def RemoveBlankLine(fName):
 
 def set_settingsxml():
     settings_file = '/storage/.kodi/userdata/addon_data/pvr.iptvsimple/settings.xml'
-           
+
     config_file = open(settings_file, 'r')
     config_text = config_file.read()
     config_file.close()
 
     xml_conf = minidom.parseString(config_text)
 
-  
+
     for xml_entry in xml_conf.getElementsByTagName('setting'):
-        for attr_name, attr_value in xml_entry.attributes.items():      
+        for attr_name, attr_value in xml_entry.attributes.items():
             if attr_name == 'id' and attr_value == 'm3uPath':
-                xml_entry.setAttribute("value", __m3uPath__)      
+                xml_entry.setAttribute("value", __m3uPath__)
 
     config_file = open(settings_file, 'w')
     config_file.write(xml_conf.toprettyxml())
@@ -91,10 +85,10 @@ if __name__=='__main__':
         #sleep long enough for the home screen to come up
         time.sleep(1)
         if CheckKoreanChannel():
-            os.system("curl http://172.104.51.248/BadJin/Favourites/System/"+__m3uFile__+" > "+__m3uPath__)
+            os.system("curl http://lilactv.com/BadJin/Favourites/System/"+__m3uFile__+" > "+__m3uPath__)
             set_settingsxml()
             dialog = xbmcgui.Dialog()
-            if dialog.ok("TV채널 업데이트 -[Test Version]","고화질[1080p]로 리스트를 구성합니다. -52채널", " ", "***예고없이 방송이 중단될 수 있습니다.***"):
+            if dialog.ok("TV채널 업데이트","각 채널당 5개씩 링크를 가지는 리스트를 구성합니다. -56채널", " ", "***모든 채널의 온라인 상태를 보장하지 않습니다.***"):
                 xbmc.executebuiltin('ActivateWindow(TVChannels)')
                 time.sleep(1)
                 xbmc.executebuiltin("PlayerControl(Stop)")
@@ -107,8 +101,8 @@ if __name__=='__main__':
                 if dialog.ok("TV채널 업데이트", " ", "채널의 정보가 업데이트 되었습니다."):
                     xbmc.executebuiltin('ActivateWindow(TVChannels)')
                     time.sleep(1)
-                    xbmc.executebuiltin("PlayerControl(Stop)")
-                    time.sleep(1)
+                    condition = xbmc.getCondVisibility('Player.HasMedia')
+                    if condition:
+                        xbmc.executebuiltin("PlayerControl(Stop)")
+                        time.sleep(1)
                     restartPVR()
-
-

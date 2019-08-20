@@ -89,7 +89,7 @@ if __name__=='__main__':
             os.system("curl http://lilactv.com/BadJin/Favourites/System/"+__m3uFile__+" > "+__m3uPath__)
             set_settingsxml()
             dialog = xbmcgui.Dialog()
-            if dialog.ok("TV채널 업데이트 -[Test Version]","고화질[1080p]로 리스트를 구성합니다. -52채널", " ", "***예고없이 방송이 중단될 수 있습니다.***"):
+            if dialog.ok("TV채널 업데이트","각 채널당 5개씩 링크를 가지는 리스트를 구성합니다. -56채널", " ", "***모든 채널의 온라인 상태를 보장하지 않습니다.***"):
                 xbmc.executebuiltin('ActivateWindow(TVChannels)')
                 time.sleep(1)
                 xbmc.executebuiltin("PlayerControl(Stop)")

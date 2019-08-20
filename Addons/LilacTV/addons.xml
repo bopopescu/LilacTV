@@ -424,7 +424,7 @@
   </extension>
 </addon>
 
-<addon id="script.change.HD" name="Change Channel Quality to HD" version="0.0.9" provider-name="BadJin">
+<addon id="script.change.HD" name="Change Channel Quality to HD" version="0.0.10" provider-name="BadJin">
   <requires>
     <import addon="xbmc.python" version="2.19.0"/>
   </requires>
@@ -437,7 +437,7 @@
   </extension>
 </addon>
 
-<addon id="script.change.HD1" name="Change Channel Quality to HD1" version="0.0.9" provider-name="BadJin">
+<addon id="script.change.HD1" name="Change Channel Quality to HD1" version="0.0.10" provider-name="BadJin">
   <requires>
     <import addon="xbmc.python" version="2.19.0"/>
   </requires>
