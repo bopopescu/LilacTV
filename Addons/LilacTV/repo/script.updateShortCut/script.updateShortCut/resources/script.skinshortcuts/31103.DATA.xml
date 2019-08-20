@@ -9,11 +9,19 @@
 		<action>ActivateWindow(TVGuide)</action>
 	</shortcut>
 	<shortcut>
+		<defaultID>script.change.HD</defaultID>
+		<label>채널 리스트 1</label>
+		<label2>프로그램</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://%2fstorage%2f.kodi%2faddons%2fscript.change.HD%2ficon.png/</thumb>
+		<action>ActivateWindow(Programs,"plugin://script.change.HD",return)</action>
+	</shortcut>
+	<shortcut>
 		<defaultID />
-		<label>채널 리스트 선택</label>
+		<label>채널 리스트 2</label>
 		<label2>Custom item</label2>
 		<icon>DefaultShortcut.png</icon>
 		<thumb />
-		<action>ActivateWindow(Programs,"plugin://script.change.HD3",return)</action>
+		<action>ActivateWindow(Programs,"plugin://script.change.HD1",return)</action>
 	</shortcut>
 </shortcuts>
