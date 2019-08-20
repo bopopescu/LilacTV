@@ -220,7 +220,7 @@ def main(config):
         if (row[7] == 1): #owner_id가 admin이면
             setCrontab()
             userid = row[0].replace(':','')+str("%02x" % row[6])
-            if (row[6] < 44): #평생무료 버전
+            if (row[6] < 45): #평생무료 버전
                 showMyMessage(1, userid)
             else:
                 showMyMessage(2, userid)
