@@ -56,6 +56,16 @@ def UpdateChannelURL(m3u_file):
 
 	temp = "imsi.m3u"
 	os.system("cp "+m3u_file+" "+temp)
+
+	# list = ["List1.m3u", "List2.m3u", "List3.m3u"]
+	# tFp = open(temp, "a+")
+	# for n in range(0,3):
+	# 	lFp = open(list[n])
+	# 	List = lFp.read()
+	# 	lFp.close()
+	# 	tFp.write(List)
+	# tFp.close()
+
 	bfp = open(__base_m3u_file__)
 	bm3u_sgml = bfp.read()
 	bfp.close()
@@ -64,7 +74,7 @@ def UpdateChannelURL(m3u_file):
 	if blines < 0:
 		return False
 
-	for n in range(1,3):
+	for n in range(1,11):
 		ifp = open(temp)
 		m3u_sgml = ifp.read()
 		ifp.close()

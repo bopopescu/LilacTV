@@ -8,7 +8,8 @@ echo "  **                                                           by Bad Jin 
 echo "  ****************************************************************************"
 
 tIP="172.104.51.248"
-sourcePath="update/playlist-tvheadend*"
+path=$(pwd)
+sourcePath=$path/update/playlist-tvheadend*
 Password="Por96311"
 
 ip="$(ifconfig | grep -A 1 'eth0' | tail -1 | cut -d ':' -f 2 | cut -d ' ' -f 1)"

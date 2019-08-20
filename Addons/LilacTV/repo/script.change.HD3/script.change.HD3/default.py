@@ -7,12 +7,14 @@ import xbmcgui
 import json
 from xml.dom import minidom
 import xml.etree.ElementTree as ET
+import re
 
 sys.path.append('/storage/.kodi/addons/script.updateShortCut/')
 import FileUtil
 
-__m3uPath__ = '/storage/.kodi/media/tv/iptv/playlist-lilactvHD4.m3u'
-__m3uFile__ = 'playlist-lilactvHD4.m3u'
+__m3uPath__ = '/storage/.kodi/media/tv/iptv/'
+__m3uFile__ = 'playlist-tvheadend'
+# __m3uFile__ = 'playlist-lilactvHD'
 
 def dis_or_enable_addon(addon_id, enable="true"):
     addon = '"%s"' % addon_id
@@ -31,25 +33,47 @@ def dis_or_enable_addon(addon_id, enable="true"):
             xbmc.log("### Disabled %s, response = %s" % (addon_id, response))
     return xbmc.executebuiltin('Container.Update(%s)' % xbmc.getInfoLabel('Container.FolderPath'))
 
+
 def restartPVR():
     dis_or_enable_addon("pvr.hts", "true")
     time.sleep(2)
     dis_or_enable_addon("pvr.hts", "false")
 
-def CheckKoreanChannel():
+
+def GetFileName(no):
+    return __m3uFile__+str(no)+".m3u"
+
+def GetPath(no):
+    return os.path.join(__m3uPath__,__m3uFile__)+str(no)+".m3u"
+
+
+def GetCurrentListNo():
+    xml_file = '/storage/.kodi/userdata/addon_data/pvr.iptvsimple/settings.xml'
+    doc = ET.parse(xml_file)
+    root = doc.getroot()
+
+    for e in root:
+        if e.attrib.get('id') == "m3uPath":
+            path = e.attrib.get('value')
+            break
+
+    no = int(re.findall("\d+",path)[0]) - 1
+    return no
+
+def isSameList(no):
     xml_file = '/storage/.kodi/userdata/addon_data/pvr.iptvsimple/settings.xml'
     if not (os.path.exists(xml_file)):
-        return False
+        return True
 
     doc = ET.parse(xml_file)
     root = doc.getroot()
 
     for e in root:
         if e.attrib.get('id') == "m3uPath":
-            if not e.attrib.get('value') == __m3uPath__:
-                return True
+            if not e.attrib.get('value') == GetPath(no):
+                return False
 
-    return False
+    return True
 
 
 def RemoveBlankLine(fName):
@@ -62,7 +86,7 @@ def RemoveBlankLine(fName):
         f.writelines('\n'.join(clean_lines))
 
 
-def set_settingsxml():
+def set_settingsxml(no):
     settings_file = '/storage/.kodi/userdata/addon_data/pvr.iptvsimple/settings.xml'
 
     config_file = open(settings_file, 'r')
@@ -71,17 +95,37 @@ def set_settingsxml():
 
     xml_conf = minidom.parseString(config_text)
 
-
     for xml_entry in xml_conf.getElementsByTagName('setting'):
         for attr_name, attr_value in xml_entry.attributes.items():
             if attr_name == 'id' and attr_value == 'm3uPath':
-                xml_entry.setAttribute("value", __m3uPath__)
+                xml_entry.setAttribute("value", GetPath(no))
 
     config_file = open(settings_file, 'w')
     config_file.write(xml_conf.toprettyxml())
     config_file.close()
     RemoveBlankLine(settings_file)
 
+
+def ChangeList(no):
+    dialog = xbmcgui.Dialog()
+    if isSameList(no):
+        if FileUtil.UpdateCheck4TVChannels(GetFileName(no)):
+            if dialog.ok("TV채널 업데이트", " ", "채널의 정보가 업데이트 되었습니다."):
+                xbmc.executebuiltin('ActivateWindow(TVChannels)')
+                time.sleep(1)
+                xbmc.executebuiltin("PlayerControl(Stop)")
+                time.sleep(1)
+                restartPVR()
+
+    else:
+        os.system("curl http://lilactv.com/BadJin/Favourites/System/"+GetFileName(no)+" > "+GetPath(no))
+        set_settingsxml(no)
+        if dialog.ok("TV채널 업데이트 -[Test Version]","고화질[1080p]로 리스트를 구성합니다. -56채널", " ", "***각 채널의 동작을 보장하지 않습니다.***"):
+            xbmc.executebuiltin('ActivateWindow(TVChannels)')
+            time.sleep(1)
+            xbmc.executebuiltin("PlayerControl(Stop)")
+            time.sleep(1)
+            restartPVR()
 
 if __name__=='__main__':
 
@@ -90,23 +134,11 @@ if __name__=='__main__':
         xbmc.executebuiltin('ActivateWindow(home)')
         #sleep long enough for the home screen to come up
         time.sleep(1)
-        if CheckKoreanChannel():
-            os.system("curl http://lilactv.com/BadJin/Favourites/System/"+__m3uFile__+" > "+__m3uPath__)
-            set_settingsxml()
-            dialog = xbmcgui.Dialog()
-            if dialog.ok("TV채널 업데이트 -[Test Version]","고화질[1080p]로 리스트를 구성합니다. -52채널", " ", "***예고없이 방송이 중단될 수 있습니다.***"):
-                xbmc.executebuiltin('ActivateWindow(TVChannels)')
-                time.sleep(1)
-                xbmc.executebuiltin("PlayerControl(Stop)")
-                time.sleep(1)
-                restartPVR()
 
-        else:
-            if FileUtil.UpdateCheck4TVChannels(__m3uFile__):
-                dialog = xbmcgui.Dialog()
-                if dialog.ok("TV채널 업데이트", " ", "채널의 정보가 업데이트 되었습니다."):
-                    xbmc.executebuiltin('ActivateWindow(TVChannels)')
-                    time.sleep(1)
-                    xbmc.executebuiltin("PlayerControl(Stop)")
-                    time.sleep(1)
-                    restartPVR()
+        dialog = xbmcgui.Dialog()
+        List = []
+        for n in range(1,11):
+            List.append("Channel List %s" %str(n))
+
+        selectedList = dialog.select("리스트를 선택하세요", List, preselect = GetCurrentListNo())
+        ChangeList(selectedList+1)
