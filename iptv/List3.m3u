@@ -1,8 +1,4 @@
 #EXTM3U
-#EXTINF:-1,SBS Plus
-http://39.120.6.252:9981/stream/channelid/2002617020
-#EXTINF:-1,SBS
-http://39.120.6.252:9981/stream/channelid/625699945
 #EXTINF:-1,KBS2
 http://39.120.6.252:9981/stream/channelid/558228364
 #EXTINF:-1,KBS1
@@ -73,41 +69,3 @@ http://39.120.6.252:9981/stream/channelid/221396403
 http://39.120.6.252:9981/stream/channelid/2133706821
 #EXTINF:-1,SkySports
 http://39.120.6.252:9981/stream/channelid/846199895
-#EXTINF:-1,JTBC3
-http://39.120.6.252:9981/stream/channelid/1178441168
-#EXTINF:-1,SPOTV2
-http://39.120.6.252:9981/stream/channelid/1900609481
-#EXTINF:-1,SBS GOLF
-http://39.120.6.252:9981/stream/channelid/31771979
-#EXTINF:-1,SBS GOLF
-http://39.120.6.252:9981/stream/channelid/988858774
-#EXTINF:-1,JTBC Golf
-http://39.120.6.252:9981/stream/channelid/1081653112
-#EXTINF:-1,JTBC Golf
-http://39.120.6.252:9981/stream/channelid/1558735024
-#EXTINF:-1,OGN
-http://39.120.6.252:9981/stream/channelid/593116703
-#EXTINF:-1,Tooniverse
-http://39.120.6.252:9981/stream/channelid/134173965
-#EXTINF:-1,Disney Channel
-http://39.120.6.252:9981/stream/channelid/521855736
-#EXTINF:-1,디즈니주니어
-http://39.120.6.252:9981/stream/channelid/881889685
-#EXTINF:-1,JEI 재능TV
-http://39.120.6.252:9981/stream/channelid/1201635565
-#EXTINF:-1,온스타일
-http://39.120.6.252:9981/stream/channelid/543180879
-#EXTINF:-1,바둑TV
-http://39.120.6.252:9981/stream/channelid/684120206
-#EXTINF:-1,FTV
-http://39.120.6.252:9981/stream/channelid/1561383638
-#EXTINF:-1,FISHING TV
-http://39.120.6.252:9981/stream/channelid/2090595994
-#EXTINF:-1,SkyTravel
-http://39.120.6.252:9981/stream/channelid/2135718134
-#EXTINF:-1,마운틴TV
-http://39.120.6.252:9981/stream/channelid/2076477558
-#EXTINF:-1,NGC
-http://39.120.6.252:9981/stream/channelid/667834501
-#EXTINF:-1,History
-http://39.120.6.252:9981/stream/channelid/1397766919
