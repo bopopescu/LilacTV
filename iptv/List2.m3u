@@ -1,6 +1,4 @@
 #EXTM3U
-#EXTINF:-1,tvN
-http://211.204.15.24:9981/stream/channelid/1702266421
 #EXTINF:-1,mplex
 http://211.211.167.216:9981/stream/channelid/2115041762
 #EXTINF:-1,SBS
@@ -177,64 +175,6 @@ http://218.39.17.220:9981/stream/channelid/1080984264
 http://218.39.17.220:9981/stream/channelid/1933843837
 #EXTINF:-1,NGC
 http://218.39.17.220:9981/stream/channelid/1598524665
-#EXTINF:-1,FOX
-http://219.250.105.94:9981/stream/channelid/1255053537
-#EXTINF:-1,JTBC Golf
-http://219.250.105.94:9981/stream/channelid/374738416
-#EXTINF:-1,KBS JOY
-http://219.250.105.94:9981/stream/channelid/231227707
-#EXTINF:-1,MBC SPORTS+
-http://219.250.105.94:9981/stream/channelid/1894788338
-#EXTINF:-1,SBS
-http://219.250.105.94:9981/stream/channelid/1829683892
-#EXTINF:-1,SBS GOLF
-http://219.250.105.94:9981/stream/channelid/2021760777
-#EXTINF:-1,SBS Sports
-http://219.250.105.94:9981/stream/channelid/227406816
-#EXTINF:-1,스크린
-http://219.250.105.94:9981/stream/channelid/865179397
-#EXTINF:-1,SPOTV
-http://219.250.105.94:9981/stream/channelid/1156275062
-#EXTINF:-1,SPOTV+
-http://219.250.105.94:9981/stream/channelid/841227773
-#EXTINF:-1,SPOTV2
-http://219.250.105.94:9981/stream/channelid/477406313
-#EXTINF:-1,연합뉴스TV
-http://219.250.105.94:9981/stream/channelid/1147906461
-#EXTINF:-1,KBS1
-http://219.250.105.94:9981/stream/channelid/178453704
-#EXTINF:-1,KBS2
-http://219.250.105.94:9981/stream/channelid/2730145
-#EXTINF:-1,MBC
-http://219.250.105.94:9981/stream/channelid/307725623
-#EXTINF:-1,EBS2
-http://219.250.105.94:9981/stream/channelid/1920704415
-#EXTINF:-1,OGN
-http://219.250.105.94:9981/stream/channelid/429540608
-#EXTINF:-1,KBS N Sports
-http://219.250.105.94:9981/stream/channelid/276926482
-#EXTINF:-1,mplex
-http://219.250.105.94:9981/stream/channelid/587820229
-#EXTINF:-1,OCN
-http://219.250.105.94:9981/stream/channelid/75366710
-#EXTINF:-1,슈퍼액션
-http://219.250.105.94:9981/stream/channelid/2032370256
-#EXTINF:-1,채널CGV
-http://219.250.105.94:9981/stream/channelid/385149967
-#EXTINF:-1,AXN
-http://219.250.105.94:9981/stream/channelid/643884050
-#EXTINF:-1,JTBC
-http://219.250.105.94:9981/stream/channelid/1559598099
-#EXTINF:-1,JTBC2
-http://219.250.105.94:9981/stream/channelid/230703847
-#EXTINF:-1,MBN
-http://219.250.105.94:9981/stream/channelid/1175927034
-#EXTINF:-1,채널A
-http://219.250.105.94:9981/stream/channelid/379879927
-#EXTINF:-1,TV조선
-http://219.250.105.94:9981/stream/channelid/636272785
-#EXTINF:-1,마운틴TV
-http://219.250.105.94:9981/stream/channelid/401253369
 #EXTINF:-1,SPOTV Games
 http://219.250.105.94:9981/stream/channelid/1334671362
 #EXTINF:-1,History
@@ -333,6 +273,58 @@ http://222.236.197.77:9981/stream/channelid/1479490208
 http://222.236.197.77:9981/stream/channelid/183788909
 #EXTINF:-1,바둑TV
 http://222.236.197.77:9981/stream/channelid/304728168
+#EXTINF:-1,AXN
+http://222.237.20.203:9981/stream/channelid/337607018
+#EXTINF:-1,SPOTV
+http://222.237.20.203:9981/stream/channelid/950954029
+#EXTINF:-1,KBS N Sports
+http://222.237.20.203:9981/stream/channelid/1575474299
+#EXTINF:-1,SBS Sports
+http://222.237.20.203:9981/stream/channelid/238640758
+#EXTINF:-1,MBC SPORTS+
+http://222.237.20.203:9981/stream/channelid/1821068375
+#EXTINF:-1,JTBC3
+http://222.237.20.203:9981/stream/channelid/1347144662
+#EXTINF:-1,SPOTV+
+http://222.237.20.203:9981/stream/channelid/92423032
+#EXTINF:-1,SBS GOLF
+http://222.237.20.203:9981/stream/channelid/968341604
+#EXTINF:-1,JTBC Golf
+http://222.237.20.203:9981/stream/channelid/1993283110
+#EXTINF:-1,SPOTV Games
+http://222.237.20.203:9981/stream/channelid/1516303205
+#EXTINF:-1,Disney Channel
+http://222.237.20.203:9981/stream/channelid/499530012
+#EXTINF:-1,디즈니주니어
+http://222.237.20.203:9981/stream/channelid/1218338827
+#EXTINF:-1,JEI 재능TV
+http://222.237.20.203:9981/stream/channelid/857466936
+#EXTINF:-1,FTV
+http://222.237.20.203:9981/stream/channelid/541606576
+#EXTINF:-1,FISHING TV
+http://222.237.20.203:9981/stream/channelid/1568911036
+#EXTINF:-1,채널A
+http://222.237.20.203:9981/stream/channelid/274734846
+#EXTINF:-1,JTBC
+http://222.237.20.203:9981/stream/channelid/1828693994
+#EXTINF:-1,채널A
+http://222.237.20.203:9981/stream/channelid/279582137
+#EXTINF:-1,TV조선
+http://222.237.20.203:9981/stream/channelid/2073205852
+#EXTINF:-1,Mnet
+http://222.237.20.203:9981/stream/channelid/1024685038
+#EXTINF:-1,MBC Every1
+http://222.237.20.203:9981/stream/channelid/86381934
+#EXTINF:-1,KBS DRAMA
+http://222.237.20.203:9981/stream/channelid/831380515
+#EXTINF:-1,tvN
+http://222.237.20.203:9981/stream/channelid/566500633
+#EXTINF:-1,OCN
+http://222.237.20.203:9981/stream/channelid/759578329
+#EXTINF:-1,슈퍼액션
+http://222.237.20.203:9981/stream/channelid/360165631
+#EXTINF:-1,스크린
+http://222.237.20.203:9981/stream/channelid/630510934
 #EXTINF:-1,SBS
 http://114.204.150.69:9981/stream/channelid/1166986084?ticket=1ea286ee6b028d51b9dadf20554ab0f6b24f6dda&profile=htsp
 #EXTINF:-1,바둑TV
@@ -341,8 +333,20 @@ http://114.204.150.69:9981/stream/channelid/946772582?ticket=9300d6c605a3ab63847
 http://114.204.150.69:9981/stream/channelid/2137543220?ticket=9c2c3e62c1bf79c7dc4f4867f4053a2737e493e0&profile=htsp
 #EXTINF:-1,KBS1
 http://114.204.150.69:9981/stream/channelid/93272930?ticket=c0c1bac19d88e60e698bb5692c595f0be374d797&profile=htsp
-#EXTINF:-1,KBS2
-http://114.204.150.69:9981/stream/channelid/1685797477?ticket=88d73b43a52ce331a65b3664fcd042530ffb0781&profile=htsp
+#EXTINF:-1,JTBC
+http://114.204.150.69:9981/stream/channelid/1227783418?ticket=c30cbc8903eeb30dabd008244d267628b62718b6&profile=htsp
+#EXTINF:-1,tvN
+http://114.204.150.69:9981/stream/channelid/1556822812?ticket=0ba78192a55e58e542f168fe5796d0388651bd9c&profile=htsp
+#EXTINF:-1,채널CGV
+http://114.204.150.69:9981/stream/channelid/952077157?ticket=81b03ff31f31af0ed73750b5bfc09980dc19addc&profile=htsp
+#EXTINF:-1,YTN
+http://114.204.150.69:9981/stream/channelid/10426597?ticket=c0ce58330a750c8b60f8f06958c1461a34433513&profile=htsp
+#EXTINF:-1,MBN
+http://114.204.150.69:9981/stream/channelid/1653188558?ticket=e8b43d8a4ba476311e9823bb8d457273667098e4&profile=htsp
+#EXTINF:-1,TV조선
+http://114.204.150.69:9981/stream/channelid/2135572750?ticket=307136ffcb69cd51e7268b3709ef7f280e30a3fa&profile=htsp
+#EXTINF:-1,연합뉴스TV
+http://114.204.150.69:9981/stream/channelid/1024317643?ticket=e79ea80e5057f521521875aab3a453a6d4e92afe&profile=htsp
 #EXTINF:-1,슈퍼액션
 http://114.204.150.69:9981/stream/channelid/2138213845?ticket=73228024238bfdada5a64bd06d9ea50031e67e62&profile=htsp
 #EXTINF:-1,FOX
@@ -353,6 +357,8 @@ http://114.204.150.69:9981/stream/channelid/1383109821?ticket=49281defcd4ae174f3
 http://114.204.150.69:9981/stream/channelid/413995176?ticket=2a9345a304c3ff8f00c14892f857f328b9afb2e2&profile=htsp
 #EXTINF:-1,EBS
 http://114.204.150.69:9981/stream/channelid/1921855933?ticket=fe3ac48367487b834070a06bb4ba1ac44e80edd9&profile=htsp
+#EXTINF:-1,EBS2
+http://114.204.150.69:9981/stream/channelid/474044395?ticket=53fe98f451a48ba78d9a5b4dfba2f7fbd3a0a714&profile=htsp
 #EXTINF:-1,MBC SPORTS+
 http://114.204.150.69:9981/stream/channelid/951818951?ticket=60ab31e0ff6988687d2456fa86d1195b9587b6cf&profile=htsp
 #EXTINF:-1,SPOTV
@@ -367,72 +373,12 @@ http://114.204.150.69:9981/stream/channelid/1346466780?ticket=faa5accaea551d9b01
 http://114.204.150.69:9981/stream/channelid/1964952825?ticket=26d61bdf7a6c8dfad85d43943d264edc8dccacb0&profile=htsp
 #EXTINF:-1,Tooniverse
 http://114.204.150.69:9981/stream/channelid/1127483874?ticket=c2e108743eb1d7475a44b4fa7939cf40af7233df&profile=htsp
-#EXTINF:-1,XtvN
-http://114.204.150.69:9981/stream/channelid/706139971?ticket=3b6de8b428a502b5dfe8f99a92730edaf81e5757&profile=htsp
 #EXTINF:-1,MBC Every1
 http://114.204.150.69:9981/stream/channelid/1987214006?ticket=51f85ab8542a321b6f39f9fabeac629ac36a9c40&profile=htsp
 #EXTINF:-1,올리브
 http://114.204.150.69:9981/stream/channelid/515841251?ticket=b2df4fff9829098e0f1a2fd51d2074f100ddc430&profile=htsp
-#EXTINF:-1,SBS Plus
-http://118.220.53.252:9981/stream/channelid/1058347140?ticket=AC6C0F9973212230BC9DF8E58AAABDDEB5B4F121&profile=pass
-#EXTINF:-1,SBS
-http://118.220.53.252:9981/stream/channelid/1557274725?ticket=4EC8282B6C7BF4B378A2493020C3F6DEC32BF0ED&profile=pass
-#EXTINF:-1,KBS2
-http://118.220.53.252:9981/stream/channelid/842241582?ticket=EA0E0CC30504E8DF889FD1F120D4DB34A5282D54&profile=pass
-#EXTINF:-1,KBS1
-http://118.220.53.252:9981/stream/channelid/1674605077?ticket=4D6B53D72BDFAFB3A9A4604C9841E11838691967&profile=pass
-#EXTINF:-1,MBC
-http://118.220.53.252:9981/stream/channelid/1650323616?ticket=2A9BEDE01CE5E083488B46BE6CEF54B688F227BF&profile=pass
-#EXTINF:-1,JTBC
-http://118.220.53.252:9981/stream/channelid/923291646?ticket=AA563283BC058F3CD39D96F84E0707AB53ECFF2A&profile=pass
 #EXTINF:-1,tvN
 http://118.220.53.252:9981/stream/channelid/28706856?ticket=FE64E0422CBEC9C1A04E189B375DEA613DA9CED2&profile=pass
-#EXTINF:-1,YTN
-http://118.220.53.252:9981/stream/channelid/754493986?ticket=E2BB3FD5541257B11A1C696128233513D3B51E05&profile=pass
-#EXTINF:-1,Mnet
-http://118.220.53.252:9981/stream/channelid/859259216?ticket=379BE5D706A468F5E8077B81B9F1E3D10F0E043E&profile=pass
-#EXTINF:-1,MBC Every1
-http://118.220.53.252:9981/stream/channelid/66317038?ticket=F611FA426B465BAEAD715EC682DDC979575E9DBC&profile=pass
-#EXTINF:-1,KBS DRAMA
-http://118.220.53.252:9981/stream/channelid/1702213239?ticket=25D8CC1E28638F3669367C5ED592B532E72C5455&profile=pass
-#EXTINF:-1,MBC Dramanet
-http://118.220.53.252:9981/stream/channelid/1949107877?ticket=E8292BB841400D968801B4318ACE8FD13A2C146F&profile=pass
-#EXTINF:-1,올리브
-http://118.220.53.252:9981/stream/channelid/1083525040?ticket=1D9D6F6D5DF7FF649DA6D0EF72E211334AEF72B6&profile=pass
-#EXTINF:-1,채널CGV
-http://118.220.53.252:9981/stream/channelid/82299923?ticket=121BE076CA9E7EFA7A571820E665C071CA236102&profile=pass
-#EXTINF:-1,OCN
-http://118.220.53.252:9981/stream/channelid/1634001699?ticket=61750A267B766A1185B79C5B14FD280A14D44DBC&profile=pass
-#EXTINF:-1,슈퍼액션
-http://118.220.53.252:9981/stream/channelid/602106056?ticket=FEE2A41CAC1C0786BF8E685EE6D45146C7568ECE&profile=pass
-#EXTINF:-1,KBS JOY
-http://118.220.53.252:9981/stream/channelid/1745374377?ticket=E46AAE44B2CB3721C7587B87CF2E19C7A2C570D6&profile=pass
-#EXTINF:-1,SBS funE
-http://118.220.53.252:9981/stream/channelid/972417720?ticket=57E149EF303F9E841B41CC3525C4752C3DAB7904&profile=pass
-#EXTINF:-1,JTBC2
-http://118.220.53.252:9981/stream/channelid/490061131?ticket=0BD4B4A7C18C11403A01C23D14E6B3376F5B454E&profile=pass
-#EXTINF:-1,O tvN
-http://118.220.53.252:9981/stream/channelid/658715485?ticket=AD2E10675F8BB61A1CC69B98031938CD3E8972CD&profile=pass
-#EXTINF:-1,XtvN
-http://118.220.53.252:9981/stream/channelid/507495227?ticket=57806F4D5C09B5E4A544205994C75B36A532618B&profile=pass
-#EXTINF:-1,SPOTV
-http://118.220.53.252:9981/stream/channelid/1734658101?ticket=376FE086A8A57FABCFD7CC32678ECDE331B8BAA9&profile=pass
-#EXTINF:-1,KBS N Sports
-http://118.220.53.252:9981/stream/channelid/1071002009?ticket=DDBCC2D6662D33F04B4BBC2DB0B837472DBC77F7&profile=pass
-#EXTINF:-1,SkySports
-http://118.220.53.252:9981/stream/channelid/1199176553?ticket=4396D95CD37B4EE0058B1F5041930EFA80977E57&profile=pass
-#EXTINF:-1,JTBC3
-http://118.220.53.252:9981/stream/channelid/1700516739?ticket=26F46790BE85A93BFD16333A1C0E0C03D1E923FA&profile=pass
-#EXTINF:-1,SBS GOLF
-http://118.220.53.252:9981/stream/channelid/1414055978?ticket=85A5BFF4AFECBBD2625D4ECB7BE2FC9C56FD67EF&profile=pass
-#EXTINF:-1,JTBC Golf
-http://118.220.53.252:9981/stream/channelid/280370862?ticket=55CB24DBCF6440AF36DFA1040A70A09CE42E01F0&profile=pass
-#EXTINF:-1,OGN
-http://118.220.53.252:9981/stream/channelid/912954043?ticket=5777483D7B0C151F92F92F3862D90B547BCB0CF5&profile=pass
-#EXTINF:-1,SkyTravel
-http://118.220.53.252:9981/stream/channelid/1783954994?ticket=BC07DBEF3C23137C0BD0D3E413FFF0BA5E033763&profile=pass
-#EXTINF:-1,tvN
-http://211.204.15.24:9981/stream/channelid/1702266421?ticket=AA6238010CC9A4DA8AEDE86FC9FD41F97A71E56B&profile=pass
 #EXTINF:-1,FOX
 http://219.250.105.94:9981/stream/channelid/1255053537?ticket=752FFF9E4A21380CAC76FBD18D3E13AC4C42AFB8&profile=pass
 #EXTINF:-1,JTBC Golf
