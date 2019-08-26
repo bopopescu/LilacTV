@@ -1,6 +1,4 @@
 #EXTM3U
-#EXTINF:-1,KBS JOY
-http://222.237.20.203:9981/stream/channelid/1074183948
 #EXTINF:-1,AXN
 http://222.237.20.203:9981/stream/channelid/337607018
 #EXTINF:-1,SPOTV
@@ -13,12 +11,8 @@ http://222.237.20.203:9981/stream/channelid/238640758
 http://222.237.20.203:9981/stream/channelid/1821068375
 #EXTINF:-1,JTBC3
 http://222.237.20.203:9981/stream/channelid/1347144662
-#EXTINF:-1,SPOTV+
-http://222.237.20.203:9981/stream/channelid/92423032
 #EXTINF:-1,SPOTV2
 http://222.237.20.203:9981/stream/channelid/1780550778
-#EXTINF:-1,SBS GOLF
-http://222.237.20.203:9981/stream/channelid/968341604
 #EXTINF:-1,JTBC Golf
 http://222.237.20.203:9981/stream/channelid/1993283110
 #EXTINF:-1,SPOTV Games
@@ -56,4 +50,6 @@ http://222.237.20.203:9981/stream/channelid/360165631
 #EXTINF:-1,스크린
 http://222.237.20.203:9981/stream/channelid/630510934
 #EXTINF:-1,mplex
-http://222.237.20.203:9981/stream/channelid/
+http://222.237.20.203:9981/stream/channelid/283780135
+#EXTINF:-1,SBS Plus
+http://222.237.20.203:9981/stream/channelid/1888931643
