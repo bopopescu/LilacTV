@@ -240,6 +240,7 @@ if __name__=='__main__':
         AddNewAddon('repository.supremacy', 'plugin.video.yoda')
         AddNewAddon('repository.lilac', 'plugin.video.kayo.sports')
         AddNewAddon('repository.matthuisman', 'plugin.video.au.freeview')
+        AddNewAddon('repository.exodusredux', 'plugin.video.exodusredux')
         AddNewRepo('repository.EzzerMacsWizard')
         #api update to devs one as 5
         AddNewAddon('repository.lilac', 'plugin.video.youtube')

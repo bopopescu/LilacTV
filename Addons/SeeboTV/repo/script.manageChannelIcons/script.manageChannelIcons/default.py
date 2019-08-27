@@ -15,7 +15,6 @@ __lib__ = os.path.join( __cwd__, 'resources')
 USERPATH1 = os.path.join('/storage/.xbmc/addons')
 USERPATH2 = os.path.join('/storage/.xbmc/userdata/addon_data')
 
-
 def replace(fName, srcStr, desStr):
   fi=open(fName)
   text=fi.read()
@@ -83,7 +82,58 @@ def dis_or_enable_addon(addon_id, enable="true"):
             xbmc.log("### Disabled %s, response = %s" % (addon_id, response))
     return xbmc.executebuiltin('Container.Update(%s)' % xbmc.getInfoLabel('Container.FolderPath'))
 
+def installAddon(version,addon):
+    sFile = addon+"-"+version+".zip"
+    fullpath = "http://services.seebo.com.au/seebo_addons/hex/repo/"+addon+"/"+sFile
+    zipPath = USERPATH1+"/packages/"+sFile
+    os.system("curl "+fullpath+" > "+zipPath)
+    time.sleep(1)
+    os.system("unzip "+zipPath+" -d "+USERPATH1)
 
+def dialog4Addons(name):
+    str="The system will be restarted to enable this add-on."
+    dialog = xbmcgui.Dialog()
+    return dialog.ok("Update new add-on for movies TV shows","["+name+"]",str)
+
+def addons4MagicDragon():
+    addon = "plugin.video.themagicdragon"
+    if not os.path.exists(os.path.join(USERPATH1,addon)):
+        installAddon("1.30",addon)
+        return dialog4Addons("The Magic Dragon")
+    return False
+
+def addons4Yoda():
+    addon = "plugin.video.yoda"
+    if not os.path.exists(os.path.join(USERPATH1,addon)):
+        installAddon('1.0.3.1',addon)
+        installAddon('1.1.0','script.module.yoda')
+        installAddon('1.0.0','script.yoda.artwork')
+        installAddon('1.0.0','script.yoda.metadata')
+        installAddon('1.1.2','script.realdebrid.mod')
+        return dialog4Addons("Yoda")
+    return False
+
+def addons4Tempest():
+    addon = "plugin.video.tempest"
+    if not os.path.exists(os.path.join(USERPATH1,addon)):
+        installAddon('4.0.88a',addon)
+        installAddon('1.0.2','script.tempest.artwork')
+        installAddon('1.0.1','script.tempest.metadata')
+        return dialog4Addons("Tempest")
+    return False
+
+def addons4ExodusRedux():
+    addon = "plugin.video.exodusredux"
+    if not os.path.exists(os.path.join(USERPATH1,addon)):
+        installAddon('2.0.3a',addon)
+        installAddon('1.0.2','script.exodusredux.artwork')
+        installAddon('1.0.2','script.exodusredux.metadata')
+        installAddon('2.0.3','script.module.exodusredux')
+        installAddon('0.0.1.94','script.module.openscrapers')
+        return dialog4Addons("Exodus-Redux")
+    return False
+
+#======================================================================================================================
 if __name__=='__main__':
   updateICON("SBS ONE HD.png")
   updateICON("SBS VICELAND HD.png")
@@ -145,49 +195,54 @@ if __name__=='__main__':
       time.sleep(1)
       RebootFlag = True
 
-  if TargetFileUpdate2('plugin.video.themagicdragon',USERPATH1):
-    TargetFileUpdate('plugin.video.yoda',USERPATH1)
-    TargetFileUpdate('script.module.yoda',USERPATH1)
-    TargetFileUpdate('script.realdebrid.mod',USERPATH1)
-    TargetFileUpdate('script.yoda.artwork',USERPATH1)
-    TargetFileUpdate('script.yoda.metadata',USERPATH1)
-    TargetFileUpdate('plugin.video.tempest',USERPATH1)
-    TargetFileUpdate('script.tempest.artwork',USERPATH1)
-    TargetFileUpdate('script.tempest.metadata',USERPATH1)
-
-    str1="[The Magic Dragon] [Yoda] [Tempest]"
-    str4="The system will be restarted to enable these add-ons."
+  sPath=os.path.join(USERPATH1,"plugin.video.mc1080p")
+  if os.path.exists(sPath):
+    str1="[MC 1080P]"
     dialog = xbmcgui.Dialog()
-    dialog.ok("Update new add-ons for movies",str1,str4)
-    time.sleep(1)
-    RebootFlag = True
-
-  else:
-    str1 = "plugin.video.yoda"
-    if TargetFileUpdate2(str1,USERPATH1):
-      TargetFileUpdate('script.module.yoda',USERPATH1)
-      TargetFileUpdate('script.realdebrid.mod',USERPATH1)
-      TargetFileUpdate('script.yoda.artwork',USERPATH1)
-      TargetFileUpdate('script.yoda.metadata',USERPATH1)
-
-      str2="[Yoda]"
-      str3="The system will be restarted to enable this add-on."
-      dialog = xbmcgui.Dialog()
-      dialog.ok("Update new add-on for movies TV shows",str2,str3)
+    yes = dialog.yesno("Remove add-ons",str1,"This Add-on will no longer be operating.")
+    if yes:
+      TargetFileRemove("plugin.video.mc1080p",USERPATH1)
       time.sleep(1)
       RebootFlag = True
 
-    str1 = "plugin.video.tempest"
-    if TargetFileUpdate2(str1,USERPATH1):
-      TargetFileUpdate('script.tempest.artwork',USERPATH1)
-      TargetFileUpdate('script.tempest.metadata',USERPATH1)
-
-      str2="[Tempest]"
-      str3="The system will be restarted to enable this add-on."
-      dialog = xbmcgui.Dialog()
-      dialog.ok("Update new add-on for movies TV shows",str2,str3)
+  sPath=os.path.join(USERPATH1,"plugin.video.placenta")
+  if os.path.exists(sPath):
+    str1="[Placenta]"
+    dialog = xbmcgui.Dialog()
+    yes = dialog.yesno("Remove add-ons",str1,"This Add-on will no longer be operating.")
+    if yes:
+      TargetFileRemove("script.placenta.artwork",USERPATH1)
+      TargetFileRemove("script.placenta.metadata",USERPATH1)
+      TargetFileRemove("plugin.video.placenta",USERPATH1)
+      TargetFileRemove("script.module.placenta",USERPATH1)
       time.sleep(1)
       RebootFlag = True
+
+  # sPath=os.path.join(USERPATH1,"plugin.video.exodus")
+  # if os.path.exists(sPath):
+  #   str1="Exodus"
+  #   dialog = xbmcgui.Dialog()
+  #   yes = dialog.yesno("Replace add-ons",str1,"This Add-on will be replaced with Exodus-Redux")
+  #   if yes:
+  #     TargetFileRemove("plugin.video.exodus",USERPATH1)
+  #     TargetFileRemove("script.exodus.artwork",USERPATH1)
+  #     TargetFileRemove("script.exodus.metadata",USERPATH1)
+  #     TargetFileRemove("script.module.exodus",USERPATH1)
+  #     TargetFileRemove("script.module.exoscrapers",USERPATH1)
+  #     TargetFileRemove("script.module.exodusscrapers",USERPATH1)
+  #     TargetFileRemove("plugin.video.mc1080p",USERPATH1)
+  #     time.sleep(1)
+  #     installAddon('2.0.3a','plugin.video.exodusredux')
+  #     installAddon('1.0.2','script.exodusredux.artwork')
+  #     installAddon('1.0.2','script.exodusredux.metadata')
+  #     installAddon('2.0.3','script.module.exodusredux')
+  #     installAddon('0.0.1.94','script.module.openscrapers')
+  #     RebootFlag = True
+
+  RebootFlag = addons4MagicDragon()
+  RebootFlag = addons4Yoda()
+  RebootFlag = addons4Tempest()
+  RebootFlag = addons4ExodusRedux()
 
   str1 = "plugin.video.kayo.sports"
   sPath=os.path.join(USERPATH1,str1)
