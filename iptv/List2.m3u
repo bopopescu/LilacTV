@@ -569,14 +569,14 @@ http://222.237.20.203:9981/stream/channelid/1993283110
 http://222.237.20.203:9981/stream/channelid/1516303205
 #EXTINF:-1,Disney Channel
 http://222.237.20.203:9981/stream/channelid/499530012
-#EXTINF:-1,디즈니주니어
-http://222.237.20.203:9981/stream/channelid/1218338827
 #EXTINF:-1,JEI 재능TV
 http://222.237.20.203:9981/stream/channelid/857466936
 #EXTINF:-1,FTV
 http://222.237.20.203:9981/stream/channelid/541606576
 #EXTINF:-1,FISHING TV
 http://222.237.20.203:9981/stream/channelid/1568911036
+#EXTINF:-1,채널A
+http://222.237.20.203:9981/stream/channelid/274734846
 #EXTINF:-1,JTBC
 http://222.237.20.203:9981/stream/channelid/1828693994
 #EXTINF:-1,채널A
@@ -589,16 +589,60 @@ http://222.237.20.203:9981/stream/channelid/1024685038
 http://222.237.20.203:9981/stream/channelid/86381934
 #EXTINF:-1,KBS DRAMA
 http://222.237.20.203:9981/stream/channelid/831380515
-#EXTINF:-1,tvN
-http://222.237.20.203:9981/stream/channelid/566500633
 #EXTINF:-1,OCN
 http://222.237.20.203:9981/stream/channelid/759578329
 #EXTINF:-1,슈퍼액션
 http://222.237.20.203:9981/stream/channelid/360165631
 #EXTINF:-1,스크린
 http://222.237.20.203:9981/stream/channelid/630510934
+#EXTINF:-1,mplex
+http://222.237.20.203:9981/stream/channelid/283780135
 #EXTINF:-1,SBS Plus
 http://222.237.20.203:9981/stream/channelid/1888931643
+#EXTINF:-1,SBS
+http://114.204.150.69:9981/stream/channelid/1166986084?ticket=1ea286ee6b028d51b9dadf20554ab0f6b24f6dda&profile=htsp
+#EXTINF:-1,바둑TV
+http://114.204.150.69:9981/stream/channelid/946772582?ticket=9300d6c605a3ab63847f6f28294a38bded250c51&profile=htsp
+#EXTINF:-1,스크린
+http://114.204.150.69:9981/stream/channelid/2137543220?ticket=9c2c3e62c1bf79c7dc4f4867f4053a2737e493e0&profile=htsp
+#EXTINF:-1,KBS1
+http://114.204.150.69:9981/stream/channelid/93272930?ticket=c0c1bac19d88e60e698bb5692c595f0be374d797&profile=htsp
+#EXTINF:-1,JTBC
+http://114.204.150.69:9981/stream/channelid/1227783418?ticket=c30cbc8903eeb30dabd008244d267628b62718b6&profile=htsp
+#EXTINF:-1,tvN
+http://114.204.150.69:9981/stream/channelid/1556822812?ticket=0ba78192a55e58e542f168fe5796d0388651bd9c&profile=htsp
+#EXTINF:-1,Mnet
+http://114.204.150.69:9981/stream/channelid/928215967?ticket=ac38aac7b34283bb3f26fbf90918b5479def1a00&profile=htsp
+#EXTINF:-1,채널CGV
+http://114.204.150.69:9981/stream/channelid/952077157?ticket=81b03ff31f31af0ed73750b5bfc09980dc19addc&profile=htsp
+#EXTINF:-1,OCN
+http://114.204.150.69:9981/stream/channelid/1024537787?ticket=8202cacd256aa123129860a0c506422184a9ae03&profile=htsp
+#EXTINF:-1,YTN
+http://114.204.150.69:9981/stream/channelid/10426597?ticket=c0ce58330a750c8b60f8f06958c1461a34433513&profile=htsp
+#EXTINF:-1,바둑TV
+http://114.204.150.69:9981/stream/channelid/413995176?ticket=2a9345a304c3ff8f00c14892f857f328b9afb2e2&profile=htsp
+#EXTINF:-1,EBS
+http://114.204.150.69:9981/stream/channelid/1921855933?ticket=fe3ac48367487b834070a06bb4ba1ac44e80edd9&profile=htsp
+#EXTINF:-1,EBS2
+http://114.204.150.69:9981/stream/channelid/474044395?ticket=53fe98f451a48ba78d9a5b4dfba2f7fbd3a0a714&profile=htsp
+#EXTINF:-1,SPOTV
+http://114.204.150.69:9981/stream/channelid/8642966?ticket=6bc22990885effd33435fdaf9e65f7cbb9720c2b&profile=htsp
+#EXTINF:-1,디스커버리채널
+http://114.204.150.69:9981/stream/channelid/113345936?ticket=e0a71c90eb41776766547ab4a70c16895c099db3&profile=htsp
+#EXTINF:-1,NGC
+http://114.204.150.69:9981/stream/channelid/482718203?ticket=8cfa755add829135a6c25da3655716890690c845&profile=htsp
+#EXTINF:-1,Disney Channel
+http://114.204.150.69:9981/stream/channelid/1346466780?ticket=faa5accaea551d9b01570fde92d4bfcd667ec5ac&profile=htsp
+#EXTINF:-1,디즈니주니어
+http://114.204.150.69:9981/stream/channelid/1964952825?ticket=26d61bdf7a6c8dfad85d43943d264edc8dccacb0&profile=htsp
+#EXTINF:-1,Tooniverse
+http://114.204.150.69:9981/stream/channelid/1127483874?ticket=c2e108743eb1d7475a44b4fa7939cf40af7233df&profile=htsp
+#EXTINF:-1,XtvN
+http://114.204.150.69:9981/stream/channelid/706139971?ticket=3b6de8b428a502b5dfe8f99a92730edaf81e5757&profile=htsp
+#EXTINF:-1,MBC Every1
+http://114.204.150.69:9981/stream/channelid/1987214006?ticket=51f85ab8542a321b6f39f9fabeac629ac36a9c40&profile=htsp
+#EXTINF:-1,올리브
+http://114.204.150.69:9981/stream/channelid/515841251?ticket=b2df4fff9829098e0f1a2fd51d2074f100ddc430&profile=htsp
 #EXTINF:-1,SBS Plus
 http://118.220.53.252:9981/stream/channelid/1058347140?ticket=AC6C0F9973212230BC9DF8E58AAABDDEB5B4F121&profile=pass
 #EXTINF:-1,SBS
