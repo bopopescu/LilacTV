@@ -1722,10 +1722,7 @@ For updates check the readme.
   </extension>
 </addon>
 
-<addon id="service.vpn.manager"
-       name="VPN Manager for OpenVPN"
-       version="1004.9.11"
-       provider-name="Zomboided">
+<addon id="service.vpn.manager"  name="VPN Manager for OpenVPN" version="1004.9.12" provider-name="Zomboided">
   <requires>
     <import addon="xbmc.python" version="2.7.0"/>
   </requires>
