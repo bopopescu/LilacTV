@@ -1,0 +1,4 @@
+vpnbook-ca1-tcp443,142.4.206.228 & 1 more (TCP)
+vpnbook-ca1-tcp80,142.4.206.228 & 1 more (TCP)
+vpnbook-ca1-udp25000,142.4.206.228 & 1 more (UDP)
+vpnbook-ca1-udp53,142.4.206.228 & 1 more (UDP)
