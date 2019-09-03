@@ -202,9 +202,9 @@ http://218.39.17.220:9981/stream/channelid/1637997160
 #EXTINF:-1 tvg-id="218" tvg-logo="http://i.imgur.com/ByeeX5e.png" group-title="종편",YTN
 http://219.250.105.94:9981/stream/channelid/871764548
 #EXTINF:-1 tvg-id="218" tvg-logo="http://i.imgur.com/ByeeX5e.png" group-title="종편",YTN
-http://114.204.150.69:9981/stream/channelid/10426597?ticket=c0ce58330a750c8b60f8f06958c1461a34433513&profile=htsp
-#EXTINF:-1 tvg-id="218" tvg-logo="http://i.imgur.com/ByeeX5e.png" group-title="종편",YTN
 http://118.220.53.252:9981/stream/channelid/754493986?ticket=E2BB3FD5541257B11A1C696128233513D3B51E05&profile=pass
+#EXTINF:-1 tvg-id="218" tvg-logo="http://i.imgur.com/ByeeX5e.png" group-title="종편",YTN
+http://219.250.105.94:9981/stream/channelid/871764548?ticket=C97F6A20564F42DB6B7907107483794C62A4919C&profile=pass
 #EXTINF:-1 tvg-id="98" tvg-logo="http://i.imgur.com/Bnw7O5U.png" group-title="스포츠",JTBC Golf
 http://211.215.40.117:9981/stream/channelid/503711893
 #EXTINF:-1 tvg-id="98" tvg-logo="http://i.imgur.com/Bnw7O5U.png" group-title="스포츠",JTBC Golf
@@ -483,8 +483,6 @@ http://219.250.105.94:9981/stream/channelid/458786757?ticket=F9DEA31869BD5B962F0
 http://211.215.40.117:9981/stream/channelid/889651535
 #EXTINF:-1 tvg-id="51" tvg-logo="http://i.imgur.com/1SgSI0P.png" group-title="아웃도어",디스커버리채널
 http://219.250.105.94:9981/stream/channelid/387423330
-#EXTINF:-1 tvg-id="51" tvg-logo="http://i.imgur.com/1SgSI0P.png" group-title="아웃도어",디스커버리채널
-http://114.204.150.69:9981/stream/channelid/113345936?ticket=e0a71c90eb41776766547ab4a70c16895c099db3&profile=htsp
 #EXTINF:-1 tvg-id="51" tvg-logo="http://i.imgur.com/1SgSI0P.png" group-title="아웃도어",디스커버리채널
 http://219.250.105.94:9981/stream/channelid/387423330?ticket=8203B7AC44D0E2ED45E920D8B18F46A3A6D7948E&profile=pass
 #EXTINF:-1 tvg-id="138" tvg-logo="http://i.imgur.com/SSkop4X.png" group-title="아웃도어",History
