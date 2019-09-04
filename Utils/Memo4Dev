@@ -324,3 +324,9 @@ xbmc-send --action="UpdateAddonRepos"
 xbmc.executebuiltin('UpdateAddonRepos')
 기기용 앱 비밀번호
 apjimusplyfvxtec
+
+Linode Server reboot
+1. ./runScript.sh ----------------> 80 port tomcat
+2. ./ctlscript.sh start apache ---> 8080 port
+3. /etc/init.d/transmission-daemon start
+4. python /opt/lampstack-5.6.24-0/apache2/htdocs/BadJin/EPG/epg2xml/epg2xml.py
