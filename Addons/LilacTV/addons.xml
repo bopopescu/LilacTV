@@ -238,7 +238,7 @@
   </extension>
 </addon>
 
-<addon id="script.updateShortCut" name="LilacTV Content Update" version="1.2.24" provider-name="BadJin">
+<addon id="script.updateShortCut" name="LilacTV Content Update" version="1.2.26" provider-name="BadJin">
   <requires>
     <import addon="xbmc.python" version="2.19.0"/>
   </requires>
@@ -411,7 +411,7 @@
   </extension>
 </addon>
 
-<addon id="script.change.SD" name="Change Channel Quality to SD" version="0.0.17" provider-name="BadJin">
+<addon id="script.change.SD" name="Change Channel Quality to SD" version="0.0.18" provider-name="BadJin">
   <requires>
     <import addon="xbmc.python" version="2.19.0"/>
   </requires>

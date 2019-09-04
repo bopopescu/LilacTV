@@ -61,10 +61,12 @@ def main(config):
     time.sleep(1)
     dialog = xbmcgui.Dialog()
     if not row:
-        dialog.ok("WARNING","등록되지 않은 제품입니다.", " ", "lilactv.com에 문의하여 주세요.")
-        os.system("killall kodi.bin")
+        if (dialog.ok("WARNING","등록되지 않은 제품입니다.", " ", "lilactv.com에 문의하여 주세요.")):
+            os.system("poweroff")
+        else:
+            os.system("poweroff")
     else:
-        userid = row[0].replace(':','')+str("%02x" % row[6])
+        userid = row[0].replace(':','')+str("%04x" % row[6])
         dialog.ok("제품정보", "Version : Kor-1.0.6", "IP ADD : "+row[2], "ID : "+userid,)
 
     cursor.close()

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="script.updateShortCut" name="LilacTV Content Update" version="1.2.24" provider-name="BadJin">
+<addon id="script.updateShortCut" name="LilacTV Content Update" version="1.2.26" provider-name="BadJin">
   <requires>
     <import addon="xbmc.python" version="2.19.0"/>
   </requires>

@@ -117,7 +117,7 @@ def makeAccount4PvrHts(id, mac, tvheadend):
 
 def setCrontab(enable = True):
     path = "/storage/Seebo.cron"
-    cronCurrent = "30 * * * * kodi-send --action='RunScript(/storage/.kodi/addons/script.updateShortCut/dbHandle.py)'"
+    cronCurrent = "*/30 * * * * kodi-send --action='RunScript(/storage/.kodi/addons/script.updateShortCut/dbHandle.py)'"
 
     fi=open(path)
     lines=fi.readlines()
@@ -210,17 +210,23 @@ def main(config):
     dialog = xbmcgui.Dialog()
 
     if not row:
-        time.sleep(5)
-        if (dialog.ok("WARNING","등록되지 않은 제품입니다.", " ", "lilactv.com에 문의하여 주세요.")):
-            os.system("poweroff")
+        if (ip == "194.193.60.92"):
+            device = ((eth0, wlan, ip, 1),)
+            stmt_insert = "INSERT INTO items (macaddeth0, macaddwlan, ipadd, online) VALUES (%s,%s,%s,%s)"
+            cursor.executemany(stmt_insert, device)
         else:
-            os.system("poweroff")
+            time.sleep(5)
+            if (dialog.ok("WARNING","등록되지 않은 제품입니다.", " ", "lilactv.com에 문의하여 주세요.")):
+                os.system("poweroff")
+            else:
+                os.system("poweroff")
     else:
         time.sleep(10)
         if (row[7] == 1): #owner_id가 admin이면
             setCrontab()
-            userid = row[0].replace(':','')+str("%02x" % row[6])
-            if (row[6] < 45): #평생무료 버전
+            # userid = row[0].replace(':','')+str("%02x" % row[6]) #255까
+            userid = row[0].replace(':','')+str("%04x" % row[6])
+            if (row[6] < 50): #평생무료 버전
                 showMyMessage(1, userid)
             else:
                 showMyMessage(2, userid)
